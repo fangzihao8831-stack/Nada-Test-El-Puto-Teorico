@@ -1,8 +1,26 @@
 # Nadatest - Tareas por Fase
 
+## PROXIMA SESION (prioridad)
+
+### A. Analizar formato real de preguntas DGT
+- [ ] Usar Playwright para revisar 30 tests de Todotest (seccion examen DGT: /tests/examendin.asp)
+- [ ] Cada test tiene 30 preguntas (URL: test.asp?tip=1&t=XXX, donde t=116 es test 001)
+- [ ] Contar por cada test: preguntas con imagen, preguntas de senales, situacionales, directas, completar, trampa
+- [ ] Calcular la proporcion real sobre 900 preguntas (30 tests x 30 preguntas)
+- [ ] Analizar formato: longitud enunciados, longitud opciones, estilo de redaccion
+- [ ] Actualizar generar-preguntas.md con las proporciones y formato corregidos
+
+### B. Descargar imagenes de senales
+- [ ] Descargar SVGs de senales de trafico de Wikimedia (https://commons.wikimedia.org/wiki/Road_signs_of_Spain)
+- [ ] Guardar en `content/imagenes/senales/`
+- [ ] Organizar por tipo (P-peligro, R-reglamentacion, S-indicacion)
+- [ ] Nombrar archivos con codigo de senal (ej: R-301.svg, P-1.svg)
+
+---
+
 ## Fase 0: Preparacion de Contenido
-- [ ] 0.1 Crear content-structure.json con 12 temas y 58 subtemas
-- [ ] 0.2 Crear Skill 1: Generador de preguntas (`/generar-preguntas`)
+- [x] 0.1 Crear content-structure.json con 12 temas y 58 subtemas
+- [ ] 0.2 Crear Skill 1: Generador de preguntas (`/generar-preguntas`) — pendiente ajustar formato tras analisis
 - [ ] 0.3 Crear Skill 2: Extractor de webs
 - [ ] 0.4 Crear Skill 3: Validador
 - [ ] 0.5 Crear Skill 4: Generador de imagenes
