@@ -21,6 +21,9 @@ Thumbs.db
 # Playwright MCP logs
 .playwright-mcp/
 
+# Session prompts (may contain credentials)
+NEXT_SESSION_PROMPT.md
+
 # Claude Code local settings
 .claude/settings.local.json
 .claude/projects/
