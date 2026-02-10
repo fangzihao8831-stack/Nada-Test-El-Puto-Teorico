@@ -1,0 +1,738 @@
+{
+  "version": "1.0",
+  "descripcion": "Estructura de contenido para Nadatest - Permiso B",
+  "total_temas": 12,
+  "total_subtemas": 50,
+  "temas": [
+    {
+      "id": "tema_01",
+      "nombre": "El Conductor y el Permiso",
+      "descripcion": "Tipos de permisos, documentación y requisitos",
+      "orden": 1,
+      "peso_examen": 5,
+      "subtemas": [
+        {
+          "id": "subtema_01",
+          "nombre": "El permiso de conducir",
+          "tema_id": "tema_01",
+          "orden": 1,
+          "apartados": [
+            "Tipos de permisos y licencias",
+            "Qué autoriza el Permiso B",
+            "Permiso B con remolque",
+            "Conducción de motos 125cc con permiso B",
+            "Requisitos para obtener el permiso",
+            "Conductores noveles"
+          ]
+        },
+        {
+          "id": "subtema_02",
+          "nombre": "Documentación",
+          "tema_id": "tema_01",
+          "orden": 2,
+          "apartados": [
+            "Documentación del conductor",
+            "Documentación del vehículo",
+            "Distintivos obligatorios",
+            "Documentación del remolque"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_02",
+      "nombre": "El Vehículo",
+      "descripcion": "Características, carga, transporte y mantenimiento",
+      "orden": 2,
+      "peso_examen": 10,
+      "subtemas": [
+        {
+          "id": "subtema_03",
+          "nombre": "El vehículo",
+          "tema_id": "tema_02",
+          "orden": 1,
+          "apartados": [
+            "Clasificación de vehículos",
+            "Dimensiones máximas autorizadas",
+            "Masas del vehículo (MMA, tara)",
+            "Neumáticos",
+            "Sistemas del vehículo",
+            "Equipamiento obligatorio"
+          ]
+        },
+        {
+          "id": "subtema_04",
+          "nombre": "La carga",
+          "tema_id": "tema_02",
+          "orden": 2,
+          "apartados": [
+            "Disposición de la carga",
+            "Límites de carga sobresaliente",
+            "Señalización de la carga",
+            "Distribución del peso"
+          ]
+        },
+        {
+          "id": "subtema_05",
+          "nombre": "Transporte de personas y animales",
+          "tema_id": "tema_02",
+          "orden": 3,
+          "apartados": [
+            "Número de ocupantes",
+            "Sistemas de Retención Infantil (SRI)",
+            "Cinturón de seguridad",
+            "Transporte de animales",
+            "Posición de los pasajeros"
+          ]
+        },
+        {
+          "id": "subtema_06",
+          "nombre": "Remolques",
+          "tema_id": "tema_02",
+          "orden": 4,
+          "apartados": [
+            "Tipos de remolques",
+            "Permiso necesario (B vs B+E)",
+            "Velocidad con remolque",
+            "Circulación con remolque",
+            "Documentación del remolque",
+            "Alumbrado del remolque"
+          ]
+        },
+        {
+          "id": "subtema_07",
+          "nombre": "ITV",
+          "tema_id": "tema_02",
+          "orden": 5,
+          "apartados": [
+            "Periodicidad según antigüedad",
+            "Resultados de la ITV",
+            "Qué se revisa en la ITV",
+            "Consecuencias de circular sin ITV"
+          ]
+        },
+        {
+          "id": "subtema_08",
+          "nombre": "El seguro",
+          "tema_id": "tema_02",
+          "orden": 6,
+          "apartados": [
+            "Seguro obligatorio (SOA)",
+            "Coberturas del seguro",
+            "Seguros voluntarios",
+            "Parte de accidentes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_03",
+      "nombre": "La Vía Pública",
+      "descripcion": "Tipos de vías y sus partes",
+      "orden": 3,
+      "peso_examen": 5,
+      "subtemas": [
+        {
+          "id": "subtema_09",
+          "nombre": "La vía pública",
+          "tema_id": "tema_03",
+          "orden": 1,
+          "apartados": [
+            "Tipos de vías interurbanas",
+            "Tipos de vías urbanas",
+            "Zonas especiales",
+            "Partes de la vía",
+            "Usuarios de la vía"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_04",
+      "nombre": "Normas de Circulación",
+      "descripcion": "Reglas básicas de conducción",
+      "orden": 4,
+      "peso_examen": 20,
+      "subtemas": [
+        {
+          "id": "subtema_10",
+          "nombre": "Normas generales de circulación",
+          "tema_id": "tema_04",
+          "orden": 1,
+          "apartados": [
+            "Sentido de circulación",
+            "Utilización de carriles",
+            "Utilización del arcén",
+            "Obligaciones del conductor",
+            "Prohibiciones generales"
+          ]
+        },
+        {
+          "id": "subtema_11",
+          "nombre": "Velocidad",
+          "tema_id": "tema_04",
+          "orden": 2,
+          "apartados": [
+            "Límites genéricos para turismos",
+            "Velocidad con remolque",
+            "Velocidad mínima",
+            "Exceso de velocidad vs inadecuada",
+            "Factores que afectan la velocidad",
+            "Distancia de frenado"
+          ]
+        },
+        {
+          "id": "subtema_12",
+          "nombre": "Distancia de seguridad",
+          "tema_id": "tema_04",
+          "orden": 3,
+          "apartados": [
+            "Distancia de seguridad frontal",
+            "Distancia lateral",
+            "Regla de los 2 segundos",
+            "Factores que aumentan la distancia"
+          ]
+        },
+        {
+          "id": "subtema_13",
+          "nombre": "Prioridad de paso",
+          "tema_id": "tema_04",
+          "orden": 4,
+          "apartados": [
+            "Regla general (derecha)",
+            "Excepciones a la prioridad",
+            "Prioridad en glorietas",
+            "Prioridad en estrechamientos",
+            "Vehículos prioritarios"
+          ]
+        },
+        {
+          "id": "subtema_14",
+          "nombre": "Incorporación a la circulación",
+          "tema_id": "tema_04",
+          "orden": 5,
+          "apartados": [
+            "Desde estacionamiento",
+            "Desde vía privada",
+            "Desde carril de aceleración",
+            "Desde arcén"
+          ]
+        },
+        {
+          "id": "subtema_15",
+          "nombre": "Adelantamientos",
+          "tema_id": "tema_04",
+          "orden": 6,
+          "apartados": [
+            "Regla general (por la izquierda)",
+            "Adelantamiento por la derecha",
+            "Prohibiciones de adelantamiento",
+            "Obligaciones del adelantado",
+            "Adelantamiento a usuarios vulnerables",
+            "Distancia lateral 1,5m a ciclistas"
+          ]
+        },
+        {
+          "id": "subtema_16",
+          "nombre": "Intersecciones",
+          "tema_id": "tema_04",
+          "orden": 7,
+          "apartados": [
+            "Comportamiento en intersecciones",
+            "Giro a la derecha",
+            "Giro a la izquierda",
+            "Cambio de sentido"
+          ]
+        },
+        {
+          "id": "subtema_17",
+          "nombre": "Parada y estacionamiento",
+          "tema_id": "tema_04",
+          "orden": 8,
+          "apartados": [
+            "Definiciones (parada vs estacionamiento)",
+            "Prohibiciones de parada y estacionamiento",
+            "Forma de estacionar",
+            "Estacionamiento en pendiente",
+            "Marcas viales de estacionamiento"
+          ]
+        },
+        {
+          "id": "subtema_18",
+          "nombre": "Marcha atrás",
+          "tema_id": "tema_04",
+          "orden": 9,
+          "apartados": [
+            "Cuándo está permitida",
+            "Prohibiciones",
+            "Precauciones"
+          ]
+        },
+        {
+          "id": "subtema_19",
+          "nombre": "Alumbrado",
+          "tema_id": "tema_04",
+          "orden": 10,
+          "apartados": [
+            "Tipos de luces del vehículo",
+            "Cuándo usar cada luz",
+            "Prohibiciones",
+            "Deslumbramiento"
+          ]
+        },
+        {
+          "id": "subtema_20",
+          "nombre": "Señales acústicas",
+          "tema_id": "tema_04",
+          "orden": 11,
+          "apartados": [
+            "Cuándo usar el claxon",
+            "Prohibiciones",
+            "Señales de los agentes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_05",
+      "nombre": "Señalización",
+      "descripcion": "Señales de tráfico y marcas viales",
+      "orden": 5,
+      "peso_examen": 25,
+      "subtemas": [
+        {
+          "id": "subtema_21",
+          "nombre": "Jerarquía de señales",
+          "tema_id": "tema_05",
+          "orden": 1,
+          "apartados": [
+            "Orden de prioridad",
+            "Conflicto entre señales"
+          ]
+        },
+        {
+          "id": "subtema_22",
+          "nombre": "Señales de los agentes",
+          "tema_id": "tema_05",
+          "orden": 2,
+          "apartados": [
+            "Señales con los brazos",
+            "Señales acústicas (silbato)",
+            "Posición del agente"
+          ]
+        },
+        {
+          "id": "subtema_23",
+          "nombre": "Semáforos",
+          "tema_id": "tema_05",
+          "orden": 3,
+          "apartados": [
+            "Semáforos de vehículos",
+            "Flechas",
+            "Amarillo/rojo intermitente",
+            "Semáforos de carril",
+            "Semáforos especiales"
+          ]
+        },
+        {
+          "id": "subtema_24",
+          "nombre": "Señales verticales",
+          "tema_id": "tema_05",
+          "orden": 4,
+          "apartados": [
+            "Señales de prioridad",
+            "Señales de prohibición",
+            "Señales de obligación",
+            "Señales de advertencia",
+            "Señales de indicación"
+          ]
+        },
+        {
+          "id": "subtema_25",
+          "nombre": "Marcas viales",
+          "tema_id": "tema_05",
+          "orden": 5,
+          "apartados": [
+            "Marcas longitudinales",
+            "Marcas transversales",
+            "Flechas",
+            "Inscripciones",
+            "Colores de las marcas"
+          ]
+        },
+        {
+          "id": "subtema_26",
+          "nombre": "Señalización circunstancial",
+          "tema_id": "tema_05",
+          "orden": 6,
+          "apartados": [
+            "Señalización de obras",
+            "Balizas",
+            "Captafaros",
+            "Paneles de mensaje variable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_06",
+      "nombre": "Situaciones Especiales",
+      "descripcion": "Autopistas, túneles, pasos a nivel y condiciones adversas",
+      "orden": 6,
+      "peso_examen": 10,
+      "subtemas": [
+        {
+          "id": "subtema_27",
+          "nombre": "Autopistas y autovías",
+          "tema_id": "tema_06",
+          "orden": 1,
+          "apartados": [
+            "Diferencias autopista/autovía",
+            "Usuarios prohibidos",
+            "Normas específicas",
+            "Carriles de aceleración/deceleración",
+            "Paradas de emergencia"
+          ]
+        },
+        {
+          "id": "subtema_28",
+          "nombre": "Túneles",
+          "tema_id": "tema_06",
+          "orden": 2,
+          "apartados": [
+            "Antes de entrar",
+            "Dentro del túnel",
+            "En caso de retención",
+            "En caso de avería",
+            "En caso de incendio"
+          ]
+        },
+        {
+          "id": "subtema_29",
+          "nombre": "Pasos a nivel",
+          "tema_id": "tema_06",
+          "orden": 3,
+          "apartados": [
+            "Tipos de pasos a nivel",
+            "Señalización",
+            "Comportamiento",
+            "Si te quedas atrapado"
+          ]
+        },
+        {
+          "id": "subtema_30",
+          "nombre": "Condiciones adversas",
+          "tema_id": "tema_06",
+          "orden": 4,
+          "apartados": [
+            "Lluvia y aquaplaning",
+            "Niebla",
+            "Viento fuerte",
+            "Nieve y hielo",
+            "Deslumbramiento solar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_07",
+      "nombre": "Usuarios Vulnerables",
+      "descripcion": "Peatones, ciclistas, motoristas y VMP",
+      "orden": 7,
+      "peso_examen": 5,
+      "subtemas": [
+        {
+          "id": "subtema_31",
+          "nombre": "Usuarios vulnerables",
+          "tema_id": "tema_07",
+          "orden": 1,
+          "apartados": [
+            "Peatones",
+            "Ciclistas (distancia 1,5m)",
+            "Motocicletas y ciclomotores",
+            "VMP (patinetes eléctricos)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_08",
+      "nombre": "Seguridad del Vehículo",
+      "descripcion": "Seguridad activa, pasiva y sistemas ADAS",
+      "orden": 8,
+      "peso_examen": 5,
+      "subtemas": [
+        {
+          "id": "subtema_32",
+          "nombre": "Seguridad activa",
+          "tema_id": "tema_08",
+          "orden": 1,
+          "apartados": [
+            "Sistema de frenado (ABS)",
+            "Sistema de dirección",
+            "Suspensión",
+            "Neumáticos",
+            "Alumbrado",
+            "Control de estabilidad (ESP)",
+            "Control de tracción"
+          ]
+        },
+        {
+          "id": "subtema_33",
+          "nombre": "Seguridad pasiva",
+          "tema_id": "tema_08",
+          "orden": 2,
+          "apartados": [
+            "Cinturón de seguridad",
+            "Airbags",
+            "Reposacabezas",
+            "Sistemas de Retención Infantil",
+            "Carrocería"
+          ]
+        },
+        {
+          "id": "subtema_34",
+          "nombre": "Sistemas ADAS",
+          "tema_id": "tema_08",
+          "orden": 3,
+          "apartados": [
+            "Control de crucero adaptativo (ACC)",
+            "Limitador de velocidad (ISA)",
+            "Avisador de cambio de carril (LDW/LKA)",
+            "Detector de ángulo muerto",
+            "Frenada automática de emergencia (AEB)",
+            "Cámara de visión trasera",
+            "Avisador de fatiga",
+            "Llamada de emergencia (eCall)"
+          ]
+        },
+        {
+          "id": "subtema_35",
+          "nombre": "Comprobaciones y mantenimiento",
+          "tema_id": "tema_08",
+          "orden": 4,
+          "apartados": [
+            "Comprobaciones diarias",
+            "Comprobaciones periódicas",
+            "Mantenimiento preventivo",
+            "Luces de aviso en el cuadro"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_09",
+      "nombre": "Factores de Riesgo",
+      "descripcion": "Alcohol, drogas, fatiga, distracciones",
+      "orden": 9,
+      "peso_examen": 10,
+      "subtemas": [
+        {
+          "id": "subtema_36",
+          "nombre": "Alcohol",
+          "tema_id": "tema_09",
+          "orden": 1,
+          "apartados": [
+            "Efectos del alcohol",
+            "Tasas máximas permitidas",
+            "Controles de alcoholemia",
+            "Sanciones",
+            "Mitos falsos"
+          ]
+        },
+        {
+          "id": "subtema_37",
+          "nombre": "Drogas",
+          "tema_id": "tema_09",
+          "orden": 2,
+          "apartados": [
+            "Efectos generales",
+            "Efectos por tipo de droga",
+            "Detección",
+            "Sanciones"
+          ]
+        },
+        {
+          "id": "subtema_38",
+          "nombre": "Medicamentos",
+          "tema_id": "tema_09",
+          "orden": 3,
+          "apartados": [
+            "Medicamentos que afectan",
+            "Pictograma de advertencia",
+            "Recomendaciones"
+          ]
+        },
+        {
+          "id": "subtema_39",
+          "nombre": "Fatiga y sueño",
+          "tema_id": "tema_09",
+          "orden": 4,
+          "apartados": [
+            "Síntomas de fatiga",
+            "Horarios de mayor riesgo",
+            "Microsueños",
+            "Prevención"
+          ]
+        },
+        {
+          "id": "subtema_40",
+          "nombre": "Distracciones",
+          "tema_id": "tema_09",
+          "orden": 5,
+          "apartados": [
+            "Tipos de distracciones",
+            "Teléfono móvil (6 puntos)",
+            "Otras distracciones"
+          ]
+        },
+        {
+          "id": "subtema_41",
+          "nombre": "Velocidad como factor de riesgo",
+          "tema_id": "tema_09",
+          "orden": 6,
+          "apartados": [
+            "Excesiva vs inadecuada",
+            "Relación velocidad-accidente",
+            "Distancia de frenado"
+          ]
+        },
+        {
+          "id": "subtema_42",
+          "nombre": "Estados emocionales",
+          "tema_id": "tema_09",
+          "orden": 7,
+          "apartados": [
+            "Emociones que afectan",
+            "Agresividad al volante",
+            "Recomendaciones"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_10",
+      "nombre": "Accidentes y Emergencias",
+      "descripcion": "Conducta PAS y primeros auxilios",
+      "orden": 10,
+      "peso_examen": 5,
+      "subtemas": [
+        {
+          "id": "subtema_43",
+          "nombre": "Conducta PAS",
+          "tema_id": "tema_10",
+          "orden": 1,
+          "apartados": [
+            "Proteger (señalizar, asegurar zona)",
+            "Avisar (112)",
+            "Socorrer"
+          ]
+        },
+        {
+          "id": "subtema_44",
+          "nombre": "Primeros auxilios",
+          "tema_id": "tema_10",
+          "orden": 2,
+          "apartados": [
+            "Evaluación inicial",
+            "Posición Lateral de Seguridad (PLS)",
+            "RCP (30:2)",
+            "Control de hemorragias",
+            "Casco de motorista"
+          ]
+        },
+        {
+          "id": "subtema_45",
+          "nombre": "Equipamiento de emergencia",
+          "tema_id": "tema_10",
+          "orden": 3,
+          "apartados": [
+            "Triángulos de preseñalización",
+            "Chaleco reflectante",
+            "Dispositivo V-16",
+            "Otros elementos recomendados"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_11",
+      "nombre": "Medio Ambiente",
+      "descripcion": "Conducción eficiente y etiquetas medioambientales",
+      "orden": 11,
+      "peso_examen": 3,
+      "subtemas": [
+        {
+          "id": "subtema_46",
+          "nombre": "Conducción eficiente",
+          "tema_id": "tema_11",
+          "orden": 1,
+          "apartados": [
+            "Técnicas de conducción eficiente",
+            "Uso de marchas",
+            "Velocidad constante",
+            "Beneficios"
+          ]
+        },
+        {
+          "id": "subtema_47",
+          "nombre": "Medio ambiente",
+          "tema_id": "tema_11",
+          "orden": 2,
+          "apartados": [
+            "Contaminación del tráfico",
+            "Etiquetas medioambientales DGT",
+            "Zonas de Bajas Emisiones (ZBE)",
+            "Mantenimiento y medio ambiente"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tema_12",
+      "nombre": "Normativa y Sanciones",
+      "descripcion": "Permiso por puntos, infracciones y responsabilidad",
+      "orden": 12,
+      "peso_examen": 7,
+      "subtemas": [
+        {
+          "id": "subtema_48",
+          "nombre": "Permiso por puntos",
+          "tema_id": "tema_12",
+          "orden": 1,
+          "apartados": [
+            "Crédito de puntos (8/12/15)",
+            "Pérdida de puntos por infracciones",
+            "Pérdida total de puntos",
+            "Recuperación de puntos"
+          ]
+        },
+        {
+          "id": "subtema_49",
+          "nombre": "Infracciones y sanciones",
+          "tema_id": "tema_12",
+          "orden": 2,
+          "apartados": [
+            "Infracciones leves",
+            "Infracciones graves",
+            "Infracciones muy graves",
+            "Sanciones económicas",
+            "Descuento por pronto pago"
+          ]
+        },
+        {
+          "id": "subtema_50",
+          "nombre": "Responsabilidad del conductor",
+          "tema_id": "tema_12",
+          "orden": 3,
+          "apartados": [
+            "Responsabilidad administrativa",
+            "Responsabilidad civil",
+            "Responsabilidad penal",
+            "Responsabilidad del titular"
+          ]
+        }
+      ]
+    }
+  ]
+}
