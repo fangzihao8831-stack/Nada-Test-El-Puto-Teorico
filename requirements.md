@@ -71,7 +71,7 @@ El perfil mostrara:
 - MVP: Solo Permiso B disponible
 
 #### 3. Progreso
-- Lista de temas ordenados por dificultad (mas fallos primero)
+- Lista de temas ordenados por fallos (mas fallos primero)
 - Barra de progreso por tema
 - Boton "Practicar este tema"
 
@@ -121,7 +121,7 @@ El perfil mostrara:
 | [LOGO]  Test Permiso B  |  Usuario  |  [progreso] 25:30         |
 +------------------------------------------------------------------+
 |  10.  +----------+   Pregunta aqui...?                     (?)  |
-|       |  IMAGEN  |   Tema: Senales | Dificultad: **             |
+|       |  IMAGEN  |   Tema: Senales                              |
 |       +----------+   ( ) A) Opcion A                            |
 |                      ( ) B) Opcion B                            |
 |                      ( ) C) Opcion C                            |

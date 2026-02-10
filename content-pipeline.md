@@ -62,7 +62,6 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 - Verifica logica de preguntas
 - Detecta duplicados
 - Revisa que sean "tramposas" (estilo DGT)
-- Ajusta dificultad
 
 ### Skill 4: Generador de Imagenes (pendiente)
 - **Archivo**: `.claude/commands/generar-imagenes.md`
@@ -104,7 +103,6 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
   "correcta": 1,
   "explicacion": "Esta senal indica el fin de la prohibicion...",
   "pista": "Fijate en las lineas diagonales",
-  "dificultad": 2,
   "requiere_imagen": true,
   "tipo_imagen": "senal",
   "imagen_url": "cloudinary.com/nadatest/R-501.svg",
@@ -118,7 +116,6 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 |-------|------|-------------|
 | `tipo_pregunta` | string | `directa`, `situacional`, `completar`, `imagen`, `dato`, `trampa` |
 | `correcta` | int | Indice de la opcion correcta (0, 1 o 2) |
-| `dificultad` | int | 1 (intuicion) a 5 (excepciones ocultas) |
 | `requiere_imagen` | bool | Si la pregunta necesita imagen para funcionar |
 | `tipo_imagen` | string | `senal`, `situacion`, `ninguna` |
 | `origen` | string | `generada`, `extraida_dgt`, `extraida_todotest` |

@@ -139,11 +139,6 @@ Las trampas están en las OPCIONES, no en el enunciado. Usan absolutos que el al
 
 ---
 
-## Plausibilidad de Opciones
-- Dificultad 1-2: Una opción claramente incorrecta
-- Dificultad 3: Dos opciones creíbles
-- Dificultad 4-5: Las tres opciones muy plausibles
-
 ## Normativa
 - Fecha actual: Febrero 2026
 - Si una norma ha cambiado recientemente, mencionar cuándo en la explicación
@@ -152,30 +147,6 @@ Las trampas están en las OPCIONES, no en el enunciado. Usan absolutos que el al
 ## Pistas
 - Ayudar a razonar sin revelar la respuesta
 - No deben ser obvias ni inútiles
-
----
-
-## Calibración de Dificultad (por tasa de fallo humano real)
-
-La dificultad NO es la complejidad de la regla. Es cuánto FALLA la gente en la práctica.
-
-| Nivel | Criterio | Ejemplos concretos |
-|-------|----------|-------------------|
-| 1 | Se acierta por intuición | Efectos de drogas, "¿cansado? para y duerme" |
-| 2 | Sentido común + regla conocida | Glorieta (ceder al entrar), cinturón obligatorio |
-| 3 | Hay que saber la regla concreta | PAS, emergencias en túnel, señales específicas |
-| 4 | Números parecidos o trampa siempre/nunca | 80 vs 90 km/h, "¿adelantar en curva?" (sí, si no invades contrario) |
-| 5 | Excepciones ocultas + 3 opciones muy plausibles | Fin de prioridad + derecha, puntos exactos por infracción, diferencias urbana/interurbana |
-
-### Criterio clave
-- **Fácil** = lo resuelves sin haber estudiado (intuición, lógica)
-- **Difícil** = necesitas haber memorizado datos concretos Y las tres opciones suenan creíbles
-- Las preguntas más difíciles son las que tienen **números similares** o **excepciones que la gente no conoce**
-
-### Preguntas que NECESITAN imagen para ser difíciles
-- Prioridad con 3+ vehículos en intersección → `requiere_imagen: true, tipo_imagen: "situacion"`
-- Identificación de señales → `requiere_imagen: true, tipo_imagen: "senal"`
-- Sin imagen, el techo de dificultad para estos temas es ~3-4
 
 ---
 
@@ -240,7 +211,6 @@ Superar el doble de la tasa (0,60 mg/l aire) o negarse a la prueba es **delito p
       "correcta": 0,
       "explicacion": "Explicación completa...",
       "pista": "Ayuda sutil...",
-      "dificultad": 3,
       "requiere_imagen": false,
       "tipo_imagen": "ninguna",
       "origen": "generada",

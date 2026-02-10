@@ -36,7 +36,7 @@ Plataforma web para preparar el examen teórico del permiso B de conducir (DGT, 
          │                                         │
          │  { id, subtema_id, tipo_pregunta,       │
          │    enunciado, opciones, correcta,        │
-         │    explicacion, pista, dificultad }      │
+         │    explicacion, pista }                  │
          └────────────────┬────────────────────────┘
                           │
                           ▼
@@ -46,7 +46,6 @@ Plataforma web para preparar el examen teórico del permiso B de conducir (DGT, 
          │  • Verifica datos contra temario         │
          │  • Detecta duplicados                    │
          │  • Revisa trampas estilo DGT             │
-         │  • Ajusta dificultad (1-5)               │
          │  • Valida acentos y formato              │
          └──────────┬──────────────┬───────────────┘
                     │              │

@@ -238,7 +238,6 @@ CREATE TABLE preguntas (
   correcta INTEGER NOT NULL,     -- indice de la correcta (0, 1, 2)
   explicacion TEXT NOT NULL,
   pista TEXT,
-  dificultad INTEGER DEFAULT 3 CHECK (dificultad >= 1 AND dificultad <= 5),
   requiere_imagen BOOLEAN DEFAULT FALSE,
   tipo_imagen TEXT DEFAULT 'ninguna', -- senal, situacion, ninguna
   imagen_url TEXT,
@@ -298,7 +297,6 @@ CREATE TABLE materiales (
   tipo TEXT NOT NULL,            -- ppt, video
   titulo TEXT NOT NULL,
   url TEXT NOT NULL,
-  dificultad INTEGER DEFAULT 3,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
