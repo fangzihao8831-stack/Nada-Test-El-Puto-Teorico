@@ -83,42 +83,55 @@ Plataforma web para preparar el examen teórico del permiso B de conducir (DGT, 
 
 ## Índice de Temas (12 temas, 58 subtemas)
 
-### 1. El Conductor y el Permiso
+<details><summary><strong>1. El Conductor y el Permiso</strong> (3 subtemas)</summary>
+
 - El permiso de conducir
 - Documentación
 - Permiso por puntos
+</details>
 
-### 2. El Vehículo
+<details><summary><strong>2. El Vehículo</strong> (4 subtemas)</summary>
+
 - El vehículo
 - ITV
 - El seguro
 - Vehículos eléctricos e híbridos
+</details>
 
-### 3. Carga, Pasajeros y Remolques
+<details><summary><strong>3. Carga, Pasajeros y Remolques</strong> (3 subtemas)</summary>
+
 - La carga
 - Transporte de personas y animales
 - Remolques
+</details>
 
-### 4. La Vía y sus Usuarios
+<details><summary><strong>4. La Vía y sus Usuarios</strong> (4 subtemas)</summary>
+
 - La vía pública
 - Usuarios vulnerables
 - Nuevas señales y tipologías de vía
 - Ángulos muertos y visibilidad
+</details>
 
-### 5. Circulación y Velocidad
+<details><summary><strong>5. Circulación y Velocidad</strong> (4 subtemas)</summary>
+
 - Normas generales de circulación
 - Velocidad
 - Distancia de seguridad
 - Marcha atrás
+</details>
 
-### 6. Prioridad y Maniobras
+<details><summary><strong>6. Prioridad y Maniobras</strong> (5 subtemas)</summary>
+
 - Prioridad de paso
 - Incorporación a la circulación
 - Adelantamientos
 - Intersecciones
 - Parada y estacionamiento
+</details>
 
-### 7. Señalización
+<details><summary><strong>7. Señalización</strong> (8 subtemas)</summary>
+
 - Alumbrado
 - Señales acústicas
 - Jerarquía de señales
@@ -127,23 +140,29 @@ Plataforma web para preparar el examen teórico del permiso B de conducir (DGT, 
 - Señales verticales
 - Marcas viales
 - Señalización circunstancial
+</details>
 
-### 8. Situaciones Especiales
+<details><summary><strong>8. Situaciones Especiales</strong> (6 subtemas)</summary>
+
 - Autopistas y autovías
 - Túneles
 - Pasos a nivel
 - Condiciones adversas
 - Preparación y desarrollo del viaje
 - Conducción en grupo y situaciones especiales
+</details>
 
-### 9. Seguridad y Tecnología
+<details><summary><strong>9. Seguridad y Tecnología</strong> (5 subtemas)</summary>
+
 - Seguridad activa
 - Seguridad pasiva
 - Sistemas ADAS
 - Comprobaciones y mantenimiento
 - Conducción autónoma y automatizada
+</details>
 
-### 10. Factores de Riesgo
+<details><summary><strong>10. Factores de Riesgo</strong> (7 subtemas)</summary>
+
 - Alcohol
 - Drogas
 - Medicamentos
@@ -151,19 +170,24 @@ Plataforma web para preparar el examen teórico del permiso B de conducir (DGT, 
 - Distracciones
 - Velocidad como factor de riesgo
 - Estados emocionales
+</details>
 
-### 11. Accidentes, Emergencias y Medio Ambiente
+<details><summary><strong>11. Accidentes, Emergencias y Medio Ambiente</strong> (5 subtemas)</summary>
+
 - Conducta PAS
 - Primeros auxilios
 - Equipamiento de emergencia
 - Conducción eficiente
 - Medio ambiente
+</details>
 
-### 12. Infracciones y Sanciones
+<details><summary><strong>12. Infracciones y Sanciones</strong> (4 subtemas)</summary>
+
 - Infracciones y sanciones
 - Responsabilidad del conductor
 - Inmovilización y retirada de vehículos
 - Procedimiento sancionador
+</details>
 
 ## Estructura del Proyecto
 
