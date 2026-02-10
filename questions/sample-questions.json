@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2024",
+    "total_questions": 50,
+    "description": "Sample question bank for DGT Permiso B exam"
+  },
+  "questions": [
+    {
+      "id": "3.1.1-001",
+      "modulo": 3,
+      "tema": "3.1",
+      "concepto": "Velocidad máxima vía urbana",
+      "dificultad": 3,
+      "frecuencia": "muy_alta",
+      "pregunta": "¿Cuál es la velocidad máxima en una vía urbana de un solo carril por sentido?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "50 km/h", "correcta": false},
+        {"letra": "B", "texto": "30 km/h", "correcta": true},
+        {"letra": "C", "texto": "40 km/h", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Desde 2021, la velocidad máxima en vías urbanas de un solo carril por sentido es de 30 km/h. Anteriormente era 50 km/h.",
+      "es_trampa": true,
+      "actualizado": true,
+      "tags": ["velocidad", "via_urbana", "nuevo_2021"]
+    },
+    {
+      "id": "3.1.1-002",
+      "modulo": 3,
+      "tema": "3.1",
+      "concepto": "Velocidad máxima autopista",
+      "dificultad": 1,
+      "frecuencia": "alta",
+      "pregunta": "¿Cuál es la velocidad máxima para turismos en autopista?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "100 km/h", "correcta": false},
+        {"letra": "B", "texto": "110 km/h", "correcta": false},
+        {"letra": "C", "texto": "120 km/h", "correcta": true}
+      ],
+      "respuesta_correcta": "C",
+      "explicacion": "La velocidad máxima en autopistas y autovías para turismos es de 120 km/h.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["velocidad", "autopista"]
+    },
+    {
+      "id": "2.1.1-001",
+      "modulo": 2,
+      "tema": "2.1",
+      "concepto": "Jerarquía de señales",
+      "dificultad": 4,
+      "frecuencia": "alta",
+      "pregunta": "Si un agente de tráfico le indica que pase pero el semáforo está en rojo, ¿qué debe hacer?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Detenerse porque el semáforo está en rojo", "correcta": false},
+        {"letra": "B", "texto": "Obedecer al agente y pasar", "correcta": true},
+        {"letra": "C", "texto": "Esperar a que el semáforo cambie a verde", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Las indicaciones de los agentes de tráfico prevalecen sobre cualquier otra señal, incluidos los semáforos. Jerarquía: Agentes > Circunstanciales > Semáforos > Verticales > Marcas viales.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["prioridad", "agentes", "semaforos"]
+    },
+    {
+      "id": "7.2.2-001",
+      "modulo": 7,
+      "tema": "7.2",
+      "concepto": "Tasas de alcoholemia",
+      "dificultad": 3,
+      "frecuencia": "muy_alta",
+      "pregunta": "¿Cuál es la tasa máxima de alcohol en sangre permitida para un conductor novel?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "0,5 g/l", "correcta": false},
+        {"letra": "B", "texto": "0,3 g/l", "correcta": true},
+        {"letra": "C", "texto": "0,25 g/l", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Los conductores noveles (menos de 2 años de experiencia) y profesionales tienen una tasa máxima de 0,3 g/l en sangre (o 0,15 mg/l en aire). La tasa general es 0,5 g/l.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["alcohol", "novel", "tasas"]
+    },
+    {
+      "id": "3.3.4-001",
+      "modulo": 3,
+      "tema": "3.3",
+      "concepto": "Prioridad en glorietas",
+      "dificultad": 4,
+      "frecuencia": "muy_alta",
+      "pregunta": "Al aproximarse a una glorieta, ¿quién tiene prioridad de paso?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Los vehículos que van a entrar en la glorieta", "correcta": false},
+        {"letra": "B", "texto": "Los vehículos que ya circulan dentro de la glorieta", "correcta": true},
+        {"letra": "C", "texto": "El vehículo que viene por la derecha", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Los vehículos que ya circulan dentro de la glorieta tienen prioridad. Al entrar en una glorieta, siempre debe ceder el paso a los que ya están circulando por ella.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["prioridad", "glorieta"]
+    },
+    {
+      "id": "2.7.2-001",
+      "modulo": 2,
+      "tema": "2.7",
+      "concepto": "Doble línea continua-discontinua",
+      "dificultad": 5,
+      "frecuencia": "muy_alta",
+      "pregunta": "Si circula por un carril y a su derecha tiene línea discontinua y a su izquierda línea continua, ¿puede adelantar invadiendo el carril contrario?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Sí, porque la línea más próxima a mí es discontinua", "correcta": true},
+        {"letra": "B", "texto": "No, porque hay una línea continua", "correcta": false},
+        {"letra": "C", "texto": "Solo si el vehículo delante circula a menos de 40 km/h", "correcta": false}
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Cuando hay doble línea (una continua y una discontinua), solo puede atravesarla si la línea más próxima a usted (a su derecha) es la discontinua.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["marcas_viales", "adelantamiento", "lineas"]
+    },
+    {
+      "id": "4.3.1-001",
+      "modulo": 4,
+      "tema": "4.3",
+      "concepto": "Parada vs estacionamiento",
+      "dificultad": 5,
+      "frecuencia": "muy_alta",
+      "pregunta": "¿Cuál es la diferencia entre parada y estacionamiento?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Parada es detenerse menos de 2 minutos sin alejarse del vehículo; estacionamiento es más de 2 minutos o alejarse", "correcta": true},
+        {"letra": "B", "texto": "Parada es detenerse menos de 5 minutos; estacionamiento es más de 5 minutos", "correcta": false},
+        {"letra": "C", "texto": "Parada es cuando el motor está encendido; estacionamiento cuando está apagado", "correcta": false}
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "La PARADA es la inmovilización de un vehículo durante un tiempo inferior a 2 minutos sin que el conductor se aleje del vehículo. Si supera los 2 minutos O el conductor se aleja, es ESTACIONAMIENTO.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["maniobras", "parada", "estacionamiento"]
+    },
+    {
+      "id": "3.2.2-001",
+      "modulo": 3,
+      "tema": "3.2",
+      "concepto": "Distancia lateral ciclistas",
+      "dificultad": 2,
+      "frecuencia": "muy_alta",
+      "pregunta": "¿Cuál es la distancia lateral mínima que debe mantener al adelantar a un ciclista?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "1 metro", "correcta": false},
+        {"letra": "B", "texto": "1,5 metros", "correcta": true},
+        {"letra": "C", "texto": "2 metros", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Al adelantar a un ciclista, debe mantener una distancia lateral mínima de 1,5 metros. Si es necesario para garantizar esta distancia, puede invadir el carril contrario incluso si hay línea continua.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["ciclistas", "adelantamiento", "distancia"]
+    },
+    {
+      "id": "2.9.3-001",
+      "modulo": 2,
+      "tema": "2.9",
+      "concepto": "Luz antiniebla trasera",
+      "dificultad": 4,
+      "frecuencia": "alta",
+      "pregunta": "¿Cuándo está permitido usar la luz antiniebla trasera?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Cuando llueve intensamente", "correcta": false},
+        {"letra": "B", "texto": "Solo en caso de niebla densa, nevada intensa o nubes de polvo o humo", "correcta": true},
+        {"letra": "C", "texto": "Siempre que la visibilidad sea reducida", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La luz antiniebla trasera solo debe utilizarse en caso de niebla densa, nevada intensa o nubes de polvo o humo. NO debe usarse cuando llueve, ya que puede deslumbrar a los conductores que circulan detrás.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["luces", "antiniebla", "condiciones_adversas"]
+    },
+    {
+      "id": "4.2.2-001",
+      "modulo": 4,
+      "tema": "4.2",
+      "concepto": "Adelantar por la derecha",
+      "dificultad": 4,
+      "frecuencia": "muy_alta",
+      "pregunta": "¿En qué casos está permitido adelantar por la derecha?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Nunca está permitido adelantar por la derecha", "correcta": false},
+        {"letra": "B", "texto": "Cuando el vehículo que se va a adelantar ha indicado su propósito de girar a la izquierda, o en carriles de poblado con velocidad ≤50 km/h", "correcta": true},
+        {"letra": "C", "texto": "Solo en autopistas y autovías", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Está permitido adelantar por la derecha cuando: 1) El vehículo a adelantar indica que va a girar a la izquierda, o 2) En vías urbanas con varios carriles y velocidad máxima de 50 km/h o inferior.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["adelantamiento", "derecha", "excepciones"]
+    },
+    {
+      "id": "6.1.1-001",
+      "modulo": 6,
+      "tema": "6.1",
+      "concepto": "Sistema retención infantil",
+      "dificultad": 3,
+      "frecuencia": "alta",
+      "pregunta": "¿Hasta qué altura es obligatorio utilizar un sistema de retención infantil (SRI)?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Hasta los 12 años de edad", "correcta": false},
+        {"letra": "B", "texto": "Hasta 135 cm de altura", "correcta": true},
+        {"letra": "C", "texto": "Hasta 150 cm de altura", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Es obligatorio utilizar sistemas de retención infantil hasta que el menor alcance los 135 cm de ALTURA, no por edad. Los menores de 135 cm deben viajar en los asientos traseros.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["seguridad", "menores", "SRI"]
+    },
+    {
+      "id": "8.1.3-001",
+      "modulo": 8,
+      "tema": "8.1",
+      "concepto": "Teléfono emergencias",
+      "dificultad": 1,
+      "frecuencia": "media",
+      "pregunta": "¿Cuál es el teléfono único de emergencias en España y la Unión Europea?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "112", "correcta": true},
+        {"letra": "B", "texto": "911", "correcta": false},
+        {"letra": "C", "texto": "061", "correcta": false}
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "El 112 es el número único de emergencias en España y toda la Unión Europea. Es gratuito y funciona las 24 horas.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["emergencias", "telefono", "112"]
+    },
+    {
+      "id": "3.1.3-001",
+      "modulo": 3,
+      "tema": "3.1",
+      "concepto": "Velocidad excesiva vs inadecuada",
+      "dificultad": 5,
+      "frecuencia": "alta",
+      "pregunta": "¿Cuál es la diferencia entre velocidad excesiva y velocidad inadecuada?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Son sinónimos, significan lo mismo", "correcta": false},
+        {"letra": "B", "texto": "Excesiva: superar el límite legal. Inadecuada: no adaptada a las circunstancias aunque sea legal", "correcta": true},
+        {"letra": "C", "texto": "Excesiva: superar en más de 20 km/h. Inadecuada: superar en menos de 20 km/h", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Velocidad EXCESIVA es superar el límite legal establecido. Velocidad INADECUADA es circular a una velocidad legal pero no adaptada a las circunstancias (niebla, lluvia, curvas, etc.).",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["velocidad", "conceptos", "trampa"]
+    },
+    {
+      "id": "2.4.2-001",
+      "modulo": 2,
+      "tema": "2.4",
+      "concepto": "Señal prohibido adelantar",
+      "dificultad": 3,
+      "frecuencia": "alta",
+      "pregunta": "Si ve una señal de 'Prohibido adelantar', ¿puede adelantar a una bicicleta?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "No, está prohibido adelantar a cualquier vehículo", "correcta": false},
+        {"letra": "B", "texto": "Sí, la señal solo prohíbe adelantar a vehículos de motor", "correcta": true},
+        {"letra": "C", "texto": "Solo si la bicicleta circula a menos de 25 km/h", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La señal R-305 'Prohibido adelantar' prohíbe adelantar a vehículos de motor. Las bicicletas NO son vehículos de motor, por lo que SÍ se pueden adelantar.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["senales", "adelantamiento", "bicicletas"]
+    },
+    {
+      "id": "10.1.1-001",
+      "modulo": 10,
+      "tema": "10.1",
+      "concepto": "Puntos conductor novel",
+      "dificultad": 2,
+      "frecuencia": "media",
+      "pregunta": "¿Con cuántos puntos empieza un conductor novel en su permiso de conducir?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "12 puntos", "correcta": false},
+        {"letra": "B", "texto": "8 puntos", "correcta": true},
+        {"letra": "C", "texto": "15 puntos", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Los conductores noveles (menos de 2 años desde la obtención del permiso) comienzan con 8 puntos. Tras 2 años sin infracciones graves, pasan a tener 12 puntos. El máximo acumulable es 15 puntos.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["puntos", "novel", "permiso"]
+    },
+    {
+      "id": "2.4.3-001",
+      "modulo": 2,
+      "tema": "2.4",
+      "concepto": "Prohibido estacionar",
+      "dificultad": 4,
+      "frecuencia": "alta",
+      "pregunta": "Si ve la señal R-308 'Prohibido estacionar', ¿puede detenerse brevemente para dejar a un pasajero?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "No, está prohibido detenerse", "correcta": false},
+        {"letra": "B", "texto": "Sí, porque parada y estacionamiento son cosas diferentes", "correcta": true},
+        {"letra": "C", "texto": "Solo si deja las luces de emergencia", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La señal R-308 prohíbe ESTACIONAR, pero NO prohíbe PARAR. La parada (menos de 2 minutos sin alejarse) sí está permitida donde hay esta señal.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["senales", "estacionar", "parada"]
+    },
+    {
+      "id": "5.3.1-001",
+      "modulo": 5,
+      "tema": "5.3",
+      "concepto": "Velocidad máxima VMP",
+      "dificultad": 2,
+      "frecuencia": "media",
+      "pregunta": "¿Cuál es la velocidad máxima que puede alcanzar un Vehículo de Movilidad Personal (VMP/patinete eléctrico)?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "25 km/h", "correcta": true},
+        {"letra": "B", "texto": "30 km/h", "correcta": false},
+        {"letra": "C", "texto": "45 km/h", "correcta": false}
+      ],
+      "respuesta_correcta": "A",
+      "explicacion": "Los VMP (patinetes eléctricos) no pueden superar los 25 km/h por construcción. Además, tienen prohibido circular por aceras, autopistas, autovías y carreteras interurbanas.",
+      "es_trampa": false,
+      "actualizado": true,
+      "tags": ["VMP", "patinete", "velocidad"]
+    },
+    {
+      "id": "6.4.1-001",
+      "modulo": 6,
+      "tema": "6.4",
+      "concepto": "Periodicidad ITV",
+      "dificultad": 3,
+      "frecuencia": "media",
+      "pregunta": "Un turismo de 7 años de antigüedad, ¿cada cuánto tiempo debe pasar la ITV?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Cada año", "correcta": false},
+        {"letra": "B", "texto": "Cada 2 años", "correcta": true},
+        {"letra": "C", "texto": "Cada 3 años", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Para turismos: de 0-4 años no necesita ITV, de 4-10 años cada 2 años, y a partir de 10 años anualmente. Un vehículo de 7 años está en el tramo de cada 2 años.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["ITV", "periodicidad", "turismo"]
+    },
+    {
+      "id": "7.4.1-001",
+      "modulo": 7,
+      "tema": "7.4",
+      "concepto": "Prevención fatiga",
+      "dificultad": 2,
+      "frecuencia": "alta",
+      "pregunta": "¿Con qué frecuencia se recomienda hacer pausas durante un viaje largo?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Cada 4 horas o 400 km", "correcta": false},
+        {"letra": "B", "texto": "Cada 2 horas o 200 km", "correcta": true},
+        {"letra": "C", "texto": "Cada hora o 100 km", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Se recomienda hacer pausas cada 2 horas o 200 km de conducción para prevenir la fatiga. No se debe conducir más de 8 horas al día.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["fatiga", "descanso", "seguridad"]
+    },
+    {
+      "id": "1.3.2-001",
+      "modulo": 1,
+      "tema": "1.3",
+      "concepto": "Motos 125cc con permiso B",
+      "dificultad": 3,
+      "frecuencia": "media",
+      "pregunta": "¿Qué antigüedad mínima del permiso B se requiere para conducir motocicletas de hasta 125cc?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "2 años", "correcta": false},
+        {"letra": "B", "texto": "3 años", "correcta": true},
+        {"letra": "C", "texto": "1 año", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Para conducir motos de hasta 125cc con el permiso B, se necesitan 3 años de antigüedad del permiso. Además, esta autorización SOLO es válida en España, no en otros países de la UE.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["permiso_B", "moto", "125cc"]
+    },
+    {
+      "id": "2.8.2-001",
+      "modulo": 2,
+      "tema": "2.8",
+      "concepto": "Paneles de mensaje variable",
+      "dificultad": 3,
+      "frecuencia": "media",
+      "pregunta": "Las indicaciones de los paneles de mensaje variable en las carreteras son:",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Solo informativas, no obligatorias", "correcta": false},
+        {"letra": "B", "texto": "Obligatorias", "correcta": true},
+        {"letra": "C", "texto": "Recomendaciones que se pueden ignorar", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Las indicaciones de los paneles de mensaje variable son OBLIGATORIAS, no son meras recomendaciones. Tienen la misma validez que cualquier otra señal de tráfico.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["senales", "paneles", "obligatorio"]
+    },
+    {
+      "id": "2.3.1-001",
+      "modulo": 2,
+      "tema": "2.3",
+      "concepto": "Semáforo amarillo fijo",
+      "dificultad": 3,
+      "frecuencia": "alta",
+      "pregunta": "Cuando el semáforo muestra luz amarilla fija, ¿qué debe hacer?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Acelerar para pasar antes de que se ponga rojo", "correcta": false},
+        {"letra": "B", "texto": "Detenerse si puede hacerlo con seguridad", "correcta": true},
+        {"letra": "C", "texto": "Pasar sin reducir la velocidad", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "La luz amarilla fija indica que debe detenerse si puede hacerlo con seguridad. Solo si no puede detenerse de forma segura, debe pasar con precaución.",
+      "es_trampa": true,
+      "actualizado": false,
+      "tags": ["semaforo", "amarillo", "detenerse"]
+    },
+    {
+      "id": "8.1.2-001",
+      "modulo": 8,
+      "tema": "8.1",
+      "concepto": "Triángulos de emergencia",
+      "dificultad": 3,
+      "frecuencia": "alta",
+      "pregunta": "¿A qué distancia mínima debe colocar el triángulo de emergencia de su vehículo?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "25 metros", "correcta": false},
+        {"letra": "B", "texto": "50 metros", "correcta": true},
+        {"letra": "C", "texto": "100 metros", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "El triángulo debe colocarse a un mínimo de 50 metros del vehículo y debe ser visible desde al menos 100 metros. En vías de doble sentido o autopistas, hay que colocar uno delante y otro detrás.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["emergencia", "triangulo", "distancia"]
+    },
+    {
+      "id": "7.2.4-001",
+      "modulo": 7,
+      "tema": "7.2",
+      "concepto": "Negarse a prueba alcoholemia",
+      "dificultad": 3,
+      "frecuencia": "media",
+      "pregunta": "¿Qué ocurre si se niega a realizar la prueba de alcoholemia?",
+      "imagen": null,
+      "opciones": [
+        {"letra": "A", "texto": "Solo una multa administrativa", "correcta": false},
+        {"letra": "B", "texto": "Es un delito con las mismas consecuencias que dar positivo muy alto", "correcta": true},
+        {"letra": "C", "texto": "Le retiran el permiso temporalmente pero no hay sanción penal", "correcta": false}
+      ],
+      "respuesta_correcta": "B",
+      "explicacion": "Negarse a realizar las pruebas de alcoholemia o detección de drogas constituye un DELITO penal, con las mismas consecuencias que dar un resultado muy alto en dichas pruebas.",
+      "es_trampa": false,
+      "actualizado": false,
+      "tags": ["alcohol", "delito", "prueba"]
+    }
+  ]
+}
