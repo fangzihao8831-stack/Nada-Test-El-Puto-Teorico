@@ -81,6 +81,90 @@ Plataforma web para preparar el examen teórico del permiso B de conducir (DGT, 
 | Dato concreto | ~5% | "¿A qué distancia de una intersección no se puede estacionar?" |
 | Trampa absolutos | ~10% | Opciones con "exclusivamente", "en ningún caso" |
 
+## Índice de Temas (12 temas, 58 subtemas)
+
+### 1. El Conductor y el Permiso
+- El permiso de conducir
+- Documentación
+- Permiso por puntos
+
+### 2. El Vehículo
+- El vehículo
+- ITV
+- El seguro
+- Vehículos eléctricos e híbridos
+
+### 3. Carga, Pasajeros y Remolques
+- La carga
+- Transporte de personas y animales
+- Remolques
+
+### 4. La Vía y sus Usuarios
+- La vía pública
+- Usuarios vulnerables
+- Nuevas señales y tipologías de vía
+- Ángulos muertos y visibilidad
+
+### 5. Circulación y Velocidad
+- Normas generales de circulación
+- Velocidad
+- Distancia de seguridad
+- Marcha atrás
+
+### 6. Prioridad y Maniobras
+- Prioridad de paso
+- Incorporación a la circulación
+- Adelantamientos
+- Intersecciones
+- Parada y estacionamiento
+
+### 7. Señalización
+- Alumbrado
+- Señales acústicas
+- Jerarquía de señales
+- Señales de los agentes
+- Semáforos
+- Señales verticales
+- Marcas viales
+- Señalización circunstancial
+
+### 8. Situaciones Especiales
+- Autopistas y autovías
+- Túneles
+- Pasos a nivel
+- Condiciones adversas
+- Preparación y desarrollo del viaje
+- Conducción en grupo y situaciones especiales
+
+### 9. Seguridad y Tecnología
+- Seguridad activa
+- Seguridad pasiva
+- Sistemas ADAS
+- Comprobaciones y mantenimiento
+- Conducción autónoma y automatizada
+
+### 10. Factores de Riesgo
+- Alcohol
+- Drogas
+- Medicamentos
+- Fatiga y sueño
+- Distracciones
+- Velocidad como factor de riesgo
+- Estados emocionales
+
+### 11. Accidentes, Emergencias y Medio Ambiente
+- Conducta PAS
+- Primeros auxilios
+- Equipamiento de emergencia
+- Conducción eficiente
+- Medio ambiente
+
+### 12. Infracciones y Sanciones
+- Infracciones y sanciones
+- Responsabilidad del conductor
+- Inmovilización y retirada de vehículos
+- Procedimiento sancionador
+
 ## Estructura del Proyecto
 
 ```
