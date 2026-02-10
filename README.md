@@ -87,7 +87,7 @@ Plataforma web para preparar el examen teórico del permiso B de conducir (DGT, 
 ├── .claude/commands/        # Skills de Claude Code
 │   └── generar-preguntas.md # Generador de preguntas DGT
 ├── content/
-│   ├── content-structure.json  # 12 temas, 50 subtemas
+│   ├── content-structure.json  # 12 temas, 58 subtemas
 │   └── preguntas/              # Preguntas generadas (JSON)
 ├── requirements.md          # Requisitos del producto
 ├── technical.md             # Especificación técnica

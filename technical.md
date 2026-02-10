@@ -218,7 +218,7 @@ CREATE TABLE temas (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Subtemas (50 subtemas)
+-- Subtemas (58 subtemas)
 CREATE TABLE subtemas (
   id TEXT PRIMARY KEY,           -- subtema_01, subtema_02...
   tema_id TEXT REFERENCES temas(id) NOT NULL,

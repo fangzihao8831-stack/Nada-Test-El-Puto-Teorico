@@ -128,7 +128,7 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 ## Archivos de Referencia
 
 - `temario_permiso_b_v3.md` - Temario completo (fuente de verdad)
-- `content/content-structure.json` - 12 temas, 50 subtemas
+- `content/content-structure.json` - 12 temas, 58 subtemas
 - `content/preguntas/` - Preguntas generadas (JSON)
 - `.claude/commands/generar-preguntas.md` - Skill del generador
 

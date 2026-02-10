@@ -1,7 +1,7 @@
 # Nadatest - Tareas por Fase
 
 ## Fase 0: Preparacion de Contenido
-- [ ] 0.1 Crear content-structure.json con 12 temas y 50 subtemas
+- [ ] 0.1 Crear content-structure.json con 12 temas y 58 subtemas
 - [ ] 0.2 Crear Skill 1: Generador de preguntas (`/generar-preguntas`)
 - [ ] 0.3 Crear Skill 2: Extractor de webs
 - [ ] 0.4 Crear Skill 3: Validador
