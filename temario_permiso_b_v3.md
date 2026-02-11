@@ -1033,6 +1033,7 @@ Ejemplo: **205/55 R 16 91 V**
 - En plazas para personas con movilidad reducida (requieren tarjeta PMR visible)
 - A menos de 5 metros de una esquina/intersección
 - A menos de 5 metros de un paso de peatones
+- A menos de 15 metros de una parada de autobús o taxi señalizada
 - Donde se obstaculice la circulación
 
 ## 17.4 Forma de estacionar
@@ -2144,6 +2145,13 @@ Todos los vehículos nuevos matriculados desde el **6 de julio de 2024** deben l
 
 **La ITV revisa el sistema eCall desde mayo de 2023, y otros sistemas ADAS progresivamente.**
 
+### Reglas generales sobre ADAS (muy preguntado)
+- Los ADAS son **ayudas**, NO sustituyen al conductor en ningún caso
+- El conductor **siempre** debe mantener el control del vehículo
+- Los ADAS **pueden desconectarse** en determinados momentos; conducir sin ellos es responsabilidad del conductor
+- Si un sistema falla o se desactiva, el conductor debe estar preparado para actuar con la misma seguridad
+- **En el examen práctico**: solo se permiten **AEB** (frenada automática emergencia) y **Hill Holder** (asistente arranque en pendiente); los demás deben estar desactivados
+
 ## 34.1 Control de velocidad
 
 ### Control de crucero (convencional)
@@ -2175,6 +2183,8 @@ Todos los vehículos nuevos matriculados desde el **6 de julio de 2024** deben l
 ### Detector de ángulo muerto (BSM)
 - Avisa si hay vehículo en el ángulo muerto
 - Luz en el retrovisor
+- **No interviene en la conducción** del vehículo en ningún caso (solo informa); el conductor mantiene el control absoluto
+- No exime de girar brevemente la cabeza para comprobar el ángulo muerto
 
 ### Frenada automática de emergencia (AEB)
 - Detecta obstáculos
@@ -2183,7 +2193,9 @@ Todos los vehículos nuevos matriculados desde el **6 de julio de 2024** deben l
 - **Desde julio 2026**: obligatorio que detecte también peatones y ciclistas
 
 ### Alerta de tráfico cruzado trasero (RCTA)
-- Avisa de vehículos al salir de aparcamiento marcha atrás
+- Avisa de vehículos que se aproximan lateralmente al salir de aparcamiento marcha atrás
+- Puede intervenir en los frenos del vehículo a velocidad inferior a **15 km/h**
+- Solo informa y actúa a muy baja velocidad; no sustituye la observación del conductor
 
 ## 34.4 Visión y aparcamiento
 
@@ -2215,6 +2227,12 @@ Todos los vehículos nuevos matriculados desde el **6 de julio de 2024** deben l
 ### Reconocimiento de señales de tráfico
 - Lee señales y las muestra en el cuadro
 - Avisa de límites de velocidad
+
+### Asistente de arranque en pendiente (Hill Holder / Hill Start Assist)
+- Mantiene el freno automáticamente al arrancar en una pendiente
+- Evita que el vehículo se desplace hacia atrás al soltar el freno para pisar el embrague
+- Se desactiva al pisar el acelerador o pasados unos segundos
+- **Permitido en el examen práctico** de conducir (junto con el sistema AEB)
 
 ### Asistente de luces largas
 - Cambia automáticamente de largas a cortas
@@ -3233,6 +3251,8 @@ Los agentes de la autoridad pueden inmovilizar el vehículo cuando:
 - **ISA, AEB, LDW**: son AYUDAS, no sustitutos de la atención del conductor
 - Nunca confiar plenamente en los sistemas automáticos
 - Si un sistema falla o se desactiva: el conductor debe estar preparado para actuar
+- Los sistemas ADAS **pueden desconectarse** en determinados momentos, pero es responsabilidad del conductor conducir sin ellos con la misma seguridad
+- **En el examen práctico** de conducir: solo están permitidos los sistemas **AEB (frenada automática de emergencia)** y **Hill Holder (asistente de arranque en pendiente)**; los demás ADAS deben estar desactivados
 
 ---
 

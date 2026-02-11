@@ -1,0 +1,369 @@
+{
+  "source": "DGT Official Practice Exam",
+  "url": "https://sedeclave.dgt.gob.es/WEB_AUTO-6/examen/",
+  "type": "Permiso B",
+  "num_preguntas": 30,
+  "extracted_date": "2026-02-10",
+  "preguntas": [
+    {
+      "num": 1,
+      "enunciado": "El tráfico está congestionado y prevé que se va a quedar detenido sobre el paso para peatones; ¿debe entrar en el paso?",
+      "opciones": [
+        "Sí.",
+        "No, porque se obstaculiza el paso a los peatones.",
+        "Solo si no hay ningún peatón con intención de cruzar por el paso."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/04_CIRCULACION/PASO_PARA_PEATONES/CA1045.JPG",
+      "imgCategory": "04_CIRCULACION/PASO_PARA_PEATONES"
+    },
+    {
+      "num": 2,
+      "enunciado": "¿De qué manera se debe acondicionar siempre la carga transportada en la baca de un turismo?",
+      "opciones": [
+        "De tal forma que no comprometa la estabilidad del vehículo.",
+        "Cubriéndola totalmente con una lona o un plástico.",
+        "Ocultando parcialmente los dispositivos de señalización luminosa."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/17_TRANSPORTE/TURISMOS/MT49256.jpg",
+      "imgCategory": "17_TRANSPORTE/TURISMOS"
+    },
+    {
+      "num": 3,
+      "enunciado": "En una zona de obras se encuentra un panel direccional provisional, ¿qué indica?",
+      "opciones": [
+        "Prohíbe el paso e informa sobre el sentido de la circulación.",
+        "La presencia de una curva y su dirección.",
+        "Advierte del peligro por obras."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/14_SENALES_EN_CIRCULACION/BALIZAMIENTO/FV5433.jpg",
+      "imgCategory": "14_SENALES_EN_CIRCULACION/BALIZAMIENTO"
+    },
+    {
+      "num": 4,
+      "enunciado": "Si sufre una enfermedad crónica, ¿qué es aconsejable hacer para disminuir el riesgo de sufrir un accidente?",
+      "opciones": [
+        "Conocer los posibles efectos secundarios de los medicamentos que consume.",
+        "Tomar los medicamentos con alcohol para combatir sus efectos secundarios.",
+        "Suspender la medicación siempre que vaya a conducir un vehículo."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/05_CONDUCTOR_FACTOR_HUMANO/MEDICAMENTOS/MT16462.jpg",
+      "imgCategory": "05_CONDUCTOR_FACTOR_HUMANO/MEDICAMENTOS"
+    },
+    {
+      "num": 5,
+      "enunciado": "¿De qué depende la distancia de detención?",
+      "opciones": [
+        "Del tipo de vehículo, solamente.",
+        "De la velocidad, del tiempo de reacción y de la distancia de frenado.",
+        "De la velocidad, solamente."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/03_CENTROS_COLABORADORES/FORMACION/MT42661.jpg",
+      "imgCategory": "03_CENTROS_COLABORADORES/FORMACION"
+    },
+    {
+      "num": 6,
+      "enunciado": "¿Es aconsejable conducir un turismo calzado con unas chanclas?",
+      "opciones": [
+        "Sí, porque al no sujetar el pie, es más fácil ejercer la presión correcta sobre los pedales.",
+        "No, porque podrían caerse y dificultar el manejo de los pedales.",
+        "Sí, porque permiten un manejo más rápido y seguro de los pedales."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/22-RECURSOS/MT41960.jpg",
+      "imgCategory": "22-RECURSOS"
+    },
+    {
+      "num": 7,
+      "enunciado": "Un turismo que circula entre la puesta y la salida del sol, ¿debe llevar iluminadas las placas de matrícula?",
+      "opciones": [
+        "Sí, tanto la placa delantera como la trasera.",
+        "Solo la placa trasera.",
+        "Solo la placa delantera."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/08_LUCES_Y_ADVERTENCIAS_OPTICAS/LUCES/FV5321.JPG",
+      "imgCategory": "08_LUCES_Y_ADVERTENCIAS_OPTICAS/LUCES"
+    },
+    {
+      "num": 8,
+      "enunciado": "Si un vehículo ha sufrido una reforma de importancia, ¿debe pasar una inspección técnica?",
+      "opciones": [
+        "Sí.",
+        "No.",
+        "Solo si han trascurrido más de dos años desde la última inspección periódica."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/16_MANTENIMIENTO/ITV/FV0454.jpg",
+      "imgCategory": "16_MANTENIMIENTO/ITV"
+    },
+    {
+      "num": 9,
+      "enunciado": "Esta señal indica la dirección y sentido que los vehículos...",
+      "opciones": [
+        "pueden seguir de forma opcional.",
+        "tienen prohibido seguir.",
+        "tienen la obligación de seguir."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/13_SENALES_CATALOGO/VERTICALES/OBLIGACION/R-400b.jpg",
+      "imgCategory": "13_SENALES_CATALOGO/VERTICALES/OBLIGACION"
+    },
+    {
+      "num": 10,
+      "enunciado": "En vías interurbanas, ¿cuáles son las infracciones que cometen con mayor frecuencia los conductores de furgonetas implicados en accidentes con víctimas?",
+      "opciones": [
+        "No respetar la distancia de seguridad y circular a velocidad inadecuada.",
+        "Adelantar de forma antirreglamentaria y circular por lugar prohibido.",
+        "Invadir parcialmente el sentido contrario y exceso o mala colocación de la carga."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/19_VEHICULOS_TIPOS/FURGON_-_FURGONETA/FV5476.jpg",
+      "imgCategory": "19_VEHICULOS_TIPOS/FURGON_-_FURGONETA"
+    },
+    {
+      "num": 11,
+      "enunciado": "¿Puede incorporarse a la circulación dando marcha atrás invadiendo una intersección?",
+      "opciones": [
+        "No, marcha atrás no se puede invadir una intersección.",
+        "Sí, pero a una velocidad reducida que permita detenerse en caso de peligro.",
+        "Sí, cuando el recorrido no sea superior a 15 metros."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/09_MANIOBRAS/MARCHA_ATRAS/MT20912.jpg",
+      "imgCategory": "09_MANIOBRAS/MARCHA_ATRAS"
+    },
+    {
+      "num": 12,
+      "enunciado": "La intención de efectuar una maniobra debe indicarse...",
+      "opciones": [
+        "siempre con las señales luminosas.",
+        "siempre con el brazo.",
+        "con las señales luminosas y, en su defecto, con el brazo."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/09_MANIOBRAS/INCORPORACIONES/FV3814.jpg",
+      "imgCategory": "09_MANIOBRAS/INCORPORACIONES"
+    },
+    {
+      "num": 13,
+      "enunciado": "El cruce de un paso a nivel debe realizarse...",
+      "opciones": [
+        "muy rápidamente para no coincidir con el tren.",
+        "sin demora y tras comprobar que no hay riesgo de quedarse detenido en la vía del tren.",
+        "muy despacio y con la luz de cruce encendida para que nos vea el conductor del tren."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/04_CIRCULACION/PASOS_A_NIVEL/FV0704.jpg",
+      "imgCategory": "04_CIRCULACION/PASOS_A_NIVEL"
+    },
+    {
+      "num": 14,
+      "enunciado": "El estado de los neumáticos, ¿influye en la distancia de frenado?",
+      "opciones": [
+        "Sí; los neumáticos en buen estado se agarran mejor al suelo y el vehículo frena mejor.",
+        "Solo influye cuando la profundidad del dibujo es inferior a 1,6 milímetros.",
+        "No; la distancia de frenado depende solo del estado de los frenos."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/16_MANTENIMIENTO/TALLER/MT46609.jpg",
+      "imgCategory": "16_MANTENIMIENTO/TALLER"
+    },
+    {
+      "num": 15,
+      "enunciado": "Al estacionar un vehículo con remolque en una pendiente ascendente, si no dispone de calzos, ¿qué debe hacer?",
+      "opciones": [
+        "Apoyar una de las ruedas delanteras en el bordillo, orientada hacia el centro de la calzada.",
+        "Utilizar como calzos elementos naturales, como piedras o maderos.",
+        "Es suficiente con dejar engranada la marcha atrás o la primera velocidad."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/19_VEHICULOS_TIPOS/REMOLQUES/CA1184.jpg",
+      "imgCategory": "19_VEHICULOS_TIPOS/REMOLQUES"
+    },
+    {
+      "num": 16,
+      "enunciado": "En condiciones de mala visibilidad, ¿qué debe hacer un conductor ante la presencia de ciclistas en la vía?",
+      "opciones": [
+        "Hacer señales acústicas al llegar a su altura para advertir de su presencia.",
+        "Circular lo más cerca posible del borde derecho de la calzada al adelantarles.",
+        "Extremar la precaución para reducir el riesgo de accidente."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/07_FACTORES_CLIMATOLOGICOS_Y_AMBIENTALES/NIEBLA/MT36868.jpg",
+      "imgCategory": "07_FACTORES_CLIMATOLOGICOS_Y_AMBIENTALES/NIEBLA"
+    },
+    {
+      "num": 17,
+      "enunciado": "En este cruce, ¿qué indican las flechas del carril izquierdo?",
+      "opciones": [
+        "Me informan, no me obligan.",
+        "Me obligan a girar a la izquierda o continuar recto.",
+        "Me obligan a girar a la izquierda."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/04_CIRCULACION/INTERSECCIONES/CA0008.JPG",
+      "imgCategory": "04_CIRCULACION/INTERSECCIONES"
+    },
+    {
+      "num": 18,
+      "enunciado": "El conductor, ¿está obligado a cuidar que el resto de pasajeros mantengan una posición adecuada en el vehículo?",
+      "opciones": [
+        "No.",
+        "Solo si el vehículo es de transporte colectivo de personas.",
+        "Sí."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/17_TRANSPORTE/TURISMOS/MT39610.jpg",
+      "imgCategory": "17_TRANSPORTE/TURISMOS"
+    },
+    {
+      "num": 19,
+      "enunciado": "Cuando el casco no tiene pantalla de protección, ¿es conveniente utilizar gafas para protegerse los ojos?",
+      "opciones": [
+        "No solo es conveniente, sino que además es obligatorio.",
+        "Sí.",
+        "No."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/19_VEHICULOS_TIPOS/MOTOCICLETAS/FV1357.jpg",
+      "imgCategory": "19_VEHICULOS_TIPOS/MOTOCICLETAS"
+    },
+    {
+      "num": 20,
+      "enunciado": "¿Qué obligación tiene si observa que otro vehículo tiene el propósito de adelantarle utilizando el carril izquierdo contiguo al suyo?",
+      "opciones": [
+        "Disminuir la velocidad.",
+        "Indicarle con el intermitente derecho que puede adelantar con seguridad.",
+        "Ceñirse al borde derecho de la calzada."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/20_VEHICULOS_PARTES/ESPEJOS/PX0025.jpg",
+      "imgCategory": "20_VEHICULOS_PARTES/ESPEJOS"
+    },
+    {
+      "num": 21,
+      "enunciado": "El uso adecuado del casco implica que la correa de sujeción...",
+      "opciones": [
+        "no debe abrocharse.",
+        "debe llevarse correctamente abrochada, para que el casco cumpla eficazmente su función.",
+        "puede llevarse desabrochada en vía urbana."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/12_SEGURIDAD_ACTIVA_Y_PASIVA/CASCO/MT47253.jpg",
+      "imgCategory": "12_SEGURIDAD_ACTIVA_Y_PASIVA/CASCO"
+    },
+    {
+      "num": 22,
+      "enunciado": "En esta vía, ¿a qué velocidad máxima le está permitido circular a un turismo con remolque?",
+      "opciones": [
+        "A 80 km/h.",
+        "A 100 km/h.",
+        "A 90 km/h."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/04_CIRCULACION/CARRETERA/CA0588.jpg",
+      "imgCategory": "04_CIRCULACION/CARRETERA"
+    },
+    {
+      "num": 23,
+      "enunciado": "Los chalecos reflectantes de alta visibilidad, ¿deben estar homologados?",
+      "opciones": [
+        "Solo si son de color naranja; los amarillos no necesitan estar homologados.",
+        "Sí.",
+        "No es obligatorio, pero sí recomendable."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/01_ACCIDENTES_-_EMERGENCIAS/AVERIAS/MT50025.jpg",
+      "imgCategory": "01_ACCIDENTES_-_EMERGENCIAS/AVERIAS"
+    },
+    {
+      "num": 24,
+      "enunciado": "Las motocicletas con más de cinco años de antigüedad deben pasar la inspección técnica periódica (ITV)...",
+      "opciones": [
+        "cada dos años.",
+        "cada año.",
+        "cada cinco años."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/16_MANTENIMIENTO/ITV/MT35098.jpg",
+      "imgCategory": "16_MANTENIMIENTO/ITV"
+    },
+    {
+      "num": 25,
+      "enunciado": "Mirar un cartel publicitario situado en el entorno de la vía, ¿puede distraer al conductor de un vehículo?",
+      "opciones": [
+        "Solo si se circula de noche y el cartel está iluminado.",
+        "Sí.",
+        "No."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/05_CONDUCTOR_FACTOR_HUMANO/DISTRACCION/MT49274.jpg",
+      "imgCategory": "05_CONDUCTOR_FACTOR_HUMANO/DISTRACCION"
+    },
+    {
+      "num": 26,
+      "enunciado": "En una travesía de dos carriles para cada sentido, ¿puede circular por el carril izquierdo del sentido de su marcha para girar a la izquierda?",
+      "opciones": [
+        "Sí, porque en la travesía se circula igual que en las vías urbanas.",
+        "No, porque en la travesía se debe circular siempre por la derecha.",
+        "Solo si se va a adelantar, ya que la travesía es una vía interurbana."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/04_CIRCULACION/URBANA/VARIOS_CARRILES/FV6426.JPG",
+      "imgCategory": "04_CIRCULACION/URBANA/VARIOS_CARRILES"
+    },
+    {
+      "num": 27,
+      "enunciado": "El consumo de alcohol, ¿afecta a la capacidad visual del conductor?",
+      "opciones": [
+        "Sí, aumenta su capacidad visual.",
+        "No, no se ve afectada su capacidad visual.",
+        "Sí, disminuye su capacidad visual."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/05_CONDUCTOR_FACTOR_HUMANO/ALCOHOL/FV1703.jpg",
+      "imgCategory": "05_CONDUCTOR_FACTOR_HUMANO/ALCOHOL"
+    },
+    {
+      "num": 28,
+      "enunciado": "La señal prohíbe...",
+      "opciones": [
+        "parar y estacionar la primera quincena del mes.",
+        "estacionar la primera quincena del mes.",
+        "estacionar durante un tiempo superior a 1 hora y 15 minutos."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/13_SENALES_CATALOGO/VERTICALES/OTRAS_PROHIBICION_RESTRICCION/R-308c.jpg",
+      "imgCategory": "13_SENALES_CATALOGO/VERTICALES/OTRAS_PROHIBICION_RESTRICCION"
+    },
+    {
+      "num": 29,
+      "enunciado": "Un agente le hace señas moviendo el brazo alternativamente de arriba abajo, ¿qué debe hacer?",
+      "opciones": [
+        "Disminuir la velocidad.",
+        "Girar hacia el lado que indica el brazo.",
+        "Detenerse inmediatamente a la derecha."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/13_SENALES_CATALOGO/AGENTES/CA0790.jpg",
+      "imgCategory": "13_SENALES_CATALOGO/AGENTES"
+    },
+    {
+      "num": 30,
+      "enunciado": "Para prevenir la aparición de la fatiga es aconsejable parar a descansar durante 20 o 30 minutos...",
+      "opciones": [
+        "cada vez que encontremos en nuestro recorrido un área de descanso.",
+        "cada 2 horas o cada 200 kilómetros de conducción.",
+        "cada 4 horas o cada 400 kilómetros de conducción."
+      ],
+      "hasImage": true,
+      "imgSrc": "https://sedeclave.dgt.gob.es/EXAM/WEB_AUTO6/IMAGENES/14_SENALES_EN_CIRCULACION/VERTICALES/10_SERVICIO/FV4389.jpg",
+      "imgCategory": "14_SENALES_EN_CIRCULACION/VERTICALES/10_SERVICIO"
+    }
+  ]
+}

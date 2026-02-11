@@ -3,28 +3,30 @@
 ## PROXIMA SESION (prioridad)
 
 ### A. Analizar formato real de preguntas DGT
-- [ ] Usar Playwright para revisar 30 tests de Todotest (seccion examen DGT: /tests/examendin.asp)
-- [ ] Cada test tiene 30 preguntas (URL: test.asp?tip=1&t=XXX, donde t=116 es test 001)
-- [ ] Contar por cada test: preguntas con imagen, preguntas de senales, situacionales, directas, completar, trampa
-- [ ] Calcular la proporcion real sobre 900 preguntas (30 tests x 30 preguntas)
-- [ ] Analizar formato: longitud enunciados, longitud opciones, estilo de redaccion
-- [ ] Actualizar generar-preguntas.md con las proporciones y formato corregidos
+- [x] Extraer 2.700 preguntas de 90 tests Todotest (content/todotest_3000.json)
+- [x] Extraer 30 preguntas del examen oficial DGT (content/dgt_oficial_exam.json)
+- [x] Analizar distribucion de tipos: directa 40%, situacional 27%, completar 23%, dato 10%
+- [x] Analizar palabras trampa con frecuencias (siempre 254, solamente 117, nunca 37, etc.)
+- [x] Analizar patrones de inicio de pregunta (75% afirmacion, 25% pregunta)
+- [x] Analizar datos numericos testados (velocidades, alcohol, distancias, tiempos)
+- [x] Actualizar generar-preguntas.md con proporciones y formato corregidos
+- [x] Actualizar temario con datos faltantes (Hill Holder, RCTA 15 km/h, 15m parada bus, reglas ADAS)
 
 ### B. Descargar imagenes de senales
-- [ ] Descargar SVGs de senales de trafico de Wikimedia (https://commons.wikimedia.org/wiki/Road_signs_of_Spain)
-- [ ] Guardar en `content/imagenes/senales/`
-- [ ] Organizar por tipo (P-peligro, R-reglamentacion, S-indicacion)
-- [ ] Nombrar archivos con codigo de senal (ej: R-301.svg, P-1.svg)
+- [x] Descargar SVGs de senales de trafico de Wikimedia
+- [x] Guardar en `content/imagenes/senales/`
+- [x] Organizar por tipo (P-peligro, R-reglamentacion, S-indicacion)
+- [x] Nombrar archivos con codigo de senal (ej: R-301.svg, P-1.svg)
 
 ---
 
 ## Fase 0: Preparacion de Contenido
 - [x] 0.1 Crear content-structure.json con 12 temas y 58 subtemas
-- [ ] 0.2 Crear Skill 1: Generador de preguntas (`/generar-preguntas`) — pendiente ajustar formato tras analisis
-- [ ] 0.3 Crear Skill 2: Extractor de webs
-- [ ] 0.4 Crear Skill 3: Validador
-- [ ] 0.5 Crear Skill 4: Generador de imagenes
-- [ ] 0.6 Descargar batch de senales SVG de Wikimedia
+- [ ] 0.2 Crear Skill 1: Generador de preguntas (`/generar-preguntas`) — prompt actualizado con datos reales, pendiente de completar
+- [ ] 0.3 Skill 2: Extractor de webs (pausado — datos ya extraidos manualmente)
+- [ ] 0.4 Crear Skill 3: Validador (deduplicacion + verificacion contra temario)
+- [ ] 0.5 Crear Skill 4: Generador de imagenes (DALL-E 3 + revision por Claude)
+- [x] 0.6 Descargar batch de senales SVG de Wikimedia
 - [ ] 0.7 Generar 100-300 preguntas iniciales
 - [ ] 0.8 Crear los 100 tests pre-definidos
 
