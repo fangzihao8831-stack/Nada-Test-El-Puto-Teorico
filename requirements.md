@@ -57,7 +57,104 @@ El perfil mostrara:
 
 ### Paginas del Sistema
 
-#### 1. Pagina Principal (Home)
+#### 0. Landing Page (No autenticado)
+Pagina de aterrizaje para visitantes no registrados. Objetivo: conversion (registro o prueba).
+
+```
++---------------------------------------------+
+| NADATEST                [Iniciar sesion]     |
++---------------------------------------------+
+|                                              |
+|   Prepara tu examen teorico                  |
+|       del permiso B                          |
+|                                              |
+|   Practica con tests que simulan el formato  |
+|   real de la DGT. 30 preguntas, 30 minutos.  |
+|                                              |
+|   [EXAMEN DE PRUEBA]   [REGISTRATE]          |
+|    (outline/secondary)   (primary/azul)      |
+|                                              |
++---------------------------------------------+
+|                                              |
+|  +----------+ +----------+ +----------+      |
+|  |  Tests   | |  Modo    | | Progreso |      |
+|  |  reales  | | examen y | |    y     |      |
+|  |          | | estudio  | |  fallos  |      |
+|  | 30 preg. | | Con o sin| | Sigue tu |      |
+|  | formato  | | tiempo,  | | avance   |      |
+|  | oficial  | | con pist.| | por tema |      |
+|  +----------+ +----------+ +----------+      |
+|                                              |
++---------------------------------------------+
+|                                              |
+|   "Como funciona"                            |
+|                                              |
+|   1. Registrate gratis                       |
+|   2. Elige un test (100 disponibles)         |
+|   3. Practica en modo examen o estudio       |
+|   4. Revisa tus fallos y mejora              |
+|                                              |
++---------------------------------------------+
+|                                              |
+|   Listo para empezar?                        |
+|   [CREAR CUENTA GRATIS]                      |
+|                                              |
+|   Basado en el temario oficial de la DGT.    |
+|                                              |
++---------------------------------------------+
+```
+
+Movil:
+```
++---------------------------+
+| NADATEST   [Iniciar ses.] |
++---------------------------+
+|                           |
+|  Prepara tu examen        |
+|  teorico del permiso B    |
+|                           |
+|  30 preguntas, 30 min.    |
+|  Formato real de la DGT.  |
+|                           |
+|  [EXAMEN DE PRUEBA]       |
+|  [REGISTRATE]             |
+|                           |
++---------------------------+
+|  +---------------------+  |
+|  | Tests reales        |  |
+|  | 30 preg. formato..  |  |
+|  +---------------------+  |
+|  +---------------------+  |
+|  | Modo examen/estudio |  |
+|  | Con o sin tiempo..  |  |
+|  +---------------------+  |
+|  +---------------------+  |
+|  | Progreso y fallos   |  |
+|  | Sigue tu avance..   |  |
+|  +---------------------+  |
++---------------------------+
+|  Como funciona             |
+|  1. Registrate gratis     |
+|  2. Elige un test         |
+|  3. Practica              |
+|  4. Revisa fallos         |
++---------------------------+
+|  Listo para empezar?      |
+|  [CREAR CUENTA GRATIS]    |
+|  Temario oficial DGT.     |
++---------------------------+
+```
+
+Especificaciones:
+- **CTA principal**: "Registrate" (primary/azul, lleva a `/register`)
+- **CTA secundaria**: "Examen de prueba" (outline, inicia test demo sin cuenta)
+- **Seccion features**: 3 tarjetas con iconos (FileText, Timer, BarChart3)
+- **Seccion "Como funciona"**: 4 pasos numerados, fondo sutil
+- **CTA final**: "Crear cuenta gratis" al pie, refuerza conversion
+- **Sin autenticacion requerida**: El test de prueba funciona sin registro
+- **Ruta**: `/` (raiz, redirige a `/dashboard` si ya esta autenticado)
+
+#### 1. Pagina Principal (Home) (Autenticado)
 - Saludo personalizado + racha de dias
 - Permiso que esta preparando
 - Boton grande "REALIZAR TEST"

@@ -4,10 +4,11 @@
 
 Nadatest is a web platform for preparing the theoretical driving exam (permiso B) from DGT, Spain. Users practice with 30-question tests that simulate the real exam format.
 
-**Stack**: Next.js 14+ / TypeScript / Tailwind CSS / shadcn/ui / Supabase (PostgreSQL + Auth) / Vercel
+**Stack**: Next.js 16+ / TypeScript / Tailwind CSS v4 / shadcn/ui / Supabase (PostgreSQL + Auth) / Vercel
 
 **Key docs** (read these for full context):
 - `README.md` — Project overview, content pipeline, topic index
+- `requirements.md` — Product requirements, navigation, UX specs
 - `technical.md` — Stack, folder structure, components, API endpoints, SQL schema
 - `tasks.md` — Task checklist by phase
 - `content-pipeline.md` — Content generation pipeline, skills, image strategy
@@ -15,7 +16,7 @@ Nadatest is a web platform for preparing the theoretical driving exam (permiso B
 
 ## Critical Rules
 
-- **UI text in Spanish** — All user-facing text must be in proper Spanish with accents (á, é, í, ó, ú, ñ) and opening question marks (¿)
+- **UI text in Spanish** — All user-facing text must be in proper Spanish with accents (a, e, i, o, u, n) and opening question marks
 - **Code in English** — Variables, functions, comments, file names in English
 - **No emojis** in code, comments, or commit messages
 - **shadcn/ui first** — Always use shadcn/ui components before creating custom UI
@@ -25,7 +26,7 @@ Nadatest is a web platform for preparing the theoretical driving exam (permiso B
 ## Code Organization
 
 - Many small files over few large files
-- 200–400 lines typical, 800 max per file
+- 200-400 lines typical, 800 max per file
 - Organize by feature/domain, not by type
 - Follow the folder structure in `technical.md`
 
@@ -40,21 +41,26 @@ src/
 
 ## Design System
 
+Light theme with blue primary, matching requirements.md specs.
+
 | Token | Value |
 |-------|-------|
-| Background | `#0a0a0a` |
-| Card / Surface | `#171717` |
-| Primary (accent) | `#10b981` (emerald) |
-| Secondary | `#3b82f6` (blue) |
-| Destructive | `#ef4444` (red) |
-| Warning | `#f59e0b` (amber) |
-| Text primary | `#fafafa` |
-| Text muted | `#a1a1aa` |
-| Border | `#27272a` |
-| Font | Inter / system stack |
+| Background | `#F8FAFC` (slate-50, cool off-white) |
+| Card / Surface | `#FFFFFF` (pure white) |
+| Primary (accent) | `#3B82F6` (blue-500) |
+| Destructive | `#EF4444` (red-500) |
+| Warning | `#F59E0B` (amber-500) |
+| Success | `#10B981` (emerald-500) |
+| Text primary | `#0F172A` (slate-900) |
+| Text muted | `#64748B` (slate-500) |
+| Border | `#E2E8F0` (slate-200) |
+| Font | Geist Sans |
 | Icons | Lucide (from shadcn) |
+| Corners | 8-12px rounded |
+| Shadows | Soft, subtle |
+| Feedback | Green (correct) / Red (incorrect) |
 
-Dark theme is the default and only theme.
+Light theme is the default and only theme.
 
 ## Testing
 
@@ -79,6 +85,21 @@ Questions follow the JSON format defined in `content-pipeline.md`. Six question 
 | Trick with absolutes | `trampa` |
 
 Source of truth for all driving content: `temario_permiso_b_v3.md`
+
+## Page Routing
+
+| Route | Auth | Description |
+|-------|------|-------------|
+| `/` | No | Landing page with "Examen de prueba" + "Registrate" CTAs. Redirects to `/dashboard` if authenticated. |
+| `/login` | No | Login form (email + Google OAuth) |
+| `/register` | No | Registration form |
+| `/demo` | No | Trial test (30 questions, no account needed) |
+| `/dashboard` | Yes | Authenticated home with stats, recent tests, CTA |
+| `/progreso` | Yes | Progress by topic |
+| `/fallos` | Yes | Failed questions review |
+| `/test/[id]` | Yes | Active test page |
+| `/resultado/[id]` | Yes | Test results page |
+| `/admin` | Yes (admin) | Admin dashboard |
 
 ## Key Patterns
 
@@ -136,23 +157,6 @@ CLOUDINARY_API_SECRET=
 # OpenAI (image generation)
 OPENAI_API_KEY=
 ```
-
-## Available Commands
-
-| Command | Description |
-|---------|-------------|
-| `/generar-preguntas` | Generate DGT exam questions from temario |
-| `/commit` | Create a git commit |
-| `/commit-push` | Commit and push to GitHub |
-| `/commit-push-pr` | Commit, push, and open a PR |
-| `/plan` | Create implementation plan |
-| `/code-review` | Review code quality |
-| `/frontend-design` | Build polished frontend interfaces |
-| `/tdd` | Test-driven development workflow |
-| `/feature-dev` | Guided feature development |
-| `/fix-bug` | Guided bug fixing with investigation |
-| `/review-pr` | Comprehensive PR review |
-| `/e2e` | Generate and run E2E tests with Playwright |
 
 ## Git Workflow
 
