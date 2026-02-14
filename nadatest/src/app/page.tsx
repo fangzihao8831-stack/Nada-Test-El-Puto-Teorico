@@ -16,6 +16,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
 
 const features = [
   {
@@ -63,7 +64,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-white/80 shadow-sm backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
-          <span className="text-xl font-bold text-primary">Nadatest</span>
+          <span className="animate-fade-in text-xl font-bold text-primary">Nadatest</span>
           <Button variant="outline" size="sm" asChild>
             <Link href="/login">Iniciar sesion</Link>
           </Button>
@@ -75,16 +76,24 @@ export default function LandingPage() {
         <section className="relative overflow-hidden py-16 md:py-24">
           <div className="pointer-events-none absolute inset-0 -top-16 mx-auto max-w-lg rounded-full bg-primary/5 blur-3xl" aria-hidden="true" />
           <div className="mx-auto max-w-5xl px-4 text-center">
-            <h1 className="relative text-3xl font-bold tracking-tight text-foreground md:text-5xl">
+            <h1
+              className="animate-fade-up relative text-3xl font-bold tracking-tight text-foreground md:text-5xl"
+              style={{ animationDelay: "0.1s" }}
+            >
               Prepara tu examen teorico
               <br />
               <span className="text-primary">del permiso B</span>
             </h1>
-            <p className="relative mx-auto mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Practica con tests que simulan el formato real de la DGT.
-              30 preguntas, 30 minutos, igual que el dia del examen.
+            <p
+              className="animate-fade-up relative mx-auto mt-4 max-w-2xl text-lg text-muted-foreground md:text-xl"
+              style={{ animationDelay: "0.3s" }}
+            >
+              No pierdas horas con el temario. Practica, detecta tus fallos y aprueba a la primera.
             </p>
-            <div className="relative mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+            <div
+              className="animate-fade-up relative mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center"
+              style={{ animationDelay: "0.5s" }}
+            >
               <Button variant="outline" size="lg" asChild>
                 <Link href="/demo">
                   Examen de prueba
@@ -105,22 +114,24 @@ export default function LandingPage() {
         <section className="border-t border-border bg-muted/30 py-16">
           <div className="mx-auto max-w-5xl px-4">
             <div className="grid gap-4 sm:grid-cols-3">
-              {features.map((feature) => (
-                <Card key={feature.title} className="bg-card">
-                  <CardHeader>
-                    <div className="flex items-center gap-3">
-                      <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10">
-                        <feature.icon className="size-5 text-primary" />
+              {features.map((feature, i) => (
+                <AnimateOnScroll key={feature.title} delay={i * 0.12}>
+                  <Card className="bg-card">
+                    <CardHeader>
+                      <div className="flex items-center gap-3">
+                        <div className="flex size-10 items-center justify-center rounded-lg bg-primary/10">
+                          <feature.icon className="size-5 text-primary" />
+                        </div>
+                        <CardTitle className="text-base">{feature.title}</CardTitle>
                       </div>
-                      <CardTitle className="text-base">{feature.title}</CardTitle>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-sm text-muted-foreground">
-                      {feature.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-muted-foreground">
+                        {feature.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </AnimateOnScroll>
               ))}
             </div>
           </div>
@@ -129,53 +140,61 @@ export default function LandingPage() {
         {/* How it works */}
         <section className="py-16">
           <div className="mx-auto max-w-5xl px-4">
-            <h2 className="text-center text-2xl font-bold text-foreground">
-              Como funciona
-            </h2>
+            <AnimateOnScroll>
+              <h2 className="text-center text-2xl font-bold text-foreground">
+                Como funciona
+              </h2>
+            </AnimateOnScroll>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {steps.map((step, index) => (
-                <div key={step.label} className="flex flex-col items-center text-center">
-                  <div className="flex size-12 items-center justify-center rounded-full bg-primary/10">
-                    <step.icon className="size-5 text-primary" />
+                <AnimateOnScroll key={step.label} delay={index * 0.1}>
+                  <div className="flex flex-col items-center text-center">
+                    <div className="flex size-12 items-center justify-center rounded-full bg-primary/10">
+                      <step.icon className="size-5 text-primary" />
+                    </div>
+                    <span className="mt-1 text-xs font-medium text-primary">
+                      Paso {index + 1}
+                    </span>
+                    <p className="mt-2 text-sm font-medium text-foreground">
+                      {step.label}
+                    </p>
                   </div>
-                  <span className="mt-1 text-xs font-medium text-primary">
-                    Paso {index + 1}
-                  </span>
-                  <p className="mt-2 text-sm font-medium text-foreground">
-                    {step.label}
-                  </p>
-                </div>
+                </AnimateOnScroll>
               ))}
             </div>
           </div>
         </section>
 
         {/* Final CTA */}
-        <section className="border-t border-border bg-muted/30 py-16">
-          <div className="mx-auto max-w-5xl px-4 text-center">
-            <h2 className="text-2xl font-bold text-foreground">
-              Listo para empezar?
-            </h2>
-            <p className="mx-auto mt-2 max-w-md text-muted-foreground">
-              Crea tu cuenta gratis y empieza a practicar con tests que simulan el examen real.
-            </p>
-            <Button size="lg" className="mt-6 shadow-md" asChild>
-              <Link href="/register">
-                Crear cuenta gratis
-                <ArrowRight className="ml-2 size-4" />
-              </Link>
-            </Button>
-          </div>
-        </section>
+        <AnimateOnScroll>
+          <section className="border-t border-border bg-muted/30 py-16">
+            <div className="mx-auto max-w-5xl px-4 text-center">
+              <h2 className="text-2xl font-bold text-foreground">
+                Listo para empezar?
+              </h2>
+              <p className="mx-auto mt-2 max-w-md text-muted-foreground">
+                Crea tu cuenta gratis y empieza a practicar con tests que simulan el examen real.
+              </p>
+              <Button size="lg" className="mt-6 shadow-md" asChild>
+                <Link href="/register">
+                  Crear cuenta gratis
+                  <ArrowRight className="ml-2 size-4" />
+                </Link>
+              </Button>
+            </div>
+          </section>
+        </AnimateOnScroll>
 
         {/* Footer */}
-        <footer className="border-t border-border py-8">
-          <div className="mx-auto max-w-5xl px-4 text-center">
-            <p className="text-sm text-muted-foreground">
-              Basado en el temario oficial de la DGT para el permiso de conducir B.
-            </p>
-          </div>
-        </footer>
+        <AnimateOnScroll>
+          <footer className="border-t border-border py-8">
+            <div className="mx-auto max-w-5xl px-4 text-center">
+              <p className="text-sm text-muted-foreground">
+                Basado en el temario oficial de la DGT para el permiso de conducir B.
+              </p>
+            </div>
+          </footer>
+        </AnimateOnScroll>
       </main>
     </div>
   );

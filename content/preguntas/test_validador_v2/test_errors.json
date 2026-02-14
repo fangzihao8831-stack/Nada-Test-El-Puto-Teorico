@@ -1,0 +1,44 @@
+{
+  "preguntas": [
+    {
+      "id": "tv2_004",
+      "subtema_id": "subtema_45",
+      "tipo_pregunta": "dato",
+      "enunciado": "¿Cuándo debe pasar la primera ITV un turismo nuevo?",
+      "opciones": [
+        "A los 4 años desde la matriculación.",
+        "A los 3 años desde la matriculación.",
+        "A los 5 años desde la matriculación."
+      ],
+      "correcta": 0,
+      "explicacion": "La primera ITV de un turismo nuevo se realiza a los 4 años. Posteriormente, cada 2 años hasta los 10 años, y luego anualmente.",
+      "pista": "Los coches nuevos tardan bastante en pasar la primera revisión.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "origen": "generada",
+      "validada": false,
+      "usa_trampa": false,
+      "palabras_trampa": []
+    },
+    {
+      "id": "tv2_005",
+      "subtema_id": "subtema_12",
+      "tipo_pregunta": "completar",
+      "enunciado": "En un tunel con un solo carril por sentido, adelantar esta...",
+      "opciones": [
+        "Prohibido en todo caso.",
+        "Permitido si hay buena visibilidad.",
+        "Permitido solo a ciclistas."
+      ],
+      "correcta": 0,
+      "explicacion": "En tuneles con un solo carril por sentido esta prohibido adelantar. Solo se permite el adelantamiento en tuneles que tienen mas de un carril para cada sentido de circulacion.",
+      "pista": "Piensa en cuantos carriles necesitas para adelantar con seguridad en un espacio cerrado.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "origen": "generada",
+      "validada": false,
+      "usa_trampa": true,
+      "palabras_trampa": ["en todo caso"]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "preguntas": [
+    {
+      "id": "tv2_001",
+      "subtema_id": "subtema_45",
+      "tipo_pregunta": "dato",
+      "enunciado": "Un turismo nuevo, ¿cuándo debe pasar la primera inspección ITV?",
+      "opciones": [
+        "A los 4 años desde su primera matriculación.",
+        "A los 2 años desde su primera matriculación.",
+        "Al año siguiente de su matriculación."
+      ],
+      "correcta": 0,
+      "explicacion": "Un turismo nuevo debe pasar su primera ITV a los 4 años desde la fecha de su primera matriculación. Después, debe pasar revisiones cada 2 años hasta que cumple 10 años de antigüedad, momento a partir del cual la inspección es anual.",
+      "pista": "Los vehículos nuevos tienen un periodo largo antes de la primera revisión.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "origen": "generada",
+      "validada": false,
+      "usa_trampa": false,
+      "palabras_trampa": []
+    },
+    {
+      "id": "tv2_002",
+      "subtema_id": "subtema_38",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Si un conductor acumula 0 puntos en su permiso de conducir, ¿qué ocurre?",
+      "opciones": [
+        "Se le notifica la pérdida de vigencia del permiso.",
+        "Puede seguir conduciendo hasta que un agente le detenga.",
+        "Tiene un plazo de 30 días para recuperar los puntos."
+      ],
+      "correcta": 0,
+      "explicacion": "Cuando un conductor pierde todos los puntos de su permiso, la Dirección General de Tráfico le notifica la pérdida de vigencia del permiso de conducir. A partir de ese momento, no puede conducir. Para recuperar el permiso debe realizar un curso de sensibilización y reeducación vial y superar una prueba de control de conocimientos.",
+      "pista": "Piensa en qué significa legalmente quedarse sin puntos.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "origen": "generada",
+      "validada": false,
+      "usa_trampa": false,
+      "palabras_trampa": []
+    },
+    {
+      "id": "tv2_003",
+      "subtema_id": "subtema_30",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Cuántos puntos del permiso de conducir puede perder un conductor si no hace uso del cinturón de seguridad?",
+      "opciones": [
+        "2 puntos.",
+        "4 puntos.",
+        "6 puntos."
+      ],
+      "correcta": 0,
+      "explicacion": "La sanción por no usar el cinturón de seguridad es de 2 puntos. Además, se impone una multa económica de 200 euros.",
+      "pista": "Es una infracción grave pero no de las más severas en puntos.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "origen": "generada",
+      "validada": false,
+      "usa_trampa": false,
+      "palabras_trampa": []
+    }
+  ]
+}
