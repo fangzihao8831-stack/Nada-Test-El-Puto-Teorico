@@ -81,6 +81,12 @@ Ejemplos reales:
 - "El conductor, ¿está obligado a cuidar que el resto de pasajeros mantengan una posición adecuada?"
 - "Los chalecos reflectantes de alta visibilidad, ¿deben estar homologados?"
 
+**Ejemplos DIFÍCILES** (nivel objetivo — ver `content/hardest_directa.json` para 57 más):
+- "¿Puede realizar un cambio de sentido en un lugar donde esté prohibido adelantar?" → Sí, salvo autorización expresa. La mayoría piensa que solo afecta a adelantar.
+- "En un vehículo de autoescuela realizando clases prácticas, ¿quién es considerado el conductor?" → El profesor (mandos adicionales), no el alumno.
+- "¿Está permitida la circulación de animales por una carretera convencional?" → Sí, cuando no exista vía pecuaria. Respuesta contraintuitiva.
+- "Circulando con lluvia muy intensa, ¿es correcto encender la luz antiniebla trasera?" → Sí. La gente cree que solo con niebla.
+
 ### Tipo 2: Situacional (~27%)
 Presenta una situación con "Si...", "En...", "Circulando por...", "Cuando...", "Al..."
 
@@ -90,6 +96,11 @@ Ejemplos reales:
 - "En condiciones de mala visibilidad, ¿qué debe hacer un conductor ante la presencia de ciclistas en la vía?"
 - "Al estacionar un vehículo con remolque en una pendiente ascendente, si no dispone de calzos, ¿qué debe hacer?"
 - "En una travesía de dos carriles para cada sentido, ¿puede circular por el carril izquierdo?"
+
+**Ejemplos DIFÍCILES** (nivel objetivo — ver `content/hardest_situacional.json` para 84 más):
+- Prioridad con 3 vehículos en intersección sin señalizar (rojo/azul/verde)
+- "En un túnel, ¿qué distancia de seguridad?" → 100 metros. Dato preciso en contexto situacional.
+- Combinación de reglas: estacionar en pendiente + remolque + sin calzos
 
 ### Tipo 3: Completar (~23%)
 Frase incompleta con "..." al final o en medio. El enunciado NO es una pregunta — es una afirmación que se completa.
@@ -103,6 +114,11 @@ Ejemplos reales:
 - "La señal prohíbe..."
 - "Esta señal indica la dirección y sentido que los vehículos..."
 
+**Ejemplos DIFÍCILES** (nivel objetivo — ver `content/hardest_completar.json` para 133 más):
+- "En las autovías, se permite circular..." → a ciclistas >14 años por arcenes. Excepción a la prohibición general.
+- "Si el resultado de alcoholemia es positivo el agente podrá inmovilizar el vehículo, a no ser..." → que otra persona habilitada conduzca. Excepción contraintuitiva.
+- "Los vehículos que circulen por el arcén tienen prohibido circular en posición paralela, excepto..." → las bicicletas. Excepción específica.
+
 ### Tipo 4: Dato concreto (~10%)
 Pregunta sobre un dato específico: velocidad, distancia, tasa, plazo.
 
@@ -110,6 +126,11 @@ Ejemplos reales:
 - "¿De qué depende la distancia de detención?"
 - "En esta vía, ¿a qué velocidad máxima le está permitido circular a un turismo con remolque?"
 - "¿A qué distancia mínima de una intersección está prohibido estacionar?"
+
+**Ejemplos DIFÍCILES** (nivel objetivo — ver `content/hardest_dato.json` para 457 más):
+- "¿Cuál es la tasa de alcohol máxima permitida a un conductor novel?" → 0,15 mg/l. Confusión con 0,25 (general) y 0,3 (sangre).
+- "¿Cuántos espejos retrovisores tienen que llevar las motocicletas?" → 1 si <100 km/h, 2 si >100. Dato numérico dual.
+- Señal V-16: debe colocarse en la parte más alta del vehículo, NO alejada.
 
 ---
 
@@ -361,6 +382,33 @@ Superar el doble de la tasa (0,60 mg/l aire) o negarse a la prueba es **delito p
 
 ---
 
+## Calidad: Evitar Preguntas Obvias
+
+**IMPORTANTE**: NO generar preguntas que cualquier persona responde correctamente por sentido común. Cada pregunta debe tener al menos UNO de estos elementos de dificultad:
+
+| Elemento | Descripción | Ejemplo |
+|----------|-------------|---------|
+| **Excepción a regla conocida** | La respuesta correcta contradice lo que el alumno cree saber | Animales SÍ pueden circular por carretera convencional |
+| **Opciones muy similares** | Las 3 opciones suenan razonables, difieren en un matiz | 0,15 vs 0,25 vs 0,30 mg/l |
+| **Dato preciso confundible** | Número exacto que se confunde con otro parecido | 100m en túnel, 1,5m a ciclistas, 5m de intersección |
+| **Combinación de reglas** | Requiere aplicar 2+ reglas simultáneamente | Prioridad en glorieta + vehículo especial |
+| **Respuesta contraintuitiva** | La opción que "suena bien" es incorrecta | El profesor es el conductor en autoescuela, no el alumno |
+
+### Archivos de referencia de dificultad
+Antes de generar, consultar estos archivos para calibrar el nivel de dificultad:
+- `content/hardest_directa.json` — 57 preguntas directas genuinamente difíciles
+- `content/hardest_completar.json` — 133 preguntas completar difíciles (12 extremas, 121 muy difíciles)
+- `content/hardest_situacional.json` — 84 preguntas situacionales difíciles (prioridad, medidas, excepciones)
+- `content/hardest_dato.json` — 457 preguntas de datos numéricos confundibles
+
+Cada pregunta incluye un campo `why_hard` que explica por qué es difícil desde perspectiva humana. Usar estos patrones como inspiración.
+
+### Mezcla de dificultad por test
+Un test de 30 preguntas debe tener esta distribución aproximada:
+- **~10 fáciles** (30%): Reglas básicas, respuesta clara por descarte
+- **~12 medias** (40%): Requieren conocimiento específico pero sin trampa
+- **~8 difíciles** (30%): Excepciones, datos confundibles, combinación de reglas
+
 ## Reglas de Verificación
 - Cada pregunta DEBE verificarse contra el temario antes de incluirla
 - Si un dato numérico no coincide con el temario, usar el temario como fuente de verdad
@@ -369,6 +417,7 @@ Superar el doble de la tasa (0,60 mg/l aire) o negarse a la prueba es **delito p
 - Fechas solo en la explicación como info adicional, NUNCA en el enunciado
 - Opciones incorrectas DEBEN usar al menos 1 palabra trampa del listado anterior
 - La opción correcta debe tener matiz, nunca un absoluto sin excepción
+- NO generar preguntas que se responden por sentido común sin conocimiento de tráfico
 
 ---
 
@@ -406,6 +455,10 @@ Superar el doble de la tasa (0,60 mg/l aire) o negarse a la prueba es **delito p
 ## Archivos de Referencia
 - Temario: `temario_permiso_b_v3.md`
 - Estructura: `content/content-structure.json`
-- Preguntas Todotest (referencia): `content/todotest_3000.json`
+- Preguntas Todotest (referencia): `content/todotest_2700.json`
 - Examen DGT oficial (referencia): `content/dgt_oficial_exam.json`
+- Preguntas difíciles directa: `content/hardest_directa.json` (57 preguntas)
+- Preguntas difíciles situacional: `content/hardest_situacional.json` (84 preguntas)
+- Preguntas difíciles completar: `content/hardest_completar.json` (133 preguntas)
+- Preguntas difíciles dato: `content/hardest_dato.json` (457 preguntas)
 - Salida: `content/preguntas/`

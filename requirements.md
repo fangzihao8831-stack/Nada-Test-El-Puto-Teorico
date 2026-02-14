@@ -154,28 +154,334 @@ Especificaciones:
 - **Sin autenticacion requerida**: El test de prueba funciona sin registro
 - **Ruta**: `/` (raiz, redirige a `/dashboard` si ya esta autenticado)
 
-#### 1. Pagina Principal (Home) (Autenticado)
-- Saludo personalizado + racha de dias
-- Permiso que esta preparando
-- Boton grande "REALIZAR TEST"
-- Seccion con 3 tarjetas:
-  - Resumen rapido (tests realizados, media, tema debil)
-  - Ultimos tests (historial reciente)
-  - Fallos totales (numero + enlace)
+#### 1. Dashboard (Home autenticado)
+Ruta: `/dashboard`. Requiere autenticacion.
 
-#### 2. Mi Objetivo
-- Seleccion del permiso a preparar (B, A1, A2, C, D...)
-- MVP: Solo Permiso B disponible
+```
++----------------------------------------------------------+
+| [=] NADATEST                                    [Avatar] |
++----------------------------------------------------------+
+| Inicio     |                                             |
+| Tests      |  Bienvenido a Nadatest                      |
+| Objetivo   |  Tu progreso de hoy y resumen reciente.     |
+| Progreso   |                                             |
+| Fallos     |  +----------+ +----------+ +----------+     |
+| Materiales |  | Tests    | | Nota     | | Racha    |     |
+|            |  | realizad.| | media    | | actual   |     |
+|            |  |    12    | |   87%    | |  7 dias  |     |
+|            |  | este mes | |  +5% ^   | |          |     |
+|            |  +----------+ +----------+ +----------+     |
+|            |                                             |
+|            |  +---------------------------------------+  |
+|            |  | Listo para practicar?                 |  |
+|            |  | Realiza un test de 30 preguntas.      |  |
+|            |  |                    [Comenzar test ->]  |  |
+|            |  +---------------------------------------+  |
+|            |  (fondo azul degradado)                     |
+|            |                                             |
+|            |  Tests recientes                            |
+|            |  +---------------------------------------+  |
+|            |  | Test #15  12/02  28/30  [Aprobado]    |  |
+|            |  +---------------------------------------+  |
+|            |  | Test #14  11/02  25/30  [Suspendido]  |  |
+|            |  +---------------------------------------+  |
+|            |  | Test #13  10/02  29/30  [Aprobado]    |  |
+|            |  +---------------------------------------+  |
++----------------------------------------------------------+
+```
 
-#### 3. Progreso
-- Lista de temas ordenados por fallos (mas fallos primero)
-- Barra de progreso por tema
-- Boton "Practicar este tema"
+Movil:
+```
++---------------------------+
+| [=] NADATEST     [Avatar] |
++---------------------------+
+| Bienvenido a Nadatest     |
+|                           |
+| +--------+ +--------+    |
+| |Tests 12| |Media 87|    |
+| +--------+ +--------+    |
+| +--------+ +--------+    |
+| |Racha 7 | |Fallos23|    |
+| +--------+ +--------+    |
+|                           |
+| +---------------------+  |
+| | Listo para practicar|  |
+| | [Comenzar test ->]  |  |
+| +---------------------+  |
+|                           |
+| Tests recientes           |
+| +---------------------+  |
+| | #15 28/30 Aprobado  |  |
+| +---------------------+  |
+| | #14 25/30 Suspendido|  |
+| +---------------------+  |
++---------------------------+
+```
 
-#### 4. Mis Fallos
-- Lista de todas las preguntas falladas
-- Filtro por tema
-- Boton "Repasar todos"
+#### 2. Login
+Ruta: `/login`. Sin autenticacion.
+
+```
++---------------------------+
+| NADATEST                  |
+|  (fondo degradado azul)   |
+|                           |
+| +---------------------+  |
+| |  Iniciar sesion     |  |
+| |  Accede a tu cuenta |  |
+| |                     |  |
+| |  [Correo          ]|  |
+| |  [Contrasena      ]|  |
+| |  [INICIAR SESION]  |  |
+| |  ------o------     |  |
+| |  [Continuar Google]|  |
+| |                     |  |
+| |  No tienes cuenta?  |  |
+| |  Registrate         |  |
+| +---------------------+  |
++---------------------------+
+```
+
+#### 3. Register
+Ruta: `/register`. Sin autenticacion.
+
+```
++---------------------------+
+| NADATEST                  |
+|  (fondo degradado azul)   |
+|                           |
+| +---------------------+  |
+| |  Crear cuenta       |  |
+| |  Registrate gratis  |  |
+| |                     |  |
+| |  [Nombre           ]|  |
+| |  [Correo           ]|  |
+| |  [Contrasena       ]|  |
+| |  [Confirmar        ]|  |
+| |  [CREAR CUENTA]     |  |
+| |  ------o------      |  |
+| |  [Continuar Google] |  |
+| |                     |  |
+| |  Ya tienes cuenta?  |  |
+| |  Inicia sesion      |  |
+| +---------------------+  |
++---------------------------+
+```
+
+#### 4. Mi Objetivo
+Ruta: `/objetivo`. Requiere autenticacion.
+
+```
++----------------------------------------------------------+
+| [=] NADATEST                                    [Avatar] |
++----------------------------------------------------------+
+| Inicio     |                                             |
+| Tests      |  Mi objetivo                                |
+| Objetivo*  |  Define tu meta hacia el examen.            |
+| Progreso   |                                             |
+| Fallos     |  +---------------------------------------+  |
+| Materiales |  | [Calendario] Fecha del examen         |  |
+|            |  | Indica cuando te presentas.           |  |
+|            |  | [____15/04/2026____]                  |  |
+|            |  | Faltan 62 dias.                       |  |
+|            |  +---------------------------------------+  |
+|            |                                             |
+|            |  +---------------------------------------+  |
+|            |  | [Lista] Objetivo diario               |  |
+|            |  | Tests por dia: [2]                    |  |
+|            |  | Hoy llevas 1 de 2 completados.        |  |
+|            |  +---------------------------------------+  |
+|            |                                             |
+|            |  +---------------------------------------+  |
+|            |  | [Diana] Progreso hacia tu objetivo    |  |
+|            |  | Tests completados   [====     ] 20%   |  |
+|            |  | Temas estudiados    [======   ] 67%   |  |
+|            |  | Nota media          [========= ] 87%  |  |
+|            |  +---------------------------------------+  |
++----------------------------------------------------------+
+```
+
+#### 5. Progreso
+Ruta: `/progreso`. Requiere autenticacion.
+
+```
++----------------------------------------------------------+
+| [=] NADATEST                                    [Avatar] |
++----------------------------------------------------------+
+| Inicio     |                                             |
+| Tests      |  Mi progreso                                |
+| Objetivo   |  Rendimiento y avance por temas.            |
+| Progreso*  |                                             |
+| Fallos     |  +----------+ +----------+ +----------+     |
+| Materiales |  | Tests    | | Nota     | | Mejor    |     |
+|            |  | totales  | | media    | | nota     |     |
+|            |  |    34    | |   87%    | |   97%    |     |
+|            |  +----------+ +----------+ +----------+     |
+|            |                                             |
+|            |  Progreso por temas                         |
+|            |  +---------------------------------------+  |
+|            |  | > El Conductor y el Permiso    [75%]  |  |
+|            |  +---------------------------------------+  |
+|            |  | > El Vehiculo                  [60%]  |  |
+|            |  +---------------------------------------+  |
+|            |  | > Carga, Pasajeros...          [45%]  |  |
+|            |  +---------------------------------------+  |
+|            |  | v Circulacion y Velocidad      [90%]  |  |
+|            |  |   [=========                 ]        |  |
+|            |  |   - Conceptos basicos                 |  |
+|            |  |   - Normativa                         |  |
+|            |  |   - Casos practicos                   |  |
+|            |  +---------------------------------------+  |
+|            |  ...12 temas total                          |
++----------------------------------------------------------+
+```
+
+#### 6. Mis Fallos
+Ruta: `/fallos`. Requiere autenticacion.
+
+```
++----------------------------------------------------------+
+| [=] NADATEST                                    [Avatar] |
++----------------------------------------------------------+
+| Inicio     |                                             |
+| Tests      |  Preguntas falladas   [Practicar fallos]    |
+| Objetivo   |  Repasa lo que mas te cuesta.               |
+| Progreso   |                                             |
+| Fallos*    |  +----------+                               |
+| Materiales |  | Total    |                               |
+|            |  | fallos   |                               |
+|            |  |    4     |                               |
+|            |  +----------+                               |
+|            |                                             |
+|            |  +---------------------------------------+  |
+|            |  | Cual es la tasa maxima de alcohol...  |  |
+|            |  | [Factores de Riesgo] 4x  12/02       |  |
+|            |  +---------------------------------------+  |
+|            |  | En una interseccion sin senalizar...  |  |
+|            |  | [Prioridad y Maniobras] 3x  11/02    |  |
+|            |  +---------------------------------------+  |
+|            |  | Cual es la distancia minima...        |  |
+|            |  | [Circulacion y Velocidad] 2x  10/02  |  |
+|            |  +---------------------------------------+  |
++----------------------------------------------------------+
+```
+
+Estado vacio:
+```
++---------------------------------------+
+|          [icono]                       |
+|       Perfecto!                        |
+|  No tienes preguntas falladas.         |
++---------------------------------------+
+```
+
+#### 7. Seleccion de Test
+Ruta: `/test`. Requiere autenticacion.
+
+```
++---------------------------+
+| Realizar test             |
+| Elige un modo.            |
+|                           |
+| +---------------------+  |
+| | [Doc] Test de 30    |  |
+| | preguntas. Formato  |  |
+| | oficial DGT. 27     |  |
+| | correctas p/ aprobar|  |
+| +---------------------+  |
+|                           |
+| [  Examen  |  Estudio  ] |
+|                           |
+| +---------------------+  |
+| | [Reloj] Modo examen |  |
+| | Preguntas: 30       |  |
+| | Tiempo: 30 min      |  |
+| | Aprobar: 27         |  |
+| | Feedback: Al final  |  |
+| |                     |  |
+| | [COMENZAR EXAMEN]   |  |
+| +---------------------+  |
++---------------------------+
+```
+
+#### 8. Resultado del Test
+Ruta: `/test/resultado`. Requiere autenticacion.
+
+```
++---------------------------+
+| +---------------------+  |
+| |    [Suspendido]     |  |
+| |      25/30          |  |
+| | Necesitabas 27.     |  |
+| +---------------------+  |
+|                           |
+| +------+ +------+ +----+ |
+| |25:30 | |  25  | |  5 | |
+| |Tiempo| |Correc| |Inco| |
+| +------+ +------+ +----+ |
+|                           |
+| Revision de preguntas     |
+| +---------------------+  |
+| | 1. Velocidad max... |  |
+| | [v] 120 km/h        |  |
+| +---------------------+  |
+| | 2. Senal de STOP... |  |
+| | [x] Reducir veloc.  |  |
+| | [v] Detenerse       |  |
+| +---------------------+  |
+| ________________________  |
+| [Revisar] [Siguiente ->] |
+| [Volver al inicio]       |
++---------------------------+
+```
+
+#### 9. Materiales de Estudio
+Ruta: `/materiales`. Requiere autenticacion.
+
+```
++----------------------------------------------------------+
+| Materiales de estudio                                    |
+| Temario organizado por los 12 temas.                     |
+|                                                          |
+| [i] Contenido basado en el temario oficial de la DGT.    |
+|                                                          |
+| +-----------------------------------------------------+ |
+| | > El Conductor y el Permiso                         | |
+| +-----------------------------------------------------+ |
+| | > El Vehiculo                                       | |
+| +-----------------------------------------------------+ |
+| | v Circulacion y Velocidad                           | |
+| |   - Conceptos generales                             | |
+| |   - Normativa vigente                               | |
+| |   - Situaciones practicas                           | |
+| +-----------------------------------------------------+ |
+| ...12 temas total                                        |
++----------------------------------------------------------+
+```
+
+#### 10. Panel de Administracion
+Ruta: `/admin`. Requiere admin.
+
+```
++----------------------------------------------------------+
+| NADATEST  Admin                            [<- Volver]   |
++----------------------------------------------------------+
+| Panel      |                                             |
+| Preguntas  |  Panel de administracion                    |
+| Tests      |  Resumen general de la plataforma.          |
+| Materiales |                                             |
+| Usuarios   |  +--------+ +--------+ +--------+ +------+ |
+|            |  |Preg.450| |Tests 15| |Users128| |Val380| |
+|            |  +--------+ +--------+ +--------+ +------+ |
+|            |                                             |
+|            |  Accesos rapidos                            |
+|            |  +--------+ +--------+ +--------+ +------+ |
+|            |  |Preguntas| | Tests  | |Materi.| |Users | |
+|            |  |Gestionar| |Gestio. | |Gestio.| |Gest. | |
+|            |  |   ->    | |  ->    | |  ->   | |  ->  | |
+|            |  +---------+ +--------+ +--------+ +-----+ |
++----------------------------------------------------------+
+```
 
 ---
 

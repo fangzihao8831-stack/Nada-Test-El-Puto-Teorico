@@ -1,0 +1,865 @@
+{
+  "metadata": {
+    "tipo": "directa",
+    "total": 57,
+    "date": "2026-02-11T17:10:43.431740",
+    "descripcion": "Preguntas genuinamente difíciles de tipo 'directa' que engañan a estudiantes reales. Respuestas contraintuitivas y excepciones a reglas generales."
+  },
+  "preguntas": [
+    {
+      "num": 2,
+      "enunciado": "¿Puede realizar un cambio de sentido en un lugar donde esté prohibido adelantar?",
+      "opciones": [
+        "Sí, excepto entre la puesta y la salida de sol, porque disminuye la visibilidad.",
+        "No, salvo que el cambio de sentido esté expresamente autorizado.",
+        "Sí, cuando la circulación en sentido contrario lo permita."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1052.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "2",
+      "why_hard": "La mayoría piensa que solo afecta a adelantar, pero NO: donde está prohibido adelantar también está prohibido cambiar de sentido (salvo autorización expresa)"
+    },
+    {
+      "num": 3,
+      "enunciado": "En un vehículo de autoescuela realizando clases prácticas, ¿quién es considerado el conductor?",
+      "opciones": [
+        "Tanto al alumno como al profesor.",
+        "El alumno, ya que maneja el volante.",
+        "El profesor, por ser responsable de los mandos adicionales."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "C",
+      "todotest_id": "3",
+      "why_hard": "Parece obvio que es el alumno porque maneja el volante, pero NO: el profesor es el conductor legal porque controla los mandos adicionales"
+    },
+    {
+      "num": 10,
+      "enunciado": "¿Está permitida la circulación de animales por una carretera convencional?",
+      "opciones": [
+        "Sí, únicamente cuando no exista vía pecuaria.",
+        "No.",
+        "Sí, excepto cuando circulen en rebaño."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1134.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "10",
+      "why_hard": "La respuesta intuitiva es 'no', pero SÍ pueden circular cuando no exista vía pecuaria alternativa"
+    },
+    {
+      "num": 26,
+      "enunciado": "Si los paneles de mensaje variable indican que los turismos con distintivo ambiental B pueden circular por un carril VAO, ¿Qué ocupación mínima debe tener el vehículo?",
+      "opciones": [
+        "Dos ocupantes, incluido el conductor.",
+        "Un ocupante.",
+        "Dos ocupantes, sin incluir al conductor."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0009.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "155858",
+      "why_hard": "Trampa: los vehículos con distintivo B pueden circular con UN SOLO ocupante (el conductor), no necesitan dos personas como los normales"
+    },
+    {
+      "num": 1,
+      "enunciado": "Circulando con lluvia muy intensa, ¿es correcto encender la luz antiniebla trasera?",
+      "opciones": [
+        "Sí.",
+        "No, sólo puede utilizarse con niebla densa o fuerte nevada.",
+        "Sí, pero su uso es opcional."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "A",
+      "todotest_id": "31",
+      "why_hard": "Mucha gente cree que solo se usa con niebla, pero SÍ se puede usar con lluvia muy intensa (además de niebla y nieve)"
+    },
+    {
+      "num": 19,
+      "enunciado": "¿Puede circular con su motocicleta por un carril bus?",
+      "opciones": [
+        "No, con carácter general.",
+        "Sí, pero sólo para adelantar y durante el recorrido indispensable.",
+        "Sí, en caso de circulación muy densa."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0249.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "49",
+      "why_hard": "La mayoría cree que nunca se puede, pero la respuesta es 'con carácter general NO' (hay excepciones según señalización local)"
+    },
+    {
+      "num": 3,
+      "enunciado": "Circula con su turismo por una vía que se cruza con un carril-bici;¿debe ceder el paso a los ciclistas?",
+      "opciones": [
+        "No.Los ciclistas no tienen prioridad de paso frente a los vehículos de motor.",
+        "Sí, siempre.",
+        "Sólo cuando los ciclistas se aproximen por su derecha."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r406.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "155865",
+      "why_hard": "Mucha gente piensa que depende de la derecha o la señalización, pero NO: SIEMPRE se cede el paso a ciclistas en carril-bici señalizado"
+    },
+    {
+      "num": 13,
+      "enunciado": "Una persona provista de un certificado médico que le exima de utilizar los sistemas de retención del vehículo, ¿está exenta de llevar abrochado el cinturón de seguridad?",
+      "opciones": [
+        "Sí.",
+        "No.",
+        "Únicamente fuera de poblado."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "A",
+      "todotest_id": "155868",
+      "why_hard": "Excepción médica válida que muchos desconocen: SÍ está exenta si tiene certificado médico oficial"
+    },
+    {
+      "num": 14,
+      "enunciado": "El titular de permiso de conducción de clase B con una antigüedad mayor de 3 años, ¿puede conducir una motocicleta de 125 cc.?",
+      "opciones": [
+        "No, porque es necesario obtener el permiso de la clase A1.",
+        "Sí, el permiso de la clase \"B\" autoriza a conducir motocicletas de hasta 125 cc.",
+        "Sí, pero sólo por el territorio nacional."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0036.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "74",
+      "why_hard": "Trampa territorial: SÍ puede pero SOLO en España (territorio nacional), NO en otros países de la UE, y requiere 3+ años de antigüedad"
+    },
+    {
+      "num": 16,
+      "enunciado": "En un estrechamiento sin señales de prioridad se encuentran un turismo que arrastra un remolque y un autobús, sin que se sepa cual entró primero, ¿qué vehículo tiene preferencia?",
+      "opciones": [
+        "El que tenga que dar marcha atrás más distancia.",
+        "El autobús.",
+        "El turismo que arrastra el remolque."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "C",
+      "todotest_id": "76",
+      "why_hard": "Regla contraintuitiva: tiene preferencia el que tendría que dar marcha atrás MÁS distancia (el turismo con remolque), al revés de lo lógico"
+    },
+    {
+      "num": 27,
+      "enunciado": "¿Dónde se colocará un ciclomotor para girar a la izquierda en una vía interurbana?",
+      "opciones": [
+        "En la parte central de su carril.",
+        "Si no existe carril específico para realizar el giro, se situará en la derecha, fuera de la calzada.",
+        "En el eje de la calzada si la vía es de doble sentido."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0080.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "87",
+      "why_hard": "Regla específica solo para ciclomotores: se sitúan a la DERECHA fuera de la calzada, no en el centro como hacen los coches"
+    },
+    {
+      "num": 1,
+      "enunciado": "Entre la puesta y la salida del sol, ¿está permitido conducir una motocicleta que arrastra un remolque?",
+      "opciones": [
+        "Sí, si se hace a una velocidad un 10 por ciento por debajo de la genérica de la vía.",
+        "Sí, como a cualquier otra hora del día.",
+        "No."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "C",
+      "todotest_id": "91",
+      "why_hard": "Prohibición absoluta poco conocida: las motocicletas con remolque NO pueden circular de noche, nunca, bajo ninguna circunstancia"
+    },
+    {
+      "num": 8,
+      "enunciado": "Un peatón que empuja un vehículo de dos ruedas, ¿por dónde está obligado a circular?",
+      "opciones": [
+        "Por la derecha, por la calzada o el arcén, según su sentido de la marcha.",
+        "Por la izquierda, por la calzada o el arcén, según su sentido de la marcha.",
+        "Por la derecha o por la izquierda indistintamente."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0398.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "98",
+      "why_hard": "Detalle técnico: debe ir por la DERECHA según sentido de marcha (como si fuera un vehículo), no por la izquierda como peatón normal"
+    },
+    {
+      "num": 19,
+      "enunciado": "¿Cuál es la acción correcta que debe tomar un conductor si ya ha ingresado en una intersección y un agente levanta el brazo verticalmente?",
+      "opciones": [
+        "Detenerse de inmediato, independientemente de su ubicación en la intersección.",
+        "Continuar su trayectoria a través de la intersección sin detenerse.",
+        "Detenerse solo si puede hacerlo de manera segura sin obstruir el tráfico."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "B",
+      "todotest_id": "155876",
+      "why_hard": "Excepción importante: si YA entraste en la intersección, CONTINÚAS sin detenerte aunque el agente levante el brazo (señal de STOP)"
+    },
+    {
+      "num": 23,
+      "enunciado": "¿Está prohibido circular marcha atrás?",
+      "opciones": [
+        "No, excepto en autopistas y autovías.",
+        "Sí, si hay otros usuarios en las proximidades.",
+        "Sí, salvo que no pueda marchar hacia delante o cambiar de dirección o sentido."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "C",
+      "todotest_id": "113",
+      "why_hard": "Regla muy estricta: SÍ está prohibida marcha atrás, SALVO cuando no puedas marchar adelante o cambiar de dirección (muy restrictivo)"
+    },
+    {
+      "num": 25,
+      "enunciado": "¿Puede parar en un carril bus?",
+      "opciones": [
+        "No.",
+        "Sí, cuando sea por un tiempo inferior a 2 minutos.",
+        "Sí, si utiliza la señal de emergencia."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1492.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "115",
+      "why_hard": "Prohibición absoluta: NO se puede ni parar (ni siquiera <2 minutos) ni estacionar en carril bus, nunca"
+    },
+    {
+      "num": 5,
+      "enunciado": "Dos vehículos del mismo tipo se encuentran en un estrechamiento y no se sabe cuál tiene preferencia, ¿cuál de ellos tiene prioridad?",
+      "opciones": [
+        "El vehículo que tenga que dar marcha atrás mayor distancia.",
+        "El vehículo que tenga que dar marcha atrás una menor distancia.",
+        "El vehículo que tenga mayor anchura o longitud."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1134.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "155",
+      "why_hard": "Regla contraintuitiva: tiene preferencia el que tenga que dar marcha atrás MÁS distancia (al revés de lo lógico)"
+    },
+    {
+      "num": 7,
+      "enunciado": "Los vehículos prioritarios, ¿tienen prioridad de paso sobre el resto de los usuarios de la vía?",
+      "opciones": [
+        "Sí.",
+        "No.",
+        "Sólo cuando circulen en servicio de urgencia."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0124.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "277",
+      "why_hard": "La gente piensa que los vehículos prioritarios siempre tienen prioridad, pero solo la tienen cuando están en servicio de urgencia"
+    },
+    {
+      "num": 5,
+      "enunciado": "El titular de un permiso de la clase B, ¿puede conducir una motocicleta dentro del territorio nacional?",
+      "opciones": [
+        "Sí, una motocicleta que se pueda conducir con el permiso A1, siempre que la antigüedad del permiso sea superior a 3 años.",
+        "No, no puedo conducir ningún tipo de motocicleta.",
+        "Sí, de cualquier tipo."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0168.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "365",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 29,
+      "enunciado": "Un ciclomotor y un turismo llegan al mismo tiempo a un estrechamiento sin señalizar la prioridad, ¿quién tiene prioridad?",
+      "opciones": [
+        "El turismo.",
+        "El ciclomotor.",
+        "El que pueda circular con menos seguridad."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "A",
+      "todotest_id": "389",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 25,
+      "enunciado": "Circulando con lluvia muy intensa, ¿se pueden utilizar las luces antiniebla delanteras y traseras?",
+      "opciones": [
+        "No, porque sólo se pueden utilizar con niebla.",
+        "Sí, y además es obligatorio utilizar la luz antiniebla trasera.",
+        "Sí, pero sólo la luz antiniebla delantera."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/poli_1.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "415",
+      "why_hard": "Excepción: se puede usar luz antiniebla trasera con lluvia muy intensa, no solo con niebla"
+    },
+    {
+      "num": 24,
+      "enunciado": "En vías interurbanas, los ciclos y ciclomotores de dos ruedas, ¿dónde deben situarse para girar a la izquierda?",
+      "opciones": [
+        "A la derecha, fuera de la calzada si es posible, e iniciarlo desde ese lugar.",
+        "En el centro, sin invadir el sentido contrario.",
+        "En el carril izquierdo."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "A",
+      "todotest_id": "744",
+      "why_hard": "Regla específica para ciclomotores: deben situarse a la derecha, fuera de la calzada, no en el centro"
+    },
+    {
+      "num": 1,
+      "enunciado": "Las personas provistas de un certificado médico de exención, ¿están obligadas a abrocharse el cinturón de seguridad?",
+      "opciones": [
+        "Únicamente fuera de poblado.",
+        "No.",
+        "Sí."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0300.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "751",
+      "why_hard": "Excepción médica válida que muchos desconocen"
+    },
+    {
+      "num": 8,
+      "enunciado": "Circulando con lluvia intensa, ¿es obligatorio utilizar la luz antiniebla trasera?",
+      "opciones": [
+        "Sí, el trasero y el delantero.",
+        "Sí.",
+        "No."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0079.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "908",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 23,
+      "enunciado": "¿Qué vehículo tendrá preferencia de paso en un estrechamiento cuando la prioridad no esté expresamente señalizada?",
+      "opciones": [
+        "El vehículo que tenga que dar marcha atrás mayor distancia.",
+        "El vehículo que haya entrado primero.",
+        "El vehículo que haya llegado primero."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "B",
+      "todotest_id": "923",
+      "why_hard": "Regla contraintuitiva: tiene preferencia el que tenga que dar marcha atrás MÁS distancia (al revés de lo lógico)"
+    },
+    {
+      "num": 21,
+      "enunciado": "El titular de un permiso de la clase B, ¿puede conducir motocicletas con sidecar?",
+      "opciones": [
+        "Sí, pero sólo en territorio nacional.",
+        "No.",
+        "Sí, siempre que el permiso de la clase B tenga una antigüedad superior a 3 años, solo en territorio nacional."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0419.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "1101",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 13,
+      "enunciado": "En una zona de obras en la que se ha producido un estrechamiento de la calzada, ¿qué vehículo tendrá preferencia si no hay señal que la regule?",
+      "opciones": [
+        "El que haya entrado primero.",
+        "El que se encuentre el estrechamiento a su derecha.",
+        "El que no tenga que cambiar de carril para entrar en el estrechamiento."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "A",
+      "todotest_id": "1123",
+      "why_hard": "Regla contraintuitiva: tiene preferencia el que tenga que dar marcha atrás MÁS distancia (al revés de lo lógico)"
+    },
+    {
+      "num": 2,
+      "enunciado": "Si en un estrechamiento sin señalizar han entrado a la vez un turismo y un vehículo de tracción animal, ¿cuál de los dos vehículos tendrá preferencia de paso?",
+      "opciones": [
+        "El vehículo de tracción animal.",
+        "El que tenga que dar marcha atrás una mayor distancia.",
+        "El turismo."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1204.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "1142",
+      "why_hard": "Regla contraintuitiva: tiene preferencia el que tenga que dar marcha atrás MÁS distancia (al revés de lo lógico)"
+    },
+    {
+      "num": 6,
+      "enunciado": "Como norma general, ¿en qué vías está prohibido circular marcha atrás?",
+      "opciones": [
+        "Sólo en las vías urbanas.",
+        "Sólo en las autopistas y autovías.",
+        "En todas las vías, salvo como complemento a determinadas maniobras."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "C",
+      "todotest_id": "1206",
+      "why_hard": "Excepción: solo está permitida cuando no puedas marchar adelante o cambiar de dirección"
+    },
+    {
+      "num": 4,
+      "enunciado": "Un peatón que empuja un carrito, ¿por dónde puede circular?",
+      "opciones": [
+        "Sólo por la zona peatonal.",
+        "Por la zona peatonal, o por el arcén o la calzada si pudiera obstaculizar el paso.",
+        "Sólo por la calzada."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "B",
+      "todotest_id": "1264",
+      "why_hard": "Detalle técnico: un peatón que empuja un vehículo de dos ruedas debe ir por la derecha, no por la izquierda como los peatones normales"
+    },
+    {
+      "num": 18,
+      "enunciado": "¿Puede conducir una motocicleta con el permiso de la clase B?",
+      "opciones": [
+        "Sí, si es de una cilindrada menor de 250 centímetros cúbicos.",
+        "Sí, sólo en España, con una cilindrada máxima de 125 centímetros cúbicos, y con una antigüedad del permiso superior a tres años.",
+        "Sí, siempre que no supere los 25 kW de potencia."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "B",
+      "todotest_id": "1428",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 26,
+      "enunciado": "Por el carril para vehículos de alta ocupación (VAO), ¿puede circular un turismo con remolque?",
+      "opciones": [
+        "Sí, cuando el remolque sea ligero.",
+        "No.",
+        "Sí, cuando lo ocupan el número de personas exigido."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0558.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "1496",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 29,
+      "enunciado": "En un paso para ciclistas, ¿tienen éstos prioridad sobre otros vehículos?",
+      "opciones": [
+        "No.",
+        "Sí, siempre.",
+        "Sí, pero sólo si se aproximan por la derecha."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0709.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "1529",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 1,
+      "enunciado": "Si en vía interurbana un ciclomotor de dos ruedas quiere girar a la izquierda y no hay carril acondicionado para ello:",
+      "opciones": [
+        "No puede realizar el giro.",
+        "Debe situarse a la derecha, e iniciarlo siempre desde el centro de la calzada.",
+        "Debe situarse a la derecha, e iniciarlo fuera de la calzada siempre que sea posible."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "C",
+      "todotest_id": "1591",
+      "why_hard": "Regla específica para ciclomotores: deben situarse a la derecha, fuera de la calzada, no en el centro"
+    },
+    {
+      "num": 6,
+      "enunciado": "En un tramo de gran pendiente, ¿qué vehículo pasará primero en un estrechamiento en el que no está señalizada la prioridad?",
+      "opciones": [
+        "El vehículo con mayor dificultad de maniobra.",
+        "El que circula en sentido ascendente.",
+        "El que circula en sentido descendente."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0145.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "1626",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 24,
+      "enunciado": "El permiso de la clase B, ¿autoriza a conducir motocicletas de más de 125 centímetros cúbicos?",
+      "opciones": [
+        "Sí, pero sin llevar pasajeros.",
+        "Sí, si tiene una antigüedad superior a 3 años.",
+        "No."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0626.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "1734",
+      "why_hard": "Limitación territorial: solo válido en España, no en toda Europa, y requiere 3 años de antigüedad"
+    },
+    {
+      "num": 4,
+      "enunciado": "Si los paneles de mensaje variable indican que los turismos con distintivo ambiental B pueden circular por un carril VAO, ¿Qué ocupación mínima debe tener el vehículo?",
+      "opciones": [
+        "Dos ocupantes, incluido el conductor.",
+        "Un ocupante.",
+        "Dos ocupantes, sin incluir al conductor."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1056.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "155858",
+      "why_hard": "Trampa: los vehículos con distintivo B pueden circular con UN SOLO ocupante (el conductor), no necesitan dos personas como los normales"
+    },
+    {
+      "num": 11,
+      "enunciado": "Circula con su turismo por una vía que se cruza con un carril-bici;¿debe ceder el paso a los ciclistas?",
+      "opciones": [
+        "No.Los ciclistas no tienen prioridad de paso frente a los vehículos de motor.",
+        "Sí, siempre.",
+        "Sólo cuando los ciclistas se aproximen por su derecha."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0382.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "155865",
+      "why_hard": "Mucha gente piensa que depende de la derecha o la señalización, pero NO: SIEMPRE se cede el paso a ciclistas en carril-bici señalizado"
+    },
+    {
+      "num": 14,
+      "enunciado": "Una persona provista de un certificado médico que le exima de utilizar los sistemas de retención del vehículo, ¿está exenta de llevar abrochado el cinturón de seguridad?",
+      "opciones": [
+        "Sí.",
+        "No.",
+        "Únicamente fuera de poblado."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0197.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "155868",
+      "why_hard": "Excepción médica válida que muchos desconocen: SÍ está exenta si tiene certificado médico oficial"
+    },
+    {
+      "num": 22,
+      "enunciado": "¿Cuál es la acción correcta que debe tomar un conductor si ya ha ingresado en una intersección y un agente levanta el brazo verticalmente?",
+      "opciones": [
+        "Detenerse de inmediato, independientemente de su ubicación en la intersección.",
+        "Continuar su trayectoria a través de la intersección sin detenerse.",
+        "Detenerse solo si puede hacerlo de manera segura sin obstruir el tráfico."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0177.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "155876",
+      "why_hard": "Excepción importante: si YA entraste en la intersección, CONTINÚAS sin detenerte aunque el agente levante el brazo (señal de STOP)"
+    },
+    {
+      "num": 5,
+      "enunciado": "Dos vehículos del mismo tipo se encuentran en un estrechamiento, en el que la prioridad no está señalizada. ¿Cuál de ellos tendrá preferencia de paso?",
+      "opciones": [
+        "El vehículo que tenga que dar marcha atrás una menor distancia.",
+        "El vehículo que tenga que dar marcha atrás mayor distancia.",
+        "El vehículo que tenga mayor anchura, longitud o masa máxima autorizada."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0313.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "155949",
+      "why_hard": "Regla contraintuitiva: tiene preferencia el que tenga que dar marcha atrás MÁS distancia (al revés de lo lógico)"
+    },
+    {
+      "num": 8,
+      "enunciado": "¿Está permitido que las motocicletas circulen por un carril reservado para vehículos con alta ocupación (VAO)?",
+      "opciones": [
+        "No.",
+        "Solo si lleva algún ocupante, además del conductor.",
+        "Sí."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0295.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "155952",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 10,
+      "enunciado": "Por el carril para vehículos de alta ocupación (VAO), ¿puede circular un turismo con remolque?",
+      "opciones": [
+        "Sí, cuando el remolque sea ligero.",
+        "No.",
+        "Sí, cuando lo ocupan el número de personas exigido."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0207.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "1496",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 16,
+      "enunciado": "El titular de un permiso de la clase B, ¿puede conducir motocicletas con sidecar?",
+      "opciones": [
+        "Sí, pero sólo en territorio nacional.",
+        "No.",
+        "Sí, siempre que el permiso de la clase B tenga una antigüedad superior a 3 años, solo en territorio nacional."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0885.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "1101",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 3,
+      "enunciado": "Un ciclomotor y un turismo llegan al mismo tiempo a un estrechamiento sin señalizar la prioridad, ¿quién tiene prioridad?",
+      "opciones": [
+        "El turismo.",
+        "El ciclomotor.",
+        "El que pueda circular con menos seguridad."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0215.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "389",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 12,
+      "enunciado": "Con lluvia muy intensa, ¿es obligatorio utilizar la luz antiniebla trasera?",
+      "opciones": [
+        "Sí.",
+        "No, sólo es opcional.",
+        "No, sólo puedo usarla en caso de niebla muy espesa."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0321.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "2422",
+      "why_hard": "Excepción: se puede usar luz antiniebla trasera con lluvia muy intensa, no solo con niebla"
+    },
+    {
+      "num": 9,
+      "enunciado": "¿Qué vehículo tendrá preferencia de paso en un estrechamiento cuando la prioridad no esté expresamente señalizada?",
+      "opciones": [
+        "El vehículo que tenga que dar marcha atrás mayor distancia.",
+        "El vehículo que haya entrado primero.",
+        "El vehículo que haya llegado primero."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "B",
+      "todotest_id": "923",
+      "why_hard": "Regla contraintuitiva: tiene preferencia el que tenga que dar marcha atrás MÁS distancia (al revés de lo lógico)"
+    },
+    {
+      "num": 8,
+      "enunciado": "En una zona de obras en la que se ha producido un estrechamiento de la calzada, ¿qué vehículo tendrá preferencia si no hay señal que la regule?",
+      "opciones": [
+        "El que haya entrado primero.",
+        "El que se encuentre el estrechamiento a su derecha.",
+        "El que no tenga que cambiar de carril para entrar en el estrechamiento."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0699.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "1123",
+      "why_hard": "Regla contraintuitiva: tiene preferencia el que tenga que dar marcha atrás MÁS distancia (al revés de lo lógico)"
+    },
+    {
+      "num": 11,
+      "enunciado": "Los vehículos prioritarios, ¿tienen prioridad de paso sobre el resto de los usuarios de la vía?",
+      "opciones": [
+        "Sí.",
+        "No.",
+        "Sólo cuando circulen en servicio de urgencia."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/v13.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "277",
+      "why_hard": "La gente piensa que los vehículos prioritarios siempre tienen prioridad, pero solo la tienen cuando están en servicio de urgencia"
+    },
+    {
+      "num": 17,
+      "enunciado": "¿Podrá un turismo circular por el carril bus?",
+      "opciones": [
+        "No, en ningún caso, es exclusivo para el BUS.",
+        "Sí, siempre que la marca blanca longitudinal sea discontinua y para realizar cualquier maniobra.",
+        "En los tramos en que la marca blanca longitudinal sea discontinua, para cambiar de dirección y dando prioridad a los autobuses."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0045.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "2205",
+      "why_hard": "Excepción: se puede circular si la línea es discontinua, la mayoría cree que nunca se puede"
+    },
+    {
+      "num": 14,
+      "enunciado": "Si al llegar a una intersección se acerca un grupo de ciclistas por su lado izquierdo, ¿quién tendrá prioridad de paso?",
+      "opciones": [
+        "Yo en aplicación de la norma general.",
+        "El grupo de ciclistas.",
+        "El que llegue primero a la intersección."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0459.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "1885",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 8,
+      "enunciado": "Si al llegar a una intersección se acerca un grupo de ciclistas por su lado izquierdo, ¿quién tendrá prioridad de paso?",
+      "opciones": [
+        "Yo en aplicación de la norma general.",
+        "El grupo de ciclistas.",
+        "El que llegue primero a la intersección."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/p11a.jpg",
+      "respuesta_correcta": "A",
+      "todotest_id": "1885",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 1,
+      "enunciado": "En un tramo de gran pendiente, ¿qué vehículo pasará primero en un estrechamiento en el que no está señalizada la prioridad?",
+      "opciones": [
+        "El vehículo con mayor dificultad de maniobra.",
+        "El que circula en sentido ascendente.",
+        "El que circula en sentido descendente."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0479.jpg",
+      "respuesta_correcta": "B",
+      "todotest_id": "1626",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    },
+    {
+      "num": 2,
+      "enunciado": "Un peatón que empuja un carrito, ¿por dónde puede circular?",
+      "opciones": [
+        "Sólo por la zona peatonal.",
+        "Por la zona peatonal, o por el arcén o la calzada si pudiera obstaculizar el paso.",
+        "Sólo por la calzada."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "B",
+      "todotest_id": "1264",
+      "why_hard": "Detalle técnico: un peatón que empuja un vehículo de dos ruedas debe ir por la derecha, no por la izquierda como los peatones normales"
+    },
+    {
+      "num": 6,
+      "enunciado": "De noche y con lluvia muy intensa ¿es obligatorio llevar las luces antiniebla traseras?",
+      "opciones": [
+        "Sí.",
+        "Sí, y además las delanteras antiniebla.",
+        "Sí, y además las de corto alcance o de cruce."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0590.jpg",
+      "respuesta_correcta": "C",
+      "todotest_id": "2171",
+      "why_hard": "Excepción: se puede usar luz antiniebla trasera con lluvia muy intensa, no solo con niebla"
+    },
+    {
+      "num": 13,
+      "enunciado": "¿Puede parar en un carril bus?",
+      "opciones": [
+        "No.",
+        "Sí, cuando sea por un tiempo inferior a 2 minutos.",
+        "Sí, si utiliza la señal de emergencia."
+      ],
+      "numOpciones": 3,
+      "hasImage": false,
+      "imageSrc": null,
+      "respuesta_correcta": "A",
+      "todotest_id": "115",
+      "why_hard": "Prohibición absoluta: NO se puede ni parar (ni siquiera <2 minutos) ni estacionar en carril bus, nunca"
+    },
+    {
+      "num": 19,
+      "enunciado": "Circulando con lluvia intensa, ¿es obligatorio utilizar la luz antiniebla trasera?",
+      "opciones": [
+        "Sí, el trasero y el delantero.",
+        "Sí.",
+        "No."
+      ],
+      "numOpciones": 3,
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0221.JPG",
+      "respuesta_correcta": "C",
+      "todotest_id": "908",
+      "why_hard": "Pregunta con respuesta contraintuitiva o que requiere conocer excepciones a reglas generales"
+    }
+  ]
+}

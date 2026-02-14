@@ -1,0 +1,1876 @@
+{
+  "metadata": {
+    "tipo": "completar",
+    "total": 133,
+    "priority_3": 12,
+    "priority_2": 121,
+    "priority_1": 0,
+    "date": "2026-02-11T17:08:48.625960",
+    "criteria": "Priority 3: Exceptions and counterintuitive rules; Priority 2: Specific numbers and very similar options; Priority 1: Requires careful reading",
+    "source_file": "C:\\Users\\fangz\\OneDrive\\Desktop\\Nadatest\\content\\todotest_2700.json"
+  },
+  "preguntas": [
+    {
+      "enunciado": "En las autovías, se permite circular...",
+      "opciones": [
+        "a peatones.",
+        "a vehículos de tracción animal.",
+        "por los arcenes, a conductores de bicicletas mayores de 14 años, salvo que se prohíba por señal."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0101.jpg",
+      "todotest_id": "227",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "Si el resultado de las pruebas de alcoholemia es positivo el agente podrá inmovilizar el vehículo, a no ser...",
+      "opciones": [
+        "que el conductor haga efectiva en el acto la sanción económica impuesta.",
+        "que en el vehículo viajen niños o ancianos.",
+        "que pueda hacerse cargo de su conducción otra persona debidamente habilitada."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "235",
+      "why_hard": "Contiene excepción que contradice la regla general",
+      "priority": 3
+    },
+    {
+      "enunciado": "Los vehículos que circulen por el arcén tienen prohibido circular en posición paralela, excepto...",
+      "opciones": [
+        "los que circulen muy despacio.",
+        "los ciclomotores y las motocicletas.",
+        "las bicicletas."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0160.jpg",
+      "todotest_id": "346",
+      "why_hard": "Contiene excepción que contradice la regla general; Prohibición/obligación con excepciones específicas",
+      "priority": 3
+    },
+    {
+      "enunciado": "Este panel deberá colocarse...",
+      "opciones": [
+        "solamente en la parte trasera de los vehículos destinados exclusivamente al transporte de mercancías.",
+        "en la parte trasera de la carga que sobresalga de cualquier vehículo, excepto en los de anchura inferior a 1 metro.",
+        "en la parte delantera y trasera en los vehículos destinados exclusivamente al transporte de mercancías."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0181.jpg",
+      "todotest_id": "404",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "Modificar la señalización de la vía...",
+      "opciones": [
+        "está prohibido, salvo por causa justificada.",
+        "no está prohibido, pero no es recomendable.",
+        "está permitido siempre que la modificación ayude a aclarar el sentido de la señalización."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "450",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "En los estrechamientos en tramos de gran pendiente, si no hay señalización expresa al efecto, tendrá la preferencia de paso el vehículo que circule en sentido...",
+      "opciones": [
+        "ascendente, salvo si pudiera llegar antes a un apartadero.",
+        "ascendente, en todo caso.",
+        "descendente, salvo si pudiera llegar antes a un apartadero."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "540",
+      "why_hard": "La respuesta correcta incluye una excepción; Prioridad en estrechamientos con pendiente - regla con excepciones",
+      "priority": 3
+    },
+    {
+      "enunciado": "La señal que se observa en la fotografía obliga a mantener esa velocidad máxima en todo el poblado...",
+      "opciones": [
+        "independientemente de otras señales de velocidad que encuentre dentro de él.",
+        "pudiendo rebasarla en 20 km/h para adelantar.",
+        "excepto donde se indique otra velocidad."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "977",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "Los animales pueden circular...",
+      "opciones": [
+        "únicamente por vías interurbanas.",
+        "por todas las vías, excepto por autopistas y autovías.",
+        "por todas las vías sin excepción."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1314",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "Los conos de la fotografía ...",
+      "opciones": [
+        "sirven sólo para señalizar un nuevo carril.",
+        "tienen prioridad sobre el resto de señales.",
+        "tienen prioridad sobre el resto de señales, salvo las de los agentes de la autoridad."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1586",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "Esta señal indica entrada prohibida a...",
+      "opciones": [
+        "vehículos automóviles.",
+        "vehículos de motor, excepto motocicletas de dos ruedas sin sidecar.",
+        "turismos."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1748",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "Los conos de la fotografía ...",
+      "opciones": [
+        "sirven sólo para señalizar un nuevo carril.",
+        "tienen prioridad sobre el resto de señales.",
+        "tienen prioridad sobre el resto de señales, salvo las de los agentes de la autoridad."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1586",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "Los animales pueden circular...",
+      "opciones": [
+        "únicamente por vías interurbanas.",
+        "por todas las vías, excepto por autopistas y autovías.",
+        "por todas las vías sin excepción."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0409.jpg",
+      "todotest_id": "1314",
+      "why_hard": "La respuesta correcta incluye una excepción",
+      "priority": 3
+    },
+    {
+      "enunciado": "En condiciones normales, la velocidad adecuada está siempre...",
+      "opciones": [
+        "por debajo de la velocidad mínima.",
+        "por encima de la velocidad máxima y por debajo de la mínima.",
+        "por encima de la velocidad mínima y por debajo de la máxima."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0148.jpg",
+      "todotest_id": "19",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles; Pregunta con absolutismo que requiere respuesta matizada",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si el vehículo de detrás se acerca demasiado, es conveniente...",
+      "opciones": [
+        "mantener la misma separación con el vehículo de delante.",
+        "disminuir la separación con el vehículo de delante.",
+        "aumentar la separación con el vehículo de delante."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0021.jpg",
+      "todotest_id": "56",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Para prevenir la fatiga debe parar a descansar 20 ó 30 minutos...",
+      "opciones": [
+        "cada 2 horas o 200 kilómetros de conducción continuada.",
+        "cada 4 horas o 400 kilómetros de conducción continuada.",
+        "a mitad de recorrido."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "106",
+      "why_hard": "Cifra específica 20 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "A medida que aumenta la velocidad...",
+      "opciones": [
+        "disminuye el campo visual y se retrasa la aparición de la fatiga.",
+        "disminuye el campo visual y se acelera la aparición de la fatiga.",
+        "aumenta el campo visual y se acelera la aparición de la fatiga."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0082.jpg",
+      "todotest_id": "157",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Los vehículos especiales que circulan por una vía de uso público deben utilizar la luz rotativa amarillo auto cuando circulen a una velocidad...",
+      "opciones": [
+        "no superior a 40 km/h.",
+        "no superior a 40 km/h, solamente de noche.",
+        "superior a 40 km/h."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/v13.jpg",
+      "todotest_id": "169",
+      "why_hard": "Cifra específica 40 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "La distancia de frenado de un vehículo cargado es...",
+      "opciones": [
+        "igual que cuando circula sin carga.",
+        "menor que cuando circula sin carga.",
+        "mayor que cuando circula sin carga."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r309.jpg",
+      "todotest_id": "187",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Los peatones que transiten de noche por una vía fuera de poblado deberán llevar un...",
+      "opciones": [
+        "catadióptrico de color rojo, que pueda verse a una distancia de al menos 50 metros.",
+        "elemento luminoso o reflectante que pueda verse a una distancia de al menos 150 metros.",
+        "teléfono móvil."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0500.jpg",
+      "todotest_id": "189",
+      "why_hard": "Cifra específica 50 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "La velocidad máxima a la que puede circular un automóvil derivado de turismo en una carretera convencional es de...",
+      "opciones": [
+        "80 km/h.",
+        "90 km/h.",
+        "100 km/h."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0137.jpg",
+      "todotest_id": "218",
+      "why_hard": "Cifra específica 90 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Las señales acústicas deben ser ...",
+      "opciones": [
+        "de cualquier sonido.",
+        "de sonido muy agudo.",
+        "de sonido no estridente."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "226",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Son remolques ligeros aquellos cuya MMA...",
+      "opciones": [
+        "es igual a 750 kg.",
+        "no supera los 750 kg.",
+        "supera los 750 kg."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0113.jpg",
+      "todotest_id": "257",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas; Cifra específica 50 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal indica la situación de...",
+      "opciones": [
+        "un extintor de incendios y un teléfono de emergencia en un apartadero.",
+        "una salida de emergencia.",
+        "un puesto de socorro."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0375.jpg",
+      "todotest_id": "290",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Una motocicleta que alcanza una velocidad superior a 100 kilómetros por hora, debe llevar obligatoriamente...",
+      "opciones": [
+        "un espejo retrovisor en el lado derecho, solamente.",
+        "un espejo retrovisor en el lado izquierdo, solamente.",
+        "dos espejos retrovisores, uno a cada lado."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "302",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Las personas que beben y conducen...",
+      "opciones": [
+        "tienen la misma probabilidad de sufrir un accidente.",
+        "tienen menor probabilidad de sufrir un accidente.",
+        "tienen mayor probabilidad de sufrir un accidente."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0148.jpg",
+      "todotest_id": "348",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La principal causa de fatiga al volante es conducir...",
+      "opciones": [
+        "largos periodos con descansos adecuados.",
+        "cortos periodos con descansos adecuados.",
+        "largos periodos con descansos muy breves."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "359",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "En caso de caída de la carga en la calzada, el conductor deberá...",
+      "opciones": [
+        "cortar la circulación en todo caso.",
+        "proseguir la marcha y avisar del accidente a las autoridades pertinentes.",
+        "retirarla lo antes posible y adoptar entre tanto las medidas necesarias para avisar al resto de usuarios y para que no se dificulte la circulación."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0969.jpg",
+      "todotest_id": "367",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "El consumo de combustible es menor si se circula con marchas...",
+      "opciones": [
+        "largas y el motor muy revolucionado.",
+        "cortas y el motor muy revolucionado.",
+        "largas y el motor poco revolucionado."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0087.jpg",
+      "todotest_id": "405",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal prohíbe...",
+      "opciones": [
+        "el paso a vehículos que transporten más de 500 litros de productos capaces de contaminar el agua.",
+        "el paso a vehículos que transporten más de 1000 litros de productos capaces de contaminar el agua.",
+        "el paso a vehículos cisternas."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "419",
+      "why_hard": "Cifra específica 100 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "En las motocicletas, la postura del conductor ha de ser...",
+      "opciones": [
+        "lo más aerodinámica posible, encorvando el cuerpo cuanto más mejor.",
+        "suelta y no forzada, sin encorvar el cuerpo más de lo necesario.",
+        "un poco forzada, para evitar relajamientos."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0721.jpg",
+      "todotest_id": "427",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "La mayoría de los atropellos a niños se produce...",
+      "opciones": [
+        "durante los fines de semana.",
+        "al término de la jornada escolar.",
+        "al inicio de la jornada escolar."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "439",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Por debajo de las tasas permitidas de alcoholemia...",
+      "opciones": [
+        "es muy poco probable tener un accidente debido a los efectos del alcohol.",
+        "no es posible tener un accidente debido a los efectos del alcohol.",
+        "también es posible tener un accidente debido a los efectos del alcohol."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0210.jpg",
+      "todotest_id": "473",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Una de las principales causas de mortalidad en los accidentes de moto y ciclomotor es...",
+      "opciones": [
+        "no utilizar el casco.",
+        "el arrollamiento por otros vehículos.",
+        "los golpes contra el asfalto en las caídas."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0178.jpg",
+      "todotest_id": "474",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Un mantenimiento adecuado del vehículo...",
+      "opciones": [
+        "elimina la probabilidad de sufrir un accidente.",
+        "puede reducir la probabilidad de sufrir un accidente.",
+        "no reduce nunca la probabilidad de sufrir un accidente."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0265.jpg",
+      "todotest_id": "590",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Para disminuir la probabilidad de somnolencia debe evitar conducir...",
+      "opciones": [
+        "durante las horas de la madrugada.",
+        "durante las últimas horas de la tarde.",
+        "durante las primeras horas de la mañana."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0262.jpg",
+      "todotest_id": "605",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "En una situación incierta, podrá ganar unos metros vitales para evitar un accidente si coloca el pie...",
+      "opciones": [
+        "encima del pedal del freno, presionándolo levemente.",
+        "frente al pedal del freno sin llegar a presionar.",
+        "frente al pedal del embrague."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/poli_7.jpg",
+      "todotest_id": "617",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "En los vehículos de anchura inferior a un metro la carga no debe sobresalir lateralmente más de...",
+      "opciones": [
+        "0,50 metros a cada lado del eje longitudinal del vehículo.",
+        "0,50 metros a cada lado del vehículo.",
+        "0,40 metros a cada lado del vehículo."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "654",
+      "why_hard": "Cifra específica 0,5 con valores similares en otras opciones; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcohol para los conductores de vehículos que transportan mercancías peligrosas...",
+      "opciones": [
+        "es de 0,3 miligramos por litro en aire espirado.",
+        "es de 0,15 miligramos por litro en aire espirado.",
+        "depende de la masa máxima autorizada del vehículo con el que se realice el transporte."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/s1.jpg",
+      "todotest_id": "677",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal indica...",
+      "opciones": [
+        "el final de una autopista.",
+        "el principio de una autovía.",
+        "el principio de una autopista."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0289.jpg",
+      "todotest_id": "678",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La distancia que recorre el vehículo desde que se percibe un estímulo hasta que se responde al mismo se llama...",
+      "opciones": [
+        "distancia de reacción.",
+        "distancia de frenado.",
+        "distancia de detención."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "688",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Cuando se aproxime a niños o ancianos...",
+      "opciones": [
+        "debe adoptar las precauciones necesarias para no ponerles en peligro.",
+        "les avisará con señales acústicas.",
+        "se detendrá para cederles el paso."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "721",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "La velocidad máxima genérica para una motocicleta en una carretera convencional es de...",
+      "opciones": [
+        "110 km/h.",
+        "100 km/h.",
+        "90 km/h."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0748.jpg",
+      "todotest_id": "772",
+      "why_hard": "Cifra específica 90 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Un ciclomotor de dos ruedas es un vehículo con un motor de cilindrada...",
+      "opciones": [
+        "no superior a 50 centímetros cúbicos y una velocidad máxima no superior a 45 km/h.",
+        "inferior a 50 centímetros cúbicos.",
+        "superior a 50 centímetros cúbicos si es de combustión interna."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "782",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas; Cifra específica 50 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Se prohíbe circular por autopistas a los...",
+      "opciones": [
+        "vehículos que transporten mercancías peligrosas.",
+        "vehículos con remolque.",
+        "vehículos que no sean capaces de alcanzar en llano 60 km/h."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "787",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Cuando se adelante a vehículos de tracción animal, la separación lateral...",
+      "opciones": [
+        "no debe ser inferior a 1,5 metros, cuando el adelantamiento se realice fuera de poblado.",
+        "debe ser, al menos, de 1,5 metros en todos los casos.",
+        "debe ser siempre proporcional a la anchura y características de la vía."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0121.jpg",
+      "todotest_id": "814",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas; Cifra específica 1,5 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "El conductor de un vehículo detenido en un paso inferior por un tiempo superior a dos minutos está obligado a...",
+      "opciones": [
+        "conservar encendido el motor y poner la luz de posición.",
+        "apagar el motor y conservar encendido el alumbrado de posición.",
+        "conservar encendido el motor y poner la luz corta."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "818",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La velocidad máxima, con carácter general, para un vehículo especial es de...",
+      "opciones": [
+        "45 kilómetros por hora.",
+        "60 kilómetros por hora.",
+        "40 kilómetros por hora."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "820",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Un vehículo circula a velocidad inadecuada cuando...",
+      "opciones": [
+        "no se adapta a las circunstancias ni del tráfico ni de la vía.",
+        "se adapta a las condiciones de la vía pero supera los límites establecidos.",
+        "circula por debajo de la velocidad máxima y por encima de la mínima."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0708.jpg",
+      "todotest_id": "827",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si encuentra esta señal a la entrada de una vía debe saber que...",
+      "opciones": [
+        "está prohibida la circulación de ciclomotores.",
+        "está prohibida su utilización para todos aquellos usuarios que no sean conductores de ciclomotores.",
+        "es una vía reservada para ciclos y ciclomotores."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0330.jpg",
+      "todotest_id": "852",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Para regular correctamente el apoyacabezas, la distancia de éste con la cabeza debe ser...",
+      "opciones": [
+        "superior a 4 cm.",
+        "la mínima posible y nunca superior a 4 cm.",
+        "la que resulte más cómoda para el conductor."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0080.jpg",
+      "todotest_id": "867",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si por accidente u otra emergencia un vehículo tiene que ser inmovilizado en una autovía o autopista...",
+      "opciones": [
+        "sus ocupantes pueden transitar por la calzada, tomando las debidas precauciones.",
+        "ninguno de los ocupantes del vehículo puede transitar por la calzada.",
+        "los ocupantes del vehículo pueden transitar por la calzada, excepto los menores de edad."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "929",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal prohíbe ...",
+      "opciones": [
+        "el estacionamiento, en el lado de la calzada en que está situada la señal. Permite la parada.",
+        "la parada los días pares, en el lado de la calzada en que está situada la señal.",
+        "la parada y el estacionamiento, en el lado de la calzada en que está situada la señal."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0147.jpg",
+      "todotest_id": "931",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "El navegador debe colocarse...",
+      "opciones": [
+        "a una distancia cómoda para que el conductor pueda manejarlo en marcha.",
+        "a una altura correcta para no tener que apartar la vista de la conducción.",
+        "cerca del asiento del acompañante."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0646.jpg",
+      "todotest_id": "968",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "En los accidentes de circulación con motocicletas y ciclomotores implicados, una de las principales causas de mortalidad es...",
+      "opciones": [
+        "el peso del vehículo.",
+        "la fricción con el asfalto.",
+        "no llevar casco."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0387.jpg",
+      "todotest_id": "1008",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Está prohibido conducir un camión de menos de 3.500 kg de MMA con una tasa de alcohol en aire espirado superior a...",
+      "opciones": [
+        "0,25 miligramos por litro.",
+        "0,15 miligramos por litro.",
+        "0,30 miligramos por litro."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1044",
+      "why_hard": "Cifra específica 0,25 con valores similares en otras opciones; Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "El aquaplaning produce...",
+      "opciones": [
+        "una pérdida de visibilidad en caso de lluvia.",
+        "un aumento de adherencia en caso de lluvia.",
+        "una pérdida de adherencia en caso de lluvia."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1060",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcohol para un conductores de autobús es de...",
+      "opciones": [
+        "0,25 miligramos por litro de aire espirado.",
+        "0,15 miligramos por litro de aire espirado.",
+        "0,40 miligramos por litro de aire espirado."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0274.jpg",
+      "todotest_id": "1091",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Los conductores que llegan a un puente móvil cerrado o con la barrera o semibarrera en movimiento, deben...",
+      "opciones": [
+        "dar la vuelta y buscar otro itinerario.",
+        "detenerse uno detrás de otro en el carril adecuado.",
+        "acelerar y pasar cuanto antes."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1103",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Los niños suelen tener problemas en el tráfico porque...",
+      "opciones": [
+        "su campo visual es mayor.",
+        "su visión periférica es mayor.",
+        "no conocen todos los comportamientos adecuados para circular."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1104",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "En general, el sueño aparece con mayor frecuencia...",
+      "opciones": [
+        "en las primeras horas de la mañana y al final de la tarde.",
+        "durante la madrugada y en las primeras horas de la tarde.",
+        "durante las horas centrales de la mañana y en las primeras horas de la tarde."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1154",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "En una autopista, a partir de esta señal...",
+      "opciones": [
+        "finalizan todas las prohibiciones anteriores, incluida la prohibición de superar la velocidad de 70 kilómetros por hora.",
+        "la velocidad máxima recomendada es de 70 kilómetros por hora.",
+        "finaliza la prohibición de superar la velocidad de 70 kilómetros por hora."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1163",
+      "why_hard": "Cifra específica 70 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Los conductores deben ceder el paso a los animales...",
+      "opciones": [
+        "únicamente en las cañadas debidamente señalizadas.",
+        "siempre que se crucen sus trayectorias.",
+        "cuando vayan a girar con su vehículo para entrar en otra vía y haya animales cruzándola, aunque no exista paso para éstos."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0441.jpg",
+      "todotest_id": "1196",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Muchos atropellos a peatones se producen cuando los vehículos...",
+      "opciones": [
+        "circulan marcha atrás porque el conductor no ha visto al peatón.",
+        "se disponen a entrar en un garaje.",
+        "estacionan en la acera."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0465.jpg",
+      "todotest_id": "1203",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Un conductor que acaba de obtener su primer permiso de conducción no podrá superar la tasa de alcohol de...",
+      "opciones": [
+        "0,30 miligramos de alcohol por litro de aire espirado.",
+        "0,25 miligramos de alcohol por litro de aire espirado.",
+        "0,15 miligramos de alcohol por litro de aire espirado."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0455.jpg",
+      "todotest_id": "1207",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "El permiso de circulación es obligatorio para los remolques y semirremolques...",
+      "opciones": [
+        "que tengan una MMA no superior a 750 kg.",
+        "cualquiera que sea su MMA.",
+        "que tengan una MMA superior a 750 kg."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0146.jpg",
+      "todotest_id": "1238",
+      "why_hard": "Cifra específica 50 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Los animales tienen preferencia de paso en el lugar indicado con...",
+      "opciones": [
+        "la señal A.",
+        "la señal C.",
+        "la señal B."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1254",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles; Norma de prioridad en intersecciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "La distancia de frenado es...",
+      "opciones": [
+        "el espacio recorrido desde que el conductor acciona el freno hasta que vehículo se detiene.",
+        "el espacio recorrido desde que el conductor ve el obstáculo hasta que detiene el vehículo.",
+        "el espacio recorrido desde que el conductor ve el obstáculo hasta que acciona el freno."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0475.jpg",
+      "todotest_id": "1255",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Para evitar la fatiga en la conducción, conviene descansar...",
+      "opciones": [
+        "cada 3 horas o cada 400 kilómetros.",
+        "cuando el conductor compruebe que ha perdido totalmente la capacidad de reaccionar.",
+        "cada 2 horas o cada 200 kilómetros."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0481.jpg",
+      "todotest_id": "1268",
+      "why_hard": "Cifra específica 20 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Están obligados a utilizar casco...",
+      "opciones": [
+        "los conductores y pasajeros de las motocicletas de dos ruedas, con o sin sidecar.",
+        "solamente los conductores de las motocicletas de dos ruedas sin sidecar.",
+        "solamente los pasajeros de las motocicletas de dos ruedas sin sidecar."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/v13.jpg",
+      "todotest_id": "1275",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcohol permitida en aire espirado a un conductor novel es...",
+      "opciones": [
+        "0,30 miligramos por litro durante los dos primeros años.",
+        "0,25 miligramos por litro durante el primer año.",
+        "0,15 miligramos por litro durante los dos primeros años."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0496.jpg",
+      "todotest_id": "1313",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir",
+      "priority": 2
+    },
+    {
+      "enunciado": "Se considera que una vía está insuficientemente iluminada cuando...",
+      "opciones": [
+        "no pueda distinguir la placa de matrícula de otro vehículo a 50 metros.",
+        "la vía no permita ver con claridad.",
+        "con vista normal no se puede leer una placa de matrícula a 10 metros o distinguir un vehículo pintado de oscuro a 50 metros."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0505.jpg",
+      "todotest_id": "1322",
+      "why_hard": "Cifra específica 50 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa de alcoholemia realmente segura para conducir es...",
+      "opciones": [
+        "0,0 gramos de alcohol por litro de sangre.",
+        "0,10 gramos de alcohol por litro de sangre.",
+        "0,15 gramos de alcohol por litro de sangre."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0512.jpg",
+      "todotest_id": "1359",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "En un túnel, si circula sin intención de adelantar, debe mantener con el vehículo que circula delante una distancia...",
+      "opciones": [
+        "que permita al que circule detrás adelantar con seguridad.",
+        "de, al menos, 100 metros.",
+        "suficiente para no colisionar con él en caso de frenado brusco."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0519.jpg",
+      "todotest_id": "1366",
+      "why_hard": "Distancia específica en metros - fácil de confundir",
+      "priority": 2
+    },
+    {
+      "enunciado": "Las técnicas de conducción eficiente...",
+      "opciones": [
+        "son complementarias a las técnicas de conducción preventiva.",
+        "son más eficaces que las técnicas de conducción preventiva.",
+        "son lo mismo que las técnicas de conducción preventiva."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1432",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "El cinturón de seguridad...",
+      "opciones": [
+        "se puede sustituir por algún sistema de seguridad, como el airbag.",
+        "no se puede sustituir por ningún sistema de seguridad.",
+        "es incompatible con el airbag."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1433",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Un vehículo de dos ruedas provisto de un motor de combustión interna podrá ser catalogado como motocicleta siempre que ...",
+      "opciones": [
+        "disponga de al menos dos plazas, incluida la del conductor.",
+        "pueda alcanzar una velocidad máxima superior a 40km/h.",
+        "su cilindrada sea superior a 50 centímetros cúbicos."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r304.jpg",
+      "todotest_id": "1455",
+      "why_hard": "Cifra específica 50 con valores similares en otras opciones; Pregunta con absolutismo que requiere respuesta matizada",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcoholemia permitida en aire espirado en los conductores durante el segundo año de su primer permiso es de...",
+      "opciones": [
+        "0,25 miligramos por litro.",
+        "0,20 miligramos por litro.",
+        "0,15 miligramos por litro."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0549.jpg",
+      "todotest_id": "1458",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La máxima velocidad segura que puede mantenerse sobre una sección de carretera en condiciones favorables es la velocidad...",
+      "opciones": [
+        "de fluidez de una vía.",
+        "adecuada de una vía.",
+        "de diseño de una vía."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/s51b.jpg",
+      "todotest_id": "1495",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Estas señales indican peligro por...",
+      "opciones": [
+        "cercanía de un paso a nivel con barreras.",
+        "proximidad de un paso a nivel con barreras.",
+        "proximidad de un paso a nivel sin barreras."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0561.jpg",
+      "todotest_id": "1501",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "El lunes a las 9 de la mañana, a partir del lugar donde se encuentra situada esta señal...",
+      "opciones": [
+        "sólo se puede estacionar para dejar un paquete.",
+        "está prohibido parar y estacionar.",
+        "se puede parar pero no estacionar."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0589.jpg",
+      "todotest_id": "1561",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal indica el lugar en el que...",
+      "opciones": [
+        "termina la obligación de circular, al menos, a 40 km/h.",
+        "finaliza la recomendación de circular a velocidad superior a 40 km/h.",
+        "comienza la obligación de circular a más de 40 km/h."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0044.jpg",
+      "todotest_id": "1577",
+      "why_hard": "Cifra específica 40 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcoholemia, permitida en sangre, para conductores noveles es...",
+      "opciones": [
+        "0,30 gramos por litro.",
+        "0,50 gramos por litro.",
+        "0,45 gramos por litro."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0585.jpg",
+      "todotest_id": "1580",
+      "why_hard": "Cifra específica 30 con valores similares en otras opciones; Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Bajo los efectos del calor es posible que...",
+      "opciones": [
+        "aumente el tiempo de reacción y disminuya la agresividad.",
+        "aumente el tiempo de reacción y la agresividad.",
+        "disminuya el tiempo de reacción y aumente la agresividad."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1606",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La velocidad máxima para un vehículo mixto adaptable en autopista es...",
+      "opciones": [
+        "100 km/h.",
+        "120 km/h.",
+        "90 km/h."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/poli_3.jpg",
+      "todotest_id": "1614",
+      "why_hard": "Cifra específica 100 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Como norma general, está prohibido conducir turismos con una tasa de alcohol superior a...",
+      "opciones": [
+        "0,8 gramos por litro de sangre.",
+        "0,5 gramos por litro de sangre.",
+        "0,3 gramos por litro de sangre."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1663",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "En una motocicleta de anchura inferior a 1 metro, la carga no debe sobresalir...",
+      "opciones": [
+        "más de 0,25 metros por cada lado del eje longitudinal.",
+        "más de 0,20 metros por la parte trasera.",
+        "más de 0,50 metros por cada lado del eje longitudinal."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1673",
+      "why_hard": "Cifra específica 0,5 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Es necesario cambiar los neumáticos del vehículo...",
+      "opciones": [
+        "al menos cada 5 años, aunque no estén gastados.",
+        "sólo si presentan desgastes irregulares, cortes, grietas o deformaciones.",
+        "sólo si la profundidad del dibujo es inferior a 1,6 milímetros."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0053.jpg",
+      "todotest_id": "1693",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si tiene problemas de sueño, debe tener en cuenta que...",
+      "opciones": [
+        "debe dormir más horas para conducir.",
+        "no se encuentra en perfectas condiciones para conducir.",
+        "es recomendable tomar sustancias estimulantes en abundancia para mantenerse despierto."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1716",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Las marcas viales que señalizan un tramo de obras...",
+      "opciones": [
+        "significan lo mismo que las que se utilizan cuando no hay obras.",
+        "solamente alertan sobre la necesidad de extremar la precaución.",
+        "solamente hay que respetarlas cuando hay personas trabajando."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1722",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Ante un paso a nivel está obligado a...",
+      "opciones": [
+        "pasar aunque las barreras estén en movimiento.",
+        "asegurarse antes de atravesarlo de que no existe ningún peligro.",
+        "atravesarlo rápidamente."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0743.jpg",
+      "todotest_id": "1756",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "En los vehículos de anchura inferior a un metro, la carga no debe sobresalir por la parte posterior más de...",
+      "opciones": [
+        "0,50 metros.",
+        "0,25 metros.",
+        "0,40 metros."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1788",
+      "why_hard": "Cifra específica 0,25 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal significa intervalo...",
+      "opciones": [
+        "aconsejado de velocidades, aunque las condiciones sean desfavorables.",
+        "aconsejado de velocidades, siempre que las condiciones sean favorables.",
+        "obligatorio de velocidades, siempre que las condiciones sean favorables."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1799",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Cualquier conductor está obligado a...",
+      "opciones": [
+        "circular siempre por debajo de la velocidad máxima de la vía.",
+        "circular siempre a la velocidad máxima de la vía.",
+        "comportarse de forma que no entorpezca indebidamente la circulación."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1800",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si conduce con frecuencia y consume antihistamínicos para tratar una alergia respiratoria, es conveniente...",
+      "opciones": [
+        "Utilizar antihistamínicos no sedantes, que no producen somnolencia.",
+        "Tomar alguna bebida alcohólica para evitar la aparición del sueño.",
+        "Viajar al atardecer o al amanecer, ya que hay menos polen en el aire."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "155914",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "En una autovía, el límite de velocidad para una motocicleta es de...",
+      "opciones": [
+        "120 km/h, pudiéndose superar en 20 km/h para adelantar.",
+        "120 km/h.",
+        "100 km/h."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0048.jpg",
+      "todotest_id": "155924",
+      "why_hard": "Cifra específica 20 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Como norma general, en una vía interurbana de doble sentido de la circulación está permitido parar fuera de la calzada...",
+      "opciones": [
+        "en el lado izquierdo y dejando libre la parte transitable del arcén.",
+        "en el lado derecho y dejando libre la parte transitable del arcén.",
+        "en el lado derecho y sobre la parte transitable del arcén."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1686.jpg",
+      "todotest_id": "155972",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La señal que se observa en la fotografía indica que tienen prohibido adelantar...",
+      "opciones": [
+        "los turismos.",
+        "los turismos y los camiones de menos de 3.500 kg.",
+        "los camiones de más de 3.500 kg."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0255.jpg",
+      "todotest_id": "155979",
+      "why_hard": "Cifra específica 50 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcohol para un conductores de autobús es de...",
+      "opciones": [
+        "0,25 miligramos por litro de aire espirado.",
+        "0,15 miligramos por litro de aire espirado.",
+        "0,40 miligramos por litro de aire espirado."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r407a.jpg",
+      "todotest_id": "1091",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "En una situación incierta, podrá ganar unos metros vitales para evitar un accidente si coloca el pie...",
+      "opciones": [
+        "encima del pedal del freno, presionándolo levemente.",
+        "frente al pedal del freno sin llegar a presionar.",
+        "frente al pedal del embrague."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "617",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Las técnicas de conducción eficiente...",
+      "opciones": [
+        "son complementarias a las técnicas de conducción preventiva.",
+        "son más eficaces que las técnicas de conducción preventiva.",
+        "son lo mismo que las técnicas de conducción preventiva."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0685.jpg",
+      "todotest_id": "1432",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Un vehículo circula a velocidad inadecuada cuando...",
+      "opciones": [
+        "no se adapta a las circunstancias ni del tráfico ni de la vía.",
+        "se adapta a las condiciones de la vía pero supera los límites establecidos.",
+        "circula por debajo de la velocidad máxima y por encima de la mínima."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/p16a.jpg",
+      "todotest_id": "827",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Está prohibido conducir un camión de menos de 3.500 kg de MMA con una tasa de alcohol en aire espirado superior a...",
+      "opciones": [
+        "0,25 miligramos por litro.",
+        "0,15 miligramos por litro.",
+        "0,30 miligramos por litro."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1044",
+      "why_hard": "Cifra específica 0,25 con valores similares en otras opciones; Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "El nivel de alcohol en sangre será mayor...",
+      "opciones": [
+        "Una hora después de haber tomado la última copa.",
+        "Cuatro horas después de haber tomado la última copa.",
+        "Inmediatamente después de haber tomado la última copa."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1973",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Estas señales de advertencia de peligro le indican...",
+      "opciones": [
+        "La proximidad de un paso a nivel con barreras, lado derecho.",
+        "La proximidad de un paso a nivel sin barreras, lado izquierdo.",
+        "La proximidad de un paso a nivel sin barreras, lado derecho."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0920.jpg",
+      "todotest_id": "2317",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La señal indica el paso de dos a tres carriles de circulación y además...",
+      "opciones": [
+        "La velocidad máxima en cada uno de ellos.",
+        "La velocidad mínima en cada uno de ellos.",
+        "La velocidad máxima aconsejada en cada uno de ellos."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "2137",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal indica que ha finalizado...",
+      "opciones": [
+        "Una obligación anterior.",
+        "Una prohibición anterior.",
+        "Una recomendación anterior."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0603.jpg",
+      "todotest_id": "2064",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Los efectos del alcohol en nuestro organismo serán mayores...",
+      "opciones": [
+        "Una hora después de tomar la última copa.",
+        "Media hora después de tomar la última copa.",
+        "Cuatro horas después de tomar la última copa."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "2433",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal indica el lugar en el que...",
+      "opciones": [
+        "termina la obligación de circular, al menos, a 40 km/h.",
+        "finaliza la recomendación de circular a velocidad superior a 40 km/h.",
+        "comienza la obligación de circular a más de 40 km/h."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0731.jpg",
+      "todotest_id": "1577",
+      "why_hard": "Cifra específica 40 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "El aquaplaning produce...",
+      "opciones": [
+        "una pérdida de visibilidad en caso de lluvia.",
+        "un aumento de adherencia en caso de lluvia.",
+        "una pérdida de adherencia en caso de lluvia."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0763.jpg",
+      "todotest_id": "1060",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La velocidad máxima para un vehículo mixto adaptable en autopista es...",
+      "opciones": [
+        "100 km/h.",
+        "120 km/h.",
+        "90 km/h."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/s11.jpg",
+      "todotest_id": "1614",
+      "why_hard": "Cifra específica 100 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal indica que ha finalizado...",
+      "opciones": [
+        "Una obligación anterior.",
+        "Una prohibición anterior.",
+        "Una recomendación anterior."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0053.jpg",
+      "todotest_id": "2064",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Las señales acústicas deben ser ...",
+      "opciones": [
+        "de cualquier sonido.",
+        "de sonido muy agudo.",
+        "de sonido no estridente."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0007.jpg",
+      "todotest_id": "226",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si por accidente u otra emergencia un vehículo tiene que ser inmovilizado en una autovía o autopista...",
+      "opciones": [
+        "sus ocupantes pueden transitar por la calzada, tomando las debidas precauciones.",
+        "ninguno de los ocupantes del vehículo puede transitar por la calzada.",
+        "los ocupantes del vehículo pueden transitar por la calzada, excepto los menores de edad."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r114.jpg",
+      "todotest_id": "929",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Las marcas viales que señalizan un tramo de obras...",
+      "opciones": [
+        "significan lo mismo que las que se utilizan cuando no hay obras.",
+        "solamente alertan sobre la necesidad de extremar la precaución.",
+        "solamente hay que respetarlas cuando hay personas trabajando."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0156.jpg",
+      "todotest_id": "1722",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcoholemia permitida en sangre para conductores profesionales es...",
+      "opciones": [
+        "0,30 gramos por litro.",
+        "0,30 miligramos por litro.",
+        "0,50 gramos por litro."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1086.jpg",
+      "todotest_id": "26",
+      "why_hard": "Cifra específica 30 con valores similares en otras opciones; Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La distancia de frenado de un vehículo cargado es...",
+      "opciones": [
+        "igual que cuando circula sin carga.",
+        "menor que cuando circula sin carga.",
+        "mayor que cuando circula sin carga."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0705.jpg",
+      "todotest_id": "187",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Estas señales indican peligro por...",
+      "opciones": [
+        "cercanía de un paso a nivel con barreras.",
+        "proximidad de un paso a nivel con barreras.",
+        "proximidad de un paso a nivel sin barreras."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1501",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "La señal indica el paso de dos a tres carriles de circulación y además...",
+      "opciones": [
+        "La velocidad máxima en cada uno de ellos.",
+        "La velocidad mínima en cada uno de ellos.",
+        "La velocidad máxima aconsejada en cada uno de ellos."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0039.jpg",
+      "todotest_id": "2137",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "El lunes a las 9 de la mañana, a partir del lugar donde se encuentra situada esta señal...",
+      "opciones": [
+        "sólo se puede estacionar para dejar un paquete.",
+        "está prohibido parar y estacionar.",
+        "se puede parar pero no estacionar."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/s5.jpg",
+      "todotest_id": "1561",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Para evitar la fatiga en la conducción, conviene descansar...",
+      "opciones": [
+        "cada 3 horas o cada 400 kilómetros.",
+        "cuando el conductor compruebe que ha perdido totalmente la capacidad de reaccionar.",
+        "cada 2 horas o cada 200 kilómetros."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r204a.jpg",
+      "todotest_id": "1268",
+      "why_hard": "Cifra específica 20 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcoholemia permitida en aire espirado en los conductores durante el segundo año de su primer permiso es de...",
+      "opciones": [
+        "0,25 miligramos por litro.",
+        "0,20 miligramos por litro.",
+        "0,15 miligramos por litro."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1458",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si al accionar los frenos aparecen chirridos o ruidos metálicos será debido a que...",
+      "opciones": [
+        "El nivel de líquido de frenos está por debajo del mínimo.",
+        "Ha entrado aire en el circuito de frenado.",
+        "Las pastillas de freno se han gastado y requieren su sustitución."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0781.jpg",
+      "todotest_id": "2430",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Una motocicleta que alcanza una velocidad superior a 100 kilómetros por hora, debe llevar obligatoriamente...",
+      "opciones": [
+        "un espejo retrovisor en el lado derecho, solamente.",
+        "un espejo retrovisor en el lado izquierdo, solamente.",
+        "dos espejos retrovisores, uno a cada lado."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0277.jpg",
+      "todotest_id": "302",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "La tasa máxima de alcohol para los conductores de vehículos que transportan mercancías peligrosas...",
+      "opciones": [
+        "es de 0,3 miligramos por litro en aire espirado.",
+        "es de 0,15 miligramos por litro en aire espirado.",
+        "depende de la masa máxima autorizada del vehículo con el que se realice el transporte."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0460.jpg",
+      "todotest_id": "677",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir",
+      "priority": 2
+    },
+    {
+      "enunciado": "Esta señal indica...",
+      "opciones": [
+        "el final de una autopista.",
+        "el principio de una autovía.",
+        "el principio de una autopista."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/p16a.jpg",
+      "todotest_id": "678",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "En los vehículos de anchura inferior a un metro, la carga no debe sobresalir por la parte posterior más de...",
+      "opciones": [
+        "0,50 metros.",
+        "0,25 metros.",
+        "0,40 metros."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0153.jpg",
+      "todotest_id": "1788",
+      "why_hard": "Cifra específica 0,25 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si obtenemos hoy nuestro primer permiso de conducir sabremos que la tasa máxima de alcoholemia en aire espirado será de...",
+      "opciones": [
+        "0,30 mg de alcohol por cada litro de aire.",
+        "0,15 mg de alcohol por cada litro de aire.",
+        "0,26 mg de alcohol por cada litro de aire."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0011.jpg",
+      "todotest_id": "2411",
+      "why_hard": "Tasa de alcoholemia - valores específicos fáciles de confundir; Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "El reglaje del espejo retrovisor exterior izquierdo será correcto...",
+      "opciones": [
+        "Cuando desde el asiento del conductor y moviendo un poco la cabeza veamos ligeramente el lado del vehículo y el máximo de calzada.",
+        "Cuando desde el asiento del conductor y sin desviar la cabeza veamos ligeramente el lado del vehículo y el máximo de calzada.",
+        "Cuando desde el asiento del conductor y sin mover la cabeza veamos la mayor parte del lateral del vehículo y una parte pequeña de la calzada."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0188.jpg",
+      "todotest_id": "2049",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Se prohíbe circular por autopistas a los...",
+      "opciones": [
+        "vehículos que transporten mercancías peligrosas.",
+        "vehículos con remolque.",
+        "vehículos que no sean capaces de alcanzar en llano 60 km/h."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0012.jpg",
+      "todotest_id": "787",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "La velocidad máxima a la que puede circular un automóvil derivado de turismo en una carretera convencional es de...",
+      "opciones": [
+        "80 km/h.",
+        "90 km/h.",
+        "100 km/h."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1059.jpg",
+      "todotest_id": "218",
+      "why_hard": "Cifra específica 90 con valores similares en otras opciones",
+      "priority": 2
+    },
+    {
+      "enunciado": "Estas señales indican peligro por...",
+      "opciones": [
+        "cercanía de un paso a nivel con barreras.",
+        "proximidad de un paso a nivel con barreras.",
+        "proximidad de un paso a nivel sin barreras."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0721.jpg",
+      "todotest_id": "1501",
+      "why_hard": "Opciones muy similares - diferencias cruciales en pequeños detalles",
+      "priority": 2
+    },
+    {
+      "enunciado": "Si tiene problemas de sueño, debe tener en cuenta que...",
+      "opciones": [
+        "debe dormir más horas para conducir.",
+        "no se encuentra en perfectas condiciones para conducir.",
+        "es recomendable tomar sustancias estimulantes en abundancia para mantenerse despierto."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1716",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas",
+      "priority": 2
+    },
+    {
+      "enunciado": "Cuando se adelante a vehículos de tracción animal, la separación lateral...",
+      "opciones": [
+        "no debe ser inferior a 1,5 metros, cuando el adelantamiento se realice fuera de poblado.",
+        "debe ser, al menos, de 1,5 metros en todos los casos.",
+        "debe ser siempre proporcional a la anchura y características de la vía."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "814",
+      "why_hard": "Respuesta correcta con negación cuando otras opciones son afirmativas; Cifra específica 1,5 con valores similares en otras opciones",
+      "priority": 2
+    }
+  ]
+}

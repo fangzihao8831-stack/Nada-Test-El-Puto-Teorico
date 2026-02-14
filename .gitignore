@@ -17,6 +17,10 @@ out/
 # OS
 .DS_Store
 Thumbs.db
+nul
+
+# Screenshots
+*.png
 
 # Playwright MCP logs
 .playwright-mcp/

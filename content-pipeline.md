@@ -55,7 +55,7 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 
 ### Skill 2: Extractor de Webs (pausado)
 - Los datos ya han sido extraidos manualmente:
-  - `content/todotest_3000.json` — 2.700 preguntas de 90 tests Todotest
+  - `content/todotest_2700.json` — 2.700 preguntas de 90 tests Todotest
   - `content/dgt_oficial_exam.json` — 30 preguntas del examen oficial DGT
 - Skill automatizado pendiente si se necesita en el futuro
 
@@ -129,7 +129,7 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 - `temario_permiso_b_v3.md` - Temario completo (fuente de verdad)
 - `content/content-structure.json` - 12 temas, 58 subtemas
 - `content/preguntas/` - Preguntas generadas (JSON)
-- `content/todotest_3000.json` - 2.700 preguntas extraidas de Todotest
+- `content/todotest_2700.json` - 2.700 preguntas extraidas de Todotest
 - `content/dgt_oficial_exam.json` - 30 preguntas del examen oficial DGT
 - `.claude/commands/generar-preguntas.md` - Skill del generador
 

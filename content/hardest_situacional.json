@@ -1,0 +1,1567 @@
+{
+  "metadata": {
+    "tipo": "situacional",
+    "total": 84,
+    "date": "2026-02-11T17:07:52.067337",
+    "criteria": "Score >= 2: Multi-vehicle priority, complex rule combinations, counterintuitive, exceptions, ambiguous scenarios",
+    "min_hardness_score": 2,
+    "max_hardness_score": 4
+  },
+  "preguntas": [
+    {
+      "enunciado": "En una intersección sin señalizar, tienen prioridad de paso los vehículos que circulen por...",
+      "opciones": [
+        "una glorieta sobre los que pretenden entrar en ella.",
+        "un carril de uso exclusivo para determinados vehículos.",
+        "la vía sin pavimentar."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1159.jpg",
+      "todotest_id": "368",
+      "hardness_score": 4,
+      "hardness_reasons": [
+        "complex_rules",
+        "multi_vehicle",
+        "intersection",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "En una intersección sin señalizar, tienen prioridad de paso los vehículos que circulen por...",
+      "opciones": [
+        "una glorieta sobre los que pretenden entrar en ella.",
+        "un carril de uso exclusivo para determinados vehículos.",
+        "la vía sin pavimentar."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0387.jpg",
+      "todotest_id": "368",
+      "hardness_score": 4,
+      "hardness_reasons": [
+        "complex_rules",
+        "multi_vehicle",
+        "intersection",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "En un túnel, ¿qué distancia de seguridad se debe dejar con el vehículo que circula delante?",
+      "opciones": [
+        "100 metros, al menos, cuando no se pretenda adelantar.",
+        "Únicamente la distancia suficiente para no colisionar en caso de frenado brusco.",
+        "200 metros."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/p31.jpg",
+      "todotest_id": "316",
+      "hardness_score": 3.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance",
+        "counterintuitive",
+        "precise_measurement"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "En un túnel, ¿qué distancia de seguridad se debe dejar con el vehículo que circula delante?",
+      "opciones": [
+        "100 metros, al menos, cuando no se pretenda adelantar.",
+        "Únicamente la distancia suficiente para no colisionar en caso de frenado brusco.",
+        "200 metros."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0740.jpg",
+      "todotest_id": "316",
+      "hardness_score": 3.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance",
+        "counterintuitive",
+        "precise_measurement"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "En esta intersección, ¿qué señal debe obedecer el vehículo azul para girar a la derecha?",
+      "opciones": [
+        "La señal de ceda el paso.",
+        "La señal de stop, por estar situada a la izquierda.",
+        "La señal de stop, por ser la más restrictiva."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0403.jpg",
+      "todotest_id": "1067",
+      "hardness_score": 3,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "intersection",
+        "image_dependent"
+      ],
+      "why_hard": "Requiere determinar el orden de paso entre múltiples vehículos aplicando normas de prioridad en intersección"
+    },
+    {
+      "enunciado": "En caso de sufrir un reventón circulando por una vía a velocidad elevada, ¿es aconsejable pisar el pedal de freno con brusquedad?",
+      "opciones": [
+        "Sí, para mantener con mayor facilidad la trayectoría del vehículo.",
+        "No, el frenado debe ser suave y progresivo.",
+        "Solo si el reventón se produce en una de las ruedas delanteras."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0582.jpg",
+      "todotest_id": "1587",
+      "hardness_score": 3,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent",
+        "counterintuitive"
+      ],
+      "why_hard": "Acción correcta es contraintuitiva - frenar bruscamente empeora la situación"
+    },
+    {
+      "enunciado": "En vías urbanas, si no pretende adelantar, ¿qué distancia de seguridad se debe mantener con el turismo que circula delante?",
+      "opciones": [
+        "Aquella que permita que una motocicleta adelante con seguridad.",
+        "La que permita detenerse sin colisionar con el vehículo que va delante en caso de que frene bruscamente.",
+        "Siempre 50 metros."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0351.jpg",
+      "todotest_id": "1668",
+      "hardness_score": 3.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "counterintuitive",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En una intersección regulada por esta señal, ¿a quién debe ceder el paso?",
+      "opciones": [
+        "Sólo a los vehículos que tengan mayores dificultades de maniobra.",
+        "A ningún vehículo, porque esta señal me indica que circulo por la vía con prioridad.",
+        "A los vehículos que se aproximen por mi derecha."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0629.jpg",
+      "todotest_id": "1719",
+      "hardness_score": 3,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "intersection",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "En una intersección señalizada en la que se encuentra un agente regulando el tráfico, ¿qué debe hacer?",
+      "opciones": [
+        "Aplicar las normas generales de prioridad de paso de los vehículos que se acerquen por la derecha.",
+        "Obedecer las señales del agente.",
+        "Obedecer las señales de tráfico que regulan la prioridad."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0644.jpg",
+      "todotest_id": "1792",
+      "hardness_score": 3,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "intersection",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "En la próxima intersección nos encontramos con la señal de la imagen y con un coche que se nos aproxima por la derecha, ¿quién tendrá prioridad de paso?",
+      "opciones": [
+        "El vehículo que se aproxima por la derecha.",
+        "El que encuentra la señal.",
+        "Se aplicará la norma general de prioridad."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r5.jpg",
+      "todotest_id": "2248",
+      "hardness_score": 3,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "intersection",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "Al adelantar a un peatón, es obligatorio dejar una separación lateral mínima de 1,50 metros cuando circule...",
+      "opciones": [
+        "por poblado, exclusivamente.",
+        "en vías interurbanas, solamente.",
+        "por cualquier vía, fuera o dentro de poblado."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/p13b.jpg",
+      "todotest_id": "59",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance",
+        "precise_measurement"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "Al incorporarse a la autopista por el carril de aceleración, debe...",
+      "opciones": [
+        "acelerar hasta alcanzar la velocidad adecuada al final del carril.",
+        "disminuir la velocidad y detenerse al final del carril, obligatoriamente.",
+        "acelerar hasta alcanzar obligatoriamente 120 km/h al final del carril."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r6.jpg",
+      "todotest_id": "656",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance",
+        "precise_measurement"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "Cuando se adelante a vehículos de tracción animal, la separación lateral...",
+      "opciones": [
+        "no debe ser inferior a 1,5 metros, cuando el adelantamiento se realice fuera de poblado.",
+        "debe ser, al menos, de 1,5 metros en todos los casos.",
+        "debe ser siempre proporcional a la anchura y características de la vía."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0121.jpg",
+      "todotest_id": "814",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance",
+        "precise_measurement"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "En una vía interurbana insuficientemente iluminada, un turismo circula a menos de 40 km/h. ¿Puede circular con la luz de corto alcance?",
+      "opciones": [
+        "Sí, pero puede llevar la de largo alcance cuando no deslumbra.",
+        "No, debe llevar la luz de largo alcance obligatoriamente.",
+        "No."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0514.jpg",
+      "todotest_id": "994",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "conditions",
+        "image_dependent",
+        "precise_measurement"
+      ],
+      "why_hard": "Combina condiciones meteorológicas adversas con decisiones de conducción - múltiples reglas aplicables"
+    },
+    {
+      "enunciado": "En una intersección no señalizada, ¿qué vehículos tendrán prioridad sobre los demás usuarios?",
+      "opciones": [
+        "Los que circulan sobre raíles.",
+        "Los trenes, pero no los tranvías.",
+        "Los que tengan la izquierda libre."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0582.jpg",
+      "todotest_id": "1248",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "intersection",
+        "negation"
+      ],
+      "why_hard": "Requiere combinar múltiples señales y normas de prioridad simultáneamente"
+    },
+    {
+      "enunciado": "En un túnel, si circula sin intención de adelantar, debe mantener con el vehículo que circula delante una distancia...",
+      "opciones": [
+        "que permita al que circule detrás adelantar con seguridad.",
+        "de, al menos, 100 metros.",
+        "suficiente para no colisionar con él en caso de frenado brusco."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0519.jpg",
+      "todotest_id": "1366",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive",
+        "precise_measurement"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En un tramo de gran pendiente, ¿qué vehículo pasará primero en un estrechamiento en el que no está señalizada la prioridad?",
+      "opciones": [
+        "El vehículo con mayor dificultad de maniobra.",
+        "El que circula en sentido ascendente.",
+        "El que circula en sentido descendente."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0145.jpg",
+      "todotest_id": "1626",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "Al adelantar a un ciclomotor en vía urbana, ¿cómo debe hacerlo?",
+      "opciones": [
+        "Ocupando siempre parte del carril contiguo.",
+        "Dejando una distancia lateral de seguridad suficiente, proporcional a la velocidad, anchura y características de la vía.",
+        "Dejando una distancia lateral mínima de 1,50 metros."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0607.jpg",
+      "todotest_id": "1664",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive",
+        "precise_measurement"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En un túnel con un carril para cada sentido, ¿qué distancia de seguridad mínima es obligatoria para turismos?",
+      "opciones": [
+        "50 metros.",
+        "100 metros.",
+        "200 metros."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0639.jpg",
+      "todotest_id": "1760",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive",
+        "precise_measurement"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En una intersección que no tiene señal de preferencia. ¿Cuándo debe ceder el paso a un vehículo de tracción animal?",
+      "opciones": [
+        "Nunca, porque no es un vehículo de motor.",
+        "Siempre, porque tienen preferencia.",
+        "Cuando entra por mi derecha."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1127.jpg",
+      "todotest_id": "1771",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "intersection",
+        "negation"
+      ],
+      "why_hard": "Requiere combinar múltiples señales y normas de prioridad simultáneamente"
+    },
+    {
+      "enunciado": "Si no está implicado en un accidente, ¿debe prestar auxilio a los heridos?",
+      "opciones": [
+        "Solo si lo solicita algún herido.",
+        "No.",
+        "Sí, salvo que la ayuda ya esté organizada."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/2003.jpg",
+      "todotest_id": "155923",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En este paso de peatones si el semáforo no funciona, ¿es obligatorio detenerse y ceder el paso a los peatones que intentan cruzarlo?",
+      "opciones": [
+        "Sólo si la persona que intenta cruzar es una fila de escolares.",
+        "No, porque los vehículos tienen prioridad.",
+        "Sí, porque los peatones tienen prioridad."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0080.jpg",
+      "todotest_id": "156001",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Al adelantar a un peatón, es obligatorio dejar una separación lateral mínima de 1,50 metros cuando circule...",
+      "opciones": [
+        "por poblado, exclusivamente.",
+        "en vías interurbanas, solamente.",
+        "por cualquier vía, fuera o dentro de poblado."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/s51.jpg",
+      "todotest_id": "59",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance",
+        "precise_measurement"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "En una autopista conduciendo un camión de 3000 kg de MMA, ¿qué distancia es obligatorio dejar con el vehículo que va delante?",
+      "opciones": [
+        "50 metros.",
+        "La distancia de seguridad.",
+        "100 metros."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": false,
+      "imageSrc": null,
+      "todotest_id": "1808",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "precise_measurement",
+        "speed_distance",
+        "counterintuitive"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "Al adelantar a un peatón, es obligatorio dejar una separación lateral mínima de 1,50 metros cuando circule...",
+      "opciones": [
+        "por poblado, exclusivamente.",
+        "en vías interurbanas, solamente.",
+        "por cualquier vía, fuera o dentro de poblado."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r506.jpg",
+      "todotest_id": "59",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance",
+        "precise_measurement"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "En esta situación, ¿cuál es la distancia de seguridad entre vehículos?",
+      "opciones": [
+        "60 metros.",
+        "Aquella que me permita detenerme, sin colisionar con él.",
+        "90 metros."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0705.jpg",
+      "todotest_id": "447",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive",
+        "precise_measurement"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En una zona de obras en la que se ha producido un estrechamiento de la calzada, ¿qué vehículo tendrá preferencia si no hay señal que la regule?",
+      "opciones": [
+        "El que haya entrado primero.",
+        "El que se encuentre el estrechamiento a su derecha.",
+        "El que no tenga que cambiar de carril para entrar en el estrechamiento."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0699.jpg",
+      "todotest_id": "1123",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "En esta situación, ¿cuál es la distancia de seguridad entre vehículos?",
+      "opciones": [
+        "60 metros.",
+        "Aquella que me permita detenerme, sin colisionar con él.",
+        "90 metros."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0472.jpg",
+      "todotest_id": "447",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive",
+        "precise_measurement"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En un tramo de gran pendiente, ¿qué vehículo pasará primero en un estrechamiento en el que no está señalizada la prioridad?",
+      "opciones": [
+        "El vehículo con mayor dificultad de maniobra.",
+        "El que circula en sentido ascendente.",
+        "El que circula en sentido descendente."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0479.jpg",
+      "todotest_id": "1626",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "En una vía interurbana insuficientemente iluminada, un turismo circula a menos de 40 km/h. ¿Puede circular con la luz de corto alcance?",
+      "opciones": [
+        "Sí, pero puede llevar la de largo alcance cuando no deslumbra.",
+        "No, debe llevar la luz de largo alcance obligatoriamente.",
+        "No."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0312.jpg",
+      "todotest_id": "994",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "conditions",
+        "image_dependent",
+        "precise_measurement"
+      ],
+      "why_hard": "Combina condiciones meteorológicas adversas con decisiones de conducción - múltiples reglas aplicables"
+    },
+    {
+      "enunciado": "Cuando conduciendo su turismo adelante a un peatón por una vía fuera de poblado, ¿qué separación lateral de seguridad deberá dejar?",
+      "opciones": [
+        "1,50 metros como máximo.",
+        "Un margen de seguridad proporcional a la anchura y características de la vía.",
+        "1,5 metros como mínimo, ocupando de forma parcial o total el carril contiguo y siempre que existan las condiciones precisas."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0327.jpg",
+      "todotest_id": "1920",
+      "hardness_score": 2.5,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance",
+        "precise_measurement"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "En condiciones normales, la velocidad adecuada está siempre...",
+      "opciones": [
+        "por debajo de la velocidad mínima.",
+        "por encima de la velocidad máxima y por debajo de la mínima.",
+        "por encima de la velocidad mínima y por debajo de la máxima."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0148.jpg",
+      "todotest_id": "19",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "Al adelantar al ciclista que aparece en la fotografía, ¿es obligatorio invadir el carril de sentido contrario de la calzada?",
+      "opciones": [
+        "No.",
+        "No, porque está prohibido adelantar a los ciclistas.",
+        "Sí."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0326.jpg",
+      "todotest_id": "36",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En condiciones meteorológicas que disminuyan sensiblemente la visibilidad...",
+      "opciones": [
+        "es obligatorio utilizar el sistema de alumbrado.",
+        "solamente es obligatorio utilizar la luz antiniebla trasera.",
+        "no es obligatorio el uso del alumbrado, salvo que la señalización indique otra cosa."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1056.jpg",
+      "todotest_id": "92",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En esta calle no hay señal de limitación de velocidad. ¿A qué velocidad máxima se puede circular?",
+      "opciones": [
+        "60 km/h.",
+        "40 km/h.",
+        "50 km/h."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r3.jpg",
+      "todotest_id": "118",
+      "hardness_score": 2.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En una intersección sin señalizar, ¿está obligado un turismo a ceder el paso a un tranvía?",
+      "opciones": [
+        "No.",
+        "Sólo si se aproxima por mi derecha.",
+        "Sí."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0530.jpg",
+      "todotest_id": "194",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "intersection"
+      ],
+      "why_hard": "Requiere combinar múltiples señales y normas de prioridad simultáneamente"
+    },
+    {
+      "enunciado": "En las autovías, se permite circular...",
+      "opciones": [
+        "a peatones.",
+        "a vehículos de tracción animal.",
+        "por los arcenes, a conductores de bicicletas mayores de 14 años, salvo que se prohíba por señal."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0101.jpg",
+      "todotest_id": "227",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En condiciones de niebla espesa, deberá...",
+      "opciones": [
+        "reducir la velocidad.",
+        "circular sólo con la luz antiniebla delantera encendida.",
+        "circular por el arcén."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0234.jpg",
+      "todotest_id": "282",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "complex_rules",
+        "image_dependent"
+      ],
+      "why_hard": "Combina múltiples normas de circulación que deben aplicarse simultáneamente"
+    },
+    {
+      "enunciado": "En caso de lluvia se debe circular con precaución porque...",
+      "opciones": [
+        "aumenta la adherencia de los neumáticos.",
+        "se reduce la distancia de frenado.",
+        "se reduce la visibilidad."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0126.jpg",
+      "todotest_id": "299",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "conditions",
+        "image_dependent"
+      ],
+      "why_hard": "Combina condiciones meteorológicas adversas con decisiones de conducción - múltiples reglas aplicables"
+    },
+    {
+      "enunciado": "En esta intersección, los conductores están obligados a detenerse...",
+      "opciones": [
+        "ante la línea transversal, sin rebasarla.",
+        "junto a la señal de stop.",
+        "inmediatamente después de la línea transversal."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0156.jpg",
+      "todotest_id": "337",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "intersection"
+      ],
+      "why_hard": "Requiere combinar múltiples señales y normas de prioridad simultáneamente"
+    },
+    {
+      "enunciado": "Si sopla un fuerte viento lateral de la izquierda, los conductores de turismos deberán...",
+      "opciones": [
+        "sujetar el volante, con firmeza pero sin rigidez, hacia la izquierda.",
+        "circular por el arcén lentamente.",
+        "sujetar el volante, con firmeza pero sin rigidez, hacia la derecha."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0339.jpg",
+      "todotest_id": "432",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "conditions",
+        "image_dependent"
+      ],
+      "why_hard": "Combina condiciones meteorológicas adversas con decisiones de conducción - múltiples reglas aplicables"
+    },
+    {
+      "enunciado": "Si su motocicleta lleva instalado cinturón de seguridad, ¿cuándo debe utilizarlo?",
+      "opciones": [
+        "Sólo cuando circule por vías interurbanas y travesías.",
+        "En todo tipo de vías.",
+        "Únicamente cuando circule por vías interurbanas."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0233.jpg",
+      "todotest_id": "537",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "Si circula de noche y la carga sobresale por delante y por detrás del vehículo deberá:",
+      "opciones": [
+        "Colocar la luz sólo en la parte trasera, pues en la delantera no es obligatoria.",
+        "Señalizar la carga con una luz roja en la parte posterior y una luz blanca en la anterior.",
+        "Colocar un trapo rojo a cada lado de la carga."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0711.jpg",
+      "todotest_id": "558",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "Si el resultado de la inspección realizada a su vehículo en una estación ITV es desfavorable, ¿podrá circular por las vías públicas?",
+      "opciones": [
+        "Sí, si el defecto observado no impide la marcha del vehículo.",
+        "No, salvo para su traslado al taller y la vuelta a la ITV para nueva inspección.",
+        "No, en absoluto, porque el vehículo causará baja definitiva."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0103.jpg",
+      "todotest_id": "597",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "Cuando circula adaptando la velocidad a las circunstancias del tráfico, lo hace a velocidad...",
+      "opciones": [
+        "excesiva.",
+        "reducida.",
+        "adecuada."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r107.jpg",
+      "todotest_id": "611",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "En una autopista, ¿está permitido utilizar los pasos que hay en la mediana para hacer un cambio de sentido de la marcha?",
+      "opciones": [
+        "No, porque está prohibido.",
+        "Sí, cuando estén abiertos.",
+        "Sí, salvo que esté expresamente prohibido por una señal."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0727.jpg",
+      "todotest_id": "616",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En esta autopista dentro de poblado, ¿a qué velocidad puede circular como máximo si no existe señalización?",
+      "opciones": [
+        "A 70 km/h.",
+        "A 120 km/h.",
+        "A 80 km/h."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/p19.jpg",
+      "todotest_id": "716",
+      "hardness_score": 2.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Circulando entre la puesta y la salida del sol, ¿qué finalidad tiene el sistema ADAS “Asistente de visión nocturna”?",
+      "opciones": [
+        "Poder desconectar el alumbrado al cruzarse con otro vehículo para evitar el deslumbramiento.",
+        "Detectar un vehículo inmovilizado fuera de la calzada y de la parte transitable del arcén.",
+        "Detectar peatones o animales marcándolos en un color u otro en la pantalla de información del conductor."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0578.jpg",
+      "todotest_id": "731",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "conditions",
+        "image_dependent"
+      ],
+      "why_hard": "Combina condiciones meteorológicas adversas con decisiones de conducción - múltiples reglas aplicables"
+    },
+    {
+      "enunciado": "Al descargar mercancías de un vehículo, ¿está permitido depositarlas en la acera?",
+      "opciones": [
+        "No.",
+        "Sí, siempre que no pasen peatones.",
+        "No, salvo que se señalice el lugar para evitar el peligro para los peatones."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0299.jpg",
+      "todotest_id": "802",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En esta situación, ¿el vehículo rojo puede adelantar al vehículo inmovilizado?",
+      "opciones": [
+        "Sí, siempre.",
+        "Sí, después de asegurarse de que puede realizarse sin peligro.",
+        "No, porque la marca longitudinal lo prohíbe."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/poli_4.jpg",
+      "todotest_id": "884",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "image_dependent"
+      ],
+      "why_hard": "Requiere determinar el orden de paso entre múltiples vehículos aplicando normas de prioridad en intersección"
+    },
+    {
+      "enunciado": "En esta situación, ¿tienen prioridad de paso los animales?",
+      "opciones": [
+        "Sí, porque la señalización les da prioridad.",
+        "No, los animales en la calzada no tienen nunca prioridad de paso.",
+        "Sí, porque el vehículo está cambiando de dirección."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0353.jpg",
+      "todotest_id": "909",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "En esta vía circula por el carril que mejor conviene a su destino, ¿cuándo puede abandonarlo?",
+      "opciones": [
+        "Al prepararse para cambiar de dirección, adelantar, parar o estacionar.",
+        "Únicamente cuando pretenda parar o estacionar.",
+        "Cuando quiera cambiar de dirección o de sentido."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0158.jpg",
+      "todotest_id": "951",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "Al aproximarse a un paso a nivel o a un puente móvil, ¿cuándo se debe extremar la prudencia y reducir la velocidad?",
+      "opciones": [
+        "Solo cuando se encuentran abiertos.",
+        "Sólo cuando se encuentran cerrados.",
+        "Siempre."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0513.jpg",
+      "todotest_id": "959",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En caso de reventón, ¿es correcto frenar bruscamente?",
+      "opciones": [
+        "Sí.",
+        "No."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0132.jpg",
+      "todotest_id": "1068",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive"
+      ],
+      "why_hard": "Acción correcta es contraintuitiva - frenar bruscamente empeora la situación"
+    },
+    {
+      "enunciado": "Si circula y tiene dudas sobre las condiciones de luminosidad, ¿qué debe hacer?",
+      "opciones": [
+        "Ante la duda, encender las luces de cruce.",
+        "Ante la duda, apagar las luces para no provocar deslumbramientos.",
+        "Ante la duda, encender las luces de carretera."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0060.jpg",
+      "todotest_id": "1078",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "conditions",
+        "image_dependent"
+      ],
+      "why_hard": "Combina condiciones meteorológicas adversas con decisiones de conducción - múltiples reglas aplicables"
+    },
+    {
+      "enunciado": "Si se encuentra un accidente de tráfico, ¿debe detenerse para auxiliar y prestar ayuda a las víctimas?",
+      "opciones": [
+        "Solamente si lo solicita alguna autoridad presente.",
+        "Sí, salvo que la ayuda esté ya organizada.",
+        "No, ya que al no estar implicado, no tiene ninguna responsabilidad."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0172.jpg",
+      "todotest_id": "1269",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En las glorietas, ¿está prohibido adelantar?",
+      "opciones": [
+        "Sí, porque son intersecciones.",
+        "Sí, en vías interurbanas solamente.",
+        "No."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0489.jpg",
+      "todotest_id": "1291",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En esta intersección, ¿qué vehículos están obligados a detenerse?",
+      "opciones": [
+        "Todos.",
+        "El verde y el rojo.",
+        "El rojo y el azul."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0218.jpg",
+      "todotest_id": "1303",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "Cuando un conductor circula a velocidad adecuada...",
+      "opciones": [
+        "hace que la circulación sea lenta y peligrosa.",
+        "estorba a otros conductores y puede causar un accidente.",
+        "puede detectar las intenciones de otros usuarios y reaccionar a tiempo para evitar un accidente."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/s890c.jpg",
+      "todotest_id": "1386",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "speed_distance"
+      ],
+      "why_hard": "Requiere conocimiento preciso de distancias o velocidades - no se puede estimar intuitivamente"
+    },
+    {
+      "enunciado": "Cuando llueve, ¿hay que prestar especial atención a alguna zona de la vía en particular?",
+      "opciones": [
+        "Sí, a los badenes y a las zonas en las que se pueden producir charcos.",
+        "No, puesto que circular con lluvia es muy peligroso en todas partes.",
+        "No, únicamente hay que prestar atención cuando hay niños en las proximidades."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0551.jpg",
+      "todotest_id": "1444",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En un paso para ciclistas, ¿tienen éstos prioridad sobre otros vehículos?",
+      "opciones": [
+        "No.",
+        "Sí, siempre.",
+        "Sí, pero sólo si se aproximan por la derecha."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0709.jpg",
+      "todotest_id": "1529",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "multi_vehicle",
+        "image_dependent"
+      ],
+      "why_hard": "Situación compleja de prioridad entre varios vehículos"
+    },
+    {
+      "enunciado": "En esta vía, ¿cuál es la velocidad máxima permitida para un turismo, si no pretende adelantar?",
+      "opciones": [
+        "110 km/h.",
+        "100 km/h.",
+        "90 km/h."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/s1a.jpg",
+      "todotest_id": "1702",
+      "hardness_score": 2.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En este cruce, ¿qué se debe hacer?",
+      "opciones": [
+        "Detenerse solo si se aproximan vehículos por la derecha.",
+        "Detenerse y ceder el paso a todos los vehículos que se aproximen por ambos lados.",
+        "Detenerse solo si se aproximan vehículos por la izquierda."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0387.jpg",
+      "todotest_id": "155917",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En caso de estar implicado en un accidente, ¿debe detenerse para ayudar a restablecer la seguridad de la circulación?",
+      "opciones": [
+        "No, esa tarea corresponde a la policía de tráfico.",
+        "Sí, en la medida de lo posible.",
+        "Solo si hay fallecidos o heridos graves."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0566.jpg",
+      "todotest_id": "155931",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "Cuando la carga sobresale de un vehículo, ¿es obligatorio señalizarla con el panel de la imagen?",
+      "opciones": [
+        "No, excepto para los vehículos destinados al transporte de mercancías.",
+        "Solo es obligatorio si la carga sobresale por la parte trasera.",
+        "Sí, para todo tipo de vehículos, pero solo cuando la carga sea indivisible."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/2010.jpg",
+      "todotest_id": "155934",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En una vía con un carril para cada sentido de la marcha, ¿está permitido que un conductor adelante a varios vehículos a la vez?",
+      "opciones": [
+        "No, en ningún caso.",
+        "Solo si puede volver a la derecha sin causar peligro en caso de encontrar vehículos de frente.",
+        "Sí, siempre que adelante a vehículos de grandes dimensiones."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0155.jpg",
+      "todotest_id": "155941",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "Si presencia un accidente en el que ni está implicado, ni, de forma manifiesta, es necesaria su colaboración, ¿debe detenerse?",
+      "opciones": [
+        "Sí, hay que detenerse y colaborar siempre.",
+        "No, se debe continuar.",
+        "Solo si se produce fuera de poblado y no hay cerca ningún poste SOS."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0710.jpg",
+      "todotest_id": "155959",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "Si un conductor novel presenta una tasa del alcohol en aire espirado de 0,20 miligramos por litro, el agente de tráfico, ¿le realizará una segunda prueba de alcoholemia?",
+      "opciones": [
+        "No; para ello debe tener una tasa superior a 0,25 miligramos por litro.",
+        "Solo si está implicado directamente en un accidente de circulación.",
+        "Sí, para una mayor garantía y a efectos de contraste."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0081.jpg",
+      "todotest_id": "155973",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En condiciones meteorológicas especialmente desfavorables, como en caso de fuerte granizada, ¿qué precauciones, entre otras, debe tomar?",
+      "opciones": [
+        "Disminuir la velocidad, evitando pisar el freno, y aumentar la distancia de seguridad.",
+        "Acercarse al vehículo de delante y encender el dispositivo de preseñalización de peligro.",
+        "Circular con cambios frecuentes de dirección para evitar que se produzca “aquaplaning”."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/1687.jpg",
+      "todotest_id": "155987",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Cuando llueve, ¿hay que prestar especial atención a alguna zona de la vía en particular?",
+      "opciones": [
+        "Sí, a los badenes y a las zonas en las que se pueden producir charcos.",
+        "No, puesto que circular con lluvia es muy peligroso en todas partes.",
+        "No, únicamente hay que prestar atención cuando hay niños en las proximidades."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0562.jpg",
+      "todotest_id": "1444",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En esta intersección y según la señalización, ¿a qué vehículos debe ceder el paso?",
+      "opciones": [
+        "A todos los que se aproximan por la derecha.",
+        "A los que se incorporan a la vía.",
+        "A ninguno."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0105.jpg",
+      "todotest_id": "1506",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "intersection"
+      ],
+      "why_hard": "Requiere combinar múltiples señales y normas de prioridad simultáneamente"
+    },
+    {
+      "enunciado": "Si estamos en una calle sin salida y no existe ninguna otra posibilidad, ¿cuántos metros podemos circular marcha atrás?",
+      "opciones": [
+        "Menos de 15 metros.",
+        "Justo hasta la primera intersección sin invadirla.",
+        "Los suficientes para salir de la calle aún invadiendo un cruce de vías."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0371.jpg",
+      "todotest_id": "2220",
+      "hardness_score": 2.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Al adelantar al ciclista que aparece en la fotografía, ¿es obligatorio invadir el carril de sentido contrario de la calzada?",
+      "opciones": [
+        "No.",
+        "No, porque está prohibido adelantar a los ciclistas.",
+        "Sí."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0612.jpg",
+      "todotest_id": "36",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Cuando aparezcan los primeros síntomas de desgaste de la pastillas de freno, ¿qué deberemos hacer?",
+      "opciones": [
+        "Esperar a notar chirridos anormales en el momento de frenar.",
+        "Detectar mediante observación directa si hay desgaste de las pastillas de freno.",
+        "Sustituir las pastillas por otras nuevas, en cuanto aparezcan los primeros síntomas."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r500.jpg",
+      "todotest_id": "1900",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Al adelantar al ciclista que aparece en la fotografía, ¿es obligatorio invadir el carril de sentido contrario de la calzada?",
+      "opciones": [
+        "No.",
+        "No, porque está prohibido adelantar a los ciclistas.",
+        "Sí."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0076.jpg",
+      "todotest_id": "36",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "counterintuitive"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En una intersección sin señalizar, ¿deberá ceder el paso a un ciclista?",
+      "opciones": [
+        "Sí, cuando se aproxime por la derecha.",
+        "Sí, cuando se aproxime por la izquierda.",
+        "Sí, en las intersecciones siempre tienen prioridad los ciclistas."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0517.jpg",
+      "todotest_id": "1995",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "intersection"
+      ],
+      "why_hard": "Requiere combinar múltiples señales y normas de prioridad simultáneamente"
+    },
+    {
+      "enunciado": "En un túnel, el conductor de una motocicleta, ¿qué distancia debe dejar con el vehículo de delante en caso de que no pretenda adelantarlo?",
+      "opciones": [
+        "150 metros.",
+        "50 metros.",
+        "100 metros."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0628.jpg",
+      "todotest_id": "1393",
+      "hardness_score": 2.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Si circulamos a 70 km/h por el carril central y no hay más tráfico en la calzada, ¿lo hacemos correctamente?",
+      "opciones": [
+        "Sí, porque circulo a velocidad inferior a la máxima indicada.",
+        "Sí, porque puedo circular por el carril que más conviene a mi destino.",
+        "No, tendré que circular por el carril de la derecha."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0725.jpg",
+      "todotest_id": "2161",
+      "hardness_score": 2.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Al aproximarse a un paso a nivel o a un puente móvil, ¿cuándo se debe extremar la prudencia y reducir la velocidad?",
+      "opciones": [
+        "Solo cuando se encuentran abiertos.",
+        "Sólo cuando se encuentran cerrados.",
+        "Siempre."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0589.jpg",
+      "todotest_id": "959",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En los vehículos de anchura inferior a un metro, la carga no debe sobresalir por la parte posterior más de...",
+      "opciones": [
+        "0,50 metros.",
+        "0,25 metros.",
+        "0,40 metros."
+      ],
+      "respuesta_correcta": "B",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0153.jpg",
+      "todotest_id": "1788",
+      "hardness_score": 2.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "En esta intersección, los conductores están obligados a detenerse...",
+      "opciones": [
+        "ante la línea transversal, sin rebasarla.",
+        "junto a la señal de stop.",
+        "inmediatamente después de la línea transversal."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0653.jpg",
+      "todotest_id": "337",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "intersection"
+      ],
+      "why_hard": "Requiere combinar múltiples señales y normas de prioridad simultáneamente"
+    },
+    {
+      "enunciado": "En esta autopista dentro de poblado, ¿a qué velocidad puede circular como máximo si no existe señalización?",
+      "opciones": [
+        "A 70 km/h.",
+        "A 120 km/h.",
+        "A 80 km/h."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/r307.jpg",
+      "todotest_id": "716",
+      "hardness_score": 2.0,
+      "hardness_reasons": [
+        "precise_measurement",
+        "image_dependent",
+        "negation"
+      ],
+      "why_hard": "Situación ambigua que requiere conocimiento preciso de normativa"
+    },
+    {
+      "enunciado": "Cuando llueve, ¿hay que prestar especial atención a alguna zona de la vía en particular?",
+      "opciones": [
+        "Sí, a los badenes y a las zonas en las que se pueden producir charcos.",
+        "No, puesto que circular con lluvia es muy peligroso en todas partes.",
+        "No, únicamente hay que prestar atención cuando hay niños en las proximidades."
+      ],
+      "respuesta_correcta": "A",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0464.jpg",
+      "todotest_id": "1444",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "exceptions",
+        "image_dependent"
+      ],
+      "why_hard": "Contiene excepción a la regla general que estudiantes olvidan"
+    },
+    {
+      "enunciado": "En esta intersección con los semáforos en amarillo intermitente, ¿qué debe hacer?",
+      "opciones": [
+        "Continuar con precaución, el semáforo en amarillo intermitente exime de cumplir la señal vertical.",
+        "Extremar la precaución y, en su caso, ceder el paso a ambos lados.",
+        "Detener el vehículo."
+      ],
+      "respuesta_correcta": "C",
+      "hasImage": true,
+      "imageSrc": "https://www.todotest.com/tests/imgs/0135.jpg",
+      "todotest_id": "601",
+      "hardness_score": 2,
+      "hardness_reasons": [
+        "image_dependent",
+        "intersection"
+      ],
+      "why_hard": "Requiere combinar múltiples señales y normas de prioridad simultáneamente"
+    }
+  ]
+}

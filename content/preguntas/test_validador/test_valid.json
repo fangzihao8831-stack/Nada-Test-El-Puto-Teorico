@@ -1,0 +1,44 @@
+{
+  "preguntas": [
+    {
+      "id": "test_val_001",
+      "subtema_id": "subtema_21",
+      "tipo_pregunta": "dato",
+      "enunciado": "¿A qué velocidad máxima puede circular un turismo en autopista?",
+      "opciones": [
+        "120 km/h",
+        "130 km/h",
+        "110 km/h"
+      ],
+      "correcta": 0,
+      "explicacion": "La velocidad máxima para un turismo en autopista o autovía es de 120 km/h. Este límite es el más alto permitido en España para vehículos ligeros. Los 130 km/h no existen en la normativa española, y los 110 km/h corresponden a una reducción temporal que se aplicó en 2011 pero ya no está vigente.",
+      "pista": "Piensa en el límite más alto que existe en las vías españolas para turismos.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "origen": "generada",
+      "validada": true,
+      "usa_trampa": false,
+      "palabras_trampa": []
+    },
+    {
+      "id": "test_val_003",
+      "subtema_id": "subtema_36",
+      "tipo_pregunta": "dato",
+      "enunciado": "¿Cuál es la tasa de alcohol máxima para un conductor novel?",
+      "opciones": [
+        "0,15 mg/l en aire espirado",
+        "0,25 mg/l en aire espirado",
+        "0,10 mg/l en aire espirado"
+      ],
+      "correcta": 0,
+      "explicacion": "La tasa máxima para conductores noveles (menos de 2 años de antigüedad) es de 0,15 mg/l en aire espirado, equivalente a 0,3 g/l en sangre. Este límite es inferior a la tasa general (0,25 mg/l) porque los conductores con menos experiencia son más vulnerables a los efectos del alcohol.",
+      "pista": "Recuerda que los noveles tienen un límite inferior al general.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "origen": "generada",
+      "validada": true,
+      "usa_trampa": false,
+      "palabras_trampa": []
+    }
+  ]
+}

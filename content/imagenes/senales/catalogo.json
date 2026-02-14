@@ -1,0 +1,1882 @@
+[
+  {
+    "codigo": "P-1",
+    "nombre": "Interseccion prioridad derecha",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-1.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/89/Spain_traffic_sign_p1.svg"
+  },
+  {
+    "codigo": "P-1a",
+    "nombre": "Interseccion prioridad izquierda",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-1a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/57/Spain_traffic_sign_p1a.svg"
+  },
+  {
+    "codigo": "P-1b",
+    "nombre": "Interseccion prioridad derecha",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-1b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/57/Spain_traffic_sign_p1b.svg"
+  },
+  {
+    "codigo": "P-1c",
+    "nombre": "Interseccion prioridad",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-1c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Spain_traffic_signal_p1c.svg"
+  },
+  {
+    "codigo": "P-1d",
+    "nombre": "Interseccion prioridad",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-1d.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/09/Spain_traffic_signal_p1d.svg"
+  },
+  {
+    "codigo": "P-1e",
+    "nombre": "Interseccion prioridad",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-1e.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Spain_traffic_signal_p1e.svg"
+  },
+  {
+    "codigo": "P-2",
+    "nombre": "Interseccion prioridad via derecha",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-2.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Spain_traffic_signal_p2.svg"
+  },
+  {
+    "codigo": "P-3",
+    "nombre": "Semaforo",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-3.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Spain_traffic_signal_p3.svg"
+  },
+  {
+    "codigo": "P-4",
+    "nombre": "Circulacion giratoria",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-4.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Spain_traffic_signal_p4.svg"
+  },
+  {
+    "codigo": "P-5",
+    "nombre": "Puente movil",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-5.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Spain_traffic_signal_p5.svg"
+  },
+  {
+    "codigo": "P-6",
+    "nombre": "Cruce tranvia",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-6.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Spain_traffic_sign_p6.svg"
+  },
+  {
+    "codigo": "P-7",
+    "nombre": "Paso a nivel con barreras",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-7.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/18/Spain_traffic_signal_p7.svg"
+  },
+  {
+    "codigo": "P-8",
+    "nombre": "Paso a nivel sin barreras",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-8.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/08/Spain_traffic_signal_p8%2C_2023_set.svg"
+  },
+  {
+    "codigo": "P-9a",
+    "nombre": "Proximidad paso a nivel (3 barras)",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-9a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Spain_traffic_signal_p9a.svg"
+  },
+  {
+    "codigo": "P-9b",
+    "nombre": "Proximidad paso a nivel (2 barras)",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-9b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Spain_traffic_signal_p9b.svg"
+  },
+  {
+    "codigo": "P-9c",
+    "nombre": "Proximidad paso a nivel (1 barra)",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-9c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Spain_traffic_signal_p9c.svg"
+  },
+  {
+    "codigo": "P-10a",
+    "nombre": "Curva peligrosa derecha",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-10a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/14/Spain_traffic_signal_p10a.svg"
+  },
+  {
+    "codigo": "P-10b",
+    "nombre": "Curva peligrosa izquierda",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-10b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/86/Spain_traffic_signal_p10b.svg"
+  },
+  {
+    "codigo": "P-10c",
+    "nombre": "Curva peligrosa",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-10c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/34/Spain_traffic_signal_p10c.svg"
+  },
+  {
+    "codigo": "P-11",
+    "nombre": "Sucesion curvas derecha",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-11.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/57/Spain_traffic_signal_p11.svg"
+  },
+  {
+    "codigo": "P-11a",
+    "nombre": "Sucesion curvas izquierda",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-11a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Spain_traffic_signal_p11a.svg"
+  },
+  {
+    "codigo": "P-12",
+    "nombre": "Curva y contracurva",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-12.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/20/Spain_traffic_signal_p-12%2C_2023_set.svg"
+  },
+  {
+    "codigo": "P-13a",
+    "nombre": "Curva peligrosa derecha",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-13a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/10/Spain_traffic_signal_p13a.svg"
+  },
+  {
+    "codigo": "P-13b",
+    "nombre": "Curva peligrosa izquierda",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-13b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Spain_traffic_signal_p13b.svg"
+  },
+  {
+    "codigo": "P-14a",
+    "nombre": "Pendiente peligrosa bajada",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-14a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/76/Spain_traffic_signal_p14a.svg"
+  },
+  {
+    "codigo": "P-14b",
+    "nombre": "Pendiente peligrosa subida",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-14b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Spain_traffic_signal_p14b.svg"
+  },
+  {
+    "codigo": "P-15",
+    "nombre": "Resalto",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-15.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/32/Spain_traffic_signal_p15.svg"
+  },
+  {
+    "codigo": "P-15a",
+    "nombre": "Baden",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-15a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Spain_traffic_signal_p15a.svg"
+  },
+  {
+    "codigo": "P-15b",
+    "nombre": "Perfil irregular",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-15b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Spain_traffic_signal_p15b.svg"
+  },
+  {
+    "codigo": "P-16a",
+    "nombre": "Proyeccion gravilla",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-16a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Spain_traffic_signal_P-16a_%282022%29.svg"
+  },
+  {
+    "codigo": "P-16b",
+    "nombre": "Pavimento deslizante",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-16b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/44/Spain_traffic_signal_P-16b_%282022%29.svg"
+  },
+  {
+    "codigo": "P-17",
+    "nombre": "Estrechamiento calzada",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-17.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Spain_traffic_signal_p17.svg"
+  },
+  {
+    "codigo": "P-17a",
+    "nombre": "Estrechamiento derecha",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-17a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/77/Spain_traffic_signal_p17a.svg"
+  },
+  {
+    "codigo": "P-17b",
+    "nombre": "Estrechamiento izquierda",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-17b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Spain_traffic_signal_p17b.svg"
+  },
+  {
+    "codigo": "P-19",
+    "nombre": "Obras",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-19.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Spain_traffic_signal_p19.svg"
+  },
+  {
+    "codigo": "P-20a",
+    "nombre": "Peatones",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-20a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Spain_traffic_signal_P-20a.svg"
+  },
+  {
+    "codigo": "P-20b",
+    "nombre": "Ninos",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-20b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Spain_traffic_signal_P-20b_%282023%29.svg"
+  },
+  {
+    "codigo": "P-20c",
+    "nombre": "Ciclistas",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-20c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Spain_traffic_signal_P-20c_%282025%29.svg"
+  },
+  {
+    "codigo": "P-21a",
+    "nombre": "Animales en libertad",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-21a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Spain_traffic_signal_p21-a%2C_2023_set.svg"
+  },
+  {
+    "codigo": "P-21b",
+    "nombre": "Animales domesticos",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-21b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/df/Spain_traffic_signal_p21-b%2C_2023_set.svg"
+  },
+  {
+    "codigo": "P-22",
+    "nombre": "Animales domesticos",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-22.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Spain_traffic_signal_p22.svg"
+  },
+  {
+    "codigo": "P-22a",
+    "nombre": "Animales domesticos",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-22a.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20p22-a%2C%202023%20set.svg"
+  },
+  {
+    "codigo": "P-22b",
+    "nombre": "Animales en libertad",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-22b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Spain_traffic_signal_P-22b_%282023%29.svg"
+  },
+  {
+    "codigo": "P-23",
+    "nombre": "Desprendimiento",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-23.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/19/Spain_traffic_signal_p23.svg"
+  },
+  {
+    "codigo": "P-24",
+    "nombre": "Viento transversal",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-24.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/04/Spain_traffic_signal_p24.svg"
+  },
+  {
+    "codigo": "P-24a",
+    "nombre": "Aviones",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-24a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Spain_traffic_signal_p24a.svg"
+  },
+  {
+    "codigo": "P-25",
+    "nombre": "Circulacion dos sentidos",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-25.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Spain_traffic_signal_p25.svg"
+  },
+  {
+    "codigo": "P-26",
+    "nombre": "Congestion",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-26.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Spain_traffic_signal_p26.svg"
+  },
+  {
+    "codigo": "P-27",
+    "nombre": "Muelle",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-27.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/54/Spain_traffic_signal_p27.svg"
+  },
+  {
+    "codigo": "P-28",
+    "nombre": "Escalon lateral",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-28.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Spain_traffic_signal_p28.svg"
+  },
+  {
+    "codigo": "P-29",
+    "nombre": "Escalon lateral",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-29.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Spain_traffic_signal_p29.svg"
+  },
+  {
+    "codigo": "P-30",
+    "nombre": "Otros peligros",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-30.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Spain_traffic_signal_p30.svg"
+  },
+  {
+    "codigo": "P-31",
+    "nombre": "Congestion",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-31.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/56/Spain_traffic_signal_p31.svg"
+  },
+  {
+    "codigo": "P-32",
+    "nombre": "Obstruccion calzada",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-32.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Spain_traffic_signal_p32.svg"
+  },
+  {
+    "codigo": "P-33",
+    "nombre": "Visibilidad reducida",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-33.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Spain_traffic_signal_p33%2C_2023_set.svg"
+  },
+  {
+    "codigo": "P-34",
+    "nombre": "Pavimento deslizante hielo/nieve",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-34.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Spain_traffic_signal_p34.svg"
+  },
+  {
+    "codigo": "P-35",
+    "nombre": "Zona frenado emergencia",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-35.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/10/Spain_traffic_signal_P-35_%282022%29.svg"
+  },
+  {
+    "codigo": "P-50",
+    "nombre": "Otros peligros",
+    "tipo": "peligro",
+    "subtipo": "peligro",
+    "archivo": "peligro/P-50.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Spain_traffic_sign_p50.svg"
+  },
+  {
+    "codigo": "R-1",
+    "nombre": "Ceda el paso",
+    "tipo": "reglamentacion",
+    "subtipo": "prioridad",
+    "archivo": "reglamentacion/R-1.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r1.svg"
+  },
+  {
+    "codigo": "R-2",
+    "nombre": "Detencion obligatoria (STOP)",
+    "tipo": "reglamentacion",
+    "subtipo": "prioridad",
+    "archivo": "reglamentacion/R-2.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r2%2C%202023%20set.svg"
+  },
+  {
+    "codigo": "R-3",
+    "nombre": "Calzada con prioridad",
+    "tipo": "reglamentacion",
+    "subtipo": "prioridad",
+    "archivo": "reglamentacion/R-3.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r3.svg"
+  },
+  {
+    "codigo": "R-4",
+    "nombre": "Fin de prioridad",
+    "tipo": "reglamentacion",
+    "subtipo": "prioridad",
+    "archivo": "reglamentacion/R-4.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r4.svg"
+  },
+  {
+    "codigo": "R-5",
+    "nombre": "Prioridad en sentido contrario",
+    "tipo": "reglamentacion",
+    "subtipo": "prioridad",
+    "archivo": "reglamentacion/R-5.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r5.svg"
+  },
+  {
+    "codigo": "R-6",
+    "nombre": "Prioridad respecto al sentido contrario",
+    "tipo": "reglamentacion",
+    "subtipo": "prioridad",
+    "archivo": "reglamentacion/R-6.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r6.svg"
+  },
+  {
+    "codigo": "R-100",
+    "nombre": "Circulacion prohibida",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-100.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r100.svg"
+  },
+  {
+    "codigo": "R-101",
+    "nombre": "Entrada prohibida",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-101.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r101.svg"
+  },
+  {
+    "codigo": "R-102",
+    "nombre": "Prohibida vehiculos de motor",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-102.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r102.svg"
+  },
+  {
+    "codigo": "R-103",
+    "nombre": "Prohibida vehiculos motor excepto motos",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-103.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r103.svg"
+  },
+  {
+    "codigo": "R-104",
+    "nombre": "Prohibida motocicletas",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-104.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r104.svg"
+  },
+  {
+    "codigo": "R-105",
+    "nombre": "Prohibida ciclomotores",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-105.svg",
+    "url_wikimedia": "https://commons.wikimedia.org/wiki/File%3ASpain%20traffic%20signal%20r105.svg"
+  },
+  {
+    "codigo": "R-106",
+    "nombre": "Prohibida vehiculos traccion animal",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-106.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Spain_traffic_signal_r106.svg"
+  },
+  {
+    "codigo": "R-107",
+    "nombre": "Prohibida carros de mano",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-107.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Spain_traffic_signal_r107.svg"
+  },
+  {
+    "codigo": "R-108",
+    "nombre": "Prohibida vehiculos motor con remolque",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-108.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/50/Spain_traffic_signal_r108.svg"
+  },
+  {
+    "codigo": "R-109",
+    "nombre": "Prohibida ciclos",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-109.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/41/Spain_traffic_signal_r109.svg"
+  },
+  {
+    "codigo": "R-110",
+    "nombre": "Prohibida peatones",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-110.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Spain_traffic_signal_r110.svg"
+  },
+  {
+    "codigo": "R-111",
+    "nombre": "Prohibida vehiculos motor ciclomotores y ciclos",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-111.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/50/Spain_traffic_signal_r111.svg"
+  },
+  {
+    "codigo": "R-112",
+    "nombre": "Prohibida transporte mercancias",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-112.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/55/Spain_traffic_signal_r112.svg"
+  },
+  {
+    "codigo": "R-113",
+    "nombre": "Prohibida mercancias peligrosas",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-113.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/08/Spain_traffic_signal_r113.svg"
+  },
+  {
+    "codigo": "R-114",
+    "nombre": "Prohibida productos contaminantes agua",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-114.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Spain_traffic_signal_r114_%282022%29.svg"
+  },
+  {
+    "codigo": "R-115",
+    "nombre": "Prohibida altura exceda indicada",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-115.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Spain_traffic_signal_r115.svg"
+  },
+  {
+    "codigo": "R-116",
+    "nombre": "Prohibida anchura exceda indicada",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-116.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Spain_traffic_signal_r116.svg"
+  },
+  {
+    "codigo": "R-117",
+    "nombre": "Prohibida longitud exceda indicada",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-117.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/09/Spain_traffic_signal_r117.svg"
+  },
+  {
+    "codigo": "R-118",
+    "nombre": "Prohibida no cumplan emisiones",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-118.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/da/Spain_traffic_signal_r118.svg"
+  },
+  {
+    "codigo": "R-119",
+    "nombre": "Prohibida vehiculos movilidad personal",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-119.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/25/Spain_traffic_signal_r119.svg"
+  },
+  {
+    "codigo": "R-120",
+    "nombre": "Prohibida mercancias explosivas",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-120.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Spain_traffic_signal_r120.svg"
+  },
+  {
+    "codigo": "R-200",
+    "nombre": "Prohibicion pasar sin detenerse",
+    "tipo": "reglamentacion",
+    "subtipo": "restriccion",
+    "archivo": "reglamentacion/R-200.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Spain_traffic_signal_r200.svg"
+  },
+  {
+    "codigo": "R-200a",
+    "nombre": "Prohibicion pasar sin detenerse (aduana)",
+    "tipo": "reglamentacion",
+    "subtipo": "restriccion",
+    "archivo": "reglamentacion/R-200a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Spain_traffic_signal_r200a.svg"
+  },
+  {
+    "codigo": "R-201",
+    "nombre": "Limitacion peso total",
+    "tipo": "reglamentacion",
+    "subtipo": "restriccion",
+    "archivo": "reglamentacion/R-201.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Spain_traffic_signal_r201.svg"
+  },
+  {
+    "codigo": "R-202",
+    "nombre": "Limitacion peso por eje",
+    "tipo": "reglamentacion",
+    "subtipo": "restriccion",
+    "archivo": "reglamentacion/R-202.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Spain_traffic_signal_r202.svg"
+  },
+  {
+    "codigo": "R-203",
+    "nombre": "Limitacion longitud",
+    "tipo": "reglamentacion",
+    "subtipo": "restriccion",
+    "archivo": "reglamentacion/R-203.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/30/Spain_traffic_signal_r203.svg"
+  },
+  {
+    "codigo": "R-204",
+    "nombre": "Limitacion anchura",
+    "tipo": "reglamentacion",
+    "subtipo": "restriccion",
+    "archivo": "reglamentacion/R-204.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/df/Spain_traffic_signal_r204.svg"
+  },
+  {
+    "codigo": "R-205",
+    "nombre": "Limitacion altura",
+    "tipo": "reglamentacion",
+    "subtipo": "restriccion",
+    "archivo": "reglamentacion/R-205.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/90/Spain_traffic_signal_r205.svg"
+  },
+  {
+    "codigo": "R-206",
+    "nombre": "Galibo",
+    "tipo": "reglamentacion",
+    "subtipo": "restriccion",
+    "archivo": "reglamentacion/R-206.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Spain_traffic_signal_r206.svg"
+  },
+  {
+    "codigo": "R-300",
+    "nombre": "Prohibido girar izquierda",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-300.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Spain_traffic_signal_r300.svg"
+  },
+  {
+    "codigo": "R-301-10",
+    "nombre": "Velocidad maxima 10",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-10.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Spain_traffic_signal_r301-10.svg"
+  },
+  {
+    "codigo": "R-301-100",
+    "nombre": "Velocidad maxima 100",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-100.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/02/Spain_traffic_signal_r301-100.svg"
+  },
+  {
+    "codigo": "R-301-110",
+    "nombre": "Velocidad maxima 110",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-110.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Spain_traffic_signal_r301-110.svg"
+  },
+  {
+    "codigo": "R-301-120",
+    "nombre": "Velocidad maxima 120",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-120.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Spain_traffic_signal_r301-120.svg"
+  },
+  {
+    "codigo": "R-301-20",
+    "nombre": "Velocidad maxima 20",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-20.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/75/Spain_traffic_signal_r301-20.svg"
+  },
+  {
+    "codigo": "R-301-30",
+    "nombre": "Velocidad maxima 30",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-30.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/39/Spain_traffic_signal_r301-30.svg"
+  },
+  {
+    "codigo": "R-301-40",
+    "nombre": "Velocidad maxima 40",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-40.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Spain_traffic_signal_r301-40.svg"
+  },
+  {
+    "codigo": "R-301-50",
+    "nombre": "Velocidad maxima 50",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-50.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/48/Spain_traffic_signal_r301-50.svg"
+  },
+  {
+    "codigo": "R-301-60",
+    "nombre": "Velocidad maxima 60",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-60.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Spain_traffic_signal_r301-60.svg"
+  },
+  {
+    "codigo": "R-301-70",
+    "nombre": "Velocidad maxima 70",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-70.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/63/Spain_traffic_signal_r301-70.svg"
+  },
+  {
+    "codigo": "R-301-80",
+    "nombre": "Velocidad maxima 80",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-80.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/78/Spain_traffic_signal_r301-80.svg"
+  },
+  {
+    "codigo": "R-301-90",
+    "nombre": "Velocidad maxima 90",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-301-90.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Spain_traffic_signal_r301-90.svg"
+  },
+  {
+    "codigo": "R-302",
+    "nombre": "Giro derecha prohibido",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-302.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Spain_traffic_signal_r302.svg"
+  },
+  {
+    "codigo": "R-303",
+    "nombre": "Prohibido cambio de sentido",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-303.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/18/Spain_traffic_signal_r303.svg"
+  },
+  {
+    "codigo": "R-304",
+    "nombre": "Prohibido adelantar",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-304.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/98/Spain_traffic_signal_r304.svg"
+  },
+  {
+    "codigo": "R-305",
+    "nombre": "Prohibido adelantar camiones",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-305.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/87/Spain_traffic_signal_r305.svg"
+  },
+  {
+    "codigo": "R-306",
+    "nombre": "Prohibido senales acusticas",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-306.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Spain_traffic_signal_r306.svg"
+  },
+  {
+    "codigo": "R-307",
+    "nombre": "Prohibido parar y estacionar",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-307.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Spain_traffic_signal_r307.svg"
+  },
+  {
+    "codigo": "R-308",
+    "nombre": "Prohibido estacionar",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-308.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/01/Spain_traffic_signal_r308.svg"
+  },
+  {
+    "codigo": "R-308c",
+    "nombre": "Prohibido estacionar (1a quincena)",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-308c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Spain_traffic_signal_r308c.svg"
+  },
+  {
+    "codigo": "R-308d",
+    "nombre": "Prohibido estacionar (2a quincena)",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-308d.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Spain_traffic_signal_r308d.svg"
+  },
+  {
+    "codigo": "R-308e",
+    "nombre": "Prohibido estacionar (carga/descarga)",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-308e.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Spain_traffic_signal_r308e.svg"
+  },
+  {
+    "codigo": "R-309",
+    "nombre": "Estacionamiento prohibido dias impares",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-309.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Spain_traffic_signal_r309.svg"
+  },
+  {
+    "codigo": "R-310",
+    "nombre": "Estacionamiento prohibido dias pares",
+    "tipo": "reglamentacion",
+    "subtipo": "prohibicion",
+    "archivo": "reglamentacion/R-310.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/07/Spain_traffic_signal_r310.svg"
+  },
+  {
+    "codigo": "R-400a",
+    "nombre": "Sentido obligatorio recto",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-400a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Spain_traffic_signal_r400a.svg"
+  },
+  {
+    "codigo": "R-400b",
+    "nombre": "Sentido obligatorio derecha",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-400b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Spain_traffic_signal_r400b.svg"
+  },
+  {
+    "codigo": "R-400c",
+    "nombre": "Sentido obligatorio izquierda",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-400c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Spain_traffic_signal_r400c.svg"
+  },
+  {
+    "codigo": "R-400d",
+    "nombre": "Sentido obligatorio derecha o recto",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-400d.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Spain_traffic_signal_r400d.svg"
+  },
+  {
+    "codigo": "R-400e",
+    "nombre": "Sentido obligatorio izquierda o recto",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-400e.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/11/Spain_traffic_signal_r400e.svg"
+  },
+  {
+    "codigo": "R-401",
+    "nombre": "Paso obligatorio",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-401.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/12/R-401.svg"
+  },
+  {
+    "codigo": "R-401a",
+    "nombre": "Paso obligatorio izquierda",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-401a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/98/Spain_traffic_signal_r401a.svg"
+  },
+  {
+    "codigo": "R-401b",
+    "nombre": "Paso obligatorio derecha",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-401b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/98/Spain_traffic_signal_r401b.svg"
+  },
+  {
+    "codigo": "R-401c",
+    "nombre": "Paso obligatorio",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-401c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Spain_traffic_signal_r401c.svg"
+  },
+  {
+    "codigo": "R-402",
+    "nombre": "Rotonda obligatoria",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-402.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Spain_traffic_signal_r402.svg"
+  },
+  {
+    "codigo": "R-403a",
+    "nombre": "Direcciones permitidas",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-403a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/34/Spain_traffic_signal_r403a.svg"
+  },
+  {
+    "codigo": "R-403b",
+    "nombre": "Direcciones permitidas",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-403b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Spain_traffic_signal_r403b.svg"
+  },
+  {
+    "codigo": "R-403c",
+    "nombre": "Direcciones permitidas",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-403c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Spain_traffic_signal_r403c.svg"
+  },
+  {
+    "codigo": "R-406",
+    "nombre": "Calzada para camiones",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-406.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/44/Spain_traffic_signal_r406.svg"
+  },
+  {
+    "codigo": "R-407a",
+    "nombre": "Via reservada ciclos",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-407a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/89/Spain_traffic_signal_R-407a.svg"
+  },
+  {
+    "codigo": "R-407b",
+    "nombre": "Via ciclos y peatones",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-407b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Spain_traffic_signal_r407b.svg"
+  },
+  {
+    "codigo": "R-409",
+    "nombre": "Alumbrado corto alcance",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-409.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Spain_traffic_signal_r409.svg"
+  },
+  {
+    "codigo": "R-415",
+    "nombre": "Carril bici obligatorio",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-415.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/fd/R-415_spain.svg"
+  },
+  {
+    "codigo": "R-416",
+    "nombre": "Camino peatones y ciclos",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-416.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Spain_traffic_signal_r416.svg"
+  },
+  {
+    "codigo": "R-417",
+    "nombre": "Cinturon seguridad obligatorio",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-417.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/ed/R-417.svg"
+  },
+  {
+    "codigo": "R-418",
+    "nombre": "Telepeaje",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-418.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/79/R-418_telepeaje.svg"
+  },
+  {
+    "codigo": "R-419",
+    "nombre": "Fin de obligacion",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-419.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/94/Spain_traffic_signal_r419%2C_2023_set.svg"
+  },
+  {
+    "codigo": "R-420",
+    "nombre": "Zona residencial",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-420.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Spain_traffic_signal_R-420.svg"
+  },
+  {
+    "codigo": "R-421",
+    "nombre": "Fin zona residencial",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-421.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/54/Spain_traffic_signal_R-421.svg"
+  },
+  {
+    "codigo": "R-422",
+    "nombre": "Zona bajas emisiones",
+    "tipo": "reglamentacion",
+    "subtipo": "obligacion",
+    "archivo": "reglamentacion/R-422.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Spain_traffic_signal_r422%2C_2023_set.svg"
+  },
+  {
+    "codigo": "R-500",
+    "nombre": "Fin de prohibiciones",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-500.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/88/Spain_traffic_signal_r500.svg"
+  },
+  {
+    "codigo": "R-501",
+    "nombre": "Fin limitacion velocidad",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-501.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Spain_traffic_signal_r501.svg"
+  },
+  {
+    "codigo": "R-502",
+    "nombre": "Fin prohibicion adelantamiento",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-502.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Spain_traffic_signal_r502.svg"
+  },
+  {
+    "codigo": "R-503",
+    "nombre": "Fin prohibicion adelantamiento camiones",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-503.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Spain_traffic_signal_r503.svg"
+  },
+  {
+    "codigo": "R-504",
+    "nombre": "Fin prohibicion senales acusticas",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-504.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Spain_traffic_signal_r504.svg"
+  },
+  {
+    "codigo": "R-505",
+    "nombre": "Fin prohibicion estacionamiento",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-505.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Spain_traffic_signal_R-505.svg"
+  },
+  {
+    "codigo": "R-506",
+    "nombre": "Fin velocidad minima",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-506.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Spain_traffic_signal_r506.svg"
+  },
+  {
+    "codigo": "R-507",
+    "nombre": "Fin via reservada ciclos",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-507.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Spain_traffic_signal_R-507.svg"
+  },
+  {
+    "codigo": "R-508",
+    "nombre": "Fin camino peatones",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-508.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/98/Spain_traffic_signal_R-508.svg"
+  },
+  {
+    "codigo": "R-509",
+    "nombre": "Fin senda ciclable",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-509.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Spain_traffic_signal_R-509.svg"
+  },
+  {
+    "codigo": "R-510",
+    "nombre": "Fin alumbrado corto alcance",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-510.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/33/Spain_traffic_signal_R-510.svg"
+  },
+  {
+    "codigo": "R-511",
+    "nombre": "Fin cadenas nieve",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-511.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Spain_traffic_signal_R-511.svg"
+  },
+  {
+    "codigo": "R-512",
+    "nombre": "Fin camino peatones y ciclos",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-512.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Spain_traffic_signal_R-512.svg"
+  },
+  {
+    "codigo": "R-513",
+    "nombre": "Fin carril bici obligatorio",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-513.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/43/Spain_traffic_signal_R-513.svg"
+  },
+  {
+    "codigo": "R-514",
+    "nombre": "Fin cinturon seguridad obligatorio",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-514.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/55/Spain_traffic_signal_r514%2C_2023_set.svg"
+  },
+  {
+    "codigo": "R-515",
+    "nombre": "Fin zona bajas emisiones",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-515.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/23/Spain_traffic_signal_R-515.svg"
+  },
+  {
+    "codigo": "R-516",
+    "nombre": "Fin de obligacion",
+    "tipo": "reglamentacion",
+    "subtipo": "fin_prohibicion",
+    "archivo": "reglamentacion/R-516.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/67/Spain_traffic_signal_R-516.svg"
+  },
+  {
+    "codigo": "S-1",
+    "nombre": "Autopista",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-1.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Spain_traffic_signal_s1.svg"
+  },
+  {
+    "codigo": "S-1a",
+    "nombre": "Autovia",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-1a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Spain_traffic_signal_s1a.svg"
+  },
+  {
+    "codigo": "S-1b",
+    "nombre": "Fin autopista",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-1b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Spain_traffic_signal_s1b_2023.svg"
+  },
+  {
+    "codigo": "S-1c",
+    "nombre": "Fin autovia",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-1c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Spain_traffic_signal_s1c_2023.svg"
+  },
+  {
+    "codigo": "S-2",
+    "nombre": "Fin autopista",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-2.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Spain_traffic_signal_s2.svg"
+  },
+  {
+    "codigo": "S-2a",
+    "nombre": "Fin autovia",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-2a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/00/Spain_traffic_signal_s2a.svg"
+  },
+  {
+    "codigo": "S-2b",
+    "nombre": "Fin autopista",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-2b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Spain_traffic_signal_s2b_2023.svg"
+  },
+  {
+    "codigo": "S-2c",
+    "nombre": "Fin autovia",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-2c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Spain_traffic_signal_s2c_2023.svg"
+  },
+  {
+    "codigo": "S-3",
+    "nombre": "Via reservada automoviles",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-3.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Spain_traffic_signal_s3.svg"
+  },
+  {
+    "codigo": "S-4",
+    "nombre": "Fin via reservada automoviles",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-4.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Spain_traffic_signal_s4.svg"
+  },
+  {
+    "codigo": "S-7",
+    "nombre": "Velocidad maxima aconsejada",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-7.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Spain_traffic_signal_s7.svg"
+  },
+  {
+    "codigo": "S-8",
+    "nombre": "Fin velocidad maxima aconsejada",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-8.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/06/Spain_traffic_signal_s8.svg"
+  },
+  {
+    "codigo": "S-9",
+    "nombre": "Intervalo aconsejado velocidades",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-9.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Spain_traffic_signal_s9.svg"
+  },
+  {
+    "codigo": "S-10",
+    "nombre": "Carril reservado",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-10.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/66/Spain_traffic_signal_s10.svg"
+  },
+  {
+    "codigo": "S-11",
+    "nombre": "Carril reservado buses",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-11.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Spain_traffic_signal_s11.svg"
+  },
+  {
+    "codigo": "S-11a",
+    "nombre": "Carril reservado buses (contrario)",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-11a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/02/Spain_traffic_signal_s11a.svg"
+  },
+  {
+    "codigo": "S-11b",
+    "nombre": "Carril reservado buses",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-11b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Spain_traffic_signal_s11b.svg"
+  },
+  {
+    "codigo": "S-12",
+    "nombre": "Via para ciclos",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-12.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/94/Spain_traffic_signal_s12.svg"
+  },
+  {
+    "codigo": "S-12b",
+    "nombre": "Fin via para ciclos",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-12b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/87/Spain_traffic_signal_s12b.svg"
+  },
+  {
+    "codigo": "S-13",
+    "nombre": "Paso para peatones",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-13.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/88/Spain_traffic_signal_s13%2C_2023_set.svg"
+  },
+  {
+    "codigo": "S-14a",
+    "nombre": "Paso superior peatones",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-14a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Spain_traffic_signal_s14a.svg"
+  },
+  {
+    "codigo": "S-14b",
+    "nombre": "Paso inferior peatones",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-14b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/47/Spain_traffic_signal_s14b.svg"
+  },
+  {
+    "codigo": "S-14c",
+    "nombre": "Paso superior peatones",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-14c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Spain_traffic_signal_s14c.svg"
+  },
+  {
+    "codigo": "S-14d",
+    "nombre": "Paso inferior peatones",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-14d.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Spain_traffic_signal_s14d.svg"
+  },
+  {
+    "codigo": "S-14e",
+    "nombre": "Paso superior peatones y ciclos",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-14e.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Spain_traffic_signal_s14e.svg"
+  },
+  {
+    "codigo": "S-14f",
+    "nombre": "Paso inferior peatones y ciclos",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-14f.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/78/Spain_traffic_signal_s14f.svg"
+  },
+  {
+    "codigo": "S-15a",
+    "nombre": "Calzada sin salida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-15a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Spain_traffic_signal_s15a.svg"
+  },
+  {
+    "codigo": "S-15b",
+    "nombre": "Calzada sin salida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-15b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Spain_traffic_signal_s15b.svg"
+  },
+  {
+    "codigo": "S-15c",
+    "nombre": "Calzada sin salida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-15c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Spain_traffic_signal_s15c.svg"
+  },
+  {
+    "codigo": "S-15d",
+    "nombre": "Calzada sin salida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-15d.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/89/Spain_traffic_signal_s15d.svg"
+  },
+  {
+    "codigo": "S-15e",
+    "nombre": "Calzada sin salida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-15e.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Spain_traffic_signal_s15e%2C_2023_set.svg"
+  },
+  {
+    "codigo": "S-16",
+    "nombre": "Zona frenado emergencia",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-16.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/57/Spain_traffic_signal_s16.svg"
+  },
+  {
+    "codigo": "S-17",
+    "nombre": "Estacionamiento",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-17.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/07/Spain_traffic_signal_s17.svg"
+  },
+  {
+    "codigo": "S-17a",
+    "nombre": "Aparcamiento subterraneo",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-17a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Spain_traffic_signal_s17a.svg"
+  },
+  {
+    "codigo": "S-18",
+    "nombre": "Hospital",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-18.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Spain_traffic_signal_s18.svg"
+  },
+  {
+    "codigo": "S-21",
+    "nombre": "Zona peatonal",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-21.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/de/Spain_traffic_signal_s21_%282022%29.svg"
+  },
+  {
+    "codigo": "S-22",
+    "nombre": "Tunel",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-22.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Spain_traffic_signal_s22.svg"
+  },
+  {
+    "codigo": "S-23",
+    "nombre": "Zona estacionamiento regulado",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-23.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Spain_traffic_signal_s23.svg"
+  },
+  {
+    "codigo": "S-24",
+    "nombre": "Fin zona estacionamiento regulado",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-24.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Spain_traffic_signal_s24.svg"
+  },
+  {
+    "codigo": "S-25",
+    "nombre": "Cambio de sentido",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-25.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/64/Spain_traffic_signal_s25.svg"
+  },
+  {
+    "codigo": "S-26a",
+    "nombre": "Apartadero",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-26a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Spain_traffic_signal_s26a.svg"
+  },
+  {
+    "codigo": "S-26b",
+    "nombre": "Apartadero",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-26b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Spain_traffic_signal_s26b.svg"
+  },
+  {
+    "codigo": "S-26c",
+    "nombre": "Apartadero",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-26c.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Spain_traffic_signal_s26c.svg"
+  },
+  {
+    "codigo": "S-27",
+    "nombre": "Lugar sin salida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-27.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/42/Spain_traffic_signal_s27.svg"
+  },
+  {
+    "codigo": "S-28",
+    "nombre": "Auxilio en carretera",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-28.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Spain_traffic_signal_s28.svg"
+  },
+  {
+    "codigo": "S-29",
+    "nombre": "Calle residencial",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-29.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Spain_traffic_signal_s29.svg"
+  },
+  {
+    "codigo": "S-30a",
+    "nombre": "Zona a 30",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-30a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/63/Spain_traffic_signal_s30a%2C_2023_set.svg"
+  },
+  {
+    "codigo": "S-31a",
+    "nombre": "Fin zona a 30",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-31a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/54/Spain_traffic_signal_s31a%2C_2023_set.svg"
+  },
+  {
+    "codigo": "S-32",
+    "nombre": "Calle convivencia",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-32.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/34/Spain_traffic_signal_s32.svg"
+  },
+  {
+    "codigo": "S-33",
+    "nombre": "Fin zona a 20",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-33.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/15/Spain_traffic_signal_s33%2C_2023_set.svg"
+  },
+  {
+    "codigo": "S-34",
+    "nombre": "Apartadero",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-34.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/39/Spain_traffic_signal_s34.svg"
+  },
+  {
+    "codigo": "S-34a",
+    "nombre": "Apartadero",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-34a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Spain_traffic_signal_s34a.svg"
+  },
+  {
+    "codigo": "S-35",
+    "nombre": "Punto recarga electrica",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-35.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/63/Spain_traffic_signal_s35.svg"
+  },
+  {
+    "codigo": "S-36",
+    "nombre": "Zona bajas emisiones",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-36.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Spain_traffic_signal_s36.svg"
+  },
+  {
+    "codigo": "S-37",
+    "nombre": "Fin zona bajas emisiones",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-37.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/68/Spain_traffic_signal_s37.svg"
+  },
+  {
+    "codigo": "S-38",
+    "nombre": "Zona movilidad compartida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-38.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Spain_traffic_signal_s38.svg"
+  },
+  {
+    "codigo": "S-39",
+    "nombre": "Fin zona movilidad compartida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-39.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spain_traffic_signal_s39.svg"
+  },
+  {
+    "codigo": "S-40",
+    "nombre": "Zona vehiculos electricos",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-40.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Spain_traffic_signal_s40.svg"
+  },
+  {
+    "codigo": "S-41",
+    "nombre": "Fin zona vehiculos electricos",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-41.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/1/15/Spain_traffic_signal_s41.svg"
+  },
+  {
+    "codigo": "S-42",
+    "nombre": "Zona carga y descarga",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-42.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Spain_traffic_signal_s42.svg"
+  },
+  {
+    "codigo": "S-43",
+    "nombre": "Fin zona carga y descarga",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-43.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Spain_traffic_signal_s43.svg"
+  },
+  {
+    "codigo": "S-44",
+    "nombre": "Zona movilidad reducida",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-44.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Spain_traffic_signal_s44.svg"
+  },
+  {
+    "codigo": "S-45",
+    "nombre": "Zona prioridad residencial",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-45.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/70/Spain_traffic_signal_s45%2C_2023_set.svg"
+  },
+  {
+    "codigo": "S-46",
+    "nombre": "Fin zona prioridad residencial",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-46.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Spain_traffic_signal_s46%2C_2023_set.svg"
+  },
+  {
+    "codigo": "S-47",
+    "nombre": "Zona trafico calmado",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-47.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/63/Spain_traffic_signal_s47.svg"
+  },
+  {
+    "codigo": "S-48",
+    "nombre": "Fin zona trafico calmado",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-48.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Spain_traffic_signal_s48.svg"
+  },
+  {
+    "codigo": "S-49",
+    "nombre": "Prioridad ciclista",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-49.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Spain_traffic_signal_s49.svg"
+  },
+  {
+    "codigo": "S-51",
+    "nombre": "Carril circulacion",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-51.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/7/76/Spain_traffic_signal_s51.svg"
+  },
+  {
+    "codigo": "S-51a",
+    "nombre": "Carril circulacion",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-51a.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/4/49/Spain_traffic_signal_s51a.svg"
+  },
+  {
+    "codigo": "S-51b",
+    "nombre": "Carril circulacion",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-51b.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/62/Spain_traffic_signal_s51b.svg"
+  },
+  {
+    "codigo": "S-250",
+    "nombre": "Poblado",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-250.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/6/62/Spain_traffic_signal_s250.svg"
+  },
+  {
+    "codigo": "S-260",
+    "nombre": "Fin de poblado",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-260.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Spain_traffic_signal_s260.svg"
+  },
+  {
+    "codigo": "S-500",
+    "nombre": "Presenalizacion",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-500.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Spain_traffic_signal_s500.svg"
+  },
+  {
+    "codigo": "S-510",
+    "nombre": "Direccion",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-510.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Spain_traffic_signal_s510.svg"
+  },
+  {
+    "codigo": "S-920",
+    "nombre": "Orientacion",
+    "tipo": "indicacion",
+    "subtipo": "indicacion",
+    "archivo": "indicacion/S-920.svg",
+    "url_wikimedia": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Spain_traffic_signal_s920.svg"
+  }
+]

@@ -3,7 +3,7 @@
 ## PROXIMA SESION (prioridad)
 
 ### A. Analizar formato real de preguntas DGT
-- [x] Extraer 2.700 preguntas de 90 tests Todotest (content/todotest_3000.json)
+- [x] Extraer 2.700 preguntas de 90 tests Todotest (content/todotest_2700.json)
 - [x] Extraer 30 preguntas del examen oficial DGT (content/dgt_oficial_exam.json)
 - [x] Analizar distribucion de tipos: directa 40%, situacional 27%, completar 23%, dato 10%
 - [x] Analizar palabras trampa con frecuencias (siempre 254, solamente 117, nunca 37, etc.)
