@@ -346,39 +346,54 @@ Al generar preguntas variadas, respetar esta distribución aproximada:
 
 ## EXPLICACIONES (MUY IMPORTANTE)
 
-### Formato base: Párrafo corto (3-5 frases)
-La explicación principal debe ser un **párrafo breve** que explique la respuesta correcta y por qué las otras son incorrectas.
+### Formato: Párrafo corto + bullets en markdown
 
-### Cuándo añadir tablas
-Tablas SOLO cuando hay **datos numéricos comparables** (velocidades, tasas, plazos). NO usar tablas para explicar conceptos.
+La explicación se guarda como un solo string con formato markdown. Un párrafo inicial con la respuesta y la razón, seguido de bullets con detalles. Esto es más fácil de leer que un bloque de texto largo.
 
-### Estructura de la explicación:
-1. **Respuesta correcta + por qué** (1-2 frases)
-2. **Excepciones relevantes vigentes** (si las hay)
-3. **Información adicional** (dato extra útil, breve)
-4. **Tabla** (SOLO si hay números que comparar)
+**Formato en el JSON**:
+```json
+"explicacion": "Párrafo corto con la respuesta correcta y por qué.\n\n- Bullet 1: dato relevante o por qué las otras opciones están mal\n- Bullet 2: excepción, conexión con otro tema, o dato adicional\n- Bullet 3: error común de alumnos o dato extra (opcional)"
+```
+
+### Reglas del formato
+- **Párrafo inicial**: 1-2 frases. Respuesta correcta + razón principal.
+- **Bullets**: 2-4 items. Cada uno empieza con mayúscula. Sin punto final.
+- Separar párrafo y bullets con `\n\n` (doble salto de línea)
+- NO usar headers (#) ni negrita (**) — solo texto plano + bullets
+- **Excepción**: tablas de datos numéricos (velocidades, tasas) SÍ se permiten como último item
+
+### Contenido pedagógico obligatorio
+- Explicar POR QUÉ la respuesta correcta es correcta (no solo afirmar que lo es)
+- Incluir al menos 1 conexión con conocimiento relacionado (otro tema, regla vinculada, dato complementario)
+- Si hay un error común de alumnos, mencionarlo ("Muchos confunden 0,15 con 0,25...")
+- Si la respuesta es contraintuitiva, explicar por qué sorprende
 
 ---
 
-### Ejemplo explicación CON tabla (datos numéricos):
+### Ejemplo explicación SIN tabla:
 
-"Las tasas máximas permitidas son:
+```
+"Al adelantar ciclistas se debe mantener mínimo 1,5 metros de distancia lateral.\n\n- Para garantizar esa distancia está permitido invadir el carril contrario e incluso cruzar la línea continua\n- Si no es posible mantener los 1,5 m con seguridad, no se debe adelantar\n- Sanción por no respetar la distancia: 200 euros y 4 puntos"
+```
 
-| Conductor | Aire espirado | Sangre |
-|-----------|---------------|--------|
-| General | 0,25 mg/l | 0,5 g/l |
-| Novel (< 2 años) | 0,15 mg/l | 0,3 g/l |
-| Profesional | 0,15 mg/l | 0,3 g/l |
-
-Superar el doble de la tasa (0,60 mg/l aire) o negarse a la prueba es **delito penal**."
-
-### Ejemplo explicación SIN tabla (concepto):
-
-"Al adelantar ciclistas se debe mantener **mínimo 1,5 metros** de distancia lateral. Para garantizarlo está permitido invadir parte del carril contrario e incluso cruzar la línea continua si es necesario. Si no es posible mantener los 1,5 m con seguridad, **no se debe adelantar**."
+Renderizado:
+> Al adelantar ciclistas se debe mantener mínimo 1,5 metros de distancia lateral.
+>
+> - Para garantizar esa distancia está permitido invadir el carril contrario e incluso cruzar la línea continua
+> - Si no es posible mantener los 1,5 m con seguridad, no se debe adelantar
+> - Sanción por no respetar la distancia: 200 euros y 4 puntos
 
 ### Ejemplo explicación con excepciones:
 
-"El cinturón es obligatorio para **todos los ocupantes**. Excepciones vigentes: personas con certificado médico de exención y durante maniobras de marcha atrás o estacionamiento. El conductor es responsable de los menores. Sanción: **200€ y 4 puntos**."
+```
+"No llevar puesto el cinturón de seguridad conlleva una sanción de 200 euros y la pérdida de 4 puntos.\n\n- El cinturón es obligatorio para todos los ocupantes, en vías urbanas e interurbanas\n- El conductor es responsable de que los menores lleven el SRI adecuado\n- Sin cinturón, el airbag puede causar lesiones graves en lugar de proteger\n- Única excepción: personas con certificado médico de exención"
+```
+
+### Ejemplo explicación CON tabla (datos numéricos):
+
+```
+"Los conductores noveles (menos de 2 años de antigüedad) tienen una tasa máxima de 0,15 mg/l en aire espirado, inferior a la general.\n\n- Muchos confunden 0,15 (noveles) con 0,25 (general) o 0,30 (sangre)\n- Superar el doble de la tasa (0,60 mg/l) o negarse a la prueba es delito penal\n\n| Conductor | Aire espirado | Sangre |\n|-----------|---------------|--------|\n| General | 0,25 mg/l | 0,5 g/l |\n| Novel (< 2 años) | 0,15 mg/l | 0,3 g/l |\n| Profesional | 0,15 mg/l | 0,3 g/l |"
+```
 
 ---
 

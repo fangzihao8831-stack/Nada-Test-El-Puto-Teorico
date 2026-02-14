@@ -263,15 +263,29 @@ VEREDICTO: FLAG PARA REVISION MANUAL
 
 Revisa la explicacion desde la perspectiva de un alumno que esta aprendiendo. No basta con que sea correcta — debe ENSENAR.
 
-### 5A. Estructura obligatoria (de generar-preguntas.md)
+### 5A. Formato: parrafo corto + bullets en markdown
 
-Toda explicacion debe seguir esta estructura:
+La explicacion se guarda como un solo string con formato markdown: un parrafo inicial (1-2 frases con la respuesta correcta y por que) seguido de una lista de bullets con detalles.
 
-1. **Respuesta correcta + por que** (1-2 frases): Explica la respuesta y la logica detras
-2. **Por que las otras opciones son incorrectas** (1-2 frases): No basta con decir "las otras estan mal" — explicar el error de cada una
-3. **Excepciones relevantes** (si las hay): Mencionar casos donde la regla no aplica
-4. **Informacion adicional** (dato extra util): Conectar con conocimiento relacionado
-5. **Tabla** (SOLO si hay datos numericos comparables)
+**Formato en el JSON**:
+```json
+"explicacion": "Parrafo corto con la respuesta correcta y la razon principal.\n\n- Bullet 1: por que las otras opciones estan mal o dato relevante\n- Bullet 2: excepcion, conexion con otro tema, o dato adicional\n- Bullet 3: dato extra o error comun de alumnos (opcional)"
+```
+
+**Ejemplo renderizado** (como se vera en la app):
+
+> No llevar puesto el cinturon conlleva una sancion de 200 euros y la perdida de 4 puntos.
+>
+> - El cinturon es obligatorio para todos los ocupantes, en vias urbanas e interurbanas
+> - Sin cinturon, el airbag puede causar lesiones graves en lugar de proteger
+> - Unica excepcion: personas con certificado medico de exencion
+
+**Reglas del formato**:
+- Parrafo inicial: 1-2 frases. Respuesta correcta + por que es correcta.
+- Bullets: 2-4 items. Cada uno empieza con mayuscula. Sin punto final.
+- Separar parrafo y bullets con `\n\n` (doble salto de linea)
+- NO usar headers (#), negrita (**), ni tablas dentro de la explicacion — solo texto plano + bullets
+- Excepcion: tablas de datos numericos (velocidades, tasas) SI se permiten como ultimo item
 
 ### 5B. Conexiones con conocimiento relacionado
 
@@ -315,15 +329,11 @@ PREGUNTA sobre ITV turismo (4 anos):
 ```
 ORIGINAL (tv2_003):
   "La sancion por no usar el cinturon de seguridad es de 2 puntos."
-  -> Falla: dato incorrecto + sin estructura + sin conexiones
+  -> Falla: dato incorrecto + sin formato bullets + sin conexiones
 
 AUTO-REWRITE:
-  "No llevar puesto el cinturon de seguridad conlleva una sancion de 200 euros y
-  la perdida de 4 puntos del permiso de conducir. El cinturon es obligatorio para
-  todos los ocupantes del vehiculo, tanto en vias urbanas como interurbanas. Las
-  unicas excepciones son personas con certificado medico de exencion. Sin cinturon,
-  el airbag puede causar lesiones graves en lugar de proteger al ocupante."
-  -> Corrige dato + explica obligatoriedad + menciona excepcion + conecta con airbag
+  "No llevar puesto el cinturon de seguridad conlleva una sancion de 200 euros y la perdida de 4 puntos del permiso de conducir.\n\n- El cinturon es obligatorio para todos los ocupantes, en vias urbanas e interurbanas\n- El conductor es responsable de que los menores lleven el SRI adecuado\n- Sin cinturon, el airbag puede causar lesiones graves en lugar de proteger\n- Unica excepcion: personas con certificado medico de exencion"
+  -> Corrige dato + formato parrafo+bullets + conecta con SRI y airbag
 ```
 
 ---
@@ -498,6 +508,8 @@ Clasificar las rechazadas en 2 categorias:
 - Dato incorrecto pero todas las fuentes coinciden en el valor correcto → corregir opciones + explicacion
 - Acentos faltantes → corregir automaticamente
 - Explicacion contradice la respuesta pero el dato correcto es claro → reescribir explicacion
+- Explicacion correcta pero no cumple formato parrafo+bullets → auto-rewrite al formato correcto
+- Explicacion superficial (sin conexiones, sin bullets) → auto-rewrite con contenido pedagogico
 
 Para cada auto-corregible, usar AskUserQuestion:
 "[N] preguntas rechazadas son auto-corregibles. ?Corregir automaticamente?"
@@ -513,9 +525,24 @@ Si el usuario aprueba, aplicar las correcciones y re-ejecutar los checks en las 
 
 Informar al usuario cuantas se rechazaron y los motivos. No guardar las no auto-corregibles.
 
-### 4. Guardar resultado
-Escribir el archivo con las preguntas aprobadas (incluyendo las de revision manual que el usuario aprobo/corrigio) con `validada: true`.
-Las rechazadas se eliminan del archivo. Si todas se rechazan, no guardar un archivo vacio.
+### 4. Guardar resultado (NO sobrescribir originales)
+
+Los archivos originales NUNCA se modifican. El resultado se guarda en archivos nuevos con sufijo `_validated`.
+
+**Regla de nombrado**:
+- `test_main.json` → `test_main_validated.json` (mismo directorio)
+- `preguntas_2026-02-14.json` → `preguntas_2026-02-14_validated.json`
+
+**Contenido del archivo `_validated`**:
+- Solo las preguntas aprobadas (incluyendo las de revision manual que el usuario aprobo/corrigio)
+- Todas con `validada: true`
+- Las rechazadas y duplicados NO se incluyen
+- Si todas se rechazan, no crear el archivo `_validated`
+
+**Ventajas**:
+- El original queda intacto como registro de lo que se genero
+- Se puede hacer diff entre original y validated para ver que cambio
+- Se puede re-validar el original si cambian las reglas
 
 ---
 
