@@ -23,30 +23,30 @@ const features = [
     icon: FileText,
     title: "Tests reales",
     description:
-      "30 preguntas con el mismo formato que el examen oficial de la DGT. Practica como si fuera el dia del examen.",
+      "30 preguntas con el mismo formato que el examen oficial de la DGT. Practica como si fuera el día del examen.",
   },
   {
     icon: Timer,
     title: "Modo examen y estudio",
     description:
-      "Simula el examen real con 30 minutos de tiempo, o practica sin limite con pistas y explicaciones.",
+      "Simula el examen real con 30 minutos de tiempo, o practica sin límite con pistas y explicaciones.",
   },
   {
     icon: BarChart3,
     title: "Progreso y fallos",
     description:
-      "Sigue tu avance por cada uno de los 12 temas. Repasa las preguntas que mas fallas para mejorar.",
+      "Sigue tu avance por cada uno de los 12 temas. Repasa las preguntas que más fallas para mejorar.",
   },
 ];
 
 const steps = [
   {
     icon: UserPlus,
-    label: "Registrate gratis",
+    label: "Regístrate gratis",
   },
   {
     icon: ClipboardList,
-    label: "Elige un test",
+    label: "Elige un test (100 disponibles)",
   },
   {
     icon: BookOpen,
@@ -66,7 +66,7 @@ export default function LandingPage() {
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
           <span className="animate-fade-in text-xl font-bold text-primary">Nadatest</span>
           <Button variant="outline" size="sm" asChild>
-            <Link href="/login">Iniciar sesion</Link>
+            <Link href="/login">Iniciar sesión</Link>
           </Button>
         </div>
       </header>
@@ -80,7 +80,7 @@ export default function LandingPage() {
               className="animate-fade-up relative text-3xl font-bold tracking-tight text-foreground md:text-5xl"
               style={{ animationDelay: "0.1s" }}
             >
-              Prepara tu examen teorico
+              Prepara tu examen teórico
               <br />
               <span className="text-primary">del permiso B</span>
             </h1>
@@ -102,7 +102,7 @@ export default function LandingPage() {
               </Button>
               <Button size="lg" className="shadow-md" asChild>
                 <Link href="/register">
-                  Registrate
+                  Regístrate
                   <UserPlus className="ml-2 size-4" />
                 </Link>
               </Button>
@@ -111,7 +111,7 @@ export default function LandingPage() {
         </section>
 
         {/* Features */}
-        <section className="border-t border-border bg-muted/30 py-16">
+        <section className="border-t border-border bg-muted/30 py-12">
           <div className="mx-auto max-w-5xl px-4">
             <div className="grid gap-4 sm:grid-cols-3">
               {features.map((feature, i) => (
@@ -138,18 +138,21 @@ export default function LandingPage() {
         </section>
 
         {/* How it works */}
-        <section className="py-16">
+        <section className="py-12">
           <div className="mx-auto max-w-5xl px-4">
             <AnimateOnScroll>
               <h2 className="text-center text-2xl font-bold text-foreground">
-                Como funciona
+                Cómo funciona
               </h2>
             </AnimateOnScroll>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {steps.map((step, index) => (
                 <AnimateOnScroll key={step.label} delay={index * 0.1}>
-                  <div className="flex flex-col items-center text-center">
-                    <div className="flex size-12 items-center justify-center rounded-full bg-primary/10">
+                  <div className="relative flex flex-col items-center text-center">
+                    {index < steps.length - 1 && (
+                      <div className="absolute left-[calc(50%+32px)] top-6 hidden h-px w-[calc(100%-64px)] border-t-2 border-dashed border-primary/20 lg:block" aria-hidden="true" />
+                    )}
+                    <div className="relative flex size-12 items-center justify-center rounded-full bg-primary/10">
                       <step.icon className="size-5 text-primary" />
                     </div>
                     <span className="mt-1 text-xs font-medium text-primary">
@@ -167,10 +170,10 @@ export default function LandingPage() {
 
         {/* Final CTA */}
         <AnimateOnScroll>
-          <section className="border-t border-border bg-muted/30 py-16">
+          <section className="border-t border-border bg-muted/30 py-12">
             <div className="mx-auto max-w-5xl px-4 text-center">
               <h2 className="text-2xl font-bold text-foreground">
-                Listo para empezar?
+                ¿Listo para empezar?
               </h2>
               <p className="mx-auto mt-2 max-w-md text-muted-foreground">
                 Crea tu cuenta gratis y empieza a practicar con tests que simulan el examen real.

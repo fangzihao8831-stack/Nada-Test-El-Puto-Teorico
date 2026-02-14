@@ -16,7 +16,7 @@
       "requiere_imagen": true,
       "tipo_imagen": "ninguna",
       "origen": "generada",
-      "validada": false,
+      "validada": true,
       "usa_trampa": false,
       "palabras_trampa": []
     },
@@ -36,7 +36,7 @@
       "requiere_imagen": true,
       "tipo_imagen": "ninguna",
       "origen": "generada",
-      "validada": false,
+      "validada": true,
       "usa_trampa": false,
       "palabras_trampa": []
     },
@@ -50,13 +50,13 @@
         "4 puntos.",
         "6 puntos."
       ],
-      "correcta": 0,
-      "explicacion": "La sanción por no usar el cinturón de seguridad es de 2 puntos. Además, se impone una multa económica de 200 euros.",
+      "correcta": 1,
+      "explicacion": "No llevar puesto el cinturón de seguridad conlleva una sanción de 200 euros y la pérdida de 4 puntos del permiso de conducir. El cinturón es obligatorio para todos los ocupantes del vehículo, tanto en vías urbanas como interurbanas. Las únicas excepciones son personas con certificado médico de exención.",
       "pista": "Es una infracción grave pero no de las más severas en puntos.",
       "requiere_imagen": true,
       "tipo_imagen": "ninguna",
       "origen": "generada",
-      "validada": false,
+      "validada": true,
       "usa_trampa": false,
       "palabras_trampa": []
     }

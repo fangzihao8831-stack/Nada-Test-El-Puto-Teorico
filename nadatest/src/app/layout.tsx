@@ -3,9 +3,9 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nadatest - Practica el teorico del permiso B",
+  title: "Nadatest - Practica el teórico del permiso B",
   description:
-    "Prepara el examen teorico del permiso de conducir B de la DGT con tests que simulan el formato real.",
+    "Prepara el examen teórico del permiso de conducir B de la DGT con tests que simulan el formato real.",
 };
 
 export default function RootLayout({

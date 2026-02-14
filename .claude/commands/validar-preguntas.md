@@ -259,20 +259,72 @@ VEREDICTO: FLAG PARA REVISION MANUAL
 
 ---
 
-## CHECK 5: Calidad de la Explicacion
+## CHECK 5: Revision Pedagogica de la Explicacion
 
-Verifica que la explicacion sea util y correcta.
+Revisa la explicacion desde la perspectiva de un alumno que esta aprendiendo. No basta con que sea correcta — debe ENSENAR.
 
-### Reglas
-1. La explicacion NO debe contradecir la respuesta correcta
-2. Si la pregunta tiene datos numericos, la explicacion debe incluir los valores correctos
-3. La explicacion deberia explicar por que las opciones incorrectas estan mal (aunque sea brevemente)
-4. Minimo 2-3 frases de contenido
+### 5A. Estructura obligatoria (de generar-preguntas.md)
+
+Toda explicacion debe seguir esta estructura:
+
+1. **Respuesta correcta + por que** (1-2 frases): Explica la respuesta y la logica detras
+2. **Por que las otras opciones son incorrectas** (1-2 frases): No basta con decir "las otras estan mal" — explicar el error de cada una
+3. **Excepciones relevantes** (si las hay): Mencionar casos donde la regla no aplica
+4. **Informacion adicional** (dato extra util): Conectar con conocimiento relacionado
+5. **Tabla** (SOLO si hay datos numericos comparables)
+
+### 5B. Conexiones con conocimiento relacionado
+
+La explicacion debe conectar con al menos 1 nodo de conocimiento relacionado. Ejemplos:
+
+```
+PREGUNTA sobre cinturon (4 puntos):
+  BUENA explicacion: "...Ademas, el conductor es responsable de que los menores lleven
+  el SRI adecuado. Sin cinturon, el airbag puede causar lesiones graves en vez de proteger."
+  -> Conecta con: SRI menores + airbag
+
+  MALA explicacion: "La sancion es de 4 puntos y 200 euros."
+  -> No conecta con nada, no ensena
+
+PREGUNTA sobre ITV turismo (4 anos):
+  BUENA explicacion: "...Despues de 10 anos de antiguedad la inspeccion es anual. Las
+  motocicletas tienen un calendario diferente: primera ITV a los 5 anos."
+  -> Conecta con: periodicidad post-10 anos + motos
+
+  MALA explicacion: "La primera ITV es a los 4 anos."
+  -> Repite la respuesta sin anadir valor
+```
+
+### 5C. Claridad desde perspectiva del alumno
+
+- Usa lenguaje claro, evita jerga legal innecesaria
+- Si hay un error comun de los alumnos, mencionarlo ("Muchos confunden 0,15 con 0,25...")
+- Si la respuesta es contraintuitiva, explicar POR QUE sorprende
+
+### 5D. Longitud minima
+- Minimo 3 frases sustantivas (no cuenta repetir la pregunta ni frases vacias)
+- Maximo 8 frases (no sobrecargar — ser conciso pero completo)
 
 ### Veredicto
-- REJECT si la explicacion contradice la respuesta correcta
-- WARN si la explicacion es demasiado corta o no menciona datos relevantes
-- PASS si es correcta y util
+- **AUTO-REWRITE** si la explicacion es correcta pero no cumple la estructura o es demasiado superficial. Claude reescribe automaticamente siguiendo la estructura y anade conexiones.
+- **REJECT** si la explicacion contradice la respuesta correcta (error factual). Si auto-corregible (las fuentes coinciden en el dato correcto), se reescribe. Si no, FLAG para revision manual.
+- **PASS** si cumple estructura, tiene conexiones, y es pedagogicamente util.
+
+### Ejemplo de auto-rewrite
+
+```
+ORIGINAL (tv2_003):
+  "La sancion por no usar el cinturon de seguridad es de 2 puntos."
+  -> Falla: dato incorrecto + sin estructura + sin conexiones
+
+AUTO-REWRITE:
+  "No llevar puesto el cinturon de seguridad conlleva una sancion de 200 euros y
+  la perdida de 4 puntos del permiso de conducir. El cinturon es obligatorio para
+  todos los ocupantes del vehiculo, tanto en vias urbanas como interurbanas. Las
+  unicas excepciones son personas con certificado medico de exencion. Sin cinturon,
+  el airbag puede causar lesiones graves en lugar de proteger al ocupante."
+  -> Corrige dato + explica obligatoriedad + menciona excepcion + conecta con airbag
+```
 
 ---
 
