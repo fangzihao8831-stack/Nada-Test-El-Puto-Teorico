@@ -74,7 +74,7 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
 
 12. Genera el informe de validacion con tabla de evidencia por pregunta
 13. Pregunta al usuario que hacer con cada categoria (aprobadas, rechazadas, revision manual)
-14. Guarda resultado en archivo `_validated.json` (NUNCA sobrescribe originales)
+14. **JAMAS modificar el archivo original**. Todas las correcciones se aplican SOLO al crear `_validated.json`.
     > **Read `validar-preguntas/informe-y-postinforme.md`** para formato del informe, evidencia, y workflow post-informe
 
 ---

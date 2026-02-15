@@ -4,14 +4,14 @@
       "id": "pregunta_0016",
       "subtema_id": "subtema_28",
       "tipo_pregunta": "situacional",
-      "enunciado": "Circula por el carril izquierdo de una vía urbana de dos carriles por sentido. El semáforo circular de su carril está en rojo. El carril derecho tiene un semáforo con flecha verde para girar a la derecha. El vehículo detrás de usted pone el intermitente para girar a la derecha. ¿Qué debe hacer?",
+      "enunciado": "Se encuentra detenido en un semáforo queriendo seguir recto, pero la luz para ir de frente está en rojo. El vehículo detrás de usted tiene el intermitente puesto para girar y la flecha verde del semáforo permite ese giro. ¿Qué debe hacer?",
       "opciones": [
-        "Avanzar igualmente para no obstaculizar el giro del vehículo de detrás, ya que la flecha verde autoriza el movimiento",
-        "Permanecer detenido; su semáforo está en rojo y el vehículo de detrás debe cambiar al carril derecho para girar",
-        "Realizar usted también el giro a la derecha, ya que la flecha verde obliga a todos los vehículos a girar"
+        "Avanzar igualmente para no obstaculizar el giro del vehículo de detrás, ya que la flecha verde autoriza el movimiento en ese carril",
+        "Quedarse quieto, el semáforo circular en rojo le prohíbe avanzar y el vehículo de detrás debe esperar o cambiar de carril",
+        "Realizar usted también el giro, ya que la flecha verde obliga a todos los vehículos del carril a girar"
       ],
       "correcta": 1,
-      "explicacion": "Su semáforo circular está en rojo, por lo que debe permanecer detenido. La flecha verde del carril derecho autoriza el giro solo desde ese carril. El vehículo de detrás debe cambiarse al carril derecho si quiere girar.\n\n- Opciones incorrectas: avanzar con semáforo en rojo es una infracción grave (200 euros y 4 puntos), y la flecha verde del carril derecho no afecta a los vehículos del carril izquierdo\n- Conexión: cada carril puede tener su propia fase semafórica; la flecha verde solo es válida para el carril al que pertenece el semáforo\n- Error común: muchos conductores creen que deben apartarse para dejar girar al de detrás, pero no están obligados a infringir su semáforo en rojo",
+      "explicacion": "Si el semáforo circular está en rojo, usted debe permanecer detenido independientemente de las flechas de otros carriles o direcciones.\n\n- Opciones incorrectas: avanzar con semáforo en rojo es una infracción grave (200 euros y 4 puntos), y la flecha verde no obliga a todos los vehículos del carril a girar\n- Conexión: la flecha verde permite el giro solo a quien desee realizarlo, pero no prevalece sobre el rojo circular para quienes quieren ir recto\n- Error común: muchos conductores creen que deben apartarse para dejar girar al de detrás, pero no están obligados a infringir el semáforo",
       "pista": "Piense en qué le indica a usted personalmente el semáforo circular en rojo",
       "requiere_imagen": true,
       "tipo_imagen": "situacion",

@@ -114,7 +114,13 @@ Para cada auto-corregible, usar AskUserQuestion:
 
 ### 4. Guardar resultado (NO sobrescribir originales)
 
-Los archivos originales NUNCA se modifican. El resultado se guarda en archivos nuevos con sufijo `_validated`.
+**REGLA CRITICA: JAMAS modificar el archivo original.**
+Todas las correcciones (auto-correcciones, reescrituras de enunciado, cambios de explicacion) se aplican SOLO en el archivo `_validated`. El archivo original queda intacto como registro de lo que se genero.
+
+**Prohibido**: Usar Edit/Write sobre el archivo original para aplicar correcciones.
+**Obligatorio**: Construir el archivo `_validated` desde cero con las versiones corregidas.
+
+**Razon**: El original es el registro historico. El diff entre original y validated muestra exactamente que cambio el validador. Si se modifica el original, se pierde esa trazabilidad.
 
 **Regla de nombrado**:
 - `test_main.json` -> `test_main_validated.json` (mismo directorio)
@@ -123,5 +129,6 @@ Los archivos originales NUNCA se modifican. El resultado se guarda en archivos n
 **Contenido del archivo `_validated`**:
 - Solo las preguntas aprobadas (incluyendo las de revision manual que el usuario aprobo/corrigio)
 - Todas con `validada: true`
+- Las correcciones de enunciado, opciones o explicaciones se aplican AQUI, no en el original
 - Las rechazadas y duplicados NO se incluyen
 - Si todas se rechazan, no crear el archivo `_validated`
