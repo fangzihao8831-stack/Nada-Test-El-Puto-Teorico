@@ -38,7 +38,7 @@ export default function TestPage() {
             <div>
               <CardTitle>Test de {TEST_CONFIG.questionsPerTest} preguntas</CardTitle>
               <CardDescription>
-                Formato oficial del examen teorico del permiso B de la DGT.
+                Formato oficial del examen teórico del permiso B de la DGT.
                 Necesitas {TEST_CONFIG.passingScore} respuestas correctas para aprobar.
               </CardDescription>
             </div>
@@ -67,7 +67,7 @@ export default function TestPage() {
                   <span className="text-foreground">{TEST_CONFIG.questionsPerTest}</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">Tiempo limite</span>
+                  <span className="text-muted-foreground">Tiempo límite</span>
                   <span className="text-foreground">{TEST_CONFIG.timeLimitMinutes} minutos</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
@@ -80,7 +80,7 @@ export default function TestPage() {
                 </div>
               </div>
               <p className="text-xs text-muted-foreground">
-                Simula las condiciones reales del examen. No podras ver las respuestas
+                Simula las condiciones reales del examen. No podrás ver las respuestas
                 correctas hasta que finalices el test.
               </p>
               <Button className="w-full" asChild>
@@ -105,17 +105,17 @@ export default function TestPage() {
                   <span className="text-foreground">{TEST_CONFIG.questionsPerTest}</span>
                 </div>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-muted-foreground">Tiempo limite</span>
-                  <Badge variant="outline">Sin limite</Badge>
+                  <span className="text-muted-foreground">Tiempo límite</span>
+                  <Badge variant="outline">Sin límite</Badge>
                 </div>
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">Feedback</span>
-                  <Badge variant="outline">Despues de cada pregunta</Badge>
+                  <Badge variant="outline">Después de cada pregunta</Badge>
                 </div>
               </div>
               <p className="text-xs text-muted-foreground">
-                Practica a tu ritmo. Despues de cada pregunta veras si has acertado
-                y una explicacion de la respuesta correcta.
+                Practica a tu ritmo. Después de cada pregunta verás si has acertado
+                y una explicación de la respuesta correcta.
               </p>
               <Button className="w-full" asChild>
                 <Link href="/test/1?mode=estudio">Comenzar estudio</Link>

@@ -9,10 +9,10 @@ export default function NotFound() {
         <FileQuestion className="size-8 text-primary" />
       </div>
       <h1 className="mt-6 text-2xl font-bold text-foreground">
-        Pagina no encontrada
+        Página no encontrada
       </h1>
       <p className="mt-2 text-center text-muted-foreground">
-        La pagina que buscas no existe o ha sido movida.
+        La página que buscas no existe o ha sido movida.
       </p>
       <Button className="mt-6" asChild>
         <Link href="/">Volver al inicio</Link>

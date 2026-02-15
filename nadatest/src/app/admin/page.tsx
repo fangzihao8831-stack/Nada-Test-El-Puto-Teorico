@@ -50,7 +50,7 @@ export default function AdminPage() {
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold text-foreground">
-          Panel de administracion
+          Panel de administración
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
           Resumen general de la plataforma.
@@ -66,7 +66,7 @@ export default function AdminPage() {
 
       <div>
         <h2 className="mb-3 text-lg font-semibold text-foreground">
-          Accesos rapidos
+          Accesos rápidos
         </h2>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {quickLinks.map((link) => (

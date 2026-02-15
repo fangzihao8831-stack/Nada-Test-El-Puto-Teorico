@@ -1,0 +1,104 @@
+{
+  "preguntas": [
+    {
+      "id": "pregunta_0016",
+      "subtema_id": "subtema_28",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Se encuentra detenido en un semáforo queriendo seguir recto, pero la luz para ir de frente está en rojo. El vehículo detrás de usted tiene el intermitente puesto para girar y la flecha verde del semáforo permite ese giro. ¿Qué debe hacer?",
+      "opciones": [
+        "Avanzar igualmente para no obstaculizar el giro del vehículo de detrás, ya que la flecha verde autoriza el movimiento en ese carril",
+        "Quedarse quieto, el semáforo circular en rojo le prohíbe avanzar y el vehículo de detrás debe esperar o cambiar de carril",
+        "Realizar usted también el giro, ya que la flecha verde obliga a todos los vehículos del carril a girar"
+      ],
+      "correcta": 1,
+      "explicacion": "Si el semáforo circular está en rojo, usted debe permanecer detenido independientemente de las flechas de otros carriles o direcciones.\n\n- Opciones incorrectas: avanzar con semáforo en rojo es una infracción grave (200 euros y 4 puntos), y la flecha verde no obliga a todos los vehículos del carril a girar\n- Conexión: la flecha verde permite el giro solo a quien desee realizarlo, pero no prevalece sobre el rojo circular para quienes quieren ir recto\n- Error común: muchos conductores creen que deben apartarse para dejar girar al de detrás, pero no están obligados a infringir el semáforo",
+      "pista": "Piense en qué le indica a usted personalmente el semáforo circular en rojo",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "usa_trampa": true,
+      "palabras_trampa": ["igualmente", "obliga a todos"],
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0017",
+      "subtema_id": "subtema_28",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circulando por una vía urbana, el semáforo muestra una flecha verde de giro a la derecha junto con la luz circular en rojo. Si quiere girar a la derecha, ¿tiene preferencia de paso sobre los vehículos que se aproximan por la vía a la que se incorpora?",
+      "opciones": [
+        "Sí, la flecha verde otorga prioridad de paso para girar",
+        "No, la flecha verde permite girar pero debe ceder el paso a los vehículos que se aproximan",
+        "Sí, siempre que realice el giro sin detenerse"
+      ],
+      "correcta": 1,
+      "explicacion": "La flecha verde del semáforo le permite girar en la dirección indicada, pero no le otorga prioridad de paso. Debe ceder el paso a los vehículos que circulan por la vía a la que se incorpora.\n\n- Opciones incorrectas: la flecha verde nunca otorga prioridad, solo autoriza el movimiento en esa dirección; girar sin detenerse no es correcto si hay vehículos aproximándose\n- Conexión: esto es similar a incorporarse a la circulación, donde los que ya circulan siempre tienen preferencia\n- Error común: muchos alumnos confunden autorización con prioridad; la flecha verde es como un permiso condicional, no un derecho de paso",
+      "pista": "No confunda autorización para girar con derecho de paso",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "usa_trampa": true,
+      "palabras_trampa": ["siempre que"],
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0018",
+      "subtema_id": "subtema_19",
+      "tipo_pregunta": "directa",
+      "enunciado": "Circulando dentro de una glorieta, ¿cuándo es obligatorio utilizar el intermitente?",
+      "opciones": [
+        "Siempre, tanto al entrar como al salir de la glorieta",
+        "Solamente al entrar en la glorieta, para advertir de su incorporación",
+        "Al salir de la glorieta, con el intermitente derecho"
+      ],
+      "correcta": 2,
+      "explicacion": "En las glorietas, el intermitente derecho es obligatorio al salir para advertir a los demás conductores de su intención de abandonar la glorieta.\n\n- Opciones incorrectas: señalizar al entrar no es obligatorio, y la opción que dice tanto al entrar como al salir exagera la obligación\n- Conexión: al elegir carril en la glorieta, el exterior es para la primera o segunda salida, y el interior para recorrer más de media glorieta\n- Dato clave: en una turboglorieta no se puede cambiar de carril una vez dentro, hay que elegir el carril correcto antes de entrar",
+      "pista": "Piense en cuándo necesitan los demás conductores saber su intención",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "usa_trampa": true,
+      "palabras_trampa": ["siempre", "solamente"],
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0019",
+      "subtema_id": "subtema_28",
+      "tipo_pregunta": "directa",
+      "enunciado": "Si sobre el carril por el que circula hay un semáforo cuadrado con una flecha verde hacia abajo, ¿debe obedecer una señal de stop o de ceda el paso que encuentre más adelante?",
+      "opciones": [
+        "No, porque la flecha verde del semáforo de carril da prioridad de paso",
+        "Sí, la flecha verde solo indica que el carril está abierto, no exime de obedecer señales de prioridad",
+        "Solo si el semáforo cuadrado cambia a aspa roja antes de llegar a la señal"
+      ],
+      "correcta": 1,
+      "explicacion": "El semáforo cuadrado de carril con flecha verde hacia abajo solo indica que el carril está abierto a la circulación. No exime de obedecer las señales de prioridad como stop o ceda el paso.\n\n- Opciones incorrectas: la flecha verde del semáforo de carril no otorga ninguna prioridad, y la obligación de obedecer señales no depende de que cambie a aspa roja\n- Conexión: la jerarquía de señales establece que los semáforos prevalecen sobre las señales verticales, pero el semáforo de carril solo regula la apertura del carril, no la prioridad\n- Error común: confundir la flecha verde del semáforo circular (que autoriza el paso) con la del semáforo cuadrado de carril (que solo indica carril abierto)",
+      "pista": "Pregúntese qué indica exactamente el semáforo cuadrado de carril",
+      "requiere_imagen": true,
+      "tipo_imagen": "senal",
+      "usa_trampa": false,
+      "palabras_trampa": [],
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0020",
+      "subtema_id": "subtema_19",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Dos vehículos se encuentran frente a frente en un estrechamiento con pendiente pronunciada donde no caben los dos. No hay señales de prioridad. ¿Quién debe ceder el paso?",
+      "opciones": [
+        "El que circule en sentido descendente, ya que el que sube tiene prioridad",
+        "El que tenga el vehículo más pequeño, independientemente del sentido de la marcha",
+        "Siempre el que haya llegado después al estrechamiento"
+      ],
+      "correcta": 0,
+      "explicacion": "En un estrechamiento con pendiente pronunciada, tiene prioridad el vehículo que sube porque arrancar en cuesta arriba es más difícil y peligroso.\n\n- Opciones incorrectas: el tamaño del vehículo solo es criterio cuando no hay pendiente significativa, y el orden de llegada no es el criterio principal en pendientes pronunciadas\n- Conexión: si el vehículo que sube encuentra un apartadero antes de cruzarse con el que baja, debe detenerse y dejar pasar al otro aunque tenga prioridad\n- Excepción: con señalización de prioridad (señales R-5 o R-6), se respeta la señalización independientemente de la pendiente",
+      "pista": "Considere cuál de los dos tiene más dificultad para detenerse y arrancar de nuevo",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "usa_trampa": true,
+      "palabras_trampa": ["independientemente", "siempre"],
+      "origen": "generada",
+      "validada": false
+    }
+  ]
+}

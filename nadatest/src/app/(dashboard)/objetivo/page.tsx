@@ -29,7 +29,7 @@ export default function ObjetivoPage() {
             <CardTitle className="text-base">Fecha del examen</CardTitle>
           </div>
           <CardDescription>
-            Indica cuando tienes previsto presentarte al examen teorico.
+            Indica cuándo tienes previsto presentarte al examen teórico.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -43,7 +43,7 @@ export default function ObjetivoPage() {
             />
           </div>
           <p className="mt-3 text-sm text-muted-foreground">
-            Faltan <span className="font-medium text-foreground">62 dias</span> para tu examen.
+            Faltan <span className="font-medium text-foreground">62 días</span> para tu examen.
           </p>
         </CardContent>
       </Card>
@@ -55,12 +55,12 @@ export default function ObjetivoPage() {
             <CardTitle className="text-base">Objetivo diario</CardTitle>
           </div>
           <CardDescription>
-            Cuantos tests quieres hacer al dia?
+            ¿Cuántos tests quieres hacer al día?
           </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="flex items-center gap-4">
-            <span className="text-sm text-muted-foreground">Tests por dia:</span>
+            <span className="text-sm text-muted-foreground">Tests por día:</span>
             <div className="flex size-12 items-center justify-center rounded-lg border border-border bg-muted text-lg font-bold text-foreground">
               2
             </div>

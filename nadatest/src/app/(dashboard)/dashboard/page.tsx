@@ -71,7 +71,7 @@ export default function DashboardPage() {
         />
         <StatsCard
           title="Racha actual"
-          value="7 dias"
+          value="7 días"
           icon={Flame}
         />
         <StatsCard

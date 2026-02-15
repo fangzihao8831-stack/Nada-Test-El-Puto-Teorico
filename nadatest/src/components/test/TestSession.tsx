@@ -120,6 +120,42 @@ function AnswerOption({
   );
 }
 
+function BulletContent({ text }: { text: string }) {
+  const colonIndex = text.indexOf(": ");
+  if (colonIndex === -1) return <>{text}</>;
+  const label = text.slice(0, colonIndex);
+  const content = text.slice(colonIndex + 2);
+  return (
+    <>
+      <span className="font-semibold">{label}:</span> {content}
+    </>
+  );
+}
+
+function ExplicacionContent({ text }: { text: string }) {
+  const blocks = text.split("\n\n");
+  return (
+    <>
+      {blocks.map((block, i) => {
+        const lines = block.split("\n").filter(Boolean);
+        const isBulletBlock = lines.every((l) => l.startsWith("- "));
+        if (isBulletBlock) {
+          return (
+            <ul key={i} className="mt-2 list-disc space-y-1 pl-5">
+              {lines.map((line, j) => (
+                <li key={j}>
+                  <BulletContent text={line.slice(2)} />
+                </li>
+              ))}
+            </ul>
+          );
+        }
+        return <p key={i}>{block}</p>;
+      })}
+    </>
+  );
+}
+
 function FeedbackBox({
   show,
   isCorrect,
@@ -142,7 +178,7 @@ function FeedbackBox({
       <p className="mb-1 font-semibold">
         {isCorrect ? "Correcto" : "Incorrecto"}
       </p>
-      <p>{explicacion}</p>
+      <ExplicacionContent text={explicacion} />
     </div>
   );
 }

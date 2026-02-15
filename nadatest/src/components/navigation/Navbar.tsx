@@ -27,7 +27,7 @@ export function Navbar() {
               size="icon"
               className="md:hidden"
               onClick={() => setMobileMenuOpen(true)}
-              aria-label="Abrir menu"
+              aria-label="Abrir menú"
             >
               <Menu className="size-5" />
             </Button>
@@ -43,7 +43,7 @@ export function Navbar() {
                   variant="ghost"
                   size="icon"
                   className="rounded-full"
-                  aria-label="Menu de usuario"
+                  aria-label="Menú de usuario"
                 >
                   <Avatar size="sm">
                     <AvatarFallback>
@@ -68,7 +68,7 @@ export function Navbar() {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem variant="destructive">
                   <LogOut />
-                  Cerrar sesion
+                  Cerrar sesión
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
