@@ -17,7 +17,7 @@ export default function RegisterPage() {
     <Card className="w-full max-w-sm">
       <CardHeader className="text-center">
         <CardTitle className="text-xl">Crear cuenta</CardTitle>
-        <CardDescription>Registrate gratis en Nadatest</CardDescription>
+        <CardDescription>Regístrate gratis en Nadatest</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
@@ -25,19 +25,19 @@ export default function RegisterPage() {
           <Input id="nombre" type="text" placeholder="Tu nombre" />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="email">Correo electronico</Label>
+          <Label htmlFor="email">Correo electrónico</Label>
           <Input id="email" type="email" placeholder="tu@email.com" />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="password">Contrasena</Label>
-          <Input id="password" type="password" placeholder="Crea una contrasena" />
+          <Label htmlFor="password">Contraseña</Label>
+          <Input id="password" type="password" placeholder="Crea una contraseña" />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="confirmPassword">Confirmar contrasena</Label>
+          <Label htmlFor="confirmPassword">Confirmar contraseña</Label>
           <Input
             id="confirmPassword"
             type="password"
-            placeholder="Repite la contrasena"
+            placeholder="Repite la contraseña"
           />
         </div>
         <Button className="w-full">Crear cuenta</Button>
@@ -55,9 +55,9 @@ export default function RegisterPage() {
       </CardContent>
       <CardFooter className="justify-center">
         <p className="text-sm text-muted-foreground">
-          Ya tienes cuenta?{" "}
+          ¿Ya tienes cuenta?{" "}
           <Link href="/login" className="text-primary hover:underline">
-            Inicia sesion
+            Inicia sesión
           </Link>
         </p>
       </CardFooter>

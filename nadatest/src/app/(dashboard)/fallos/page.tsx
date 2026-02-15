@@ -13,7 +13,7 @@ const mockFailedQuestions = [
   {
     id: "1",
     enunciado:
-      "Cual es la tasa maxima de alcohol en sangre permitida para conductores noveles?",
+      "¿Cuál es la tasa máxima de alcohol en sangre permitida para conductores noveles?",
     tema: "Factores de Riesgo",
     failCount: 4,
     lastFailed: "12/02/2026",
@@ -21,7 +21,7 @@ const mockFailedQuestions = [
   {
     id: "2",
     enunciado:
-      "En una interseccion sin senalizar, quien tiene prioridad?",
+      "En una intersección sin señalizar, ¿quién tiene prioridad?",
     tema: "Prioridad y Maniobras",
     failCount: 3,
     lastFailed: "11/02/2026",
@@ -29,16 +29,16 @@ const mockFailedQuestions = [
   {
     id: "3",
     enunciado:
-      "Cual es la distancia minima de seguridad en autopista con condiciones normales?",
-    tema: "Circulacion y Velocidad",
+      "¿Cuál es la distancia mínima de seguridad en autopista con condiciones normales?",
+    tema: "Circulación y Velocidad",
     failCount: 2,
     lastFailed: "10/02/2026",
   },
   {
     id: "4",
     enunciado:
-      "Cuando se puede circular por el arcen de una autopista?",
-    tema: "La Via y sus Usuarios",
+      "¿Cuándo se puede circular por el arcén de una autopista?",
+    tema: "La Vía y sus Usuarios",
     failCount: 2,
     lastFailed: "09/02/2026",
   },
@@ -55,7 +55,7 @@ export default function FallosPage() {
             Preguntas falladas
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
-            Repasa las preguntas que mas te cuestan.
+            Repasa las preguntas que más te cuestan.
           </p>
         </div>
         {hasFailedQuestions && (
@@ -108,10 +108,10 @@ export default function FallosPage() {
               <AlertCircle className="size-6 text-primary" />
             </div>
             <h2 className="text-lg font-semibold text-foreground">
-              Perfecto!
+              ¡Perfecto!
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              No tienes preguntas falladas. Sigue asi.
+              No tienes preguntas falladas. Sigue así.
             </p>
           </CardContent>
         </Card>

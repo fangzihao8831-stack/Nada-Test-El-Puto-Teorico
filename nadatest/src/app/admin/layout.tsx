@@ -75,7 +75,7 @@ export default function AdminLayout({
               size="icon"
               className="md:hidden"
               onClick={() => setMobileMenuOpen(true)}
-              aria-label="Abrir menu de administracion"
+              aria-label="Abrir menú de administración"
             >
               <Menu className="size-5" />
             </Button>
