@@ -45,7 +45,7 @@ REVISION MANUAL ([Z])
   [ambas preguntas si es posible duplicado]
   ACCION: ¿Aprobar, rechazar, o corregir?
 
-[repetir para cada revision manual]
+[repetir para cada revisión manual]
 
 ========================================
 ```
@@ -56,8 +56,8 @@ REVISION MANUAL ([Z])
   | Fuente      | Evidencia  | Dice                                 |
   +-------------+------------+--------------------------------------+
   | Pregunta    | —          | [lo que dice la pregunta]            |
-  | Temario     | DIRECTO    | [cita exacta, linea X]               |
-  |             | INDIRECTO  | [principio general, linea X]         |
+  | Temario     | DIRECTO    | [cita exacta, línea X]               |
+  |             | INDIRECTO  | [principio general, línea X]         |
   |             | SIN MATCH  | [busqueda realizada sin resultado]    |
   | Todotest    | DIRECTO    | [pregunta #ID, respuesta X]          |
   |             | INDIRECTO  | [pregunta relacionada #ID]           |
@@ -72,62 +72,62 @@ Si la Web no se consulto en ese caso, el informe es INVALIDO.
 
 ---
 
-## Interaccion post-informe
+## Interacción post-informe
 
 Despues de mostrar el informe, preguntar al usuario:
 
 ### 1. Preguntas aprobadas
-Guardar automaticamente con `validada: true`. No preguntar al usuario — si pasaron los 5 checks, se guardan directamente.
+Guardar automáticamente con `validada: true`. No preguntar al usuario — si pasaron los 5 checks, se guardan directamente.
 
-### 2. Preguntas en revision manual
-Para CADA pregunta en revision manual, usar AskUserQuestion:
+### 2. Preguntas en revisión manual
+Para CADA pregunta en revisión manual, usar AskUserQuestion:
 "[id]: [enunciado corto]"
-- Opcion: "Aprobar"
-- Opcion: "Rechazar"
-- Opcion: "Corregir" (pedir al usuario que indique la correccion)
+- Opción: "Aprobar"
+- Opción: "Rechazar"
+- Opción: "Corregir" (pedir al usuario que indique la corrección)
 
 Si el usuario elige "Corregir":
 1. Pedirle que especifique que corregir
-2. Aplicar la correccion en el JSON
+2. Aplicar la corrección en el JSON
 3. Re-ejecutar los checks solo en esa pregunta corregida
-4. Mostrar resultado de la re-validacion
+4. Mostrar resultado de la re-validación
 
 ### 3. Preguntas rechazadas
-Clasificar las rechazadas en 2 categorias:
+Clasificar las rechazadas en 2 categorías:
 
-**Auto-corregibles** (ofrecer correccion automatica):
-- Dato incorrecto pero todas las fuentes coinciden en el valor correcto -> corregir opciones + explicacion
-- Acentos faltantes -> corregir automaticamente
-- Explicacion contradice la respuesta pero el dato correcto es claro -> reescribir explicacion
-- Explicacion correcta pero no cumple formato parrafo+bullets -> auto-rewrite al formato correcto
-- Explicacion superficial (sin conexiones, sin bullets) -> auto-rewrite con contenido pedagogico
+**Auto-corregibles** (ofrecer corrección automática):
+- Dato incorrecto pero todas las fuentes coinciden en el valor correcto -> corregir opciones + explicación
+- Acentos faltantes -> corregir automáticamente
+- Explicación contradice la respuesta pero el dato correcto es claro -> reescribir explicación
+- Explicación correcta pero no cumple formato parrafo+bullets -> auto-rewrite al formato correcto
+- Explicación superficial (sin conexiones, sin bullets) -> auto-rewrite con contenido pedagógico
 
 Para cada auto-corregible, usar AskUserQuestion:
-"[N] preguntas rechazadas son auto-corregibles. ¿Corregir automaticamente?"
-- Opcion: "Si, corregir y re-validar"
-- Opcion: "No, dejar rechazadas"
+"[N] preguntas rechazadas son auto-corregibles. ¿Corregir automáticamente?"
+- Opción: "Si, corregir y re-validar"
+- Opción: "No, dejar rechazadas"
 
 **No auto-corregibles** (informar y descartar):
-- Campo faltante (ej: explicacion) -> re-generar con `/generar-preguntas`
+- Campo faltante (ej: explicación) -> re-generar con `/generar-preguntas`
 - Duplicado -> eliminar la copia
 - Conflicto de datos sin consenso -> requiere investigacion manual
 
 ### 4. Guardar resultado (NO sobrescribir originales)
 
 **REGLA CRITICA: JAMAS modificar el archivo original.**
-Todas las correcciones (auto-correcciones, reescrituras de enunciado, cambios de explicacion) se aplican SOLO en el archivo `_validated`. El archivo original queda intacto como registro de lo que se genero.
+Todas las correcciones (auto-correcciones, reescrituras de enunciado, cambios de explicación) se aplican SOLO en el archivo `_validated`. El archivo original queda intacto como registro de lo que se genero.
 
 **Prohibido**: Usar Edit/Write sobre el archivo original para aplicar correcciones.
 **Obligatorio**: Construir el archivo `_validated` desde cero con las versiones corregidas.
 
-**Razon**: El original es el registro historico. El diff entre original y validated muestra exactamente que cambio el validador. Si se modifica el original, se pierde esa trazabilidad.
+**Razón**: El original es el registro histórico. El diff entre original y validated muestra exactamente que cambio el validador. Si se modifica el original, se pierde esa trazabilidad.
 
 **Regla de nombrado**:
 - `test_main.json` -> `test_main_validated.json` (mismo directorio)
 - `preguntas_2026-02-14.json` -> `preguntas_2026-02-14_validated.json`
 
 **Contenido del archivo `_validated`**:
-- Solo las preguntas aprobadas (incluyendo las de revision manual que el usuario aprobo/corrigio)
+- Solo las preguntas aprobadas (incluyendo las de revisión manual que el usuario aprobo/corrigio)
 - Todas con `validada: true`
 - Las correcciones de enunciado, opciones o explicaciones se aplican AQUI, no en el original
 - Las rechazadas y duplicados NO se incluyen

@@ -8,8 +8,8 @@ Valida preguntas generadas antes de entrar al banco de Nadatest.
 ```
 
 Ejemplos:
-- `/validar-preguntas content/preguntas/preguntas_2026-02-13.json` - valida un archivo
-- `/validar-preguntas content/preguntas/` - valida todos los JSON del directorio
+- `/validar-preguntas content/preguntas/preguntas_2026-02-13.json` - válida un archivo
+- `/validar-preguntas content/preguntas/` - válida todos los JSON del directorio
 
 ## Argumentos
 - `$ARGUMENTS` contiene la ruta al archivo JSON o directorio a validar
@@ -22,14 +22,14 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
 ## Fuentes de verdad (en orden de prioridad)
 1. `temario_permiso_b_v3.md` - temario oficial del permiso B
 2. `content/todotest_2700.json` - 2.700 preguntas extraidas de examen real
-3. Tu conocimiento de la normativa de trafico espanola
+3. Tu conocimiento de la normativa de tráfico española
 4. Web search en dgt.es / boe.es (solo cuando las 3 fuentes anteriores no coinciden, o temario + todotest = SIN MATCH)
 
 ---
 
 ## Workflow
 
-### Fase 1: Carga y checks rapidos (hilo principal)
+### Fase 1: Carga y checks rápidos (hilo principal)
 
 1. Parsea `$ARGUMENTS` para determinar si es un archivo o directorio
 2. Si es directorio, busca todos los `*.json` dentro con Glob — ese directorio es el **batch**
@@ -39,7 +39,7 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
 5. **CHECK 1 — Schema**: Verifica estructura JSON de cada pregunta
    > **Read `validar-preguntas/check-1-schema.md`** para campos y reglas
 
-6. **CHECK 2 — Formato**: Verifica calidad del texto en espanol
+6. **CHECK 2 — Formato**: Verifica calidad del texto en español
    > **Read `validar-preguntas/check-2-formato.md`** para reglas de formato
 
 7. Filtra las que pasaron checks 1+2. Las que fallaron van directo a RECHAZADAS.
@@ -52,11 +52,11 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
 9. **CHECK 4 — Datos**: Verifica contra temario + todotest + Claude. Clasifica evidencia como DIRECTO/INDIRECTO/SIN MATCH.
    > **Read `validar-preguntas/check-4-datos.md`** para algoritmo, escenarios, y reglas de web search
 
-   Para valores numericos de referencia rapida:
+   Para valores numéricos de referencia rápida:
    > **Read `validar-preguntas/datos-referencia.md`**
 
    Para batches >5 preguntas, dividir en subagentes:
-   > **Read `validar-preguntas/subagentes.md`** para estrategia de paralelizacion
+   > **Read `validar-preguntas/subagentes.md`** para estrategia de paralelización
 
 ### Fase 3: Web search (hilo principal)
 
@@ -65,15 +65,15 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
     - OBLIGATORIO cuando temario = SIN MATCH y todotest = SIN MATCH
     - Se ejecuta en hilo principal para que el usuario vea las busquedas
 
-### Fase 4: Revision pedagogica (hilo principal)
+### Fase 4: Revisión pedagógica (hilo principal)
 
-11. **CHECK 5 — Pedagogica**: Revisa explicaciones desde perspectiva del alumno
-    > **Read `validar-preguntas/check-5-pedagogica.md`** para formato, etiquetas de intencion, y criterios de auto-rewrite
+11. **CHECK 5 — Pedagógica**: Revisa explicaciones desde perspectiva del alumno
+    > **Read `validar-preguntas/check-5-pedagógica.md`** para formato, etiquetas de intención, y criterios de auto-rewrite
 
-### Fase 5: Informe e interaccion
+### Fase 5: Informe e interacción
 
-12. Genera el informe de validacion con tabla de evidencia por pregunta
-13. Pregunta al usuario que hacer con cada categoria (aprobadas, rechazadas, revision manual)
+12. Genera el informe de validación con tabla de evidencia por pregunta
+13. Pregunta al usuario que hacer con cada categoría (aprobadas, rechazadas, revisión manual)
 14. **JAMAS modificar el archivo original**. Todas las correcciones se aplican SOLO al crear `_validated.json`.
     > **Read `validar-preguntas/informe-y-postinforme.md`** para formato del informe, evidencia, y workflow post-informe
 

@@ -1,6 +1,6 @@
 # Datos de Referencia Rapida
 
-Valores que el fact-checker debe conocer para comparar rapidamente:
+Valores que el fact-checker debe conocer para comparar rápidamente:
 
 ## Velocidades (km/h)
 | Via | Turismo | Con remolque | Camion/Bus |
@@ -23,17 +23,17 @@ Valores que el fact-checker debe conocer para comparar rapidamente:
 | Distancia | Contexto |
 |-----------|----------|
 | 1,5 m | Separacion lateral ciclistas |
-| 5 m | Estacionamiento desde interseccion |
+| 5 m | Estacionamiento desde intersección |
 | 15 m | Estacionamiento desde parada bus |
 | 100 m | Distancia seguridad tunel |
-| 150 m | Triangulos senalizacion averia |
+| 150 m | Triangulos señalización averia |
 
 ## Tiempos
 | Tiempo | Contexto |
 |--------|----------|
 | 2 horas / 200 km | Descanso obligatorio |
 | 20-30 min | Duracion descanso |
-| 2 minutos | Motor al ralenti maximo |
+| 2 minutos | Motor al ralenti máximo |
 | 10 minutos | Espera entre pruebas alcoholemia |
 
 ## Puntos del permiso

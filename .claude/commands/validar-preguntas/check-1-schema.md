@@ -1,4 +1,4 @@
-# CHECK 1: Validacion de Schema
+# CHECK 1: Validación de Schema
 
 Verifica la estructura JSON de cada pregunta. Estos son errores duros que causan REJECT inmediato.
 
@@ -11,10 +11,10 @@ Verifica la estructura JSON de cada pregunta. Estos son errores duros que causan
 | `enunciado` | string | No vacio |
 | `opciones` | array | Exactamente 3 strings |
 | `correcta` | int | 0, 1 o 2 |
-| `explicacion` | string | No vacio |
+| `explicación` | string | No vacio |
 | `pista` | string | No vacio |
 | `requiere_imagen` | bool | Debe ser `true` |
-| `tipo_imagen` | string | `senal`, `situacion`, `vehiculo`, `ninguna` |
+| `tipo_imagen` | string | `senal`, `situación`, `vehículo`, `ninguna` |
 | `origen` | string | `generada`, `extraida_dgt`, `extraida_todotest` |
 | `validada` | bool | Cualquier valor (se cambiara a `true` si aprobada) |
 | `usa_trampa` | bool | Cualquier valor |

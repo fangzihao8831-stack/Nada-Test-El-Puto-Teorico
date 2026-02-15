@@ -1,4 +1,4 @@
-# Datos Numericos que DEBEMOS Clavar (DATOS REALES)
+# Datos Numéricos que DEBEMOS Clavar (DATOS REALES)
 
 Estos son los valores exactos que se preguntan. Si un numero no coincide con el temario, usar el temario como fuente de verdad.
 
@@ -24,17 +24,17 @@ Estos son los valores exactos que se preguntan. Si un numero no coincide con el 
 | Tasa realmente segura | 0,0 | 0,0 |
 
 - Superar el **doble** (0,60 mg/l aire) = delito penal
-- Segunda prueba: minimo **10 minutos** de espera
+- Segunda prueba: mínimo **10 minutos** de espera
 - Negarse a la prueba = delito
 
 ## Distancias (metros)
 | Distancia | Contexto |
 |-----------|----------|
-| **1,5 m** | Separacion lateral minima al adelantar ciclistas |
-| **5 m** | Distancia minima de estacionamiento desde interseccion |
+| **1,5 m** | Separacion lateral mínima al adelantar ciclistas |
+| **5 m** | Distancia mínima de estacionamiento desde intersección |
 | **15 m** | Distancia de estacionamiento desde parada de autobus |
 | **50 m** | Senalizacion previa de maniobra en via interurbana |
-| **100 m** | Distancia para senalizar adelantamiento / distancia seguridad minima referencia |
+| **100 m** | Distancia para senalizar adelantamiento / distancia seguridad mínima referencia |
 | **150 m** | Senalizacion averia con triangulos (uno a cada lado en autovia) |
 
 ## Tiempos
@@ -42,15 +42,15 @@ Estos son los valores exactos que se preguntan. Si un numero no coincide con el 
 |--------|----------|
 | **2 horas / 200 km** | Descanso obligatorio en viaje largo |
 | **20-30 min** | Duracion del descanso recomendado |
-| **2 minutos** | Tiempo maximo motor al ralenti |
-| **10 minutos** | Espera minima entre pruebas de alcoholemia |
-| **15 segundos** | Antelacion minima para senalizar con intermitente |
+| **2 minutos** | Tiempo máximo motor al ralenti |
+| **10 minutos** | Espera mínima entre pruebas de alcoholemia |
+| **15 segundos** | Antelacion mínima para senalizar con intermitente |
 
 ## Pesos
 | Peso | Contexto |
 |------|----------|
-| **3.500 kg** | MMA maxima permiso B / turismo |
-| **750 kg** | Peso maximo remolque ligero (sin permiso adicional) |
+| **3.500 kg** | MMA máxima permiso B / turismo |
+| **750 kg** | Peso máximo remolque ligero (sin permiso adicional) |
 
 ## Estatura ninos (SRI)
 | Estatura | Regla |
