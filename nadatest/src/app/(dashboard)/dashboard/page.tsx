@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import {
   FileText,
@@ -7,45 +5,75 @@ import {
   Flame,
   AlertCircle,
   ArrowRight,
-  Clock,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import { StatsCard } from "@/components/dashboard/StatsCard";
+import { RecentTestsList } from "@/components/dashboard/RecentTestsList";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { createClient } from "@/lib/supabase/server";
+import { TEST_CONFIG } from "@/lib/constants";
+import type { RecentTest } from "@/types/test";
 
-const recentTests = [
-  {
-    id: "1",
-    name: "Test general #15",
-    date: "12/02/2026",
-    score: 28,
-    total: 30,
-    passed: true,
-  },
-  {
-    id: "2",
-    name: "Test general #14",
-    date: "11/02/2026",
-    score: 25,
-    total: 30,
-    passed: false,
-  },
-  {
-    id: "3",
-    name: "Test general #13",
-    date: "10/02/2026",
-    score: 29,
-    total: 30,
-    passed: true,
-  },
-];
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("es-ES", { day: "2-digit", month: "2-digit", year: "numeric" });
+}
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  // Fetch recent tests
+  const { data: rawTests } = await supabase
+    .from("tests_realizados")
+    .select("id, puntuacion, total_preguntas, created_at")
+    .eq("usuario_id", user!.id)
+    .order("created_at", { ascending: false })
+    .limit(5);
+
+  const recentTests: RecentTest[] = (rawTests ?? []).map((t, i) => ({
+    id: t.id,
+    name: `Test #${(rawTests?.length ?? 0) - i}`,
+    date: formatDate(t.created_at),
+    score: t.puntuacion,
+    total: t.total_preguntas,
+    passed: t.puntuacion >= TEST_CONFIG.passingScore,
+  }));
+
+  // Fetch stats
+  const { count: totalTests } = await supabase
+    .from("tests_realizados")
+    .select("*", { count: "exact", head: true })
+    .eq("usuario_id", user!.id);
+
+  const { data: allScores } = await supabase
+    .from("tests_realizados")
+    .select("puntuacion, total_preguntas")
+    .eq("usuario_id", user!.id);
+
+  const avgScore = allScores && allScores.length > 0
+    ? Math.round(
+        allScores.reduce((sum, t) => sum + (t.puntuacion / t.total_preguntas) * 100, 0) /
+          allScores.length
+      )
+    : 0;
+
+  // Fetch profile for streak
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("racha_dias")
+    .eq("id", user!.id)
+    .single();
+
+  // Fetch failed questions count
+  const { count: failedCount } = await supabase
+    .from("preguntas_falladas")
+    .select("*", { count: "exact", head: true })
+    .eq("usuario_id", user!.id);
+
   return (
     <div className="space-y-6">
       <PageHeader
@@ -56,24 +84,22 @@ export default function DashboardPage() {
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatsCard
           title="Tests realizados"
-          value="12"
+          value={totalTests ?? 0}
           icon={FileText}
-          description="este mes"
         />
         <StatsCard
           title="Nota media"
-          value="87%"
+          value={`${avgScore}%`}
           icon={BarChart3}
-          trend={{ value: 5, positive: true }}
         />
         <StatsCard
           title="Racha actual"
-          value="7 dias"
+          value={`${profile?.racha_dias ?? 0} dias`}
           icon={Flame}
         />
         <StatsCard
           title="Preguntas falladas"
-          value="23"
+          value={failedCount ?? 0}
           icon={AlertCircle}
         />
       </div>
@@ -101,39 +127,7 @@ export default function DashboardPage() {
         <h2 className="mb-3 text-lg font-semibold text-foreground">
           Tests recientes
         </h2>
-        <div className="space-y-2">
-          {recentTests.map((test) => (
-            <Card key={test.id}>
-              <CardContent className="flex items-center justify-between py-3">
-                <div className="flex items-center gap-3">
-                  <div className="flex size-9 items-center justify-center rounded-lg bg-primary/10">
-                    <FileText className="size-4 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-foreground">
-                      {test.name}
-                    </p>
-                    <p className="flex items-center gap-1 text-xs text-muted-foreground">
-                      <Clock className="size-3" />
-                      {test.date}
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-sm font-semibold text-foreground">
-                    {test.score}/{test.total}
-                  </span>
-                  <Badge
-                    variant={test.passed ? "default" : "destructive"}
-                    className={test.passed ? "bg-success text-success-foreground hover:bg-success/80" : ""}
-                  >
-                    {test.passed ? "Aprobado" : "Suspendido"}
-                  </Badge>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <RecentTestsList tests={recentTests} />
       </div>
     </div>
   );

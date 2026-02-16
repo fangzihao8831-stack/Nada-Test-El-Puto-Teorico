@@ -1,53 +1,41 @@
-"use client";
-
-import { AlertCircle, RotateCcw, Calendar } from "lucide-react";
+import { AlertCircle, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { StatsCard } from "@/components/dashboard/StatsCard";
+import { FailedQuestionCard } from "@/components/dashboard/FailedQuestionCard";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { EmptyState } from "@/components/shared/EmptyState";
+import { createClient } from "@/lib/supabase/server";
+import type { FailedQuestionItem } from "@/types/user";
 
-const mockFailedQuestions = [
-  {
-    id: "1",
-    enunciado:
-      "Cual es la tasa maxima de alcohol en sangre permitida para conductores noveles?",
-    tema: "Factores de Riesgo",
-    failCount: 4,
-    lastFailed: "12/02/2026",
-  },
-  {
-    id: "2",
-    enunciado:
-      "En una interseccion sin senalizar, quien tiene prioridad?",
-    tema: "Prioridad y Maniobras",
-    failCount: 3,
-    lastFailed: "11/02/2026",
-  },
-  {
-    id: "3",
-    enunciado:
-      "Cual es la distancia minima de seguridad en autopista con condiciones normales?",
-    tema: "Circulacion y Velocidad",
-    failCount: 2,
-    lastFailed: "10/02/2026",
-  },
-  {
-    id: "4",
-    enunciado:
-      "Cuando se puede circular por el arcen de una autopista?",
-    tema: "La Via y sus Usuarios",
-    failCount: 2,
-    lastFailed: "09/02/2026",
-  },
-];
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("es-ES", { day: "2-digit", month: "2-digit", year: "numeric" });
+}
 
-export default function FallosPage() {
-  const hasFailedQuestions = mockFailedQuestions.length > 0;
+export default async function FallosPage() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const { data: rawFailed } = await supabase
+    .from("preguntas_falladas")
+    .select("pregunta_id, veces_fallada, ultima_vez, preguntas(enunciado, subtemas(temas(nombre)))")
+    .eq("usuario_id", user!.id)
+    .order("veces_fallada", { ascending: false });
+
+  const failedQuestions: FailedQuestionItem[] = (rawFailed ?? []).map((f) => {
+    const pregunta = f.preguntas as unknown as { enunciado: string; subtemas: { temas: { nombre: string } } } | null;
+    return {
+      id: f.pregunta_id,
+      enunciado: pregunta?.enunciado ?? "Pregunta no disponible",
+      tema: pregunta?.subtemas?.temas?.nombre ?? "Sin tema",
+      failCount: f.veces_fallada,
+      lastFailed: formatDate(f.ultima_vez),
+    };
+  });
+
+  const hasFailedQuestions = failedQuestions.length > 0;
 
   return (
     <div className="space-y-6">
@@ -68,7 +56,7 @@ export default function FallosPage() {
         <div className="max-w-xs">
           <StatsCard
             title="Total de fallos"
-            value={mockFailedQuestions.length}
+            value={failedQuestions.length}
             icon={AlertCircle}
             description="preguntas pendientes de repasar"
           />
@@ -77,26 +65,8 @@ export default function FallosPage() {
 
       {hasFailedQuestions ? (
         <div className="space-y-2">
-          {mockFailedQuestions.map((question) => (
-            <Card key={question.id}>
-              <CardContent className="py-4">
-                <div className="space-y-2">
-                  <p className="text-sm text-foreground">
-                    {question.enunciado}
-                  </p>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <Badge variant="outline">{question.tema}</Badge>
-                    <span className="text-xs text-destructive">
-                      {question.failCount} veces fallada
-                    </span>
-                    <span className="flex items-center gap-1 text-xs text-muted-foreground">
-                      <Calendar className="size-3" />
-                      {question.lastFailed}
-                    </span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          {failedQuestions.map((question) => (
+            <FailedQuestionCard key={question.id} question={question} />
           ))}
         </div>
       ) : (
