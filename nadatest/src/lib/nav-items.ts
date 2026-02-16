@@ -5,6 +5,7 @@ import {
   BarChart3,
   AlertCircle,
   BookOpen,
+  FileCheck,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -21,4 +22,5 @@ export const dashboardNavItems: NavItem[] = [
   { label: "Progreso", href: "/progreso", icon: BarChart3 },
   { label: "Fallos", href: "/fallos", icon: AlertCircle },
   { label: "Materiales", href: "/materiales", icon: BookOpen },
+  { label: "Notas DGT", href: "/notas-dgt", icon: FileCheck },
 ];

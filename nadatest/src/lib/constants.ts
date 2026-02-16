@@ -15,6 +15,23 @@ export const TEST_CONFIG = {
   passingScore: 27,
 } as const;
 
+export const CLASES_PERMISO = [
+  { value: "AM", label: "AM" },
+  { value: "A1", label: "A1" },
+  { value: "A2", label: "A2" },
+  { value: "A", label: "A" },
+  { value: "B", label: "B" },
+  { value: "EB", label: "B+E" },
+  { value: "C1", label: "C1" },
+  { value: "EC1", label: "C1+E" },
+  { value: "C", label: "C" },
+  { value: "EC", label: "C+E" },
+  { value: "D1", label: "D1" },
+  { value: "ED1", label: "D1+E" },
+  { value: "D", label: "D" },
+  { value: "ED", label: "D+E" },
+] as const;
+
 export const TEMAS = [
   { id: "tema_01", nombre: "El Conductor y el Permiso", orden: 1 },
   { id: "tema_02", nombre: "El Vehículo", orden: 2 },
