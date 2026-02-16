@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, User, Target, BarChart3, LogOut } from "lucide-react";
+import type { User } from "@supabase/supabase-js";
+import { Menu, Target, BarChart3, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import {
@@ -13,8 +14,14 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { MobileMenu } from "@/components/navigation/MobileMenu";
+import { logout } from "@/lib/auth/actions";
 
-export function Navbar() {
+function getUserInitial(user: User): string {
+  const nombre = user.user_metadata?.nombre || user.email || "";
+  return nombre.charAt(0).toUpperCase();
+}
+
+export function Navbar({ user }: { user: User }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -46,9 +53,7 @@ export function Navbar() {
                   aria-label="Menu de usuario"
                 >
                   <Avatar size="sm">
-                    <AvatarFallback>
-                      <User className="size-3.5" />
-                    </AvatarFallback>
+                    <AvatarFallback>{getUserInitial(user)}</AvatarFallback>
                   </Avatar>
                 </Button>
               </DropdownMenuTrigger>
@@ -66,7 +71,10 @@ export function Navbar() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem variant="destructive">
+                <DropdownMenuItem
+                  variant="destructive"
+                  onClick={() => logout()}
+                >
                   <LogOut />
                   Cerrar sesion
                 </DropdownMenuItem>

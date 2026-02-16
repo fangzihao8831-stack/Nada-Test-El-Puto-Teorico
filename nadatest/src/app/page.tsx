@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import Link from "next/link";
 import {
   FileText,
@@ -17,32 +18,33 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
+import { createClient } from "@/lib/supabase/server";
 
 const features = [
   {
     icon: FileText,
     title: "Tests reales",
     description:
-      "30 preguntas con el mismo formato que el examen oficial de la DGT. Practica como si fuera el día del examen.",
+      "30 preguntas con el mismo formato que el examen oficial de la DGT. Practica como si fuera el dia del examen.",
   },
   {
     icon: Timer,
     title: "Modo examen y estudio",
     description:
-      "Simula el examen real con 30 minutos de tiempo, o practica sin límite con pistas y explicaciones.",
+      "Simula el examen real con 30 minutos de tiempo, o practica sin limite con pistas y explicaciones.",
   },
   {
     icon: BarChart3,
     title: "Progreso y fallos",
     description:
-      "Sigue tu avance por cada uno de los 12 temas. Repasa las preguntas que más fallas para mejorar.",
+      "Sigue tu avance por cada uno de los 12 temas. Repasa las preguntas que mas fallas para mejorar.",
   },
 ];
 
 const steps = [
   {
     icon: UserPlus,
-    label: "Regístrate gratis",
+    label: "Registrate gratis",
   },
   {
     icon: ClipboardList,
@@ -58,7 +60,16 @@ const steps = [
   },
 ];
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (user) {
+    redirect("/dashboard");
+  }
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -66,7 +77,7 @@ export default function LandingPage() {
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
           <span className="animate-fade-in text-xl font-bold text-primary">Nadatest</span>
           <Button variant="outline" size="sm" asChild>
-            <Link href="/login">Iniciar sesión</Link>
+            <Link href="/login">Iniciar sesion</Link>
           </Button>
         </div>
       </header>
@@ -80,7 +91,7 @@ export default function LandingPage() {
               className="animate-fade-up relative text-3xl font-bold tracking-tight text-foreground md:text-5xl"
               style={{ animationDelay: "0.1s" }}
             >
-              Prepara tu examen teórico
+              Prepara tu examen teorico
               <br />
               <span className="text-primary">del permiso B</span>
             </h1>
@@ -102,7 +113,7 @@ export default function LandingPage() {
               </Button>
               <Button size="lg" className="shadow-md" asChild>
                 <Link href="/register">
-                  Regístrate
+                  Registrate
                   <UserPlus className="ml-2 size-4" />
                 </Link>
               </Button>
@@ -142,7 +153,7 @@ export default function LandingPage() {
           <div className="mx-auto max-w-5xl px-4">
             <AnimateOnScroll>
               <h2 className="text-center text-2xl font-bold text-foreground">
-                Cómo funciona
+                Como funciona
               </h2>
             </AnimateOnScroll>
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -173,7 +184,7 @@ export default function LandingPage() {
           <section className="border-t border-border bg-muted/30 py-12">
             <div className="mx-auto max-w-5xl px-4 text-center">
               <h2 className="text-2xl font-bold text-foreground">
-                ¿Listo para empezar?
+                Listo para empezar?
               </h2>
               <p className="mx-auto mt-2 max-w-md text-muted-foreground">
                 Crea tu cuenta gratis y empieza a practicar con tests que simulan el examen real.

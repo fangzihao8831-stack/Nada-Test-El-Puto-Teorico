@@ -1,4 +1,11 @@
+"use client";
+
+import { useTransition } from "react";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
+import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -9,10 +16,47 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { loginSchema, type LoginInput } from "@/lib/auth/schemas";
+import { login, signInWithGoogle } from "@/lib/auth/actions";
 
 export default function LoginPage() {
+  const [isPending, startTransition] = useTransition();
+
+  const form = useForm<LoginInput>({
+    resolver: zodResolver(loginSchema),
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  });
+
+  function onSubmit(values: LoginInput) {
+    startTransition(async () => {
+      const result = await login(values);
+      if (result?.error) {
+        toast.error(result.error);
+      }
+    });
+  }
+
+  function handleGoogleLogin() {
+    startTransition(async () => {
+      const result = await signInWithGoogle();
+      if (result?.error) {
+        toast.error(result.error);
+      }
+    });
+  }
+
   return (
     <Card className="w-full max-w-sm">
       <CardHeader className="text-center">
@@ -20,15 +64,48 @@ export default function LoginPage() {
         <CardDescription>Accede a tu cuenta de Nadatest</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <div className="space-y-2">
-          <Label htmlFor="email">Correo electronico</Label>
-          <Input id="email" type="email" placeholder="tu@email.com" />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="password">Contrasena</Label>
-          <Input id="password" type="password" placeholder="Tu contrasena" />
-        </div>
-        <Button className="w-full">Iniciar sesion</Button>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Correo electronico</FormLabel>
+                  <FormControl>
+                    <Input
+                      type="email"
+                      placeholder="tu@email.com"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="password"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Contrasena</FormLabel>
+                  <FormControl>
+                    <Input
+                      type="password"
+                      placeholder="Tu contrasena"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <Button type="submit" className="w-full" disabled={isPending}>
+              {isPending && <Loader2 className="mr-2 size-4 animate-spin" />}
+              Iniciar sesion
+            </Button>
+          </form>
+        </Form>
 
         <div className="relative py-2">
           <Separator />
@@ -37,7 +114,13 @@ export default function LoginPage() {
           </span>
         </div>
 
-        <Button variant="outline" className="w-full" aria-label="Continuar con Google">
+        <Button
+          variant="outline"
+          className="w-full"
+          onClick={handleGoogleLogin}
+          disabled={isPending}
+          aria-label="Continuar con Google"
+        >
           Continuar con Google
         </Button>
       </CardContent>
