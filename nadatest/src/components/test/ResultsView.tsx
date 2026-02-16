@@ -21,30 +21,35 @@ import type { TestSessionResult } from "@/types/test";
 const STORAGE_KEY = "nadatest_last_result";
 
 interface ResultsViewProps {
+  result?: TestSessionResult;
   nextTestHref: string;
   homeHref: string;
   fallosHref?: string;
 }
 
 export function ResultsView({
+  result: resultProp,
   nextTestHref,
   homeHref,
   fallosHref,
 }: ResultsViewProps) {
-  const [result, setResult] = useState<TestSessionResult | null>(null);
-  const [loaded, setLoaded] = useState(false);
+  const [storedResult, setStoredResult] = useState<TestSessionResult | null>(null);
+  const [loaded, setLoaded] = useState(!!resultProp);
 
   useEffect(() => {
+    if (resultProp) return;
     try {
       const stored = sessionStorage.getItem(STORAGE_KEY);
       if (stored) {
-        setResult(JSON.parse(stored));
+        setStoredResult(JSON.parse(stored));
       }
     } catch {
       // sessionStorage might be unavailable
     }
     setLoaded(true);
-  }, []);
+  }, [resultProp]);
+
+  const result = resultProp ?? storedResult;
 
   if (!loaded) return null;
 
