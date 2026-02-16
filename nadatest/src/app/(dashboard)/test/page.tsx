@@ -15,19 +15,16 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
+import { PageHeader } from "@/components/shared/PageHeader";
 import { TEST_CONFIG } from "@/lib/constants";
 
 export default function TestPage() {
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Realizar test
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Elige un modo y comienza a practicar.
-        </p>
-      </div>
+      <PageHeader
+        title="Realizar test"
+        description="Elige un modo y comienza a practicar."
+      />
 
       <Card>
         <CardHeader>

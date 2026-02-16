@@ -1,5 +1,6 @@
 import { BookOpen } from "lucide-react";
 import { ThemeAccordion } from "@/components/dashboard/ThemeAccordion";
+import { PageHeader } from "@/components/shared/PageHeader";
 import { TEMAS } from "@/lib/constants";
 
 const mockTemas = TEMAS.map((tema) => ({
@@ -16,14 +17,10 @@ const mockTemas = TEMAS.map((tema) => ({
 export default function MaterialesPage() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Materiales de estudio
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Consulta el temario organizado por los 12 temas del permiso B.
-        </p>
-      </div>
+      <PageHeader
+        title="Materiales de estudio"
+        description="Consulta el temario organizado por los 12 temas del permiso B."
+      />
 
       <div className="flex items-center gap-2 rounded-lg border border-border bg-card p-4">
         <BookOpen className="size-5 shrink-0 text-primary" />

@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { StatsCard } from "@/components/dashboard/StatsCard";
+import { PageHeader } from "@/components/shared/PageHeader";
+import { EmptyState } from "@/components/shared/EmptyState";
 
 const mockFailedQuestions = [
   {
@@ -49,22 +51,18 @@ export default function FallosPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">
-            Preguntas falladas
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Repasa las preguntas que mas te cuestan.
-          </p>
-        </div>
-        {hasFailedQuestions && (
-          <Button>
-            <RotateCcw className="mr-2 size-4" />
-            Practicar fallos
-          </Button>
-        )}
-      </div>
+      <PageHeader
+        title="Preguntas falladas"
+        description="Repasa las preguntas que mas te cuestan."
+        action={
+          hasFailedQuestions ? (
+            <Button>
+              <RotateCcw className="mr-2 size-4" />
+              Practicar fallos
+            </Button>
+          ) : undefined
+        }
+      />
 
       {hasFailedQuestions && (
         <div className="max-w-xs">
@@ -102,19 +100,11 @@ export default function FallosPage() {
           ))}
         </div>
       ) : (
-        <Card>
-          <CardContent className="py-12 text-center">
-            <div className="mx-auto mb-4 flex size-12 items-center justify-center rounded-full bg-primary/10">
-              <AlertCircle className="size-6 text-primary" />
-            </div>
-            <h2 className="text-lg font-semibold text-foreground">
-              Perfecto!
-            </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              No tienes preguntas falladas. Sigue asi.
-            </p>
-          </CardContent>
-        </Card>
+        <EmptyState
+          icon={AlertCircle}
+          title="Perfecto!"
+          description="No tienes preguntas falladas. Sigue asi."
+        />
       )}
     </div>
   );

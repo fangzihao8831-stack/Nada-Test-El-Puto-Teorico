@@ -10,6 +10,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { StatsCard } from "@/components/dashboard/StatsCard";
+import { PageHeader } from "@/components/shared/PageHeader";
 import {
   Card,
   CardContent,
@@ -48,14 +49,10 @@ const quickLinks = [
 export default function AdminPage() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Panel de administracion
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Resumen general de la plataforma.
-        </p>
-      </div>
+      <PageHeader
+        title="Panel de administracion"
+        description="Resumen general de la plataforma."
+      />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatsCard title="Total preguntas" value="450" icon={FileText} />

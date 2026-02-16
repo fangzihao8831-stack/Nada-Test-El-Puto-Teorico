@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { StatsCard } from "@/components/dashboard/StatsCard";
+import { PageHeader } from "@/components/shared/PageHeader";
 
 const recentTests = [
   {
@@ -47,14 +48,10 @@ const recentTests = [
 export default function DashboardPage() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Bienvenido a Nadatest
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Tu progreso de hoy y resumen de actividad reciente.
-        </p>
-      </div>
+      <PageHeader
+        title="Bienvenido a Nadatest"
+        description="Tu progreso de hoy y resumen de actividad reciente."
+      />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <StatsCard

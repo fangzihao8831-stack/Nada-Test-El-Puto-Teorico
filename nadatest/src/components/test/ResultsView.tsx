@@ -16,7 +16,7 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { formatTime } from "@/lib/utils";
 import { TEST_CONFIG } from "@/lib/constants";
-import type { TestSessionResult } from "@/components/test/TestSession";
+import type { TestSessionResult } from "@/types/test";
 
 const STORAGE_KEY = "nadatest_last_result";
 

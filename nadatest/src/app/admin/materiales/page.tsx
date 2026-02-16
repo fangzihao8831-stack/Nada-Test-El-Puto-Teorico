@@ -5,6 +5,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { PageHeader } from "@/components/shared/PageHeader";
 
 const mockMaterials = [
   { id: "mat_001", titulo: "Presentacion - El Conductor y el Permiso", tipo: "ppt", tema: "Tema 1" },
@@ -21,20 +22,16 @@ function getTypeIcon(tipo: string) {
 export default function AdminMaterialesPage() {
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">
-            Gestion de materiales
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Administra los materiales de estudio de la plataforma.
-          </p>
-        </div>
-        <Button>
-          <Plus className="mr-2 size-4" />
-          Agregar material
-        </Button>
-      </div>
+      <PageHeader
+        title="Gestion de materiales"
+        description="Administra los materiales de estudio de la plataforma."
+        action={
+          <Button>
+            <Plus className="mr-2 size-4" />
+            Agregar material
+          </Button>
+        }
+      />
 
       <div className="space-y-2">
         {mockMaterials.map((material) => {

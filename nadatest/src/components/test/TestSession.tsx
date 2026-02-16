@@ -22,26 +22,11 @@ import { cn } from "@/lib/utils";
 import { formatTime } from "@/lib/utils";
 import { useTimer } from "@/hooks/useTimer";
 import { TEST_CONFIG } from "@/lib/constants";
-import type { TestQuestion } from "@/lib/mock-test-data";
+import type { TestQuestion, TestSessionResult } from "@/types/test";
+
+export type { TestSessionResult };
 
 const STORAGE_KEY = "nadatest_last_result";
-
-export interface TestSessionResult {
-  questions: Array<{
-    id: string;
-    number: number;
-    enunciado: string;
-    opciones: { key: string; texto: string }[];
-    correcta: string;
-    explicacion: string;
-    tema: string;
-  }>;
-  answers: Record<string, string>;
-  mode: "examen" | "estudio";
-  timeUsedSeconds: number;
-  score: number;
-  total: number;
-}
 
 /* ── Module-level sub-components (stable types, no remounting) ── */
 

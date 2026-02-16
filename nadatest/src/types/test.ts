@@ -14,6 +14,36 @@ export type TestMode = "examen" | "estudio";
 
 export type QuestionOrigin = "generada" | "extraida_dgt" | "extraida_todotest";
 
+export interface TestQuestion {
+  id: string;
+  number: number;
+  enunciado: string;
+  opciones: { key: string; texto: string }[];
+  correcta: string;
+  explicacion: string;
+  pista?: string;
+  hasImage: boolean;
+  imageSrc: string | null;
+  tema: string;
+}
+
+export interface TestSessionResult {
+  questions: Array<{
+    id: string;
+    number: number;
+    enunciado: string;
+    opciones: { key: string; texto: string }[];
+    correcta: string;
+    explicacion: string;
+    tema: string;
+  }>;
+  answers: Record<string, string>;
+  mode: "examen" | "estudio";
+  timeUsedSeconds: number;
+  score: number;
+  total: number;
+}
+
 export interface TestState {
   currentQuestionIndex: number;
   answers: Record<number, number>; // questionIndex -> selectedOption
@@ -38,4 +68,13 @@ export interface TestResult {
   timeUsed: number; // seconds
   passed: boolean;
   questions: QuestionResult[];
+}
+
+export interface RecentTest {
+  id: string;
+  name: string;
+  date: string;
+  score: number;
+  total: number;
+  passed: boolean;
 }

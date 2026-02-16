@@ -3,6 +3,7 @@
 import { BarChart3, Trophy, FileText } from "lucide-react";
 import { StatsCard } from "@/components/dashboard/StatsCard";
 import { ThemeAccordion } from "@/components/dashboard/ThemeAccordion";
+import { PageHeader } from "@/components/shared/PageHeader";
 import { TEMAS } from "@/lib/constants";
 
 const mockTemas = TEMAS.map((tema, index) => ({
@@ -28,14 +29,10 @@ const mockTemas = TEMAS.map((tema, index) => ({
 export default function ProgresoPage() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Mi progreso
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Resumen de tu rendimiento y avance por temas.
-        </p>
-      </div>
+      <PageHeader
+        title="Mi progreso"
+        description="Resumen de tu rendimiento y avance por temas."
+      />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
         <StatsCard

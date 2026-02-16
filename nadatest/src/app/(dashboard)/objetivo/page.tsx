@@ -9,18 +9,15 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ProgressBar } from "@/components/dashboard/ProgressBar";
+import { PageHeader } from "@/components/shared/PageHeader";
 
 export default function ObjetivoPage() {
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Mi objetivo
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Define tu meta y controla tu avance hacia el examen.
-        </p>
-      </div>
+      <PageHeader
+        title="Mi objetivo"
+        description="Define tu meta y controla tu avance hacia el examen."
+      />
 
       <Card>
         <CardHeader>

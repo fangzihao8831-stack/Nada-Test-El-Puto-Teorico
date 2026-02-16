@@ -5,6 +5,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { PageHeader } from "@/components/shared/PageHeader";
 
 const mockQuestions = [
   {
@@ -57,20 +58,16 @@ function getTipoBadgeVariant(tipo: string): "default" | "outline" {
 export default function AdminPreguntasPage() {
   return (
     <div className="space-y-6">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-foreground">
-            Gestion de preguntas
-          </h1>
-          <p className="mt-1 text-sm text-muted-foreground">
-            Administra el banco de preguntas de la plataforma.
-          </p>
-        </div>
-        <Button>
-          <Plus className="mr-2 size-4" />
-          Agregar pregunta
-        </Button>
-      </div>
+      <PageHeader
+        title="Gestion de preguntas"
+        description="Administra el banco de preguntas de la plataforma."
+        action={
+          <Button>
+            <Plus className="mr-2 size-4" />
+            Agregar pregunta
+          </Button>
+        }
+      />
 
       <div className="space-y-2">
         {mockQuestions.map((question) => (

@@ -3,6 +3,7 @@ import {
   CardContent,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { PageHeader } from "@/components/shared/PageHeader";
 
 const mockUsers = [
   { id: "1", nombre: "Maria Garcia", email: "maria@email.com", testsRealizados: 24, ultimoAcceso: "12/02/2026", activo: true },
@@ -15,14 +16,10 @@ const mockUsers = [
 export default function AdminUsuariosPage() {
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Gestion de usuarios
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Administra las cuentas de usuario de la plataforma.
-        </p>
-      </div>
+      <PageHeader
+        title="Gestion de usuarios"
+        description="Administra las cuentas de usuario de la plataforma."
+      />
 
       <div className="space-y-2">
         {mockUsers.map((user) => (
