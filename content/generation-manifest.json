@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "description": "Generation targets for 210 questions (first round)",
+  "target_total": 210,
+  "distribution": [
+    { "tema_id": "tema_01", "nombre": "El Conductor y el Permiso", "peso": 5, "target": 10, "batches": [{"size": 10, "subtemas": ["subtema_01", "subtema_02", "subtema_03"]}] },
+    { "tema_id": "tema_02", "nombre": "El Vehículo", "peso": 8, "target": 17, "batches": [{"size": 15, "subtemas": ["subtema_04", "subtema_05", "subtema_06", "subtema_07"]}, {"size": 2, "subtemas": ["subtema_04"]}] },
+    { "tema_id": "tema_03", "nombre": "Carga, Pasajeros y Remolques", "peso": 5, "target": 10, "batches": [{"size": 10, "subtemas": ["subtema_08", "subtema_09", "subtema_10"]}] },
+    { "tema_id": "tema_04", "nombre": "La Vía y sus Usuarios", "peso": 7, "target": 15, "batches": [{"size": 15, "subtemas": ["subtema_11", "subtema_12", "subtema_13", "subtema_14"]}] },
+    { "tema_id": "tema_05", "nombre": "Circulación y Velocidad", "peso": 10, "target": 21, "batches": [{"size": 15, "subtemas": ["subtema_15", "subtema_16", "subtema_17", "subtema_18"]}, {"size": 6, "subtemas": ["subtema_15", "subtema_16"]}] },
+    { "tema_id": "tema_06", "nombre": "Prioridad y Maniobras", "peso": 12, "target": 25, "batches": [{"size": 15, "subtemas": ["subtema_19", "subtema_20", "subtema_21", "subtema_22", "subtema_23", "subtema_24"]}, {"size": 10, "subtemas": ["subtema_19", "subtema_20", "subtema_21"]}] },
+    { "tema_id": "tema_07", "nombre": "Señalización", "peso": 20, "target": 42, "batches": [{"size": 15, "subtemas": ["subtema_25", "subtema_26", "subtema_27"]}, {"size": 15, "subtemas": ["subtema_28", "subtema_29", "subtema_30"]}, {"size": 12, "subtemas": ["subtema_31", "subtema_32"]}] },
+    { "tema_id": "tema_08", "nombre": "Situaciones Especiales", "peso": 8, "target": 17, "batches": [{"size": 15, "subtemas": ["subtema_33", "subtema_34", "subtema_35", "subtema_36", "subtema_37", "subtema_38"]}, {"size": 2, "subtemas": ["subtema_33"]}] },
+    { "tema_id": "tema_09", "nombre": "Seguridad y Tecnología", "peso": 5, "target": 10, "batches": [{"size": 10, "subtemas": ["subtema_39", "subtema_40", "subtema_41", "subtema_42", "subtema_43"]}] },
+    { "tema_id": "tema_10", "nombre": "Factores de Riesgo", "peso": 10, "target": 21, "batches": [{"size": 15, "subtemas": ["subtema_44", "subtema_45", "subtema_46", "subtema_47", "subtema_48", "subtema_49"]}, {"size": 6, "subtemas": ["subtema_44", "subtema_45"]}] },
+    { "tema_id": "tema_11", "nombre": "Accidentes, Emergencias y Medio Ambiente", "peso": 5, "target": 11, "batches": [{"size": 11, "subtemas": ["subtema_50", "subtema_51", "subtema_52", "subtema_53", "subtema_54"]}] },
+    { "tema_id": "tema_12", "nombre": "Infracciones y Sanciones", "peso": 5, "target": 11, "batches": [{"size": 11, "subtemas": ["subtema_55", "subtema_56", "subtema_57", "subtema_58"]}] }
+  ]
+}

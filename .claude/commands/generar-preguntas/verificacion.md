@@ -1,14 +1,34 @@
 # Reglas de Verificación
 
+## Rechazo automatico (HARD REJECT)
+
+Si una pregunta cumple CUALQUIERA de estos criterios, se descarta inmediatamente y se reescribe como escenario:
+
+| Filtro | Detecta | Ejemplo de rechazo |
+|--------|---------|-------------------|
+| **Fecha/año en enunciado** | "¿Desde cuando...?", "¿En que ano...?", "¿A partir de que fecha...?" | "¿Desde cuando es obligatoria la V-16?" |
+| **Pregunta sobre la norma en si** | "¿Que dice la ley...?", "¿Que establece el reglamento...?" | "¿Que establece la ley sobre la V-16?" |
+| **Trivia legislativa** | Preguntas cuya respuesta es un nombre de ley, decreto, o articulo | "¿En que reglamento se regula la ITV?" |
+| **Recitar definición** | "¿Que es...?", "¿Como se define...?" sin contexto practico | "¿Que es la MMA?" (sin escenario de uso) |
+| **Coste/precio** | Preguntas sobre cuanto cuesta algo | "¿Cuanto cuesta el curso de recuperacion de puntos?" |
+| **Estadistica** | Datos estadisticos como porcentajes de accidentes | "¿Que porcentaje de accidentes se debe al alcohol?" |
+
+**Patron de deteccion rapida**: Si el enunciado contiene "¿Desde cuando", "¿En que ano", "¿A partir de que fecha", "¿Que dice", "¿Que establece", "¿Como se define", "¿Que es el/la" → RECHAZAR.
+
+**Accion tras rechazo**: Identificar la regla subyacente y reescribirla como pregunta de escenario (ver tabla de transformacion en `generar-preguntas.md`).
+
+---
+
 ## Verificación básica
 - Cada pregunta DEBE verificarse contra el temario antes de incluirla
 - Si un dato numérico no coincide con el temario, usar el temario como fuente de verdad
 - Las explicaciones deben incluir excepciones e información adicional
 - Acentos y n correctos en todo el texto
-- Fechas solo en la explicación como info adicional, NUNCA en el enunciado
+- Fechas solo en la explicación como info adicional, NUNCA en el enunciado ni opciones
 - Opciones incorrectas DEBEN usar al menos 1 palabra trampa del listado (ver `patrones-y-trampas.md`)
 - La opción correcta debe tener matiz, nunca un absoluto sin excepción
 - NO generar preguntas que se responden por sentido común sin conocimiento de tráfico
+- **Cada pregunta debe pedir al alumno APLICAR una regla, no RECITAR un dato** (ver regla fundamental en `generar-preguntas.md`)
 
 ---
 

@@ -11,6 +11,7 @@ export interface TestQuestion {
   correcta: string;
   explicacion: string;
   pista?: string;
+  tipoPregunta?: string;
   hasImage: boolean;
   imageSrc: string | null;
   tema: string;

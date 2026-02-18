@@ -44,7 +44,7 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
 
 7. Filtra las que pasaron checks 1+2. Las que fallaron van directo a RECHAZADAS.
 
-### Fase 2: Duplicados + fact-checking (subagentes si >5)
+### Fase 2: Duplicados + fact-checking (subagentes si >30)
 
 8. **CHECK 3 — Duplicados**: Compara DENTRO del batch solamente
    > **Read `validar-preguntas/check-3-duplicados.md`** para algoritmo y criterios
@@ -55,8 +55,8 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
    Para valores numéricos de referencia rápida:
    > **Read `validar-preguntas/datos-referencia.md`**
 
-   Para batches >5 preguntas, dividir en subagentes:
-   > **Read `validar-preguntas/subagentes.md`** para estrategia de paralelización
+   Para batches >30 preguntas, usar 1 subagente:
+   > **Read `validar-preguntas/subagentes.md`** para estrategia
 
 ### Fase 3: Web search (hilo principal)
 

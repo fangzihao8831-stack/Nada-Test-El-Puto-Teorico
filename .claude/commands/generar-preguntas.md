@@ -20,6 +20,37 @@ Ejemplos:
 ## Rol
 Eres un experto en el examen teorico DGT del permiso B en España.
 
+## Regla Fundamental: Escenario Primero, Nunca Dato Directo
+
+**TODA pregunta se genera desde un ESCENARIO, nunca desde un dato.**
+
+El flujo correcto es:
+1. Lees una regla del temario (ej: "La baliza V-16 se coloca en la parte mas alta del vehículo")
+2. Inventas una situación realista donde esa regla se aplica (ej: "Su vehículo sufre una averia en una autovia de noche")
+3. Preguntas que debe HACER el conductor en esa situación (ej: "¿Donde debe colocar la baliza V-16?")
+
+El flujo PROHIBIDO es:
+1. Lees un dato del temario (ej: "V-16 obligatoria desde enero 2026")
+2. Conviertes ese dato en pregunta (ej: "¿Desde cuando es obligatoria la V-16?")
+
+**La DGT nunca pregunta CUANDO ni QUE dice una norma. Pregunta que HACES tu como conductor cuando esa norma aplica.**
+
+Antes de escribir cada pregunta, verifica mentalmente:
+> "¿Estoy pidiendo al alumno que APLIQUE una regla en una situación, o que RECITE un dato?"
+
+Si la respuesta es "recitar", reescribe la pregunta como escenario.
+
+### Ejemplos de transformacion dato → escenario
+
+| Dato del temario | Pregunta PROHIBIDA | Pregunta CORRECTA |
+|---|---|---|
+| V-16 obligatoria desde 2026 | ¿Desde cuando es obligatoria la V-16? | Su vehículo se averia en una autovia. ¿Donde debe colocar la baliza V-16? |
+| Tasa alcohol novel: 0,15 mg/l | ¿Cual es la tasa maxima para noveles? | Usted es conductor novel y le paran en un control. ¿A partir de que tasa daria positivo? |
+| ITV cada 2 anos para vehiculos 4-10 anos | ¿Cada cuanto pasa la ITV un turismo de 7 anos? | Su turismo tiene 7 anos. Le convocan para la ITV pero paso hace 18 meses. ¿Debe acudir ya? |
+| Permiso B autoriza motos 125cc tras 3 anos | ¿Que motos puede conducir con permiso B? | Tiene el permiso B desde hace 4 anos. ¿Puede conducir una motocicleta de 125 cc por territorio nacional? |
+
+**Excepcion**: Las preguntas tipo `dato` (~10%) SI preguntan datos concretos, pero siempre contextualizados en una situación practica, nunca como trivia sobre la norma en si.
+
 ## Idioma
 - Espanol de España con acentos correctos (a, e, i, o, u, n)
 - Signos de interrogacion de apertura (?)
@@ -62,8 +93,9 @@ Cada pregunta lleva explicación con formato parrafo + bullets con etiquetas de 
 Antes de incluir cada pregunta, pasar la verificación completa (autosuficiencia, imagen, situacional, complejidad).
 > **Read `generar-preguntas/verificación.md`**
 
-### 5. Subagentes (si >5 preguntas)
-Lanzar subagentes con Task tool para generar en paralelo. Cada subagente recibe las secciones relevantes del prompt.
+### 5. Subagentes (si >30 preguntas)
+- **1-30 preguntas**: Todo en el hilo principal, sin subagentes
+- **31+ preguntas**: 1 solo subagente (Task tool, subagent_type: "general-purpose") que recibe las secciones relevantes del prompt
 
 ### 6. Revisión y guardado
 1. Mostrar preguntas al usuario para revisión ANTES de guardar
