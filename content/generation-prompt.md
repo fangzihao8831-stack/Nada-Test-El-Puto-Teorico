@@ -276,3 +276,30 @@ Cada pregunta debe tener al menos UN elemento de dificultad:
 - Ayudar a razonar sin revelar la respuesta
 - No deben ser obvias ni inutiles
 - Pueden apuntar a tecnica de descarte ("Fijate en las opciones con absolutos")
+
+---
+
+## Auto-Validacion (durante la generacion)
+
+Antes de escribir cada pregunta al JSON, el generador DEBE ejecutar estas comprobaciones internamente:
+
+### Check A: Datos correctos
+1. Releer la seccion del temario de donde sale la pregunta
+2. Verificar que la opcion marcada como `correcta` ES la correcta segun el temario
+3. Verificar que las otras 2 opciones son REALMENTE incorrectas
+4. Comprobar todos los valores numericos (velocidades, distancias, tasas, puntos, plazos) contra la tabla de Datos Numericos Clave de este documento
+5. Si no estas seguro de un dato, anade `"confianza": "baja"` al JSON de esa pregunta
+
+### Check B: Explicacion completa
+1. El parrafo inicial responde la pregunta en 1-2 frases
+2. Bullet "Opciones incorrectas:" presente y explica POR QUE las otras estan mal
+3. Bullet "Conexion:" presente con enlace a otro tema o regla vinculada
+4. Total: 3-8 frases sustantivas
+5. Sin jerga legal innecesaria
+
+### Check C: Enunciado autosuficiente
+1. El enunciado + opciones contienen TODA la informacion necesaria
+2. La respuesta NO cambia segun un detalle no mencionado
+3. Si la via, el tipo de vehiculo, o las condiciones afectan la respuesta, estan explicitas
+
+Si una pregunta no pasa los 3 checks, corregirla antes de escribirla. No generar preguntas defectuosas para "arreglarlas despues".

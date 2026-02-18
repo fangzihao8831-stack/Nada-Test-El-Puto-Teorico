@@ -8,8 +8,8 @@ Valida preguntas generadas antes de entrar al banco de Nadatest.
 ```
 
 Ejemplos:
-- `/validar-preguntas content/preguntas/preguntas_2026-02-13.json` - válida un archivo
-- `/validar-preguntas content/preguntas/` - válida todos los JSON del directorio
+- `/validar-preguntas content/preguntas/batch_01` - valida un batch
+- `/validar-preguntas content/preguntas/batch_01/preguntas_2026-02-18_mixed_batch01.json` - valida un archivo
 
 ## Argumentos
 - `$ARGUMENTS` contiene la ruta al archivo JSON o directorio a validar
@@ -20,68 +20,67 @@ Ejemplos:
 Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo es detectar errores antes de que lleguen al usuario final. Eres estricto pero justo: rechazas lo que esta mal, pero no rechazas preguntas buenas por exceso de celo.
 
 ## Fuentes de verdad (en orden de prioridad)
-1. `temario_permiso_b_v3.md` - temario oficial del permiso B
+1. `content/temario/tema_XX.md` - secciones del temario por tema
 2. `content/todotest_2700.json` - 2.700 preguntas extraidas de examen real
-3. Tu conocimiento de la normativa de tráfico española
+3. Tu conocimiento de la normativa de trafico espanola
 4. Web search en dgt.es / boe.es (solo cuando las 3 fuentes anteriores no coinciden, o temario + todotest = SIN MATCH)
 
 ---
 
 ## Workflow
 
-### Fase 1: Carga y checks rápidos (hilo principal)
+### Fase 1: Checks mecanicos (Node.js, cero tokens)
 
 1. Parsea `$ARGUMENTS` para determinar si es un archivo o directorio
-2. Si es directorio, busca todos los `*.json` dentro con Glob — ese directorio es el **batch**
-3. Si es un archivo individual, el batch es solo ese archivo
-4. Lee cada archivo JSON y extrae el array de preguntas
+2. Ejecuta el validador mecanico:
+   ```bash
+   node scripts/validate-questions.mjs $ARGUMENTS
+   ```
+   Esto cubre CHECK 1 (Schema), CHECK 2 (Formato), CHECK 3 (Duplicados).
+   Las preguntas que fallan se reportan en consola. Anotar las RECHAZADAS.
 
-5. **CHECK 1 — Schema**: Verifica estructura JSON de cada pregunta
-   > **Read `validar-preguntas/check-1-schema.md`** para campos y reglas
+### Fase 2: Preparar contexto por tema (Node.js, cero tokens)
 
-6. **CHECK 2 — Formato**: Verifica calidad del texto en español
-   > **Read `validar-preguntas/check-2-formato.md`** para reglas de formato
+3. Ejecuta el preparador de contexto:
+   ```bash
+   node scripts/prep-validation-context.mjs $ARGUMENTS > /tmp/validation-context.json
+   ```
+   Esto agrupa las preguntas por tema y pre-busca todotest matches.
+   Cada bundle contiene: preguntas, tema_id, todotest_matches, temario_file.
 
-7. Filtra las que pasaron checks 1+2. Las que fallaron van directo a RECHAZADAS.
+### Fase 3: Fact-checking + pedagogica (LLM por tema)
 
-### Fase 2: Duplicados + fact-checking (subagentes si >30)
+4. Lee el JSON de contexto generado en Fase 2
+5. Para cada bundle de tema, lanzar un subagente:
+   > **Read `validar-preguntas/subagentes.md`** para estrategia per-tema
 
-8. **CHECK 3 — Duplicados**: Compara DENTRO del batch solamente
-   > **Read `validar-preguntas/check-3-duplicados.md`** para algoritmo y criterios
+   Cada subagente recibe:
+   - `content/validation-prompt.md` (reglas de checks 4+5, datos de referencia)
+   - `content/temario/tema_XX.md` (seccion del temario de ese tema)
+   - Preguntas del bundle (JSON inline en el prompt)
+   - Todotest matches del bundle (JSON inline en el prompt)
 
-9. **CHECK 4 — Datos**: Verifica contra temario + todotest + Claude. Clasifica evidencia como DIRECTO/INDIRECTO/SIN MATCH.
-   > **Read `validar-preguntas/check-4-datos.md`** para algoritmo, escenarios, y reglas de web search
+   El subagente ejecuta CHECK 4 (datos) + CHECK 5 (pedagogica) y devuelve JSON con veredictos.
 
-   Para valores numéricos de referencia rápida:
-   > **Read `validar-preguntas/datos-referencia.md`**
+### Fase 4: Web search (hilo principal)
 
-   Para batches >30 preguntas, usar 1 subagente:
-   > **Read `validar-preguntas/subagentes.md`** para estrategia
+6. Si algun subagente marco `necesita_web_search: true`, ejecutar aqui
+   - Dominios permitidos: `dgt.es`, `boe.es`, `todotest.com`, `autoescuela.net`, `practicatest.com`
+   - OBLIGATORIO cuando temario = SIN MATCH y todotest = SIN MATCH
+   - Se ejecuta en hilo principal para que el usuario vea las busquedas
 
-### Fase 3: Web search (hilo principal)
+### Fase 5: Informe e interaccion
 
-10. Si algun check marco `necesita_web_search: true`, ejecutar aqui
-    - Dominios permitidos: `dgt.es`, `boe.es`, `todotest.com`, `autoescuela.net`, `practicatest.com`
-    - OBLIGATORIO cuando temario = SIN MATCH y todotest = SIN MATCH
-    - Se ejecuta en hilo principal para que el usuario vea las busquedas
-
-### Fase 4: Revisión pedagógica (hilo principal)
-
-11. **CHECK 5 — Pedagógica**: Revisa explicaciones desde perspectiva del alumno
-    > **Read `validar-preguntas/check-5-pedagógica.md`** para formato, etiquetas de intención, y criterios de auto-rewrite
-
-### Fase 5: Informe e interacción
-
-12. Genera el informe de validación con tabla de evidencia por pregunta
-13. Pregunta al usuario que hacer con cada categoría (aprobadas, rechazadas, revisión manual)
-14. **JAMAS modificar el archivo original**. Todas las correcciones se aplican SOLO al crear `_validated.json`.
-    > **Read `validar-preguntas/informe-y-postinforme.md`** para formato del informe, evidencia, y workflow post-informe
+7. Genera el informe de validacion con tabla de evidencia por pregunta
+8. Pregunta al usuario que hacer con cada categoria (aprobadas, rechazadas, revision manual)
+9. **JAMAS modificar el archivo original**. Todas las correcciones se aplican SOLO al crear `_validated.json`.
+   > **Read `validar-preguntas/informe-y-postinforme.md`** para formato del informe, evidencia, y workflow post-informe
 
 ---
 
 ## Archivos de Referencia
-- Temario: `temario_permiso_b_v3.md`
+- Temario por tema: `content/temario/tema_XX.md`
+- Reglas de validacion: `content/validation-prompt.md`
 - Todotest: `content/todotest_2700.json`
-- Preguntas generadas: `content/preguntas/*.json`
+- Preguntas generadas: `content/preguntas/batch_*/*.json`
 - Pipeline: `content-pipeline.md`
-- Generador (formato): `.claude/commands/generar-preguntas.md`
