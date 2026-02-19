@@ -21,8 +21,7 @@ Plataforma web para preparar el examen teorico del permiso B de conducir (DGT, E
 | Fallos | Revision de preguntas falladas |
 | Admin panel | Preguntas, tests, materiales, usuarios |
 | Consulta nota DGT | Integrado con API DGT |
-| Banco de preguntas | 150+ preguntas validadas |
-| Content pipeline | Generacion + validacion automatizada |
+| Content pipeline | Skills en fase de refinamiento |
 
 ## Rutas
 
@@ -93,14 +92,15 @@ FUENTES
 | Dato concreto | ~5% | "A que distancia de una interseccion no se puede estacionar?" |
 | Trampa absolutos | ~10% | Opciones con "exclusivamente", "en ningun caso" |
 
-## Preguntas generadas
+## Content pipeline
 
-| Batch | Preguntas | Estado |
-|-------|-----------|--------|
-| batch_01 | 30 | Validadas |
-| batch_02 | 30 | Validadas |
-| batch_03 | 90 (3 iteraciones) | Validadas |
-| **Total** | **150** | **En question-bank.ts** |
+El pipeline de generacion y validacion de preguntas esta en fase de refinamiento. Los batches actuales (`batch_01`-`batch_03`, ~150 preguntas) son output de prueba generado durante el desarrollo de los skills, no contenido de produccion.
+
+Los skills de Claude Code (`/generar-preguntas`, `/validar-preguntas`) se estan iterando para mejorar:
+- Calidad de las explicaciones
+- Ortografia espanola (acentos, signos de interrogacion)
+- Variedad de tipos de pregunta
+- Precision de datos contra el temario oficial
 
 ## Indice de temas (12 temas, 58 subtemas)
 
