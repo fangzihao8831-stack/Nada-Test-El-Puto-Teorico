@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nadatest - Practica el teórico del permiso B",
+  title: "Nadatest - Practica el teorico del permiso B",
   description:
-    "Prepara el examen teórico del permiso de conducir B de la DGT con tests que simulan el formato real.",
+    "Prepara el examen teorico del permiso de conducir B de la DGT con tests que simulan el formato real.",
 };
 
 export default function RootLayout({
@@ -23,6 +24,7 @@ export default function RootLayout({
           Ir al contenido principal
         </a>
         {children}
+        <Toaster />
       </body>
     </html>
   );
