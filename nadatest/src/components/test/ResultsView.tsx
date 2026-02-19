@@ -121,7 +121,7 @@ export function ResultsView({
       {/* Question review */}
       <div>
         <h2 className="mb-3 text-lg font-semibold text-foreground">
-          Revision de preguntas
+          Revisión de preguntas
         </h2>
         <div className="space-y-2">
           {result.questions.map((question) => {

@@ -1,78 +1,90 @@
 # DGT Question Generation — Combined Prompt
 
-All rules for generating permiso B exam questions. Embed this in agent prompts to avoid file reads.
+> **NOTA**: Este archivo es una referencia standalone. Los subagentes deben leer los skill files directamente en `.claude/commands/generar-preguntas/*.md` — contienen ejemplos trabajados, referencias a preguntas difíciles, y reglas detalladas que este resumen omite.
+
+All rules for generating permiso B exam questions.
 
 ---
 
 ## Rol
 
-Eres un experto en el examen teorico DGT del permiso B en Espana.
+Eres un experto en el examen teórico DGT del permiso B en España.
 
 ## Regla Fundamental: Escenario Primero
 
 **TODA pregunta se genera desde un ESCENARIO, nunca desde un dato.**
 
 1. Lees una regla del temario
-2. Inventas una situacion realista donde esa regla se aplica
-3. Preguntas que debe HACER el conductor en esa situacion
+2. Inventas una situación realista donde esa regla se aplica
+3. Preguntas que debe HACER el conductor en esa situación
 
-**PROHIBIDO**: Convertir un dato en pregunta directa ("¿Desde cuando es obligatoria la V-16?")
+**PROHIBIDO**: Convertir un dato en pregunta directa ("¿Desde cuándo es obligatoria la V-16?")
 
 Antes de escribir cada pregunta, verifica:
-> "¿Estoy pidiendo al alumno que APLIQUE una regla en una situacion, o que RECITE un dato?"
+> "¿Estoy pidiendo al alumno que APLIQUE una regla en una situación, o que RECITE un dato?"
 
-### Transformacion dato a escenario
+### Transformación dato a escenario
 
 | Dato del temario | PROHIBIDA | CORRECTA |
 |---|---|---|
-| V-16 obligatoria desde 2026 | ¿Desde cuando es obligatoria la V-16? | Su vehiculo se averia en una autovia. ¿Donde debe colocar la baliza V-16? |
-| Tasa alcohol novel: 0,15 mg/l | ¿Cual es la tasa maxima para noveles? | Usted es conductor novel y le paran en un control. ¿A partir de que tasa daria positivo? |
-| ITV cada 2 anos para vehiculos 4-10 anos | ¿Cada cuanto pasa la ITV un turismo de 7 anos? | Su turismo tiene 7 anos. Le convocan para la ITV pero paso hace 18 meses. ¿Debe acudir ya? |
+| V-16 obligatoria desde 2026 | ¿Desde cuándo es obligatoria la V-16? | Su vehículo se avería en una autovía. ¿Dónde debe colocar la baliza V-16? |
+| Tasa alcohol novel: 0,15 mg/l | ¿Cuál es la tasa máxima para noveles? | Usted es conductor novel y le paran en un control. ¿A partir de qué tasa daría positivo? |
+| ITV cada 2 años para vehículos 4-10 años | ¿Cada cuánto pasa la ITV un turismo de 7 años? | Su turismo tiene 7 años. Le convocan para la ITV pero pasó hace 18 meses. ¿Debe acudir ya? |
 
-**Excepcion**: Las preguntas tipo `dato` (~10%) SI preguntan datos concretos, pero contextualizados en situacion practica.
+**Excepción**: Las preguntas tipo `dato` (~10%) SI preguntan datos concretos, pero contextualizados en situación práctica.
 
 ---
 
 ## Idioma
 
-- Espanol de Espana con acentos correctos (a, e, i, o, u, n)
-- Signos de interrogacion de apertura (¿)
-- Ejemplos: vehiculo, circulacion, senalizacion, kilometros
+- Español de España con acentos y tildes OBLIGATORIOS (a, e, i, o, u, n)
+- Signos de interrogación de apertura (¿)
+- CRÍTICO: Escribir SIEMPRE con acentos y ene. Nunca escribir las versiones sin acento:
+  - señal -> **señal**, señales -> **señales**, señalización -> **señalización**
+  - vehículo -> **vehículo**, circulación -> **circulación**, tráfico -> **tráfico**
+  - semáforo -> **semáforo**, neumático -> **neumático**, cinturón -> **cinturón**
+  - límite -> **límite**, máximo -> **máximo**, mínimo -> **mínimo**
+  - infracción -> **infracción**, sanción -> **sanción**, obligación -> **obligación**
+  - conducción -> **conducción**, situación -> **situación**, prohibición -> **prohibición**
+  - podrá -> **podrá**, deberá -> **deberá**, tendrá -> **tendrá**
+  - peatón -> **peatón**, camión -> **camión**, autovía -> **autovía**
+  - también -> **también**, número -> **número**, kilómetros -> **kilómetros**
+  - España -> **España**, única -> **única**, pérdida -> **pérdida**
 
 ---
 
 ## Tipos de Preguntas
 
-| Tipo | Frecuencia | Descripcion |
+| Tipo | Frecuencia | Descripción |
 |------|------------|-------------|
 | Directa | ~40% | Pregunta directa sobre una regla o concepto |
-| Situacional | ~27% | Presenta una situacion concreta y pregunta que hacer |
+| Situacional | ~27% | Presenta una situación concreta y pregunta que hacer |
 | Completar | ~23% | Frase incompleta con "..." que el alumno completa |
-| Dato concreto | ~10% | Pregunta sobre un dato numerico o definicion especifica |
+| Dato concreto | ~10% | Pregunta sobre un dato numérico o definición especifica |
 
-### Tecnicas transversales
+### Técnicas transversales
 
 - **Trampa con absolutos**: ~17% de preguntas usan opciones trampa
 - **Con imagen**: TODAS las preguntas DEBEN tener `requiere_imagen: true`
 
 ### Tipo 1: Directa (~40%)
 
-Pregunta corta y directa. Sin preambulo largo. Empiezan con "¿Es...", "¿Puede...", "¿Esta permitido..."
+Pregunta corta y directa. Sin preámbulo largo. Empiezan con "¿Es...", "¿Puede...", "¿Está permitido..."
 
 Ejemplos dificiles:
 - "¿Puede realizar un cambio de sentido en un lugar donde este prohibido adelantar?" -> Si, salvo autorizacion expresa
-- "¿Esta permitida la circulacion de animales por una carretera convencional?" -> Si, cuando no exista via pecuaria
+- "¿Esta permitida la circulación de animales por una carretera convencional?" -> Si, cuando no exista via pecuaria
 
 ### Tipo 2: Situacional (~27%)
 
-Presenta situacion con "Si...", "En...", "Circulando por...", "Cuando...", "Al..."
+Presenta situación con "Si...", "En...", "Circulando por...", "Cuando...", "Al..."
 El enunciado debe describir TODOS los factores que afectan la respuesta.
 
 ### Tipo 3: Completar (~23%)
 
 Frase incompleta con "..." al final o en medio. El enunciado NO es una pregunta.
 
-Ejemplos: "La intencion de efectuar una maniobra debe indicarse...", "El cruce de un paso a nivel debe realizarse..."
+Ejemplos: "La intención de efectuar una maniobra debe indicarse...", "El cruce de un paso a nivel debe realizarse..."
 
 ### Tipo 4: Dato concreto (~10%)
 
@@ -82,17 +94,17 @@ Pregunta sobre dato especifico: velocidad, distancia, tasa, plazo. Siempre conte
 
 ## Patrones de Inicio
 
-75% afirmacion (sin ¿), 25% pregunta directa (¿).
+75% afirmación (sin ¿), 25% pregunta directa (¿).
 
-| Patron | Frecuencia |
+| Patrón | Frecuencia |
 |--------|------------|
 | Articulo (El/La/Los/Las/Un/Una) | ~25% |
-| En... (ubicacion/situacion) | ~13% |
+| En... (ubicacion/situación) | ~13% |
 | Si... (condicional) | ~7.5% |
 | Cuando... | ~2.8% |
 | Para... | ~2.6% |
 | Al... | ~2.1% |
-| ¿Esta permitido...? | ~2.0% |
+| ¿Está permitido...? | ~2.0% |
 | ¿Puede(n)...? | ~2.0% |
 | Circulando... | ~1.5% |
 
@@ -104,30 +116,30 @@ Pregunta sobre dato especifico: velocidad, distancia, tasa, plazo. Siempre conte
 
 Las trampas van en las OPCIONES, no en el enunciado.
 
-| Palabra | Uso tipico |
+| Palabra | Uso típico |
 |---------|------------|
 | **siempre** | "Siempre que circule por autopista" — suele ser incorrecta |
-| **ningun/ninguna** | "En ningun caso esta permitido" — demasiado absoluto |
+| **ningun/ninguna** | "En ningun caso está permitido" — demasiado absoluto |
 | **solamente** | "Solamente en vias interurbanas" — excluye excepciones |
 | **cualquier** | "En cualquier circunstancia" — demasiado amplio |
 | **nunca** | Absoluto — suele ser incorrecto |
-| **obligatoriamente** | "Obligatoriamente debe..." — demasiado rigido |
+| **obligatoriamente** | "Obligatoriamente debe..." — demasiado rígido |
 | **exclusivamente** | "Exclusivamente para..." — excluye excepciones |
 | **salvo** | "No, salvo que..." — suele ser la CORRECTA (tiene matiz) |
 
-**Regla de oro**: Opcion incorrecta = absolutos. Opcion correcta = matiz ("salvo que...", "excepto cuando...", "en general...").
+**Regla de oro**: Opción incorrecta = absolutos. Opción correcta = matiz ("salvo que...", "excepto cuando...", "en general...").
 
 ---
 
-## Datos Numericos Clave
+## Datos Numéricos Clave
 
 ### Velocidades (km/h)
 
-| Via | Turismo | Con remolque ligero | Con remolque pesado |
+| Vía | Turismo | Con remolque ligero | Con remolque pesado |
 |-----|---------|---------------------|---------------------|
-| Autopista/Autovia | 120 | 90 | 80 |
+| Autopista/Autovía | 120 | 90 | 80 |
 | Carretera convencional | 90 | 70 | 80 |
-| Travesia | 50 | 50 | 50 |
+| Travesía | 50 | 50 | 50 |
 | Zona urbana | 50 (general) | — | — |
 | Zona 30 | 30 | — | — |
 | Zona 20 / residencial | 20 | — | — |
@@ -137,7 +149,7 @@ Las trampas van en las OPCIONES, no en el enunciado.
 | Conductor | Aire espirado | Sangre |
 |-----------|---------------|--------|
 | General | 0,25 mg/l | 0,5 g/l |
-| Novel (< 2 anos) | 0,15 mg/l | 0,3 g/l |
+| Novel (< 2 años) | 0,15 mg/l | 0,3 g/l |
 | Profesional | 0,15 mg/l | 0,3 g/l |
 
 Superar el doble (0,60 mg/l aire) = delito penal. Negarse = delito.
@@ -146,74 +158,74 @@ Superar el doble (0,60 mg/l aire) = delito penal. Negarse = delito.
 
 | Distancia | Contexto |
 |-----------|----------|
-| 1,5 m | Separacion lateral minima al adelantar ciclistas |
-| 5 m | Estacionamiento desde interseccion |
-| 15 m | Estacionamiento desde parada de autobus |
-| 100 m | Distancia seguridad minima referencia |
-| 150 m | Senalizacion averia con triangulos |
+| 1,5 m | Separación lateral mínima al adelantar ciclistas |
+| 5 m | Estacionamiento desde intersección |
+| 15 m | Estacionamiento desde parada de autobús |
+| 100 m | Distancia seguridad mínima referencia |
+| 150 m | Señalización avería con triángulos |
 
 ### Tiempos
 
 | Tiempo | Contexto |
 |--------|----------|
 | 2 horas / 200 km | Descanso obligatorio en viaje largo |
-| 10 minutos | Espera minima entre pruebas alcoholemia |
+| 10 minutos | Espera mínima entre pruebas alcoholemia |
 
 ### Pesos
 
 | Peso | Contexto |
 |------|----------|
-| 3.500 kg | MMA maxima permiso B |
+| 3.500 kg | MMA máxima permiso B |
 | 750 kg | Remolque ligero (sin permiso adicional) |
 
-### SRI: < 135 cm obligatorio, >= 135 cm cinturon normal
+### SRI: < 135 cm obligatorio, >= 135 cm cinturón normal
 
-### ITV: Turismo nuevo a los 4 anos, cada 2 anos hasta 10, luego anual
+### ITV: Turismo nuevo a los 4 años, cada 2 años hasta 10, luego anual
 
-### Puntos: Nuevo 8, tras 2 anos sin infracciones 12, maximo 15
+### Puntos: Nuevo 8, tras 2 años sin infracciones 12, máximo 15
 
 ---
 
 ## Formato de Explicaciones
 
-Parrafo corto + bullets con etiquetas de intencion.
+Párrafo corto + bullets con etiquetas de intención.
 
 ```
-"Parrafo corto con la respuesta correcta y por que.\n\n- Opciones incorrectas: por que A y C estan mal\n- Conexion: dato relacionado con otro tema\n- Excepcion: caso especial (si aplica)\n- Error comun: error frecuente de alumnos (si aplica)\n- Dato clave: numero o dato preciso relevante (si aplica)"
+"Párrafo corto con la respuesta correcta y por qué.\n\n- Opciones incorrectas: por qué A y C están mal\n- Conexión: dato relacionado con otro tema\n- Excepción: caso especial (si aplica)\n- Error común: error frecuente de alumnos (si aplica)\n- Dato clave: número o dato preciso relevante (si aplica)"
 ```
 
-**Reglas**: Parrafo 1-2 frases. 2-4 bullets. Cada bullet empieza con etiqueta + dos puntos. Obligatorias: "Opciones incorrectas" y "Conexion".
+**Reglas**: Párrafo 1-2 frases. 2-4 bullets. Cada bullet empieza con etiqueta + dos puntos. Obligatorias: "Opciones incorrectas" y "Conexión".
 
 ---
 
-## Verificacion (HARD REJECT)
+## Verificación (HARD REJECT)
 
 Si una pregunta cumple CUALQUIERA de estos, se descarta:
 
 | Filtro | Ejemplo de rechazo |
 |--------|-------------------|
-| Fecha/ano en enunciado | "¿Desde cuando es obligatoria la V-16?" |
-| Pregunta sobre la norma en si | "¿Que establece el reglamento...?" |
-| Trivia legislativa | "¿En que reglamento se regula la ITV?" |
-| Recitar definicion sin contexto | "¿Que es la MMA?" |
-| Coste/precio | "¿Cuanto cuesta el curso de recuperacion?" |
-| Estadistica | "¿Que porcentaje de accidentes se debe al alcohol?" |
+| Fecha/ano en enunciado | "¿Desde cuándo es obligatoria la V-16?" |
+| Pregunta sobre la norma en si | "¿Qué establece el reglamento...?" |
+| Trivia legislativa | "¿En qué reglamento se regula la ITV?" |
+| Recitar definición sin contexto | "¿Qué es la MMA?" |
+| Coste/precio | "¿Cuánto cuesta el curso de recuperación?" |
+| Estadística | "¿Qué porcentaje de accidentes se debe al alcohol?" |
 
-**Patron de deteccion**: "¿Desde cuando", "¿En que ano", "¿Que dice", "¿Que establece", "¿Como se define", "¿Que es el/la" -> RECHAZAR.
+**Patrón de detección**: "¿Desde cuándo", "¿En qué ano", "¿Qué dice", "¿Qué establece", "¿Cómo se define", "¿Qué es el/la" -> RECHAZAR.
 
 ---
 
-## Enunciado Autosuficiente (CRITICA)
+## Enunciado Autosuficiente (CRÍTICA)
 
-El enunciado + opciones DEBEN contener TODA la informacion necesaria. Si la respuesta cambia segun un detalle no mencionado, es DEFECTUOSO.
+El enunciado + opciones DEBEN contener TODA la información necesaria. Si la respuesta cambia según un detalle no mencionado, es DEFECTUOSO.
 
-Factores que deben estar explicitos si afectan la respuesta:
-- Numero de carriles y configuracion
-- Tipo de via (urbana, interurbana, autopista, travesia)
-- Presencia/ausencia de senalizacion
+Factores que deben estar explícitos si afectan la respuesta:
+- Número de carriles y configuración
+- Tipo de via (urbana, interurbana, autopista, travesía)
+- Presencia/ausencia de señalización
 - Condiciones de visibilidad
-- Posicion relativa de vehiculos
-- Tipo de interseccion
+- Posición relativa de vehículos
+- Tipo de intersección
 
 ---
 
@@ -223,17 +235,17 @@ Cada pregunta debe tener al menos UN elemento de dificultad:
 
 | Elemento | Ejemplo |
 |----------|---------|
-| Excepcion a regla conocida | Animales SI pueden circular por carretera convencional |
+| Excepción a regla conocida | Animales SI pueden circular por carretera convencional |
 | Opciones muy similares | 0,15 vs 0,25 vs 0,30 mg/l |
 | Dato preciso confundible | 100m en tunel, 1,5m a ciclistas |
-| Combinacion de reglas (max 2) | Prioridad en glorieta + vehiculo especial |
+| Combinación de reglas (max 2) | Prioridad en glorieta + vehículo especial |
 | Respuesta contraintuitiva | El profesor es el conductor en autoescuela |
 
 ### Mezcla de dificultad por 30 preguntas
 
-- ~10 faciles (30%): Reglas basicas, respuesta clara por descarte
+- ~10 faciles (30%): Reglas básicas, respuesta clara por descarte
 - ~12 medias (40%): Requieren conocimiento especifico
-- ~8 dificiles (30%): Excepciones, datos confundibles, combinacion de reglas
+- ~8 dificiles (30%): Excepciones, datos confundibles, combinación de reglas
 
 ---
 
@@ -246,13 +258,13 @@ Cada pregunta debe tener al menos UN elemento de dificultad:
       "id": "pregunta_XXXX",
       "subtema_id": "subtema_XX",
       "tipo_pregunta": "directa|situacional|completar|dato",
-      "enunciado": "¿Pregunta aqui?",
-      "opciones": ["Opcion A", "Opcion B", "Opcion C"],
+      "enunciado": "¿Pregunta aquí?",
+      "opciones": ["Opción A", "Opción B", "Opción C"],
       "correcta": 0,
-      "explicacion": "Parrafo corto.\n\n- Opciones incorrectas: ...\n- Conexion: ...",
+      "explicación": "Párrafo corto.\n\n- Opciones incorrectas: ...\n- Conexión: ...",
       "pista": "Ayuda sutil...",
       "requiere_imagen": true,
-      "tipo_imagen": "ninguna|senal|situacion|vehiculo",
+      "tipo_imagen": "ninguna|señal|situación|vehículo",
       "usa_trampa": false,
       "palabras_trampa": [],
       "origen": "generada",
@@ -265,7 +277,7 @@ Cada pregunta debe tener al menos UN elemento de dificultad:
 **Notas**:
 - `opciones`: STRING ARRAY de exactamente 3 opciones
 - `correcta`: NUMBER (0, 1, o 2)
-- `explicacion`: Con acento (explicación) en el JSON
+- `explicación`: Con acento (explicación) en el JSON
 - `palabras_trampa`: lista de trampa words usadas en opciones incorrectas
 - `usa_trampa`: true si opciones incorrectas usan absolutos
 
@@ -274,32 +286,32 @@ Cada pregunta debe tener al menos UN elemento de dificultad:
 ## Pistas
 
 - Ayudar a razonar sin revelar la respuesta
-- No deben ser obvias ni inutiles
-- Pueden apuntar a tecnica de descarte ("Fijate en las opciones con absolutos")
+- No deben ser obvias ni inútiles
+- Pueden apuntar a técnica de descarte ("Fijate en las opciones con absolutos")
 
 ---
 
-## Auto-Validacion (durante la generacion)
+## Auto-Validación (durante la generación)
 
 Antes de escribir cada pregunta al JSON, el generador DEBE ejecutar estas comprobaciones internamente:
 
 ### Check A: Datos correctos
-1. Releer la seccion del temario de donde sale la pregunta
-2. Verificar que la opcion marcada como `correcta` ES la correcta segun el temario
+1. Releer la sección del temario de donde sale la pregunta
+2. Verificar que la opción marcada como `correcta` ES la correcta según el temario
 3. Verificar que las otras 2 opciones son REALMENTE incorrectas
-4. Comprobar todos los valores numericos (velocidades, distancias, tasas, puntos, plazos) contra la tabla de Datos Numericos Clave de este documento
-5. Si no estas seguro de un dato, anade `"confianza": "baja"` al JSON de esa pregunta
+4. Comprobar todos los valores numéricos (velocidades, distancias, tasas, puntos, plazos) contra la tabla de Datos Numéricos Clave de este documento
+5. Si no estás seguro de un dato, añade `"confianza": "baja"` al JSON de esa pregunta
 
-### Check B: Explicacion completa
-1. El parrafo inicial responde la pregunta en 1-2 frases
-2. Bullet "Opciones incorrectas:" presente y explica POR QUE las otras estan mal
-3. Bullet "Conexion:" presente con enlace a otro tema o regla vinculada
+### Check B: Explicación completa
+1. El párrafo inicial responde la pregunta en 1-2 frases
+2. Bullet "Opciones incorrectas:" presente y explica POR QUÉ las otras están mal
+3. Bullet "Conexión:" presente con enlace a otro tema o regla vinculada
 4. Total: 3-8 frases sustantivas
 5. Sin jerga legal innecesaria
 
 ### Check C: Enunciado autosuficiente
-1. El enunciado + opciones contienen TODA la informacion necesaria
-2. La respuesta NO cambia segun un detalle no mencionado
-3. Si la via, el tipo de vehiculo, o las condiciones afectan la respuesta, estan explicitas
+1. El enunciado + opciones contienen TODA la información necesaria
+2. La respuesta NO cambia según un detalle no mencionado
+3. Si la via, el tipo de vehículo, o las condiciones afectan la respuesta, estan explicitas
 
-Si una pregunta no pasa los 3 checks, corregirla antes de escribirla. No generar preguntas defectuosas para "arreglarlas despues".
+Si una pregunta no pasa los 3 checks, corregirla antes de escribirla. No generar preguntas defectuosas para "arreglarlas después".

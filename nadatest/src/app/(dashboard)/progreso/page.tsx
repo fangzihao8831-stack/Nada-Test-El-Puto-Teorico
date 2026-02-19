@@ -12,7 +12,7 @@ const mockTemas = TEMAS.map((tema, index) => ({
   subtemas: [
     {
       id: `${tema.id}_sub_01`,
-      nombre: `Conceptos basicos de ${tema.nombre.toLowerCase()}`,
+      nombre: `Conceptos básicos de ${tema.nombre.toLowerCase()}`,
     },
     {
       id: `${tema.id}_sub_02`,
@@ -20,7 +20,7 @@ const mockTemas = TEMAS.map((tema, index) => ({
     },
     {
       id: `${tema.id}_sub_03`,
-      nombre: `Casos practicos de ${tema.nombre.toLowerCase()}`,
+      nombre: `Casos prácticos de ${tema.nombre.toLowerCase()}`,
     },
   ],
 }));

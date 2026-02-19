@@ -15,7 +15,7 @@ export default function Error({
         <AlertTriangle className="size-8 text-destructive" />
       </div>
       <h1 className="mt-6 text-2xl font-bold text-foreground">
-        Algo salio mal
+        Algo salió mal
       </h1>
       <p className="mt-2 text-center text-muted-foreground">
         Ha ocurrido un error inesperado. Intenta de nuevo.

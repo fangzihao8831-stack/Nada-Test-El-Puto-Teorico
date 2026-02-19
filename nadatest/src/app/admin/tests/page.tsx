@@ -10,8 +10,8 @@ const mockTests = [
   { id: "test_001", nombre: "Test general #1", numPreguntas: 30, activo: true },
   { id: "test_002", nombre: "Test general #2", numPreguntas: 30, activo: true },
   { id: "test_003", nombre: "Test general #3", numPreguntas: 30, activo: true },
-  { id: "test_004", nombre: "Test tematico - Senalizacion", numPreguntas: 30, activo: false },
-  { id: "test_005", nombre: "Test tematico - Prioridad", numPreguntas: 30, activo: true },
+  { id: "test_004", nombre: "Test temático - Señalización", numPreguntas: 30, activo: false },
+  { id: "test_005", nombre: "Test temático - Prioridad", numPreguntas: 30, activo: true },
 ];
 
 export default function AdminTestsPage() {
@@ -20,7 +20,7 @@ export default function AdminTestsPage() {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold text-foreground">
-            Gestion de tests
+            Gestión de tests
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             Administra los tests predefinidos de la plataforma.

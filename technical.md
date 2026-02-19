@@ -1,4 +1,4 @@
-# Nadatest - Especificacion Tecnica
+# Nadatest - Especificación Técnica
 
 ## Stack Tecnologico
 
@@ -11,7 +11,7 @@
 ### Backend
 - **API**: Next.js API Routes / Server Actions
 - **Base de datos**: Supabase (PostgreSQL)
-- **Autenticacion**: NextAuth.js / Supabase Auth
+- **Autenticación**: NextAuth.js / Supabase Auth
 
 ### Almacenamiento
 - **Imagenes**: Cloudinary
@@ -98,7 +98,7 @@
 │   └── content-structure.json
 ├── public/
 │   ├── images/
-│   │   └── senales/              # SVGs de senales
+│   │   └── señales/              # SVGs de señales
 │   └── fonts/
 ├── .env.local
 ├── .env.example
@@ -112,38 +112,38 @@
 ## Componentes Principales
 
 ### Test
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
 | `TestPanel` | Panel principal del test con pregunta, imagen, opciones |
 | `TestNavigation` | Grid 1-30 para saltar entre preguntas |
 | `QuestionCard` | Tarjeta con enunciado e imagen de la pregunta |
 | `AnswerOptions` | Opciones A/B/C con radio buttons |
-| `FeedbackPanel` | Panel de feedback (correcto/incorrecto + explicacion) |
+| `FeedbackPanel` | Panel de feedback (correcto/incorrecto + explicación) |
 | `Timer` | Temporizador de 30 minutos (modo examen) |
 | `TestModal` | Modal para seleccionar test y modo |
-| `ResultsPanel` | Pantalla de resultados con estadisticas |
+| `ResultsPanel` | Pantalla de resultados con estadísticas |
 
 ### Dashboard
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
-| `StatsCard` | Tarjeta con estadisticas (tests, media, etc.) |
+| `StatsCard` | Tarjeta con estadísticas (tests, media, etc.) |
 | `ProgressBar` | Barra de progreso por tema |
-| `ThemeAccordion` | Acordeon para materiales de estudio |
+| `ThemeAccordion` | Acordeón para materiales de estudio |
 | `FailedQuestionsList` | Lista de preguntas falladas |
 | `TestHistory` | Historial de tests realizados |
 
 ### Navigation
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
-| `Navbar` | Barra de navegacion superior |
-| `Sidebar` | Menu lateral (desktop) |
-| `MobileMenu` | Menu hamburguesa (movil) |
+| `Navbar` | Barra de navegación superior |
+| `Sidebar` | Menú lateral (desktop) |
+| `MobileMenu` | Menú hamburguesa (móvil) |
 
 ---
 
 ## API Endpoints
 
-### Autenticacion
+### Autenticación
 ```
 POST /api/auth/register     - Registro con email
 POST /api/auth/login        - Login con email
@@ -234,12 +234,12 @@ CREATE TABLE preguntas (
   subtema_id TEXT REFERENCES subtemas(id) NOT NULL,
   tipo_pregunta TEXT DEFAULT 'directa', -- directa, situacional, completar, imagen, dato, trampa
   enunciado TEXT NOT NULL,
-  opciones JSONB NOT NULL,       -- ["opcion A", "opcion B", "opcion C"]
-  correcta INTEGER NOT NULL,     -- indice de la correcta (0, 1, 2)
+  opciones JSONB NOT NULL,       -- ["opción A", "opción B", "opción C"]
+  correcta INTEGER NOT NULL,     -- índice de la correcta (0, 1, 2)
   explicacion TEXT NOT NULL,
   pista TEXT,
   requiere_imagen BOOLEAN DEFAULT FALSE,
-  tipo_imagen TEXT DEFAULT 'ninguna', -- senal, situacion, ninguna
+  tipo_imagen TEXT DEFAULT 'ninguna', -- señal, situación, ninguna
   imagen_url TEXT,
   origen TEXT DEFAULT 'generada', -- generada, extraida_dgt, extraida_todotest
   validada BOOLEAN DEFAULT FALSE,
@@ -280,7 +280,7 @@ CREATE TABLE respuestas_test (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Preguntas falladas (para rapido acceso)
+-- Preguntas falladas (para rápido acceso)
 CREATE TABLE preguntas_falladas (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   usuario_id UUID REFERENCES profiles(id) NOT NULL,
