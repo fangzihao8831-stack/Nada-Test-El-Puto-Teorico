@@ -44,8 +44,8 @@ export async function POST(request: Request) {
     let userId: string | null = null;
 
     if (isSupabaseConfigured()) {
-      const { createServerClient } = await import("@/lib/supabase/server");
-      const supabase = createServerClient();
+      const { createClient } = await import("@/lib/supabase/server");
+      const supabase = await createClient();
 
       const {
         data: { user },
@@ -91,8 +91,8 @@ export async function POST(request: Request) {
     // Store result in database (only when Supabase is configured + user is authenticated)
     if (isSupabaseConfigured() && userId) {
       try {
-        const { createServerClient } = await import("@/lib/supabase/server");
-        const supabase = createServerClient();
+        const { createClient } = await import("@/lib/supabase/server");
+        const supabase = await createClient();
         const nifHash = await hashNIF(nif);
 
         await supabase.from("consultas_dgt").insert({

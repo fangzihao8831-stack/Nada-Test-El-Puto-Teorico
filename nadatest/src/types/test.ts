@@ -25,6 +25,7 @@ export interface TestQuestion {
   hasImage: boolean;
   imageSrc: string | null;
   tema: string;
+  tipoPregunta?: string;
 }
 
 export interface TestSessionResult {
