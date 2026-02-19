@@ -3,19 +3,9 @@
  * This will be replaced by Supabase queries once the backend is wired up.
  */
 
-export interface TestQuestion {
-  id: string;
-  number: number;
-  enunciado: string;
-  opciones: { key: string; texto: string }[];
-  correcta: string;
-  explicacion: string;
-  pista?: string;
-  tipoPregunta?: string;
-  hasImage: boolean;
-  imageSrc: string | null;
-  tema: string;
-}
+import type { TestQuestion } from "@/types/test";
+
+export type { TestQuestion };
 
 export const sampleTestQuestions: TestQuestion[] = [
   // ── directa ──

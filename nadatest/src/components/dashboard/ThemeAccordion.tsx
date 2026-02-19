@@ -1,5 +1,4 @@
-"use client";
-
+import type { ReactNode } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -10,19 +9,22 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/utils";
 
+interface SubtemaItem {
+  id: string;
+  nombre: string;
+}
+
 interface TemaItem {
   id: string;
   nombre: string;
   progress: number;
-  subtemas?: Array<{
-    id: string;
-    nombre: string;
-  }>;
+  subtemas?: SubtemaItem[];
 }
 
 interface ThemeAccordionProps {
   temas: TemaItem[];
   className?: string;
+  renderContent?: (subtema: SubtemaItem) => ReactNode;
 }
 
 function getProgressBadgeVariant(
@@ -33,7 +35,7 @@ function getProgressBadgeVariant(
   return "default";
 }
 
-export function ThemeAccordion({ temas, className }: ThemeAccordionProps) {
+export function ThemeAccordion({ temas, className, renderContent }: ThemeAccordionProps) {
   return (
     <Accordion type="multiple" className={cn(className)}>
       {temas.map((tema) => (
@@ -57,8 +59,14 @@ export function ThemeAccordion({ temas, className }: ThemeAccordionProps) {
                       key={subtema.id}
                       className="flex items-center gap-2 text-sm text-muted-foreground"
                     >
-                      <span className="text-muted-foreground/60">&#8226;</span>
-                      {subtema.nombre}
+                      {renderContent ? (
+                        renderContent(subtema)
+                      ) : (
+                        <>
+                          <span className="text-muted-foreground/60">&#8226;</span>
+                          {subtema.nombre}
+                        </>
+                      )}
                     </li>
                   ))}
                 </ul>

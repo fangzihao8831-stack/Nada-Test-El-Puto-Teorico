@@ -1,60 +1,127 @@
-"use client";
-
 import { BarChart3, Trophy, FileText } from "lucide-react";
 import { StatsCard } from "@/components/dashboard/StatsCard";
 import { ThemeAccordion } from "@/components/dashboard/ThemeAccordion";
-import { TEMAS } from "@/lib/constants";
+import { PageHeader } from "@/components/shared/PageHeader";
+import { createClient } from "@/lib/supabase/server";
 
-const mockTemas = TEMAS.map((tema, index) => ({
-  id: tema.id,
-  nombre: tema.nombre,
-  progress: [75, 60, 45, 90, 55, 30, 80, 65, 40, 70, 50, 85][index],
-  subtemas: [
-    {
-      id: `${tema.id}_sub_01`,
-      nombre: `Conceptos básicos de ${tema.nombre.toLowerCase()}`,
-    },
-    {
-      id: `${tema.id}_sub_02`,
-      nombre: `Normativa sobre ${tema.nombre.toLowerCase()}`,
-    },
-    {
-      id: `${tema.id}_sub_03`,
-      nombre: `Casos prácticos de ${tema.nombre.toLowerCase()}`,
-    },
-  ],
-}));
+export default async function ProgresoPage() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
-export default function ProgresoPage() {
+  // Fetch stats
+  const { count: totalTests } = await supabase
+    .from("tests_realizados")
+    .select("*", { count: "exact", head: true })
+    .eq("usuario_id", user!.id);
+
+  const { data: allScores } = await supabase
+    .from("tests_realizados")
+    .select("puntuacion, total_preguntas")
+    .eq("usuario_id", user!.id);
+
+  const avgScore =
+    allScores && allScores.length > 0
+      ? Math.round(
+          allScores.reduce(
+            (sum, t) => sum + (t.puntuacion / t.total_preguntas) * 100,
+            0
+          ) / allScores.length
+        )
+      : 0;
+
+  const bestTest =
+    allScores && allScores.length > 0
+      ? allScores.reduce(
+          (best, t) => {
+            const pct = (t.puntuacion / t.total_preguntas) * 100;
+            return pct > best.pct
+              ? { pct, score: t.puntuacion, total: t.total_preguntas }
+              : best;
+          },
+          { pct: 0, score: 0, total: 0 }
+        )
+      : null;
+
+  // Fetch temas with subtemas
+  const { data: temas } = await supabase
+    .from("temas")
+    .select("id, nombre, orden, subtemas(id, nombre)")
+    .order("orden");
+
+  // Fetch all user answers with tema info for per-tema progress
+  const { data: userTests } = await supabase
+    .from("tests_realizados")
+    .select("id")
+    .eq("usuario_id", user!.id);
+
+  const testIds = (userTests ?? []).map((t) => t.id);
+
+  type AnswerRow = {
+    es_correcta: boolean;
+    preguntas: { subtema_id: string; subtemas: { tema_id: string } } | null;
+  };
+
+  let answers: AnswerRow[] = [];
+  if (testIds.length > 0) {
+    const { data } = await supabase
+      .from("respuestas_test")
+      .select("es_correcta, preguntas(subtema_id, subtemas(tema_id))")
+      .in("test_realizado_id", testIds);
+    answers = (data as unknown as AnswerRow[]) ?? [];
+  }
+
+  // Calculate per-tema progress
+  const temaStats = new Map<string, { total: number; correct: number }>();
+  for (const answer of answers) {
+    const temaId = answer.preguntas?.subtemas?.tema_id;
+    if (!temaId) continue;
+    const stats = temaStats.get(temaId) ?? { total: 0, correct: 0 };
+    stats.total++;
+    if (answer.es_correcta) stats.correct++;
+    temaStats.set(temaId, stats);
+  }
+
+  const temaItems = (temas ?? []).map((tema) => {
+    const stats = temaStats.get(tema.id);
+    const progress = stats && stats.total > 0
+      ? Math.round((stats.correct / stats.total) * 100)
+      : 0;
+    return {
+      id: tema.id,
+      nombre: tema.nombre,
+      progress,
+      subtemas: (tema.subtemas as { id: string; nombre: string }[]) ?? [],
+    };
+  });
+
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Mi progreso
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Resumen de tu rendimiento y avance por temas.
-        </p>
-      </div>
+      <PageHeader
+        title="Mi progreso"
+        description="Resumen de tu rendimiento y avance por temas."
+      />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-3">
         <StatsCard
           title="Tests totales"
-          value="34"
+          value={totalTests ?? 0}
           icon={FileText}
           description="desde el inicio"
         />
         <StatsCard
           title="Nota media"
-          value="87%"
+          value={`${avgScore}%`}
           icon={BarChart3}
-          trend={{ value: 5, positive: true }}
         />
         <StatsCard
           title="Mejor nota"
-          value="97%"
+          value={bestTest ? `${Math.round(bestTest.pct)}%` : "—"}
           icon={Trophy}
-          description="29/30 correctas"
+          description={
+            bestTest ? `${bestTest.score}/${bestTest.total} correctas` : undefined
+          }
         />
       </div>
 
@@ -62,7 +129,7 @@ export default function ProgresoPage() {
         <h2 className="mb-3 text-lg font-semibold text-foreground">
           Progreso por temas
         </h2>
-        <ThemeAccordion temas={mockTemas} />
+        <ThemeAccordion temas={temaItems} />
       </div>
     </div>
   );

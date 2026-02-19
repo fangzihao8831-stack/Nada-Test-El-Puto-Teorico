@@ -110,7 +110,7 @@ export default function AdminPreguntasPage() {
           return (
             <Card key={q.id}>
               <CardContent className="py-3">
-                {/* Header row — clickable */}
+                {/* Header row -- clickable */}
                 <button
                   onClick={() => setExpandedId(isExpanded ? null : q.id)}
                   className="flex w-full items-start gap-2 text-left"

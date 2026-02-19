@@ -1,6 +1,3 @@
-"use client";
-
-import Link from "next/link";
 import {
   FileText,
   Users,
@@ -9,7 +6,9 @@ import {
   CheckCircle2,
   ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 import { StatsCard } from "@/components/dashboard/StatsCard";
+import { PageHeader } from "@/components/shared/PageHeader";
 import {
   Card,
   CardContent,
@@ -17,6 +16,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { createClient } from "@/lib/supabase/server";
 
 const quickLinks = [
   {
@@ -45,23 +45,33 @@ const quickLinks = [
   },
 ];
 
-export default function AdminPage() {
+export default async function AdminPage() {
+  const supabase = await createClient();
+
+  const [
+    { count: totalPreguntas },
+    { count: totalTests },
+    { count: totalUsuarios },
+    { count: preguntasValidadas },
+  ] = await Promise.all([
+    supabase.from("preguntas").select("*", { count: "exact", head: true }),
+    supabase.from("tests").select("*", { count: "exact", head: true }),
+    supabase.from("profiles").select("*", { count: "exact", head: true }),
+    supabase.from("preguntas").select("*", { count: "exact", head: true }).eq("validada", true),
+  ]);
+
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Panel de administración
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Resumen general de la plataforma.
-        </p>
-      </div>
+      <PageHeader
+        title="Panel de administración"
+        description="Resumen general de la plataforma."
+      />
 
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-        <StatsCard title="Total preguntas" value="450" icon={FileText} />
-        <StatsCard title="Total tests" value="15" icon={ClipboardList} />
-        <StatsCard title="Total usuarios" value="128" icon={Users} />
-        <StatsCard title="Preguntas validadas" value="380" icon={CheckCircle2} />
+        <StatsCard title="Total preguntas" value={totalPreguntas ?? 0} icon={FileText} />
+        <StatsCard title="Total tests" value={totalTests ?? 0} icon={ClipboardList} />
+        <StatsCard title="Total usuarios" value={totalUsuarios ?? 0} icon={Users} />
+        <StatsCard title="Preguntas validadas" value={preguntasValidadas ?? 0} icon={CheckCircle2} />
       </div>
 
       <div>

@@ -1,21 +1,14 @@
 "use client";
 
-import { useMemo } from "react";
-import { useRouter } from "next/navigation";
-import { buildTest } from "@/lib/build-test";
-import { TestSession } from "@/components/test/TestSession";
+import { sampleTestQuestions } from "@/lib/mock-test-data";
+import { TestActiveClient } from "@/components/test/TestActiveClient";
 
 export default function DemoPage() {
-  const router = useRouter();
-  const questions = useMemo(() => buildTest(), []);
-
   return (
-    <TestSession
-      questions={questions}
+    <TestActiveClient
+      questions={sampleTestQuestions}
       mode="estudio"
-      logoHref="/"
-      testTitle="Examen de prueba"
-      onFinish={() => router.push("/demo/resultado")}
+      isDemo
     />
   );
 }

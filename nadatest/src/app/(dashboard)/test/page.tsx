@@ -15,19 +15,28 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
+import { PageHeader } from "@/components/shared/PageHeader";
 import { TEST_CONFIG } from "@/lib/constants";
+import { createClient } from "@/lib/supabase/server";
 
-export default function TestPage() {
+export default async function TestPage() {
+  const supabase = await createClient();
+
+  // Find an active test
+  const { data: test } = await supabase
+    .from("tests")
+    .select("id")
+    .eq("activo", true)
+    .limit(1)
+    .single();
+
+  const testId = test?.id ?? "1";
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground">
-          Realizar test
-        </h1>
-        <p className="mt-1 text-sm text-muted-foreground">
-          Elige un modo y comienza a practicar.
-        </p>
-      </div>
+      <PageHeader
+        title="Realizar test"
+        description="Elige un modo y comienza a practicar."
+      />
 
       <Card>
         <CardHeader>
@@ -84,7 +93,7 @@ export default function TestPage() {
                 correctas hasta que finalices el test.
               </p>
               <Button className="w-full" asChild>
-                <Link href="/test/1?mode=examen">Comenzar examen</Link>
+                <Link href={`/test/${testId}?mode=examen`}>Comenzar examen</Link>
               </Button>
             </CardContent>
           </Card>
@@ -118,7 +127,7 @@ export default function TestPage() {
                 y una explicación de la respuesta correcta.
               </p>
               <Button className="w-full" asChild>
-                <Link href="/test/1?mode=estudio">Comenzar estudio</Link>
+                <Link href={`/test/${testId}?mode=estudio`}>Comenzar estudio</Link>
               </Button>
             </CardContent>
           </Card>

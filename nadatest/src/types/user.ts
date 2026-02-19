@@ -24,3 +24,17 @@ export interface FailedQuestion {
   failCount: number;
   lastFailed: string; // timestamp
 }
+
+export interface FailedQuestionItem {
+  id: string;
+  enunciado: string;
+  tema: string;
+  failCount: number;
+  lastFailed: string;
+}
+
+export interface GoalData {
+  examDate?: string;
+  dailyGoal: number;
+  todayCount: number;
+}
