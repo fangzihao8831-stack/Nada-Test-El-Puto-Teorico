@@ -1,19 +1,14 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { sampleTestQuestions } from "@/lib/mock-test-data";
-import { TestSession } from "@/components/test/TestSession";
+import { TestActiveClient } from "@/components/test/TestActiveClient";
 
 export default function DemoPage() {
-  const router = useRouter();
-
   return (
-    <TestSession
+    <TestActiveClient
       questions={sampleTestQuestions}
       mode="estudio"
-      logoHref="/"
-      testTitle="Examen de prueba"
-      onFinish={() => router.push("/demo/resultado")}
+      isDemo
     />
   );
 }

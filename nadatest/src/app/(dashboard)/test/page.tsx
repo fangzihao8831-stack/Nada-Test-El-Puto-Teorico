@@ -17,8 +17,20 @@ import {
 } from "@/components/ui/tabs";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { TEST_CONFIG } from "@/lib/constants";
+import { createClient } from "@/lib/supabase/server";
 
-export default function TestPage() {
+export default async function TestPage() {
+  const supabase = await createClient();
+
+  // Find an active test
+  const { data: test } = await supabase
+    .from("tests")
+    .select("id")
+    .eq("activo", true)
+    .limit(1)
+    .single();
+
+  const testId = test?.id ?? "1";
   return (
     <div className="mx-auto max-w-2xl space-y-6">
       <PageHeader
@@ -81,7 +93,7 @@ export default function TestPage() {
                 correctas hasta que finalices el test.
               </p>
               <Button className="w-full" asChild>
-                <Link href="/test/1?mode=examen">Comenzar examen</Link>
+                <Link href={`/test/${testId}?mode=examen`}>Comenzar examen</Link>
               </Button>
             </CardContent>
           </Card>
@@ -115,7 +127,7 @@ export default function TestPage() {
                 y una explicacion de la respuesta correcta.
               </p>
               <Button className="w-full" asChild>
-                <Link href="/test/1?mode=estudio">Comenzar estudio</Link>
+                <Link href={`/test/${testId}?mode=estudio`}>Comenzar estudio</Link>
               </Button>
             </CardContent>
           </Card>

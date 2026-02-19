@@ -1,19 +1,50 @@
-import {
-  Card,
-  CardContent,
-} from "@/components/ui/card";
+import { Users } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PageHeader } from "@/components/shared/PageHeader";
+import { EmptyState } from "@/components/shared/EmptyState";
+import { createClient } from "@/lib/supabase/server";
 
-const mockUsers = [
-  { id: "1", nombre: "Maria Garcia", email: "maria@email.com", testsRealizados: 24, ultimoAcceso: "12/02/2026", activo: true },
-  { id: "2", nombre: "Carlos Lopez", email: "carlos@email.com", testsRealizados: 18, ultimoAcceso: "11/02/2026", activo: true },
-  { id: "3", nombre: "Ana Martinez", email: "ana@email.com", testsRealizados: 42, ultimoAcceso: "10/02/2026", activo: true },
-  { id: "4", nombre: "Pedro Sanchez", email: "pedro@email.com", testsRealizados: 5, ultimoAcceso: "01/01/2026", activo: false },
-  { id: "5", nombre: "Laura Fernandez", email: "laura@email.com", testsRealizados: 31, ultimoAcceso: "12/02/2026", activo: true },
-];
+function formatDate(dateStr: string | null): string {
+  if (!dateStr) return "—";
+  const d = new Date(dateStr);
+  return d.toLocaleDateString("es-ES", { day: "2-digit", month: "2-digit", year: "numeric" });
+}
 
-export default function AdminUsuariosPage() {
+export default async function AdminUsuariosPage() {
+  const supabase = await createClient();
+
+  const { data: profiles } = await supabase
+    .from("profiles")
+    .select("id, nombre, email, ultimo_acceso, created_at")
+    .order("created_at", { ascending: false })
+    .limit(50);
+
+  // Get test counts per user
+  const userIds = (profiles ?? []).map((p) => p.id);
+  let testCounts = new Map<string, number>();
+
+  if (userIds.length > 0) {
+    const { data: counts } = await supabase
+      .from("tests_realizados")
+      .select("usuario_id")
+      .in("usuario_id", userIds);
+
+    if (counts) {
+      for (const row of counts) {
+        testCounts.set(row.usuario_id, (testCounts.get(row.usuario_id) ?? 0) + 1);
+      }
+    }
+  }
+
+  const users = (profiles ?? []).map((p) => ({
+    id: p.id,
+    nombre: p.nombre ?? "Sin nombre",
+    email: p.email,
+    testsRealizados: testCounts.get(p.id) ?? 0,
+    ultimoAcceso: formatDate(p.ultimo_acceso),
+  }));
+
   return (
     <div className="space-y-6">
       <PageHeader
@@ -21,35 +52,37 @@ export default function AdminUsuariosPage() {
         description="Administra las cuentas de usuario de la plataforma."
       />
 
-      <div className="space-y-2">
-        {mockUsers.map((user) => (
-          <Card key={user.id}>
-            <CardContent className="flex flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex items-center gap-3">
-                <div className="flex size-9 items-center justify-center rounded-full bg-primary/10 text-sm font-medium text-primary">
-                  {user.nombre.charAt(0)}
+      {users.length > 0 ? (
+        <div className="space-y-2">
+          {users.map((user) => (
+            <Card key={user.id}>
+              <CardContent className="flex flex-col gap-3 py-4 sm:flex-row sm:items-center sm:justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="flex size-9 items-center justify-center rounded-full bg-primary/10 text-sm font-medium text-primary">
+                    {user.nombre.charAt(0)}
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium text-foreground">
+                      {user.nombre}
+                    </p>
+                    <p className="text-xs text-muted-foreground">{user.email}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-sm font-medium text-foreground">
-                    {user.nombre}
-                  </p>
-                  <p className="text-xs text-muted-foreground">{user.email}</p>
+                <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                  <span>{user.testsRealizados} tests</span>
+                  <span>{user.ultimoAcceso}</span>
                 </div>
-              </div>
-              <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                <span>{user.testsRealizados} tests</span>
-                <span>{user.ultimoAcceso}</span>
-                <Badge
-                  variant={user.activo ? "default" : "outline"}
-                  className={user.activo ? "bg-success text-success-foreground hover:bg-success/80" : ""}
-                >
-                  {user.activo ? "Activo" : "Inactivo"}
-                </Badge>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      ) : (
+        <EmptyState
+          icon={Users}
+          title="Sin usuarios"
+          description="No hay usuarios registrados en la plataforma."
+        />
+      )}
     </div>
   );
 }
