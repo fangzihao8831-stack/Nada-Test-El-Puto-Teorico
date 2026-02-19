@@ -70,7 +70,7 @@
 - **Cinturón**: bien ajustado, banda sobre clavícula y cadera (no cuello ni abdomen)
 - **Espejos**: regulados antes de iniciar la marcha
 - **Manos en el volante**: posición "10 y 10" o "9 y 3" (no cruzar brazos)
-- **Ropa y calzado**: no conducir con chanclas, tacones altos o ropa que limite movimientos
+- **Ropa y calzado**: no conducir con chanclas, tacones altos o ropa que límite movimientos
 
 ## 10.5 Prohibiciones generales
 - Conducir con **auriculares** conectados a aparatos receptores o reproductores de sonido

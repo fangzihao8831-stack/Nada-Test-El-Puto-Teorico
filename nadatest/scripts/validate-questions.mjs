@@ -34,8 +34,6 @@ const REQUIRED_FIELDS = [
   ["tipo_imagen", "string"],
   ["origen", "string"],
   ["validada", "boolean"],
-  ["usa_trampa", "boolean"],
-  ["palabras_trampa", "array"],
 ];
 
 function checkSchema(q) {
@@ -92,19 +90,55 @@ function checkSchema(q) {
 
 // ── Format rules (Check 2) ──
 
-// Words that ALWAYS need accents (no ambiguity)
+// Words that ALWAYS need accents/tildes (no ambiguity in DGT context)
+// Includes ñ words (senal->señal) and accent words (vehiculo->vehículo)
 const ACCENT_WORDS = {
-  vehiculo: "vehículo", circulacion: "circulación", senalizacion: "señalización",
-  trafico: "tráfico", conduccion: "conducción", direccion: "dirección",
-  posicion: "posición", atencion: "atención", reaccion: "reacción",
-  detencion: "detención", informacion: "información", infraccion: "infracción",
-  sancion: "sanción", obligacion: "obligación", situacion: "situación",
-  neumaticos: "neumáticos", automovil: "automóvil", autovia: "autovía",
-  averia: "avería", cinturon: "cinturón", camion: "camión", peaton: "peatón",
-  telefono: "teléfono", tambien: "también", numero: "número",
-  minimo: "mínimo", maximo: "máximo", maxima: "máxima", minima: "mínima",
-  limite: "límite", podra: "podrá", debera: "deberá",
-  aqui: "aquí", asi: "así", kilometros: "kilómetros",
+  // ñ words
+  senal: "señal", senales: "señales", senalizacion: "señalización",
+  espana: "España", espanol: "español", ensenanza: "enseñanza",
+  companero: "compañero", dano: "daño", danos: "daños",
+  muneca: "muñeca", nino: "niño", ninos: "niños",
+  // Common nouns with accent
+  vehiculo: "vehículo", vehiculos: "vehículos",
+  circulacion: "circulación", conduccion: "conducción",
+  direccion: "dirección", posicion: "posición",
+  atencion: "atención", reaccion: "reacción",
+  detencion: "detención", informacion: "información",
+  infraccion: "infracción",
+  sancion: "sanción",
+  obligacion: "obligación", situacion: "situación",
+  prohibicion: "prohibición", proteccion: "protección",
+  precaucion: "precaución", indicacion: "indicación",
+  iluminacion: "iluminación", senalizacion: "señalización",
+  inmovilizacion: "inmovilización", recuperacion: "recuperación",
+  // Vehicles and parts
+  neumatico: "neumático", neumaticos: "neumáticos",
+  automovil: "automóvil", autovia: "autovía", autovias: "autovías",
+  averia: "avería", averias: "averías",
+  cinturon: "cinturón", camion: "camión",
+  peaton: "peatón",
+  semaforo: "semáforo", semaforos: "semáforos",
+  trafico: "tráfico",
+  telefono: "teléfono",
+  // Adjectives and adverbs
+  minimo: "mínimo", minima: "mínima",
+  maximo: "máximo", maxima: "máxima",
+  rapido: "rápido", rapida: "rápida",
+  unico: "único", unica: "única",
+  unicamente: "únicamente",
+  limite: "límite", limites: "límites",
+  numero: "número", numeros: "números",
+  kilometro: "kilómetro", kilometros: "kilómetros",
+  tambien: "también", aqui: "aquí", asi: "así",
+  // Verbs (future tense, common in DGT)
+  podra: "podrá", debera: "deberá", sera: "será",
+  tendra: "tendrá", habra: "habrá", estara: "estará",
+  // Nouns
+  perdida: "pérdida", perdidas: "pérdidas",
+  valido: "válido", valida: "válida",
+  automatico: "automático", automatica: "automática",
+  electronico: "electrónico", electrica: "eléctrica", electrico: "eléctrico",
+  alcoholimetro: "alcoholímetro",
 };
 
 function checkFormat(q) {
@@ -208,11 +242,57 @@ function checkDuplicates(questions) {
   return results;
 }
 
+// ── Autofix: accent correction ──
+
+function fixAccents(text) {
+  if (typeof text !== "string") return text;
+  // Sort by length descending to fix longer words first (avoid partial matches)
+  const sorted = Object.entries(ACCENT_WORDS).sort((a, b) => b[0].length - a[0].length);
+  for (const [wrong, correct] of sorted) {
+    // Word-boundary aware replacement using split/join on word boundaries
+    // Match the word only when surrounded by non-letter chars
+    const re = new RegExp(`(?<![a-záéíóúñüA-ZÁÉÍÓÚÑÜ])${wrong}(?![a-záéíóúñüA-ZÁÉÍÓÚÑÜ])`, "g");
+    text = text.replace(re, correct);
+    // Also handle capitalized version (start of sentence)
+    const capWrong = wrong.charAt(0).toUpperCase() + wrong.slice(1);
+    const capCorrect = correct.charAt(0).toUpperCase() + correct.slice(1);
+    const reCap = new RegExp(`(?<![a-záéíóúñüA-ZÁÉÍÓÚÑÜ])${capWrong}(?![a-záéíóúñüA-ZÁÉÍÓÚÑÜ])`, "g");
+    text = text.replace(reCap, capCorrect);
+  }
+  return text;
+}
+
+function autofixQuestion(q) {
+  let fixed = 0;
+  for (const key of ["enunciado", "explicación", "explicacion", "pista"]) {
+    if (q[key]) {
+      const before = q[key];
+      q[key] = fixAccents(q[key]);
+      if (q[key] !== before) fixed++;
+    }
+  }
+  if (Array.isArray(q.opciones)) {
+    q.opciones = q.opciones.map((o) => {
+      const before = o;
+      const result = fixAccents(o);
+      if (result !== before) fixed++;
+      return result;
+    });
+  }
+  // Fix tipo_imagen if it has unaccented values
+  if (q.tipo_imagen === "senal") q.tipo_imagen = "señal";
+  if (q.tipo_imagen === "situacion") q.tipo_imagen = "situación";
+  if (q.tipo_imagen === "vehiculo") q.tipo_imagen = "vehículo";
+  return fixed;
+}
+
 // ── Main ──
 
-const input = process.argv[2];
+const args = process.argv.slice(2);
+const autofix = args.includes("--autofix");
+const input = args.find((a) => !a.startsWith("--"));
 if (!input) {
-  console.error("Usage: node scripts/validate-questions.mjs <batch-dir-or-file>");
+  console.error("Usage: node scripts/validate-questions.mjs <batch-dir-or-file> [--autofix]");
   process.exit(1);
 }
 
@@ -248,6 +328,32 @@ for (const file of files) {
 }
 
 console.log(`\nValidating ${allQuestions.length} questions from ${files.length} file(s)\n`);
+
+// Autofix accents if requested
+if (autofix) {
+  console.log("--- AUTOFIX: Accents ---");
+  let totalFixed = 0;
+  for (const q of allQuestions) {
+    totalFixed += autofixQuestion(q);
+  }
+  if (totalFixed > 0) {
+    // Write back to source files
+    for (const file of files) {
+      const data = JSON.parse(readFileSync(file, "utf-8"));
+      if (data.preguntas) {
+        for (const q of data.preguntas) {
+          const fixed = allQuestions.find((aq) => aq.id === q.id);
+          if (fixed) Object.assign(q, fixed);
+        }
+        writeFileSync(file, JSON.stringify(data, null, 2), "utf-8");
+      }
+    }
+    console.log(`  Fixed accents in ${totalFixed} fields across ${allQuestions.length} questions`);
+  } else {
+    console.log("  No accent issues found");
+  }
+  console.log("");
+}
 
 // Run checks 1-3
 const rejected = new Set();
