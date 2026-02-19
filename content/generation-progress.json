@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "target_total": 210,
+  "generated": 210,
+  "validated": 210,
+  "rejected": 0,
+  "current_batch": 16,
+  "last_updated": "2026-02-17T15:40:00Z",
+  "temas": {
+    "tema_01": { "target": 10, "generated": 10, "validated": 10, "rejected": 0 },
+    "tema_02": { "target": 17, "generated": 17, "validated": 17, "rejected": 0 },
+    "tema_03": { "target": 10, "generated": 10, "validated": 10, "rejected": 0 },
+    "tema_04": { "target": 15, "generated": 15, "validated": 15, "rejected": 0 },
+    "tema_05": { "target": 21, "generated": 21, "validated": 21, "rejected": 0 },
+    "tema_06": { "target": 25, "generated": 25, "validated": 25, "rejected": 0 },
+    "tema_07": { "target": 42, "generated": 42, "validated": 42, "rejected": 0 },
+    "tema_08": { "target": 17, "generated": 17, "validated": 17, "rejected": 0 },
+    "tema_09": { "target": 10, "generated": 10, "validated": 10, "rejected": 0 },
+    "tema_10": { "target": 21, "generated": 21, "validated": 21, "rejected": 0 },
+    "tema_11": { "target": 11, "generated": 11, "validated": 11, "rejected": 0 },
+    "tema_12": { "target": 11, "generated": 11, "validated": 11, "rejected": 0 }
+  },
+  "batches": [
+    { "id": 1, "tema": "tema_07", "size": 15, "subtemas": ["subtema_25", "subtema_26", "subtema_27"], "generated": 15, "validated": 15, "rejected": 0, "file": "batch_01/preguntas_2026-02-16_tema07_batch01_validated.json" },
+    { "id": 2, "tema": "tema_07", "size": 15, "subtemas": ["subtema_28", "subtema_29", "subtema_30"], "generated": 15, "validated": 15, "rejected": 0, "file": "batch_02/preguntas_2026-02-16_tema07_batch02_validated.json" },
+    { "id": 3, "tema": "tema_07", "size": 12, "subtemas": ["subtema_31"], "generated": 12, "validated": 12, "rejected": 0, "file": "batch_03/preguntas_2026-02-16_tema07_batch03_validated.json" },
+    { "id": 4, "tema": "tema_06", "size": 15, "subtemas": ["subtema_19", "subtema_20", "subtema_21", "subtema_22", "subtema_23"], "generated": 15, "validated": 15, "rejected": 0, "file": "batch_04/preguntas_2026-02-17_tema06_batch04_validated.json" },
+    { "id": 5, "tema": "tema_06", "size": 10, "subtemas": ["subtema_19", "subtema_20", "subtema_21"], "generated": 10, "validated": 10, "rejected": 0, "file": "batch_05/preguntas_2026-02-17_tema06_batch05_validated.json" },
+    { "id": 6, "tema": "tema_05", "size": 15, "subtemas": ["subtema_15", "subtema_16", "subtema_17", "subtema_18"], "generated": 15, "validated": 15, "rejected": 0, "file": "batch_06/preguntas_2026-02-17_tema05_batch06_validated.json" },
+    { "id": 7, "tema": "tema_05", "size": 6, "subtemas": ["subtema_15", "subtema_16"], "generated": 6, "validated": 6, "rejected": 0, "file": "batch_07/preguntas_2026-02-17_tema05_batch07_validated.json" },
+    { "id": 8, "tema": "tema_10", "size": 21, "subtemas": ["subtema_43", "subtema_44", "subtema_45", "subtema_46", "subtema_47", "subtema_48", "subtema_49"], "generated": 21, "validated": 21, "rejected": 0, "file": "batch_08/preguntas_2026-02-17_tema10_batch08_validated.json" },
+    { "id": 9, "tema": "tema_02", "size": 17, "subtemas": ["subtema_04", "subtema_05", "subtema_06", "subtema_07"], "generated": 17, "validated": 17, "rejected": 0, "file": "batch_09/preguntas_2026-02-17_tema02_batch09_validated.json" },
+    { "id": 10, "tema": "tema_08", "size": 17, "subtemas": ["subtema_32", "subtema_33", "subtema_34", "subtema_35", "subtema_36", "subtema_37"], "generated": 17, "validated": 17, "rejected": 0, "file": "batch_10/preguntas_2026-02-17_tema08_batch10_validated.json" },
+    { "id": 11, "tema": "tema_04", "size": 15, "subtemas": ["subtema_11", "subtema_12", "subtema_13", "subtema_14"], "generated": 15, "validated": 15, "rejected": 0, "file": "batch_11/preguntas_2026-02-17_tema04_batch11_validated.json" },
+    { "id": 12, "tema": "tema_01", "size": 10, "subtemas": ["subtema_01", "subtema_02", "subtema_03"], "generated": 10, "validated": 10, "rejected": 0, "file": "batch_12/preguntas_2026-02-17_tema01_batch12_validated.json" },
+    { "id": 13, "tema": "tema_03", "size": 10, "subtemas": ["subtema_08", "subtema_09", "subtema_10"], "generated": 10, "validated": 10, "rejected": 0, "file": "batch_13/preguntas_2026-02-17_tema03_batch13_validated.json" },
+    { "id": 14, "tema": "tema_09", "size": 10, "subtemas": ["subtema_38", "subtema_39", "subtema_40", "subtema_41", "subtema_42"], "generated": 10, "validated": 10, "rejected": 0, "file": "batch_14/preguntas_2026-02-17_tema09_batch14_validated.json" },
+    { "id": 15, "tema": "tema_11", "size": 11, "subtemas": ["subtema_50", "subtema_51", "subtema_52", "subtema_53", "subtema_54"], "generated": 11, "validated": 11, "rejected": 0, "file": "batch_15/preguntas_2026-02-17_tema11_batch15_validated.json" },
+    { "id": 16, "tema": "tema_12", "size": 11, "subtemas": ["subtema_55", "subtema_56", "subtema_57", "subtema_58"], "generated": 11, "validated": 11, "rejected": 0, "file": "batch_16/preguntas_2026-02-17_tema12_batch16_validated.json" }
+  ]
+}

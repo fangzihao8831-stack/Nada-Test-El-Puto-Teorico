@@ -5,32 +5,32 @@
 ### A. Analizar formato real de preguntas DGT
 - [x] Extraer 2.700 preguntas de 90 tests Todotest (content/todotest_2700.json)
 - [x] Extraer 30 preguntas del examen oficial DGT (content/dgt_oficial_exam.json)
-- [x] Analizar distribucion de tipos: directa 40%, situacional 27%, completar 23%, dato 10%
+- [x] Analizar distribución de tipos: directa 40%, situacional 27%, completar 23%, dato 10%
 - [x] Analizar palabras trampa con frecuencias (siempre 254, solamente 117, nunca 37, etc.)
-- [x] Analizar patrones de inicio de pregunta (75% afirmacion, 25% pregunta)
-- [x] Analizar datos numericos testados (velocidades, alcohol, distancias, tiempos)
+- [x] Analizar patrones de inicio de pregunta (75% afirmación, 25% pregunta)
+- [x] Analizar datos numéricos testados (velocidades, alcohol, distancias, tiempos)
 - [x] Actualizar generar-preguntas.md con proporciones y formato corregidos
 - [x] Actualizar temario con datos faltantes (Hill Holder, RCTA 15 km/h, 15m parada bus, reglas ADAS)
 
-### B. Descargar imagenes de senales
-- [x] Descargar SVGs de senales de trafico de Wikimedia
-- [x] Guardar en `content/imagenes/senales/`
-- [x] Organizar por tipo (P-peligro, R-reglamentacion, S-indicacion)
-- [x] Nombrar archivos con codigo de senal (ej: R-301.svg, P-1.svg)
+### B. Descargar imágenes de señales
+- [x] Descargar SVGs de señales de tráfico de Wikimedia
+- [x] Guardar en `content/imagenes/señales/`
+- [x] Organizar por tipo (P-peligro, R-reglamentación, S-indicación)
+- [x] Nombrar archivos con código de señal (ej: R-301.svg, P-1.svg)
 
 ---
 
 ## Fase 0: Preparacion de Contenido
 - [x] 0.1 Crear content-structure.json con 12 temas y 58 subtemas
 - [ ] 0.2 Crear Skill 1: Generador de preguntas (`/generar-preguntas`) — prompt actualizado con datos reales, pendiente de completar
-- [ ] 0.3 Skill 2: Extractor de webs (pausado — datos ya extraidos manualmente)
-- [ ] 0.4 Crear Skill 3: Validador (deduplicacion + verificacion contra temario)
-- [ ] 0.5 Crear Skill 4: Generador de imagenes (DALL-E 3 + revision por Claude)
-- [x] 0.6 Descargar batch de senales SVG de Wikimedia
+- [ ] 0.3 Skill 2: Extractor de webs (pausado — datos ya extraídos manualmente)
+- [ ] 0.4 Crear Skill 3: Validador (deduplicación + verificación contra temario)
+- [ ] 0.5 Crear Skill 4: Generador de imágenes (DALL-E 3 + revisión por Claude)
+- [x] 0.6 Descargar batch de señales SVG de Wikimedia
 - [ ] 0.7 Generar 100-300 preguntas iniciales
 - [ ] 0.8 Crear los 100 tests pre-definidos
 
-## Fase 1: Fundacion
+## Fase 1: Fundación
 - [ ] 1.1 npx create-next-app@latest nadatest --typescript --tailwind --app
 - [ ] 1.2 Instalar dependencias: shadcn/ui, @supabase/supabase-js
 - [ ] 1.3 Configurar estructura de carpetas
@@ -55,21 +55,21 @@
 - [ ] 2.11 Implementar guardado de resultados en Supabase
 
 ## Fase 3: Paginas Principales
-- [ ] 3.1 Crear pagina Home/Dashboard
-- [ ] 3.2 Crear pagina Mi Objetivo
-- [ ] 3.3 Crear pagina Progreso
-- [ ] 3.4 Crear pagina Mis Fallos
-- [ ] 3.5 Crear seccion Materiales de estudio
-- [ ] 3.6 Implementar navegacion responsive
+- [ ] 3.1 Crear página Home/Dashboard
+- [ ] 3.2 Crear página Mi Objetivo
+- [ ] 3.3 Crear página Progreso
+- [ ] 3.4 Crear página Mis Fallos
+- [ ] 3.5 Crear sección Materiales de estudio
+- [ ] 3.6 Implementar navegación responsive
 
 ## Fase 4: Admin y UX
 - [ ] 4.1 Crear layout admin
 - [ ] 4.2 CRUD preguntas
 - [ ] 4.3 CRUD tests
-- [ ] 4.4 Importacion JSON masiva
-- [ ] 4.5 Dashboard admin con estadisticas
-- [ ] 4.6 Gestion de usuarios
-- [ ] 4.7 Pulir experiencia movil
+- [ ] 4.4 Importación JSON masiva
+- [ ] 4.5 Dashboard admin con estadísticas
+- [ ] 4.6 Gestión de usuarios
+- [ ] 4.7 Pulir experiencia móvil
 - [ ] 4.8 Optimizar rendimiento
 
 ## Fase 5: Testing y Launch

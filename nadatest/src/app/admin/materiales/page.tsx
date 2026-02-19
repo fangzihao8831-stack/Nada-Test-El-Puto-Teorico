@@ -7,11 +7,11 @@ import {
 import { Badge } from "@/components/ui/badge";
 
 const mockMaterials = [
-  { id: "mat_001", titulo: "Presentacion - El Conductor y el Permiso", tipo: "ppt", tema: "Tema 1" },
-  { id: "mat_002", titulo: "Video - El Vehiculo: componentes y mantenimiento", tipo: "video", tema: "Tema 2" },
-  { id: "mat_003", titulo: "Presentacion - Circulacion y Velocidad", tipo: "ppt", tema: "Tema 5" },
-  { id: "mat_004", titulo: "Video - Senalizacion: tipos de senales", tipo: "video", tema: "Tema 7" },
-  { id: "mat_005", titulo: "Presentacion - Factores de Riesgo", tipo: "ppt", tema: "Tema 10" },
+  { id: "mat_001", titulo: "Presentación - El Conductor y el Permiso", tipo: "ppt", tema: "Tema 1" },
+  { id: "mat_002", titulo: "Video - El Vehículo: componentes y mantenimiento", tipo: "video", tema: "Tema 2" },
+  { id: "mat_003", titulo: "Presentación - Circulación y Velocidad", tipo: "ppt", tema: "Tema 5" },
+  { id: "mat_004", titulo: "Video - Señalización: tipos de señales", tipo: "video", tema: "Tema 7" },
+  { id: "mat_005", titulo: "Presentación - Factores de Riesgo", tipo: "ppt", tema: "Tema 10" },
 ];
 
 function getTypeIcon(tipo: string) {
@@ -24,7 +24,7 @@ export default function AdminMaterialesPage() {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-2xl font-bold text-foreground">
-            Gestion de materiales
+            Gestión de materiales
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             Administra los materiales de estudio de la plataforma.

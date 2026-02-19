@@ -12,7 +12,7 @@ Verifica que los datos de la pregunta son correctos contrastando 3+ fuentes.
 Para cada pregunta:
 
 1. **Leer** enunciado, opciones, correcta y explicación
-2. **Identificar** que hecho/regla/dato se esta evaluando
+2. **Identificar** que hecho/regla/dato se está evaluando
 3. **Buscar en temario** con Grep (ej: "novel" + "alcohol" para tasas de alcohol)
 4. **Buscar en todotest** preguntas sobre el mismo tema
 5. **Clasificar el tipo de evidencia** de cada fuente:
@@ -30,15 +30,15 @@ Para cada pregunta:
 
 ---
 
-## Escenarios de decision
+## Escenarios de decisión
 
 **APROBADA - Las 3 fuentes coinciden**:
 ```
-PREGUNTA: "¿A que velocidad máxima puede circular un turismo en autopista?"
+PREGUNTA: "¿A qué velocidad máxima puede circular un turismo en autopista?"
 CORRECTA: "120 km/h"
 
 Temario (Grep "velocidad" + "autopista" + "turismo"):
-  -> "Turismo en autopista/autovia: 120 km/h" CHECK
+  -> "Turismo en autopista/autovía: 120 km/h" CHECK
 
 Todotest (Grep "velocidad" + "autopista"):
   -> Preguntas confirman 120 km/h CHECK
@@ -52,7 +52,7 @@ VEREDICTO: APROBADA (3 fuentes coinciden)
 ```
 PREGUNTA: "Los conductores noveles tienen una tasa máxima de 0,25 mg/l"
 
-Temario: "Novel < 2 anos: 0,15 mg/l aire" -> CONTRADICE
+Temario: "Novel < 2 años: 0,15 mg/l aire" -> CONTRADICE
 Todotest: preguntas dicen 0,15 mg/l -> CONTRADICE
 Claude: 0,15 mg/l -> CONTRADICE
 
@@ -63,53 +63,53 @@ Todas contradicen -> lanzar web search para confirmar:
 VEREDICTO: RECHAZADA — pregunta dice 0,25 pero todas las fuentes dicen 0,15
 ```
 
-**REVISION MANUAL - Fuentes en conflicto entre si**:
+**REVISIÓN MANUAL - Fuentes en conflicto entre si**:
 ```
 PREGUNTA: sobre un caso límite de la normativa
 
 Temario dice: regla X
 Todotest dice: regla Y
-Claude: no esta seguro, se inclina por X
+Claude: no está seguro, se inclina por X
 
 Web search DGT.es + BOE.es:
   -> sin resultado claro
 
-VEREDICTO: FLAG PARA REVISION MANUAL
+VEREDICTO: FLAG PARA REVISIÓN MANUAL
   Mostrar tabla con lo que dice cada fuente
   El humano decide si aprobar, rechazar o corregir
 ```
 
-**REVISION MANUAL - Sin cobertura directa en temario ni todotest**:
+**REVISIÓN MANUAL - Sin cobertura directa en temario ni todotest**:
 ```
-PREGUNTA: "Escenario específico sobre semaforo rojo y flecha verde con vehículo detras"
+PREGUNTA: "Escenario específico sobre semáforo rojo y flecha verde con vehículo detrás"
 
 Temario: SIN MATCH (principio general de rojo=parar, pero no cubre este caso específico)
-Todotest: SIN MATCH (preguntas de flechas verdes pero ninguna con vehículo detras bloqueado)
+Todotest: SIN MATCH (preguntas de flechas verdes pero ninguna con vehículo detrás bloqueado)
 Claude: cree que la respuesta es X
 
 Web search OBLIGATORIO (temario + todotest = SIN MATCH):
-  WebSearch("semaforo rojo flecha verde vehículo detras DGT",
+  WebSearch("semáforo rojo flecha verde vehículo detrás DGT",
     allowed_domains: ["dgt.es", "todotest.com", "autoescuela.net", "practicatest.com"])
-  -> Web revela que la respuesta depende de configuración de carriles no específicada
+  -> Web revela que la respuesta depende de configuración de carriles no especificada
 
-VEREDICTO: FLAG PARA REVISION MANUAL
+VEREDICTO: FLAG PARA REVISIÓN MANUAL
   Razón: Ninguna fuente primaria cubre el escenario exacto.
-  La web revela que la respuesta es condicional (depende de contexto no específicado).
+  La web revela que la respuesta es condicional (depende de contexto no especificado).
   Mostrar tabla con evidencia de cada fuente.
 ```
 
-**REVISION MANUAL - Respuesta depende de contexto no específicado en enunciado**:
+**REVISIÓN MANUAL - Respuesta depende de contexto no especificado en enunciado**:
 ```
-PREGUNTA: escenario donde la respuesta cambia segun un detalle no mencionado
-  (ej: numero de carriles, tipo de via, tipo de vehículo, condicion meteorologica)
+PREGUNTA: escenario donde la respuesta cambia según un detalle no mencionado
+  (ej: número de carriles, tipo de via, tipo de vehículo, condición meteorológica)
 
 CUALQUIER fuente revela que:
   -> La respuesta correcta DEPENDE de un factor que el enunciado no específica
   -> Con el factor A, la respuesta seria X; con el factor B, la respuesta seria Y
 
-VEREDICTO: FLAG PARA REVISION MANUAL
-  Razón: Pregunta ambigua — la respuesta depende de [factor no específicado].
-  Sugerencia: Anadir contexto al enunciado o reescribir con escenario mas concreto.
+VEREDICTO: FLAG PARA REVISIÓN MANUAL
+  Razón: Pregunta ambigua — la respuesta depende de [factor no especificado].
+  Sugerencia: Añadir contexto al enunciado o reescribir con escenario más concreto.
 ```
 
 ---
@@ -128,7 +128,7 @@ VEREDICTO: FLAG PARA REVISION MANUAL
 **Dominios permitidos**: `dgt.es`, `boe.es`, `todotest.com`, `autoescuela.net`, `practicatest.com`
 - Se ejecuta en el hilo principal (no en subagentes) para que el usuario vea las busquedas
 - Si web search confirma la respuesta -> PASS (documentar la fuente web en el informe)
-- Si web search revela que la respuesta depende de contexto no específicado -> FLAG REVISION MANUAL
+- Si web search revela que la respuesta depende de contexto no especificado -> FLAG REVISIÓN MANUAL
 - Si web search contradice la respuesta -> REJECT o AUTO-CORREGIR si hay consenso
 - Si web search no aclara -> FLAG para revisión manual
 

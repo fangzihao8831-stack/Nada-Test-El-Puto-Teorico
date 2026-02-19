@@ -1,80 +1,122 @@
-# Uso de Subagentes
+# Uso de Subagentes (Per-Tema)
+
+## Estrategia: Shift-Left + Lightweight Review
+
+La validación se divide en dos fases:
+
+1. **Generación con auto-validación** (Opus, 4 agentes): El generador verifica sus propios datos contra el temario mientras genera. Cubre ~90% de errores a coste cero.
+2. **Revisión adversarial** (Haiku, 2 agentes): Un modelo diferente y más barato revisa las preguntas sin compartir contexto con el generador. Elimina sesgo de auto-validación.
 
 ## Cuando usar subagentes
-- **1-5 preguntas**: Todo en el hilo principal, sin subagentes
-- **6+ preguntas**: Dividir en grupos de 3-4 para checks 3 y 4
 
-## Como dividir el trabajo
+- **1-5 preguntas de 1 solo tema**: Todo en el hilo principal, sin subagentes
+- **6+ preguntas o 2+ temas**: Fase 1 ya ocurrió durante generación; lanzar 2 subagentes Haiku para revisión
 
-```
-Hilo principal:
-  1. Lee el JSON completo
-  2. Ejecuta Check 1 (schema) y Check 2 (formato) en todas las preguntas
-     (son rápidos, no necesitan I/O externo)
-  3. Filtra las que pasaron checks 1+2
-  4. Divide las preguntas restantes en grupos de 3-4
+## Preparación previa (Node.js, cero tokens)
 
-Subagente 1 (Task tool, subagent_type: "general-purpose"):
-  - Recibe: preguntas 1-3 como JSON + TODAS las preguntas del batch (para dedup)
-  - Ejecuta: Check 3 (duplicados) + Check 4 (datos) para cada una
-  - Usa: Comparacion directa contra preguntas del batch (Check 3) + Grep en temario y todotest (Check 4)
-  - Devuelve: veredicto por pregunta con evidencia
-
-Subagente 2:
-  - Igual para preguntas 4-6
-
-Hilo principal (despues de recoger resultados):
-  5. Si algun subagente marco una pregunta para web search, ejecutar aqui
-  6. Ejecutar Check 5 (explicaciones) en todas
-  7. Generar informe final
+Antes de lanzar subagentes, ejecutar:
+```bash
+node scripts/validate-questions.mjs $BATCH         # Checks 1-3 (schema, formato, duplicados)
+node scripts/prep-validation-context.mjs $BATCH     # Context bundles (8 todotest matches/tema)
 ```
 
-## Por que Grep y no leer todo el archivo
-`todotest_2700.json` es grande (~2700 preguntas). Para CHECK 4 (fact-checking), cada subagente usa Grep para buscar palabras clave específicas del enunciado. Si la pregunta es sobre alcohol, grep busca "alcohol" + "tasa" y lee solo las 10-20 preguntas que matchean.
+El segundo script produce un JSON con bundles por tema:
+```json
+{
+  "bundles": [
+    {
+      "tema_id": "tema_07",
+      "tema_name": "Señalización",
+      "temario_file": "content/temario/tema_07.md",
+      "question_count": 12,
+      "questions": [...],
+      "todotest_matches": [...],
+      "todotest_match_count": 8
+    }
+  ]
+}
+```
 
-Para CHECK 3 (duplicados), el subagente recibe TODAS las preguntas del batch como parte de su prompt, y compara solo contra esas. No necesita leer archivos externos para dedup.
+## Fase 2: Subagentes Haiku (2 agentes)
 
-## Prompt para subagentes
-Al lanzar un subagente con Task tool, incluir en el prompt:
-- Las preguntas asignadas como JSON (las que debe validar)
-- TODAS las preguntas del batch como JSON (para comparación de duplicados)
-- Instrucciones de Check 3 y Check 4 (copiar las secciones relevantes de `check-3-duplicados.md` y `check-4-datos.md`)
-- Ruta a los archivos de referencia (temario y todotest para fact-checking)
-- Formato esperado de respuesta (JSON con veredicto por pregunta)
+Dividir los 12 temas en 2 grupos:
+- **Agente A**: tema_01 a tema_06 (temas de normas y circulación)
+- **Agente B**: tema_07 a tema_12 (temas de señalización, riesgos y sanciones)
+
+### Prompt para cada subagente
+
+Al lanzar con Task tool, usar `model: "haiku"`:
+
+```
+Task(
+  subagent_type: "general-purpose",
+  model: "haiku",
+  prompt: "..."
+)
+```
+
+Incluir en el prompt — el subagente DEBE leer estos archivos directamente (NO parafrasear ni resumir):
+1. **Check 4 (datos)**: Leer `.claude/commands/validar-preguntas/check-4-datos.md`
+2. **Check 5 (pedagógica)**: Leer `.claude/commands/validar-preguntas/check-5-pedagógica.md`
+3. **Datos de referencia**: Leer `.claude/commands/validar-preguntas/datos-referencia.md`
+4. **Temario**: Leer los `content/temario/tema_XX.md` files de sus temas asignados
+5. **Preguntas + todotest**: Leer el bundles JSON y extraer solo sus temas
+6. **Instrucción**: "Ejecuta CHECK 4 y CHECK 5 según las reglas de los archivos. Devuelve JSON con veredictos."
+
+**NO usar `content/validation-prompt.md`** — los skill files contienen las reglas completas con ejemplos trabajados y arboles de decisión que el archivo combinado omite.
+
+**Importante**: Los agentes Haiku NO comparten contexto con los generadores Opus. Esta separación elimina el sesgo de auto-validación.
+
+### Preguntas con `"confianza": "baja"`
+
+Si el generador marco alguna pregunta con `"confianza": "baja"`, el validador debe prestar atención extra a esa pregunta y considerar web search si las fuentes no confirman el dato.
 
 ## Formato de respuesta del subagente
+
 ```json
 {
   "resultados": [
     {
-      "id": "pregunta_001",
-      "check3_duplicados": {
-        "veredicto": "PASS|REJECT|FLAG",
-        "motivo": "texto explicativo",
-        "match_encontrado": "texto de la pregunta similar dentro del batch si existe",
-        "match_id": "id de la pregunta duplicada dentro del batch"
-      },
+      "id": "pregunta_XXXX",
       "check4_datos": {
         "veredicto": "PASS|REJECT|FLAG",
         "motivo": "texto explicativo",
         "fuentes": {
           "temario": {
             "evidencia": "DIRECTO|INDIRECTO|SIN MATCH",
-            "detalle": "cita o descripción de lo encontrado",
-            "línea": "numero de línea si aplica"
+            "detalle": "cita o descripción"
           },
           "todotest": {
             "evidencia": "DIRECTO|INDIRECTO|SIN MATCH",
-            "detalle": "pregunta encontrada o descripción",
-            "todotest_id": "ID si aplica"
+            "detalle": "pregunta encontrada o descripción"
           },
           "claude": "lo que Claude sabe"
         },
-        "necesita_web_search": true,
-        "detalle_web_search": "que buscar si es necesario",
-        "razon_web_search": "por que es necesario (ej: temario SIN MATCH + todotest SIN MATCH)"
+        "necesita_web_search": false,
+        "detalle_web_search": "que buscar si es necesario"
+      },
+      "check5_pedagógica": {
+        "veredicto": "PASS|AUTO-REWRITE|REJECT",
+        "motivo": "texto explicativo",
+        "explicación_reescrita": "nueva explicación si AUTO-REWRITE, null si PASS"
       }
     }
   ]
 }
 ```
+
+## Después de recoger resultados
+
+El hilo principal:
+1. Reúne los resultados de los 2 subagentes
+2. Si algun subagente marco `necesita_web_search: true`, ejecutar web search
+3. Genera el informe final con todos los veredictos
+4. Interactua con el usuario para revisiones manuales
+5. Escribe el archivo `_validated.json`
+
+## Comparación de costes
+
+| Pipeline | Agentes | Modelo | Tokens estimados |
+|----------|---------|--------|-----------------|
+| Anterior | 4 validadores | Opus | ~324K Opus |
+| Actual | 2 validadores | Haiku | ~100K Haiku (~15x más barato/token) |

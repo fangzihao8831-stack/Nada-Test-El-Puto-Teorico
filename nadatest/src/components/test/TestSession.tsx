@@ -273,6 +273,23 @@ function QuestionImage({
   );
 }
 
+const TIPO_PREGUNTA_STYLES: Record<string, string> = {
+  directa: "bg-blue-100 text-blue-700",
+  situacional: "bg-violet-100 text-violet-700",
+  completar: "bg-amber-100 text-amber-700",
+  dato: "bg-teal-100 text-teal-700",
+};
+
+function TipoPreguntaBadge({ tipo }: { tipo?: string }) {
+  if (!tipo) return null;
+  const style = TIPO_PREGUNTA_STYLES[tipo] || "bg-muted text-muted-foreground";
+  return (
+    <span className={cn("inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium", style)}>
+      {tipo}
+    </span>
+  );
+}
+
 /* ── Main TestSession component ── */
 
 interface TestSessionProps {
@@ -455,10 +472,11 @@ export function TestSession({
             </div>
 
             <div className="flex flex-1 flex-col">
-              <div className="mb-2">
+              <div className="mb-2 flex items-center gap-2">
                 <Badge variant="outline" className="text-xs">
                   {question.tema}
                 </Badge>
+                <TipoPreguntaBadge tipo={question.tipoPregunta} />
               </div>
               <p className="text-lg font-bold leading-relaxed text-foreground lg:text-xl">
                 <span className="mr-2 text-primary">
@@ -504,9 +522,12 @@ export function TestSession({
               className="mb-3 h-52"
             />
 
-            <Badge variant="outline" className="mb-2 w-fit text-xs">
-              {question.tema}
-            </Badge>
+            <div className="mb-2 flex items-center gap-2">
+              <Badge variant="outline" className="text-xs">
+                {question.tema}
+              </Badge>
+              <TipoPreguntaBadge tipo={question.tipoPregunta} />
+            </div>
             <p className="text-base font-bold leading-relaxed text-foreground">
               <span className="mr-2 text-primary">
                 {question.number}.

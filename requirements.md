@@ -1,17 +1,17 @@
 # Nadatest - Requisitos del Producto
 
-## Descripcion General
+## Descripción General
 
-**Nadatest** es una plataforma web inspirada en Todotest, disenada para ayudar a las personas a prepararse y aprobar el examen de conducir del DGT (Direccion General de Trafico) en Espana.
+**Nadatest** es una plataforma web inspirada en Todotest, diseñada para ayudar a las personas a prepararse y aprobar el examen de conducir del DGT (Dirección General de Tráfico) en España.
 
-### Vision
-Crear una plataforma moderna, intuitiva y completa que combine tests de practica con materiales de estudio organizados, permitiendo a los usuarios prepararse de manera efectiva para obtener su permiso de conducir.
+### Visión
+Crear una plataforma moderna, intuitiva y completa que combine tests de práctica con materiales de estudio organizados, permitiendo a los usuarios prepararse de manera efectiva para obtener su permiso de conducir.
 
 ### Contexto del Proyecto
 - **Desarrollador**: Individual (solo)
-- **Experiencia tecnica**: Conocimientos basicos de HTML/CSS/JS
+- **Experiencia técnica**: Conocimientos basicos de HTML/CSS/JS
 - **Timeline**: Sin fecha fija, cuando este listo
-- **Idioma**: Espanol peninsular
+- **Idioma**: Español peninsular
 - **Publico objetivo**: Jovenes preparando el carnet de conducir
 
 ---
@@ -25,7 +25,7 @@ Crear una plataforma moderna, intuitiva y completa que combine tests de practica
 - Materiales de estudio (PPTs, videos)
 - Sistema de usuarios con registro/login
 - Dashboard con historial completo
-- Panel de administracion completo
+- Panel de administración completo
 - 100-300 preguntas iniciales
 
 ### Fuera del MVP
@@ -35,7 +35,7 @@ Ver archivo `future-features.md` para funcionalidades futuras.
 
 ## Sistema de Usuarios
 
-### Autenticacion
+### Autenticación
 - Registro tradicional con email + contrasena
 - Login social (Google)
 - Verificacion de email
@@ -48,7 +48,7 @@ El perfil mostrara:
 
 ---
 
-## Estructura de Navegacion
+## Estructura de Navegación
 
 ### Menu Principal
 ```
@@ -65,7 +65,7 @@ Pagina de aterrizaje para visitantes no registrados. Objetivo: conversion (regis
 | NADATEST                [Iniciar sesion]     |
 +---------------------------------------------+
 |                                              |
-|   Prepara tu examen teorico                  |
+|   Prepara tu examen teórico                  |
 |       del permiso B                          |
 |                                              |
 |   Practica con tests que simulan el formato  |
@@ -111,7 +111,7 @@ Movil:
 +---------------------------+
 |                           |
 |  Prepara tu examen        |
-|  teorico del permiso B    |
+|  teórico del permiso B    |
 |                           |
 |  30 preguntas, 30 min.    |
 |  Formato real de la DGT.  |
@@ -146,16 +146,16 @@ Movil:
 ```
 
 Especificaciones:
-- **CTA principal**: "Registrate" (primary/azul, lleva a `/register`)
+- **CTA principal**: "Regístrate" (primary/azul, lleva a `/register`)
 - **CTA secundaria**: "Examen de prueba" (outline, inicia test demo sin cuenta)
-- **Seccion features**: 3 tarjetas con iconos (FileText, Timer, BarChart3)
-- **Seccion "Como funciona"**: 4 pasos numerados, fondo sutil
-- **CTA final**: "Crear cuenta gratis" al pie, refuerza conversion
-- **Sin autenticacion requerida**: El test de prueba funciona sin registro
-- **Ruta**: `/` (raiz, redirige a `/dashboard` si ya esta autenticado)
+- **Sección features**: 3 tarjetas con iconos (FileText, Timer, BarChart3)
+- **Sección "Cómo funciona"**: 4 pasos numerados, fondo sutil
+- **CTA final**: "Crear cuenta gratis" al pie, refuerza conversión
+- **Sin autenticación requerida**: El test de prueba funciona sin registro
+- **Ruta**: `/` (raíz, redirige a `/dashboard` si ya está autenticado)
 
 #### 1. Dashboard (Home autenticado)
-Ruta: `/dashboard`. Requiere autenticacion.
+Ruta: `/dashboard`. Requiere autenticación.
 
 ```
 +----------------------------------------------------------+
@@ -219,7 +219,7 @@ Movil:
 ```
 
 #### 2. Login
-Ruta: `/login`. Sin autenticacion.
+Ruta: `/login`. Sin autenticación.
 
 ```
 +---------------------------+
@@ -243,7 +243,7 @@ Ruta: `/login`. Sin autenticacion.
 ```
 
 #### 3. Register
-Ruta: `/register`. Sin autenticacion.
+Ruta: `/register`. Sin autenticación.
 
 ```
 +---------------------------+
@@ -269,7 +269,7 @@ Ruta: `/register`. Sin autenticacion.
 ```
 
 #### 4. Mi Objetivo
-Ruta: `/objetivo`. Requiere autenticacion.
+Ruta: `/objetivo`. Requiere autenticación.
 
 ```
 +----------------------------------------------------------+
@@ -302,7 +302,7 @@ Ruta: `/objetivo`. Requiere autenticacion.
 ```
 
 #### 5. Progreso
-Ruta: `/progreso`. Requiere autenticacion.
+Ruta: `/progreso`. Requiere autenticación.
 
 ```
 +----------------------------------------------------------+
@@ -322,22 +322,22 @@ Ruta: `/progreso`. Requiere autenticacion.
 |            |  +---------------------------------------+  |
 |            |  | > El Conductor y el Permiso    [75%]  |  |
 |            |  +---------------------------------------+  |
-|            |  | > El Vehiculo                  [60%]  |  |
+|            |  | > El Vehículo                  [60%]  |  |
 |            |  +---------------------------------------+  |
 |            |  | > Carga, Pasajeros...          [45%]  |  |
 |            |  +---------------------------------------+  |
-|            |  | v Circulacion y Velocidad      [90%]  |  |
+|            |  | v Circulación y Velocidad      [90%]  |  |
 |            |  |   [=========                 ]        |  |
-|            |  |   - Conceptos basicos                 |  |
+|            |  |   - Conceptos básicos                 |  |
 |            |  |   - Normativa                         |  |
-|            |  |   - Casos practicos                   |  |
+|            |  |   - Casos prácticos                   |  |
 |            |  +---------------------------------------+  |
 |            |  ...12 temas total                          |
 +----------------------------------------------------------+
 ```
 
 #### 6. Mis Fallos
-Ruta: `/fallos`. Requiere autenticacion.
+Ruta: `/fallos`. Requiere autenticación.
 
 ```
 +----------------------------------------------------------+
@@ -345,7 +345,7 @@ Ruta: `/fallos`. Requiere autenticacion.
 +----------------------------------------------------------+
 | Inicio     |                                             |
 | Tests      |  Preguntas falladas   [Practicar fallos]    |
-| Objetivo   |  Repasa lo que mas te cuesta.               |
+| Objetivo   |  Repasa lo que más te cuesta.               |
 | Progreso   |                                             |
 | Fallos*    |  +----------+                               |
 | Materiales |  | Total    |                               |
@@ -357,11 +357,11 @@ Ruta: `/fallos`. Requiere autenticacion.
 |            |  | Cual es la tasa maxima de alcohol...  |  |
 |            |  | [Factores de Riesgo] 4x  12/02       |  |
 |            |  +---------------------------------------+  |
-|            |  | En una interseccion sin senalizar...  |  |
+|            |  | En una intersección sin señalizar...  |  |
 |            |  | [Prioridad y Maniobras] 3x  11/02    |  |
 |            |  +---------------------------------------+  |
-|            |  | Cual es la distancia minima...        |  |
-|            |  | [Circulacion y Velocidad] 2x  10/02  |  |
+|            |  | Cuál es la distancia mínima...        |  |
+|            |  | [Circulación y Velocidad] 2x  10/02  |  |
 |            |  +---------------------------------------+  |
 +----------------------------------------------------------+
 ```
@@ -375,8 +375,8 @@ Estado vacio:
 +---------------------------------------+
 ```
 
-#### 7. Seleccion de Test
-Ruta: `/test`. Requiere autenticacion.
+#### 7. Selección de Test
+Ruta: `/test`. Requiere autenticación.
 
 ```
 +---------------------------+
@@ -405,7 +405,7 @@ Ruta: `/test`. Requiere autenticacion.
 ```
 
 #### 8. Resultado del Test
-Ruta: `/test/resultado`. Requiere autenticacion.
+Ruta: `/test/resultado`. Requiere autenticación.
 
 ```
 +---------------------------+
@@ -420,12 +420,12 @@ Ruta: `/test/resultado`. Requiere autenticacion.
 | |Tiempo| |Correc| |Inco| |
 | +------+ +------+ +----+ |
 |                           |
-| Revision de preguntas     |
+| Revisión de preguntas     |
 | +---------------------+  |
 | | 1. Velocidad max... |  |
 | | [v] 120 km/h        |  |
 | +---------------------+  |
-| | 2. Senal de STOP... |  |
+| | 2. Señal de STOP... |  |
 | | [x] Reducir veloc.  |  |
 | | [v] Detenerse       |  |
 | +---------------------+  |
@@ -436,7 +436,7 @@ Ruta: `/test/resultado`. Requiere autenticacion.
 ```
 
 #### 9. Materiales de Estudio
-Ruta: `/materiales`. Requiere autenticacion.
+Ruta: `/materiales`. Requiere autenticación.
 
 ```
 +----------------------------------------------------------+
@@ -448,18 +448,18 @@ Ruta: `/materiales`. Requiere autenticacion.
 | +-----------------------------------------------------+ |
 | | > El Conductor y el Permiso                         | |
 | +-----------------------------------------------------+ |
-| | > El Vehiculo                                       | |
+| | > El Vehículo                                       | |
 | +-----------------------------------------------------+ |
-| | v Circulacion y Velocidad                           | |
+| | v Circulación y Velocidad                           | |
 | |   - Conceptos generales                             | |
 | |   - Normativa vigente                               | |
-| |   - Situaciones practicas                           | |
+| |   - Situaciones prácticas                           | |
 | +-----------------------------------------------------+ |
 | ...12 temas total                                        |
 +----------------------------------------------------------+
 ```
 
-#### 10. Panel de Administracion
+#### 10. Panel de Administración
 Ruta: `/admin`. Requiere admin.
 
 ```
@@ -467,7 +467,7 @@ Ruta: `/admin`. Requiere admin.
 | NADATEST  Admin                            [<- Volver]   |
 +----------------------------------------------------------+
 | Panel      |                                             |
-| Preguntas  |  Panel de administracion                    |
+| Preguntas  |  Panel de administración                    |
 | Tests      |  Resumen general de la plataforma.          |
 | Materiales |                                             |
 | Usuarios   |  +--------+ +--------+ +--------+ +------+ |
@@ -492,14 +492,14 @@ Ruta: `/admin`. Requiere admin.
 - Proporcion de temas similar al examen DGT oficial
 - Se guardan cuales ha completado el usuario
 
-### Modal de Seleccion
+### Modal de Selección
 - Switch Examen/Estudio
-- Proximos tests pendientes
-- Opcion practicar por tema
-- Opcion repasar fallos
+- Próximos tests pendientes
+- Opción practicar por tema
+- Opción repasar fallos
 
 ### Modo Examen
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |----------------|---------|
 | Preguntas | 30 |
 | Tiempo | 30 minutos |
@@ -507,11 +507,11 @@ Ruta: `/admin`. Requiere admin.
 | Feedback | Solo al finalizar |
 
 ### Modo Estudio
-| Caracteristica | Detalle |
+| Característica | Detalle |
 |----------------|---------|
 | Preguntas | 30 |
-| Tiempo | Sin limite |
-| Pistas | Si |
+| Tiempo | Sin límite |
+| Pistas | Sí |
 | Feedback | Inmediato |
 
 ---
@@ -523,13 +523,13 @@ Ruta: `/admin`. Requiere admin.
 +------------------------------------------------------------------+
 | [LOGO]  Test Permiso B  |  Usuario  |  [progreso] 25:30         |
 +------------------------------------------------------------------+
-|  10.  +----------+   Pregunta aqui...?                     (?)  |
-|       |  IMAGEN  |   Tema: Senales                              |
-|       +----------+   ( ) A) Opcion A                            |
-|                      ( ) B) Opcion B                            |
-|                      ( ) C) Opcion C                            |
+|  10.  +----------+   Pregunta aquí...?                     (?)  |
+|       |  IMAGEN  |   Tema: Señales                              |
+|       +----------+   ( ) A) Opción A                            |
+|                      ( ) B) Opción B                            |
+|                      ( ) C) Opción C                            |
 |       +--------------------------------------------------+      |
-|       | [Feedback + Ver explicacion]                     |      |
+|       | [Feedback + Ver explicación]                     |      |
 |       +--------------------------------------------------+      |
 |       [<- Anterior]    [SIGUIENTE ->]    [FINALIZAR]            |
 +------------------------------------------------------------------+
@@ -547,14 +547,14 @@ Ruta: `/admin`. Requiere admin.
 |  +---------------------+  |
 |  |       IMAGEN        |  |
 |  +---------------------+  |
-|  Pregunta aqui...?   (?)  |
-|  Tema: Senales | **       |
+|  Pregunta aquí...?   (?)  |
+|  Tema: Señales | **       |
 |  +---------------------+  |
-|  | A) Opcion A         |  |
+|  | A) Opción A         |  |
 |  +---------------------+  |
-|  | B) Opcion B         |  |
+|  | B) Opción B         |  |
 |  +---------------------+  |
-|  | C) Opcion C         |  |
+|  | C) Opción C         |  |
 |  +---------------------+  |
 |  +---------------------+  |
 |  | FEEDBACK            |  |
@@ -566,7 +566,7 @@ Ruta: `/admin`. Requiere admin.
 
 ---
 
-## Diseno y UX
+## Diseño y UX
 
 ### Responsive Design
 - **Mobile-first**: Prioridad en experiencia movil
@@ -594,11 +594,11 @@ Ruta: `/admin`. Requiere admin.
 
 ---
 
-## Recursos Utiles
+## Recursos Útiles
 
-- [DGT - Direccion General de Trafico](https://www.dgt.es)
-- [Senales DGT - Wikimedia](https://commons.wikimedia.org/wiki/Road_signs_of_Spain)
-- [Todotest](https://www.todotest.com) - Inspiracion
+- [DGT - Dirección General de Tráfico](https://www.dgt.es)
+- [Señales DGT - Wikimedia](https://commons.wikimedia.org/wiki/Road_signs_of_Spain)
+- [Todotest](https://www.todotest.com) - Inspiración
 - [Supabase Docs](https://supabase.com/docs)
 - [Next.js Docs](https://nextjs.org/docs)
 - [shadcn/ui](https://ui.shadcn.com)

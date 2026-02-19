@@ -5,11 +5,11 @@ import {
 import { Badge } from "@/components/ui/badge";
 
 const mockUsers = [
-  { id: "1", nombre: "Maria Garcia", email: "maria@email.com", testsRealizados: 24, ultimoAcceso: "12/02/2026", activo: true },
-  { id: "2", nombre: "Carlos Lopez", email: "carlos@email.com", testsRealizados: 18, ultimoAcceso: "11/02/2026", activo: true },
-  { id: "3", nombre: "Ana Martinez", email: "ana@email.com", testsRealizados: 42, ultimoAcceso: "10/02/2026", activo: true },
-  { id: "4", nombre: "Pedro Sanchez", email: "pedro@email.com", testsRealizados: 5, ultimoAcceso: "01/01/2026", activo: false },
-  { id: "5", nombre: "Laura Fernandez", email: "laura@email.com", testsRealizados: 31, ultimoAcceso: "12/02/2026", activo: true },
+  { id: "1", nombre: "María García", email: "maria@email.com", testsRealizados: 24, ultimoAcceso: "12/02/2026", activo: true },
+  { id: "2", nombre: "Carlos López", email: "carlos@email.com", testsRealizados: 18, ultimoAcceso: "11/02/2026", activo: true },
+  { id: "3", nombre: "Ana Martínez", email: "ana@email.com", testsRealizados: 42, ultimoAcceso: "10/02/2026", activo: true },
+  { id: "4", nombre: "Pedro Sánchez", email: "pedro@email.com", testsRealizados: 5, ultimoAcceso: "01/01/2026", activo: false },
+  { id: "5", nombre: "Laura Fernández", email: "laura@email.com", testsRealizados: 31, ultimoAcceso: "12/02/2026", activo: true },
 ];
 
 export default function AdminUsuariosPage() {
@@ -17,7 +17,7 @@ export default function AdminUsuariosPage() {
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold text-foreground">
-          Gestion de usuarios
+          Gestión de usuarios
         </h1>
         <p className="mt-1 text-sm text-muted-foreground">
           Administra las cuentas de usuario de la plataforma.

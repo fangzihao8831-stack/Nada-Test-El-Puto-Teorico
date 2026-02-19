@@ -4,8 +4,8 @@
 
 | Nivel | Nombre | Cantidad | Visible a usuario | Ejemplo |
 |-------|--------|----------|-------------------|---------|
-| 1 | Temas | 12 | Si (menu principal) | "Senalizacion" |
-| 2 | Subtemas | 50 | Interno | "Senales de prohibicion" |
+| 1 | Temas | 12 | Sí (menú principal) | "Señalización" |
+| 2 | Subtemas | 50 | Interno | "Señales de prohibición" |
 | 3 | Apartados | Variable | Contenido detallado | "R-301, R-302..." |
 
 Ver `content/content-structure.json` para la estructura completa.
@@ -28,7 +28,7 @@ TEMARIO + WEBS
                |
       +--------+--------+
       |                 |
-   Aprobadas        Revision
+   Aprobadas        Revisión
       |
       v
 [SKILL 4: IMAGENES]
@@ -49,7 +49,7 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 - **Archivo**: `.claude/commands/generar-preguntas.md`
 - **Input**: `temario_permiso_b_v3.md`, `content/content-structure.json`
 - **Output**: JSON con preguntas, explicaciones, pistas
-- Prompt actualizado con datos reales: distribucion de tipos, palabras trampa con frecuencias, patrones de inicio, datos numericos, distribucion por temas
+- Prompt actualizado con datos reales: distribución de tipos, palabras trampa con frecuencias, patrones de inicio, datos numéricos, distribución por temas
 - Todas las preguntas requieren imagen, siempre 3 opciones
 - Crea explicaciones pedagogicas propias
 
@@ -62,30 +62,30 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 ### Skill 3: Validador (pendiente)
 - **Archivo**: `.claude/commands/validar-preguntas.md`
 - Detecta duplicados por similitud semantica contra banco existente (Todotest + generadas)
-- Verifica logica de preguntas y datos numericos contra temario
+- Verifica lógica de preguntas y datos numéricos contra temario
 - Revisa que opciones usen palabras trampa correctamente
 
-### Skill 4: Generador de Imagenes (pendiente)
+### Skill 4: Generador de Imágenes (pendiente)
 - **Archivo**: `.claude/commands/generar-imagenes.md`
-- Senales SVG: ya descargadas en `content/imagenes/senales/`
-- Situaciones de trafico: genera con DALL-E 3 via OpenAI API
+- Señales SVG: ya descargadas en `content/imagenes/señales/`
+- Situaciones de tráfico: genera con DALL-E 3 vía OpenAI API
 - Claude revisa que la imagen generada sea correcta antes de guardar
 
 ---
 
-## Estrategia de Imagenes
+## Estrategia de Imágenes
 
-### Senales de trafico
+### Señales de tráfico
 - **Fuente**: https://commons.wikimedia.org/wiki/Road_signs_of_Spain
 - **Formato**: SVG (vectorial)
-- **Estrategia**: Batch inicial (~500 senales)
-- **Validacion**: Automatica por codigo (R-301, P-1, etc.)
+- **Estrategia**: Batch inicial (~500 señales)
+- **Validación**: Automática por código (R-301, P-1, etc.)
 
-### Situaciones de trafico
+### Situaciones de tráfico
 - **Fuente**: DALL-E 3 API (OpenAI)
 - **Coste**: ~$0.04-0.08 por imagen
-- **Validacion**: IA filtra + revision humana para dudosas
-- **Reutilizacion**: Agrupar preguntas similares con misma imagen
+- **Validación**: IA filtra + revisión humana para dudosas
+- **Reutilización**: Agrupar preguntas similares con misma imagen
 
 ---
 
@@ -96,17 +96,17 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
   "id": "pregunta_001",
   "subtema_id": "subtema_21",
   "tipo_pregunta": "imagen",
-  "enunciado": "Que indica esta senal de trafico?",
+  "enunciado": "¿Qué indica esta señal de tráfico?",
   "opciones": [
     "Prohibido adelantar",
-    "Fin de prohibicion de adelantar",
+    "Fin de prohibición de adelantar",
     "Adelantamiento permitido solo por la izquierda"
   ],
   "correcta": 1,
-  "explicacion": "Esta senal indica el fin de la prohibicion...",
-  "pista": "Fijate en las lineas diagonales",
+  "explicacion": "Esta señal indica el fin de la prohibición...",
+  "pista": "Fíjate en las líneas diagonales",
   "requiere_imagen": true,
-  "tipo_imagen": "senal",
+  "tipo_imagen": "señal",
   "imagen_url": "cloudinary.com/nadatest/R-501.svg",
   "origen": "generada",
   "validada": true
@@ -114,12 +114,12 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 ```
 
 ### Campos
-| Campo | Tipo | Descripcion |
+| Campo | Tipo | Descripción |
 |-------|------|-------------|
 | `tipo_pregunta` | string | `directa`, `situacional`, `completar`, `dato` |
-| `correcta` | int | Indice de la opcion correcta (0, 1 o 2) |
+| `correcta` | int | Índice de la opción correcta (0, 1 o 2) |
 | `requiere_imagen` | bool | Si la pregunta necesita imagen para funcionar |
-| `tipo_imagen` | string | `senal`, `situacion`, `vehiculo`, `ninguna` |
+| `tipo_imagen` | string | `señal`, `situación`, `vehículo`, `ninguna` |
 | `origen` | string | `generada`, `extraida_dgt`, `extraida_todotest` |
 
 ---
@@ -129,7 +129,7 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 - `temario_permiso_b_v3.md` - Temario completo (fuente de verdad)
 - `content/content-structure.json` - 12 temas, 58 subtemas
 - `content/preguntas/` - Preguntas generadas (JSON)
-- `content/todotest_2700.json` - 2.700 preguntas extraidas de Todotest
+- `content/todotest_2700.json` - 2.700 preguntas extraídas de Todotest
 - `content/dgt_oficial_exam.json` - 30 preguntas del examen oficial DGT
 - `.claude/commands/generar-preguntas.md` - Skill del generador
 

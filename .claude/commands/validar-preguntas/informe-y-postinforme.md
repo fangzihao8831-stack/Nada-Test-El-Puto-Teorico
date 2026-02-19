@@ -6,13 +6,13 @@ El informe tiene 3 secciones. Usa formato ASCII para que sea legible en terminal
 
 ```
 ========================================
-INFORME DE VALIDACION
+INFORME DE VALIDACIÓN
 ========================================
 Archivo: [ruta al archivo]
 Fecha: [fecha actual]
 Total: [N] preguntas
 
-APROBADAS: [X] | RECHAZADAS: [Y] | REVISION MANUAL: [Z]
+APROBADAS: [X] | RECHAZADAS: [Y] | REVISIÓN MANUAL: [Z]
 
 ----------------------------------------
 APROBADAS ([X])
@@ -36,14 +36,14 @@ RECHAZADAS ([Y])
 [repetir para cada rechazada]
 
 ----------------------------------------
-REVISION MANUAL ([Z])
+REVISIÓN MANUAL ([Z])
 ----------------------------------------
 
 [id] - "[enunciado corto]"
   MOTIVO: [CONFLICTO DE DATOS|POSIBLE DUPLICADO|SIN COBERTURA|AMBIGUA]
   [tabla con fuentes si es conflicto de datos]
   [ambas preguntas si es posible duplicado]
-  ACCION: ¿Aprobar, rechazar, o corregir?
+  ACCIÓN: ¿Aprobar, rechazar, o corregir?
 
 [repetir para cada revisión manual]
 
@@ -58,23 +58,23 @@ REVISION MANUAL ([Z])
   | Pregunta    | —          | [lo que dice la pregunta]            |
   | Temario     | DIRECTO    | [cita exacta, línea X]               |
   |             | INDIRECTO  | [principio general, línea X]         |
-  |             | SIN MATCH  | [busqueda realizada sin resultado]    |
+  |             | SIN MATCH  | [búsqueda realizada sin resultado]    |
   | Todotest    | DIRECTO    | [pregunta #ID, respuesta X]          |
   |             | INDIRECTO  | [pregunta relacionada #ID]           |
-  |             | SIN MATCH  | [busqueda realizada sin resultado]    |
+  |             | SIN MATCH  | [búsqueda realizada sin resultado]    |
   | Claude      | —          | [lo que Claude sabe]                  |
-  | Web         | —          | [resultado si se hizo busqueda]       |
+  | Web         | —          | [resultado si se hizo búsqueda]       |
   +-------------+------------+--------------------------------------+
 ```
 
 **Regla**: Si Temario = SIN MATCH y Todotest = SIN MATCH, la columna Web es OBLIGATORIA.
-Si la Web no se consulto en ese caso, el informe es INVALIDO.
+Si la Web no se consulto en ese caso, el informe es INVÁLIDO.
 
 ---
 
 ## Interacción post-informe
 
-Despues de mostrar el informe, preguntar al usuario:
+Después de mostrar el informe, preguntar al usuario:
 
 ### 1. Preguntas aprobadas
 Guardar automáticamente con `validada: true`. No preguntar al usuario — si pasaron los 5 checks, se guardan directamente.
@@ -99,7 +99,7 @@ Clasificar las rechazadas en 2 categorías:
 - Dato incorrecto pero todas las fuentes coinciden en el valor correcto -> corregir opciones + explicación
 - Acentos faltantes -> corregir automáticamente
 - Explicación contradice la respuesta pero el dato correcto es claro -> reescribir explicación
-- Explicación correcta pero no cumple formato parrafo+bullets -> auto-rewrite al formato correcto
+- Explicación correcta pero no cumple formato párrafo+bullets -> auto-rewrite al formato correcto
 - Explicación superficial (sin conexiones, sin bullets) -> auto-rewrite con contenido pedagógico
 
 Para cada auto-corregible, usar AskUserQuestion:
@@ -110,11 +110,11 @@ Para cada auto-corregible, usar AskUserQuestion:
 **No auto-corregibles** (informar y descartar):
 - Campo faltante (ej: explicación) -> re-generar con `/generar-preguntas`
 - Duplicado -> eliminar la copia
-- Conflicto de datos sin consenso -> requiere investigacion manual
+- Conflicto de datos sin consenso -> requiere investigación manual
 
 ### 4. Guardar resultado (NO sobrescribir originales)
 
-**REGLA CRITICA: JAMAS modificar el archivo original.**
+**REGLA CRÍTICA: JAMAS modificar el archivo original.**
 Todas las correcciones (auto-correcciones, reescrituras de enunciado, cambios de explicación) se aplican SOLO en el archivo `_validated`. El archivo original queda intacto como registro de lo que se genero.
 
 **Prohibido**: Usar Edit/Write sobre el archivo original para aplicar correcciones.
