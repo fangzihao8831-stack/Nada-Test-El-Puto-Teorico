@@ -5,8 +5,19 @@ const PUBLIC_ROUTES = ["/", "/login", "/register", "/demo"];
 const AUTH_ROUTES = ["/login", "/register"];
 const ADMIN_ROUTES = ["/admin"];
 
+function isSupabaseConfigured(): boolean {
+  return !!(
+    process.env.NEXT_PUBLIC_SUPABASE_URL &&
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  );
+}
+
 export async function middleware(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request });
+
+  if (!isSupabaseConfigured()) {
+    return supabaseResponse;
+  }
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

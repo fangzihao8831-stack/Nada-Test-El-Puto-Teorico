@@ -1,12 +1,18 @@
 import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
+import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
 import { Navbar } from "@/components/navigation/Navbar";
+
+export const dynamic = "force-dynamic";
 
 export default async function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  if (!isSupabaseConfigured()) {
+    redirect("/login");
+  }
+
   const supabase = await createClient();
   const {
     data: { user },

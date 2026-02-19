@@ -18,7 +18,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
-import { createClient } from "@/lib/supabase/server";
+import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
 
 const features = [
   {
@@ -61,13 +61,15 @@ const steps = [
 ];
 
 export default async function LandingPage() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  if (isSupabaseConfigured()) {
+    const supabase = await createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
 
-  if (user) {
-    redirect("/dashboard");
+    if (user) {
+      redirect("/dashboard");
+    }
   }
 
   return (

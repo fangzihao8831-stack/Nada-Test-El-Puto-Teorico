@@ -1,12 +1,16 @@
+export const dynamic = "force-dynamic";
+
 import { Plus, ClipboardList } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PageHeader } from "@/components/shared/PageHeader";
 import { EmptyState } from "@/components/shared/EmptyState";
-import { createClient } from "@/lib/supabase/server";
+import { redirect } from "next/navigation";
+import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
 
 export default async function AdminTestsPage() {
+  if (!isSupabaseConfigured()) redirect("/login");
   const supabase = await createClient();
 
   const { data: tests } = await supabase

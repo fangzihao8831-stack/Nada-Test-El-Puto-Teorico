@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import {
   FileText,
   Users,
@@ -16,7 +18,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { createClient } from "@/lib/supabase/server";
+import { redirect } from "next/navigation";
+import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
 
 const quickLinks = [
   {
@@ -46,6 +49,7 @@ const quickLinks = [
 ];
 
 export default async function AdminPage() {
+  if (!isSupabaseConfigured()) redirect("/login");
   const supabase = await createClient();
 
   const [
