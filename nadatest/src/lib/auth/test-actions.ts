@@ -39,7 +39,7 @@ export async function saveTestResult(result: TestSessionResult) {
     return {
       test_realizado_id: testRealizado.id,
       pregunta_id: q.id,
-      respuesta_usuario: q.opciones.findIndex((o) => o.key === userAnswer),
+      respuesta_usuario: Math.max(0, q.opciones.findIndex((o) => o.key === userAnswer)),
       es_correcta: isCorrect,
     };
   });

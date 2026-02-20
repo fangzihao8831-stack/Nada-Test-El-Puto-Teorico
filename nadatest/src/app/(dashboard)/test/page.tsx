@@ -28,7 +28,7 @@ export default async function TestPage() {
     .select("id")
     .eq("activo", true)
     .limit(1)
-    .single();
+    .maybeSingle();
 
   const testId = test?.id ?? "1";
   return (
