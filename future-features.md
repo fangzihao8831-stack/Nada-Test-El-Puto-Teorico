@@ -4,48 +4,17 @@ Este documento describe funcionalidades avanzadas planificadas para fases poster
 
 ---
 
-## 1. Consulta de Notas DGT
+## Funcionalidades Completadas
 
-### Descripción
-Permitir a los usuarios consultar sus resultados de exámenes oficiales de la DGT directamente desde Nadatest.
+### Consulta de Notas DGT
+**Estado**: Implementada en `/notas-dgt`
 
-### Flujo de Usuario
-1. Usuario accede a sección "Mis Notas DGT"
-2. Se autentica con Cl@ve o Certificado Digital
-3. Sistema consulta el portal de la DGT
-4. Muestra resultados: fecha, tipo examen, resultado, fallos
-
-### Retos Técnicos
-- **No existe API pública de la DGT** - Requiere web scraping o integración no oficial
-- **Autenticación**: Necesita Cl@ve PIN, Cl@ve Permanente o Certificado Digital
-- **Sesiones**: Las sesiones de Cl@ve expiran rápidamente
-- **Cambios en el portal**: La DGT puede cambiar su web sin previo aviso
-
-### Opciones de Implementación
-
-#### Opción A: Scraping con Puppeteer/Playwright
-```
-Usuario -> Nadatest -> Headless Browser -> Portal DGT -> Scraping -> Usuario
-```
-- Pros: Control total, sin dependencias externas
-- Contras: Frágil, puede romper con cambios en DGT, zona gris legal
-
-#### Opción B: Extensión de navegador
-```
-Usuario -> Extension -> Portal DGT -> Extrae datos -> Envia a Nadatest
-```
-- Pros: Usuario controla sus datos, más transparente
-- Contras: Requiere instalación, solo funciona en desktop
-
-#### Opción C: Integración manual
-```
-Usuario -> Descarga PDF de DGT -> Sube a Nadatest -> OCR/Parser -> Datos
-```
-- Pros: Simple, legal, sin mantenimiento
-- Contras: Fricción para usuario, no automático
-
-### Recomendación
-Empezar con **Opción C** (subida manual de PDF) por ser la más segura legalmente. Evaluar opciones automatizadas cuando haya volumen de usuarios.
+La consulta de notas DGT esta integrada en la aplicacion con:
+- Formulario de consulta por NIF (`components/dgt/consulta-nota-form.tsx`)
+- Visualizacion de resultados (`components/dgt/resultado-nota.tsx`)
+- Historial de consultas (`components/dgt/historial-notas.tsx`)
+- API route en `/api/dgt/consulta-nota` para la integracion externa
+- Validacion de NIF (`lib/dgt/validate-nif.ts`)
 
 ---
 

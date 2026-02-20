@@ -219,7 +219,6 @@ Nadatest/
   requirements.md                   # Requisitos del producto
   technical.md                      # Especificacion tecnica
   content-pipeline.md               # Pipeline de contenido
-  tasks.md                          # Checklist por fases
   future-features.md                # Funcionalidades futuras
   temario_permiso_b_v3.md           # Temario completo permiso B
 
@@ -229,8 +228,6 @@ Nadatest/
       batch_01/                     # 30 preguntas validadas
       batch_02/                     # 30 preguntas validadas
       batch_03/                     # 90 preguntas validadas (3 iter)
-    generation-prompt.md            # Prompt de generacion
-    validation-prompt.md            # Prompt de validacion
 
   nadatest/                         # Aplicacion Next.js
     src/
@@ -304,5 +301,4 @@ La aplicacion funciona sin Supabase configurado (landing, demo, login/register s
 | [requirements.md](requirements.md) | MVP, UX, navegacion, sistema de tests, diseno |
 | [technical.md](technical.md) | Stack, carpetas, componentes, API, SQL schema |
 | [content-pipeline.md](content-pipeline.md) | Pipeline de skills, imagenes, formato JSON |
-| [tasks.md](tasks.md) | Tareas por fase (checklist) |
 | [future-features.md](future-features.md) | DGT integracion, monetizacion, app movil |

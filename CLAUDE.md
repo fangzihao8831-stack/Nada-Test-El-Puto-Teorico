@@ -10,7 +10,6 @@ Nadatest is a web platform for preparing the theoretical driving exam (permiso B
 - `README.md` — Project overview, content pipeline, topic index
 - `requirements.md` — Product requirements, navigation, UX specs
 - `technical.md` — Stack, folder structure, components, API endpoints, SQL schema
-- `tasks.md` — Task checklist by phase
 - `content-pipeline.md` — Content generation pipeline, skills, image strategy
 - `temario_permiso_b_v3.md` — Official driving theory content (source of truth)
 
@@ -140,10 +139,6 @@ try {
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
-
-# Auth
-NEXTAUTH_SECRET=
-NEXTAUTH_URL=http://localhost:3000
 
 # Google OAuth
 GOOGLE_CLIENT_ID=

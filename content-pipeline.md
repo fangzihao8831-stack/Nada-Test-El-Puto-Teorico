@@ -5,7 +5,7 @@
 | Nivel | Nombre | Cantidad | Visible a usuario | Ejemplo |
 |-------|--------|----------|-------------------|---------|
 | 1 | Temas | 12 | Sí (menú principal) | "Señalización" |
-| 2 | Subtemas | 50 | Interno | "Señales de prohibición" |
+| 2 | Subtemas | 58 | Interno | "Señales de prohibición" |
 | 3 | Apartados | Variable | Contenido detallado | "R-301, R-302..." |
 
 Ver `content/content-structure.json` para la estructura completa.
@@ -45,7 +45,7 @@ Cada skill es un archivo en `.claude/commands/` que el usuario invoca con `/nomb
 Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 
 ### Skill 1: Generador de Preguntas (`/generar-preguntas`)
-- **Estado**: En progreso
+- **Estado**: Funcional, en refinamiento
 - **Archivo**: `.claude/commands/generar-preguntas.md`
 - **Input**: `temario_permiso_b_v3.md`, `content/content-structure.json`
 - **Output**: JSON con preguntas, explicaciones, pistas
@@ -59,7 +59,7 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
   - `content/dgt_oficial_exam.json` — 30 preguntas del examen oficial DGT
 - Skill automatizado pendiente si se necesita en el futuro
 
-### Skill 3: Validador (pendiente)
+### Skill 3: Validador (funcional)
 - **Archivo**: `.claude/commands/validar-preguntas.md`
 - Detecta duplicados por similitud semantica contra banco existente (Todotest + generadas)
 - Verifica lógica de preguntas y datos numéricos contra temario

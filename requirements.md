@@ -9,17 +9,17 @@ Crear una plataforma moderna, intuitiva y completa que combine tests de práctic
 
 ### Contexto del Proyecto
 - **Desarrollador**: Individual (solo)
-- **Experiencia técnica**: Conocimientos basicos de HTML/CSS/JS
+- **Experiencia técnica**: Conocimientos básicos de HTML/CSS/JS
 - **Timeline**: Sin fecha fija, cuando este listo
 - **Idioma**: Español peninsular
-- **Publico objetivo**: Jovenes preparando el carnet de conducir
+- **Público objetivo**: Jóvenes preparando el carnet de conducir
 
 ---
 
 ## Alcance del MVP
 
 ### Incluido en MVP
-- Permiso B (coches) unicamente
+- Permiso B (coches) únicamente
 - Tests pre-creados (100 tests con 30 preguntas cada uno)
 - Sistema de tests con dos modos (examen y estudio)
 - Materiales de estudio (PPTs, videos)
@@ -36,13 +36,13 @@ Ver archivo `future-features.md` para funcionalidades futuras.
 ## Sistema de Usuarios
 
 ### Autenticación
-- Registro tradicional con email + contrasena
+- Registro tradicional con email + contraseña
 - Login social (Google)
-- Verificacion de email
+- Verificación de email
 
 ### Dashboard del Usuario
-El perfil mostrara:
-- **Estadisticas generales**: Tests realizados, % de aciertos global, tests aprobados/suspendidos
+El perfil mostrará:
+- **Estadísticas generales**: Tests realizados, % de aciertos global, tests aprobados/suspendidos
 - **Progreso por temas**: Rendimiento desglosado por cada tema
 - **Historial completo**: Registro de cada test realizado
 
@@ -50,19 +50,19 @@ El perfil mostrara:
 
 ## Estructura de Navegación
 
-### Menu Principal
+### Menú Principal
 ```
 [Logo NADATEST]  [Mi Objetivo]  [Progreso]  [Mis Fallos]  [Usuario]
 ```
 
-### Paginas del Sistema
+### Páginas del Sistema
 
 #### 0. Landing Page (No autenticado)
-Pagina de aterrizaje para visitantes no registrados. Objetivo: conversion (registro o prueba).
+Página de aterrizaje para visitantes no registrados. Objetivo: conversión (registro o prueba).
 
 ```
 +---------------------------------------------+
-| NADATEST                [Iniciar sesion]     |
+| NADATEST                [Iniciar sesión]     |
 +---------------------------------------------+
 |                                              |
 |   Prepara tu examen teórico                  |
@@ -71,7 +71,7 @@ Pagina de aterrizaje para visitantes no registrados. Objetivo: conversion (regis
 |   Practica con tests que simulan el formato  |
 |   real de la DGT. 30 preguntas, 30 minutos.  |
 |                                              |
-|   [EXAMEN DE PRUEBA]   [REGISTRATE]          |
+|   [EXAMEN DE PRUEBA]   [REGÍSTRATE]          |
 |    (outline/secondary)   (primary/azul)      |
 |                                              |
 +---------------------------------------------+
@@ -87,16 +87,16 @@ Pagina de aterrizaje para visitantes no registrados. Objetivo: conversion (regis
 |                                              |
 +---------------------------------------------+
 |                                              |
-|   "Como funciona"                            |
+|   "Cómo funciona"                            |
 |                                              |
-|   1. Registrate gratis                       |
+|   1. Regístrate gratis                       |
 |   2. Elige un test (100 disponibles)         |
 |   3. Practica en modo examen o estudio       |
 |   4. Revisa tus fallos y mejora              |
 |                                              |
 +---------------------------------------------+
 |                                              |
-|   Listo para empezar?                        |
+|   ¿Listo para empezar?                        |
 |   [CREAR CUENTA GRATIS]                      |
 |                                              |
 |   Basado en el temario oficial de la DGT.    |
@@ -104,7 +104,7 @@ Pagina de aterrizaje para visitantes no registrados. Objetivo: conversion (regis
 +---------------------------------------------+
 ```
 
-Movil:
+Móvil:
 ```
 +---------------------------+
 | NADATEST   [Iniciar ses.] |
@@ -117,7 +117,7 @@ Movil:
 |  Formato real de la DGT.  |
 |                           |
 |  [EXAMEN DE PRUEBA]       |
-|  [REGISTRATE]             |
+|  [REGÍSTRATE]             |
 |                           |
 +---------------------------+
 |  +---------------------+  |
@@ -133,13 +133,13 @@ Movil:
 |  | Sigue tu avance..   |  |
 |  +---------------------+  |
 +---------------------------+
-|  Como funciona             |
-|  1. Registrate gratis     |
+|  Cómo funciona             |
+|  1. Regístrate gratis     |
 |  2. Elige un test         |
 |  3. Practica              |
 |  4. Revisa fallos         |
 +---------------------------+
-|  Listo para empezar?      |
+|  ¿Listo para empezar?      |
 |  [CREAR CUENTA GRATIS]    |
 |  Temario oficial DGT.     |
 +---------------------------+
@@ -168,12 +168,12 @@ Ruta: `/dashboard`. Requiere autenticación.
 | Fallos     |  +----------+ +----------+ +----------+     |
 | Materiales |  | Tests    | | Nota     | | Racha    |     |
 |            |  | realizad.| | media    | | actual   |     |
-|            |  |    12    | |   87%    | |  7 dias  |     |
+|            |  |    12    | |   87%    | |  7 días  |     |
 |            |  | este mes | |  +5% ^   | |          |     |
 |            |  +----------+ +----------+ +----------+     |
 |            |                                             |
 |            |  +---------------------------------------+  |
-|            |  | Listo para practicar?                 |  |
+|            |  | ¿Listo para practicar?                 |  |
 |            |  | Realiza un test de 30 preguntas.      |  |
 |            |  |                    [Comenzar test ->]  |  |
 |            |  +---------------------------------------+  |
@@ -190,7 +190,7 @@ Ruta: `/dashboard`. Requiere autenticación.
 +----------------------------------------------------------+
 ```
 
-Movil:
+Móvil:
 ```
 +---------------------------+
 | [=] NADATEST     [Avatar] |
@@ -227,17 +227,17 @@ Ruta: `/login`. Sin autenticación.
 |  (fondo degradado azul)   |
 |                           |
 | +---------------------+  |
-| |  Iniciar sesion     |  |
+| |  Iniciar sesión     |  |
 | |  Accede a tu cuenta |  |
 | |                     |  |
 | |  [Correo          ]|  |
-| |  [Contrasena      ]|  |
-| |  [INICIAR SESION]  |  |
+| |  [Contraseña      ]|  |
+| |  [INICIAR SESIÓN]  |  |
 | |  ------o------     |  |
 | |  [Continuar Google]|  |
 | |                     |  |
 | |  No tienes cuenta?  |  |
-| |  Registrate         |  |
+| |  Regístrate         |  |
 | +---------------------+  |
 +---------------------------+
 ```
@@ -252,18 +252,18 @@ Ruta: `/register`. Sin autenticación.
 |                           |
 | +---------------------+  |
 | |  Crear cuenta       |  |
-| |  Registrate gratis  |  |
+| |  Regístrate gratis  |  |
 | |                     |  |
 | |  [Nombre           ]|  |
 | |  [Correo           ]|  |
-| |  [Contrasena       ]|  |
+| |  [Contraseña       ]|  |
 | |  [Confirmar        ]|  |
 | |  [CREAR CUENTA]     |  |
 | |  ------o------      |  |
 | |  [Continuar Google] |  |
 | |                     |  |
 | |  Ya tienes cuenta?  |  |
-| |  Inicia sesion      |  |
+| |  Inicia sesión      |  |
 | +---------------------+  |
 +---------------------------+
 ```
@@ -283,12 +283,12 @@ Ruta: `/objetivo`. Requiere autenticación.
 | Materiales |  | [Calendario] Fecha del examen         |  |
 |            |  | Indica cuando te presentas.           |  |
 |            |  | [____15/04/2026____]                  |  |
-|            |  | Faltan 62 dias.                       |  |
+|            |  | Faltan 62 días.                       |  |
 |            |  +---------------------------------------+  |
 |            |                                             |
 |            |  +---------------------------------------+  |
 |            |  | [Lista] Objetivo diario               |  |
-|            |  | Tests por dia: [2]                    |  |
+|            |  | Tests por día: [2]                    |  |
 |            |  | Hoy llevas 1 de 2 completados.        |  |
 |            |  +---------------------------------------+  |
 |            |                                             |
@@ -474,7 +474,7 @@ Ruta: `/admin`. Requiere admin.
 |            |  |Preg.450| |Tests 15| |Users128| |Val380| |
 |            |  +--------+ +--------+ +--------+ +------+ |
 |            |                                             |
-|            |  Accesos rapidos                            |
+|            |  Accesos rápidos                            |
 |            |  +--------+ +--------+ +--------+ +------+ |
 |            |  |Preguntas| | Tests  | |Materi.| |Users | |
 |            |  |Gestionar| |Gestio. | |Gestio.| |Gest. | |
@@ -489,7 +489,7 @@ Ruta: `/admin`. Requiere admin.
 
 ### Tests Pre-creados
 - **100 tests** preparados con 30 preguntas cada uno
-- Proporcion de temas similar al examen DGT oficial
+- Proporción de temas similar al examen DGT oficial
 - Se guardan cuales ha completado el usuario
 
 ### Modal de Selección
@@ -537,7 +537,7 @@ Ruta: `/admin`. Requiere admin.
 +------------------------------------------------------------------+
 ```
 
-### Movil
+### Móvil
 ```
 +---------------------------+
 | [Menu]  NADATEST   25:30  |
@@ -569,16 +569,16 @@ Ruta: `/admin`. Requiere admin.
 ## Diseño y UX
 
 ### Responsive Design
-- **Mobile-first**: Prioridad en experiencia movil
+- **Mobile-first**: Prioridad en experiencia móvil
 - UI adaptativa
 
 ### Especificaciones Confirmadas
 - **Colores**: Base azul (#3B82F6) + blancos + grises
 - **Esquinas**: Redondeadas (8-12px)
 - **Sombras**: Suaves, sutiles
-- **Feedback**: Verde/Rojo clasico
-- **Animaciones**: Minimas
-- **Tipografia**: Inter o Geist
+- **Feedback**: Verde/Rojo clásico
+- **Animaciones**: Mínimas
+- **Tipografía**: Inter o Geist
 - **Iconos**: Lucide o Heroicons
 
 ---
@@ -587,7 +587,6 @@ Ruta: `/admin`. Requiere admin.
 
 - `technical.md` - Stack, estructura, API, SQL, componentes
 - `content-pipeline.md` - Pipeline de contenido, skills, formato JSON
-- `tasks.md` - Tareas por fase (checklist)
 - `future-features.md` - Funcionalidades futuras
 - `content/content-structure.json` - Estructura de temas/subtemas
 - `temario_permiso_b_v3.md` - Temario completo

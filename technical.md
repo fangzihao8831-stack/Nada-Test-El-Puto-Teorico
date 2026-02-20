@@ -1,17 +1,18 @@
-# Nadatest - Especificación Técnica
+# Nadatest - Especificacion Tecnica
 
 ## Stack Tecnologico
 
 ### Frontend
-- **Framework**: Next.js 14+ con App Router
+- **Framework**: Next.js 16+ con App Router y Turbopack
 - **Lenguaje**: TypeScript
-- **Estilos**: Tailwind CSS
+- **Estilos**: Tailwind CSS v4
 - **Componentes**: shadcn/ui
 
 ### Backend
-- **API**: Next.js API Routes / Server Actions
+- **Server Actions**: Next.js Server Actions (`lib/actions/`, `lib/auth/`)
+- **Consultas de datos**: Funciones servidor (`lib/data/`)
 - **Base de datos**: Supabase (PostgreSQL)
-- **Autenticación**: NextAuth.js / Supabase Auth
+- **Autenticacion**: Supabase Auth (`@supabase/ssr`)
 
 ### Almacenamiento
 - **Imagenes**: Cloudinary
@@ -33,7 +34,7 @@
 │   │   └── register/
 │   │       └── page.tsx
 │   ├── (dashboard)/
-│   │   ├── page.tsx              # Home
+│   │   ├── page.tsx              # Home (dashboard)
 │   │   ├── objetivo/
 │   │   │   └── page.tsx
 │   │   ├── progreso/
@@ -42,9 +43,17 @@
 │   │   │   └── page.tsx
 │   │   ├── materiales/
 │   │   │   └── page.tsx
+│   │   ├── notas-dgt/
+│   │   │   └── page.tsx
 │   │   └── test/
-│   │       ├── page.tsx          # Test en progreso
+│   │       ├── page.tsx          # Seleccion de test
 │   │       └── resultado/
+│   │           └── page.tsx
+│   ├── (exam)/
+│   │   ├── demo/
+│   │   │   └── page.tsx
+│   │   └── test/
+│   │       └── [id]/
 │   │           └── page.tsx
 │   ├── admin/
 │   │   ├── page.tsx
@@ -53,49 +62,74 @@
 │   │   ├── materiales/
 │   │   └── usuarios/
 │   ├── api/
-│   │   ├── auth/
-│   │   ├── tests/
-│   │   ├── preguntas/
-│   │   ├── user/
-│   │   └── admin/
+│   │   └── dgt/
+│   │       └── consulta-nota/
+│   │           └── route.ts
 │   ├── layout.tsx
 │   └── globals.css
 ├── components/
-│   ├── ui/                       # shadcn/ui components
+│   ├── ui/                       # shadcn/ui (19 componentes)
 │   ├── test/
-│   │   ├── TestPanel.tsx
-│   │   ├── TestNavigation.tsx
-│   │   ├── QuestionCard.tsx
-│   │   ├── AnswerOptions.tsx
-│   │   ├── FeedbackPanel.tsx
-│   │   ├── Timer.tsx
-│   │   └── TestModal.tsx
+│   │   ├── TestSession.tsx
+│   │   ├── TestActiveClient.tsx
+│   │   ├── QuestionGrid.tsx
+│   │   └── ResultsView.tsx
 │   ├── navigation/
 │   │   ├── Navbar.tsx
 │   │   ├── Sidebar.tsx
 │   │   └── MobileMenu.tsx
-│   └── dashboard/
-│       ├── StatsCard.tsx
-│       ├── ProgressBar.tsx
-│       └── ThemeAccordion.tsx
+│   ├── dashboard/
+│   │   ├── StatsCard.tsx
+│   │   ├── ProgressBar.tsx
+│   │   ├── ThemeAccordion.tsx
+│   │   ├── RecentTestsList.tsx
+│   │   ├── FailedQuestionCard.tsx
+│   │   └── MaterialItem.tsx
+│   ├── dgt/
+│   │   ├── consulta-nota-form.tsx
+│   │   ├── resultado-nota.tsx
+│   │   └── historial-notas.tsx
+│   ├── objetivo/
+│   │   ├── ExamDateCard.tsx
+│   │   └── DailyGoalCard.tsx
+│   └── shared/
+│       ├── PageHeader.tsx
+│       └── EmptyState.tsx
 ├── lib/
 │   ├── supabase/
 │   │   ├── client.ts
 │   │   ├── server.ts
 │   │   └── admin.ts
-│   ├── auth.ts
+│   ├── auth/
+│   │   ├── actions.ts
+│   │   ├── schemas.ts
+│   │   └── test-actions.ts
+│   ├── actions/
+│   │   ├── admin.ts
+│   │   ├── test.ts
+│   │   └── user.ts
+│   ├── data/
+│   │   ├── content.ts
+│   │   ├── admin.ts
+│   │   ├── user.ts
+│   │   └── tests.ts
+│   ├── dgt/
+│   │   ├── validate-nif.ts
+│   │   └── consulta-nota.ts
 │   ├── utils.ts
-│   └── constants.ts
+│   ├── constants.ts
+│   ├── nav-items.ts
+│   ├── question-bank.ts
+│   ├── build-test.ts
+│   └── mock-test-data.ts
 ├── types/
 │   ├── database.ts
 │   ├── test.ts
-│   └── user.ts
+│   ├── user.ts
+│   ├── api.ts
+│   └── dgt.ts
 ├── hooks/
-│   ├── useTest.ts
-│   ├── useTimer.ts
-│   └── useProgress.ts
-├── content/
-│   └── content-structure.json
+│   └── useTimer.ts
 ├── public/
 │   ├── images/
 │   │   └── señales/              # SVGs de señales
@@ -103,8 +137,7 @@
 ├── .env.local
 ├── .env.example
 ├── package.json
-├── tailwind.config.ts
-└── next.config.js
+└── next.config.ts
 ```
 
 ---
@@ -112,83 +145,81 @@
 ## Componentes Principales
 
 ### Test
-| Componente | Descripción |
+| Componente | Descripcion |
 |------------|-------------|
-| `TestPanel` | Panel principal del test con pregunta, imagen, opciones |
-| `TestNavigation` | Grid 1-30 para saltar entre preguntas |
-| `QuestionCard` | Tarjeta con enunciado e imagen de la pregunta |
-| `AnswerOptions` | Opciones A/B/C con radio buttons |
-| `FeedbackPanel` | Panel de feedback (correcto/incorrecto + explicación) |
-| `Timer` | Temporizador de 30 minutos (modo examen) |
-| `TestModal` | Modal para seleccionar test y modo |
-| `ResultsPanel` | Pantalla de resultados con estadísticas |
+| `TestSession` | Contenedor principal del test con logica de estado |
+| `TestActiveClient` | Cliente activo del test con interaccion en tiempo real |
+| `QuestionGrid` | Grid 1-30 para navegar entre preguntas |
+| `ResultsView` | Pantalla de resultados con estadisticas |
 
 ### Dashboard
-| Componente | Descripción |
+| Componente | Descripcion |
 |------------|-------------|
-| `StatsCard` | Tarjeta con estadísticas (tests, media, etc.) |
+| `StatsCard` | Tarjeta con estadisticas (tests, media, etc.) |
 | `ProgressBar` | Barra de progreso por tema |
-| `ThemeAccordion` | Acordeón para materiales de estudio |
-| `FailedQuestionsList` | Lista de preguntas falladas |
-| `TestHistory` | Historial de tests realizados |
+| `ThemeAccordion` | Acordeon para materiales de estudio |
+| `RecentTestsList` | Historial de tests realizados |
+| `FailedQuestionCard` | Tarjeta de pregunta fallada |
+| `MaterialItem` | Elemento de material de estudio |
+
+### DGT
+| Componente | Descripcion |
+|------------|-------------|
+| `consulta-nota-form` | Formulario de consulta de nota DGT |
+| `resultado-nota` | Visualizacion del resultado de nota |
+| `historial-notas` | Historial de consultas de notas |
+
+### Objetivo
+| Componente | Descripcion |
+|------------|-------------|
+| `ExamDateCard` | Tarjeta con fecha de examen y cuenta atras |
+| `DailyGoalCard` | Tarjeta de objetivo diario de tests |
+
+### Shared
+| Componente | Descripcion |
+|------------|-------------|
+| `PageHeader` | Cabecera reutilizable de pagina |
+| `EmptyState` | Estado vacio con icono y mensaje |
 
 ### Navigation
-| Componente | Descripción |
+| Componente | Descripcion |
 |------------|-------------|
-| `Navbar` | Barra de navegación superior |
-| `Sidebar` | Menú lateral (desktop) |
-| `MobileMenu` | Menú hamburguesa (móvil) |
+| `Navbar` | Barra de navegacion superior |
+| `Sidebar` | Menu lateral (desktop) |
+| `MobileMenu` | Menu hamburguesa (movil) |
 
 ---
 
-## API Endpoints
+## API y Server Actions
 
-### Autenticación
+La aplicacion usa **Server Actions** para todas las operaciones internas. Solo existe una API Route para integracion externa.
+
+### API Route (unica)
 ```
-POST /api/auth/register     - Registro con email
-POST /api/auth/login        - Login con email
-POST /api/auth/google       - Login con Google
-POST /api/auth/logout       - Cerrar sesion
-GET  /api/auth/session      - Obtener sesion actual
+GET/POST /api/dgt/consulta-nota  - Consulta de notas en el portal DGT
 ```
 
-### Tests
-```
-GET  /api/tests                 - Lista de todos los tests
-GET  /api/tests/[id]            - Obtener test por ID
-GET  /api/tests/[id]/preguntas  - Preguntas de un test
-POST /api/tests/[id]/submit     - Enviar respuestas del test
-GET  /api/tests/next            - Siguiente test pendiente del usuario
-```
+### Server Actions (`lib/actions/`)
+| Archivo | Funciones |
+|---------|-----------|
+| `admin.ts` | Gestion de preguntas, tests, materiales, usuarios |
+| `test.ts` | Iniciar test, guardar respuestas, finalizar test |
+| `user.ts` | Actualizar perfil, objetivo, preferencias |
 
-### Usuario
-```
-GET  /api/user/profile      - Perfil del usuario
-PUT  /api/user/profile      - Actualizar perfil
-GET  /api/user/progress     - Progreso por temas
-GET  /api/user/fallos       - Preguntas falladas
-GET  /api/user/historial    - Historial de tests
-GET  /api/user/stats        - Estadisticas generales
-```
+### Auth Actions (`lib/auth/`)
+| Archivo | Funciones |
+|---------|-----------|
+| `actions.ts` | Login, registro, logout, sesion |
+| `test-actions.ts` | Verificacion de auth para tests |
+| `schemas.ts` | Validacion con Zod (login, registro) |
 
-### Contenido
-```
-GET  /api/temas             - Lista de temas
-GET  /api/temas/[id]        - Tema con subtemas
-GET  /api/materiales        - Materiales de estudio
-GET  /api/materiales/[id]   - Material especifico
-```
-
-### Admin
-```
-GET    /api/admin/preguntas         - Listar preguntas
-POST   /api/admin/preguntas         - Crear pregunta
-PUT    /api/admin/preguntas/[id]    - Actualizar pregunta
-DELETE /api/admin/preguntas/[id]    - Eliminar pregunta
-POST   /api/admin/preguntas/import  - Importar JSON masivo
-GET    /api/admin/usuarios          - Listar usuarios
-GET    /api/admin/stats             - Estadisticas admin
-```
+### Data Queries (`lib/data/`)
+| Archivo | Funciones |
+|---------|-----------|
+| `content.ts` | Temas, subtemas, materiales |
+| `admin.ts` | Consultas administrativas |
+| `user.ts` | Stats, progreso, fallos del usuario |
+| `tests.ts` | Tests disponibles, siguiente test pendiente |
 
 ---
 
@@ -234,12 +265,12 @@ CREATE TABLE preguntas (
   subtema_id TEXT REFERENCES subtemas(id) NOT NULL,
   tipo_pregunta TEXT DEFAULT 'directa', -- directa, situacional, completar, imagen, dato, trampa
   enunciado TEXT NOT NULL,
-  opciones JSONB NOT NULL,       -- ["opción A", "opción B", "opción C"]
-  correcta INTEGER NOT NULL,     -- índice de la correcta (0, 1, 2)
+  opciones JSONB NOT NULL,       -- ["opcion A", "opcion B", "opcion C"]
+  correcta INTEGER NOT NULL,     -- indice de la correcta (0, 1, 2)
   explicacion TEXT NOT NULL,
   pista TEXT,
   requiere_imagen BOOLEAN DEFAULT FALSE,
-  tipo_imagen TEXT DEFAULT 'ninguna', -- señal, situación, ninguna
+  tipo_imagen TEXT DEFAULT 'ninguna', -- señal, situacion, ninguna
   imagen_url TEXT,
   origen TEXT DEFAULT 'generada', -- generada, extraida_dgt, extraida_todotest
   validada BOOLEAN DEFAULT FALSE,
@@ -280,7 +311,7 @@ CREATE TABLE respuestas_test (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Preguntas falladas (para rápido acceso)
+-- Preguntas falladas (para rapido acceso)
 CREATE TABLE preguntas_falladas (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   usuario_id UUID REFERENCES profiles(id) NOT NULL,
@@ -318,10 +349,6 @@ CREATE INDEX idx_respuestas_test ON respuestas_test(test_realizado_id);
 NEXT_PUBLIC_SUPABASE_URL=https://xxxxx.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGci...
 SUPABASE_SERVICE_ROLE_KEY=eyJhbGci...
-
-# Auth
-NEXTAUTH_SECRET=tu-secreto-aqui
-NEXTAUTH_URL=http://localhost:3000
 
 # Google OAuth
 GOOGLE_CLIENT_ID=xxxxx.apps.googleusercontent.com
