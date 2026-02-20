@@ -45,7 +45,7 @@ function autoFormatDate(value: string): string {
 
 const consultaSchema = z.object({
   nif: z.string().min(1, "Obligatorio").refine(validateNIF, {
-    message: "NIF/NIE no valido",
+    message: "NIF/NIE no válido",
   }),
   fechaExamen: z
     .string()
@@ -119,7 +119,7 @@ export function ConsultaNotaForm({ onResult }: ConsultaNotaFormProps) {
       });
     } catch {
       setError(
-        "No se pudo conectar con el servidor. Intentalo de nuevo mas tarde."
+        "No se pudo conectar con el servidor. Inténtalo de nuevo más tarde."
       );
     } finally {
       setLoading(false);
@@ -239,7 +239,7 @@ export function ConsultaNotaForm({ onResult }: ConsultaNotaFormProps) {
       <div className="mt-4 flex items-start gap-2 text-xs leading-normal text-muted-foreground/70">
         <Info className="mt-0.5 size-3.5 shrink-0" />
         <span>
-          Disponible a las 17:00 del dia del examen, durante 15 dias. El NIF
+          Disponible a las 17:00 del día del examen, durante 15 días. El NIF
           no se almacena.
         </span>
       </div>

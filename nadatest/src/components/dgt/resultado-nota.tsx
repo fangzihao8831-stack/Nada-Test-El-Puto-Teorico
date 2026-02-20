@@ -56,7 +56,14 @@ export function ResultadoNota({ result, clasePermiso, fechaExamen }: ResultadoNo
 
   if (!result.resultado) return null;
 
-  const styles = resultStyles[result.resultado];
+  const styles = resultStyles[result.resultado as keyof typeof resultStyles];
+  if (!styles) {
+    return (
+      <div className="rounded-xl border p-5">
+        <p className="text-sm text-muted-foreground">{result.resultado}</p>
+      </div>
+    );
+  }
   const Icon = styles.icon;
 
   return (
@@ -77,13 +84,13 @@ export function ResultadoNota({ result, clasePermiso, fechaExamen }: ResultadoNo
         {result.tipoExamen && (
           <Row
             label="Tipo de prueba"
-            value={result.tipoExamen === "TEORICO" ? "Teorico comun" : "Practico"}
+            value={result.tipoExamen === "TEORICO" ? "Teórico común" : "Práctico"}
           />
         )}
         <Row label="Fecha de examen" value={fechaExamen} />
-        <Row label="Calificacion" value={result.resultado} />
+        <Row label="Calificación" value={result.resultado} />
         {result.errores !== undefined && (
-          <Row label="Numero de errores" value={String(result.errores)} />
+          <Row label="Número de errores" value={String(result.errores)} />
         )}
       </div>
     </div>

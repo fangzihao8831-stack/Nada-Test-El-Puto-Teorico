@@ -47,7 +47,7 @@ export function ExamDateCard() {
           <CardTitle className="text-base">Fecha del examen</CardTitle>
         </div>
         <CardDescription>
-          Indica cuando tienes previsto presentarte al examen teorico.
+          Indica cuándo tienes previsto presentarte al examen teórico.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -63,7 +63,7 @@ export function ExamDateCard() {
         </div>
         {daysLeft !== null && (
           <p className="mt-3 text-sm text-muted-foreground">
-            Faltan <span className="font-medium text-foreground">{daysLeft} dias</span> para tu examen.
+            Faltan <span className="font-medium text-foreground">{daysLeft} días</span> para tu examen.
           </p>
         )}
         {examDate && daysLeft === null && (

@@ -35,12 +35,12 @@ export function DailyGoalCard({ todayCount }: { todayCount: number }) {
           <CardTitle className="text-base">Objetivo diario</CardTitle>
         </div>
         <CardDescription>
-          Cuantos tests quieres hacer al dia?
+          ¿Cuántos tests quieres hacer al día?
         </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="flex items-center gap-3">
-          <span className="text-sm text-muted-foreground">Tests por dia:</span>
+          <span className="text-sm text-muted-foreground">Tests por día:</span>
           <div className="flex items-center gap-1">
             <Button
               variant="outline"

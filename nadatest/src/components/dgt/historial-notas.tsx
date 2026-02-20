@@ -5,7 +5,7 @@ import { Clock, CheckCircle, XCircle, MinusCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
-import { createClient } from "@supabase/supabase-js";
+import { createClient } from "@/lib/supabase/client";
 import type { ConsultaDGTRecord } from "@/types/dgt";
 
 function resultIcon(resultado: string | null) {
@@ -53,15 +53,8 @@ export function HistorialNotas() {
 
   useEffect(() => {
     async function fetchHistory() {
-      const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-      const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-      if (!url || !key) {
-        setLoading(false);
-        return;
-      }
-
       try {
-        const supabase = createClient(url, key);
+        const supabase = createClient();
         const { data } = await supabase
           .from("consultas_dgt")
           .select("*")

@@ -20,7 +20,10 @@ export function TestActiveClient({
 
   async function handleFinish(result: TestSessionResult) {
     if (!isDemo) {
-      await saveTestResult(result);
+      const saved = await saveTestResult(result);
+      if ("error" in saved && saved.error) {
+        console.error("Error al guardar el test:", saved.error);
+      }
     }
     router.push(isDemo ? "/demo/resultado" : "/test/resultado");
   }

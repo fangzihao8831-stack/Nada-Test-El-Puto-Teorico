@@ -29,7 +29,7 @@ export async function getUserStats(userId: string): Promise<UserStats> {
   const totalTests = tests.length;
   const totalQuestions = tests.reduce((s, t) => s + t.total_preguntas, 0);
   const totalCorrect = tests.reduce((s, t) => s + t.puntuacion, 0);
-  const averageScore = Math.round((totalCorrect / totalQuestions) * 100);
+  const averageScore = totalQuestions > 0 ? Math.round((totalCorrect / totalQuestions) * 100) : 0;
   const bestScore = Math.max(...tests.map((t) => t.puntuacion));
 
   return {
@@ -91,7 +91,7 @@ export async function getUserProgress(
     totalQuestions: stats.total,
     correctAnswers: stats.correct,
     incorrectAnswers: stats.total - stats.correct,
-    percentage: Math.round((stats.correct / stats.total) * 100),
+    percentage: stats.total > 0 ? Math.round((stats.correct / stats.total) * 100) : 0,
   }));
 }
 

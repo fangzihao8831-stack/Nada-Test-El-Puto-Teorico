@@ -15,7 +15,7 @@ export function RecentTestsList({ tests }: RecentTestsListProps) {
       <EmptyState
         icon={FileText}
         title="Sin tests realizados"
-        description="Realiza tu primer test para ver tus resultados aqui."
+        description="Realiza tu primer test para ver tus resultados aquí."
       />
     );
   }

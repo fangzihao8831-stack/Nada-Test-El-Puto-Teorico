@@ -1,4 +1,16 @@
-import { createAdminClient } from "@/lib/supabase/admin";
+import { createClient } from "@/lib/supabase/server";
+import { redirect } from "next/navigation";
+
+async function requireAdmin() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user || user.app_metadata?.role !== "admin") {
+    redirect("/login");
+  }
+  return supabase;
+}
 
 export interface AdminStats {
   totalPreguntas: number;
@@ -8,7 +20,7 @@ export interface AdminStats {
 }
 
 export async function getAdminStats(): Promise<AdminStats> {
-  const supabase = createAdminClient();
+  const supabase = await requireAdmin();
 
   const [preguntas, tests, usuarios, validadas] = await Promise.all([
     supabase.from("preguntas").select("id", { count: "exact", head: true }),
@@ -42,7 +54,7 @@ export async function getAdminPreguntas(
   }[];
   total: number;
 }> {
-  const supabase = createAdminClient();
+  const supabase = await requireAdmin();
   const from = (page - 1) * pageSize;
   const to = from + pageSize - 1;
 
@@ -56,7 +68,8 @@ export async function getAdminPreguntas(
     .range(from, to);
 
   if (search) {
-    query = query.ilike("enunciado", `%${search}%`);
+    const escaped = search.replace(/%/g, "\\%").replace(/_/g, "\\_");
+    query = query.ilike("enunciado", `%${escaped}%`);
   }
 
   const { data, count, error } = await query;
@@ -83,7 +96,7 @@ export async function getAdminTests(): Promise<
     created_at: string;
   }[]
 > {
-  const supabase = createAdminClient();
+  const supabase = await requireAdmin();
 
   const { data, error } = await supabase
     .from("tests")
@@ -111,7 +124,7 @@ export async function getAdminUsuarios(): Promise<
     totalTests: number;
   }[]
 > {
-  const supabase = createAdminClient();
+  const supabase = await requireAdmin();
 
   const [profilesResult, testsResult] = await Promise.all([
     supabase
