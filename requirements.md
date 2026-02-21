@@ -10,7 +10,7 @@ Crear una plataforma moderna, intuitiva y completa que combine tests de práctic
 ### Contexto del Proyecto
 - **Desarrollador**: Individual (solo)
 - **Experiencia técnica**: Conocimientos básicos de HTML/CSS/JS
-- **Timeline**: Sin fecha fija, cuando este listo
+- **Timeline**: Sin fecha fija, cuando esté listo
 - **Idioma**: Español peninsular
 - **Público objetivo**: Jóvenes preparando el carnet de conducir
 

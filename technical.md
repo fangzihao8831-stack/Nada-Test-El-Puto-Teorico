@@ -1,6 +1,6 @@
-# Nadatest - Especificacion Tecnica
+# Nadatest - Especificación Técnica
 
-## Stack Tecnologico
+## Stack Tecnológico
 
 ### Frontend
 - **Framework**: Next.js 16+ con App Router y Turbopack
@@ -12,14 +12,14 @@
 - **Server Actions**: Next.js Server Actions (`lib/actions/`, `lib/auth/`)
 - **Consultas de datos**: Funciones servidor (`lib/data/`)
 - **Base de datos**: Supabase (PostgreSQL)
-- **Autenticacion**: Supabase Auth (`@supabase/ssr`)
+- **Autenticación**: Supabase Auth (`@supabase/ssr`)
 
 ### Almacenamiento
-- **Imagenes**: Cloudinary
+- **Imágenes**: Cloudinary
 - **Videos**: YouTube (embebidos)
 
 ### Hosting
-- **Aplicacion**: Vercel
+- **Aplicación**: Vercel
 
 ---
 
@@ -46,7 +46,7 @@
 │   │   ├── notas-dgt/
 │   │   │   └── page.tsx
 │   │   └── test/
-│   │       ├── page.tsx          # Seleccion de test
+│   │       ├── page.tsx          # Selección de test
 │   │       └── resultado/
 │   │           └── page.tsx
 │   ├── (exam)/
@@ -145,48 +145,48 @@
 ## Componentes Principales
 
 ### Test
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
-| `TestSession` | Contenedor principal del test con logica de estado |
-| `TestActiveClient` | Cliente activo del test con interaccion en tiempo real |
+| `TestSession` | Contenedor principal del test con lógica de estado |
+| `TestActiveClient` | Cliente activo del test con interacción en tiempo real |
 | `QuestionGrid` | Grid 1-30 para navegar entre preguntas |
-| `ResultsView` | Pantalla de resultados con estadisticas |
+| `ResultsView` | Pantalla de resultados con estadísticas |
 
 ### Dashboard
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
-| `StatsCard` | Tarjeta con estadisticas (tests, media, etc.) |
+| `StatsCard` | Tarjeta con estadísticas (tests, media, etc.) |
 | `ProgressBar` | Barra de progreso por tema |
-| `ThemeAccordion` | Acordeon para materiales de estudio |
+| `ThemeAccordion` | Acordeón para materiales de estudio |
 | `RecentTestsList` | Historial de tests realizados |
 | `FailedQuestionCard` | Tarjeta de pregunta fallada |
 | `MaterialItem` | Elemento de material de estudio |
 
 ### DGT
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
 | `consulta-nota-form` | Formulario de consulta de nota DGT |
-| `resultado-nota` | Visualizacion del resultado de nota |
+| `resultado-nota` | Visualización del resultado de nota |
 | `historial-notas` | Historial de consultas de notas |
 
 ### Objetivo
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
-| `ExamDateCard` | Tarjeta con fecha de examen y cuenta atras |
+| `ExamDateCard` | Tarjeta con fecha de examen y cuenta atrás |
 | `DailyGoalCard` | Tarjeta de objetivo diario de tests |
 
 ### Shared
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
-| `PageHeader` | Cabecera reutilizable de pagina |
-| `EmptyState` | Estado vacio con icono y mensaje |
+| `PageHeader` | Cabecera reutilizable de página |
+| `EmptyState` | Estado vacío con icono y mensaje |
 
 ### Navigation
-| Componente | Descripcion |
+| Componente | Descripción |
 |------------|-------------|
-| `Navbar` | Barra de navegacion superior |
-| `Sidebar` | Menu lateral (desktop) |
-| `MobileMenu` | Menu hamburguesa (movil) |
+| `Navbar` | Barra de navegación superior |
+| `Sidebar` | Menú lateral (desktop) |
+| `MobileMenu` | Menú hamburguesa (móvil) |
 
 ---
 
@@ -194,7 +194,7 @@
 
 La aplicacion usa **Server Actions** para todas las operaciones internas. Solo existe una API Route para integracion externa.
 
-### API Route (unica)
+### API Route (única)
 ```
 GET/POST /api/dgt/consulta-nota  - Consulta de notas en el portal DGT
 ```
@@ -202,7 +202,7 @@ GET/POST /api/dgt/consulta-nota  - Consulta de notas en el portal DGT
 ### Server Actions (`lib/actions/`)
 | Archivo | Funciones |
 |---------|-----------|
-| `admin.ts` | Gestion de preguntas, tests, materiales, usuarios |
+| `admin.ts` | Gestión de preguntas, tests, materiales, usuarios |
 | `test.ts` | Iniciar test, guardar respuestas, finalizar test |
 | `user.ts` | Actualizar perfil, objetivo, preferencias |
 
@@ -263,14 +263,14 @@ CREATE TABLE subtemas (
 CREATE TABLE preguntas (
   id TEXT PRIMARY KEY,           -- pregunta_001, pregunta_002...
   subtema_id TEXT REFERENCES subtemas(id) NOT NULL,
-  tipo_pregunta TEXT DEFAULT 'directa', -- directa, situacional, completar, imagen, dato, trampa
+  tipo_pregunta TEXT DEFAULT 'directa', -- directa, situacional, completar, dato
   enunciado TEXT NOT NULL,
   opciones JSONB NOT NULL,       -- ["opcion A", "opcion B", "opcion C"]
   correcta INTEGER NOT NULL,     -- indice de la correcta (0, 1, 2)
   explicacion TEXT NOT NULL,
   pista TEXT,
   requiere_imagen BOOLEAN DEFAULT FALSE,
-  tipo_imagen TEXT DEFAULT 'ninguna', -- señal, situacion, ninguna
+  tipo_imagen TEXT DEFAULT 'ninguna', -- señal, situación, ninguna
   imagen_url TEXT,
   origen TEXT DEFAULT 'generada', -- generada, extraida_dgt, extraida_todotest
   validada BOOLEAN DEFAULT FALSE,
@@ -311,7 +311,7 @@ CREATE TABLE respuestas_test (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Preguntas falladas (para rapido acceso)
+-- Preguntas falladas (para rápido acceso)
 CREATE TABLE preguntas_falladas (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   usuario_id UUID REFERENCES profiles(id) NOT NULL,
@@ -331,7 +331,7 @@ CREATE TABLE materiales (
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
--- Indices para rendimiento
+-- Índices para rendimiento
 CREATE INDEX idx_preguntas_subtema ON preguntas(subtema_id);
 CREATE INDEX idx_tests_realizados_usuario ON tests_realizados(usuario_id);
 CREATE INDEX idx_preguntas_falladas_usuario ON preguntas_falladas(usuario_id);
@@ -354,15 +354,15 @@ SUPABASE_SERVICE_ROLE_KEY=eyJhbGci...
 GOOGLE_CLIENT_ID=xxxxx.apps.googleusercontent.com
 GOOGLE_CLIENT_SECRET=GOCSPX-xxxxx
 
-# Cloudinary (imagenes)
+# Cloudinary (imágenes)
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=tu-cloud-name
 CLOUDINARY_API_KEY=xxxxx
 CLOUDINARY_API_SECRET=xxxxx
 
-# OpenAI (para skill de imagenes)
+# OpenAI
 OPENAI_API_KEY=sk-xxxxx
 ```
 
 ---
 
-*Ultima actualizacion: Febrero 2026*
+*Última actualización: Febrero 2026*

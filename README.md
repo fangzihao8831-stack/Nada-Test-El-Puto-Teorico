@@ -1,17 +1,17 @@
-# Nadatest - El Puto Teorico
+# Nadatest - El Puto Teórico
 
-Plataforma web para preparar el examen teorico del permiso B de conducir (DGT, Espana).
+Plataforma web para preparar el examen teórico del permiso B de conducir (DGT, España).
 
 ## Stack
 
 - **Frontend**: Next.js 16 / TypeScript / Tailwind CSS v4 / shadcn/ui
 - **Backend**: Supabase (PostgreSQL + Auth + Row Level Security)
 - **Hosting**: Vercel
-- **Imagenes**: Cloudinary + Wikimedia SVGs
+- **Imágenes**: Cloudinary + Wikimedia SVGs
 
 ## Estado actual
 
-| Area | Estado |
+| Área | Estado |
 |------|--------|
 | Landing page | Completa |
 | Registro / Login | Email + Google OAuth |
@@ -25,20 +25,20 @@ Plataforma web para preparar el examen teorico del permiso B de conducir (DGT, E
 
 ## Rutas
 
-| Ruta | Auth | Descripcion |
+| Ruta | Auth | Descripción |
 |------|------|-------------|
 | `/` | No | Landing con CTAs |
 | `/login` | No | Login (email + Google) |
 | `/register` | No | Registro |
 | `/demo` | No | Test de prueba (30 preguntas) |
-| `/dashboard` | Si | Home autenticado con stats |
-| `/progreso` | Si | Progreso por tema |
-| `/fallos` | Si | Preguntas falladas |
-| `/test` | Si | Seleccionar test |
-| `/test/[id]` | Si | Test activo |
-| `/test/resultado` | Si | Resultados del test |
-| `/notas-dgt` | Si | Consulta de notas DGT |
-| `/admin/*` | Admin | Panel de administracion |
+| `/dashboard` | Sí | Home autenticado con stats |
+| `/progreso` | Sí | Progreso por tema |
+| `/fallos` | Sí | Preguntas falladas |
+| `/test` | Sí | Seleccionar test |
+| `/test/[id]` | Sí | Test activo |
+| `/test/resultado` | Sí | Resultados del test |
+| `/notas-dgt` | Sí | Consulta de notas DGT |
+| `/admin/*` | Admin | Panel de administración |
 
 ## Pipeline de contenido
 
@@ -51,7 +51,7 @@ FUENTES
   /generar-preguntas              /extraer-preguntas
   - Lee temario por tema          - Navega webs con Playwright
   - Genera preguntas con IA       - Extrae preguntas reales
-  - 6 tipos de pregunta           - Crea explicaciones propias
+  - 4 tipos de pregunta           - Crea explicaciones propias
   - Explicaciones + pistas        - Formatea al JSON estandar
   - Subagentes en paralelo
          |                               |
@@ -72,25 +72,19 @@ FUENTES
               Aprobadas    Rechazadas -> Revision manual
                     |
                     v
-              /generar-imagenes
-              Senales -> Wikimedia SVG
-              Situaciones -> DALL-E 3
-              Subida -> Cloudinary
-                    |
-                    v
               question-bank.ts -> Supabase
 ```
 
-## Tipos de preguntas (basado en 300+ preguntas reales DGT)
+## Tipos de preguntas (basado en análisis de 2.700+ preguntas reales DGT)
 
-| Tipo | Frecuencia | Ejemplo |
-|------|------------|---------|
-| Directa corta | ~25% | "Es obligatorio llevar chaleco reflectante?" |
-| Situacional | ~25% | "Circulando con lluvia intensa, enciende la antiniebla?" |
-| Completar frase | ~15% | "El efecto submarino esta relacionado con..." |
-| Con imagen | ~20% | "Que indica esta senal?" |
-| Dato concreto | ~5% | "A que distancia de una interseccion no se puede estacionar?" |
-| Trampa absolutos | ~10% | Opciones con "exclusivamente", "en ningun caso" |
+| Tipo        | Frecuencia | Ejemplo |
+|-------------|------------|---------|
+| Directa     | ~40%       | "¿Es obligatorio llevar chaleco reflectante?" |
+| Situacional | ~27%       | "Circulando con lluvia intensa, ¿enciende la antiniebla?" |
+| Completar   | ~23%       | "El efecto submarino está relacionado con..." |
+| Dato        | ~10%       | "¿A qué distancia de una intersección no se puede estacionar?" |
+
+Todas las preguntas llevan imagen. "Trampa" es una técnica transversal, no un tipo.
 
 ## Content pipeline
 
@@ -98,16 +92,16 @@ El pipeline de generacion y validacion de preguntas esta en fase de refinamiento
 
 Los skills de Claude Code (`/generar-preguntas`, `/validar-preguntas`) se estan iterando para mejorar:
 - Calidad de las explicaciones
-- Ortografia espanola (acentos, signos de interrogacion)
+- Ortografía española (acentos, signos de interrogación)
 - Variedad de tipos de pregunta
 - Precision de datos contra el temario oficial
 
-## Indice de temas (12 temas, 58 subtemas)
+## Índice de temas (12 temas, 58 subtemas)
 
 <details><summary><strong>1. El Conductor y el Permiso</strong> (3 subtemas)</summary>
 
 - El permiso de conducir
-- Documentacion
+- Documentación
 - Permiso por puntos
 </details>
 
@@ -126,12 +120,12 @@ Los skills de Claude Code (`/generar-preguntas`, `/validar-preguntas`) se estan 
 - Remolques
 </details>
 
-<details><summary><strong>4. La Via y sus Usuarios</strong> (4 subtemas)</summary>
+<details><summary><strong>4. La Vía y sus Usuarios</strong> (4 subtemas)</summary>
 
-- La via publica
+- La vía pública
 - Usuarios vulnerables
-- Nuevas senales y tipologias de via
-- Angulos muertos y visibilidad
+- Nuevas señales y tipologías de vía
+- Ángulos muertos y visibilidad
 </details>
 
 <details><summary><strong>5. Circulacion y Velocidad</strong> (4 subtemas)</summary>
@@ -151,16 +145,16 @@ Los skills de Claude Code (`/generar-preguntas`, `/validar-preguntas`) se estan 
 - Parada y estacionamiento
 </details>
 
-<details><summary><strong>7. Senalizacion</strong> (8 subtemas)</summary>
+<details><summary><strong>7. Señalización</strong> (8 subtemas)</summary>
 
 - Alumbrado
-- Senales acusticas
-- Jerarquia de senales
-- Senales de los agentes
-- Semaforos
-- Senales verticales
+- Señales acústicas
+- Jerarquía de señales
+- Señales de los agentes
+- Semáforos
+- Señales verticales
 - Marcas viales
-- Senalizacion circunstancial
+- Señalización circunstancial
 </details>
 
 <details><summary><strong>8. Situaciones Especiales</strong> (6 subtemas)</summary>
@@ -288,7 +282,7 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
 CLOUDINARY_API_KEY=
 CLOUDINARY_API_SECRET=
 
-# OpenAI (generacion de imagenes)
+# OpenAI (generación de imágenes)
 OPENAI_API_KEY=
 ```
 

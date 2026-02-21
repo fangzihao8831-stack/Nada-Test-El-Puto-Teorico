@@ -9,7 +9,7 @@ Este documento describe funcionalidades avanzadas planificadas para fases poster
 ### Consulta de Notas DGT
 **Estado**: Implementada en `/notas-dgt`
 
-La consulta de notas DGT esta integrada en la aplicacion con:
+La consulta de notas DGT está integrada en la aplicación con:
 - Formulario de consulta por NIF (`components/dgt/consulta-nota-form.tsx`)
 - Visualizacion de resultados (`components/dgt/resultado-nota.tsx`)
 - Historial de consultas (`components/dgt/historial-notas.tsx`)

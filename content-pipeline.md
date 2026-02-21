@@ -31,9 +31,6 @@ TEMARIO + WEBS
    Aprobadas        Revisión
       |
       v
-[SKILL 4: IMAGENES]
-      |
-      v
 preguntas_finales.json --> SUPABASE
 ```
 
@@ -65,28 +62,6 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 - Verifica lógica de preguntas y datos numéricos contra temario
 - Revisa que opciones usen palabras trampa correctamente
 
-### Skill 4: Generador de Imágenes (pendiente)
-- **Archivo**: `.claude/commands/generar-imagenes.md`
-- Señales SVG: ya descargadas en `content/imagenes/señales/`
-- Situaciones de tráfico: genera con DALL-E 3 vía OpenAI API
-- Claude revisa que la imagen generada sea correcta antes de guardar
-
----
-
-## Estrategia de Imágenes
-
-### Señales de tráfico
-- **Fuente**: https://commons.wikimedia.org/wiki/Road_signs_of_Spain
-- **Formato**: SVG (vectorial)
-- **Estrategia**: Batch inicial (~500 señales)
-- **Validación**: Automática por código (R-301, P-1, etc.)
-
-### Situaciones de tráfico
-- **Fuente**: DALL-E 3 API (OpenAI)
-- **Coste**: ~$0.04-0.08 por imagen
-- **Validación**: IA filtra + revisión humana para dudosas
-- **Reutilización**: Agrupar preguntas similares con misma imagen
-
 ---
 
 ## Formato JSON de Preguntas
@@ -95,7 +70,7 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 {
   "id": "pregunta_001",
   "subtema_id": "subtema_21",
-  "tipo_pregunta": "imagen",
+  "tipo_pregunta": "situacional",
   "enunciado": "¿Qué indica esta señal de tráfico?",
   "opciones": [
     "Prohibido adelantar",
@@ -135,4 +110,4 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 
 ---
 
-*Ultima actualizacion: Febrero 2026*
+*Última actualización: Febrero 2026*

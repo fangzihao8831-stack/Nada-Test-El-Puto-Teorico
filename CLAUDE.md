@@ -76,12 +76,10 @@ Questions follow the JSON format defined in `content-pipeline.md`. Six question 
 
 | Type | Key |
 |------|-----|
-| Direct short question | `directa` |
+| Direct short question     | `directa`     |
 | Situational / conditional | `situacional` |
-| Complete the sentence | `completar` |
-| Image-based (signal/situation) | `imagen` |
-| Concrete data point | `dato` |
-| Trick with absolutes | `trampa` |
+| Complete the sentence     | `completar`   |
+| Concrete data point       | `dato`        |
 
 Source of truth for all driving content: `temario_permiso_b_v3.md`
 
