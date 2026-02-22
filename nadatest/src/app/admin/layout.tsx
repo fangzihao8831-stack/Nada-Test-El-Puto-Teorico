@@ -19,6 +19,7 @@ import {
   ArrowLeft,
   Menu,
 } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const adminLinks = [
   { href: "/admin", label: "Panel", icon: LayoutDashboard },
@@ -79,8 +80,8 @@ export default function AdminLayout({
             >
               <Menu className="size-5" />
             </Button>
-            <Link href="/dashboard" className="text-lg font-bold text-primary">
-              Nadatest
+            <Link href="/dashboard">
+              <Logo size="sm" />
             </Link>
             <span className="text-sm text-muted-foreground">Admin</span>
           </div>

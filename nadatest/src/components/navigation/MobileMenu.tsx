@@ -9,6 +9,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { dashboardNavItems } from "@/lib/nav-items";
+import Logo from "@/components/Logo";
 
 interface MobileMenuProps {
   open: boolean;
@@ -22,8 +23,8 @@ export function MobileMenu({ open, onOpenChange }: MobileMenuProps) {
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent side="left" className="w-72 p-0">
         <SheetHeader className="border-b border-border px-4 py-4">
-          <SheetTitle className="text-left text-lg font-bold text-primary">
-            Nadatest
+          <SheetTitle>
+            <Logo size="sm" />
           </SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-1 p-3">

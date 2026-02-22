@@ -14,6 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { MobileMenu } from "@/components/navigation/MobileMenu";
+import Logo from "@/components/Logo";
 import { dashboardNavItems } from "@/lib/nav-items";
 import { logout } from "@/lib/auth/actions";
 import { cn } from "@/lib/utils";
@@ -42,8 +43,8 @@ export function Navbar({ user }: { user: NavUser }) {
             >
               <Menu className="size-5" />
             </Button>
-            <Link href="/dashboard" className="text-xl font-bold text-primary">
-              Nadatest
+            <Link href="/dashboard">
+              <Logo size="sm" />
             </Link>
           </div>
 

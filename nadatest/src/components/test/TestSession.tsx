@@ -18,6 +18,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { QuestionGrid } from "@/components/test/QuestionGrid";
+import Logo from "@/components/Logo";
 import { cn } from "@/lib/utils";
 import { formatTime } from "@/lib/utils";
 import { useTimer } from "@/hooks/useTimer";
@@ -397,8 +398,8 @@ export function TestSession({
       <header className="shrink-0 border-b border-border bg-card">
         <div className="flex h-11 items-center justify-between px-4 lg:px-6">
           <div className="flex items-center gap-3">
-            <Link href={logoHref} className="text-sm font-bold text-primary">
-              Nadatest
+            <Link href={logoHref}>
+              <Logo size="sm" iconOnly />
             </Link>
             <span className="hidden text-sm text-muted-foreground md:inline">
               {testTitle}

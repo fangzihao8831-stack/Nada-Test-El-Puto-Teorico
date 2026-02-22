@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/card";
 import { AnimateOnScroll } from "@/components/ui/animate-on-scroll";
 import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
+import Logo from "@/components/Logo";
 
 const features = [
   {
@@ -77,7 +78,7 @@ export default async function LandingPage() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-white/80 shadow-sm backdrop-blur-sm">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4">
-          <span className="animate-fade-in text-xl font-bold text-primary">Nadatest</span>
+          <Logo size="sm" className="animate-fade-in" />
           <Button variant="outline" size="sm" asChild>
             <Link href="/login">Iniciar sesión</Link>
           </Button>
