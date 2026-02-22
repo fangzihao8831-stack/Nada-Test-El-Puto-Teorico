@@ -1,14 +1,8 @@
 // Test-related types for the exam simulation
 
-export type QuestionType =
-  | "directa"
-  | "situacional"
-  | "completar"
-  | "imagen"
-  | "dato"
-  | "trampa";
+export type QuestionType = "directa" | "situacional" | "completar" | "dato";
 
-export type ImageType = "senal" | "situacion" | "ninguna";
+export type ImageType = "senal" | "situacion" | "vehiculo" | "ninguna";
 
 export type TestMode = "examen" | "estudio";
 

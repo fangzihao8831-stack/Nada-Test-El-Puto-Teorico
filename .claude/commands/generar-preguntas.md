@@ -27,13 +27,13 @@ Eres un experto en el examen teórico DGT del permiso B en España.
 El flujo correcto es:
 1. Lees una regla del temario (ej: "La baliza V-16 se coloca en la parte más alta del vehículo")
 2. Inventas una situación realista donde esa regla se aplica (ej: "Su vehículo sufre una avería en una autovía de noche")
-3. Preguntas que debe HACER el conductor en esa situación (ej: "¿Dónde debe colocar la baliza V-16?")
+3. Preguntas qué debe HACER el conductor en esa situación (ej: "¿Dónde debe colocar la baliza V-16?")
 
 El flujo PROHIBIDO es:
 1. Lees un dato del temario (ej: "V-16 obligatoria desde enero 2026")
 2. Conviertes ese dato en pregunta (ej: "¿Desde cuándo es obligatoria la V-16?")
 
-**La DGT nunca pregunta CUANDO ni QUE dice una norma. Pregunta que HACES tu como conductor cuando esa norma aplica.**
+**La DGT nunca pregunta CUÁNDO ni QUÉ dice una norma. Pregunta qué HACES tú como conductor cuando esa norma aplica.**
 
 Antes de escribir cada pregunta, verifica mentalmente:
 > "¿Estoy pidiendo al alumno que APLIQUE una regla en una situación, o que RECITE un dato?"
@@ -45,15 +45,15 @@ Si la respuesta es "recitar", reescribe la pregunta como escenario.
 | Dato del temario | Pregunta PROHIBIDA | Pregunta CORRECTA |
 |---|---|---|
 | V-16 obligatoria desde 2026 | ¿Desde cuándo es obligatoria la V-16? | Su vehículo se avería en una autovía. ¿Dónde debe colocar la baliza V-16? |
-| Tasa alcohol novel: 0,15 mg/l | ¿Cuál es la tasa máxima para noveles? | Usted es conductor novel y le paran en un control. ¿A partir de que tasa daría positivo? |
-| ITV cada 2 años para vehículos 4-10 años | ¿Cada cuánto pasa la ITV un turismo de 7 años? | Su turismo tiene 7 años. Le convocan para la ITV pero paso hace 18 meses. ¿Debe acudir ya? |
+| Tasa alcohol novel: 0,15 mg/l | ¿Cuál es la tasa máxima para noveles? | Usted es conductor novel y le paran en un control. ¿A partir de qué tasa daría positivo? |
+| ITV cada 2 años para vehículos 4-10 años | ¿Cada cuánto pasa la ITV un turismo de 7 años? | Su turismo tiene 7 años. Le convocan para la ITV pero pasó hace 18 meses. ¿Debe acudir ya? |
 | Permiso B autoriza motos 125cc tras 3 años | ¿Qué motos puede conducir con permiso B? | Tiene el permiso B desde hace 4 años. ¿Puede conducir una motocicleta de 125 cc por territorio nacional? |
 
-**Excepción**: Las preguntas tipo `dato` (~10%) SI preguntan datos concretos, pero siempre contextualizados en una situación práctica, nunca como trivia sobre la norma en si.
+**Excepción**: Las preguntas tipo `dato` (~10%) SÍ preguntan datos concretos, pero siempre contextualizados en una situación práctica, nunca como trivia sobre la norma en sí.
 
 ## Idioma
-- Español de España con acentos correctos (a, e, i, o, u, n)
-- Signos de interrogación de apertura (?)
+- Español de España con acentos correctos (á, é, í, ó, ú, ñ)
+- Signos de interrogación de apertura (¿)
 - Ejemplos: vehículo, circulación, señalización, kilómetros
 
 ## Fuentes de datos
@@ -63,8 +63,8 @@ Si la respuesta es "recitar", reescribe la pregunta como escenario.
 
 ## Normativa
 - Fecha actual: Febrero 2026
-- Si una norma ha cambiado recientemente, mencionar cuando en la explicación
-- Desde Feb 2026: el examen DGT incluye videos de percepción de riesgos
+- Si una norma ha cambiado recientemente, mencionar cuándo en la explicación
+- Desde Feb 2026: el examen DGT incluye vídeos de percepción de riesgos
 
 ---
 
@@ -73,13 +73,13 @@ Si la respuesta es "recitar", reescribe la pregunta como escenario.
 ### 1. Preparación
 1. Lee el temario en `temario_permiso_b_v3.md`
 2. Lee la estructura en `content/content-structure.json`
-3. Si no se específica tema, elige temas variados (no repetir el mismo)
+3. Si no se especifica tema, elige temas variados (no repetir el mismo)
 
 ### 2. Generación
-Para los tipos de pregunta, distribución, y ejemplos dificiles, consultar:
+Para los tipos de pregunta, distribución y ejemplos difíciles, consultar:
 > **Read `generar-preguntas/tipos-preguntas.md`**
 
-Para patrones de inicio de enunciado, palabras trampa, y distribución por temas:
+Para patrones de inicio de enunciado, palabras trampa y distribución por temas:
 > **Read `generar-preguntas/patrones-y-trampas.md`**
 
 Para datos numéricos exactos (velocidades, alcohol, distancias, tiempos, puntos):
@@ -116,7 +116,7 @@ Antes de incluir cada pregunta, pasar la verificación completa (autosuficiencia
 ## Pistas
 - Ayudar a razonar sin revelar la respuesta
 - No deben ser obvias ni inútiles
-- Pueden apuntar a la técnica de descarte (ej: "Fijate en las opciones con absolutos")
+- Pueden apuntar a la técnica de descarte (ej: "Fíjate en las opciones con absolutos")
 
 ## Formato de Salida JSON
 
@@ -136,6 +136,7 @@ Guardar en `content/preguntas/preguntas_[fecha].json`
       "pista": "Ayuda sutil...",
       "requiere_imagen": true,
       "tipo_imagen": "ninguna",
+      "codigo_señal": null,
       "origen": "generada",
       "validada": false
     }
@@ -143,19 +144,47 @@ Guardar en `content/preguntas/preguntas_[fecha].json`
 }
 ```
 
-## Tipos de Imagen
-- `señal`: Pregunta sobre señal de tráfico
-- `situación`: Situación de tráfico (intersección, adelantamiento, estacionamiento)
-- `vehículo`: Imagen de vehículo o parte (espejos, neumáticos, luces)
-- `ninguna`: Pregunta teórica pura
+### Campo `codigo_señal`
+- Opcional. Solo rellenar cuando `tipo_imagen` sea `"señal"`
+- El valor debe coincidir exactamente con un `codigo` del catálogo de señales: `content/imagenes/senales/catalogo.json` (235 señales con sus SVGs)
+- Ejemplo: `"codigo_señal": "R-303"` vincula la pregunta con el SVG de la señal de prohibición de giro a la izquierda
+- Si la pregunta no se refiere a una señal concreta, dejar `null`
 
-## Archivos de Referencia
+## Tipos de imagen
+- `señal`: Pregunta sobre una señal de tráfico concreta (requiere `codigo_señal`)
+- `situación`: Situación de tráfico (intersección, adelantamiento, estacionamiento)
+- `vehículo`: Imagen de vehículo o parte del mismo (espejos, neumáticos, luces)
+- `ninguna`: Pregunta teórica sin imagen asociada
+
+## Reglas para preguntas con señal
+
+### Prohibido mencionar el código de la señal en el enunciado
+El alumno verá la imagen de la señal en pantalla. El enunciado debe usar "esta señal", nunca el código.
+
+| Enunciado PROHIBIDO | Enunciado CORRECTO |
+|---|---|
+| "La señal R-303 prohíbe..." | "¿Qué prohíbe esta señal?" |
+| "¿Qué vehículos permite la señal R-103?" | "¿Qué vehículos pueden circular por una calzada señalizada con esta señal?" |
+| "Según la señal P-22, ¿qué peligro existe?" | "¿Qué peligro indica esta señal?" |
+
+### El código va en `codigo_señal`, nunca en el texto
+El campo `codigo_señal` vincula la pregunta con su SVG. Es metadato interno, no contenido visible para el alumno.
+
+### La explicación sí puede mencionar el código
+Para que un revisor pueda verificar la pregunta, la explicación debe incluir el código y el nombre de la señal.
+Ejemplo: `"explicación": "La señal R-303 (prohibición de giro a la izquierda) también prohíbe el cambio de sentido..."`
+
+### Catálogo de señales disponibles
+Antes de generar preguntas sobre señales, consultar `content/imagenes/senales/catalogo.json` para conocer las señales disponibles con sus códigos, nombres y rutas de archivo SVG.
+
+## Archivos de referencia
 - Temario: `temario_permiso_b_v3.md`
 - Estructura: `content/content-structure.json`
+- Catálogo de señales: `content/imagenes/senales/catalogo.json` (235 señales con SVGs)
 - Preguntas Todotest (referencia): `content/todotest_2700.json`
 - Examen DGT oficial (referencia): `content/dgt_oficial_exam.json`
-- Preguntas dificiles directa: `content/hardest_directa.json` (57 preguntas)
-- Preguntas dificiles situacional: `content/hardest_situacional.json` (84 preguntas)
-- Preguntas dificiles completar: `content/hardest_completar.json` (133 preguntas)
-- Preguntas dificiles dato: `content/hardest_dato.json` (457 preguntas)
+- Preguntas difíciles directa: `content/hardest_directa.json` (57 preguntas)
+- Preguntas difíciles situacional: `content/hardest_situacional.json` (84 preguntas)
+- Preguntas difíciles completar: `content/hardest_completar.json` (133 preguntas)
+- Preguntas difíciles dato: `content/hardest_dato.json` (457 preguntas)
 - Salida: `content/preguntas/`

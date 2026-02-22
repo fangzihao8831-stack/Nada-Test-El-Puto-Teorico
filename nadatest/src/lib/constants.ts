@@ -4,9 +4,7 @@ export const QUESTION_TYPES: QuestionType[] = [
   "directa",
   "situacional",
   "completar",
-  "imagen",
   "dato",
-  "trampa",
 ];
 
 export const TEST_CONFIG = {

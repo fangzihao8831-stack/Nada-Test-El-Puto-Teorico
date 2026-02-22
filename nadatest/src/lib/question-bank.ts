@@ -7,7 +7,6 @@ import type { TestQuestion } from "./mock-test-data";
 
 export interface BankQuestion extends TestQuestion {
   temaId: string;
-  tipoPregunta?: string;
 }
 
 export const questionBank: BankQuestion[] = [

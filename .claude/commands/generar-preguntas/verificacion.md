@@ -6,14 +6,15 @@ Si una pregunta cumple CUALQUIERA de estos criterios, se descarta inmediatamente
 
 | Filtro | Detecta | Ejemplo de rechazo |
 |--------|---------|-------------------|
-| **Fecha/año en enunciado** | "¿Desde cuándo...?", "¿En qué año...?", "¿A partir de que fecha...?" | "¿Desde cuándo es obligatoria la V-16?" |
-| **Pregunta sobre la norma en si** | "¿Qué dice la ley...?", "¿Qué establece el reglamento...?" | "¿Qué establece la ley sobre la V-16?" |
-| **Trivia legislativa** | Preguntas cuya respuesta es un nombre de ley, decreto, o artículo | "¿En qué reglamento se regula la ITV?" |
+| **Fecha/año en enunciado** | "¿Desde cuándo...?", "¿En qué año...?", "¿A partir de qué fecha...?" | "¿Desde cuándo es obligatoria la V-16?" |
+| **Pregunta sobre la norma en sí** | "¿Qué dice la ley...?", "¿Qué establece el reglamento...?" | "¿Qué establece la ley sobre la V-16?" |
+| **Trivia legislativa** | Preguntas cuya respuesta es un nombre de ley, decreto o artículo | "¿En qué reglamento se regula la ITV?" |
 | **Recitar definición** | "¿Qué es...?", "¿Cómo se define...?" sin contexto práctico | "¿Qué es la MMA?" (sin escenario de uso) |
-| **Coste/precio** | Preguntas sobre cuanto cuesta algo | "¿Cuánto cuesta el curso de recuperación de puntos?" |
+| **Coste/precio** | Preguntas sobre cuánto cuesta algo | "¿Cuánto cuesta el curso de recuperación de puntos?" |
 | **Estadística** | Datos estadísticos como porcentajes de accidentes | "¿Qué porcentaje de accidentes se debe al alcohol?" |
+| **Código de señal en enunciado** | El enunciado menciona R-XXX, P-XXX o S-XXX en vez de "esta señal" | "La señal R-303 prohíbe..." (ver reglas de señal en `generar-preguntas.md`) |
 
-**Patrón de detección rápida**: Si el enunciado contiene "¿Desde cuándo", "¿En qué año", "¿A partir de que fecha", "¿Qué dice", "¿Qué establece", "¿Cómo se define", "¿Qué es el/la" → RECHAZAR.
+**Patrón de detección rápida**: Si el enunciado contiene "¿Desde cuándo", "¿En qué año", "¿A partir de qué fecha", "¿Qué dice", "¿Qué establece", "¿Cómo se define", "¿Qué es el/la", o un código de señal (R-###, P-###, S-###) → RECHAZAR.
 
 **Acción tras rechazo**: Identificar la regla subyacente y reescribirla como pregunta de escenario (ver tabla de transformación en `generar-preguntas.md`).
 
@@ -23,11 +24,29 @@ Si una pregunta cumple CUALQUIERA de estos criterios, se descarta inmediatamente
 - Cada pregunta DEBE verificarse contra el temario antes de incluirla
 - Si un dato numérico no coincide con el temario, usar el temario como fuente de verdad
 - Las explicaciones deben incluir excepciones e información adicional
-- Acentos y n correctos en todo el texto
-- Fechas solo en la explicación como info adicional, NUNCA en el enunciado ni opciones
+- Acentos y ñ correctos en todo el texto (á, é, í, ó, ú, ñ, ¿, ¡)
+- Fechas solo en la explicación como información adicional, NUNCA en el enunciado ni en las opciones
 - NO generar preguntas que se responden por sentido común sin conocimiento de tráfico
 - NO generar preguntas donde la respuesta se adivina por el TONO de las opciones (ver "Anti-patrones" abajo)
 - **Cada pregunta debe pedir al alumno APLICAR una regla, no RECITAR un dato** (ver regla fundamental en `generar-preguntas.md`)
+- **Cada opción debe tener 20 palabras o menos** — la justificación va en el campo `explicación`, nunca dentro de la opción
+
+---
+
+## Checklist de acentos (OBLIGATORIO)
+
+Antes de finalizar cada pregunta, verificar que estos acentos estén correctos:
+- [ ] ¿Qué, cuándo, cuánto, dónde, cómo, cuál (interrogativos siempre con acento)
+- [ ] túnel, vía, está, sí (afirmación), vehículo, señalización, circulación
+- [ ] kilómetros, prohíbe, también, semáforo, específica (adjetivo), difícil
+- [ ] ¿Los signos de interrogación de apertura (¿) están presentes?
+- [ ] ¿La ñ está donde corresponde? (señal, España, año, daño, enseñar)
+
+---
+
+## Detección de duplicados entre batches
+
+Antes de generar preguntas, escanear las preguntas existentes en `content/preguntas/` para evitar duplicar escenarios. NO generar preguntas sobre el mismo tema que ya existe en otro batch (ej: luces en túnel, prioridad en glorieta con el mismo planteamiento).
 
 ---
 
@@ -42,7 +61,7 @@ Si la respuesta es NO, hay que añadir contexto al enunciado.
 
 **Factores que deben estar explícitos si afectan la respuesta**:
 - Número de carriles y su configuración (solo giro, combinado, etc.)
-- Tipo de via (urbana, interurbana, autopista, travesía)
+- Tipo de vía (urbana, interurbana, autopista, travesía)
 - Presencia/ausencia de señalización (semáforos, señales, marcas viales)
 - Condiciones de visibilidad o meteorológicas cuando sean relevantes
 - Posición relativa de los vehículos implicados
@@ -52,14 +71,14 @@ Si la respuesta es NO, hay que añadir contexto al enunciado.
 ```
 "Está detenido en un semáforo en rojo y el vehículo de detrás quiere girar
  con la flecha verde encendida. ¿Qué debe hacer?"
--> DEFECTUOSO: Si hay carril de giro exclusivo, el de atrás debería estar ahi.
+-> DEFECTUOSO: Si hay carril de giro exclusivo, el de atrás debería estar ahí.
    Si es carril compartido, usted podría estar obligado a girar.
 ```
 
 **Ejemplo BUENO** (contexto completo):
 ```
-"Está detenido en el carril izquierdo de una via de dos carriles por sentido.
- Su semáforo para seguir recto esta en rojo. El carril derecho tiene una flecha
+"Está detenido en el carril izquierdo de una vía de dos carriles por sentido.
+ Su semáforo para seguir recto está en rojo. El carril derecho tiene una flecha
  verde para girar a la derecha. El vehículo detrás de usted quiere girar a la
  derecha. ¿Qué debe hacer?"
 -> CORRECTO: El contexto aclara que hay dos carriles y el de giro es otro.
@@ -75,9 +94,9 @@ Todas las preguntas tienen `requiere_imagen: true`, pero el generador debe disti
 | Dependencia | Descripción | Acción |
 |-------------|-------------|--------|
 | **Suplementaria** | La imagen enriquece pero el texto basta para responder | El enunciado es autosuficiente tal cual |
-| **Esencial** | La respuesta depende de elementos visuales (layout de carriles, posición exacta, señal concreta) | El enunciado DEBE describir esos elementos explícitamente hasta que las imagenes se generen |
+| **Esencial** | La respuesta depende de elementos visuales (layout de carriles, posición exacta, señal concreta) | El enunciado DEBE describir esos elementos explícitamente hasta que las imágenes se generen |
 
-Si durante la generación se detecta que una pregunta seria de dependencia "esencial", se DEBE:
+Si durante la generación se detecta que una pregunta sería de dependencia "esencial", se DEBE:
 1. Añadir al enunciado la descripción textual del contexto visual
 2. O simplificar el escenario para que sea autosuficiente
 
@@ -88,18 +107,18 @@ Si durante la generación se detecta que una pregunta seria de dependencia "esen
 Para preguntas tipo `situacional`, verificar ANTES de incluir:
 
 1. **¿El escenario exacto aparece en el temario o todotest?**
-   - SI -> usar esa fuente como base de la pregunta
-   - NO -> la pregunta se construye por DEDUCCION. Marcarla mentalmente como "deducida"
+   - SÍ → usar esa fuente como base de la pregunta
+   - NO → la pregunta se construye por DEDUCCIÓN. Marcarla mentalmente como "deducida"
 
 2. **¿La respuesta tiene UNA sola posibilidad correcta sin importar detalles no mencionados?**
-   - SI -> pregunta válida
-   - NO -> la pregunta es AMBIGUA. Añadir contexto o descartar
+   - SÍ → pregunta válida
+   - NO → la pregunta es AMBIGUA. Añadir contexto o descartar
 
 3. **¿La combinación de reglas crea un escenario que existe en la realidad?**
-   - SI -> pregunta válida
-   - NO -> escenario artificial que puede confundir más que enseñar. Simplificar
+   - SÍ → pregunta válida
+   - NO → escenario artificial que puede confundir más que enseñar. Simplificar
 
-**Límite de complejidad**: Combinar máximo 2 reglas por pregunta. Si la combinación de 3+ reglas crea un escenario donde las fuentes primarias no lo cubren directamente, es preferible simplificar. Las preguntas más dificiles del DGT real combinan 2 reglas, no 3+.
+**Límite de complejidad**: Combinar máximo 2 reglas por pregunta. Si la combinación de 3+ reglas crea un escenario donde las fuentes primarias no lo cubren directamente, es preferible simplificar. Las preguntas más difíciles del DGT real combinan 2 reglas, no 3+.
 
 ---
 
@@ -109,10 +128,10 @@ Para preguntas tipo `situacional`, verificar ANTES de incluir:
 
 | Elemento | Descripción | Ejemplo |
 |----------|-------------|---------|
-| **Excepción a regla conocida** | La respuesta correcta contradice lo que el alumno cree saber | Animales SI pueden circular por carretera convencional |
+| **Excepción a regla conocida** | La respuesta correcta contradice lo que el alumno cree saber | Animales SÍ pueden circular por carretera convencional |
 | **Opciones muy similares** | Las 3 opciones suenan razonables, difieren en un matiz | 0,15 vs 0,25 vs 0,30 mg/l |
 | **Dato preciso confundible** | Número exacto que se confunde con otro parecido | 100m en túnel, 1,5m a ciclistas, 5m de intersección |
-| **Combinación de reglas** | Requiere aplicar 2 reglas simultaneamente (max 2) | Prioridad en glorieta + vehículo especial |
+| **Combinación de reglas** | Requiere aplicar 2 reglas simultáneamente (máx 2) | Prioridad en glorieta + vehículo especial |
 | **Respuesta contraintuitiva** | La opción que "suena bien" es incorrecta | El profesor es el conductor en autoescuela, no el alumno |
 
 ---
@@ -123,7 +142,7 @@ Estos 5 patrones hacen que las preguntas se adivinen SIN conocimiento. Son defec
 
 ### Anti-patrón 1: La correcta es siempre la más larga
 **Problema**: Si la opción correcta tiene 30+ palabras y las incorrectas tienen 10-15, cualquiera elige la larga.
-**Regla**: Las 3 opciones DEBEN tener longitud similar (diferencia máxima ~30%). Alternar: a veces la correcta es la MAS CORTA (como en el DGT real: "Sí.", "No.", "aumenta.").
+**Regla**: Las 3 opciones DEBEN tener longitud similar (diferencia máxima ~30%). Alternar: a veces la correcta es la MÁS CORTA (como en el DGT real: "Sí.", "No.", "aumenta.").
 
 Ejemplo BUENO (del DGT real):
 ```
@@ -137,13 +156,13 @@ C: "Sí." (1 palabra) ← CORRECTA
 **Problema**: Si "nunca/siempre/en ningún caso" aparecen SOLO en opciones incorrectas, el alumno descarta sin pensar.
 **Regla**: Los absolutos pueden aparecer en CUALQUIER opción. En el DGT real, "Sí" y "No" (absolutos) son frecuentemente correctos. NO segregar absolutos = incorrecto, matiz = correcto.
 
-### Anti-patrón 3: La correcta suena "mas razonable"
+### Anti-patrón 3: La correcta suena "más razonable"
 **Problema**: La correcta siempre suena prudente/equilibrada; las incorrectas suenan extremas o negligentes. Heurística: "elige la más segura" funciona siempre.
 **Regla**: Incluir preguntas donde la respuesta correcta es CONTRAINTUITIVA o suena MENOS segura. Ejemplo real: "La carga que sobresale de una motocicleta... NO es necesario señalizarla" (la opción menos segura es la correcta).
 
-### Anti-patrón 4: La correcta se explica a si misma
+### Anti-patrón 4: La correcta se explica a sí misma
 **Problema**: La opción correcta contiene justificaciones internas ("porque esa es precisamente la condición", "ya que el sistema solo informa y no sustituye").
-**Regla**: Las opciones son AFIRMACIONES ESCUETAS, no explicaciones. La justificación va en el campo `explicación`, NUNCA dentro del texto de la opción. Máximo 20 palabras por opción como objetivo (el DGT real rara vez supera 15).
+**Regla**: Las opciones son AFIRMACIONES ESCUETAS, no explicaciones. La justificación va en el campo `explicación`, NUNCA dentro del texto de la opción. **Máximo 20 palabras por opción** (el DGT real rara vez supera 15).
 
 Ejemplo MALO:
 ```
@@ -171,16 +190,19 @@ Antes de incluir cada pregunta, verificar:
 - [ ] ¿Las incorrectas tienen absolutos y la correcta no? → Si es SÍ, REDISTRIBUIR
 - [ ] ¿La correcta contiene "porque", "ya que", "precisamente"? → Si es SÍ, ELIMINAR justificación
 - [ ] ¿Las incorrectas suenan absurdas para alguien sin formación? → Si es SÍ, REESCRIBIR con errores reales
+- [ ] ¿Alguna opción supera las 20 palabras? → Si es SÍ, ACORTAR
+- [ ] ¿Todos los acentos están correctos? (ver checklist de acentos arriba)
+- [ ] ¿El enunciado menciona un código de señal (R-XXX, P-XXX)? → Si es SÍ, reemplazar por "esta señal"
 
 ### Archivos de referencia de dificultad
 Antes de generar, consultar estos archivos para calibrar el nivel de dificultad:
-- `content/hardest_directa.json` — 57 preguntas directas dificiles
-- `content/hardest_completar.json` — 133 preguntas completar dificiles
-- `content/hardest_situacional.json` — 84 preguntas situacionales dificiles
+- `content/hardest_directa.json` — 57 preguntas directas difíciles
+- `content/hardest_completar.json` — 133 preguntas completar difíciles
+- `content/hardest_situacional.json` — 84 preguntas situacionales difíciles
 - `content/hardest_dato.json` — 457 preguntas de datos numéricos confundibles
 
 ### Mezcla de dificultad por test
 Un test de 30 preguntas debe tener esta distribución aproximada:
-- **~10 faciles** (30%): Reglas básicas, respuesta clara por descarte
+- **~10 fáciles** (30%): Reglas básicas, respuesta clara por descarte
 - **~12 medias** (40%): Requieren conocimiento específico pero sin trampa
-- **~8 dificiles** (30%): Excepciones, datos confundibles, combinación de reglas
+- **~8 difíciles** (30%): Excepciones, datos confundibles, combinación de reglas

@@ -3,11 +3,12 @@
 /**
  * Reads question JSON files from content/preguntas/batch_*
  * and generates src/lib/question-bank.ts with BankQuestion entries.
+ * Also copies referenced signal SVGs to public/images/senales/.
  *
  * Usage: node scripts/generate-question-bank.mjs
  */
 
-import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, existsSync, statSync, mkdirSync, copyFileSync } from "node:fs";
 import { join, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -29,6 +30,16 @@ for (const tema of structure.temas) {
   }
 }
 
+// Load signal catalog for codigo_señal -> SVG path resolution
+const catalogoPath = join(projectRoot, "content", "imagenes", "senales", "catalogo.json");
+const senalMap = {};
+if (existsSync(catalogoPath)) {
+  const catalogo = JSON.parse(readFileSync(catalogoPath, "utf-8"));
+  for (const s of catalogo) {
+    senalMap[s.codigo] = s.archivo;
+  }
+}
+
 // Collect all question JSON files from batch directories
 const preguntasDir = join(projectRoot, "content", "preguntas");
 
@@ -46,6 +57,7 @@ const batchDirs = entries
   .sort();
 
 const allQuestions = [];
+const referencedSvgs = new Set();
 
 for (const batch of batchDirs) {
   const batchPath = join(preguntasDir, batch);
@@ -67,6 +79,16 @@ for (const batch of batchDirs) {
       const temaId = subtemaToTema[q.subtema_id] || "unknown";
       const temaName = temaNames[temaId] || "Desconocido";
 
+      // Resolve signal image: check both "codigo_señal" and "codigo_senal" keys
+      const codigoSenal = q["codigo_señal"] || q.codigo_senal || null;
+      const svgPath = codigoSenal && senalMap[codigoSenal]
+        ? `/images/senales/${senalMap[codigoSenal]}`
+        : null;
+
+      if (svgPath && codigoSenal) {
+        referencedSvgs.add(senalMap[codigoSenal]);
+      }
+
       const question = {
         id: q.id,
         number: 0,
@@ -78,7 +100,7 @@ for (const batch of batchDirs) {
         correcta: String.fromCharCode(65 + q.correcta),
         explicacion: q["explicación"] || q.explicacion || "",
         hasImage: q.requiere_imagen !== false,
-        imageSrc: null,
+        imageSrc: svgPath,
         temaId,
         tema: temaName,
       };
@@ -93,6 +115,29 @@ for (const batch of batchDirs) {
 
 // Sort by tema for readability
 allQuestions.sort((a, b) => a.temaId.localeCompare(b.temaId));
+
+// Copy referenced signal SVGs to public/images/senales/
+const senalesSourceDir = join(projectRoot, "content", "imagenes", "senales");
+const senalesDestDir = join(appRoot, "public", "images", "senales");
+
+if (referencedSvgs.size > 0) {
+  for (const svgRelPath of referencedSvgs) {
+    const srcPath = join(senalesSourceDir, svgRelPath);
+    const destPath = join(senalesDestDir, svgRelPath);
+    const destDir = dirname(destPath);
+
+    if (!existsSync(destDir)) {
+      mkdirSync(destDir, { recursive: true });
+    }
+
+    if (existsSync(srcPath)) {
+      copyFileSync(srcPath, destPath);
+    } else {
+      console.warn(`  Warning: SVG not found for ${svgRelPath}`);
+    }
+  }
+  console.log(`Copied ${referencedSvgs.size} signal SVGs to public/images/senales/`);
+}
 
 // Generate TypeScript
 const questionsJson = JSON.stringify(allQuestions, null, 2);
@@ -116,11 +161,14 @@ writeFileSync(outPath, ts);
 
 // Summary
 const byTema = {};
+let withImage = 0;
 for (const q of allQuestions) {
   byTema[q.temaId] = (byTema[q.temaId] || 0) + 1;
+  if (q.imageSrc) withImage++;
 }
 
 console.log(`Generated ${allQuestions.length} questions from ${batchDirs.length} batches`);
+console.log(`  ${withImage} with signal image, ${allQuestions.length - withImage} without`);
 console.log("Distribution by tema:");
 for (const [tema, count] of Object.entries(byTema).sort()) {
   console.log(`  ${tema}: ${count}`);
