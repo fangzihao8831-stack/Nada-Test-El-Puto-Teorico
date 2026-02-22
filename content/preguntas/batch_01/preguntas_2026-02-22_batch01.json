@@ -1,0 +1,574 @@
+{
+  "preguntas": [
+    {
+      "id": "pregunta_0001",
+      "subtema_id": "subtema_29",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Qué impone esta señal al conductor que se aproxima a la intersección?",
+      "opciones": [
+        "Detenerse completamente antes de continuar.",
+        "Ceder el paso a los vehículos que circulan por la vía preferente.",
+        "Reducir la velocidad a 30 km/h como máximo."
+      ],
+      "correcta": 1,
+      "explicación": "La señal R-1 (Ceda el paso) obliga a dejar pasar a los vehículos con prioridad, deteniéndose solo si es necesario. No impone detención en todo caso.\n\n- Opciones incorrectas: la opción A describe el comportamiento ante un Stop (R-2), que sí exige detención total siempre; la opción C inventa un límite de velocidad que esta señal no establece\n- Error común: confundir Ceda el paso con Stop; con Ceda el paso solo te detienes si hay tráfico al que ceder; con Stop la detención es siempre obligatoria\n- Conexión: si la intersección tiene señal R-2, la detención es obligatoria aunque la vía esté completamente despejada",
+      "pista": "Fíjate en si la señal obliga a detenerse siempre o solo cuando sea necesario.",
+      "requiere_imagen": true,
+      "tipo_imagen": "señal",
+      "codigo_señal": "R-1",
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0002",
+      "subtema_id": "subtema_29",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Se aproxima a una intersección señalizada con un Stop y no observa ningún vehículo en la vía preferente. ¿Qué debe hacer?",
+      "opciones": [
+        "Detenerse, observar y continuar si la vía está libre.",
+        "Continuar sin detenerse si no hay peligro.",
+        "Reducir la velocidad y cruzar con precaución."
+      ],
+      "correcta": 0,
+      "explicación": "La señal R-2 (Stop) impone detención total obligatoria, independientemente de si hay o no tráfico en la vía preferente. No basta con reducir la velocidad.\n\n- Opciones incorrectas: las opciones B y C son ilegales; el Stop no admite excepción aunque la vía esté despejada\n- Conexión: la señal R-1 (Ceda el paso) sí permite continuar sin detenerse si no hay tráfico que ceder; el Stop no admite esa interpretación\n- Error común: tratar el Stop como señal de prioridad condicional en lugar de obligación absoluta de detención",
+      "pista": "Esta señal no tiene excepciones, aunque la vía parezca libre.",
+      "requiere_imagen": true,
+      "tipo_imagen": "señal",
+      "codigo_señal": "R-2",
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0003",
+      "subtema_id": "subtema_29",
+      "tipo_pregunta": "dato",
+      "enunciado": "Circula por una carretera convencional con un turismo. ¿A qué velocidad máxima le permite circular esta señal?",
+      "opciones": [
+        "70 km/h.",
+        "80 km/h.",
+        "90 km/h."
+      ],
+      "correcta": 1,
+      "explicación": "La señal R-301-80 limita la velocidad máxima a 80 km/h. Prevalece sobre el límite genérico de 90 km/h que rige en carreteras convencionales.\n\n- Opciones incorrectas: 90 km/h es el límite genérico de carretera convencional para turismos, pero esta señal específica lo rebaja a 80; 70 km/h correspondería a un turismo con remolque pesado en carretera convencional\n- Conexión: las señales de velocidad máxima prevalecen sobre los límites genéricos; siempre aplica el valor más restrictivo\n- Dato clave: carretera convencional sin señalización → turismo 90 km/h; con esta señal → 80 km/h",
+      "pista": "La señal específica siempre prevalece sobre el límite genérico de la vía.",
+      "requiere_imagen": true,
+      "tipo_imagen": "señal",
+      "codigo_señal": "R-301-80",
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0004",
+      "subtema_id": "subtema_29",
+      "tipo_pregunta": "completar",
+      "enunciado": "Esta señal indica que la operación de adelantamiento...",
+      "opciones": [
+        "está prohibida para todos los vehículos en el tramo señalizado.",
+        "está prohibida solo para vehículos de más de 3.500 kg.",
+        "está permitida si el conductor comprueba que es seguro."
+      ],
+      "correcta": 0,
+      "explicación": "La señal R-304 (Prohibido adelantar) prohíbe adelantar a cualquier tipo de vehículo en el tramo señalizado, sin excepción por categoría ni por condiciones.\n\n- Opciones incorrectas: la prohibición afecta a todos los vehículos, no solo a los pesados; la valoración subjetiva de seguridad no crea excepciones legales\n- Conexión: la señal R-305 sí restringe únicamente a los vehículos pesados; la R-304 afecta a todos sin distinción\n- Error común: creer que la prohibición es solo para determinadas categorías de vehículos",
+      "pista": "Fíjate en que la señal no especifica ningún tipo de vehículo concreto.",
+      "requiere_imagen": true,
+      "tipo_imagen": "señal",
+      "codigo_señal": "R-304",
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0005",
+      "subtema_id": "subtema_34",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Qué indica esta señal al conductor que se aproxima?",
+      "opciones": [
+        "Hay un cruce de tranvía próximo.",
+        "Se aproxima a un paso a nivel con barreras.",
+        "Hay una intersección peligrosa con preferencia por la derecha."
+      ],
+      "correcta": 1,
+      "explicación": "La señal P-7 (triangular de peligro) indica la proximidad de un paso a nivel con barreras. El conductor debe extremar la precaución y prepararse para detenerse.\n\n- Opciones incorrectas: el cruce de tranvía se señaliza con P-6; la preferencia por la derecha en intersección con la señal P-1\n- Conexión: ante un paso a nivel con barreras nunca se cruza mientras las barreras estén bajando o en posición horizontal; la detención es obligatoria\n- Dato clave: si el vehículo se queda atrapado en el paso a nivel, debe empujarse fuera de la vía en sentido diagonal y avisar a los agentes de ferrocarril",
+      "pista": "Las señales triangulares de fondo blanco y borde rojo siempre indican peligro.",
+      "requiere_imagen": true,
+      "tipo_imagen": "señal",
+      "codigo_señal": "P-7",
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0006",
+      "subtema_id": "subtema_29",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Qué maniobra prohíbe expresamente esta señal?",
+      "opciones": [
+        "Girar a la derecha.",
+        "Cambiar el sentido de la marcha.",
+        "Adelantar a otros vehículos."
+      ],
+      "correcta": 1,
+      "explicación": "La señal R-303 prohíbe el cambio de sentido (media vuelta) en el tramo señalizado. No afecta a los giros ni al adelantamiento.\n\n- Opciones incorrectas: el giro a la derecha se prohíbe con la señal R-302; el adelantamiento con la R-304\n- Conexión: aunque esté prohibido el cambio de sentido, el adelantamiento puede o no estar prohibido; son dos señales independientes\n- Error común: confundir la prohibición de cambio de sentido con otras prohibiciones de giro",
+      "pista": "Piensa en qué maniobra supone dar la vuelta completamente.",
+      "requiere_imagen": true,
+      "tipo_imagen": "señal",
+      "codigo_señal": "R-303",
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0007",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "dato",
+      "enunciado": "Conduce un turismo con un remolque ligero de 600 kg de MMA por una autovía. ¿Cuál es su velocidad máxima?",
+      "opciones": [
+        "120 km/h.",
+        "80 km/h.",
+        "90 km/h."
+      ],
+      "correcta": 2,
+      "explicación": "Con remolque ligero (MMA ≤ 750 kg) en autopista o autovía, la velocidad máxima es 90 km/h. No se aplica el límite general de 120 km/h del turismo sin remolque.\n\n- Opciones incorrectas: 120 km/h es el límite de turismo sin remolque; 80 km/h corresponde al remolque pesado (MMA > 750 kg) en autopista o autovía\n- Dato clave: remolque ligero en autovía → 90 km/h; remolque pesado en autovía → 80 km/h; la diferencia de 10 km/h es dato muy testado\n- Conexión: en carretera convencional los límites bajan a 80 km/h (ligero) y 70 km/h (pesado)",
+      "pista": "Distingue entre remolque ligero y pesado; el límite es distinto para cada uno.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0008",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula a 85 km/h por una carretera convencional con niebla densa y visibilidad reducida a 30 metros. ¿Comete alguna infracción?",
+      "opciones": [
+        "No, porque no supera el límite genérico de 90 km/h.",
+        "Sí, por velocidad inadecuada para las condiciones de la vía.",
+        "Sí, por exceso de velocidad."
+      ],
+      "correcta": 1,
+      "explicación": "Circular a una velocidad que no permite detenerse ante un obstáculo visible es velocidad inadecuada, aunque no se supere el límite numérico. La infracción es velocidad inadecuada, no exceso de velocidad.\n\n- Opciones incorrectas: no superar el límite señalizado no exime de adaptar la velocidad a las condiciones; el exceso de velocidad se produce solo cuando se supera el límite establecido\n- Conexión: la velocidad inadecuada es una infracción independiente del exceso de velocidad y también se sanciona\n- Error común: creer que mientras no se supera el límite numérico se conduce legalmente",
+      "pista": "Hay dos infracciones distintas relacionadas con la velocidad: exceso e inadecuada.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0009",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una calle urbana señalizada como zona 30 bajo lluvia intensa. ¿Cuál es la velocidad máxima permitida?",
+      "opciones": [
+        "30 km/h.",
+        "20 km/h, porque llueve.",
+        "50 km/h."
+      ],
+      "correcta": 0,
+      "explicación": "La zona 30 limita la velocidad máxima a 30 km/h con independencia de las condiciones meteorológicas. El conductor puede y debe circular más despacio si las condiciones lo exigen, pero el límite legal sigue siendo 30 km/h.\n\n- Opciones incorrectas: la lluvia no modifica el límite establecido por la señalización; 50 km/h es el límite genérico urbano, pero la zona 30 lo restringe específicamente\n- Conexión: la velocidad inadecuada obliga a reducir por debajo del límite si las condiciones lo requieren, pero el límite legal permanece en 30 km/h\n- Dato clave: zona 30 → 30 km/h; zona 20 y áreas residenciales → 20 km/h",
+      "pista": "La señalización fija el límite máximo; las condiciones pueden obligarte a ir más despacio, no más rápido.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0010",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "completar",
+      "enunciado": "La velocidad máxima genérica para un turismo en una carretera convencional sin señalización específica de velocidad es...",
+      "opciones": [
+        "90 km/h.",
+        "100 km/h.",
+        "80 km/h."
+      ],
+      "correcta": 0,
+      "explicación": "El límite genérico para turismos en carretera convencional es 90 km/h, salvo señalización específica que lo modifique.\n\n- Opciones incorrectas: 100 km/h es el límite para algunas autovías con señalización específica, no el genérico; 80 km/h corresponde al turismo con remolque ligero en carretera convencional\n- Conexión: en autopista o autovía el límite genérico sube a 120 km/h; en zona urbana baja a 50 km/h\n- Dato clave: carretera convencional → 90 km/h; autopista/autovía → 120 km/h; urbana → 50 km/h",
+      "pista": "Piensa en el límite de la vía interurbana más habitual.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0011",
+      "subtema_id": "subtema_24",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Es obligatorio encender la luz de cruce al entrar en un túnel bien iluminado artificialmente?",
+      "opciones": [
+        "Sí, siempre.",
+        "No, solo en túneles sin iluminación artificial.",
+        "Depende de la longitud del túnel."
+      ],
+      "correcta": 0,
+      "explicación": "La luz de cruce (corta) es obligatoria en todos los túneles, independientemente de su iluminación o longitud. Es la norma sin excepciones.\n\n- Opciones incorrectas: el nivel de iluminación del túnel no afecta a esta obligación; la longitud tampoco crea excepciones\n- Conexión: también es obligatorio el uso de luces de cruce en travesías, en zonas de visibilidad reducida por lluvia o niebla intensa, y de noche en vía interurbana\n- Error común: confundir la iluminación artificial del túnel con visibilidad suficiente sin luces propias",
+      "pista": "En los túneles las luces son siempre obligatorias, sin excepciones.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0012",
+      "subtema_id": "subtema_24",
+      "tipo_pregunta": "directa",
+      "enunciado": "Circula de noche por una carretera con lluvia muy intensa y visibilidad inferior a 50 metros. ¿Puede encender la luz antiniebla trasera?",
+      "opciones": [
+        "Sí, porque la visibilidad es inferior a 50 metros.",
+        "No, la antiniebla trasera solo se usa con niebla.",
+        "Sí, siempre que llueva."
+      ],
+      "correcta": 0,
+      "explicación": "La luz antiniebla trasera se puede usar en cualquier situación de visibilidad reducida inferior a 50 metros, incluida la lluvia intensa. No es exclusiva de la niebla.\n\n- Opciones incorrectas: la opción B es la trampa más habitual; la norma no limita su uso a la niebla sino a condiciones de visibilidad reducida; la opción C sería válida solo si especificara que la visibilidad baja de 50 m\n- Conexión: usarla sin condición de visibilidad reducida es una infracción leve, ya que puede deslumbrar a los conductores que circulan detrás\n- Error común: creer que la antiniebla trasera solo es para niebla; la clave es la visibilidad, no el fenómeno meteorológico",
+      "pista": "La clave no es el tipo de condición meteorológica, sino la distancia de visibilidad.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0013",
+      "subtema_id": "subtema_43",
+      "tipo_pregunta": "dato",
+      "enunciado": "Obtiene el permiso de conducir hoy y le realizan un control de alcoholemia. ¿A partir de qué tasa en aire espirado daría positivo?",
+      "opciones": [
+        "0,25 mg/l.",
+        "0,15 mg/l.",
+        "0,30 mg/l."
+      ],
+      "correcta": 1,
+      "explicación": "Los conductores noveles (menos de 2 años de antigüedad del permiso) tienen una tasa máxima de 0,15 mg/l en aire espirado, inferior a la tasa general de 0,25 mg/l.\n\n- Opciones incorrectas: 0,25 mg/l es la tasa para conductores en general; 0,30 mg/l corresponde a la tasa en sangre para noveles, no en aire espirado\n- Conexión: la tasa reducida de 0,15 mg/l también aplica a conductores profesionales (taxi, autobús, camión, mercancías peligrosas)\n- Dato clave:\n\n| Conductor | Aire espirado | Sangre |\n|-----------|---------------|--------|\n| General | 0,25 mg/l | 0,5 g/l |\n| Novel (< 2 años) | 0,15 mg/l | 0,3 g/l |\n| Profesional | 0,15 mg/l | 0,3 g/l |",
+      "pista": "Los conductores noveles y los profesionales tienen la misma tasa reducida.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0014",
+      "subtema_id": "subtema_43",
+      "tipo_pregunta": "situacional",
+      "enunciado": "En un control de alcoholemia da 0,28 mg/l en la primera prueba y solicita la segunda. ¿Cuánto tiempo mínimo debe esperar antes de realizarla?",
+      "opciones": [
+        "5 minutos.",
+        "10 minutos.",
+        "15 minutos."
+      ],
+      "correcta": 1,
+      "explicación": "Entre la primera y la segunda prueba de alcoholemia debe transcurrir un mínimo de 10 minutos. Este tiempo está establecido reglamentariamente y no puede reducirse.\n\n- Opciones incorrectas: 5 minutos es insuficiente según la normativa; 15 minutos es la duración de un descanso recomendado en conducción, no el tiempo entre pruebas\n- Conexión: el resultado que prevalece a efectos sancionadores es el de la segunda prueba; si es inferior se aplica el más favorable al conductor\n- Error común: confundir el tiempo entre pruebas (10 min) con la parada recomendada cada 2 horas o con la espera del descanso (20-30 min)",
+      "pista": "Piensa en un tiempo corto pero suficiente para que el alcohol se estabilice.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0015",
+      "subtema_id": "subtema_19",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Llega a una intersección sin señalizar al mismo tiempo que otro vehículo que viene por su derecha. Ambos quieren seguir recto. ¿Quién tiene prioridad de paso?",
+      "opciones": [
+        "Usted, por llegar primero al cruce.",
+        "El otro vehículo, por venir por la derecha.",
+        "Ninguno; deben indicar con gestos quién pasa."
+      ],
+      "correcta": 1,
+      "explicación": "En intersecciones sin señalizar, la regla general es que tiene prioridad el vehículo que viene por la derecha. No influye quién llegó primero.\n\n- Opciones incorrectas: la llegada simultánea no determina prioridad en España; comunicarse con gestos no es una norma de circulación\n- Conexión: esta regla tiene excepciones: los vehículos en glorieta tienen prioridad sobre los que se incorporan; los vehículos en vía preferente tienen prioridad sobre los de vías secundarias\n- Error común: aplicar la regla de la derecha en glorietas, donde no aplica; en glorietas prioridad es para quien ya circula dentro",
+      "pista": "En intersecciones sin señalizar la prioridad no depende de quién llegó antes.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0016",
+      "subtema_id": "subtema_19",
+      "tipo_pregunta": "directa",
+      "enunciado": "En general, ¿quién tiene prioridad de paso en una glorieta?",
+      "opciones": [
+        "Los vehículos que se incorporan desde el exterior.",
+        "Los vehículos que ya circulan dentro de la glorieta.",
+        "El vehículo más próximo a la salida que necesita usar."
+      ],
+      "correcta": 1,
+      "explicación": "En las glorietas, los vehículos que ya circulan dentro tienen prioridad sobre los que se incorporan desde el exterior.\n\n- Opciones incorrectas: quien se incorpora cede el paso; la posición relativa dentro de la glorieta no determina prioridad\n- Conexión: en España existe señal de Ceda el paso (R-1) en todas las entradas a glorieta para recordar esta norma\n- Error común: aplicar la regla de la derecha de intersecciones (vehículo por la derecha tiene prioridad) a las glorietas, donde no aplica",
+      "pista": "En la glorieta, quien ya está dentro tiene preferencia.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0017",
+      "subtema_id": "subtema_21",
+      "tipo_pregunta": "dato",
+      "enunciado": "Circula por una carretera convencional y va a adelantar a un ciclista que circula por el arcén. ¿Cuál es la separación lateral mínima obligatoria?",
+      "opciones": [
+        "1 metro.",
+        "1,5 metros.",
+        "2 metros."
+      ],
+      "correcta": 1,
+      "explicación": "Al adelantar a ciclistas, la separación lateral mínima obligatoria es de 1,5 metros, independientemente del tipo de vía o de la velocidad.\n\n- Opciones incorrectas: 1 metro es insuficiente según la normativa; 2 metros es prudente pero la ley exige al menos 1,5 m\n- Conexión: para garantizar los 1,5 m está permitido invadir el carril contrario cruzando línea continua si la visibilidad y el tráfico lo permiten\n- Dato clave: la infracción por no respetar la distancia de 1,5 m a ciclistas supone 200 euros y 4 puntos",
+      "pista": "Es un dato muy concreto; piensa en metro y medio.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0018",
+      "subtema_id": "subtema_23",
+      "tipo_pregunta": "dato",
+      "enunciado": "¿A qué distancia mínima de una intersección está prohibido estacionar?",
+      "opciones": [
+        "3 metros.",
+        "5 metros.",
+        "10 metros."
+      ],
+      "correcta": 1,
+      "explicación": "Está prohibido estacionar a menos de 5 metros de una intersección, para garantizar la visibilidad de los conductores en el cruce.\n\n- Opciones incorrectas: 3 metros es insuficiente y no es la distancia legal; 10 metros es la distancia mínima en pasos de peatones, no en intersecciones\n- Conexión: también está prohibido estacionar a menos de 15 metros de una parada de transporte público y a menos de 5 metros de una boca de incendio\n- Dato clave: intersección → 5 m; paso de peatones → 10 m; parada de autobús o tranvía → 15 m",
+      "pista": "Es una de las tres distancias mínimas más testadas; piensa en la más pequeña de las tres.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0019",
+      "subtema_id": "subtema_23",
+      "tipo_pregunta": "directa",
+      "enunciado": "Necesita dejar a un pasajero y para en doble fila activando las luces de emergencia. ¿Comete una infracción?",
+      "opciones": [
+        "No, si no supera los 2 minutos.",
+        "Sí, la parada en doble fila siempre está prohibida.",
+        "No, si deja a alguien a cargo del vehículo."
+      ],
+      "correcta": 1,
+      "explicación": "La parada en doble fila está prohibida, independientemente del tiempo de parada, de si se activan las luces de emergencia o de si hay alguien al cargo del vehículo.\n\n- Opciones incorrectas: las luces de emergencia no autorizan maniobras prohibidas; dejar a alguien dentro del vehículo no legaliza la doble fila\n- Conexión: las luces de emergencia solo señalizan una situación especial pero no crean excepciones a las prohibiciones de parada\n- Error común: creer que las luces de emergencia permiten aparcar temporalmente donde sea",
+      "pista": "Las luces de emergencia señalizan, pero no autorizan.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0020",
+      "subtema_id": "subtema_09",
+      "tipo_pregunta": "directa",
+      "enunciado": "Circula con su hijo de 8 años y 125 cm de altura sin sistema de retención infantil. ¿Quién es responsable de la infracción?",
+      "opciones": [
+        "El menor, por no habérselo puesto.",
+        "El conductor, que debe velar por el correcto uso del SRI.",
+        "Ambos, conductor y menor, de forma compartida."
+      ],
+      "correcta": 1,
+      "explicación": "El conductor es el responsable de que los menores viajen con el sistema de retención adecuado. La multa recae sobre él, no sobre el menor ni de forma compartida.\n\n- Opciones incorrectas: los menores no tienen responsabilidad sancionadora en este aspecto; la responsabilidad es exclusiva del conductor\n- Conexión: si un adulto no lleva cinturón, la responsabilidad es del propio adulto; la distinción entre mayor y menor es fundamental para determinar el responsable\n- Dato clave: menores de 135 cm deben usar SRI homologado; multa de 200 euros y 4 puntos para el conductor infractor",
+      "pista": "Piensa en quién tiene el deber legal de velar por los ocupantes menores.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0021",
+      "subtema_id": "subtema_09",
+      "tipo_pregunta": "completar",
+      "enunciado": "El uso del sistema de retención infantil homologado es obligatorio para todos los menores de...",
+      "opciones": [
+        "135 cm de altura.",
+        "12 años de edad.",
+        "36 kg de peso."
+      ],
+      "correcta": 0,
+      "explicación": "El criterio legal en España para el uso obligatorio de SRI es la estatura: menos de 135 cm. No se basa en la edad ni en el peso directamente.\n\n- Opciones incorrectas: la normativa española usa la estatura como criterio; un niño que con 10 años mida más de 135 cm puede usar el cinturón normal; 36 kg era el criterio de los grupos R44 ya obsoletos\n- Conexión: se recomienda el SRI hasta 150 cm aunque no sea obligatorio; y se recomienda viajar en sentido contrario a la marcha el mayor tiempo posible para bebés\n- Error común: usar la edad o el peso como criterio cuando la normativa vigente exige la estatura",
+      "pista": "La ley española usa la estatura, no la edad ni el peso.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0022",
+      "subtema_id": "subtema_50",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Llega al lugar de un accidente de tráfico con vehículos accidentados en la calzada. ¿Cuál es la primera acción que debe realizar?",
+      "opciones": [
+        "Atender a los heridos y llamar al 112.",
+        "Proteger la zona señalizándola para advertir a otros conductores.",
+        "Identificar a los heridos para dar información a los servicios de emergencia."
+      ],
+      "correcta": 1,
+      "explicación": "La conducta PAS establece: primero Proteger (señalizar la zona), luego Avisar al 112, finalmente Socorrer. Sin proteger la zona primero pueden producirse nuevos atropellos.\n\n- Opciones incorrectas: atender a los heridos sin proteger antes la zona expone al rescatador a ser atropellado; identificar a los heridos es tarea de los servicios de emergencia, no del primer interviniente\n- Conexión: la señalización se realiza con chaleco reflectante (obligatorio ponérselo antes de salir del vehículo) y el dispositivo V-16 o triángulos\n- Error común: creer que atender al herido es la primera prioridad; sin proteger la zona, el rescatador puede convertirse en nueva víctima",
+      "pista": "Recuerda el acrónimo PAS: ¿cuál es la P?",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0023",
+      "subtema_id": "subtema_52",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Su vehículo sufre una avería de noche en una autopista. ¿Dónde debe colocar el dispositivo V-16?",
+      "opciones": [
+        "En el suelo detrás del vehículo, a 150 metros.",
+        "En la parte más alta del vehículo averiado.",
+        "A 50 metros por delante y 50 metros por detrás del vehículo."
+      ],
+      "correcta": 1,
+      "explicación": "El dispositivo V-16 (baliza luminosa geolocalizada, obligatoria desde enero 2026 en vías interurbanas) se coloca en la parte más alta del vehículo averiado. No va en el suelo.\n\n- Opciones incorrectas: colocarla en el suelo a 150 metros es el procedimiento de los triángulos de preseñalización, que ya no son obligatorios; la distribución a 50 metros describe otro método diferente\n- Conexión: el V-16 geolocalizado alerta automáticamente al sistema DGT 3.0 y a otros vehículos conectados; los triángulos pueden usarse voluntariamente además del V-16\n- Dato clave: el V-16 sustituye a los triángulos en vías interurbanas; sanción por no llevarlo: 200 euros",
+      "pista": "El V-16 no va en el suelo: piensa en dónde se ve mejor desde lejos.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0024",
+      "subtema_id": "subtema_46",
+      "tipo_pregunta": "completar",
+      "enunciado": "En un viaje largo, se recomienda hacer una parada de descanso como mínimo cada...",
+      "opciones": [
+        "2 horas o 200 kilómetros.",
+        "3 horas o 300 kilómetros.",
+        "1 hora o 100 kilómetros."
+      ],
+      "correcta": 0,
+      "explicación": "La recomendación es hacer una parada de descanso cada 2 horas o 200 km, con una duración de al menos 20-30 minutos para que sea efectiva.\n\n- Opciones incorrectas: 3 horas es excesivo para mantener un nivel de atención seguro; 1 hora o 100 km es más precavido pero no es el criterio estándar\n- Conexión: la fatiga es una de las principales causas de accidente en viaje largo; los síntomas incluyen microsueños, visión borrosa e irritabilidad creciente\n- Error común: confundir el criterio de la parada (2 horas) con el tiempo entre pruebas de alcoholemia (10 minutos)",
+      "pista": "Piensa en el doble de lo que parece poco y la mitad de lo que parece mucho.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0025",
+      "subtema_id": "subtema_05",
+      "tipo_pregunta": "directa",
+      "enunciado": "La ITV de su turismo obtiene calificación desfavorable. ¿Puede circular con el vehículo para ir a repararlo?",
+      "opciones": [
+        "No, debe ser trasladado en grúa.",
+        "Sí, hasta dos meses para repararlo y volver a pasar la ITV.",
+        "Sí, pero solo de día y en vías urbanas."
+      ],
+      "correcta": 1,
+      "explicación": "El resultado desfavorable (no confundir con negativo) permite circular durante un plazo de dos meses para subsanar los defectos y pasar de nuevo la inspección.\n\n- Opciones incorrectas: la inmovilización y el traslado en grúa corresponden al resultado NEGATIVO, no al desfavorable; no existen restricciones de horario o tipo de vía para el resultado desfavorable\n- Conexión: los cuatro resultados posibles de la ITV son Favorable, Favorable con defectos leves, Desfavorable y Negativo; solo el Negativo prohíbe circular\n- Error común: confundir los resultados desfavorable y negativo; el primero permite circular con plazo, el segundo no",
+      "pista": "Hay cuatro resultados posibles de la ITV; solo uno prohíbe circular totalmente.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0026",
+      "subtema_id": "subtema_32",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Pueden los ciclistas circular por una autopista?",
+      "opciones": [
+        "Sí, solo por el arcén derecho.",
+        "No, los ciclistas tienen prohibida la circulación por autopistas.",
+        "Sí, si llevan casco y chaleco reflectante."
+      ],
+      "correcta": 1,
+      "explicación": "Los ciclistas tienen expresamente prohibida la circulación por autopistas y autovías. No existe ninguna excepción por equipamiento de seguridad.\n\n- Opciones incorrectas: no hay excepción por equipamiento; circular por el arcén tampoco está permitido para ciclistas en autopista\n- Conexión: los ciclistas mayores de 14 años SÍ pueden circular por los arcenes de las autovías; la distinción autopista/autovía en este punto es muy testada\n- Error común: confundir autopista y autovía; en autovía los ciclistas pueden usar el arcén, en autopista no está permitido en ningún caso",
+      "pista": "Distingue bien entre autopista y autovía; las reglas para ciclistas son distintas.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0027",
+      "subtema_id": "subtema_33",
+      "tipo_pregunta": "dato",
+      "enunciado": "Circula por un túnel en condiciones normales de tráfico. ¿Cuál es la distancia de seguridad mínima recomendada?",
+      "opciones": [
+        "50 metros.",
+        "100 metros.",
+        "150 metros."
+      ],
+      "correcta": 1,
+      "explicación": "En los túneles la distancia de seguridad recomendada es de 100 metros, superior a la habitual en carretera convencional.\n\n- Opciones incorrectas: 50 metros es insuficiente para las condiciones del túnel; 150 metros es la distancia a la que se colocan los triángulos de preseñalización en autopista, no la distancia en túnel\n- Conexión: en caso de retención en el túnel, se debe parar manteniendo esa distancia mínima, encender luces cortas y no apagar el motor salvo en retenciones muy prolongadas\n- Dato clave: 100 m en túnel; 150 m para triángulos de preseñalización en autopista o autovía",
+      "pista": "En el túnel la distancia de seguridad es mayor que en condiciones normales.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0028",
+      "subtema_id": "subtema_01",
+      "tipo_pregunta": "completar",
+      "enunciado": "Con el permiso B, el conductor puede conducir una motocicleta de 125 cc en España si ha transcurrido un mínimo de...",
+      "opciones": [
+        "3 años desde la obtención del permiso B.",
+        "2 años desde la obtención del permiso B.",
+        "5 años desde la obtención del permiso B."
+      ],
+      "correcta": 0,
+      "explicación": "El permiso B habilita para conducir motocicletas de hasta 125 cc y 11 kW en territorio español si el titular lleva al menos 3 años con el permiso.\n\n- Opciones incorrectas: 2 años es el período novel, no el requisito para motos 125 cc; 5 años es excesivo y no existe como requisito\n- Conexión: esta habilitación es válida SOLO en España; en otros países de la UE se necesita el permiso A1 independientemente de los años con permiso B\n- Dato clave: desde 2025, quienes cumplan los 3 años deben además completar un curso de formación obligatorio (parte teórica y práctica)",
+      "pista": "No son los mismos años que el período novel.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0029",
+      "subtema_id": "subtema_09",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Su hijo lactante viaja en un SRI en sentido contrario a la marcha en el asiento del copiloto, que tiene el airbag frontal activo. ¿Qué riesgo principal existe?",
+      "opciones": [
+        "Ninguno; el airbag no afecta a los SRI homologados.",
+        "El airbag puede causar lesiones graves o mortales al bebé en una colisión.",
+        "El airbag puede dañar el SRI pero no al bebé directamente."
+      ],
+      "correcta": 1,
+      "explicación": "Está prohibido colocar un SRI en sentido contrario a la marcha en un asiento con airbag frontal activo. En una colisión, el airbag se despliega hacia la cabeza del bebé y puede causar lesiones mortales.\n\n- Opciones incorrectas: la homologación del SRI no anula el peligro del airbag; el airbag afecta directamente al bebé, no solo al SRI\n- Conexión: si el airbag del copiloto no puede desactivarse, el SRI en sentido contrario debe instalarse obligatoriamente en un asiento trasero\n- Error común: creer que el SRI homologado protege al bebé de cualquier riesgo, incluido el del airbag",
+      "pista": "Piensa en la dirección en que se despliega el airbag y dónde quedaría la cabeza del bebé.",
+      "requiere_imagen": true,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0030",
+      "subtema_id": "subtema_30",
+      "tipo_pregunta": "directa",
+      "enunciado": "Circula por una carretera con línea longitudinal continua y va a adelantar a un ciclista en el arcén. ¿Puede invadir el carril contrario para garantizar la distancia de 1,5 metros?",
+      "opciones": [
+        "No, la línea continua no puede cruzarse en ninguna circunstancia.",
+        "Sí, para garantizar los 1,5 m al ciclista se permite cruzar la línea continua.",
+        "Sí, pero solo si el ciclista ocupa el carril de circulación principal."
+      ],
+      "correcta": 1,
+      "explicación": "Para garantizar la separación lateral mínima de 1,5 metros al adelantar a ciclistas, el Reglamento General de Circulación permite invadir el carril contrario cruzando la línea continua, siempre que la visibilidad y el tráfico lo permitan.\n\n- Opciones incorrectas: la opción A es el error más común; la línea continua sí puede cruzarse en este caso específico; la opción C impone una condición que la norma no exige\n- Conexión: esta excepción específica para ciclistas fue introducida para mejorar su seguridad vial; el adelantamiento a ciclistas tiene reglas propias que difieren del adelantamiento general\n- Error común: aplicar la regla general de no cruzar jamás la línea continua sin conocer esta excepción para ciclistas",
+      "pista": "Hay excepciones a la regla de no cruzar la línea continua; los ciclistas son una de ellas.",
+      "requiere_imagen": true,
+      "tipo_imagen": "situacion",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    }
+  ]
+}
