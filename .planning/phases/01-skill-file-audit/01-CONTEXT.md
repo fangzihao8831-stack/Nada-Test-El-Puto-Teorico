@@ -1,93 +1,162 @@
-# Phase 1: Skill File Audit - Context
+# Fase 1: Auditoría de Skill Files - Contexto
 
-**Gathered:** 2026-02-23
-**Status:** Ready for planning
+**Recopilado:** 2026-02-23
+**Estado:** Listo para planificación
 
 <domain>
-## Phase Boundary
+## Límite de la Fase
 
-Audit and improve all skill files that influence generation quality. Covers:
-- Numerical data references (`datos-numericos.md`, `datos-referencia.md`) — correct against official temario, add citations
-- Generation instruction files (`tipos-preguntas.md`, `patrones-y-trampas.md`, `verificacion.md`, `explicaciones.md`) — rewrite where needed
-- New per-type skill files — create `dato.md`, `directo.md`, `completar.md`, `situacional.md` with difficulty tiers and examples
+Auditar y mejorar todos los skill files que influyen en la calidad de generación. Incluye:
+- Referencias de datos numéricos (`datos-numericos.md`, `datos-referencia.md`) — corregir contra el temario oficial, añadir citas
+- Archivos de instrucciones de generación (`tipos-preguntas.md`, `patrones-y-trampas.md`, `verificacion.md`, `explicaciones.md`) — reescribir donde sea necesario
+- Nuevos skill files por tipo — crear `dato.md`, `directo.md`, `completar.md`, `situacional.md` con niveles de dificultad y ejemplos de referencia
 
-Building new question-generation workflows, image-aware question reformatting, and validator changes are out of scope (Phase 2).
+Fuera de alcance: nuevos flujos de generación, reformateado de preguntas con imagen, cambios en el validador (Fase 2).
 
 </domain>
 
 <decisions>
-## Implementation Decisions
+## Decisiones de Implementación
 
-### Skill file improvement depth
-- Full rewrite is allowed — no restrictions on restructuring any section or file
-- All 4 existing generation instruction files reviewed with equal depth (tipos-preguntas.md, patrones-y-trampas.md, verificacion.md, explicaciones.md)
-- Quality bar: mirror real DGT exam style (tone, phrasing, difficulty distribution)
-- Official DGT exams use exactly **3 answer options** (A, B, C) — all examples must match this
+### Profundidad de mejora de skill files
+- Reescritura completa permitida — sin restricciones para reestructurar cualquier sección o archivo
+- Los 4 archivos de instrucciones existentes se revisan con igual profundidad
+- Barra de calidad: imitar el estilo real del examen DGT (tono, redacción, distribución de dificultad de la base de 2700 preguntas)
+- Los exámenes DGT oficiales usan exactamente **3 opciones de respuesta (A, B, C)** — todas las reglas y ejemplos deben reflejar esto
 
-### New per-type skill files
-- Create 4 new files under the generation skill: `dato.md`, `directo.md`, `completar.md`, `situacional.md`
-- Each file documents the type definition, difficulty tiers, and reference examples
-- Reference examples inside these files must be **generated using the /generar-preguntas skill** — not handcrafted. This ensures examples reflect the actual generation quality and style, not synthetic ones
+### Nuevos skill files por tipo de pregunta
+- Crear 4 nuevos archivos bajo el skill de generación: `dato.md`, `directo.md`, `completar.md`, `situacional.md`
+- Cada archivo documenta: definición del tipo, niveles de dificultad con ejemplos concretos, reglas de distractores por nivel
+- Los ejemplos de referencia dentro de estos archivos deben generarse usando el skill `/generar-preguntas` — no hacerlos a mano
 
-### Difficulty tiers (all 4 question types)
-3 tiers across all types. Core progression rule: **higher tier = wrong answers are more plausible** (harder to dismiss without knowing the rule).
+### Niveles de dificultad
+**DATO, DIRECTO, COMPLETAR — 3 niveles:**
 
-| Tier | General definition |
-|------|--------------------|
-| 1 — Easy | Single condition or fact. Distractors are clearly wrong to anyone with basic knowledge. |
-| 2 — Medium | Two conditions combined, or a specific threshold/exception. One distractor is plausible to a careless reader. |
-| 3 — Hard | Multiple rules combined, or an exception to a common rule. All distractors are plausible without knowing the exact rule. |
+| Nivel | Etiqueta | Definición |
+|-------|----------|------------|
+| 1 | Fácil | Un único hecho o regla. Los distractores son claramente de otro contexto. |
+| 2 | Medio | Requiere conocer un umbral específico, excepción, o condición combinada. Un distractor es plausible para un lector descuidado. |
+| 3 | Difícil | Todos los distractores son valores/reglas reales del temario aplicados a una condición ligeramente distinta. No deducible por eliminación. |
 
-**Situacional focus** — priority question type for improvement. Additional rules for situacional:
-- Scenarios must include concrete details: road type, speed, weather/conditions, other vehicles present, time of day where relevant
-- Complexity scales with tier: Tier 1 has one variable, Tier 2 combines two conditions, Tier 3 requires applying multiple rules or resolving ambiguity
+**SITUACIONAL — 4 niveles:**
 
-### Self-check rules (verificacion.md)
-- Factual accuracy check: Before keeping a question, must identify the specific temario section (tema_XX.md) that confirms the correct answer
-- Cross-knowledge check: If the correct answer contradicts Claude's general knowledge → **FLAG** the question for human review. Temario is the authoritative source for the exam; disagreement signals a potential error in either the temario or the question
-- Distractor quality check: At Tier 2+, no distractor should be dismissible by common sense alone — each must require rule knowledge to rule out
+| Nivel | Etiqueta | Definición |
+|-------|----------|------------|
+| 1 | Fácil | 1 variable, aplicación clara de una regla. |
+| 2 | Medio | 2 condiciones combinadas. Un distractor activa el instinto equivocado. |
+| 3 | Difícil | Excepción a una regla conocida, o conflicto de reglas. Las 3 respuestas son plausibles sin dominar la norma. |
+| 4 | Muy Difícil | Dos reglas parecen entrar en conflicto directo. El alumno debe saber cuál prevalece. Todas las opciones son muy plausibles. |
 
-### Citation format (datos-numericos.md)
-- Inline parenthetical references: `(tema_05.md)` appended after each value
-- For values that span multiple sections: `(tema_04.md, tema_05.md)`
-- Claude's discretion on exact placement (end of row, end of bullet, etc.)
+Principio central en todos los tipos: **mayor nivel = distractores más plausibles**. En Nivel 3+, un alumno que no conozca la regla exacta no puede eliminar ninguna opción por lógica.
 
-### Discrepancy handling during audit (plans 01-01 and 01-02)
-- Fix discrepancies in-place during the audit pass (single-pass, not separate log + fix)
-- Each corrected value gets a citation added at the same time
-- Claude's discretion on how to structure the audit report for human review
+### Reglas de calidad para situacional
+- Los escenarios deben incluir detalles concretos: tipo de vía, velocidad, condiciones meteorológicas, otros vehículos presentes, hora del día cuando sea relevante
+- La complejidad escala con el nivel: Nivel 1 = 1 variable; Nivel 2 = 2 combinadas; Nivel 3 = excepción o multi-regla; Nivel 4 = reglas en conflicto
+- Foco principal: situacional es el tipo de pregunta más débil en la generación actual
 
-### datos-referencia.md sync strategy (plan 01-03)
-- Does not need to be structurally identical to datos-numericos.md
-- Can be a simplified subset — include only values that validators actively use when checking answers
-- Must not contradict datos-numericos.md on any value that appears in both files
+### Nuevas reglas a añadir en verificacion.md
+- **Verificación de exactitud factual**: antes de conservar una pregunta, identificar la sección específica del temario (tema_XX.md) que confirma la respuesta correcta
+- **Verificación cruzada con conocimiento de Claude**: si la respuesta correcta contradice el conocimiento general de Claude → marcar FLAG para revisión humana (el temario es la autoridad del examen; la contradicción señala un posible error)
+- **Verificación de secuencia en distractores** (NUEVO — descubierto durante la discusión): para preguntas de tipo dato sobre velocidades o distancias, las 3 opciones NO deben formar una secuencia monotónica de la misma fila de la tabla. Ejemplo de patrón PROHIBIDO: 80/90/100 para una pregunta de velocidad con remolque — el alumno elige el valor del medio sin saber la norma. Corrección: usar valores de DISTINTAS condiciones del mismo escenario (diferente peso del vehículo, diferente tipo de vía) para que cada opción requiera conocimiento específico de la regla.
 
-### Claude's Discretion
-- Exact citation placement within each line in datos-numericos.md
-- Whether to add section headers or restructure datos-numericos.md beyond corrections
-- Audit report format for plan 01-01 findings
-- Which values to include vs. omit in the simplified datos-referencia.md
+### Formato de citas (datos-numericos.md)
+- Referencias parentéticas inline: `(tema_05.md)` añadido tras cada valor
+- Para valores que abarcan varias secciones: `(tema_04.md, tema_05.md)`
+- A criterio de Claude la colocación exacta dentro de cada fila
+
+### Gestión de discrepancias durante la auditoría
+- Corregir en el mismo pase (auditoría + corrección en un solo paso — sin archivo de log separado)
+- Cada valor corregido recibe su cita en el mismo momento
+
+### Estrategia de sincronización de datos-referencia.md
+- Puede ser un subconjunto simplificado de datos-numericos.md (no necesariamente idéntico en estructura)
+- Incluir solo los valores que el validador usa activamente al comprobar respuestas
+- No debe contradecir datos-numericos.md en ningún valor compartido
+
+### A criterio de Claude
+- Colocación exacta de las citas dentro de cada línea de datos-numericos.md
+- Si añadir cabeceras de sección o reestructurar datos-numericos.md más allá de las correcciones
+- Qué valores incluir u omitir en el datos-referencia.md simplificado
 
 </decisions>
 
 <specifics>
-## Specific Ideas
+## Ideas Específicas
 
-- "Mirror real DGT exam style" — the 2700-question database analyzed earlier is the style reference
-- Situacional examples must NOT be handcrafted — run /generar-preguntas skill to produce reference examples
-- Tier 3 wrong answers should all seem plausible to a student who hasn't mastered the rule — this is the key quality signal for distractor design
-- The user confirmed: DGT official exams have exactly 3 answer choices (A, B, C), not 4
+### Ejemplos de referencia (aprobados durante la discusión)
+
+**DATO:**
+
+Fácil (distractor de contexto equivocado, no secuencial):
+> Le realizan una prueba de alcoholemia. El etilómetro marca 0,30 mg/l en aire espirado. Usted lleva 5 años con el carnet. ¿Ha cometido una infracción?
+> A) No, el límite general es 0,50 mg/l. — **B) Sí, supera el límite de 0,25 mg/l.** — C) Solo si la segunda prueba, 10 minutos después, lo confirma.
+
+Medio (confusión de umbral — mismo vehículo, distinto tramo de antigüedad):
+> Su turismo tiene 11 años de antigüedad y pasó la ITV hace 20 meses. ¿Tiene la ITV en vigor?
+> A) Sí, los turismos de más de 10 años pasan la ITV cada 2 años. — **B) No, deben pasarla anualmente a partir de los 10 años.** — C) Sí, el plazo de 24 meses no ha vencido todavía.
+
+Difícil (patrón CORRECTO — opciones de distintas condiciones del mismo escenario):
+> Circula por carretera convencional arrastrando un remolque de 600 kg de MMA. ¿Cuál es su velocidad máxima?
+> A) 70 km/h *(remolque pesado en carretera — umbral equivocado)* — **B) 80 km/h** — C) 90 km/h *(turismo sin remolque en carretera)*
+
+Nota: 70/80/90 son valores reales de la tabla de velocidades pero para condiciones distintas — no deducibles por eliminación.
+
+**DIRECTO:**
+
+Fácil:
+> ¿Es obligatorio el uso del cinturón de seguridad en las vías urbanas?
+> A) No, solo en vías interurbanas. — B) Solo cuando se circula a más de 30 km/h. — **C) Sí.**
+
+Medio (excepción que requiere conocimiento específico):
+> ¿Puede girar a la derecha en una intersección con semáforo en rojo si la calzada transversal está despejada?
+> A) Sí, si lo hace con precaución y velocidad reducida. — B) No, en ningún caso. — **C) Solo si existe una señal específica que lo autorice.**
+
+Difícil (puente móvil — prohibición absoluta contraintuitiva):
+> ¿Está permitido adelantar mientras cruza un puente móvil con las barreras levantadas y el puente en posición horizontal?
+> A) Sí, si hay espacio y visibilidad suficiente. — B) Sí, cuando el puente esté completamente estabilizado. — **C) No.**
+
+**COMPLETAR:**
+
+Fácil:
+> La intención de efectuar una maniobra debe señalizarse...
+> A) en el momento de iniciarla. — **B) con suficiente antelación para que los demás puedan reaccionar.** — C) solo si hay otros vehículos a la vista.
+
+Medio (intersección — distancia exacta reglamentaria):
+> Para estacionar junto a un cruce en vía urbana, la distancia mínima a la intersección debe ser de...
+> A) 3 metros. — **B) 5 metros.** — C) 10 metros.
+
+Difícil (las 3 opciones parecen normas legales válidas):
+> Los ciclistas mayores de 14 años tienen permitido circular por las autovías...
+> A) por cualquier carril si respetan las normas de circulación. — **B) exclusivamente por el arcén.** — C) solo cuando no existe una vía ciclista alternativa habilitada en el trayecto.
+
+**SITUACIONAL:**
+
+Fácil (1 condición):
+> Circula de noche por una carretera sin iluminación con las luces largas encendidas. Se aproxima un vehículo en sentido contrario. ¿Qué debe hacer con las luces?
+> A) Mantener las luces largas para ver mejor la calzada. — **B) Cambiar a luz de cruce.** — C) Apagar las luces brevemente para no deslumbrar.
+
+Medio (glorieta + vehículo de emergencias — 2 reglas):
+> Circula por el interior de una glorieta y un vehículo de emergencias con sirena y luces activadas intenta entrar en ella. ¿Qué debe hacer?
+> A) Mantener su prioridad dentro de la glorieta sin interrumpir la circulación. — B) Acelerar para salir antes de que entre el vehículo de emergencias. — **C) Facilitar el paso al vehículo de emergencias, deteniéndose si es necesario.**
+
+Difícil (excepción a regla conocida — línea continua para ciclistas):
+> Circula por carretera convencional con línea continua en el eje. Para adelantar a un ciclista necesita invadir el carril contrario para mantener la distancia lateral reglamentaria. No viene ningún vehículo de frente. ¿Puede adelantar?
+> A) No, la línea continua prohíbe invadir el carril contrario en cualquier circunstancia. — B) Sí, pero solo si la visibilidad supera los 200 metros. — **C) Sí, está permitido cruzar la línea continua para adelantar a ciclistas manteniendo la distancia lateral reglamentaria.**
+
+Muy Difícil (bus escolar + semáforo — reglas en conflicto aparente):
+> Circula por una vía urbana con su semáforo en verde. En el carril derecho, un autobús escolar está detenido con las luces de advertencia de parada activadas y recogiendo menores. ¿Qué debe hacer?
+> **A) Parar hasta que el autobús desactive las señales de parada.** — B) Continuar; el semáforo en verde prevalece sobre las señales del autobús. — C) Reducir la velocidad y pasar con precaución si los menores no cruzan la calzada.
 
 </specifics>
 
 <deferred>
-## Deferred Ideas
+## Ideas Diferidas
 
-- **Image-aware question reformatter** — When a traffic sign image is assigned to a situational question, a post-generation step rewrites the question text to reference the image directly ("¿Quién tiene prioridad en esta imagen?" instead of describing the scenario in text). Different capability, separate phase.
+- **Reformateador de preguntas con imagen** — Cuando se asigna una imagen a una pregunta situacional, un paso posterior a la generación reescribe el enunciado para referenciar la imagen directamente ("¿Quién tiene prioridad en esta imagen?" en lugar de describir el escenario en texto). Capacidad diferente, fase separada.
 
 </deferred>
 
 ---
 
-*Phase: 01-skill-file-audit*
-*Context gathered: 2026-02-23*
+*Fase: 01-skill-file-audit*
+*Contexto recopilado: 2026-02-23*
