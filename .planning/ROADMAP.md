@@ -56,5 +56,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Skill File Audit | 1/5 | In progress | - |
+| 1. Skill File Audit | 2/5 | In Progress|  |
 | 2. Validator Hardening | 0/1 | Not started | - |

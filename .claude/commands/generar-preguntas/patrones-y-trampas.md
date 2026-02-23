@@ -54,6 +54,30 @@ Las trampas van en las **OPCIONES**, no en el enunciado. Las opciones incorrecta
 | **en todo momento** | 10 | Absoluto temporal |
 | **independientemente** | 9 | "Independientemente de la via" — sin considerar contexto |
 
+### Trampa: Secuencia monotonica en distractores
+
+**Patron PROHIBIDO**: Las 3 opciones forman una serie simple ascendente o descendente tomada de la MISMA fila o categoria de la tabla (ej: 80/90/100 para una pregunta de velocidad con remolque).
+
+**Por que es trampa**: El alumno puede elegir el valor del medio sin conocer la norma. La pregunta pierde valor discriminatorio.
+
+**Patron CORRECTO para preguntas de dato sobre velocidades o distancias**: Usar valores de DISTINTAS condiciones del mismo escenario.
+
+Ejemplo PROHIBIDO:
+> ¿Cual es la velocidad maxima circulando con un remolque de 600 kg en carretera convencional?
+> A) 70 km/h — B) 80 km/h — C) 90 km/h
+
+Ejemplo CORRECTO (valores de condiciones distintas):
+> Circula por carretera convencional arrastrando un remolque de 600 kg de MMA. ¿Cual es su velocidad maxima?
+> A) 70 km/h (remolque pesado en carretera — umbral equivocado)
+> B) 80 km/h (correcto)
+> C) 90 km/h (turismo sin remolque en carretera)
+
+En el ejemplo correcto, 70/80/90 son valores reales de la tabla de velocidades pero para condiciones distintas — ninguno es deducible por eliminacion.
+
+**Regla**: Si las 3 opciones son numeros consecutivos o escalonados de la misma categoria, REDISTRIBUIR usando valores de condiciones distintas del mismo escenario.
+
+---
+
 ### Reglas para opciones con absolutos:
 - Los absolutos NO son un indicador fiable de opción incorrecta. En el examen DGT real, la respuesta correcta es frecuentemente "Sí.", "No.", "siempre" o "nunca"
 - **PROHIBIDO** el patrón predecible de "2 opciones con absolutos + 1 con matiz (correcta)". Esto permite adivinar sin saber nada
