@@ -37,6 +37,59 @@ Cada bullet DEBE empezar con una etiqueta que indica su propósito:
 
 ---
 
+## Profundidad segun nivel de dificultad
+
+La profundidad de la explicacion debe escalar con el nivel de dificultad de la pregunta. Una explicacion de nivel 1 que describe lo mismo que una de nivel 3 desperdicia espacio y no ayuda al alumno a entender las distinciones.
+
+### Nivel 1 — Facil
+
+**Objetivo**: El alumno necesita conocer la regla. La explicacion la enuncia claramente.
+
+**Formato**: Parrafo inicial de 1-2 frases + 1-2 bullets.
+
+**Regla de distractores**: No es necesario explicar los distractores en detalle — basta con mencionar que las otras opciones son incorrectas y por que la correcta lo es.
+
+**Ejemplo**:
+```
+"Al circular por un tunel de mas de 500 metros, es obligatorio encender las luces de cruce aunque sea de dia.\n\n- Opciones incorrectas: no se puede circular sin luces aunque haya iluminacion artificial; las de carretera estan prohibidas dentro del tunel\n- Conexion: en caso de averia o accidente dentro del tunel, se debe encender el intermitente y salir del vehiculo por la izquierda"
+```
+
+### Nivel 2 — Medio
+
+**Objetivo**: El alumno necesita entender el umbral o excepcion que distingue la respuesta correcta. La explicacion debe aclarar POR QUE el distractor mas plausible es incorrecto.
+
+**Formato**: Parrafo inicial de 1-2 frases + 2-3 bullets, incluyendo obligatoriamente un bullet que explica el distractor mas tentador.
+
+**Regla de distractores (OBLIGATORIO para Nivel 2+)**: La explicacion DEBE indicar a que condicion real corresponde al menos uno de los distractores incorrectos. No basta con decir "las otras estan mal" — hay que explicar a que escenario aplicaria el valor incorrecto.
+
+**Ejemplo**:
+```
+"Los conductores noveles (menos de 2 anos de antiguedad) tienen una tasa maxima de 0,15 mg/l en aire espirado.\n\n- Opciones incorrectas: 0,25 mg/l es el limite general para conductores con mas de 2 anos; 0,30 mg/l no corresponde a ninguna tasa del permiso B — es una cifra de confusion\n- Conexion: los conductores profesionales (autobuses, camiones) tienen el mismo limite que los noveles: 0,15 mg/l\n- Dato clave: superar el doble de la tasa (0,60 mg/l) o negarse a la prueba es delito penal, no solo infraccion"
+```
+
+### Nivel 3 — Dificil
+
+**Objetivo**: El alumno que no domina exactamente el tema no puede eliminar ninguna opcion por logica. La explicacion debe ayudar a entender las distinciones entre las tres opciones.
+
+**Formato**: Parrafo inicial de 1-2 frases + 3-4 bullets. Para cada distractor, explicar QUE condicion describe y POR QUE esa condicion no aplica en este escenario.
+
+**Regla de distractores (OBLIGATORIO para Nivel 3)**: La explicacion DEBE cubrir TODOS los distractores — no solo el mas tentador. Cada opcion incorrecta debe quedar explicada: a que escenario real pertenece ese valor y por que no encaja en el enunciado.
+
+**Ejemplo**:
+```
+"Un autobus con pasajeros de pie puede circular por autopista a un maximo de 100 km/h.\n\n- Opciones incorrectas: 80 km/h es el limite del autobus con pasajeros de pie en carretera convencional, no en autopista; 90 km/h es el limite del camion o del autobus SIN pasajeros de pie en carretera convencional\n- Conexion: el autobus sin pasajeros de pie tiene un limite de 100 km/h en autopista y 90 km/h en carretera — igual que el autobus con pasajeros de pie en autopista, pero distinto en carretera\n- Error comun: muchos alumnos aplican los limites del autobus normal (sin pasajeros de pie) sin distinguir la variante con pasajeros de pie, que tiene restricciones diferentes en vias secundarias"
+```
+
+### Nivel 4 — Muy Dificil (solo SITUACIONAL)
+
+**Objetivo**: Escenario que combina dos reglas y requiere aplicar ambas correctamente. La explicacion debe desglosar cada regla implicada y mostrar como interactuan.
+
+**Formato**: Parrafo inicial de 2-3 frases explicando el resultado final + 3-4 bullets que desglosan las dos reglas involucradas y los distractores con sus condiciones reales.
+
+**Regla de distractores (OBLIGATORIO)**: Mismo requisito que Nivel 3 — todos los distractores explicados. Adicionalmente, la explicacion debe indicar que regla o combinacion de reglas llevaria al alumno a elegir cada opcion incorrecta.
+
+---
+
 ## Ejemplo SIN tabla:
 
 ```
