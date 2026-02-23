@@ -12,8 +12,8 @@
 - [x] **DATA-03**: datos-referencia.md is updated to match datos-numericos.md exactly so both files are consistent
 - [ ] **SKILL-01**: tipos-preguntas.md reviewed for accuracy of question type distribution, difficulty guidance, and worked examples — updated where instructions could lead to low-quality output
 - [ ] **SKILL-02**: patrones-y-trampas.md reviewed for completeness of trap word coverage and question start patterns — updated where gaps exist
-- [ ] **SKILL-03**: verificacion.md reviewed for completeness of self-check rules before generation — updated where the rules miss common generation errors
-- [ ] **SKILL-04**: explicaciones.md reviewed for explanation quality guidance — updated where format rules don't lead to pedagogically useful explanations
+- [x] **SKILL-03**: verificacion.md reviewed for completeness of self-check rules before generation — updated where the rules miss common generation errors
+- [x] **SKILL-04**: explicaciones.md reviewed for explanation quality guidance — updated where format rules don't lead to pedagogically useful explanations
 
 ### Validation
 
@@ -50,8 +50,8 @@
 | DATA-03 | Phase 1 | Complete |
 | SKILL-01 | Phase 1 | Pending |
 | SKILL-02 | Phase 1 | Pending |
-| SKILL-03 | Phase 1 | Pending |
-| SKILL-04 | Phase 1 | Pending |
+| SKILL-03 | Phase 1 | Complete |
+| SKILL-04 | Phase 1 | Complete |
 | VALID-01 | Phase 2 | Pending |
 | VALID-02 | Phase 2 | Pending |
 | VALID-03 | Phase 2 | Pending |

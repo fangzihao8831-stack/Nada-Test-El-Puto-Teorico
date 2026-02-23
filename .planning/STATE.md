@@ -10,24 +10,24 @@ See: .planning/PROJECT.md (updated 2026-02-23)
 ## Current Position
 
 Phase: 1 of 2 (Data Audit)
-Plan: 2 of 3 in current phase
+Plan: 4 of 5 in current phase
 Status: In progress
-Last activity: 2026-02-23 — Plan 01-02 complete (datos-referencia.md synced)
+Last activity: 2026-02-23 — Plan 01-04 complete (verificacion.md + explicaciones.md updated)
 
 Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: 10 min
-- Total execution time: 20 min
+- Total plans completed: 4
+- Average duration: 9 min
+- Total execution time: 36 min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-skill-file-audit | 2/3 | 20 min | 10 min |
+| 01-skill-file-audit | 4/5 | 36 min | 9 min |
 
 **Recent Trend:**
 - Last 5 plans: 18 min
@@ -51,6 +51,9 @@ Recent decisions affecting current work:
 - [01-01]: V-16 mandatory since January 2026 in vias interurbanas as substitute for triangles
 - [01-02]: datos-referencia.md synced to datos-numericos.md — 150 m triangle removed, DE PIE row added, puntos expanded with alcohol penalty points
 - [01-02]: Citations intentionally omitted from datos-referencia.md — it is a compact lookup table; full citations live in datos-numericos.md
+- [01-03]: Difficulty level system added to tipos-preguntas.md — Nivel 1-4 scale; per-type file pointers added pointing to dato.md, directo.md, completar.md, situacional.md
+- [01-04]: Three new rules placed in dedicated "Verificacion de exactitud factual" section rather than appended to HARD REJECT table
+- [01-04]: Level-specific depth guidance added to explicaciones.md — Nivel 1 = 1-2 bullets, Nivel 2+ = one distractor explained, Nivel 3+ = all distractors explained
 
 ### Pending Todos
 
@@ -63,5 +66,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 01-02-PLAN.md (datos-referencia.md sync)
+Stopped at: Completed 01-04-PLAN.md (verificacion.md + explicaciones.md updates)
 Resume file: None
