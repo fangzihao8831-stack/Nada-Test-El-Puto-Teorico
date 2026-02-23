@@ -20,6 +20,20 @@ Si una pregunta cumple CUALQUIERA de estos criterios, se descarta inmediatamente
 
 ---
 
+## Verificación de exactitud factual (OBLIGATORIO)
+
+Estos tres controles se aplican a TODAS las preguntas con datos numéricos o respuestas sobre reglas de tráfico:
+
+| Filtro | Detecta | Acción |
+|--------|---------|--------|
+| **Sin cita de temario** | Dato numérico sin sección fuente identificada | Identificar tema_XX.md que confirma el dato antes de conservar la pregunta. Si no se encuentra, eliminar el dato o marcar FLAG. |
+| **Contradicción con Claude** | Respuesta correcta contradice el conocimiento general de Claude sobre tráfico español | Marcar FLAG para revisión humana. El temario es la autoridad del examen; la contradicción indica posible error en la pregunta. |
+| **Secuencia monotónica en distractores** | Las 3 opciones forman una serie simple (ej: 70/80/90) de la misma categoría de la tabla | REDISTRIBUIR: usar valores de DISTINTAS condiciones del mismo escenario. Ver `patrones-y-trampas.md` para ejemplos. |
+
+**Regla de cita de temario**: Ningún valor numérico se conserva sin citar tema_XX.md. Si el generador no puede localizar el dato en el temario, el dato se elimina o se marca FLAG. La cita va inline en el campo `explicación` o en las notas internas de verificación.
+
+---
+
 ## Verificación básica
 - Cada pregunta DEBE verificarse contra el temario antes de incluirla
 - Si un dato numérico no coincide con el temario, usar el temario como fuente de verdad
@@ -193,6 +207,9 @@ Antes de incluir cada pregunta, verificar:
 - [ ] ¿Alguna opción supera las 20 palabras? → Si es SÍ, ACORTAR
 - [ ] ¿Todos los acentos están correctos? (ver checklist de acentos arriba)
 - [ ] ¿El enunciado menciona un código de señal (R-XXX, P-XXX)? → Si es SÍ, reemplazar por "esta señal"
+- [ ] ¿Hay algún valor numérico sin cita de tema_XX.md que lo respalde? → Si es SÍ, buscar y añadir cita antes de conservar la pregunta
+- [ ] ¿La respuesta correcta contradice lo que Claude sabe sobre tráfico español? → Si es SÍ, marcar FLAG para revisión humana
+- [ ] ¿Las 3 opciones forman una secuencia monotónica (ej: 70/80/90) de la misma categoría? → Si es SÍ, REDISTRIBUIR con valores de condiciones distintas
 
 ### Archivos de referencia de dificultad
 Antes de generar, consultar estos archivos para calibrar el nivel de dificultad:
