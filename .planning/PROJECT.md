@@ -30,11 +30,24 @@ Students must be able to practice with factually accurate DGT exam questions tha
 - ✓ SVG signal images (6 signals: P-7, R-1, R-2, R-301-80, R-303, R-304)
 - ✓ Data reference files with corrected speed limits (trailer 90 km/h, bus 100 km/h on autopista)
 
+## Current Milestone: v1.0 — Improve Generation Skill
+
+**Goal:** Make the question generation pipeline produce factually correct questions and actually validate them before approval.
+
+**Target features:**
+- Full data audit across all 12 DGT topics in skill reference files
+- Evidence-based validator CHECK 4 (must cite temario to PASS)
+- datos-numericos.md and datos-referencia.md kept in sync
+
 ### Active
 
 <!-- Current scope. Building toward these. -->
 
-(None yet — defined per milestone)
+- [ ] Audit all numerical data in datos-numericos.md against 12 tema_XX.md files
+- [ ] Fix all discrepancies found
+- [ ] Update datos-referencia.md to match
+- [ ] CHECK 4 requires explicit temario citation for PASS
+- [ ] Contradicted by temario → REJECT; unclear → FLAG
 
 ### Out of Scope
 
@@ -71,4 +84,4 @@ Students must be able to practice with factually accurate DGT exam questions tha
 | Separate datos-referencia.md for validator | Keeps validator self-contained | ⚠️ Revisit — two files can drift apart again |
 
 ---
-*Last updated: 2026-02-23 after GSD initialization (brownfield bootstrap)*
+*Last updated: 2026-02-23 after milestone v1.0 started*
