@@ -26,13 +26,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. No discrepancy exists between any value in datos-numericos.md and its source in the relevant tema_XX.md file
   3. datos-referencia.md contains no value that contradicts datos-numericos.md — the two files are consistent
   4. tipos-preguntas.md, patrones-y-trampas.md, verificacion.md, and explicaciones.md each updated where current instructions could lead to lower generation quality
-**Plans**: TBD
+**Plans**: 5 plans
 
 Plans:
-- [ ] 01-01: Audit datos-numericos.md against all 12 tema files, log discrepancies
-- [ ] 01-02: Apply corrections to datos-numericos.md with citations
-- [ ] 01-03: Sync datos-referencia.md to match corrected datos-numericos.md
-- [ ] 01-04: Review tipos-preguntas.md, patrones-y-trampas.md, verificacion.md, explicaciones.md — apply improvements
+- [ ] 01-01-PLAN.md — Audit and correct datos-numericos.md in one pass (DATA-01, DATA-02)
+- [ ] 01-02-PLAN.md — Sync datos-referencia.md to match corrected datos-numericos.md (DATA-03)
+- [ ] 01-03-PLAN.md — Add difficulty levels to tipos-preguntas.md; add monotonic-sequence trap to patrones-y-trampas.md (SKILL-01, SKILL-02)
+- [ ] 01-04-PLAN.md — Add 3 new verification rules to verificacion.md; review explicaciones.md (SKILL-03, SKILL-04)
+- [ ] 01-05-PLAN.md — Create 4 new per-type files: dato.md, directo.md, completar.md, situacional.md (SKILL-01)
 
 ### Phase 2: Validator Hardening
 **Goal**: CHECK 4 in the validation skill issues evidence-based verdicts — PASS only with a temario quote, REJECT for contradictions, FLAG for ambiguity
