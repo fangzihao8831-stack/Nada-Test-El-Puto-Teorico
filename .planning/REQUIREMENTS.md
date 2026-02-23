@@ -5,11 +5,15 @@
 
 ## v1.0 Requirements
 
-### Data Accuracy
+### Skill File Audit
 
 - [ ] **DATA-01**: Full audit of all numerical data in datos-numericos.md against all 12 tema_XX.md files (speeds, alcohol limits, distances, ITV periods, points, times, weights, SRI rules)
 - [ ] **DATA-02**: All discrepancies found in DATA-01 are corrected in datos-numericos.md with temario citations
 - [ ] **DATA-03**: datos-referencia.md is updated to match datos-numericos.md exactly so both files are consistent
+- [ ] **SKILL-01**: tipos-preguntas.md reviewed for accuracy of question type distribution, difficulty guidance, and worked examples — updated where instructions could lead to low-quality output
+- [ ] **SKILL-02**: patrones-y-trampas.md reviewed for completeness of trap word coverage and question start patterns — updated where gaps exist
+- [ ] **SKILL-03**: verificacion.md reviewed for completeness of self-check rules before generation — updated where the rules miss common generation errors
+- [ ] **SKILL-04**: explicaciones.md reviewed for explanation quality guidance — updated where format rules don't lead to pedagogically useful explanations
 
 ### Validation
 
@@ -44,13 +48,17 @@
 | DATA-01 | Phase 1 | Pending |
 | DATA-02 | Phase 1 | Pending |
 | DATA-03 | Phase 1 | Pending |
+| SKILL-01 | Phase 1 | Pending |
+| SKILL-02 | Phase 1 | Pending |
+| SKILL-03 | Phase 1 | Pending |
+| SKILL-04 | Phase 1 | Pending |
 | VALID-01 | Phase 2 | Pending |
 | VALID-02 | Phase 2 | Pending |
 | VALID-03 | Phase 2 | Pending |
 
 **Coverage:**
-- v1.0 requirements: 6 total
-- Mapped to phases: 6
+- v1.0 requirements: 10 total
+- Mapped to phases: 10
 - Unmapped: 0 ✓
 
 ---
