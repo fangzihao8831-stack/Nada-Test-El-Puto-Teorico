@@ -1,83 +1,119 @@
 # Tipos de Preguntas (BASADO EN ANALISIS DE 2.700+ PREGUNTAS)
 
-Las preguntas son una **MEZCLA** de tipos. "Trampa" e "imagen" NO son tipos separados — son **técnicas** que se aplican a cualquier tipo.
+> **Calibracion de dificultad**: Todas las preguntas deben imitar el tono y estilo del examen DGT real (base de 2700 preguntas). Consultar `content/hardest_dato.json` y equivalentes para calibracion de dificultad.
 
-Generar preguntas respetando esta distribución:
+Las preguntas son una **MEZCLA** de tipos. "Trampa" e "imagen" NO son tipos separados — son **tecnicas** que se aplican a cualquier tipo.
 
-| Tipo | Frecuencia | Descripción |
+Generar preguntas respetando esta distribucion:
+
+| Tipo | Frecuencia | Descripcion |
 |------|------------|-------------|
 | Directa | ~40% | Pregunta directa sobre una regla o concepto |
-| Situacional | ~27% | Presenta una situación concreta y pregunta que hacer |
+| Situacional | ~27% | Presenta una situacion concreta y pregunta que hacer |
 | Completar | ~23% | Frase incompleta con "..." que el alumno completa |
-| Dato concreto | ~10% | Pregunta sobre un dato numérico o definición específica |
+| Dato concreto | ~10% | Pregunta sobre un dato numerico o definicion especifica |
 
-### Técnicas transversales (se aplican a CUALQUIER tipo):
+### Tecnicas transversales (se aplican a CUALQUIER tipo):
 - **Con imagen**: TODAS las preguntas DEBEN tener `requiere_imagen: true` y un `tipo_imagen` apropiado. En el examen oficial DGT, el 100% de preguntas tienen imagen asociada. Las imagenes se generaran con un skill separado (DALL-E 3)
-- **Opciones concisas**: Las opciones deben ser escuetas (objetivo: 5-20 palabras). NO incluir justificaciones dentro de la opción. La explicación va en el campo `explicación`
+- **Opciones concisas**: Las opciones deben ser escuetas (objetivo: 5-20 palabras). NO incluir justificaciones dentro de la opcion. La explicacion va en el campo `explicacion`
 - **Distractores plausibles**: Las opciones incorrectas deben ser errores reales de alumnos o reglas de otro contexto, NUNCA absurdos evidentes
+- **Siempre 3 opciones (A, B, C)**: El examen DGT usa exactamente 3 opciones. Nunca generar 4 opciones.
+
+---
+
+## Ver archivos por tipo
+
+Para reglas detalladas de dificultad, ejemplos de referencia y checklist por nivel, leer el archivo del tipo correspondiente:
+- Tipo `dato` → leer `generar-preguntas/dato.md`
+- Tipo `directo` → leer `generar-preguntas/directo.md`
+- Tipo `completar` → leer `generar-preguntas/completar.md`
+- Tipo `situacional` → leer `generar-preguntas/situacional.md`
+
+---
+
+## Niveles de Dificultad
+
+**Principio fundamental**: Mayor nivel = distractores mas plausibles. En Nivel 3+, un alumno que no conozca la regla exacta no puede eliminar ninguna opcion por logica.
+
+### Para tipos DATO, DIRECTO, COMPLETAR (3 niveles):
+
+| Nivel | Etiqueta | Definicion |
+|-------|----------|------------|
+| 1 | Facil | Un unico hecho o regla. Los distractores son claramente de otro contexto. |
+| 2 | Medio | Requiere conocer un umbral especifico, excepcion, o condicion combinada. Un distractor es plausible para un lector descuidado. |
+| 3 | Dificil | Todos los distractores son valores/reglas reales del temario aplicados a una condicion ligeramente distinta. No deducible por eliminacion. |
+
+### Para tipo SITUACIONAL (4 niveles):
+
+| Nivel | Etiqueta | Definicion |
+|-------|----------|------------|
+| 1 | Facil | 1 variable, aplicacion clara de una regla. |
+| 2 | Medio | 2 condiciones combinadas. Un distractor activa el instinto equivocado. |
+| 3 | Dificil | Excepcion a una regla conocida, o conflicto de reglas. Las 3 respuestas son plausibles sin dominar la norma. |
+| 4 | Muy Dificil | Dos reglas parecen entrar en conflicto directo. El alumno debe saber cual prevalece. Todas las opciones son muy plausibles. |
 
 ---
 
 ## Tipo 1: Directa (~40%)
-Pregunta corta y directa. Sin preámbulo largo. Suelen empezar con "¿Es...", "¿Puede...", "¿Está permitido..."
+Pregunta corta y directa. Sin preambulo largo. Suelen empezar con "¿Es...", "¿Puede...", "¿Esta permitido..."
 
 Ejemplos reales:
 - "¿Es aconsejable conducir un turismo calzado con unas chanclas?"
 - "¿Pueden los ciclistas circular por las autopistas?"
-- "¿Es obligatorio llevar en el vehículo un chaleco reflectante?"
-- "El estado de los neumáticos, ¿influye en la distancia de frenado?"
+- "¿Es obligatorio llevar en el vehiculo un chaleco reflectante?"
+- "El estado de los neumaticos, ¿influye en la distancia de frenado?"
 
 **Ejemplos DIFICILES** (nivel objetivo — ver `content/hardest_directa.json` para 57 mas):
-- "¿Puede realizar un cambio de sentido en un lugar donde este prohibido adelantar?" → Si, salvo autorización expresa.
-- "En un vehículo de autoescuela realizando clases prácticas, ¿quien es considerado el conductor?" → El profesor (mandos adicionales), no el alumno.
-- "¿Esta permitida la circulación de animales por una carretera convencional?" → Si, cuando no exista via pecuaria.
+- "¿Puede realizar un cambio de sentido en un lugar donde este prohibido adelantar?" → Si, salvo autorizacion expresa.
+- "En un vehiculo de autoescuela realizando clases practicas, ¿quien es considerado el conductor?" → El profesor (mandos adicionales), no el alumno.
+- "¿Esta permitida la circulacion de animales por una carretera convencional?" → Si, cuando no exista via pecuaria.
 - "Circulando con lluvia muy intensa, ¿es correcto encender la luz antiniebla trasera?" → Si. La gente cree que solo con niebla.
 
 ## Tipo 2: Situacional (~27%)
-Presenta una situación con "Si...", "En...", "Circulando por...", "Cuando...", "Al..."
+Presenta una situacion con "Si...", "En...", "Circulando por...", "Cuando...", "Al..."
 
-**IMPORTANTE**: El enunciado debe describir TODOS los factores que afectan la respuesta (via, carriles, señalización, posiciones). Ver `verificación.md` para la "Regla del enunciado autosuficiente".
+**IMPORTANTE**: El enunciado debe describir TODOS los factores que afectan la respuesta (via, carriles, senalizacion, posiciones). Ver `verificacion.md` para la "Regla del enunciado autosuficiente".
 
 Ejemplos reales:
-- "El tráfico está congestionado y preve que se va a quedar detenido sobre el paso para peatones; ¿debe entrar en el paso?"
-- "Si sufre una enfermedad crónica, ¿qué es aconsejable hacer para disminuir el riesgo de sufrir un accidente?"
-- "En condiciones de mala visibilidad, ¿qué debe hacer un conductor ante la presencia de ciclistas en la via?"
-- "Al estacionar un vehículo con remolque en una pendiente ascendente, si no dispone de calzos, ¿qué debe hacer?"
+- "El trafico esta congestionado y preve que se va a quedar detenido sobre el paso para peatones; ¿debe entrar en el paso?"
+- "Si sufre una enfermedad cronica, ¿que es aconsejable hacer para disminuir el riesgo de sufrir un accidente?"
+- "En condiciones de mala visibilidad, ¿que debe hacer un conductor ante la presencia de ciclistas en la via?"
+- "Al estacionar un vehiculo con remolque en una pendiente ascendente, si no dispone de calzos, ¿que debe hacer?"
 
 **Ejemplos DIFICILES** (ver `content/hardest_situacional.json` para 84 mas):
-- Prioridad con 3 vehículos en intersección sin señalizar (rojo/azul/verde)
-- "En un túnel, ¿qué distancia de seguridad?" → 100 metros. Dato preciso en contexto situacional.
-- Combinación de reglas: estacionar en pendiente + remolque + sin calzos
+- Prioridad con 3 vehiculos en interseccion sin senalizar (rojo/azul/verde)
+- "En un tunel, ¿que distancia de seguridad?" → 100 metros. Dato preciso en contexto situacional.
+- Combinacion de reglas: estacionar en pendiente + remolque + sin calzos
 
 ## Tipo 3: Completar (~23%)
-Frase incompleta con "..." al final o en medio. El enunciado NO es una pregunta — es una afirmación que se completa.
+Frase incompleta con "..." al final o en medio. El enunciado NO es una pregunta — es una afirmacion que se completa.
 
 Ejemplos reales:
-- "La intención de efectuar una maniobra debe indicarse..."
+- "La intencion de efectuar una maniobra debe indicarse..."
 - "El cruce de un paso a nivel debe realizarse..."
-- "El uso adecuado del casco implica que la correa de sujeción..."
-- "Las motocicletas con más de cinco años de antigüedad deben pasar la ITV..."
+- "El uso adecuado del casco implica que la correa de sujecion..."
+- "Las motocicletas con mas de cinco anos de antiguedad deben pasar la ITV..."
 
 **Ejemplos DIFICILES** (ver `content/hardest_completar.json` para 133 mas):
-- "En las autovías, se permite circular..." → a ciclistas >14 años por arcenes.
-- "Si el resultado de alcoholemia es positivo el agente podrá inmovilizar el vehículo, a no ser..." → que otra persona habilitada conduzca.
+- "En las autopistas, se permite circular..." → a ciclistas >14 anos por arcenes.
+- "Si el resultado de alcoholemia es positivo el agente podra inmovilizar el vehiculo, a no ser..." → que otra persona habilitada conduzca.
 
 ## Tipo 4: Dato concreto (~10%)
-Pregunta sobre un dato específico: velocidad, distancia, tasa, plazo.
+Pregunta sobre un dato especifico: velocidad, distancia, tasa, plazo.
 
 Ejemplos reales:
-- "¿De que depende la distancia de detención?"
-- "En esta via, ¿a qué velocidad máxima le está permitido circular a un turismo con remolque?"
-- "¿A qué distancia mínima de una intersección está prohibido estacionar?"
+- "¿De que depende la distancia de detencion?"
+- "En esta via, ¿a que velocidad maxima le esta permitido circular a un turismo con remolque?"
+- "¿A que distancia minima de una interseccion esta prohibido estacionar?"
 
 **Ejemplos DIFICILES** (ver `content/hardest_dato.json` para 457 mas):
-- "¿Cuál es la tasa de alcohol máxima permitida a un conductor novel?" → 0,15 mg/l.
-- "¿Cuántos espejos retrovisores tienen que llevar las motocicletas?" → 1 si <100 km/h, 2 si >100.
+- "¿Cual es la tasa de alcohol maxima permitida a un conductor novel?" → 0,15 mg/l.
+- "¿Cuantos espejos retrovisores tienen que llevar las motocicletas?" → 1 si <100 km/h, 2 si >100.
 
 ---
 
-## ADAS / Tecnología Vehicular
+## ADAS / Tecnologia Vehicular
 
-ADAS representa ~2.5% de las preguntas (59+ en el banco). Ver **TEMA 34 del temario** (`temario_permiso_b_v3.md`) para todos los detalles técnicos.
+ADAS representa ~2.5% de las preguntas (59+ en el banco). Ver **TEMA 34 del temario** (`temario_permiso_b_v3.md`) para todos los detalles tecnicos.
 
-Generar preguntas sobre QUE HACE el sistema y COMO ACTUA, nunca sobre especificaciones técnicas internas.
+Generar preguntas sobre QUE HACE el sistema y COMO ACTUA, nunca sobre especificaciones tecnicas internas.
