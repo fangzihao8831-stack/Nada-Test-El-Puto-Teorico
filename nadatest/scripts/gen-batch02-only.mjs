@@ -21,7 +21,8 @@ if (existsSync(catalogoPath)) {
   for (const s of JSON.parse(readFileSync(catalogoPath, "utf-8"))) senalMap[s.codigo] = s.archivo;
 }
 
-const batchPath = join(projectRoot, "content", "preguntas", "batch_02");
+const batchName = process.argv[2] || "batch_03";
+const batchPath = join(projectRoot, "content", "preguntas", batchName);
 const file = readdirSync(batchPath).find(f => f.endsWith(".json") && !f.includes("_validated"));
 const { preguntas } = JSON.parse(readFileSync(join(batchPath, file), "utf-8"));
 
@@ -38,6 +39,7 @@ const bank = preguntas.map(q => {
     temaId, tema: temaNames[temaId] || "Desconocido",
     pista: q.pista || "",
     tipoPregunta: q.tipo_pregunta,
+    nivel: q.nivel || null,
   };
 });
 
@@ -55,4 +57,4 @@ export interface BankQuestion extends TestQuestion {
 export const questionBank: BankQuestion[] = ${JSON.stringify(bank, null, 2)};
 `);
 
-console.log(`Generated ${bank.length} questions (batch_02 only)`);
+console.log(`Generated ${bank.length} questions (${batchName})`);

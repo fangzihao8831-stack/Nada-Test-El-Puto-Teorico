@@ -276,6 +276,24 @@ function TipoPreguntaBadge({ tipo }: { tipo?: string }) {
   );
 }
 
+const NIVEL_CONFIG: Record<number, { label: string; style: string }> = {
+  1: { label: "Facil", style: "bg-emerald-100 text-emerald-700" },
+  2: { label: "Medio", style: "bg-sky-100 text-sky-700" },
+  3: { label: "Dificil", style: "bg-orange-100 text-orange-700" },
+  4: { label: "Muy dificil", style: "bg-red-100 text-red-700" },
+};
+
+function NivelBadge({ nivel }: { nivel?: number }) {
+  if (!nivel) return null;
+  const config = NIVEL_CONFIG[nivel];
+  if (!config) return null;
+  return (
+    <span className={cn("inline-flex items-center rounded-md px-2 py-0.5 text-xs font-medium", config.style)}>
+      {config.label}
+    </span>
+  );
+}
+
 /* ── Main TestSession component ── */
 
 interface TestSessionProps {
@@ -458,11 +476,12 @@ export function TestSession({
             </div>
 
             <div className="flex flex-1 flex-col">
-              <div className="mb-2 flex items-center gap-2">
+              <div className="mb-2 flex flex-wrap items-center gap-2">
                 <Badge variant="outline" className="text-xs">
                   {question.tema}
                 </Badge>
                 <TipoPreguntaBadge tipo={question.tipoPregunta} />
+                <NivelBadge nivel={question.nivel} />
               </div>
               <p className="text-lg font-bold leading-relaxed text-foreground lg:text-xl">
                 <span className="mr-2 text-primary">
@@ -508,11 +527,12 @@ export function TestSession({
               className="mb-3 h-52"
             />
 
-            <div className="mb-2 flex items-center gap-2">
+            <div className="mb-2 flex flex-wrap items-center gap-2">
               <Badge variant="outline" className="text-xs">
                 {question.tema}
               </Badge>
               <TipoPreguntaBadge tipo={question.tipoPregunta} />
+              <NivelBadge nivel={question.nivel} />
             </div>
             <p className="text-base font-bold leading-relaxed text-foreground">
               <span className="mr-2 text-primary">

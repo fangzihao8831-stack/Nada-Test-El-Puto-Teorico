@@ -57,12 +57,14 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
    Cada subagente lee directamente los skill files (NO `content/validation-prompt.md`):
    - `.claude/commands/validar-preguntas/check-4-datos.md` (algoritmo de fact-checking)
    - `.claude/commands/validar-preguntas/check-5-pedagógica.md` (revisión pedagógica)
+   - `.claude/commands/validar-preguntas/check-6-clasificacion.md` (reclasificacion de tipo y nivel)
    - `.claude/commands/validar-preguntas/datos-referencia.md` (datos numéricos de referencia)
+   - `.claude/commands/generar-preguntas/dato.md`, `directo.md`, `completar.md`, `situacional.md` (criterios de nivel por tipo)
    - `content/temario/tema_XX.md` (sección del temario de ese tema)
    - Preguntas del bundle (JSON inline en el prompt)
    - Todotest matches del bundle (JSON inline en el prompt)
 
-   El subagente ejecuta CHECK 4 (datos) + CHECK 5 (pedagógica) y devuelve JSON con veredictos.
+   El subagente ejecuta CHECK 4 (datos) + CHECK 5 (pedagógica) + CHECK 6 (clasificacion) y devuelve JSON con veredictos.
 
 ### Fase 4: Web search (hilo principal)
 
@@ -85,6 +87,7 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
 - Skill files (fuente principal para subagentes):
   - `.claude/commands/validar-preguntas/check-4-datos.md`
   - `.claude/commands/validar-preguntas/check-5-pedagógica.md`
+  - `.claude/commands/validar-preguntas/check-6-clasificacion.md`
   - `.claude/commands/validar-preguntas/datos-referencia.md`
 - Todotest: `content/todotest_2700.json`
 - Preguntas generadas: `content/preguntas/batch_*/*.json`

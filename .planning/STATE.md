@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-02-23)
 
 **Core value:** Students must be able to practice with factually accurate DGT exam questions that mirror the real test.
-**Current focus:** Phase 1 — Data Audit
+**Current focus:** Phase 2 — Validator Hardening
 
 ## Current Position
 
-Phase: 1 of 2 (Data Audit)
-Plan: 4 of 5 in current phase
-Status: In progress
-Last activity: 2026-02-23 — Plan 01-04 complete (verificacion.md + explicaciones.md updated)
+Phase: 2 of 2 (Validator Hardening)
+Plan: 0 of 1 in current phase
+Status: Ready to plan
+Last activity: 2026-02-24 — Phase 1 complete (all 5 plans done)
 
-Progress: [██░░░░░░░░] 20%
+Progress: [█████░░░░░] 50%
 
 ## Performance Metrics
 
@@ -27,7 +27,7 @@ Progress: [██░░░░░░░░] 20%
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-skill-file-audit | 4/5 | 36 min | 9 min |
+| 01-skill-file-audit | 5/5 | 56 min | 11 min |
 
 **Recent Trend:**
 - Last 5 plans: 18 min
@@ -65,6 +65,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-23
-Stopped at: Completed 01-03-PLAN.md SUMMARY.md (difficulty framework, monotonic-sequence trap, per-type file pointers)
+Last session: 2026-02-24
+Stopped at: CHECK 6 (clasificacion) skill file created and wired into validator. batch_03 (30 questions) generated and on demo. Badge de dificultad en UI. Next: run /validar-preguntas on batch_03 to test CHECK 6, or generate+validate a fresh batch.
 Resume file: None

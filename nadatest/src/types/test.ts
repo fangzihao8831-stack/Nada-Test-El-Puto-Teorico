@@ -20,6 +20,7 @@ export interface TestQuestion {
   imageSrc: string | null;
   tema: string;
   tipoPregunta?: string;
+  nivel?: number;
 }
 
 export interface TestSessionResult {

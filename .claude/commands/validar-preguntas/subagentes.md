@@ -58,10 +58,12 @@ Task(
 Incluir en el prompt — el subagente DEBE leer estos archivos directamente (NO parafrasear ni resumir):
 1. **Check 4 (datos)**: Leer `.claude/commands/validar-preguntas/check-4-datos.md`
 2. **Check 5 (pedagógica)**: Leer `.claude/commands/validar-preguntas/check-5-pedagogica.md`
-3. **Datos de referencia**: Leer `.claude/commands/validar-preguntas/datos-referencia.md`
-4. **Temario**: Leer los `content/temario/tema_XX.md` files de sus temas asignados
-5. **Preguntas + todotest**: Leer el bundles JSON y extraer solo sus temas
-6. **Instrucción**: "Ejecuta CHECK 4 y CHECK 5 según las reglas de los archivos. Devuelve JSON con veredictos."
+3. **Check 6 (clasificacion)**: Leer `.claude/commands/validar-preguntas/check-6-clasificacion.md`
+4. **Datos de referencia**: Leer `.claude/commands/validar-preguntas/datos-referencia.md`
+5. **Criterios de nivel por tipo**: Leer `.claude/commands/generar-preguntas/dato.md`, `directo.md`, `completar.md`, `situacional.md`
+6. **Temario**: Leer los `content/temario/tema_XX.md` files de sus temas asignados
+7. **Preguntas + todotest**: Leer el bundles JSON y extraer solo sus temas
+8. **Instrucción**: "Ejecuta CHECK 4, CHECK 5 y CHECK 6 según las reglas de los archivos. Devuelve JSON con veredictos."
 
 **NO usar `content/validation-prompt.md`** — los skill files contienen las reglas completas con ejemplos trabajados y arboles de decisión que el archivo combinado omite.
 
@@ -99,6 +101,14 @@ Si el generador marco alguna pregunta con `"confianza": "baja"`, el validador de
         "veredicto": "PASS|AUTO-REWRITE|REJECT",
         "motivo": "texto explicativo",
         "explicación_reescrita": "nueva explicación si AUTO-REWRITE, null si PASS"
+      },
+      "check6_clasificacion": {
+        "tipo_original": "directa",
+        "tipo_corregido": "dato",
+        "nivel_original": 1,
+        "nivel_corregido": 2,
+        "cambio": true,
+        "motivo": "texto explicativo o null si no hay cambio"
       }
     }
   ]
