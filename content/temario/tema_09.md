@@ -1,6 +1,6 @@
 # tema_09: Seguridad y Tecnología
 
-# TEMA 32: SEGURIDAD ACTIVA
+# TEMA 32: SEGURIDAD ACTIVA [subtema_38]
 
 ## 32.1 Sistema de frenado
 - **Frenos de disco/tambor**: detienen el vehículo
@@ -103,7 +103,7 @@
 
 ---
 
-# TEMA 33: SEGURIDAD PASIVA
+# TEMA 33: SEGURIDAD PASIVA [subtema_39]
 
 ## 33.1 Cinturón de seguridad
 - Obligatorio para todos los ocupantes
@@ -137,7 +137,7 @@
 
 ---
 
-# TEMA 34: SISTEMAS ADAS (Ayudas a la Conducción)
+# TEMA 34: SISTEMAS ADAS (Ayudas a la Conducción) [subtema_40]
 
 ## 34.0 Sistemas ADAS OBLIGATORIOS desde julio 2024 (muy preguntado)
 
@@ -264,7 +264,7 @@ Todos los vehículos nuevos matriculados desde el **6 de julio de 2024** deben l
 
 ---
 
-# TEMA 35: COMPROBACIONES Y MANTENIMIENTO
+# TEMA 35: COMPROBACIONES Y MANTENIMIENTO [subtema_41]
 
 ## 35.1 Comprobaciones diarias/antes de circular
 - Neumáticos: presión visual, desgaste
@@ -315,7 +315,7 @@ Todos los vehículos nuevos matriculados desde el **6 de julio de 2024** deben l
 
 ---
 
-# TEMA 57: CONDUCCIÓN AUTÓNOMA Y AUTOMATIZADA
+# TEMA 57: CONDUCCIÓN AUTÓNOMA Y AUTOMATIZADA [subtema_42]
 
 ## 57.1 Niveles de automatización (SAE)
 

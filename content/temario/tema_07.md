@@ -1,6 +1,6 @@
 # tema_07: Señalización
 
-# TEMA 19: ALUMBRADO
+# TEMA 19: ALUMBRADO [subtema_24]
 
 ## 19.1 Tipos de luces del vehículo
 
@@ -76,7 +76,7 @@ Cambiar a luces de cruce cuando:
 
 ---
 
-# TEMA 20: SEÑALES ACÚSTICAS
+# TEMA 20: SEÑALES ACÚSTICAS [subtema_25]
 
 ## 20.1 Cuándo usar el claxon
 - Para evitar accidentes
@@ -128,7 +128,7 @@ Todo conductor debe advertir sus maniobras con suficiente antelación.
 
 ---
 
-# TEMA 21: SEÑALIZACIÓN - JERARQUÍA
+# TEMA 21: SEÑALIZACIÓN - JERARQUÍA [subtema_26]
 
 ## 21.1 Orden de prioridad de las señales
 1. **Señales de los agentes** (máxima prioridad)
@@ -145,7 +145,7 @@ Todo conductor debe advertir sus maniobras con suficiente antelación.
 
 ---
 
-# TEMA 22: SEÑALES DE LOS AGENTES
+# TEMA 22: SEÑALES DE LOS AGENTES [subtema_27]
 
 ## 22.1 Señales con los brazos
 
@@ -207,7 +207,7 @@ Todo conductor debe advertir sus maniobras con suficiente antelación.
 
 ---
 
-# TEMA 23: SEMÁFOROS
+# TEMA 23: SEMÁFOROS [subtema_28]
 
 ## 23.1 Semáforos de vehículos
 
@@ -245,7 +245,7 @@ Todo conductor debe advertir sus maniobras con suficiente antelación.
 
 ---
 
-# TEMA 24: SEÑALES VERTICALES
+# TEMA 24: SEÑALES VERTICALES [subtema_29]
 
 ## 24.1 Señales de reglamentación
 
@@ -403,7 +403,7 @@ Los paneles complementarios se colocan **debajo** de otra señal para precisar s
 
 ---
 
-# TEMA 25: MARCAS VIALES
+# TEMA 25: MARCAS VIALES [subtema_30]
 
 ## 25.1 Marcas longitudinales
 
@@ -459,7 +459,7 @@ Los paneles complementarios se colocan **debajo** de otra señal para precisar s
 
 ---
 
-# TEMA 26: SEÑALIZACIÓN CIRCUNSTANCIAL Y DE BALIZAMIENTO
+# TEMA 26: SEÑALIZACIÓN CIRCUNSTANCIAL Y DE BALIZAMIENTO [subtema_31]
 
 ## 26.1 Señalización de obras
 - Señales temporales (fondo amarillo)

@@ -1,6 +1,6 @@
 # tema_06: Prioridad y Maniobras
 
-# TEMA 13: PRIORIDAD DE PASO
+# TEMA 13: PRIORIDAD DE PASO [subtema_19]
 
 ## 13.1 Regla general
 - Prioridad para el que viene por la derecha
@@ -87,7 +87,7 @@
 
 ---
 
-# TEMA 14: INCORPORACIÓN A LA CIRCULACIÓN
+# TEMA 14: INCORPORACIÓN A LA CIRCULACIÓN [subtema_20]
 
 ## 14.1 Desde estacionamiento
 - Señalizar con antelación
@@ -114,7 +114,7 @@
 
 ---
 
-# TEMA 15: ADELANTAMIENTOS
+# TEMA 15: ADELANTAMIENTOS [subtema_21]
 
 ## 15.1 Regla general
 - Adelantar por la izquierda
@@ -172,7 +172,7 @@
 
 ---
 
-# TEMA 16: INTERSECCIONES
+# TEMA 16: INTERSECCIONES [subtema_22]
 
 ## 16.1 Comportamiento en intersecciones
 - Reducir velocidad
@@ -204,7 +204,7 @@
 
 ---
 
-# TEMA 17: PARADA Y ESTACIONAMIENTO
+# TEMA 17: PARADA Y ESTACIONAMIENTO [subtema_23]
 
 ## 17.1 Definiciones
 - **Parada**: inmovilización ≤2 minutos, conductor presente/cerca

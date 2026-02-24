@@ -1,6 +1,6 @@
 # tema_12: Infracciones y Sanciones
 
-# TEMA 49: INFRACCIONES Y SANCIONES
+# TEMA 49: INFRACCIONES Y SANCIONES [subtema_55]
 
 ## 49.1 Tipos de infracciones
 
@@ -53,7 +53,7 @@
 
 ---
 
-# TEMA 50: RESPONSABILIDAD DEL CONDUCTOR
+# TEMA 50: RESPONSABILIDAD DEL CONDUCTOR [subtema_56]
 
 ## 50.1 Responsabilidad administrativa
 - Multas económicas
@@ -82,7 +82,7 @@
 
 ---
 
-# TEMA 51: INMOVILIZACIÓN Y RETIRADA DE VEHÍCULOS
+# TEMA 51: INMOVILIZACIÓN Y RETIRADA DE VEHÍCULOS [subtema_57]
 
 ## 51.1 Causas de inmovilización del vehículo (art. 104 Ley de Tráfico)
 
@@ -130,7 +130,7 @@ Los agentes de la autoridad pueden inmovilizar el vehículo cuando:
 
 ---
 
-# TEMA 56: PROCEDIMIENTO SANCIONADOR
+# TEMA 56: PROCEDIMIENTO SANCIONADOR [subtema_58]
 
 ## 56.1 Notificación de la denuncia
 - La denuncia puede ser notificada **en el acto** (por el agente) o **por correo** (buzón postal o electrónico)

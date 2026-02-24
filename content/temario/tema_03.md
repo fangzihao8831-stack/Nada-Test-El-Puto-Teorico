@@ -1,6 +1,6 @@
 # tema_03: Carga, Pasajeros y Remolques
 
-# TEMA 4: LA CARGA
+# TEMA 4: LA CARGA [subtema_08]
 
 ## 4.1 Disposición de la carga
 - No puede sobresalir por delante
@@ -43,7 +43,7 @@
 
 ---
 
-# TEMA 5: TRANSPORTE DE PERSONAS Y ANIMALES
+# TEMA 5: TRANSPORTE DE PERSONAS Y ANIMALES [subtema_09]
 
 ## 5.1 Número de ocupantes
 - No superar las plazas autorizadas
@@ -104,7 +104,7 @@
 
 ---
 
-# TEMA 6: REMOLQUES
+# TEMA 6: REMOLQUES [subtema_10]
 
 ## 6.1 Tipos de remolques
 - **Remolque ligero**: MMA ≤750 kg (no requiere matrícula propia ni ITV particular)
