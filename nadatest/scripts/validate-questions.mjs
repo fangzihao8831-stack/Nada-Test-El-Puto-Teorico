@@ -77,8 +77,12 @@ function checkSchema(q) {
     errors.push(`origen invalid: ${q.origen}`);
   }
 
-  if (q.requiere_imagen !== true) {
-    errors.push("requiere_imagen must be true");
+  // requiere_imagen must be true iff tipo_imagen is not "ninguna"
+  const tipoNinguna = q.tipo_imagen === "ninguna";
+  if (tipoNinguna && q.requiere_imagen !== false) {
+    errors.push("requiere_imagen must be false when tipo_imagen is 'ninguna'");
+  } else if (!tipoNinguna && q.requiere_imagen !== true) {
+    errors.push("requiere_imagen must be true when tipo_imagen is not 'ninguna'");
   }
 
   if (q.subtema_id && !/^subtema_\d+$/.test(q.subtema_id)) {

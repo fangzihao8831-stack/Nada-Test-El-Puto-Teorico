@@ -57,7 +57,7 @@ Task(
 
 Incluir en el prompt — el subagente DEBE leer estos archivos directamente (NO parafrasear ni resumir):
 1. **Check 4 (datos)**: Leer `.claude/commands/validar-preguntas/check-4-datos.md`
-2. **Check 5 (pedagógica)**: Leer `.claude/commands/validar-preguntas/check-5-pedagógica.md`
+2. **Check 5 (pedagógica)**: Leer `.claude/commands/validar-preguntas/check-5-pedagogica.md`
 3. **Datos de referencia**: Leer `.claude/commands/validar-preguntas/datos-referencia.md`
 4. **Temario**: Leer los `content/temario/tema_XX.md` files de sus temas asignados
 5. **Preguntas + todotest**: Leer el bundles JSON y extraer solo sus temas

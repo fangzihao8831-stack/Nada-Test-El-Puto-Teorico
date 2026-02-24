@@ -1,0 +1,574 @@
+{
+  "preguntas": [
+    {
+      "id": "pregunta_0101",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Cuál es la velocidad máxima permitida para un turismo en una autopista española?",
+      "opciones": [
+        "100 km/h.",
+        "120 km/h.",
+        "110 km/h."
+      ],
+      "correcta": 1,
+      "explicacion": "La velocidad máxima genérica para un turismo en autopista o autovía es de 120 km/h según el Reglamento General de Circulación.\n\n- Opciones incorrectas: 100 km/h es el límite del autobús estándar en autopista, no del turismo; 110 km/h no corresponde a ningún límite establecido en el RGC\n- Conexión: en carretera convencional el turismo baja a 90 km/h y en vía urbana a 50 km/h (o 30 km/h si hay un solo carril por sentido)",
+      "pista": "Es el límite más alto que existe para vehículos ligeros en España.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0102",
+      "subtema_id": "subtema_32",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Puede circular un ciclomotor por una autopista?",
+      "opciones": [
+        "Sí, por el arcén derecho a velocidad reducida.",
+        "Sí, si la velocidad máxima del ciclomotor supera los 40 km/h.",
+        "No."
+      ],
+      "correcta": 2,
+      "explicacion": "Los ciclomotores están expresamente prohibidos en autopistas y autovías, independientemente de su velocidad máxima.\n\n- Opciones incorrectas: circular por el arcén en autopista está prohibido en circulación normal; la condición de los 40 km/h aplica a vehículos especiales, no a ciclomotores\n- Conexión: también están prohibidos los peatones, ciclistas (salvo señal específica), VMP y vehículos de tracción animal\n- Error común: algunos creen que si el ciclomotor alcanza cierta velocidad puede acceder, pero la prohibición es absoluta por categoría de vehículo",
+      "pista": "Los ciclomotores tienen una velocidad máxima de 45 km/h, muy por debajo del mínimo de autopista.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0103",
+      "subtema_id": "subtema_35",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Es la velocidad inadecuada lo mismo que el exceso de velocidad?",
+      "opciones": [
+        "Sí, en ambos casos se supera el límite legal establecido.",
+        "No, la velocidad inadecuada es legal pero no está adaptada a las circunstancias.",
+        "No, la velocidad inadecuada solo se aplica en vías urbanas."
+      ],
+      "correcta": 1,
+      "explicacion": "El exceso de velocidad supera el límite legal; la velocidad inadecuada es aquella que, aunque esté dentro del límite, no está adaptada a las condiciones del momento (lluvia, niebla, tráfico denso, etc.).\n\n- Opciones incorrectas: la opción A confunde ambos conceptos igualándolos erróneamente; la opción C introduce una restricción de ámbito que no existe en la norma\n- Conexión: un conductor puede ser sancionado por velocidad inadecuada aunque circule por debajo del límite máximo, si las condiciones exigen una velocidad menor",
+      "pista": "Piensa en qué ocurre si llueve intensamente y circulas exactamente al límite permitido.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0104",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "directa",
+      "enunciado": "Un autobús escolar que transporta menores, ¿a qué velocidad máxima puede circular por una autopista?",
+      "opciones": [
+        "100 km/h.",
+        "80 km/h.",
+        "90 km/h."
+      ],
+      "correcta": 2,
+      "explicacion": "El autobús escolar o de transporte de menores tiene un límite de 90 km/h en autopista, 10 km/h menos que el autobús estándar sin pasajeros de pie.\n\n- Opciones incorrectas: 100 km/h es el límite del autobús normal (sin pasajeros de pie) en autopista; 80 km/h es el límite del autobús escolar en carretera convencional, no en autopista\n- Conexión: el autobús con pasajeros de pie comparte el límite de 100 km/h en autopista, pero en carretera baja a 80 km/h igual que el escolar\n- Error común: confundir el límite del autobús normal (100 km/h) con el del autobús escolar (90 km/h) en autopista",
+      "pista": "El transporte de menores implica siempre 10 km/h menos que el autobús estándar.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0105",
+      "subtema_id": "subtema_15",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Está permitido usar el móvil sujetándolo con la mano mientras el vehículo está detenido en un semáforo en rojo?",
+      "opciones": [
+        "Sí, si el motor está apagado.",
+        "Sí, porque el vehículo no está en movimiento.",
+        "No."
+      ],
+      "correcta": 2,
+      "explicacion": "El uso del móvil sujetándolo con la mano está prohibido en cualquier circunstancia cuando el vehículo se encuentra en la vía, incluyendo paradas en semáforos, con independencia del estado del motor.\n\n- Opciones incorrectas: el motor apagado no elimina la prohibición; estar detenido en un semáforo tampoco exime de la sanción\n- Dato clave: la sanción es de 200 euros y 6 puntos del permiso\n- Conexión: los sistemas de manos libres y los dispositivos integrados en el vehículo sí están permitidos durante la conducción",
+      "pista": "La norma no distingue entre vehículo en movimiento o detenido en la vía.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0106",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "directa",
+      "enunciado": "Cuando no hay acera disponible, ¿por qué lado de la calzada deben circular los peatones?",
+      "opciones": [
+        "Por el arcén derecho, en el sentido de la marcha.",
+        "Por el arcén izquierdo, de frente al tráfico.",
+        "Por el arcén derecho si la vía tiene menos de dos carriles por sentido."
+      ],
+      "correcta": 1,
+      "explicacion": "Los peatones deben circular por el arcén izquierdo cuando no hay acera, es decir, de frente al tráfico, para poder ver y reaccionar ante los vehículos que se aproximan.\n\n- Opciones incorrectas: el arcén derecho lo usarían en el mismo sentido que los vehículos, lo que impide ver los que se acercan por detrás; la condición del número de carriles no existe en la norma\n- Conexión: los ciclistas, ciclomotores y vehículos especiales lentos (velocidad máxima ≤40 km/h) usan el arcén derecho, al contrario que los peatones\n- Error común: confundir la regla de peatones (izquierda, de frente) con la de ciclistas (derecha, en el sentido de la marcha)",
+      "pista": "Los peatones siempre deben poder ver el tráfico que se aproxima hacia ellos.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0107",
+      "subtema_id": "subtema_19",
+      "tipo_pregunta": "directa",
+      "enunciado": "En una intersección sin señalizar, ¿un tranvía que viene por la izquierda tiene prioridad sobre su vehículo?",
+      "opciones": [
+        "No, la regla de prioridad por la derecha impide que el tranvía pase primero.",
+        "Sí, el tranvía tiene prioridad sobre los demás vehículos aunque venga por la izquierda.",
+        "Solo si el tranvía activa la señal acústica al aproximarse."
+      ],
+      "correcta": 1,
+      "explicacion": "El tranvía tiene prioridad sobre los demás vehículos en intersecciones sin señalizar, aunque venga por la izquierda. Es una excepción expresa a la regla general de prioridad por la derecha.\n\n- Opciones incorrectas: la regla de prioridad por la derecha no aplica a los tranvías; la señal acústica no es requisito para que el tranvía disfrute de prioridad\n- Excepción: si existe señalización de prioridad (semáforo, STOP, señal de vía prioritaria), prevalece la señalización sobre la regla del tranvía\n- Error común: aplicar la regla de la derecha sin recordar la excepción del tranvía, que no puede frenar ni maniobrar como un vehículo convencional",
+      "pista": "El tranvía no puede frenar ni esquivar como un vehículo normal.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0108",
+      "subtema_id": "subtema_35",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Puede adelantar a un ciclista cruzando la línea continua del eje si es necesario para mantener la distancia lateral mínima?",
+      "opciones": [
+        "No, la línea continua prohíbe invadir el carril contrario en cualquier circunstancia.",
+        "Sí, siempre que la visibilidad supere los 200 metros.",
+        "Sí, está permitido si la maniobra es segura y se mantiene la distancia lateral mínima."
+      ],
+      "correcta": 2,
+      "explicacion": "La normativa permite cruzar la línea continua para adelantar a ciclistas cuando sea necesario para garantizar la distancia lateral mínima de 1,5 metros, siempre que la maniobra sea segura.\n\n- Opciones incorrectas: la opción A aplica la regla general de línea continua sin considerar la excepción específica para adelantar ciclistas; la opción B introduce una condición de visibilidad que no existe en la norma para este supuesto\n- Dato clave: la distancia lateral mínima al adelantar ciclistas es de 1,5 metros en cualquier tipo de vía\n- Conexión: no respetar la distancia al adelantar ciclistas es infracción muy grave: 200 euros y 6 puntos",
+      "pista": "La seguridad del ciclista justifica una excepción a la regla de la línea continua.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0109",
+      "subtema_id": "subtema_21",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Está permitido estacionar en doble fila aunque sea por un tiempo muy breve?",
+      "opciones": [
+        "Sí, si no supera los 2 minutos y el conductor permanece dentro.",
+        "Sí, si el conductor permanece dentro del vehículo con el motor en marcha.",
+        "No."
+      ],
+      "correcta": 2,
+      "explicacion": "El estacionamiento en doble fila está prohibido en todo caso, independientemente del tiempo de inmovilización, de la presencia del conductor o del estado del motor.\n\n- Opciones incorrectas: la regla de los 2 minutos distingue parada de estacionamiento, pero no autoriza la doble fila; permanecer dentro del vehículo con el motor en marcha tampoco exime de la prohibición\n- Conexión: la doble fila obstaculiza la circulación y puede impedir la salida de vehículos correctamente estacionados, siendo una infracción grave\n- Error común: creer que la presencia del conductor convierte la doble fila en una parada permitida",
+      "pista": "Ninguna condición de tiempo ni de presencia del conductor autoriza la doble fila.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0110",
+      "subtema_id": "subtema_43",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Puede negarse a someterse a una prueba de alcoholemia cuando un agente de tráfico se lo ordena?",
+      "opciones": [
+        "Sí, si considera que no ha consumido alcohol.",
+        "Sí, pero solo si no ha bebido en las últimas horas.",
+        "No, negarse constituye un delito penal."
+      ],
+      "correcta": 2,
+      "explicacion": "Negarse a realizar la prueba de alcoholemia cuando la ordena un agente es un delito penal, con independencia de si el conductor ha consumido alcohol o no.\n\n- Opciones incorrectas: la creencia personal de no haber bebido no otorga derecho a negarse; el tiempo transcurrido desde el último consumo tampoco exime de la obligación\n- Conexión: superar el doble de la tasa permitida (0,60 mg/l en aire espirado) también constituye delito penal, no solo infracción administrativa\n- Dato clave: entre la primera y la segunda prueba debe transcurrir un mínimo de 10 minutos",
+      "pista": "La negativa a la prueba tiene la misma consideración penal que superar el doble de la tasa.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0111",
+      "subtema_id": "subtema_43",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Afecta la fatiga al tiempo de reacción del conductor?",
+      "opciones": [
+        "No, el tiempo de reacción depende exclusivamente de la velocidad del vehículo.",
+        "Solo si la fatiga es extrema y el conductor está a punto de dormirse.",
+        "Sí, puede duplicar o superar el tiempo de reacción normal."
+      ],
+      "correcta": 2,
+      "explicacion": "La fatiga aumenta significativamente el tiempo de reacción, que en condiciones normales es de 0,75 a 1 segundo y puede llegar hasta 2 segundos con fatiga intensa.\n\n- Opciones incorrectas: el tiempo de reacción no depende de la velocidad del vehículo sino del estado del conductor; la fatiga afecta al tiempo de reacción incluso en fases moderadas, no solo en las extremas\n- Conexión: el alcohol también puede duplicar o triplicar el tiempo de reacción, de forma similar a la fatiga\n- Dato clave: a 90 km/h, un segundo extra de reacción supone 25 metros adicionales antes de empezar a frenar",
+      "pista": "El tiempo de reacción normal es inferior a 1 segundo; la fatiga lo incrementa notablemente.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0112",
+      "subtema_id": "subtema_46",
+      "tipo_pregunta": "directa",
+      "enunciado": "Para prevenir la fatiga en un viaje largo, ¿cada cuánto tiempo se recomienda hacer una pausa?",
+      "opciones": [
+        "Cada 4 horas o 400 km.",
+        "Cada 2 horas o 200 km.",
+        "Cada 3 horas o 300 km."
+      ],
+      "correcta": 1,
+      "explicacion": "La DGT recomienda parar cada 2 horas o 200 km como máximo y descansar entre 15 y 30 minutos para prevenir la fatiga y el sueño al volante.\n\n- Opciones incorrectas: 4 horas o 3 horas son intervalos demasiado largos que aumentan el riesgo de microsueños; 400 km y 300 km igualmente superan la distancia recomendada\n- Conexión: esta recomendación es de seguridad vial para conductores particulares, no una obligación legal con sanción como sí ocurre con los conductores profesionales\n- Error común: confundir la recomendación de 2 horas para conductores particulares con las normas de descanso de conductores profesionales, que son distintas",
+      "pista": "La regla es fácil de recordar: 2 horas y 200 km.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0113",
+      "subtema_id": "subtema_18",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Está prohibida la marcha atrás en las autopistas?",
+      "opciones": [
+        "No, está permitida en el arcén si no hay otra opción.",
+        "Solo en los carriles de circulación, no en el arcén.",
+        "Sí, salvo en zonas habilitadas expresamente."
+      ],
+      "correcta": 2,
+      "explicacion": "La marcha atrás está prohibida en autopistas y autovías en cualquier punto, incluido el arcén, salvo en las zonas expresamente habilitadas para ello.\n\n- Opciones incorrectas: el arcén de autopista tampoco es un lugar habilitado para realizar marcha atrás; la restricción se aplica tanto a los carriles de circulación como al arcén\n- Conexión: si se pasa de una salida en autopista, nunca se debe dar marcha atrás; lo correcto es continuar hasta la siguiente salida y retornar\n- Error común: pensar que el arcén es un lugar donde se pueden realizar maniobras como la marcha atrás",
+      "pista": "En autopista, si te pasas la salida, la única opción legal es seguir hasta la siguiente.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0114",
+      "subtema_id": "subtema_19",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por el interior de una glorieta y se dispone a tomar la siguiente salida. ¿Qué intermitente debe activar antes de salir?",
+      "opciones": [
+        "El intermitente izquierdo, para indicar que va a continuar por la glorieta.",
+        "El intermitente derecho, antes de tomar la salida.",
+        "Ninguno, dentro de la glorieta no es obligatorio señalizar la salida."
+      ],
+      "correcta": 1,
+      "explicacion": "Al salir de una glorieta es obligatorio activar el intermitente derecho para indicar la intención de tomar la salida. Sin embargo, al entrar no es obligatorio señalizar.\n\n- Opciones incorrectas: el intermitente izquierdo no tiene ningún uso reglamentario para la salida de la glorieta; afirmar que no es necesario ningún intermitente al salir incumple la norma\n- Conexión: en una turboglorieta hay que elegir el carril correcto antes de entrar, ya que no se puede cambiar una vez dentro\n- Error común: creer que el intermitente no es necesario al salir porque dentro de la glorieta se tiene prioridad de circulación",
+      "pista": "Al salir de cualquier vía o carril, el intermitente derecho es obligatorio.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0115",
+      "subtema_id": "subtema_20",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una carretera convencional con línea continua en el eje y va a adelantar a un ciclista. No hay vehículos de frente y necesita invadir el carril contrario para mantener la distancia lateral de 1,5 metros. ¿Qué debe hacer?",
+      "opciones": [
+        "Esperar a que la línea sea discontinua antes de iniciar el adelantamiento.",
+        "Adelantar sin invadir el carril contrario, acercándose todo lo posible al límite de 1,5 metros.",
+        "Adelantar cruzando la línea continua, manteniendo la distancia lateral mínima y reduciendo la velocidad."
+      ],
+      "correcta": 2,
+      "explicacion": "La normativa permite cruzar la línea continua para adelantar a ciclistas cuando sea imprescindible para garantizar la distancia lateral de 1,5 metros y la maniobra sea segura.\n\n- Opciones incorrectas: esperar a la línea discontinua puede suponer seguir al ciclista durante un tiempo indeterminado sin poder adelantar; adelantar sin invadir el carril contrario incumple la distancia lateral mínima exigida\n- Dato clave: durante el adelantamiento a ciclistas es obligatorio reducir la velocidad 20 km/h por debajo del límite Y mantener 1,5 metros de distancia lateral\n- Conexión: no respetar la distancia al adelantar ciclistas es infracción muy grave: 200 euros y 6 puntos",
+      "pista": "La protección del ciclista justifica una excepción a la regla general de la línea continua.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0116",
+      "subtema_id": "subtema_21",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Al estacionar su turismo en una pendiente de subida con bordillo, ¿en qué dirección debe girar las ruedas delanteras?",
+      "opciones": [
+        "Hacia el bordillo, para que se apoyen en él si el vehículo se mueve.",
+        "Hacia el centro de la calzada, para que las ruedas choquen contra el bordillo si el vehículo retrocede.",
+        "Recto, para facilitar la reincorporación a la marcha."
+      ],
+      "correcta": 1,
+      "explicacion": "En pendiente de subida con bordillo, las ruedas se giran hacia el centro de la vía. Si el vehículo se desplaza hacia atrás, las ruedas chocan con el bordillo y lo detienen.\n\n- Opciones incorrectas: girar hacia el bordillo es la posición correcta en pendiente de bajada, donde las ruedas se apoyan en él si el vehículo avanza; dejar las ruedas rectas no ofrece ninguna retención mecánica adicional\n- Conexión: en bajada con bordillo las ruedas se giran hacia el bordillo; sin bordillo siempre se giran hacia el lado que ofrezca más resistencia\n- Dato clave: además del giro de ruedas, se debe poner el freno de mano y dejar 1.ª marcha metida en subida o marcha atrás en bajada",
+      "pista": "Piensa hacia dónde rodará el coche si falla el freno: en subida retrocede, por lo que las ruedas deben chocar con el bordillo.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0117",
+      "subtema_id": "subtema_43",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Lleva 4 años con el permiso de conducir. Un agente le somete a una prueba de alcoholemia y el resultado es 0,27 mg/l en aire espirado. ¿Ha cometido una infracción?",
+      "opciones": [
+        "No, el límite general en aire espirado es 0,30 mg/l.",
+        "Sí, supera el límite general de 0,25 mg/l en aire espirado.",
+        "Solo si la segunda prueba, realizada 10 minutos después, confirma el resultado."
+      ],
+      "correcta": 1,
+      "explicacion": "El límite general para conductores con más de 2 años de antigüedad del permiso es de 0,25 mg/l en aire espirado. Un resultado de 0,27 mg/l lo supera y constituye una infracción.\n\n- Opciones incorrectas: 0,30 mg/l es el límite en sangre de conductores noveles y profesionales, no el límite en aire del conductor general; la segunda prueba es un procedimiento de comprobación, pero la infracción existe desde la primera medición positiva\n- Dato clave: el conductor novel (menos de 2 años de permiso) tiene un límite más estricto de 0,15 mg/l en aire espirado\n- Conexión: superar 0,60 mg/l en aire (el doble del límite general) constituye delito penal, no solo infracción administrativa",
+      "pista": "El límite en aire espirado para conductores generales es 0,25 mg/l, no 0,30.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0118",
+      "subtema_id": "subtema_35",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una autopista con lluvia muy intensa y la visibilidad ha caído por debajo de 50 metros. ¿Debe encender la luz antiniebla trasera?",
+      "opciones": [
+        "No, la antiniebla trasera solo se usa con niebla, no con lluvia.",
+        "Sí, porque la visibilidad es inferior a 50 metros.",
+        "Sí, pero solo si además hay curvas o túneles en el trayecto."
+      ],
+      "correcta": 1,
+      "explicacion": "La luz antiniebla trasera debe encenderse cuando la visibilidad es inferior a 50 metros, ya sea por niebla, lluvia intensa o cualquier otra causa que reduzca la visibilidad a esa distancia.\n\n- Opciones incorrectas: la antiniebla trasera no es exclusiva de la niebla; el tipo de curvas o túneles no forma parte del criterio de uso de la antiniebla trasera\n- Error común: creer que la antiniebla trasera solo se usa con niebla, olvidando que el criterio es la distancia de visibilidad (<50 metros) independientemente de la causa\n- Conexión: las luces de cruce también son obligatorias con lluvia intensa, con independencia de la visibilidad",
+      "pista": "El criterio es la distancia de visibilidad, no el tipo de meteoro que la provoca.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0119",
+      "subtema_id": "subtema_19",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una vía urbana con su semáforo en verde. En el carril derecho hay un autobús escolar detenido con las luces de advertencia de parada activadas y recogiendo menores. ¿Qué debe hacer?",
+      "opciones": [
+        "Continuar; el semáforo en verde le da prioridad para circular.",
+        "Reducir la velocidad y pasar con precaución si los menores no cruzan la calzada.",
+        "Parar hasta que el autobús desactive las señales de parada."
+      ],
+      "correcta": 2,
+      "explicacion": "Las señales de parada activadas en un autobús escolar generan la obligación de detenerse para todos los conductores, con independencia de la señalización viaria, incluido el semáforo en verde.\n\n- Opciones incorrectas: el semáforo en verde no prevalece sobre las señales de parada del autobús escolar; pasar con precaución no cumple con la obligación legal de detenerse\n- Conexión: los vehículos de emergencia con sirena y luces activadas también prevalecen sobre la señalización viaria ordinaria\n- Error común: aplicar la prioridad del semáforo sin tener en cuenta que las señales del autobús escolar generan una obligación de parada que la supera",
+      "pista": "La seguridad de los menores que suben o bajan del autobús escolar es prioritaria sobre el semáforo.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0120",
+      "subtema_id": "subtema_18",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una autovía y se da cuenta de que ha pasado de largo la salida que necesitaba. ¿Qué debe hacer?",
+      "opciones": [
+        "Parar en el arcén y esperar un hueco para dar marcha atrás por él.",
+        "Cruzar la mediana con precaución si no viene tráfico de frente.",
+        "Continuar hasta la siguiente salida y retornar por la red de carreteras."
+      ],
+      "correcta": 2,
+      "explicacion": "Si se pasa una salida en autopista o autovía, la única opción legal y segura es continuar hasta la siguiente salida y volver por la red viaria, aunque suponga varios kilómetros más.\n\n- Opciones incorrectas: la marcha atrás en autopista está prohibida incluso en el arcén; cruzar la mediana está absolutamente prohibido y es extremadamente peligroso\n- Conexión: la marcha atrás como maniobra complementaria está permitida en vías ordinarias hasta 15 metros, pero nunca en autopistas ni autovías\n- Error común: detenerse en el arcén para esperar un hueco y maniobrar, lo que también está prohibido salvo emergencia real",
+      "pista": "En autopista, la única maniobra correcta cuando te pasas la salida es seguir adelante.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0121",
+      "subtema_id": "subtema_30",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una carretera con nieve y llega a una subida pronunciada. ¿En qué marcha debe circular para evitar que las ruedas patinen?",
+      "opciones": [
+        "En primera marcha, para tener el máximo par motor y tracción.",
+        "En marchas lo más altas posible, para reducir el par transmitido a las ruedas.",
+        "En punto muerto, dejando que el vehículo suba por inercia."
+      ],
+      "correcta": 1,
+      "explicacion": "En subidas con nieve se deben usar marchas altas para reducir el par que llega a las ruedas y evitar que patinen. La primera marcha transmite demasiado par y provoca que las ruedas giren sin tracción en superficies heladas.\n\n- Opciones incorrectas: la primera marcha transmite demasiado par en nieve y provoca patinaje; el punto muerto elimina la tracción y el control del vehículo\n- Conexión: en condiciones de nieve o hielo se recomienda también arrancar en segunda marcha por el mismo motivo\n- Error común: aplicar el instinto de usar marchas cortas para las cuestas, correcto en seco pero contraproducente sobre nieve",
+      "pista": "En nieve, menos par en las ruedas significa menos patinaje.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0122",
+      "subtema_id": "subtema_43",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Obtuvo el permiso de conducir hace 6 meses. En un control de alcoholemia, el resultado es 0,18 mg/l en aire espirado. ¿Ha cometido una infracción?",
+      "opciones": [
+        "No, porque está por debajo del límite general de 0,25 mg/l en aire espirado.",
+        "Sí, porque supera el límite de 0,15 mg/l aplicable a conductores noveles.",
+        "Sí, pero solo si la segunda prueba, con 10 minutos de diferencia, lo confirma."
+      ],
+      "correcta": 1,
+      "explicacion": "Los conductores con menos de 2 años de antigüedad del permiso (noveles) tienen un límite de 0,15 mg/l en aire espirado. Un resultado de 0,18 mg/l supera ese límite y constituye infracción.\n\n- Opciones incorrectas: el límite general de 0,25 mg/l no aplica al conductor novel en sus primeros 2 años; la segunda prueba es un procedimiento de confirmación, pero la infracción existe desde la primera medición positiva\n- Conexión: los conductores profesionales (autobuses, mercancías peligrosas) tienen el mismo límite reducido que los noveles: 0,15 mg/l en aire\n- Dato clave: el límite novel es exactamente la mitad del límite general, tanto en aire (0,15 vs 0,25 mg/l) como en sangre (0,3 vs 0,5 g/l)",
+      "pista": "El conductor novel tiene el límite más restrictivo: la mitad que el conductor general.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0123",
+      "subtema_id": "subtema_19",
+      "tipo_pregunta": "situacional",
+      "enunciado": "En un estrechamiento de carretera con pendiente del 8%, dos vehículos se encuentran de frente al haber entrado simultáneamente. ¿Quién tiene prioridad para continuar?",
+      "opciones": [
+        "El que desciende, porque tiene más dificultad para frenar cuesta abajo.",
+        "El que asciende, porque es más difícil y peligroso arrancar cuesta arriba.",
+        "El más largo, porque tiene mayor dificultad para hacer marcha atrás."
+      ],
+      "correcta": 1,
+      "explicacion": "En un estrechamiento con pendiente pronunciada (7% o más), la prioridad corresponde al vehículo que asciende, porque le resulta más difícil y peligroso detenerse y volver a arrancar cuesta arriba.\n\n- Opciones incorrectas: el que desciende tiene más facilidad para ceder porque no tiene que arrancar cuesta arriba; la longitud del vehículo es el criterio para estrechamientos sin pendiente significativa cuando no está claro quién entró primero\n- Excepción: si el que sube encuentra un apartadero antes de cruzarse con el otro, debe detenerse en él y ceder el paso al que baja\n- Error común: confundir el criterio de longitud (para estrechamientos sin pendiente) con el criterio de dirección ascendente (con pendiente ≥7%)",
+      "pista": "Arrancar en cuesta es mucho más complicado que frenar y retroceder bajando.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0124",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "completar",
+      "enunciado": "En una vía urbana con un único carril por sentido, la velocidad máxima permitida para un turismo es...",
+      "opciones": [
+        "50 km/h.",
+        "40 km/h.",
+        "30 km/h."
+      ],
+      "correcta": 2,
+      "explicacion": "Las vías urbanas con un solo carril por sentido tienen un límite de 30 km/h, diferente al límite de 50 km/h que aplica cuando la vía tiene dos o más carriles por sentido.\n\n- Opciones incorrectas: 50 km/h corresponde a vías urbanas con dos o más carriles por sentido; 40 km/h no es el límite general de ningún tipo de vía urbana estándar en el RGC\n- Conexión: las zonas residenciales (zona 20) tienen un límite más restrictivo de 20 km/h, y las zonas 30 lo tienen en 30 km/h con independencia del número de carriles\n- Error común: aplicar el límite de 50 km/h a todas las vías urbanas sin distinguir el número de carriles por sentido",
+      "pista": "El número de carriles por sentido determina el límite en vía urbana.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0125",
+      "subtema_id": "subtema_21",
+      "tipo_pregunta": "completar",
+      "enunciado": "Un vehículo inmovilizado más de 2 minutos con el conductor ausente se considera...",
+      "opciones": [
+        "una parada reglamentaria si el motor está apagado.",
+        "un estacionamiento.",
+        "una parada, siempre que esté señalizado con los intermitentes de emergencia."
+      ],
+      "correcta": 1,
+      "explicacion": "El estacionamiento se define como la inmovilización del vehículo durante más de 2 minutos o cuando el conductor lo abandona, con independencia del estado del motor o de la señalización de emergencia.\n\n- Opciones incorrectas: el motor apagado no convierte el estacionamiento en parada; los intermitentes tampoco cambian la clasificación jurídica de la inmovilización\n- Conexión: la diferencia entre parada y estacionamiento determina qué normas aplican en cuanto a dónde se puede inmovilizar el vehículo y durante cuánto tiempo\n- Dato clave: la parada es la inmovilización de hasta 2 minutos con el conductor presente y disponible para mover el vehículo de inmediato",
+      "pista": "Más de 2 minutos o conductor ausente siempre es estacionamiento, sin excepciones.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0126",
+      "subtema_id": "subtema_35",
+      "tipo_pregunta": "completar",
+      "enunciado": "La marcha atrás como maniobra complementaria está permitida en vías ordinarias hasta una distancia máxima de...",
+      "opciones": [
+        "10 metros.",
+        "20 metros.",
+        "15 metros."
+      ],
+      "correcta": 2,
+      "explicacion": "La marcha atrás como maniobra complementaria (para aparcar o cambiar de sentido) está limitada a un máximo de 15 metros en vías ordinarias, y está prohibida en autopistas y autovías.\n\n- Opciones incorrectas: 10 metros no es el valor que establece el reglamento; 20 metros supera la distancia máxima permitida\n- Conexión: la marcha atrás también está prohibida en intersecciones, pasos de peatones, pasos a nivel y curvas con visibilidad reducida\n- Error común: desconocer el límite de 15 metros y creer que se puede hacer marcha atrás sin restricción de distancia en vías ordinarias",
+      "pista": "El reglamento fija un número exacto de metros: ni 10 ni 20.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0127",
+      "subtema_id": "subtema_21",
+      "tipo_pregunta": "completar",
+      "enunciado": "Para estacionar junto a una parada de autobús señalizada, la distancia mínima obligatoria es de...",
+      "opciones": [
+        "5 metros.",
+        "10 metros.",
+        "15 metros."
+      ],
+      "correcta": 2,
+      "explicacion": "La normativa prohíbe estacionar a menos de 15 metros de una parada de autobús o taxi señalizada, para garantizar el acceso de los vehículos de servicio público y la seguridad de los viajeros.\n\n- Opciones incorrectas: 5 metros es la distancia mínima para esquinas, intersecciones y pasos de peatones, no para paradas de transporte público; 10 metros no corresponde a ninguna distancia de estacionamiento establecida en el RGC\n- Conexión: junto a pasos de peatones o esquinas, la distancia mínima para estacionar es de 5 metros\n- Error común: aplicar la distancia de 5 metros a todos los supuestos sin distinguir el tipo de zona prohibida",
+      "pista": "Las paradas de transporte público requieren mayor distancia que las intersecciones.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0128",
+      "subtema_id": "subtema_43",
+      "tipo_pregunta": "completar",
+      "enunciado": "Entre la primera y la segunda prueba de alcoholemia debe transcurrir un mínimo de...",
+      "opciones": [
+        "5 minutos.",
+        "15 minutos.",
+        "10 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "El reglamento establece que entre la primera y la segunda prueba de alcoholemia debe transcurrir un mínimo de 10 minutos, para que el resultado sea fiable y comparable.\n\n- Opciones incorrectas: 5 minutos es un tiempo insuficiente que podría no reflejar el nivel real de alcohol; 15 minutos supera el mínimo reglamentario, aunque esperar más no invalida la prueba\n- Conexión: si el resultado de la segunda prueba es positivo, el conductor puede solicitar un análisis de sangre como contraste\n- Dato clave: negarse a realizar cualquiera de las dos pruebas constituye un delito penal",
+      "pista": "El tiempo mínimo entre pruebas es un dato exacto que el examen DGT suele preguntar.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0129",
+      "subtema_id": "subtema_35",
+      "tipo_pregunta": "completar",
+      "enunciado": "Cuando se experimenta aquaplaning, la reacción correcta es soltar el acelerador suavemente y...",
+      "opciones": [
+        "frenar con fuerza para recuperar el contacto con el asfalto.",
+        "girar el volante hacia el arcén para salir de la zona con agua.",
+        "mantener el volante recto sin frenar bruscamente ni girar hasta recuperar la adherencia."
+      ],
+      "correcta": 2,
+      "explicacion": "Ante el aquaplaning, lo correcto es no frenar bruscamente, no girar el volante y sujetar el volante recto mientras se suelta el acelerador suavemente, hasta que las ruedas recuperen el contacto con el asfalto.\n\n- Opciones incorrectas: frenar bruscamente en aquaplaning puede provocar un giro descontrolado del vehículo; girar hacia el arcén puede agravar la pérdida de control al reenganchar las ruedas asimétricamente\n- Conexión: el aquaplaning se produce con velocidades superiores a 80 km/h aproximadamente, agua acumulada y neumáticos desgastados\n- Dato clave: la prevención más eficaz es circular con neumáticos con dibujo profundo y reducir la velocidad ante la lluvia intensa",
+      "pista": "En aquaplaning, los movimientos bruscos aumentan el peligro; la clave es no reaccionar con fuerza.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    },
+    {
+      "id": "pregunta_0130",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "dato",
+      "enunciado": "Circula por una autopista arrastrando un remolque cuya masa máxima autorizada es de 900 kg. ¿Cuál es su velocidad máxima?",
+      "opciones": [
+        "90 km/h.",
+        "70 km/h.",
+        "80 km/h."
+      ],
+      "correcta": 2,
+      "explicacion": "Un remolque con MMA superior a 750 kg es un remolque pesado. En autopista, el límite para turismo con remolque pesado es de 80 km/h.\n\n- Opciones incorrectas: 90 km/h es el límite del turismo con remolque LIGERO (MMA ≤750 kg) en autopista; 70 km/h es el límite del turismo con remolque pesado en carretera convencional, no en autopista\n- Conexión: el remolque ligero (≤750 kg) permite circular a 90 km/h en autopista, mientras que el pesado está limitado a 80 km/h; en carretera convencional los límites son 80 y 70 km/h respectivamente\n- Error común: confundir los límites del remolque ligero (90 km/h en autopista) con los del remolque pesado (80 km/h en autopista)",
+      "pista": "Un remolque de 900 kg supera el umbral de 750 kg que separa ligero de pesado.",
+      "requiere_imagen": false,
+      "tipo_imagen": "ninguna",
+      "codigo_señal": null,
+      "origen": "generada",
+      "validada": false
+    }
+  ]
+}
