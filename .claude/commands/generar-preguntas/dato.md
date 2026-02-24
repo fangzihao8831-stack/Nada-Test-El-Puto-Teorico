@@ -63,13 +63,13 @@ Identificar este tipo: el enunciado describe una situacion especifica y pregunta
 
 **Ejemplo de referencia**:
 
-> Circula por carretera convencional arrastrando un remolque de 600 kg de MMA. ¿Cual es su velocidad maxima?
+> Circula por autopista arrastrando un remolque. ¿Cual es su velocidad maxima?
 >
-> A) 70 km/h
-> **B) 80 km/h**
-> C) 90 km/h
+> A) 80 km/h
+> **B) 90 km/h**
+> C) 120 km/h
 
-*Nota: 70 km/h aplica a remolques de mayor MMA en carretera (condicion distinta). 80 km/h es el valor correcto para remolque de hasta 750 kg en carretera convencional. 90 km/h es el limite de un turismo SIN remolque en carretera convencional. Los tres son valores reales de la tabla de velocidades pero de condiciones distintas — ninguno es deducible por eliminacion.*
+*Nota: 80 km/h es el limite del remolque en carretera convencional (via incorrecta). 90 km/h es el valor correcto para autopista con remolque. 120 km/h es el limite del turismo SIN remolque en autopista (configuracion incorrecta). Los tres son valores reales pero de condiciones distintas — 80/90/120 no forman una secuencia escalonada obvia, por lo que el alumno no puede adivinar por eliminacion.*
 
 ---
 
