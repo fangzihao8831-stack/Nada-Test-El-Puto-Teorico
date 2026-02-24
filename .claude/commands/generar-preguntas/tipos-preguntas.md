@@ -14,7 +14,11 @@ Generar preguntas respetando esta distribucion:
 | Dato concreto | ~10% | Pregunta sobre un dato numerico o definicion especifica |
 
 ### Tecnicas transversales (se aplican a CUALQUIER tipo):
-- **Con imagen**: TODAS las preguntas DEBEN tener `requiere_imagen: true` y un `tipo_imagen` apropiado. En el examen oficial DGT, el 100% de preguntas tienen imagen asociada. Las imagenes se generaran con un skill separado (DALL-E 3)
+- **Todas las preguntas tendrán imagen**: Las imágenes se generan con un skill separado. NO incluir campos `requiere_imagen` ni `tipo_imagen` en el JSON. Solo incluir `codigo_señal` (ej: "R-2", "P-1a") cuando la pregunta trate específicamente de una señal de tráfico; en ese caso, usar "esta señal" en el enunciado en vez del código.
+- **Campo `nivel` obligatorio**: Toda pregunta debe incluir `nivel` (1, 2, 3 o 4) según las tablas de dificultad de abajo. Sin este campo la pregunta es inválida.
+- **Campo `pista` obligatorio**: Una frase corta (máximo 20 palabras) que aparece en modo estudio ANTES de responder. No debe revelar la respuesta. Dos estilos según convenga:
+  - **Mnemónico** (para datos/reglas): ayuda a recordar. Ej: *"El límite novel es exactamente la mitad que el general."*
+  - **Razonamiento** (para situacionales): guía el pensamiento. Ej: *"Piensa qué ocurre si el vehículo retrocede en la pendiente."*
 - **Opciones concisas**: Las opciones deben ser escuetas (objetivo: 5-20 palabras). NO incluir justificaciones dentro de la opcion. La explicacion va en el campo `explicacion`
 - **Distractores plausibles**: Las opciones incorrectas deben ser errores reales de alumnos o reglas de otro contexto, NUNCA absurdos evidentes
 - **Siempre 3 opciones (A, B, C)**: El examen DGT usa exactamente 3 opciones. Nunca generar 4 opciones.

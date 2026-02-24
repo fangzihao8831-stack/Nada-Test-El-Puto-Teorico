@@ -1,5 +1,81 @@
 # Reglas de Verificación
 
+## Asignación de subtema_id (OBLIGATORIO — leer antes de escribir cualquier pregunta)
+
+El `subtema_id` se asigna según el CONTENIDO de la pregunta, no según el tema pedido. Usar EXCLUSIVAMENTE los IDs de esta tabla:
+
+| subtema_id | Nombre | Tema |
+|------------|--------|------|
+| subtema_01 | El permiso de conducir | tema_01 |
+| subtema_02 | Documentación | tema_01 |
+| subtema_03 | Permiso por puntos | tema_01 |
+| subtema_04 | El vehículo | tema_02 |
+| subtema_05 | ITV | tema_02 |
+| subtema_06 | El seguro | tema_02 |
+| subtema_07 | Vehículos eléctricos e híbridos | tema_02 |
+| subtema_08 | La carga | tema_03 |
+| subtema_09 | Transporte de personas y animales | tema_03 |
+| subtema_10 | Remolques | tema_03 |
+| subtema_11 | La vía pública | tema_04 |
+| subtema_12 | Usuarios vulnerables | tema_04 |
+| subtema_13 | Nuevas señales y tipologías de vía | tema_04 |
+| subtema_14 | Ángulos muertos y visibilidad | tema_04 |
+| subtema_15 | Normas generales de circulación | tema_05 |
+| subtema_16 | Velocidad | tema_05 |
+| subtema_17 | Distancia de seguridad | tema_05 |
+| subtema_18 | Marcha atrás | tema_05 |
+| subtema_19 | Prioridad de paso | tema_06 |
+| subtema_20 | Incorporación a la circulación | tema_06 |
+| subtema_21 | Adelantamientos | tema_06 |
+| subtema_22 | Intersecciones | tema_06 |
+| subtema_23 | Parada y estacionamiento | tema_06 |
+| subtema_24 | Alumbrado | tema_07 |
+| subtema_25 | Señales acústicas | tema_07 |
+| subtema_26 | Jerarquía de señales | tema_07 |
+| subtema_27 | Señales de los agentes | tema_07 |
+| subtema_28 | Semáforos | tema_07 |
+| subtema_29 | Señales verticales | tema_07 |
+| subtema_30 | Marcas viales | tema_07 |
+| subtema_31 | Señalización circunstancial | tema_07 |
+| subtema_32 | Autopistas y autovías | tema_08 |
+| subtema_33 | Túneles | tema_08 |
+| subtema_34 | Pasos a nivel | tema_08 |
+| subtema_35 | Condiciones adversas | tema_08 |
+| subtema_36 | Preparación y desarrollo del viaje | tema_08 |
+| subtema_37 | Conducción en grupo y situaciones especiales | tema_08 |
+| subtema_38 | Seguridad activa | tema_09 |
+| subtema_39 | Seguridad pasiva | tema_09 |
+| subtema_40 | Sistemas ADAS | tema_09 |
+| subtema_41 | Comprobaciones y mantenimiento | tema_09 |
+| subtema_42 | Conducción autónoma y automatizada | tema_09 |
+| subtema_43 | Alcohol | tema_10 |
+| subtema_44 | Drogas | tema_10 |
+| subtema_45 | Medicamentos | tema_10 |
+| subtema_46 | Fatiga y sueño | tema_10 |
+| subtema_47 | Distracciones | tema_10 |
+| subtema_48 | Velocidad como factor de riesgo | tema_10 |
+| subtema_49 | Estados emocionales | tema_10 |
+| subtema_50 | Conducta PAS | tema_11 |
+| subtema_51 | Primeros auxilios | tema_11 |
+| subtema_52 | Equipamiento de emergencia | tema_11 |
+| subtema_53 | Conducción eficiente | tema_11 |
+| subtema_54 | Medio ambiente | tema_11 |
+| subtema_55 | Infracciones y sanciones | tema_12 |
+| subtema_56 | Responsabilidad del conductor | tema_12 |
+| subtema_57 | Inmovilización y retirada de vehículos | tema_12 |
+| subtema_58 | Procedimiento sancionador | tema_12 |
+
+**Errores frecuentes a evitar:**
+- Pregunta sobre parada/estacionamiento → subtema_23 (no subtema_21 Adelantamientos)
+- Pregunta sobre fatiga/sueño → subtema_46 (no subtema_43 Alcohol)
+- Pregunta sobre el móvil al volante → subtema_47 Distracciones (no subtema_15)
+- Pregunta sobre circular en autopista/autovía (prohibiciones, normas específicas) → subtema_32 (no subtema_16 Velocidad)
+- Pregunta sobre adelantar ciclistas → subtema_21 (no subtema_35 Condiciones adversas)
+- Pregunta sobre velocidad inadecuada vs exceso → subtema_16 Velocidad (no subtema_35 ni subtema_48)
+- Pregunta sobre marcha atrás (distancia, prohibiciones) → subtema_18 (no subtema_35)
+
+---
+
 ## Rechazo automático (HARD REJECT)
 
 Si una pregunta cumple CUALQUIERA de estos criterios, se descarta inmediatamente y se reescribe como escenario:
@@ -12,7 +88,11 @@ Si una pregunta cumple CUALQUIERA de estos criterios, se descarta inmediatamente
 | **Recitar definición** | "¿Qué es...?", "¿Cómo se define...?" sin contexto práctico | "¿Qué es la MMA?" (sin escenario de uso) |
 | **Coste/precio** | Preguntas sobre cuánto cuesta algo | "¿Cuánto cuesta el curso de recuperación de puntos?" |
 | **Estadística** | Datos estadísticos como porcentajes de accidentes | "¿Qué porcentaje de accidentes se debe al alcohol?" |
-| **Código de señal en enunciado** | El enunciado menciona R-XXX, P-XXX o S-XXX en vez de "esta señal" | "La señal R-303 prohíbe..." (ver reglas de señal en `generar-preguntas.md`) |
+| **Código de señal en enunciado** | El enunciado menciona R-XXX, P-XXX o S-XXX en vez de "esta señal" | "La señal R-303 prohíbe..." (usar "esta señal" + campo `codigo_señal`) |
+| **Cálculo o fórmula** | Pide calcular algo con fórmulas (V²/254, velocidad×tiempo, etc.) | "Si circula a 90 km/h, ¿cuál es su distancia de frenado?" |
+| **Pregunta negativa** | "¿Cuál es INCORRECTO?", "¿Qué NO debe hacer?" | "¿Cuál de las siguientes acciones es incorrecta?" |
+| **Artículo de ley** | Pide citar un artículo, código o decreto específico | "¿Qué artículo del Código Penal sanciona...?" |
+| **Variación regional** | Pregunta sobre normas de una comunidad autónoma | "En Cataluña, ¿está permitido...?" |
 
 **Patrón de detección rápida**: Si el enunciado contiene "¿Desde cuándo", "¿En qué año", "¿A partir de qué fecha", "¿Qué dice", "¿Qué establece", "¿Cómo se define", "¿Qué es el/la", o un código de señal (R-###, P-###, S-###) → RECHAZAR.
 
@@ -101,18 +181,38 @@ Si la respuesta es NO, hay que añadir contexto al enunciado.
 
 ---
 
-## Clasificación de dependencia de imagen
+## Señales de tráfico e imágenes
 
-Todas las preguntas tienen `requiere_imagen: true`, pero el generador debe distinguir internamente:
+Todas las preguntas tendrán imagen asociada (generada por un skill separado). El generador NO debe incluir campos `requiere_imagen` ni `tipo_imagen` en el JSON.
 
-| Dependencia | Descripción | Acción |
-|-------------|-------------|--------|
-| **Suplementaria** | La imagen enriquece pero el texto basta para responder | El enunciado es autosuficiente tal cual |
-| **Esencial** | La respuesta depende de elementos visuales (layout de carriles, posición exacta, señal concreta) | El enunciado DEBE describir esos elementos explícitamente hasta que las imágenes se generen |
+**Cuando la pregunta trata de una señal específica:**
+1. Usar "esta señal" en el enunciado (NUNCA el código R-XXX, P-XXX, S-XXX)
+2. Incluir el campo `codigo_señal` con el código real (ej: `"codigo_señal": "R-2"`)
+3. Este campo conecta la pregunta con la imagen correcta de la señal
 
-Si durante la generación se detecta que una pregunta sería de dependencia "esencial", se DEBE:
-1. Añadir al enunciado la descripción textual del contexto visual
-2. O simplificar el escenario para que sea autosuficiente
+**Cuando la pregunta NO trata de una señal:** poner `"codigo_señal": null`.
+
+**Enunciado autosuficiente**: Aunque la imagen acompañe, el enunciado debe describir toda la información necesaria para responder. Si la respuesta depende de un detalle visual (layout de carriles, posición de vehículos), ese detalle DEBE estar descrito en el texto.
+
+---
+
+## Campo pista (OBLIGATORIO)
+
+La `pista` aparece en modo estudio ANTES de que el alumno responda. Es una ayuda opcional, no un spoiler.
+
+**Reglas:**
+- Máximo 20 palabras
+- NUNCA revela la respuesta directamente
+- NUNCA menciona la opción correcta ("la B", "la segunda")
+
+**Dos estilos según el tipo de pregunta:**
+
+| Estilo | Cuándo usar | Ejemplo |
+|--------|-------------|---------|
+| **Mnemónico** | Preguntas de dato, regla directa, completar | *"El límite novel es exactamente la mitad que el general."* |
+| **Razonamiento** | Preguntas situacionales, combinación de reglas | *"Piensa qué ocurre si el vehículo retrocede en la pendiente."* |
+
+**Test de calidad**: Si leyendo la pista ya sabes la respuesta sin pensar, la pista es mala. Si después de leerla necesitas APLICAR lo que dice para elegir, es buena.
 
 ---
 
@@ -199,6 +299,9 @@ Pregunta sobre ciclomotor. Distractor: "Necesita 2 espejos retrovisores"
 
 ### Checklist final por pregunta (OBLIGATORIO)
 Antes de incluir cada pregunta, verificar:
+- [ ] ¿Tiene campo `nivel` (1-4)? → Si NO, AÑADIR
+- [ ] ¿Tiene campo `pista` (máx 20 palabras, no revela respuesta)? → Si NO, AÑADIR
+- [ ] ¿Tiene `subtema_id` correcto según la tabla de subtemas de arriba? → Si NO, CORREGIR
 - [ ] ¿Puedo adivinar la correcta sin saber nada de tráfico? → Si es SÍ, REESCRIBIR
 - [ ] ¿La correcta es claramente la más larga? → Si es SÍ, ACORTAR o alargar las otras
 - [ ] ¿Las incorrectas tienen absolutos y la correcta no? → Si es SÍ, REDISTRIBUIR
@@ -206,10 +309,12 @@ Antes de incluir cada pregunta, verificar:
 - [ ] ¿Las incorrectas suenan absurdas para alguien sin formación? → Si es SÍ, REESCRIBIR con errores reales
 - [ ] ¿Alguna opción supera las 20 palabras? → Si es SÍ, ACORTAR
 - [ ] ¿Todos los acentos están correctos? (ver checklist de acentos arriba)
-- [ ] ¿El enunciado menciona un código de señal (R-XXX, P-XXX)? → Si es SÍ, reemplazar por "esta señal"
+- [ ] ¿El enunciado menciona un código de señal (R-XXX, P-XXX)? → Si es SÍ, reemplazar por "esta señal" y poner código en `codigo_señal`
 - [ ] ¿Hay algún valor numérico sin cita de tema_XX.md que lo respalde? → Si es SÍ, buscar y añadir cita antes de conservar la pregunta
 - [ ] ¿La respuesta correcta contradice lo que Claude sabe sobre tráfico español? → Si es SÍ, marcar FLAG para revisión humana
 - [ ] ¿Las 3 opciones forman una secuencia monotónica (ej: 70/80/90) de la misma categoría? → Si es SÍ, REDISTRIBUIR con valores de condiciones distintas
+- [ ] ¿La pregunta pide calcular algo con fórmulas? → Si es SÍ, RECHAZAR (DGT solo pregunta recall)
+- [ ] ¿La pregunta usa formato negativo ("¿Cuál es INCORRECTO?")? → Si es SÍ, RECHAZAR (DGT nunca usa este formato)
 
 ### Archivos de referencia de dificultad
 Antes de generar, consultar estos archivos para calibrar el nivel de dificultad:
