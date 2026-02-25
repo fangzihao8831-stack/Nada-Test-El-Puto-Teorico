@@ -107,14 +107,15 @@ for (const batch of batchDirs) {
 
       if (q.pista) question.pista = q.pista;
       if (q.tipo_pregunta) question.tipoPregunta = q.tipo_pregunta;
+      if (q.nivel) question.nivel = q.nivel;
 
       allQuestions.push(question);
     }
   }
 }
 
-// Sort by tema for readability
-allQuestions.sort((a, b) => a.temaId.localeCompare(b.temaId));
+// Sort by id to preserve JSON file order (pregunta_0401, 0402, ...)
+allQuestions.sort((a, b) => a.id.localeCompare(b.id));
 
 // Copy referenced signal SVGs to public/images/senales/
 const senalesSourceDir = join(projectRoot, "content", "imagenes", "senales");

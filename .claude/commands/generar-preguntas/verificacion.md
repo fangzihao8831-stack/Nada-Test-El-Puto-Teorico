@@ -49,7 +49,7 @@ Estos tres controles se aplican a TODAS las preguntas con datos numéricos o res
 | **Contradicción con Claude** | Respuesta correcta contradice el conocimiento general de Claude sobre tráfico español | Marcar FLAG para revisión humana. El temario es la autoridad del examen; la contradicción indica posible error en la pregunta. |
 | **Secuencia monotónica en distractores** | Las 3 opciones forman una serie simple (ej: 70/80/90) de la misma categoría de la tabla | REDISTRIBUIR: usar valores de DISTINTAS condiciones del mismo escenario. Ver `patrones-y-trampas.md` para ejemplos. |
 
-**Regla de cita de temario**: Ningún valor numérico se conserva sin citar tema_XX.md. Si el generador no puede localizar el dato en el temario, el dato se elimina o se marca FLAG. La cita va inline en el campo `explicación` o en las notas internas de verificación.
+**Regla de cita de temario**: Ningún valor numérico se conserva sin verificarlo contra el temario. Si el generador no puede localizar el dato en el temario, el dato se elimina o se marca FLAG. La verificación es interna del generador — la explicación NO debe contener referencias a archivos (tema_XX.md). Ver `explicaciones.md` para las reglas de formato.
 
 ---
 
@@ -62,7 +62,7 @@ Estos tres controles se aplican a TODAS las preguntas con datos numéricos o res
 - NO generar preguntas que se responden por sentido común sin conocimiento de tráfico
 - NO generar preguntas donde la respuesta se adivina por el TONO de las opciones (ver "Anti-patrones" abajo)
 - **Cada pregunta debe pedir al alumno APLICAR una regla, no RECITAR un dato** (ver regla fundamental en `generar-preguntas.md`)
-- **Cada opción debe tener 20 palabras o menos** — la justificación va en el campo `explicación`, nunca dentro de la opción
+- La justificación va en el campo `explicación`, nunca dentro de la opción
 
 ---
 
@@ -191,42 +191,17 @@ Para preguntas tipo `situacional`, verificar ANTES de incluir:
 
 ## Anti-patrones de opciones (CRÍTICO — leer antes de escribir CUALQUIER opción)
 
-Estos 5 patrones hacen que las preguntas se adivinen SIN conocimiento. Son defectos GRAVES.
+Estos 3 patrones hacen que las preguntas se adivinen SIN conocimiento. Son defectos GRAVES.
 
-### Anti-patrón 1: La correcta es siempre la más larga
-**Problema**: Si la opción correcta tiene 30+ palabras y las incorrectas tienen 10-15, cualquiera elige la larga.
-**Regla**: Las 3 opciones DEBEN tener longitud similar (diferencia máxima ~30%). Alternar: a veces la correcta es la MÁS CORTA (como en el DGT real: "Sí.", "No.", "aumenta.").
-
-Ejemplo BUENO (del DGT real):
-```
-"¿Es obligatorio detenerse ante barreras en movimiento?"
-A: "Sí, pero solamente cuando el vehículo no pueda pasar." (12 palabras)
-B: "No, puesto que no se encuentran en posición horizontal." (10 palabras)
-C: "Sí." (1 palabra) ← CORRECTA
-```
-
-### Anti-patrón 2: Absolutos solo en opciones incorrectas
+### Anti-patrón 1: Absolutos solo en opciones incorrectas
 **Problema**: Si "nunca/siempre/en ningún caso" aparecen SOLO en opciones incorrectas, el alumno descarta sin pensar.
 **Regla**: Los absolutos pueden aparecer en CUALQUIER opción. En el DGT real, "Sí" y "No" (absolutos) son frecuentemente correctos. NO segregar absolutos = incorrecto, matiz = correcto.
 
-### Anti-patrón 3: La correcta suena "más razonable"
+### Anti-patrón 2: La correcta suena "más razonable"
 **Problema**: La correcta siempre suena prudente/equilibrada; las incorrectas suenan extremas o negligentes. Heurística: "elige la más segura" funciona siempre.
 **Regla**: Incluir preguntas donde la respuesta correcta es CONTRAINTUITIVA o suena MENOS segura. Ejemplo real: "La carga que sobresale de una motocicleta... NO es necesario señalizarla" (la opción menos segura es la correcta).
 
-### Anti-patrón 4: La correcta se explica a sí misma
-**Problema**: La opción correcta contiene justificaciones internas ("porque esa es precisamente la condición", "ya que el sistema solo informa y no sustituye").
-**Regla**: Las opciones son AFIRMACIONES ESCUETAS, no explicaciones. La justificación va en el campo `explicación`, NUNCA dentro del texto de la opción. **Máximo 20 palabras por opción** (el DGT real rara vez supera 15).
-
-Ejemplo MALO:
-```
-"Sí, porque la visibilidad es inferior a 50 metros y esa es precisamente la condición para usarla"
-```
-Ejemplo BUENO:
-```
-"Sí, la visibilidad es inferior a 50 metros."
-```
-
-### Anti-patrón 5: Distractores absurdos
+### Anti-patrón 3: Distractores absurdos
 **Problema**: Las opciones incorrectas dicen cosas que nadie elegiría ("Guardarlas en el maletero para que los bomberos las encuentren", "solo con autorización del ayuntamiento").
 **Regla**: Cada distractor debe representar un ERROR REAL que cometen los alumnos o una REGLA DE OTRO CONTEXTO aplicada incorrectamente. Los distractores son reglas reales del temario, pero del subtema equivocado o con el dato equivocado.
 
@@ -242,14 +217,14 @@ Antes de incluir cada pregunta, verificar:
 - [ ] ¿Tiene campo `pista` (máx 20 palabras, no revela respuesta)? → Si NO, AÑADIR
 - [ ] ¿Tiene `subtema_id` correcto según la tabla de subtemas de arriba? → Si NO, CORREGIR
 - [ ] ¿Puedo adivinar la correcta sin saber nada de tráfico? → Si es SÍ, REESCRIBIR
-- [ ] ¿La correcta es claramente la más larga? → Si es SÍ, ACORTAR o alargar las otras
 - [ ] ¿Las incorrectas tienen absolutos y la correcta no? → Si es SÍ, REDISTRIBUIR
-- [ ] ¿La correcta contiene "porque", "ya que", "precisamente"? → Si es SÍ, ELIMINAR justificación
 - [ ] ¿Las incorrectas suenan absurdas para alguien sin formación? → Si es SÍ, REESCRIBIR con errores reales
-- [ ] ¿Alguna opción supera las 20 palabras? → Si es SÍ, ACORTAR
+
 - [ ] ¿Todos los acentos están correctos? (ver checklist de acentos arriba)
+- [ ] ¿La explicación contiene "tema_XX.md" o cualquier nombre de archivo? → Si es SÍ, ELIMINAR la referencia al archivo
+- [ ] ¿La explicación referencia opciones por letra ("la opción A", "la opción B")? → Si es SÍ, REESCRIBIR citando el contenido de la opción en vez de la letra
 - [ ] ¿El enunciado menciona un código de señal (R-XXX, P-XXX)? → Si es SÍ, reemplazar por "esta señal" y poner código en `codigo_señal`
-- [ ] ¿Hay algún valor numérico sin cita de tema_XX.md que lo respalde? → Si es SÍ, buscar y añadir cita antes de conservar la pregunta
+- [ ] ¿Hay algún valor numérico sin verificar contra el temario? → Si es SÍ, buscar en tema_XX.md y confirmar antes de conservar. NO escribir "tema_XX.md" en la explicación
 - [ ] ¿La respuesta correcta contradice lo que Claude sabe sobre tráfico español? → Si es SÍ, marcar FLAG para revisión humana
 - [ ] ¿Las 3 opciones forman una secuencia monotónica (ej: 70/80/90) de la misma categoría? → Si es SÍ, REDISTRIBUIR con valores de condiciones distintas
 - [ ] ¿La pregunta pide calcular algo con fórmulas? → Si es SÍ, RECHAZAR (DGT solo pregunta recall)

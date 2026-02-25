@@ -19,19 +19,17 @@ import { join, resolve, dirname } from "node:path";
 // ── Schema rules (Check 1) ──
 
 const VALID_TIPOS = ["directa", "situacional", "completar", "dato"];
-const VALID_TIPO_IMAGEN = ["señal", "senal", "situación", "situacion", "vehículo", "vehiculo", "ninguna"];
 const VALID_ORIGEN = ["generada", "extraida_dgt", "extraida_todotest"];
 
 const REQUIRED_FIELDS = [
   ["id", "string"],
   ["subtema_id", "string"],
   ["tipo_pregunta", "string"],
+  ["nivel", "number"],
   ["enunciado", "string"],
   ["opciones", "array"],
   ["correcta", "number"],
   ["pista", "string"],
-  ["requiere_imagen", "boolean"],
-  ["tipo_imagen", "string"],
   ["origen", "string"],
   ["validada", "boolean"],
 ];
@@ -69,20 +67,13 @@ function checkSchema(q) {
     errors.push(`tipo_pregunta invalid: ${q.tipo_pregunta}`);
   }
 
-  if (q.tipo_imagen && !VALID_TIPO_IMAGEN.includes(q.tipo_imagen)) {
-    errors.push(`tipo_imagen invalid: ${q.tipo_imagen}`);
-  }
-
   if (q.origen && !VALID_ORIGEN.includes(q.origen)) {
     errors.push(`origen invalid: ${q.origen}`);
   }
 
-  // requiere_imagen must be true iff tipo_imagen is not "ninguna"
-  const tipoNinguna = q.tipo_imagen === "ninguna";
-  if (tipoNinguna && q.requiere_imagen !== false) {
-    errors.push("requiere_imagen must be false when tipo_imagen is 'ninguna'");
-  } else if (!tipoNinguna && q.requiere_imagen !== true) {
-    errors.push("requiere_imagen must be true when tipo_imagen is not 'ninguna'");
+  // nivel must be 1-4
+  if (typeof q.nivel === "number" && ![1, 2, 3, 4].includes(q.nivel)) {
+    errors.push(`nivel must be 1-4, got ${q.nivel}`);
   }
 
   if (q.subtema_id && !/^subtema_\d+$/.test(q.subtema_id)) {
@@ -283,10 +274,6 @@ function autofixQuestion(q) {
       return result;
     });
   }
-  // Fix tipo_imagen if it has unaccented values
-  if (q.tipo_imagen === "senal") q.tipo_imagen = "señal";
-  if (q.tipo_imagen === "situacion") q.tipo_imagen = "situación";
-  if (q.tipo_imagen === "vehiculo") q.tipo_imagen = "vehículo";
   return fixed;
 }
 

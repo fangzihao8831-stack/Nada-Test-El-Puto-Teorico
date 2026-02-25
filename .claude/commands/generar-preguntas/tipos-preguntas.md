@@ -17,7 +17,7 @@ Generar preguntas respetando esta distribucion:
 - **Campo `pista` obligatorio**: Una frase corta (máximo 20 palabras) que aparece en modo estudio ANTES de responder. No debe revelar la respuesta. Dos estilos según convenga:
   - **Mnemónico** (para datos/reglas): ayuda a recordar. Ej: *"El límite novel es exactamente la mitad que el general."*
   - **Razonamiento** (para situacionales): guía el pensamiento. Ej: *"Piensa qué ocurre si el vehículo retrocede en la pendiente."*
-- **Opciones concisas**: Las opciones deben ser escuetas (objetivo: 5-20 palabras). NO incluir justificaciones dentro de la opcion. La explicacion va en el campo `explicacion`
+- **Opciones concisas**: Las opciones deben ser escuetas. NO incluir justificaciones dentro de la opcion. La explicacion va en el campo `explicacion`
 - **Distractores plausibles**: Las opciones incorrectas deben ser errores reales de alumnos o reglas de otro contexto, NUNCA absurdos evidentes
 - **Siempre 3 opciones (A, B, C)**: El examen DGT usa exactamente 3 opciones. Nunca generar 4 opciones.
 

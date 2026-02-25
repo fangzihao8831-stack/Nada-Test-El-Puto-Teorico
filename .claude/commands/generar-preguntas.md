@@ -89,9 +89,13 @@ Cada pregunta lleva explicación con formato párrafo + bullets con etiquetas de
 Antes de incluir cada pregunta, pasar la verificación completa (autosuficiencia, imagen, situacional, complejidad).
 > **Read `generar-preguntas/verificacion.md`**
 
-### 5. Subagentes (si >30 preguntas)
-- **1-30 preguntas**: Todo en el hilo principal, sin subagentes
-- **31+ preguntas**: Dividir en subagentes (Task tool, subagent_type: "general-purpose", model: "sonnet")
+### 5. Generacion con subagente (SIEMPRE usar Sonnet)
+Delegar SIEMPRE la generacion a un subagente Sonnet para optimizar costes:
+- **Task tool**: subagent_type: "general-purpose", model: "sonnet"
+- **1-30 preguntas**: 1 subagente con todas las preguntas
+- **31+ preguntas**: Dividir en varios subagentes (max 30 preguntas cada uno)
+
+El hilo principal (Opus) solo coordina: parsea argumentos, lanza subagente(s), recibe resultado, muestra al usuario.
 
 **Cada subagente DEBE leer estos archivos** (NO parafrasear ni resumir):
 
@@ -110,6 +114,12 @@ Solo los temas asignados:
 
 Solo si genera preguntas sobre senales:
 8. `content/imagenes/senales/catalogo.json` — codigos de senales (solo cuando la pregunta trata de una senal especifica)
+
+Deduplicacion (SIEMPRE):
+9. `content/preguntas/batch_*/scenarios.txt` — leer TODOS los scenarios.txt existentes. Cada linea es `subtema_XX | enunciado`. No generar preguntas con escenarios similares a los ya existentes.
+
+### 5.1 Post-generacion: actualizar scenarios.txt
+Despues de escribir el JSON del batch, generar `scenarios.txt` en la misma carpeta con una linea por pregunta: `subtema_XX | enunciado (max 80 chars)`.
 
 ### 6. Revisión y guardado
 1. Mostrar preguntas al usuario para revisión ANTES de guardar

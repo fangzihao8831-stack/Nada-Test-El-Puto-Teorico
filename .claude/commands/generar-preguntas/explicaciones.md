@@ -29,6 +29,17 @@ Cada bullet DEBE empezar con una etiqueta que indica su propósito:
 - NO usar headers (#) ni negrita (**) — solo texto plano + bullets con etiqueta
 - **Excepción**: tablas de datos numéricos (velocidades, tasas) SI se permiten como último bloque
 
+### PROHIBIDO en explicaciones
+
+| Prohibición | Ejemplo MALO | Ejemplo BUENO |
+|-------------|-------------|---------------|
+| **Referencias a archivos internos** | "según tema_08.md", "(tema_02.md)" | "según el temario de seguridad vial" o simplemente omitir la cita |
+| **Letras de opción (A/B/C)** | "la opción A es incorrecta porque..." | "la opción que dice [citar contenido] es incorrecta porque..." |
+
+**Regla de citas**: La explicación es texto para el ALUMNO. Nunca debe contener nombres de archivo (tema_XX.md, subtema_XX, etc.). Si necesitas mencionar la fuente, usa el nombre del tema ("Tema 8: Seguridad vial") o simplemente describe la regla sin citar.
+
+**Regla de opciones**: NUNCA referenciar opciones por su letra (A, B, C) en la explicación. En su lugar, describir el CONTENIDO de la opción. Razón: el orden de las opciones puede cambiar y las letras quedarían incorrectas.
+
 ## Contenido pedagógico obligatorio
 - Explicar POR QUÉ la respuesta correcta es correcta (no solo afirmar que lo es)
 - Incluir al menos 1 bullet con etiqueta "Conexión" (otro tema, regla vinculada, dato complementario)
