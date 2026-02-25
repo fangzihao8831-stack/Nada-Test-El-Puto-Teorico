@@ -58,6 +58,9 @@ Recent decisions affecting current work:
 - [Phase 01-06]: Signal handling rules consolidated to verificacion.md as sole authoritative source; generar-preguntas.md has one-line pointer
 - [Phase 01-06]: Subtema mapping table (58 rows) replaced with 7 error-pattern lines + pointer to tema_XX.md markers
 - [Phase 01-06]: Subagent section restructured into 3 tiers: always-read (5 files), per-type (1 file), conditional (tema + catalogo)
+- [01-07]: todotest_2700.json removed from validation sources — ~400k tokens saved per validation run; temario + Claude knowledge are sufficient
+- [01-07]: requiere_imagen/tipo_imagen removed from TypeScript types, scripts, and docs — existing batch_03 JSON data left untouched
+- [01-07]: hasImage always false in all question transformations — image assignment delegated entirely to image skill
 
 ### Pending Todos
 
@@ -69,6 +72,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-24
-Stopped at: CHECK 6 (clasificacion) skill file created and wired into validator. batch_03 (30 questions) generated and on demo. Badge de dificultad en UI. Next: run /validar-preguntas on batch_03 to test CHECK 6, or generate+validate a fresh batch.
+Last session: 2026-02-25
+Stopped at: Completed 01-07-PLAN.md — dead reference cleanup. Phase 1 (skill-file-audit) all 7 plans done.
 Resume file: None

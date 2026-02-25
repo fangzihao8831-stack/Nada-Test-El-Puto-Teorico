@@ -29,10 +29,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-06-PLAN.md — Token reduction in generation skills: remove dead references, trim subtema table, consolidate signal handling, restructure subagent conditional reading (DATA-01, SKILL-01, SKILL-02, SKILL-03)
-- [ ] 01-07-PLAN.md — Validation cleanup + image metadata removal: remove dead references from validation files, remove requiere_imagen/tipo_imagen from all layers (DATA-02, DATA-03, SKILL-04)
-- [ ] 01-06-PLAN.md — Token reduction in generation skills: remove dead references, deduplicate, conditional subagent reading (DATA-01, SKILL-01, SKILL-02, SKILL-03)
-- [ ] 01-07-PLAN.md — Validation cleanup: remove todotest refs, remove requiere_imagen/tipo_imagen from schema/types/docs (DATA-02, DATA-03, SKILL-04)
+- [x] 01-06-PLAN.md — Token reduction in generation skills: remove dead references, trim subtema table, consolidate signal handling, restructure subagent conditional reading (DATA-01, SKILL-01, SKILL-02, SKILL-03)
+- [x] 01-07-PLAN.md — Validation cleanup + image metadata removal: remove dead references from validation files, remove requiere_imagen/tipo_imagen from all layers (DATA-02, DATA-03, SKILL-04)
 
 ### Phase 2: Validator Hardening
 **Goal**: CHECK 4 in the validation skill issues evidence-based verdicts — PASS only with a temario quote, REJECT for contradictions, FLAG for ambiguity
