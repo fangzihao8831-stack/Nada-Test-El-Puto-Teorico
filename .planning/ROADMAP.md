@@ -12,13 +12,13 @@ This milestone improves the content pipeline skill files to eliminate factually 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [x] **Phase 1: Skill File Audit** - Audit and improve all skill files that influence generation quality (data accuracy + rule quality)
+- [ ] **Phase 1: Skill File Audit** - Audit and improve all skill files that influence generation quality (data accuracy + rule quality + token efficiency)
 - [ ] **Phase 2: Validator Hardening** - Rewrite CHECK 4 so every verdict requires explicit temario evidence
 
 ## Phase Details
 
 ### Phase 1: Skill File Audit
-**Goal**: All skill files that influence generation quality are reviewed against the temario and corrected — numerical data, question type rules, pattern guidance, self-check rules, and explanation format
+**Goal**: All skill files that influence generation quality are reviewed against the temario and corrected — numerical data, question type rules, pattern guidance, self-check rules, explanation format, token efficiency, and deprecated field cleanup
 **Depends on**: Nothing (first phase)
 **Requirements**: DATA-01, DATA-02, DATA-03, SKILL-01, SKILL-02, SKILL-03, SKILL-04
 **Success Criteria** (what must be TRUE):
@@ -26,7 +26,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. No discrepancy exists between any value in datos-numericos.md and its source in the relevant tema_XX.md file
   3. datos-referencia.md contains no value that contradicts datos-numericos.md — the two files are consistent
   4. tipos-preguntas.md, patrones-y-trampas.md, verificacion.md, and explicaciones.md each updated where current instructions could lead to lower generation quality
-**Plans**: 5 plans
+**Plans**: 7 plans
 
 Plans:
 - [x] 01-01-PLAN.md — Audit and correct datos-numericos.md in one pass (DATA-01, DATA-02)
@@ -34,6 +34,8 @@ Plans:
 - [x] 01-03-PLAN.md — Add difficulty levels to tipos-preguntas.md; add monotonic-sequence trap to patrones-y-trampas.md (SKILL-01, SKILL-02)
 - [x] 01-04-PLAN.md — Add 3 new verification rules to verificacion.md; review explicaciones.md (SKILL-03, SKILL-04)
 - [x] 01-05-PLAN.md — Create 4 new per-type files: dato.md, directo.md, completar.md, situacional.md (SKILL-01)
+- [ ] 01-06-PLAN.md — Token reduction in generation skills: remove dead references, deduplicate, conditional subagent reading (DATA-01, SKILL-01, SKILL-02, SKILL-03)
+- [ ] 01-07-PLAN.md — Validation cleanup: remove todotest refs, remove requiere_imagen/tipo_imagen from schema/types/docs (DATA-02, DATA-03, SKILL-04)
 
 ### Phase 2: Validator Hardening
 **Goal**: CHECK 4 in the validation skill issues evidence-based verdicts — PASS only with a temario quote, REJECT for contradictions, FLAG for ambiguity
@@ -56,5 +58,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Skill File Audit | 5/5 | Complete | 2026-02-24 |
+| 1. Skill File Audit | 5/7 | In progress | - |
 | 2. Validator Hardening | 0/1 | Not started | - |
