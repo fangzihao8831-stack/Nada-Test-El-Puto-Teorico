@@ -1,69 +1,8 @@
 # Reglas de Verificación
 
-## Asignación de subtema_id (OBLIGATORIO — leer antes de escribir cualquier pregunta)
+## Asignacion de subtema_id
 
-El `subtema_id` se asigna según el CONTENIDO de la pregunta, no según el tema pedido. Usar EXCLUSIVAMENTE los IDs de esta tabla:
-
-| subtema_id | Nombre | Tema |
-|------------|--------|------|
-| subtema_01 | El permiso de conducir | tema_01 |
-| subtema_02 | Documentación | tema_01 |
-| subtema_03 | Permiso por puntos | tema_01 |
-| subtema_04 | El vehículo | tema_02 |
-| subtema_05 | ITV | tema_02 |
-| subtema_06 | El seguro | tema_02 |
-| subtema_07 | Vehículos eléctricos e híbridos | tema_02 |
-| subtema_08 | La carga | tema_03 |
-| subtema_09 | Transporte de personas y animales | tema_03 |
-| subtema_10 | Remolques | tema_03 |
-| subtema_11 | La vía pública | tema_04 |
-| subtema_12 | Usuarios vulnerables | tema_04 |
-| subtema_13 | Nuevas señales y tipologías de vía | tema_04 |
-| subtema_14 | Ángulos muertos y visibilidad | tema_04 |
-| subtema_15 | Normas generales de circulación | tema_05 |
-| subtema_16 | Velocidad | tema_05 |
-| subtema_17 | Distancia de seguridad | tema_05 |
-| subtema_18 | Marcha atrás | tema_05 |
-| subtema_19 | Prioridad de paso | tema_06 |
-| subtema_20 | Incorporación a la circulación | tema_06 |
-| subtema_21 | Adelantamientos | tema_06 |
-| subtema_22 | Intersecciones | tema_06 |
-| subtema_23 | Parada y estacionamiento | tema_06 |
-| subtema_24 | Alumbrado | tema_07 |
-| subtema_25 | Señales acústicas | tema_07 |
-| subtema_26 | Jerarquía de señales | tema_07 |
-| subtema_27 | Señales de los agentes | tema_07 |
-| subtema_28 | Semáforos | tema_07 |
-| subtema_29 | Señales verticales | tema_07 |
-| subtema_30 | Marcas viales | tema_07 |
-| subtema_31 | Señalización circunstancial | tema_07 |
-| subtema_32 | Autopistas y autovías | tema_08 |
-| subtema_33 | Túneles | tema_08 |
-| subtema_34 | Pasos a nivel | tema_08 |
-| subtema_35 | Condiciones adversas | tema_08 |
-| subtema_36 | Preparación y desarrollo del viaje | tema_08 |
-| subtema_37 | Conducción en grupo y situaciones especiales | tema_08 |
-| subtema_38 | Seguridad activa | tema_09 |
-| subtema_39 | Seguridad pasiva | tema_09 |
-| subtema_40 | Sistemas ADAS | tema_09 |
-| subtema_41 | Comprobaciones y mantenimiento | tema_09 |
-| subtema_42 | Conducción autónoma y automatizada | tema_09 |
-| subtema_43 | Alcohol | tema_10 |
-| subtema_44 | Drogas | tema_10 |
-| subtema_45 | Medicamentos | tema_10 |
-| subtema_46 | Fatiga y sueño | tema_10 |
-| subtema_47 | Distracciones | tema_10 |
-| subtema_48 | Velocidad como factor de riesgo | tema_10 |
-| subtema_49 | Estados emocionales | tema_10 |
-| subtema_50 | Conducta PAS | tema_11 |
-| subtema_51 | Primeros auxilios | tema_11 |
-| subtema_52 | Equipamiento de emergencia | tema_11 |
-| subtema_53 | Conducción eficiente | tema_11 |
-| subtema_54 | Medio ambiente | tema_11 |
-| subtema_55 | Infracciones y sanciones | tema_12 |
-| subtema_56 | Responsabilidad del conductor | tema_12 |
-| subtema_57 | Inmovilización y retirada de vehículos | tema_12 |
-| subtema_58 | Procedimiento sancionador | tema_12 |
+El `subtema_id` se asigna segun el CONTENIDO de la pregunta, no segun el tema pedido. Consultar los marcadores `[subtema_XX]` en los archivos `tema_XX.md` para la lista completa.
 
 **Errores frecuentes a evitar:**
 - Pregunta sobre parada/estacionamiento → subtema_23 (no subtema_21 Adelantamientos)
@@ -183,7 +122,7 @@ Si la respuesta es NO, hay que añadir contexto al enunciado.
 
 ## Señales de tráfico e imágenes
 
-Todas las preguntas tendrán imagen asociada (generada por un skill separado). El generador NO debe incluir campos `requiere_imagen` ni `tipo_imagen` en el JSON.
+Todas las preguntas tendrán imagen asociada (generada por un skill separado). El generador NO debe incluir campos `requiere_imagen` ni `tipo_imagen` en el JSON — estos campos han sido eliminados del schema.
 
 **Cuando la pregunta trata de una señal específica:**
 1. Usar "esta señal" en el enunciado (NUNCA el código R-XXX, P-XXX, S-XXX)
@@ -315,16 +254,3 @@ Antes de incluir cada pregunta, verificar:
 - [ ] ¿Las 3 opciones forman una secuencia monotónica (ej: 70/80/90) de la misma categoría? → Si es SÍ, REDISTRIBUIR con valores de condiciones distintas
 - [ ] ¿La pregunta pide calcular algo con fórmulas? → Si es SÍ, RECHAZAR (DGT solo pregunta recall)
 - [ ] ¿La pregunta usa formato negativo ("¿Cuál es INCORRECTO?")? → Si es SÍ, RECHAZAR (DGT nunca usa este formato)
-
-### Archivos de referencia de dificultad
-Antes de generar, consultar estos archivos para calibrar el nivel de dificultad:
-- `content/hardest_directa.json` — 57 preguntas directas difíciles
-- `content/hardest_completar.json` — 133 preguntas completar difíciles
-- `content/hardest_situacional.json` — 84 preguntas situacionales difíciles
-- `content/hardest_dato.json` — 457 preguntas de datos numéricos confundibles
-
-### Mezcla de dificultad por test
-Un test de 30 preguntas debe tener esta distribución aproximada:
-- **~10 fáciles** (30%): Reglas básicas, respuesta clara por descarte
-- **~12 medias** (40%): Requieren conocimiento específico pero sin trampa
-- **~8 difíciles** (30%): Excepciones, datos confundibles, combinación de reglas

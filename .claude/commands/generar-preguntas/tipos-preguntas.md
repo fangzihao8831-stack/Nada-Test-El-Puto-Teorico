@@ -1,7 +1,5 @@
 # Tipos de Preguntas (BASADO EN ANALISIS DE 2.700+ PREGUNTAS)
 
-> **Calibracion de dificultad**: Todas las preguntas deben imitar el tono y estilo del examen DGT real (base de 2700 preguntas). Consultar `content/hardest_dato.json` y equivalentes para calibracion de dificultad.
-
 Las preguntas son una **MEZCLA** de tipos. "Trampa" e "imagen" NO son tipos separados — son **tecnicas** que se aplican a cualquier tipo.
 
 Generar preguntas respetando esta distribucion:
@@ -67,7 +65,7 @@ Ejemplos reales:
 - "¿Es obligatorio llevar en el vehiculo un chaleco reflectante?"
 - "El estado de los neumaticos, ¿influye en la distancia de frenado?"
 
-**Ejemplos DIFICILES** (nivel objetivo — ver `content/hardest_directa.json` para 57 mas):
+**Ejemplos DIFICILES** (nivel objetivo):
 - "¿Puede realizar un cambio de sentido en un lugar donde este prohibido adelantar?" → Si, salvo autorizacion expresa.
 - "En un vehiculo de autoescuela realizando clases practicas, ¿quien es considerado el conductor?" → El profesor (mandos adicionales), no el alumno.
 - "¿Esta permitida la circulacion de animales por una carretera convencional?" → Si, cuando no exista via pecuaria.
@@ -84,7 +82,7 @@ Ejemplos reales:
 - "En condiciones de mala visibilidad, ¿que debe hacer un conductor ante la presencia de ciclistas en la via?"
 - "Al estacionar un vehiculo con remolque en una pendiente ascendente, si no dispone de calzos, ¿que debe hacer?"
 
-**Ejemplos DIFICILES** (ver `content/hardest_situacional.json` para 84 mas):
+**Ejemplos DIFICILES**:
 - Prioridad con 3 vehiculos en interseccion sin senalizar (rojo/azul/verde)
 - "En un tunel, ¿que distancia de seguridad?" → 100 metros. Dato preciso en contexto situacional.
 - Combinacion de reglas: estacionar en pendiente + remolque + sin calzos
@@ -98,7 +96,7 @@ Ejemplos reales:
 - "El uso adecuado del casco implica que la correa de sujecion..."
 - "Las motocicletas con mas de cinco anos de antiguedad deben pasar la ITV..."
 
-**Ejemplos DIFICILES** (ver `content/hardest_completar.json` para 133 mas):
+**Ejemplos DIFICILES**:
 - "En las autopistas, se permite circular..." → a ciclistas >14 anos por arcenes.
 - "Si el resultado de alcoholemia es positivo el agente podra inmovilizar el vehiculo, a no ser..." → que otra persona habilitada conduzca.
 
@@ -110,7 +108,7 @@ Ejemplos reales:
 - "En esta via, ¿a que velocidad maxima le esta permitido circular a un turismo con remolque?"
 - "¿A que distancia minima de una interseccion esta prohibido estacionar?"
 
-**Ejemplos DIFICILES** (ver `content/hardest_dato.json` para 457 mas):
+**Ejemplos DIFICILES**:
 - "¿Cual es la tasa de alcohol maxima permitida a un conductor novel?" → 0,15 mg/l.
 - "¿Cuantos espejos retrovisores tienen que llevar las motocicletas?" → 1 si <100 km/h, 2 si >100.
 
@@ -118,6 +116,6 @@ Ejemplos reales:
 
 ## ADAS / Tecnologia Vehicular
 
-ADAS representa ~2.5% de las preguntas (59+ en el banco). Ver **TEMA 34 del temario** (`temario_permiso_b_v3.md`) para todos los detalles tecnicos.
+ADAS representa ~2.5% de las preguntas (59+ en el banco). Ver **tema_09.md** (subtemas 38-42: Seguridad activa, Seguridad pasiva, Sistemas ADAS, Comprobaciones y mantenimiento, Conduccion autonoma) para todos los detalles tecnicos.
 
 Generar preguntas sobre QUE HACE el sistema y COMO ACTUA, nunca sobre especificaciones tecnicas internas.
