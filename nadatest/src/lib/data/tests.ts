@@ -12,7 +12,6 @@ function transformPreguntaToTestQuestion(
     correcta: number;
     explicacion: string;
     pista: string | null;
-    requiere_imagen: boolean;
     imagen_url: string | null;
     subtemas: { temas: { nombre: string } };
   },
@@ -29,7 +28,7 @@ function transformPreguntaToTestQuestion(
     correcta: KEY_MAP[pregunta.correcta],
     explicacion: pregunta.explicacion,
     pista: pregunta.pista ?? undefined,
-    hasImage: pregunta.requiere_imagen,
+    hasImage: false,
     imageSrc: pregunta.imagen_url,
     tema: pregunta.subtemas.temas.nombre,
   };

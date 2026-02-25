@@ -39,8 +39,6 @@ export interface Pregunta {
   correcta: number; // 0, 1, or 2
   explicacion: string;
   pista: string | null;
-  requiere_imagen: boolean;
-  tipo_imagen: string;
   imagen_url: string | null;
   origen: string;
   validada: boolean;

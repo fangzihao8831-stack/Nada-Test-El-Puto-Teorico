@@ -99,7 +99,7 @@ for (const batch of batchDirs) {
         })),
         correcta: String.fromCharCode(65 + q.correcta),
         explicacion: q["explicación"] || q.explicacion || "",
-        hasImage: q.requiere_imagen !== false,
+        hasImage: false,
         imageSrc: svgPath,
         temaId,
         tema: temaName,

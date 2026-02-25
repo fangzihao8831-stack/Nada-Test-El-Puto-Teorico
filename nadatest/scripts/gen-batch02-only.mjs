@@ -34,7 +34,7 @@ const bank = preguntas.map(q => {
     opciones: q.opciones.map((texto, i) => ({ key: String.fromCharCode(65 + i), texto })),
     correcta: String.fromCharCode(65 + (q.correcta || 0)),
     explicacion: q.explicacion,
-    hasImage: q.requiere_imagen || false,
+    hasImage: false,
     imageSrc: q.codigo_señal && senalMap[q.codigo_señal] ? "/images/senales/" + senalMap[q.codigo_señal] : null,
     temaId, tema: temaNames[temaId] || "Desconocido",
     pista: q.pista || "",

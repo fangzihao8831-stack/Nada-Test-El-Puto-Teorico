@@ -25,8 +25,6 @@ export async function createPregunta(data: {
   correcta: number;
   explicacion: string;
   pista?: string;
-  requiere_imagen?: boolean;
-  tipo_imagen?: string;
   imagen_url?: string;
   origen?: string;
 }): Promise<ApiResponse<{ id: string }>> {
@@ -54,8 +52,6 @@ export async function updatePregunta(
     correcta: number;
     explicacion: string;
     pista: string | null;
-    requiere_imagen: boolean;
-    tipo_imagen: string;
     imagen_url: string | null;
     origen: string;
     validada: boolean;
@@ -105,8 +101,6 @@ export async function importPreguntas(
     correcta: number;
     explicacion: string;
     pista?: string;
-    requiere_imagen?: boolean;
-    tipo_imagen?: string;
     imagen_url?: string;
     origen?: string;
   }[]

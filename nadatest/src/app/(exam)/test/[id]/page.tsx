@@ -32,7 +32,7 @@ export default async function TestActivePage({ params, searchParams }: PageProps
   // Fetch all questions for this test with tema info
   const { data: preguntas } = await supabase
     .from("preguntas")
-    .select("id, enunciado, opciones, correcta, explicacion, pista, requiere_imagen, imagen_url, subtemas(temas(nombre))")
+    .select("id, enunciado, opciones, correcta, explicacion, pista, imagen_url, subtemas(temas(nombre))")
     .in("id", preguntaIds);
 
   if (!preguntas || preguntas.length === 0) notFound();
@@ -59,7 +59,7 @@ export default async function TestActivePage({ params, searchParams }: PageProps
       correcta: KEY_MAP[p.correcta as number],
       explicacion: p.explicacion,
       pista: p.pista ?? undefined,
-      hasImage: p.requiere_imagen,
+      hasImage: false,
       imageSrc: p.imagen_url,
       tema: subtema?.temas?.nombre ?? "General",
     };

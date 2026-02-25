@@ -80,8 +80,6 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
   "correcta": 1,
   "explicacion": "Esta señal indica el fin de la prohibición...",
   "pista": "Fíjate en las líneas diagonales",
-  "requiere_imagen": true,
-  "tipo_imagen": "señal",
   "imagen_url": "cloudinary.com/nadatest/R-501.svg",
   "origen": "generada",
   "validada": true
@@ -93,8 +91,6 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 |-------|------|-------------|
 | `tipo_pregunta` | string | `directa`, `situacional`, `completar`, `dato` |
 | `correcta` | int | Índice de la opción correcta (0, 1 o 2) |
-| `requiere_imagen` | bool | Si la pregunta necesita imagen para funcionar |
-| `tipo_imagen` | string | `señal`, `situación`, `vehículo`, `ninguna` |
 | `origen` | string | `generada`, `extraida_dgt`, `extraida_todotest` |
 
 ---

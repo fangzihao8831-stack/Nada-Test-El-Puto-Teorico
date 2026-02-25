@@ -269,8 +269,6 @@ CREATE TABLE preguntas (
   correcta INTEGER NOT NULL,     -- indice de la correcta (0, 1, 2)
   explicacion TEXT NOT NULL,
   pista TEXT,
-  requiere_imagen BOOLEAN DEFAULT FALSE,
-  tipo_imagen TEXT DEFAULT 'ninguna', -- señal, situación, ninguna
   imagen_url TEXT,
   origen TEXT DEFAULT 'generada', -- generada, extraida_dgt, extraida_todotest
   validada BOOLEAN DEFAULT FALSE,
