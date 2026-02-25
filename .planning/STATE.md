@@ -12,7 +12,7 @@ See: .planning/PROJECT.md (updated 2026-02-23)
 Phase: 2 of 2 (Validator Hardening)
 Plan: 0 of 1 in current phase
 Status: Ready to plan
-Last activity: 2026-02-24 — Phase 1 complete (all 5 plans done)
+Last activity: 2026-02-25 — Phase 1 plan 07 complete (dead reference cleanup)
 
 Progress: [█████░░░░░] 50%
 
@@ -34,6 +34,7 @@ Progress: [█████░░░░░] 50%
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 01-skill-file-audit P06 | 5 | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -54,6 +55,9 @@ Recent decisions affecting current work:
 - [01-03]: Difficulty level system added to tipos-preguntas.md — Nivel 1-4 scale; per-type file pointers added pointing to dato.md, directo.md, completar.md, situacional.md
 - [01-04]: Three new rules placed in dedicated "Verificacion de exactitud factual" section rather than appended to HARD REJECT table
 - [01-04]: Level-specific depth guidance added to explicaciones.md — Nivel 1 = 1-2 bullets, Nivel 2+ = one distractor explained, Nivel 3+ = all distractors explained
+- [Phase 01-06]: Signal handling rules consolidated to verificacion.md as sole authoritative source; generar-preguntas.md has one-line pointer
+- [Phase 01-06]: Subtema mapping table (58 rows) replaced with 7 error-pattern lines + pointer to tema_XX.md markers
+- [Phase 01-06]: Subagent section restructured into 3 tiers: always-read (5 files), per-type (1 file), conditional (tema + catalogo)
 
 ### Pending Todos
 
