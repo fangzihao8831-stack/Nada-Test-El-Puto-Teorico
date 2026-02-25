@@ -98,7 +98,6 @@ Valores que el fact-checker debe conocer para comparar rapidamente.
 
 ## Archivos de referencia
 - Temario por tema: `content/temario/tema_XX.md` (tema_01 a tema_12)
-- Todotest: `content/todotest_2700.json`
 - Preguntas generadas: `content/preguntas/*.json`
 - Pipeline: `content-pipeline.md`
 - Generador (formato): `.claude/commands/generar-preguntas.md`

@@ -9,7 +9,6 @@ Compara cada pregunta contra las DEMAS preguntas del mismo batch para detectar c
 **Se compara contra**: Todas las preguntas de todos los archivos JSON dentro de la misma carpeta del batch.
 
 **NO se compara contra**:
-- `content/todotest_2700.json` — es material fuente, las preguntas PUEDEN reutilizarse
 - Otras carpetas de batch — batches diferentes PUEDEN tener preguntas solapadas intencionalmente
 - Ningun archivo fuera de la carpeta del batch actual
 

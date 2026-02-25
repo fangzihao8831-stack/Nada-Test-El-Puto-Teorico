@@ -21,9 +21,8 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
 
 ## Fuentes de verdad (en orden de prioridad)
 1. `content/temario/tema_XX.md` - secciones del temario por tema
-2. `content/todotest_2700.json` - 2.700 preguntas extraídas de examen real
-3. Tu conocimiento de la normativa de tráfico espanola
-4. Web search en dgt.es / boe.es (solo cuando las 3 fuentes anteriores no coinciden, o temario + todotest = SIN MATCH)
+2. Tu conocimiento de la normativa de tráfico espanola
+3. Web search en dgt.es / boe.es (solo cuando las 2 fuentes anteriores no coinciden, o temario = SIN MATCH)
 
 ---
 
@@ -45,8 +44,8 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
    ```bash
    node scripts/prep-validation-context.mjs $ARGUMENTS > /tmp/validation-context.json
    ```
-   Esto agrupa las preguntas por tema y pre-busca todotest matches.
-   Cada bundle contiene: preguntas, tema_id, todotest_matches, temario_file.
+   Esto agrupa las preguntas por tema.
+   Cada bundle contiene: preguntas, tema_id, temario_file.
 
 ### Fase 3: Fact-checking + pedagógica (LLM por tema)
 
@@ -62,7 +61,6 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
    - `.claude/commands/generar-preguntas/dato.md`, `directo.md`, `completar.md`, `situacional.md` (criterios de nivel por tipo)
    - `content/temario/tema_XX.md` (sección del temario de ese tema)
    - Preguntas del bundle (JSON inline en el prompt)
-   - Todotest matches del bundle (JSON inline en el prompt)
 
    El subagente ejecuta CHECK 4 (datos) + CHECK 5 (pedagógica) + CHECK 6 (clasificacion) y devuelve JSON con veredictos.
 
@@ -70,7 +68,7 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
 
 6. Si algun subagente marco `necesita_web_search: true`, ejecutar aquí
    - Dominios permitidos: `dgt.es`, `boe.es`, `todotest.com`, `autoescuela.net`, `practicatest.com`
-   - OBLIGATORIO cuando temario = SIN MATCH y todotest = SIN MATCH
+   - OBLIGATORIO cuando temario = SIN MATCH
    - Se ejecuta en hilo principal para que el usuario vea las busquedas
 
 ### Fase 5: Informe e interaccion
@@ -89,6 +87,5 @@ Eres un auditor de calidad del banco de preguntas DGT para Nadatest. Tu trabajo 
   - `.claude/commands/validar-preguntas/check-5-pedagógica.md`
   - `.claude/commands/validar-preguntas/check-6-clasificacion.md`
   - `.claude/commands/validar-preguntas/datos-referencia.md`
-- Todotest: `content/todotest_2700.json`
 - Preguntas generadas: `content/preguntas/batch_*/*.json`
 - Pipeline: `content-pipeline.md`

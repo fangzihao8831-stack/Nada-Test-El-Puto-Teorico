@@ -2,10 +2,9 @@
 
 Verifica que los datos de la pregunta son correctos contrastando 3+ fuentes.
 
-## Fuentes (las 3 deben consultarse)
+## Fuentes (las 2 deben consultarse)
 1. `temario_permiso_b_v3.md` - buscar con Grep la sección relevante
-2. `content/todotest_2700.json` - buscar preguntas sobre el mismo tema
-3. Conocimiento propio de Claude sobre normativa de tráfico española
+2. Conocimiento propio de Claude sobre normativa de tráfico española
 
 ## Algoritmo paso a paso
 
@@ -14,13 +13,12 @@ Para cada pregunta:
 1. **Leer** enunciado, opciones, correcta y explicación
 2. **Identificar** que hecho/regla/dato se está evaluando
 3. **Buscar en temario** con Grep (ej: "novel" + "alcohol" para tasas de alcohol)
-4. **Buscar en todotest** preguntas sobre el mismo tema
-5. **Clasificar el tipo de evidencia** de cada fuente:
+4. **Clasificar el tipo de evidencia** de cada fuente:
    - **DIRECTO**: La fuente cubre el escenario EXACTO de la pregunta (misma situación, misma regla)
    - **INDIRECTO**: La fuente tiene un principio general relacionado del cual se puede DEDUCIR la respuesta
    - **SIN MATCH**: La fuente no cubre este tema/escenario en absoluto
-6. **Comparar** lo que dicen las 3 fuentes
-7. **Si temario = SIN MATCH y todotest = SIN MATCH** -> web search es OBLIGATORIO (ver reglas abajo)
+5. **Comparar** lo que dicen las 2 fuentes
+6. **Si temario = SIN MATCH** -> web search es OBLIGATORIO (ver reglas abajo)
 
 ## Que verificar por pregunta
 - La opción marcada como correcta (`opciones[correcta]`) es REALMENTE correcta?
@@ -32,7 +30,7 @@ Para cada pregunta:
 
 ## Escenarios de decisión
 
-**APROBADA - Las 3 fuentes coinciden**:
+**APROBADA - Las 2 fuentes coinciden**:
 ```
 PREGUNTA: "¿A qué velocidad máxima puede circular un turismo en autopista?"
 CORRECTA: "120 km/h"
@@ -40,12 +38,9 @@ CORRECTA: "120 km/h"
 Temario (Grep "velocidad" + "autopista" + "turismo"):
   -> "Turismo en autopista/autovía: 120 km/h" CHECK
 
-Todotest (Grep "velocidad" + "autopista"):
-  -> Preguntas confirman 120 km/h CHECK
-
 Claude: 120 km/h para turismo en autopista CHECK
 
-VEREDICTO: APROBADA (3 fuentes coinciden)
+VEREDICTO: APROBADA (2 fuentes coinciden)
 ```
 
 **RECHAZADA - Las fuentes contradicen la pregunta**:
@@ -53,14 +48,13 @@ VEREDICTO: APROBADA (3 fuentes coinciden)
 PREGUNTA: "Los conductores noveles tienen una tasa máxima de 0,25 mg/l"
 
 Temario: "Novel < 2 años: 0,15 mg/l aire" -> CONTRADICE
-Todotest: preguntas dicen 0,15 mg/l -> CONTRADICE
 Claude: 0,15 mg/l -> CONTRADICE
 
-Todas contradicen -> lanzar web search para confirmar:
+Ambas contradicen -> lanzar web search para confirmar:
   WebSearch("tasa alcohol conductor novel mg/l", allowed_domains: ["dgt.es", "boe.es"])
   -> DGT.es confirma: 0,15 mg/l
 
-VEREDICTO: RECHAZADA — pregunta dice 0,25 pero todas las fuentes dicen 0,15
+VEREDICTO: RECHAZADA — pregunta dice 0,25 pero ambas fuentes dicen 0,15
 ```
 
 **REVISIÓN MANUAL - Fuentes en conflicto entre si**:
@@ -68,7 +62,6 @@ VEREDICTO: RECHAZADA — pregunta dice 0,25 pero todas las fuentes dicen 0,15
 PREGUNTA: sobre un caso límite de la normativa
 
 Temario dice: regla X
-Todotest dice: regla Y
 Claude: no está seguro, se inclina por X
 
 Web search DGT.es + BOE.es:
@@ -79,15 +72,14 @@ VEREDICTO: FLAG PARA REVISIÓN MANUAL
   El humano decide si aprobar, rechazar o corregir
 ```
 
-**REVISIÓN MANUAL - Sin cobertura directa en temario ni todotest**:
+**REVISIÓN MANUAL - Sin cobertura directa en temario**:
 ```
 PREGUNTA: "Escenario específico sobre semáforo rojo y flecha verde con vehículo detrás"
 
 Temario: SIN MATCH (principio general de rojo=parar, pero no cubre este caso específico)
-Todotest: SIN MATCH (preguntas de flechas verdes pero ninguna con vehículo detrás bloqueado)
 Claude: cree que la respuesta es X
 
-Web search OBLIGATORIO (temario + todotest = SIN MATCH):
+Web search OBLIGATORIO (temario = SIN MATCH):
   WebSearch("semáforo rojo flecha verde vehículo detrás DGT",
     allowed_domains: ["dgt.es", "todotest.com", "autoescuela.net", "practicatest.com"])
   -> Web revela que la respuesta depende de configuración de carriles no especificada
@@ -117,13 +109,12 @@ VEREDICTO: FLAG PARA REVISIÓN MANUAL
 ## Web search: cuando y como
 
 **OBLIGATORIO** (se lanza SIEMPRE) en estos casos:
-1. Temario = SIN MATCH **y** todotest = SIN MATCH (solo queda Claude como fuente — insuficiente)
-2. Las 3 fuentes principales no coinciden entre si (conflicto)
+1. Temario = SIN MATCH (solo queda Claude como fuente — insuficiente)
+2. Las 2 fuentes principales no coinciden entre si (conflicto)
 3. La respuesta correcta depende de un dato numérico que no aparece en la tabla de referencia rápida
 
 **NO necesario** cuando:
-- Temario tiene match DIRECTO y todotest tiene match DIRECTO y ambos coinciden
-- Temario tiene match DIRECTO y Claude coincide (todotest puede ser SIN MATCH)
+- Temario tiene match DIRECTO y Claude coincide
 
 **Dominios permitidos**: `dgt.es`, `boe.es`, `todotest.com`, `autoescuela.net`, `practicatest.com`
 - Se ejecuta en el hilo principal (no en subagentes) para que el usuario vea las busquedas
