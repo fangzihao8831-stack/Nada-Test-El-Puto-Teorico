@@ -56,11 +56,6 @@ Si la respuesta es "recitar", reescribe la pregunta como escenario.
 - Signos de interrogación de apertura (¿)
 - Ejemplos: vehículo, circulación, señalización, kilómetros
 
-## Fuentes de datos
-- **2.700 preguntas** extraídas de 90 tests de Todotest (banco DGT)
-- **30 preguntas** del examen oficial DGT (sedeclave.dgt.gob.es)
-- Temario oficial: `temario_permiso_b_v3.md`
-
 ## Normativa
 - Fecha actual: Febrero 2026
 - Si una norma ha cambiado recientemente, mencionar cuándo en la explicación
@@ -72,8 +67,7 @@ Si la respuesta es "recitar", reescribe la pregunta como escenario.
 
 ### 1. Preparación
 1. Lee el temario en `temario_permiso_b_v3.md`
-2. Lee la estructura en `content/content-structure.json`
-3. Si no se especifica tema, elige temas variados (no repetir el mismo)
+2. Si no se especifica tema, elige temas variados (no repetir el mismo)
 
 ### 2. Generación
 Para los tipos de pregunta, distribución y ejemplos difíciles, consultar:
@@ -99,30 +93,29 @@ Antes de incluir cada pregunta, pasar la verificación completa (autosuficiencia
 - **1-30 preguntas**: Todo en el hilo principal, sin subagentes
 - **31+ preguntas**: Dividir en subagentes (Task tool, subagent_type: "general-purpose", model: "sonnet")
 
-**Cada subagente DEBE leer estos skill files directamente** (NO parafrasear ni resumir):
-1. `.claude/commands/generar-preguntas/tipos-preguntas.md` — tipos, distribución, ejemplos difíciles
-2. `.claude/commands/generar-preguntas/patrones-y-trampas.md` — patrones de inicio, palabras trampa
-3. `.claude/commands/generar-preguntas/datos-numericos.md` — valores numéricos exactos
-4. `.claude/commands/generar-preguntas/explicaciones.md` — formato de explicaciones
-5. `.claude/commands/generar-preguntas/verificacion.md` — reglas de verificación y autosuficiencia
-6. Per-tema temario files: `content/temario/tema_XX.md`
-7. `.claude/commands/generar-preguntas/dato.md` — reglas de dificultad y ejemplos para tipo dato
-8. `.claude/commands/generar-preguntas/directo.md` — reglas de dificultad y ejemplos para tipo directo
-9. `.claude/commands/generar-preguntas/completar.md` — reglas de dificultad y ejemplos para tipo completar
-10. `.claude/commands/generar-preguntas/situacional.md` — reglas de dificultad y ejemplos para tipo situacional
+**Cada subagente DEBE leer estos archivos** (NO parafrasear ni resumir):
 
-**NO usar `content/generation-prompt.md`** — los skill files contienen las reglas completas con ejemplos trabajados y referencias a preguntas difíciles que el archivo combinado omite.
+Siempre:
+1. `.claude/commands/generar-preguntas/tipos-preguntas.md` — tipos, distribucion, niveles
+2. `.claude/commands/generar-preguntas/datos-numericos.md` — valores numericos exactos
+3. `.claude/commands/generar-preguntas/verificacion.md` — reglas de verificacion, senales, autosuficiencia
+4. `.claude/commands/generar-preguntas/explicaciones.md` — formato de explicaciones
+5. `.claude/commands/generar-preguntas/patrones-y-trampas.md` — patrones de inicio, palabras trampa
+
+Solo el archivo del tipo asignado:
+6. `.claude/commands/generar-preguntas/[tipo].md` — (dato.md, directo.md, completar.md o situacional.md)
+
+Solo los temas asignados:
+7. `content/temario/tema_XX.md` — solo los temas del bloque asignado
+
+Solo si genera preguntas sobre senales:
+8. `content/imagenes/senales/catalogo.json` — codigos de senales (solo cuando la pregunta trata de una senal especifica)
 
 ### 6. Revisión y guardado
 1. Mostrar preguntas al usuario para revisión ANTES de guardar
 2. Solo guardar en `content/preguntas/` cuando el usuario apruebe
 
 ---
-
-## Pistas
-- Ayudar a razonar sin revelar la respuesta
-- No deben ser obvias ni inútiles
-- Pueden apuntar a la técnica de descarte (ej: "Fíjate en las opciones con absolutos")
 
 ## Formato de Salida JSON
 
@@ -140,8 +133,6 @@ Guardar en `content/preguntas/preguntas_[fecha].json`
       "correcta": 0,
       "explicación": "Explicación completa...",
       "pista": "Ayuda sutil...",
-      "requiere_imagen": false,
-      "tipo_imagen": "ninguna",
       "codigo_señal": null,
       "origen": "generada",
       "validada": false
@@ -150,77 +141,9 @@ Guardar en `content/preguntas/preguntas_[fecha].json`
 }
 ```
 
-### Campo `codigo_señal`
-- Solo rellenar cuando `tipo_imagen` sea `"señal"`
-- El valor debe coincidir exactamente con un `codigo` del catálogo: `content/imagenes/senales/catalogo.json`
-- Ejemplo: `"codigo_señal": "R-303"` vincula la pregunta con el SVG de prohibición de giro a la izquierda
-- Si `tipo_imagen` no es `"señal"`, dejar `null`
-
-## Tipos de imagen
-- `señal`: Pregunta cuyo objeto de estudio ES la señal (requiere `codigo_señal`)
-- `situación`: Situación de tráfico (intersección, adelantamiento, estacionamiento)
-- `vehículo`: Imagen de vehículo o parte del mismo (espejos, neumáticos, luces)
-- `ninguna`: Pregunta teórica o escenario donde la señal es solo contexto
-
-## Regla de asignación de imagen para señales
-
-**`requiere_imagen`** es `true` únicamente cuando `tipo_imagen` NO es `"ninguna"`. En cualquier otro caso es `false`.
-
-### Árbol de decisión: ¿mostrar imagen de señal o no?
-
-Usar `tipo_imagen: "señal"` y `requiere_imagen: true` SOLO si se cumplen LAS CUATRO condiciones:
-
-1. El enunciado usa **"esta señal"** como sujeto gramatical de la pregunta
-2. La pregunta pide al alumno identificar lo que la señal **significa, prohíbe o exige**
-3. La señal es el **único elemento** que el alumno necesita observar
-4. Eliminar la imagen haría la pregunta **imposible de responder**
-
-Si falla CUALQUIERA de las cuatro condiciones, usar `tipo_imagen: "ninguna"` y `requiere_imagen: false`.
-
-### Cuándo usar `tipo_imagen: "ninguna"` (señal como contexto)
-
-- La señal aparece para situar el escenario, pero la pregunta es sobre **comportamiento, distancias o reglas**
-- Intervienen varios factores a la vez (clima + señal + tipo de vía + tipo de vehículo)
-- La pregunta es conceptual ("¿cuándo hay que...?", "¿qué implica...?") y el alumno puede responderla conociendo la norma, sin ver la imagen
-
-### Tabla comparativa
-
-| Enunciado | `tipo_imagen` | `codigo_señal` | Por qué |
-|---|---|---|---|
-| "¿Qué prohíbe esta señal?" | `señal` | R-303 | La señal ES el objeto de la pregunta |
-| "¿A qué vehículos afecta esta señal?" | `señal` | R-103 | El alumno observa la imagen y decide |
-| "Al llegar a una señal de Stop, ¿cuántos segundos debes detenerte?" | `ninguna` | null | La pregunta es sobre comportamiento |
-| "¿Qué debes hacer si una señal de Ceda el paso está parcialmente tapada?" | `ninguna` | null | Intervienen visibilidad + regla, no solo la señal |
-| "Una intersección tiene señal de prioridad. ¿A quién cedes el paso si llega un vehículo de emergencia?" | `ninguna` | null | Múltiples factores; la señal es solo contexto |
-
-### Prohibido mencionar el código en el enunciado
-
-El alumno verá la imagen en pantalla. El enunciado usa "esta señal", nunca el código.
-
-| Enunciado PROHIBIDO | Enunciado CORRECTO |
-|---|---|
-| "La señal R-303 prohíbe..." | "¿Qué prohíbe esta señal?" |
-| "¿Qué vehículos permite la señal R-103?" | "¿Qué vehículos pueden circular por una calzada señalizada con esta señal?" |
-| "Según la señal P-22, ¿qué peligro existe?" | "¿Qué peligro indica esta señal?" |
-
-### El código va en `codigo_señal`, nunca en el texto
-El campo `codigo_señal` vincula la pregunta con su SVG. Es metadato interno, no contenido visible para el alumno.
-
-### La explicación sí puede mencionar el código
-Para que un revisor pueda verificar la pregunta, la explicación debe incluir el código y el nombre de la señal.
-Ejemplo: `"explicación": "La señal R-303 (prohibición de giro a la izquierda) también prohíbe el cambio de sentido..."`
-
-### Catálogo de señales disponibles
-Antes de generar preguntas con `tipo_imagen: "señal"`, consultar `content/imagenes/senales/catalogo.json` para obtener el código exacto.
+Para reglas de señales y campo `codigo_señal`, ver `verificacion.md`.
 
 ## Archivos de referencia
 - Temario: `temario_permiso_b_v3.md`
-- Estructura: `content/content-structure.json`
 - Catálogo de señales: `content/imagenes/senales/catalogo.json` (235 señales con SVGs)
-- Preguntas Todotest (referencia): `content/todotest_2700.json`
-- Examen DGT oficial (referencia): `content/dgt_oficial_exam.json`
-- Preguntas difíciles directa: `content/hardest_directa.json` (57 preguntas)
-- Preguntas difíciles situacional: `content/hardest_situacional.json` (84 preguntas)
-- Preguntas difíciles completar: `content/hardest_completar.json` (133 preguntas)
-- Preguntas difíciles dato: `content/hardest_dato.json` (457 preguntas)
 - Salida: `content/preguntas/`
