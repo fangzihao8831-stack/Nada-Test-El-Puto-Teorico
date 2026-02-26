@@ -99,24 +99,27 @@ El hilo principal (Opus) solo coordina: parsea argumentos, lanza subagente(s), r
 
 **Cada subagente DEBE leer estos archivos** (NO parafrasear ni resumir):
 
-Siempre:
-1. `.claude/commands/generar-preguntas/tipos-preguntas.md` — tipos, distribucion, niveles
-2. `.claude/commands/generar-preguntas/datos-numericos.md` — valores numericos exactos
-3. `.claude/commands/generar-preguntas/verificacion.md` — reglas de verificacion, senales, autosuficiencia
-4. `.claude/commands/generar-preguntas/explicaciones.md` — formato de explicaciones
-5. `.claude/commands/generar-preguntas/patrones-y-trampas.md` — patrones de inicio, palabras trampa
+**PRIMERO — Ejemplos (leer ANTES de escribir cualquier pregunta):**
+1. `.claude/commands/generar-preguntas/ejemplos-referencia.md` — preguntas DGT reales como referencia de tono, estructura y calidad de distractores. Imitar este estilo.
 
-Solo el archivo del tipo asignado:
-6. `.claude/commands/generar-preguntas/[tipo].md` — (dato.md, directo.md, completar.md o situacional.md)
+**Reglas y datos:**
+2. `.claude/commands/generar-preguntas/verificacion.md` — reglas mecanicas (HARD REJECT, distribucion, checklist)
+3. `.claude/commands/generar-preguntas/tipos-preguntas.md` — tipos, distribucion, niveles
+4. `.claude/commands/generar-preguntas/datos-numericos.md` — valores numericos exactos
+5. `.claude/commands/generar-preguntas/explicaciones.md` — formato de explicaciones
+6. `.claude/commands/generar-preguntas/patrones-y-trampas.md` — patrones de inicio, palabras trampa
 
-Solo los temas asignados:
-7. `content/temario/tema_XX.md` — solo los temas del bloque asignado
+**Solo el archivo del tipo asignado:**
+7. `.claude/commands/generar-preguntas/[tipo].md` — (dato.md, directo.md, completar.md o situacional.md)
 
-Solo si genera preguntas sobre senales:
-8. `content/imagenes/senales/catalogo.json` — codigos de senales (solo cuando la pregunta trata de una senal especifica)
+**Temario (SIEMPRE):**
+8. `temario_permiso_b_v3.md` — fuente de verdad para todo el contenido
 
-Deduplicacion (SIEMPRE):
-9. `content/preguntas/batch_*/scenarios.txt` — leer TODOS los scenarios.txt existentes. Cada linea es `subtema_XX | enunciado`. No generar preguntas con escenarios similares a los ya existentes.
+**Solo si genera preguntas sobre senales:**
+9. `content/imagenes/senales/catalogo.json` — codigos de senales
+
+**Deduplicacion (SIEMPRE):**
+10. `content/preguntas/batch_*/scenarios.txt` — leer TODOS los scenarios.txt existentes. No generar preguntas con escenarios similares.
 
 ### 5.1 Post-generacion: actualizar scenarios.txt
 Despues de escribir el JSON del batch, generar `scenarios.txt` en la misma carpeta con una linea por pregunta: `subtema_XX | enunciado (max 80 chars)`.
