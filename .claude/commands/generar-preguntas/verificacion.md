@@ -15,6 +15,21 @@ El `subtema_id` se asigna segun el CONTENIDO de la pregunta, no segun el tema pe
 
 ---
 
+## Distribución de respuesta correcta (OBLIGATORIO)
+
+La posición de la respuesta correcta (`correcta`: 0, 1 o 2) DEBE estar distribuida de forma equilibrada en cada batch. **NO generar todas las correctas en la misma posición.**
+
+**Regla concreta para un batch de 30 preguntas:**
+- correcta=0 (primera opción): 9-11 preguntas
+- correcta=1 (segunda opción): 9-11 preguntas
+- correcta=2 (tercera opción): 9-11 preguntas
+
+**Cómo aplicarlo**: Al generar cada pregunta, escribir primero las 3 opciones en orden de calidad/claridad y luego asignar `correcta` según la posición donde quede la correcta. Al terminar el batch, contar la distribución y reordenar opciones de las preguntas necesarias para equilibrar. **La explicación describe el contenido de las opciones, no su posición, así que reordenar opciones nunca rompe la explicación.**
+
+**Defecto detectado en batches anteriores**: El generador coloca sistemáticamente la correcta en posición 1 (opción B) el 90% de las veces. Esto permite a un alumno aprobar sin saber nada. INACEPTABLE.
+
+---
+
 ## Rechazo automático (HARD REJECT)
 
 Si una pregunta cumple CUALQUIERA de estos criterios, se descarta inmediatamente y se reescribe como escenario:
@@ -27,7 +42,7 @@ Si una pregunta cumple CUALQUIERA de estos criterios, se descarta inmediatamente
 | **Recitar definición** | "¿Qué es...?", "¿Cómo se define...?" sin contexto práctico | "¿Qué es la MMA?" (sin escenario de uso) |
 | **Coste/precio** | Preguntas sobre cuánto cuesta algo | "¿Cuánto cuesta el curso de recuperación de puntos?" |
 | **Estadística** | Datos estadísticos como porcentajes de accidentes | "¿Qué porcentaje de accidentes se debe al alcohol?" |
-| **Código de señal en enunciado** | El enunciado menciona R-XXX, P-XXX o S-XXX en vez de "esta señal" | "La señal R-303 prohíbe..." (usar "esta señal" + campo `codigo_señal`) |
+| **Código de señal en texto** | El enunciado O alguna opción menciona R-XXX, P-XXX o S-XXX | "La señal R-303 prohíbe..." → usar "esta señal" + `codigo_señal`. En opciones: describir la señal por su efecto, no por código |
 | **Cálculo o fórmula** | Pide calcular algo con fórmulas (V²/254, velocidad×tiempo, etc.) | "Si circula a 90 km/h, ¿cuál es su distancia de frenado?" |
 | **Pregunta negativa** | "¿Cuál es INCORRECTO?", "¿Qué NO debe hacer?" | "¿Cuál de las siguientes acciones es incorrecta?" |
 | **Artículo de ley** | Pide citar un artículo, código o decreto específico | "¿Qué artículo del Código Penal sanciona...?" |
@@ -126,8 +141,10 @@ Todas las preguntas tendrán imagen asociada (generada por un skill separado). E
 
 **Cuando la pregunta trata de una señal específica:**
 1. Usar "esta señal" en el enunciado (NUNCA el código R-XXX, P-XXX, S-XXX)
-2. Incluir el campo `codigo_señal` con el código real (ej: `"codigo_señal": "R-2"`)
-3. Este campo conecta la pregunta con la imagen correcta de la señal
+2. Las opciones TAMPOCO deben mencionar códigos — describir la señal por su efecto (ej: "la señal que prohíbe vehículos de motor excepto motos sin sidecar" en vez de "la señal R-103")
+3. Incluir el campo `codigo_señal` con el código real (ej: `"codigo_señal": "R-2"`)
+4. Este campo conecta la pregunta con la imagen correcta de la señal
+5. El código de señal SOLO puede aparecer en el campo `explicacion` como dato de referencia
 
 **Cuando la pregunta NO trata de una señal:** poner `"codigo_señal": null`.
 
@@ -213,7 +230,10 @@ Pregunta sobre ciclomotor. Distractor: "Necesita 2 espejos retrovisores"
 
 ### Checklist final por pregunta (OBLIGATORIO)
 Antes de incluir cada pregunta, verificar:
-- [ ] ¿Tiene campo `nivel` (1-4)? → Si NO, AÑADIR
+- [ ] ¿Tiene campo `dificultad` con las 6 dimensiones (d_reglas, d_excepcion, d_densidad, d_implicito, d_distractores, d_contraintuitivo), total y nivel? → Si NO, AÑADIR. Ver `tipos-preguntas.md` para la rubrica completa.
+- [ ] ¿El `nivel` coincide con el `total` segun la tabla de mapeo (0-2=L1, 3-5=L2, 6-7=L3, 8-9=L4)? → Si NO, CORREGIR
+- [ ] ¿Para tipos dato/directo/completar, el nivel maximo es 3 aunque el total sea 8-9? → Si NO, CORREGIR
+- [ ] ¿Cada dimension tiene una justificacion logica? (ej: d_reglas=2 pero solo se necesita 1 regla → CORREGIR)
 - [ ] ¿Tiene campo `pista` (máx 20 palabras, no revela respuesta)? → Si NO, AÑADIR
 - [ ] ¿Tiene `subtema_id` correcto según la tabla de subtemas de arriba? → Si NO, CORREGIR
 - [ ] ¿Puedo adivinar la correcta sin saber nada de tráfico? → Si es SÍ, REESCRIBIR
@@ -223,9 +243,13 @@ Antes de incluir cada pregunta, verificar:
 - [ ] ¿Todos los acentos están correctos? (ver checklist de acentos arriba)
 - [ ] ¿La explicación contiene "tema_XX.md" o cualquier nombre de archivo? → Si es SÍ, ELIMINAR la referencia al archivo
 - [ ] ¿La explicación referencia opciones por letra ("la opción A", "la opción B")? → Si es SÍ, REESCRIBIR citando el contenido de la opción en vez de la letra
-- [ ] ¿El enunciado menciona un código de señal (R-XXX, P-XXX)? → Si es SÍ, reemplazar por "esta señal" y poner código en `codigo_señal`
+- [ ] ¿El enunciado O alguna opción menciona un código de señal (R-XXX, P-XXX, S-XXX)? → Si es SÍ, reemplazar por descripción funcional y poner código solo en `codigo_señal`
 - [ ] ¿Hay algún valor numérico sin verificar contra el temario? → Si es SÍ, buscar en tema_XX.md y confirmar antes de conservar. NO escribir "tema_XX.md" en la explicación
 - [ ] ¿La respuesta correcta contradice lo que Claude sabe sobre tráfico español? → Si es SÍ, marcar FLAG para revisión humana
 - [ ] ¿Las 3 opciones forman una secuencia monotónica (ej: 70/80/90) de la misma categoría? → Si es SÍ, REDISTRIBUIR con valores de condiciones distintas
 - [ ] ¿La pregunta pide calcular algo con fórmulas? → Si es SÍ, RECHAZAR (DGT solo pregunta recall)
 - [ ] ¿La pregunta usa formato negativo ("¿Cuál es INCORRECTO?")? → Si es SÍ, RECHAZAR (DGT nunca usa este formato)
+
+### Checklist de batch completo (AL TERMINAR las 30 preguntas)
+- [ ] ¿La distribución de `correcta` es equilibrada? Contar: correcta=0 debe ser 9-11, correcta=1 debe ser 9-11, correcta=2 debe ser 9-11. Si NO, reordenar opciones en las preguntas necesarias
+- [ ] ¿Hay dos preguntas sobre el mismo tema/dato específico? → Si es SÍ, reemplazar una por otro tema

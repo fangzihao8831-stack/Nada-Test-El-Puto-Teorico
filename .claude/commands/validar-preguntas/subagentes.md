@@ -105,8 +105,8 @@ Si el generador marco alguna pregunta con `"confianza": "baja"`, el validador de
       "check6_clasificacion": {
         "tipo_original": "directa",
         "tipo_corregido": "dato",
-        "nivel_original": 1,
-        "nivel_corregido": 2,
+        "dificultad_original": { "d_reglas": 0, "d_excepcion": 0, "d_densidad": 0, "d_implicito": 0, "d_distractores": 1, "d_contraintuitivo": 0, "total": 1, "nivel": 1 },
+        "dificultad_corregida": { "d_reglas": 1, "d_excepcion": 0, "d_densidad": 0, "d_implicito": 1, "d_distractores": 2, "d_contraintuitivo": 0, "total": 4, "nivel": 2 },
         "cambio": true,
         "motivo": "texto explicativo o null si no hay cambio"
       }

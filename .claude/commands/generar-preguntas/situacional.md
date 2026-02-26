@@ -21,7 +21,11 @@ Los escenarios de preguntas situacionales deben cumplir los siguientes requisito
 
 ## Niveles de Dificultad
 
-### Nivel 1 — Facil
+> **IMPORTANTE**: El nivel se CALCULA con la rubrica de 6 dimensiones en `tipos-preguntas.md`. Los ejemplos de abajo ilustran como se asignan las dimensiones para cada nivel en preguntas situacionales.
+
+### Nivel 1 — Facil (total 0-2)
+
+**Perfil tipico**: d_reglas=0, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=1, d_contraintuitivo=0
 
 **Definicion**: 1 variable, aplicacion clara de una regla.
 
@@ -42,7 +46,9 @@ Los escenarios de preguntas situacionales deben cumplir los siguientes requisito
 
 ---
 
-### Nivel 2 — Medio
+### Nivel 2 — Medio (total 3-5)
+
+**Perfil tipico**: d_reglas=1, d_excepcion=0, d_densidad=1, d_implicito=0, d_distractores=1, d_contraintuitivo=0
 
 **Definicion**: 2 condiciones combinadas. Un distractor activa el instinto equivocado.
 
@@ -63,7 +69,9 @@ Los escenarios de preguntas situacionales deben cumplir los siguientes requisito
 
 ---
 
-### Nivel 3 — Dificil
+### Nivel 3 — Dificil (total 6-7)
+
+**Perfil tipico**: d_reglas=2, d_excepcion=1, d_densidad=0, d_implicito=1, d_distractores=2, d_contraintuitivo=1
 
 **Definicion**: Excepcion a una regla conocida, o conflicto de reglas. Las 3 respuestas son plausibles sin dominar la norma.
 
@@ -84,7 +92,9 @@ Los escenarios de preguntas situacionales deben cumplir los siguientes requisito
 
 ---
 
-### Nivel 4 — Muy Dificil
+### Nivel 4 — Muy Dificil (total 8-9)
+
+**Perfil tipico**: d_reglas=2, d_excepcion=2, d_densidad=1, d_implicito=1, d_distractores=2, d_contraintuitivo=1
 
 **Definicion**: Dos reglas parecen entrar en conflicto directo. El alumno debe saber cual prevalece. Todas las opciones son muy plausibles.
 

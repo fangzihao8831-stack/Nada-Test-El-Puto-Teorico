@@ -107,7 +107,12 @@ for (const batch of batchDirs) {
 
       if (q.pista) question.pista = q.pista;
       if (q.tipo_pregunta) question.tipoPregunta = q.tipo_pregunta;
-      if (q.nivel) question.nivel = q.nivel;
+      if (q.dificultad) {
+        question.dificultad = q.dificultad;
+        question.nivel = q.dificultad.nivel;
+      } else if (q.nivel) {
+        question.nivel = q.nivel;
+      }
 
       allQuestions.push(question);
     }

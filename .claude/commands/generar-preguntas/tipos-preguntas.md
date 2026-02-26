@@ -13,7 +13,7 @@ Generar preguntas respetando esta distribucion:
 
 ### Tecnicas transversales (se aplican a CUALQUIER tipo):
 - **Todas las preguntas tendrán imagen**: Las imágenes se generan con un skill separado. NO incluir campos `requiere_imagen` ni `tipo_imagen` en el JSON. Solo incluir `codigo_señal` (ej: "R-2", "P-1a") cuando la pregunta trate específicamente de una señal de tráfico; en ese caso, usar "esta señal" en el enunciado en vez del código.
-- **Campo `nivel` obligatorio**: Toda pregunta debe incluir `nivel` (1, 2, 3 o 4) según las tablas de dificultad de abajo. Sin este campo la pregunta es inválida.
+- **Campo `dificultad` obligatorio**: Toda pregunta debe incluir el objeto `dificultad` con las 6 dimensiones, `total` y `nivel` calculado segun la rubrica de abajo. Sin este campo la pregunta es invalida. El `nivel` NO se asigna subjetivamente — se CALCULA de la suma de dimensiones.
 - **Campo `pista` obligatorio**: Una frase corta (máximo 20 palabras) que aparece en modo estudio ANTES de responder. No debe revelar la respuesta. Dos estilos según convenga:
   - **Mnemónico** (para datos/reglas): ayuda a recordar. Ej: *"El límite novel es exactamente la mitad que el general."*
   - **Razonamiento** (para situacionales): guía el pensamiento. Ej: *"Piensa qué ocurre si el vehículo retrocede en la pendiente."*
@@ -33,26 +33,66 @@ Para reglas detalladas de dificultad, ejemplos de referencia y checklist por niv
 
 ---
 
-## Niveles de Dificultad
+## Sistema de Dificultad: Rubrica Multidimensional
 
-**Principio fundamental**: Mayor nivel = distractores mas plausibles. En Nivel 3+, un alumno que no conozca la regla exacta no puede eliminar ninguna opcion por logica.
+**Principio fundamental**: La dificultad NO es un numero subjetivo. Se CALCULA sumando 6 dimensiones medibles. Cada pregunta generada DEBE incluir las puntuaciones de cada dimension en el JSON.
 
-### Para tipos DATO, DIRECTO, COMPLETAR (3 niveles):
+### Las 6 Dimensiones
 
-| Nivel | Etiqueta | Definicion |
-|-------|----------|------------|
-| 1 | Facil | Un unico hecho o regla. Los distractores son claramente de otro contexto. |
-| 2 | Medio | Requiere conocer un umbral especifico, excepcion, o condicion combinada. Un distractor es plausible para un lector descuidado. |
-| 3 | Dificil | Todos los distractores son valores/reglas reales del temario aplicados a una condicion ligeramente distinta. No deducible por eliminacion. |
+| Dimension | Rango | Que mide | 0 | 1 | 2 |
+|-----------|-------|----------|---|---|---|
+| `d_reglas` | 0-2 | Cuantas reglas/normas necesita conocer el alumno | 1 regla simple | 2 reglas combinadas | 3+ reglas o jerarquia de normas |
+| `d_excepcion` | 0-2 | Nivel de excepcionalidad de la norma aplicada | Regla general/estandar | Excepcion a regla conocida | Excepcion a una excepcion |
+| `d_densidad` | 0-1 | Cuantas condiciones tiene el enunciado | Enunciado simple, 1-2 condiciones | Enunciado denso, 3+ condiciones o informacion irrelevante mezclada |
+| `d_implicito` | 0-1 | Si la informacion clave esta explicita o hay que inferirla | Todo lo necesario esta dicho explicitamente | Hay condiciones implicitas que el alumno debe deducir (ej: "acaba de obtener el permiso" = novel) |
+| `d_distractores` | 0-2 | Calidad/plausibilidad de las opciones incorrectas | Distractores de contexto claramente distinto | 1 distractor plausible del mismo contexto | Los 3 valores son reales del temario, no eliminable por logica |
+| `d_contraintuitivo` | 0-1 | Si la respuesta correcta va contra el instinto comun | Respuesta alineada con el sentido comun | Respuesta contraintuitiva (la opcion "segura" o "logica" es incorrecta) |
 
-### Para tipo SITUACIONAL (4 niveles):
+### Calculo del Nivel
 
-| Nivel | Etiqueta | Definicion |
-|-------|----------|------------|
-| 1 | Facil | 1 variable, aplicacion clara de una regla. |
-| 2 | Medio | 2 condiciones combinadas. Un distractor activa el instinto equivocado. |
-| 3 | Dificil | Excepcion a una regla conocida, o conflicto de reglas. Las 3 respuestas son plausibles sin dominar la norma. |
-| 4 | Muy Dificil | Dos reglas parecen entrar en conflicto directo. El alumno debe saber cual prevalece. Todas las opciones son muy plausibles. |
+```
+puntuacion_total = d_reglas + d_excepcion + d_densidad + d_implicito + d_distractores + d_contraintuitivo
+```
+
+| Puntuacion | Nivel | Etiqueta |
+|------------|-------|----------|
+| 0-2 | 1 | Facil |
+| 3-5 | 2 | Medio |
+| 6-7 | 3 | Dificil |
+| 8-9 | 4 | Muy Dificil (solo situacional) |
+
+**Nota para tipos dato/directo/completar**: Si la puntuacion da 8-9, el nivel maximo es 3. Solo las preguntas situacionales pueden ser nivel 4.
+
+### Campo JSON obligatorio
+
+Cada pregunta DEBE incluir el campo `dificultad` con las puntuaciones:
+
+```json
+{
+  "dificultad": {
+    "d_reglas": 1,
+    "d_excepcion": 2,
+    "d_densidad": 0,
+    "d_implicito": 1,
+    "d_distractores": 2,
+    "d_contraintuitivo": 1,
+    "total": 7,
+    "nivel": 3
+  }
+}
+```
+
+### Ejemplo de evaluacion
+
+> Pregunta: "Circula por carretera convencional con linea continua. Para adelantar a un ciclista necesita invadir el carril contrario. ¿Puede adelantar?"
+>
+> - `d_reglas`: 2 (regla de linea continua + excepcion para ciclistas + distancia lateral)
+> - `d_excepcion`: 1 (excepcion a la prohibicion de cruzar linea continua)
+> - `d_densidad`: 0 (enunciado claro, sin informacion extra)
+> - `d_implicito`: 0 (todo explicito)
+> - `d_distractores`: 2 (las 3 opciones son comportamientos validos en otros contextos)
+> - `d_contraintuitivo`: 1 (cruzar linea continua "parece" siempre prohibido)
+> - **Total: 6 → Nivel 3 (Dificil)**
 
 ---
 

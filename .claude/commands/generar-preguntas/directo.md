@@ -10,7 +10,11 @@ Identificar este tipo: la pregunta se responde conociendo una sola regla concret
 
 ## Niveles de Dificultad
 
-### Nivel 1 — Facil
+> **IMPORTANTE**: El nivel se CALCULA con la rubrica de 6 dimensiones en `tipos-preguntas.md`. Los ejemplos de abajo ilustran como se asignan las dimensiones para preguntas tipo directo. Nivel maximo para este tipo: 3.
+
+### Nivel 1 — Facil (total 0-2)
+
+**Perfil tipico**: d_reglas=0, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=1, d_contraintuitivo=0
 
 **Definicion**: Un unico hecho o regla. Los distractores son claramente de otro contexto.
 
@@ -31,7 +35,9 @@ Identificar este tipo: la pregunta se responde conociendo una sola regla concret
 
 ---
 
-### Nivel 2 — Medio
+### Nivel 2 — Medio (total 3-5)
+
+**Perfil tipico**: d_reglas=1, d_excepcion=0, d_densidad=0, d_implicito=1, d_distractores=1, d_contraintuitivo=0
 
 **Definicion**: Requiere conocer un umbral especifico, excepcion, o condicion combinada. Un distractor es plausible para un lector descuidado.
 
@@ -51,7 +57,9 @@ Identificar este tipo: la pregunta se responde conociendo una sola regla concret
 
 ---
 
-### Nivel 3 — Dificil
+### Nivel 3 — Dificil (total 6+)
+
+**Perfil tipico**: d_reglas=1, d_excepcion=1, d_densidad=1, d_implicito=0, d_distractores=2, d_contraintuitivo=1
 
 **Definicion**: Todos los distractores son valores/reglas reales del temario aplicados a una condicion ligeramente distinta. No deducible por eliminacion.
 

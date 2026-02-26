@@ -8,6 +8,17 @@ export type TestMode = "examen" | "estudio";
 
 export type QuestionOrigin = "generada" | "extraida_dgt" | "extraida_todotest";
 
+export interface QuestionDificultad {
+  d_reglas: number;
+  d_excepcion: number;
+  d_densidad: number;
+  d_implicito: number;
+  d_distractores: number;
+  d_contraintuitivo: number;
+  total: number;
+  nivel: number;
+}
+
 export interface TestQuestion {
   id: string;
   number: number;
@@ -21,6 +32,7 @@ export interface TestQuestion {
   tema: string;
   tipoPregunta?: string;
   nivel?: number;
+  dificultad?: QuestionDificultad;
 }
 
 export interface TestSessionResult {

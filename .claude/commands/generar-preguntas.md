@@ -144,6 +144,16 @@ Guardar en `content/preguntas/preguntas_[fecha].json`
       "explicación": "Explicación completa...",
       "pista": "Ayuda sutil...",
       "codigo_señal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 1,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      },
       "origen": "generada",
       "validada": false
     }

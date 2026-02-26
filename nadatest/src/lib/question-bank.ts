@@ -1689,5 +1689,1145 @@ export const questionBank: BankQuestion[] = [
     "pista": "La prioridad con un inconsciente que respira es proteger sus vías respiratorias.",
     "tipoPregunta": "situacional",
     "nivel": 1
+  },
+  {
+    "id": "pregunta_0601",
+    "number": 0,
+    "enunciado": "En una carretera 2+1, cuando circula por el tramo que dispone de un solo carril en su sentido, ¿puede adelantar al vehículo que le precede?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, si hay visibilidad suficiente y no viene nadie de frente."
+      },
+      {
+        "key": "B",
+        "texto": "No, está prohibido adelantar en ese tramo."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, siempre que no supere el límite de velocidad."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En las carreteras 2+1, cuando se circula por el tramo de un solo carril en su sentido, está prohibido adelantar. Solo se puede adelantar en los tramos donde se dispone de dos carriles.\n\n- Opciones incorrectas: la opción que permite adelantar con visibilidad aplica a carreteras convencionales normales, no al tramo de un solo carril en una 2+1; la opción sobre el límite de velocidad ignora la prohibición específica del tramo\n- Conexión: estas carreteras alternan tramos de 2 carriles y 1 carril para ofrecer adelantamientos seguros y reducir accidentes frontales\n- Dato clave: los accidentes frontales son la principal causa de muerte en carreteras convencionales, y las 2+1 buscan eliminarlos",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Si solo tienes un carril, no hay dónde adelantar con seguridad.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0602",
+    "number": 0,
+    "enunciado": "¿Está permitido realizar un cambio de sentido en una intersección regulada por una glorieta?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, el cambio de sentido está prohibido en todas las intersecciones."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, recorriendo completamente la glorieta hasta volver al punto de entrada."
+      },
+      {
+        "key": "C",
+        "texto": "Solo si hay señalización específica que lo autorice."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Las glorietas son uno de los pocos tipos de intersección donde está permitido el cambio de sentido. Para realizarlo, basta con recorrer la glorieta completamente hasta volver al punto de entrada, siempre cediendo el paso al incorporarse.\n\n- Opciones incorrectas: el cambio de sentido está prohibido en muchas intersecciones pero no en todas, ya que las glorietas son una excepción; no se necesita señalización específica, ya que la propia naturaleza de la glorieta permite esta maniobra\n- Conexión: fuera de las glorietas, el cambio de sentido está prohibido en autopistas y autovías (solo en áreas habilitadas), curvas, cambios de rasante y donde exista señal R-304\n- Error común: algunos alumnos creen que la glorieta solo se usa para cambiar de dirección y no para dar la vuelta completa",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "La glorieta es circular; nada impide completar el círculo entero.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0603",
+    "number": 0,
+    "enunciado": "¿Está permitido usar el claxon dentro de poblado?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, en cualquier momento para avisar de la presencia."
+      },
+      {
+        "key": "B",
+        "texto": "No, dentro de poblado solo se pueden usar señales ópticas."
+      },
+      {
+        "key": "C",
+        "texto": "Solo cuando exista peligro inminente de accidente."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Dentro de poblado, el uso del claxon está prohibido con carácter general. Solo se permite utilizarlo cuando exista peligro inminente de accidente, es decir, para evitar una colisión o atropello.\n\n- Opciones incorrectas: la opción que lo permite en cualquier momento ignora la restricción en poblado; la opción que lo prohíbe totalmente y limita a señales ópticas es parcialmente correcta pero olvida la excepción del peligro inminente\n- Conexión: fuera de poblado sí se puede usar para avisar de un adelantamiento, pero de noche se prefieren las ráfagas de luces\n- Error común: muchos conductores usan el claxon por impaciencia en atascos urbanos, lo cual es una infracción",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "En ciudad hay muchas más personas cerca; el claxon se reserva para lo urgente.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0604",
+    "number": 0,
+    "enunciado": "Un semáforo emite una luz amarilla intermitente. ¿Qué significa?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Detenerse obligatoriamente como ante un semáforo en rojo."
+      },
+      {
+        "key": "B",
+        "texto": "Precaución: no hay prioridad semafórica y se aplican las normas generales de prioridad."
+      },
+      {
+        "key": "C",
+        "texto": "Paso permitido sin necesidad de precaución adicional."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La luz amarilla intermitente indica que no hay regulación semafórica activa. El conductor debe circular con precaución y aplicar las normas generales de prioridad, como la prioridad de la derecha en intersecciones sin señalizar.\n\n- Opciones incorrectas: detenerse como en rojo corresponde al rojo intermitente, no al amarillo; pasar sin precaución ignora que la regulación semafórica no está activa y pueden existir conflictos de prioridad\n- Conexión: el rojo intermitente sí obliga a detenerse (funciona como una señal de stop), lo cual es una confusión frecuente con el amarillo intermitente\n- Dato clave: el amarillo intermitente se activa frecuentemente en horarios nocturnos o de bajo tráfico",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Amarillo = precaución. Intermitente = la regulación normal no está activa.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0605",
+    "number": 0,
+    "enunciado": "La señal R-303, que prohíbe el giro a la izquierda, también prohíbe...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "el giro a la derecha en la misma intersección."
+      },
+      {
+        "key": "B",
+        "texto": "el cambio de sentido."
+      },
+      {
+        "key": "C",
+        "texto": "el adelantamiento en los 100 metros siguientes."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La señal R-303 de prohibición de giro a la izquierda prohíbe además el cambio de sentido. Esto es así porque el cambio de sentido implica un giro a la izquierda y queda englobado en la prohibición.\n\n- Opciones incorrectas: la señal no afecta al giro a la derecha, que es una maniobra independiente; la prohibición de adelantamiento tiene su propia señal (R-305) y no guarda relación con el giro\n- Conexión: la señal R-304 prohíbe específicamente el cambio de sentido sin prohibir el giro a la izquierda; la R-303 prohíbe ambas maniobras a la vez\n- Error común: esta es una de las preguntas más falladas del examen, ya que muchos alumnos no asocian la prohibición del giro a la izquierda con la del cambio de sentido",
+    "hasImage": false,
+    "imageSrc": "/images/senales/reglamentacion/R-303.svg",
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Piensa qué maniobra requiere necesariamente girar a la izquierda.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0606",
+    "number": 0,
+    "enunciado": "Circula por una carretera donde hay obras señalizadas con señalización temporal de fondo amarillo. El límite de velocidad temporal es de 60 km/h, pero la señal permanente indica 90 km/h. ¿Qué límite debe respetar?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El de 90 km/h, ya que es la señal permanente de la vía."
+      },
+      {
+        "key": "B",
+        "texto": "El de 60 km/h, ya que la señalización temporal prevalece sobre la permanente."
+      },
+      {
+        "key": "C",
+        "texto": "El que considere más seguro según las circunstancias."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La señalización circunstancial y temporal, como la de obras, prevalece sobre la señalización permanente. El conductor debe respetar el límite temporal de 60 km/h mientras esté vigente la zona de obras.\n\n- Opciones incorrectas: ignorar la señalización temporal y seguir la permanente es una infracción; decidir el propio límite según las circunstancias no es una opción válida cuando hay señalización activa\n- Conexión: según la jerarquía de señales, las señales de los agentes prevalecen sobre todas, seguidas de la señalización circunstancial, los semáforos, las señales verticales y las marcas viales\n- Dato clave: las señales temporales se identifican por su fondo amarillo, a diferencia de las permanentes que tienen fondo blanco o azul",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "En la jerarquía de señales, lo temporal manda sobre lo permanente.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0607",
+    "number": 0,
+    "enunciado": "La cruz de San Andrés en un paso a nivel muestra dos aspas cruzadas. ¿Qué indica?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Que el paso a nivel tiene una sola vía férrea."
+      },
+      {
+        "key": "B",
+        "texto": "Que el paso a nivel tiene dos o más vías férreas."
+      },
+      {
+        "key": "C",
+        "texto": "Que el paso a nivel está fuera de servicio."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La cruz de San Andrés con dos aspas cruzadas indica que el paso a nivel tiene dos o más vías férreas. Esto significa que tras pasar un tren, podría venir otro en sentido contrario por la otra vía, por lo que hay que extremar la precaución.\n\n- Opciones incorrectas: una sola aspa indica una vía única, no dos aspas; la señal nunca indica que el paso está fuera de servicio\n- Conexión: los paneles con barras diagonales que se encuentran antes del paso a nivel indican la distancia: tres barras a unos 300 metros, dos barras a unos 200 metros y una barra a unos 100 metros\n- Error común: muchos alumnos no distinguen entre una aspa (vía única) y dos aspas (vía doble o múltiple), lo cual es crítico para saber si pueden cruzar tras pasar un tren",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Cuenta las aspas: cada aspa representa al menos una vía del ferrocarril.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0608",
+    "number": 0,
+    "enunciado": "Circula por una vía urbana de un solo carril por sentido. Un vehículo prioritario con sirena y luces activadas se aproxima por detrás, pero a su derecha hay coches estacionados y no puede apartarse. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Mantener su velocidad y esperar a que el vehículo prioritario le adelante por el carril contrario."
+      },
+      {
+        "key": "B",
+        "texto": "Detenerse en su carril para que el vehículo prioritario le adelante cuando lo considere seguro."
+      },
+      {
+        "key": "C",
+        "texto": "Acelerar hasta encontrar un hueco donde apartarse a la derecha."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Cuando no es posible apartarse a la derecha por la presencia de vehículos estacionados, la opción correcta es detenerse en su carril para facilitar que el vehículo prioritario le adelante por el carril contrario cuando sea seguro. Detenerse reduce la velocidad relativa y facilita la maniobra del vehículo de emergencia.\n\n- Opciones incorrectas: mantener la velocidad dificulta el adelantamiento del vehículo prioritario y prolonga la situación; acelerar es peligroso y va contra la obligación de facilitar el paso, además de que el vehículo de emergencia puede ir más rápido\n- Conexión: en vías de dos o más carriles por sentido, la maniobra es más sencilla porque basta con desplazarse al carril derecho; en calles estrechas con un solo carril la única opción viable es detenerse\n- Error común: muchos conductores entran en pánico y aceleran intentando alejarse del vehículo de emergencia, lo cual es contraproducente",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Si no puedes apartarte, la mejor ayuda es quedarte quieto y dejar que te adelante.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0609",
+    "number": 0,
+    "enunciado": "¿Cuál es la función principal del reposacabezas del asiento del vehículo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Proporcionar comodidad en viajes largos."
+      },
+      {
+        "key": "B",
+        "texto": "Prevenir el latigazo cervical en caso de colisión trasera."
+      },
+      {
+        "key": "C",
+        "texto": "Evitar que la cabeza se desplace lateralmente en curvas."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La función principal del reposacabezas es prevenir el latigazo cervical (whiplash) en caso de colisión trasera. Al impactar por detrás, la cabeza se desplaza bruscamente hacia atrás y el reposacabezas la retiene, evitando lesiones en el cuello.\n\n- Opciones incorrectas: aunque proporciona comodidad, esa no es su función principal de seguridad; el reposacabezas no está diseñado para movimientos laterales en curvas\n- Conexión: para que sea eficaz, debe regularse correctamente con el borde superior a la altura de los ojos o parte superior de la cabeza, y a un máximo de 4 cm de distancia\n- Dato clave: el reposacabezas es un elemento de seguridad pasiva, igual que el cinturón y el airbag",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "Es un elemento de seguridad pasiva que protege una zona específica del cuerpo.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0610",
+    "number": 0,
+    "enunciado": "Circula por una carretera en verano y observa que el indicador de temperatura del motor sube progresivamente. Al mismo tiempo, nota que el nivel de líquido refrigerante ha bajado por debajo del mínimo. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Abrir el tapón del radiador para comprobar el estado del refrigerante y rellenarlo."
+      },
+      {
+        "key": "B",
+        "texto": "Detenerse de forma segura, apagar el motor y esperar a que se enfríe completamente antes de comprobar el nivel del refrigerante."
+      },
+      {
+        "key": "C",
+        "texto": "Encender la calefacción a máxima potencia y continuar hasta un taller."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Cuando el motor se sobrecalienta y el refrigerante está bajo, lo correcto es detenerse de forma segura, apagar el motor y esperar a que se enfríe completamente antes de hacer cualquier comprobación. Nunca se debe abrir el tapón del radiador con el motor caliente.\n\n- Opciones incorrectas: abrir el tapón del radiador con el motor caliente es muy peligroso ya que el líquido está a presión y puede provocar quemaduras graves por la salida de vapor a alta temperatura; encender la calefacción a máxima potencia puede ayudar temporalmente a disipar calor del motor, pero continuar circulando con el motor sobrecalentado puede causar daños irreversibles como la fundición de la junta de culata\n- Conexión: la opción de encender la calefacción es un truco real que algunos mecánicos recomiendan como medida de emergencia temporal, lo que la hace un distractor especialmente plausible\n- Error común: muchos conductores no saben que el líquido refrigerante está a presión y que abrir el tapón en caliente es extremadamente peligroso",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "El sistema de refrigeración trabaja a presión. Cualquier apertura en caliente es peligrosa.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 2,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0611",
+    "number": 0,
+    "enunciado": "Un vehículo con nivel 2 de automatización (control de crucero adaptativo y asistente de carril funcionando simultáneamente), ¿permite al conductor dejar de prestar atención a la conducción?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, el sistema controla el vehículo completamente."
+      },
+      {
+        "key": "B",
+        "texto": "No, el conductor debe supervisar siempre y estar preparado para retomar el control."
+      },
+      {
+        "key": "C",
+        "texto": "Solo en autopistas con tráfico fluido."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En el nivel 2 de automatización, el sistema puede controlar aceleración, frenado y dirección simultáneamente, pero el conductor debe supervisar siempre la conducción y estar preparado para retomar el control en cualquier momento. El conductor es el responsable legal.\n\n- Opciones incorrectas: ningún nivel de automatización actualmente permitido en España exime al conductor de supervisar; la distinción por tipo de vía no aplica al nivel 2, que requiere supervisión constante en cualquier circunstancia\n- Conexión: los sistemas ADAS obligatorios desde julio de 2024 corresponden a los niveles 1 y 2 de automatización; son ayudas, no sustitutos del conductor\n- Dato clave: los niveles 3, 4 y 5 aún no están plenamente regulados en España para circulación general",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "Los sistemas ADAS actuales son ayudas, no pilotos automáticos.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0612",
+    "number": 0,
+    "enunciado": "El consumo de cannabis antes de conducir afecta a la capacidad de conducción porque...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "acelera los reflejos y provoca exceso de confianza."
+      },
+      {
+        "key": "B",
+        "texto": "ralentiza los reflejos y altera la percepción del tiempo y las distancias."
+      },
+      {
+        "key": "C",
+        "texto": "aumenta la agresividad y reduce la tolerancia al estrés."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El cannabis ralentiza los reflejos, altera la percepción del tiempo y las distancias, y reduce la capacidad de atención. Estos efectos son especialmente peligrosos al volante porque el conductor no percibe correctamente las situaciones de riesgo.\n\n- Opciones incorrectas: acelerar reflejos y exceso de confianza son efectos asociados a la cocaína, no al cannabis; la agresividad y baja tolerancia al estrés se asocian más con anfetaminas y cocaína\n- Conexión: los efectos del cannabis se potencian al combinarse con alcohol, multiplicando el riesgo de accidente\n- Error común: muchos conductores creen que el cannabis relaja y por tanto no afecta a la conducción, cuando en realidad deteriora gravemente la capacidad de reacción",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Cada droga tiene efectos distintos. El cannabis no estimula, sino que enlentece.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0613",
+    "number": 0,
+    "enunciado": "Después de una discusión fuerte, se encuentra muy alterado emocionalmente. ¿Debería conducir en ese estado?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, las emociones no afectan a la capacidad de conducción."
+      },
+      {
+        "key": "B",
+        "texto": "No, es recomendable esperar a calmarse ya que el estado emocional alterado reduce la atención y aumenta el riesgo."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, conducir ayuda a distraerse del problema."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Un estado emocional alterado (ira, ansiedad, tristeza intensa) reduce la atención, provoca decisiones precipitadas y puede llevar a conducción agresiva. Lo recomendable es esperar a calmarse antes de ponerse al volante.\n\n- Opciones incorrectas: las emociones afectan significativamente a la conducción al reducir la concentración y aumentar los comportamientos de riesgo; conducir para distraerse es precisamente lo contrario de lo que se necesita, ya que implica menor concentración en la carretera\n- Conexión: la ira al volante aumenta la tendencia a saltarse normas, hacer adelantamientos imprudentes y no respetar la distancia de seguridad\n- Error común: muchos conductores subestiman el impacto de los estados emocionales en su capacidad de conducir con seguridad",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Las emociones fuertes afectan a la concentración igual que la fatiga.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0614",
+    "number": 0,
+    "enunciado": "Está realizando la reanimación cardiopulmonar (RCP) a una víctima de accidente. ¿Cuántas compresiones torácicas debe aplicar por cada ciclo antes de realizar las ventilaciones?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "15 compresiones."
+      },
+      {
+        "key": "B",
+        "texto": "30 compresiones."
+      },
+      {
+        "key": "C",
+        "texto": "20 compresiones."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La secuencia correcta de RCP es 30 compresiones torácicas seguidas de 2 ventilaciones (30:2). Las compresiones deben realizarse a un ritmo de 100 a 120 por minuto y con una profundidad de 5 a 6 centímetros en adultos.\n\n- Opciones incorrectas: 15 compresiones era la recomendación antigua que ya no se utiliza; 20 compresiones no corresponde a ningún protocolo vigente de RCP\n- Conexión: se debe continuar con la RCP hasta que llegue ayuda profesional, la víctima se recupere o el reanimador esté exhausto; si hay un desfibrilador (DEA) disponible, usarlo siguiendo sus instrucciones de voz\n- Dato clave: el ritmo de 100-120 compresiones por minuto equivale aproximadamente al tempo de la canción \"Stayin' Alive\"",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "La secuencia actual es 30:2. Treinta y dos.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0615",
+    "number": 0,
+    "enunciado": "Los vehículos sin etiqueta medioambiental de la DGT...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "pueden circular por Zonas de Bajas Emisiones con restricción horaria."
+      },
+      {
+        "key": "B",
+        "texto": "tienen prohibido el acceso a las Zonas de Bajas Emisiones."
+      },
+      {
+        "key": "C",
+        "texto": "solo necesitan pagar una tasa adicional para circular en ZBE."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Los vehículos sin etiqueta medioambiental (generalmente gasolina anteriores a 2001 y diésel anteriores a 2006) tienen prohibido el acceso a las Zonas de Bajas Emisiones. Estas zonas son obligatorias en municipios de más de 50.000 habitantes.\n\n- Opciones incorrectas: la restricción horaria puede aplicarse a etiquetas B o C según el municipio, pero los vehículos sin etiqueta no acceden en ningún horario; no existe ninguna tasa que permita circular sin etiqueta en ZBE\n- Conexión: las etiquetas se clasifican en Cero (azul), ECO (azul y verde), C (verde), B (amarillo) y sin etiqueta, siendo las dos primeras las que circulan sin restricciones\n- Dato clave: la sanción por acceso indebido a una ZBE es de 200 euros",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "Los vehículos más antiguos y contaminantes son los que más restricciones tienen.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0616",
+    "number": 0,
+    "enunciado": "¿Cuándo prescribe una infracción de tráfico grave?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "A los 3 meses."
+      },
+      {
+        "key": "B",
+        "texto": "A los 6 meses."
+      },
+      {
+        "key": "C",
+        "texto": "Al año."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Las infracciones graves de tráfico prescriben a los 6 meses. Esto significa que si la administración no ha notificado la denuncia en ese plazo, la infracción queda sin efecto.\n\n- Opciones incorrectas: 3 meses es el plazo de prescripción de las infracciones leves; un año no corresponde a ningún plazo de prescripción de infracciones de tráfico\n- Conexión: las infracciones muy graves también prescriben a los 6 meses, igual que las graves\n- Dato clave: si se paga la multa en los primeros 20 días naturales, se obtiene un descuento del 50%, pero se renuncia a presentar alegaciones",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "Las leves prescriben antes. Graves y muy graves comparten el mismo plazo.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0617",
+    "number": 0,
+    "enunciado": "Su vehículo ha sido fotografiado por un radar y recibe una multa por correo. Usted no era quien conducía en ese momento. ¿De qué es responsable como titular del vehículo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "De la sanción económica y de la pérdida de puntos."
+      },
+      {
+        "key": "B",
+        "texto": "De identificar al conductor que cometió la infracción en un plazo de 20 días naturales."
+      },
+      {
+        "key": "C",
+        "texto": "De nada, ya que no era el conductor."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Como titular del vehículo, tiene la obligación de identificar al conductor que cometió la infracción en un plazo de 20 días naturales. Si no lo hace, será responsable de la sanción económica, aunque no de la pérdida de puntos.\n\n- Opciones incorrectas: el titular no pierde puntos si no era el conductor, solo responde de la multa si no identifica; no hacer nada no es una opción, ya que no identificar al conductor puede sancionarse como infracción muy grave con multas de hasta 1.500 euros\n- Conexión: la pérdida de puntos se aplica siempre al conductor identificado, nunca al titular por el mero hecho de serlo\n- Error común: muchos titulares ignoran la obligación de identificar y terminan pagando la multa íntegra más la sanción adicional por no identificar",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "El titular tiene la obligación de decir quién conducía, no de asumir la culpa.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0618",
+    "number": 0,
+    "enunciado": "Un agente puede inmovilizar su vehículo si usted...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "no lleva el permiso de conducir físico encima."
+      },
+      {
+        "key": "B",
+        "texto": "circula sin seguro obligatorio en vigor."
+      },
+      {
+        "key": "C",
+        "texto": "tiene una multa de aparcamiento pendiente de pago."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Circular sin seguro obligatorio en vigor es una de las causas legales de inmovilización del vehículo. El agente puede retener el vehículo hasta que se acredite la existencia de seguro válido.\n\n- Opciones incorrectas: no llevar el permiso físico encima es una infracción leve pero no causa de inmovilización, especialmente desde que el permiso digital en la app miDGT tiene la misma validez; una multa de aparcamiento pendiente no autoriza la inmovilización del vehículo\n- Conexión: otras causas frecuentes de inmovilización incluyen conducir sin permiso, dar positivo en alcohol o drogas, llevar inhibidores de radar o no disponer de ITV vigente con resultado negativo\n- Dato clave: la multa por circular sin seguro oscila entre 601 y 3.005 euros",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "La inmovilización se aplica cuando hay un riesgo grave o un incumplimiento esencial.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0619",
+    "number": 0,
+    "enunciado": "Recibe una denuncia por una infracción de tráfico. Si decide pagar la multa en los primeros 20 días naturales, ¿qué descuento obtiene?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Un 25% del importe."
+      },
+      {
+        "key": "B",
+        "texto": "Un 50% del importe."
+      },
+      {
+        "key": "C",
+        "texto": "Un 30% del importe."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El pago voluntario en los primeros 20 días naturales desde la notificación de la denuncia da derecho a un descuento del 50% del importe de la multa. Sin embargo, al acogerse a este descuento se renuncia al derecho de presentar alegaciones y recursos.\n\n- Opciones incorrectas: 25% y 30% son porcentajes que no corresponden a ningún descuento del procedimiento sancionador de tráfico\n- Conexión: los puntos se detraen igualmente aunque se pague con descuento; el descuento solo afecta a la cuantía económica\n- Dato clave: si no se paga ni se alegan en 20 días, la sanción se confirma y se inicia el procedimiento de cobro con recargos del 5% al 20%",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "El descuento es generoso para incentivar el pago rápido, pero tiene un coste.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0620",
+    "number": 0,
+    "enunciado": "Circula por una carretera convencional y se aproxima a un paso a nivel sin barreras. La cruz de San Andrés tiene dos aspas. Un tren acaba de pasar de izquierda a derecha. No hay semáforo ni señal acústica activa. ¿Puede cruzar?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, el tren ya ha pasado y no hay señal que lo impida."
+      },
+      {
+        "key": "B",
+        "texto": "No, debe esperar un tiempo prudencial por si viene otro tren por la otra vía."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, pero solo si tiene visibilidad suficiente en ambas direcciones."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La presencia de dos aspas en la cruz de San Andrés indica que hay dos o más vías férreas. Que un tren acabe de pasar no garantiza que no venga otro por la segunda vía en sentido contrario. El conductor debe detenerse, asegurarse de que no viene ningún otro tren por ninguna vía, y solo entonces cruzar con precaución.\n\n- Opciones incorrectas: cruzar inmediatamente tras el paso de un tren es muy peligroso cuando hay dos vías, ya que puede venir otro tren oculto por el primero; la opción de visibilidad suficiente suena razonable, pero el paso a nivel sin barreras con dos aspas requiere una parada y comprobación completa, no solo mirar desde el coche en movimiento\n- Conexión: la diferencia entre una aspa (vía única) y dos aspas (vía múltiple) es precisamente lo que determina si tras pasar un tren se puede asumir que la vía está libre\n- Error común: muchos conductores asumen que tras el paso de un tren ya pueden cruzar, sin verificar si hay más vías por las que pueda circular otro tren simultáneamente",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Las dos aspas significan que hay más de una vía. Un tren pasó, pero ¿y la otra vía?",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 2,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 8,
+      "nivel": 4
+    },
+    "nivel": 4
+  },
+  {
+    "id": "pregunta_0621",
+    "number": 0,
+    "enunciado": "Circula por una vía y encuentra esta señal de prohibición que muestra la silueta de un turismo sobre fondo blanco con borde rojo. Observa que una motocicleta de dos ruedas sin sidecar circula por esa vía. ¿Está cometiendo una infracción?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, la señal prohíbe todos los vehículos de motor sin excepción."
+      },
+      {
+        "key": "B",
+        "texto": "No, la señal R-103 prohíbe vehículos de motor excepto motocicletas de dos ruedas sin sidecar."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, salvo que la motocicleta sea un ciclomotor."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La señal R-103 prohíbe la circulación de vehículos de motor, pero establece una excepción específica para las motocicletas de dos ruedas sin sidecar, que sí pueden circular. Las motos con sidecar, en cambio, quedan prohibidas por esta señal.\n\n- Opciones incorrectas: la señal no prohíbe todos los vehículos sin excepción, ya que las motos de dos ruedas sin sidecar están expresamente exentas; la excepción no se limita a ciclomotores, sino que aplica a cualquier motocicleta de dos ruedas sin sidecar\n- Conexión: esta distinción entre motos con y sin sidecar es una de las preguntas trampa más frecuentes del examen\n- Error común: confundir la R-103 con la R-102 (que prohíbe todos los vehículos de motor sin ninguna excepción)",
+    "hasImage": false,
+    "imageSrc": "/images/senales/reglamentacion/R-103.svg",
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Busca la excepción: una señal de prohibición de motor no siempre afecta a todos.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0622",
+    "number": 0,
+    "enunciado": "Si los intermitentes de su vehículo dejan de funcionar, ¿cómo debe indicar un giro a la derecha con el brazo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Extendiendo el brazo izquierdo horizontalmente."
+      },
+      {
+        "key": "B",
+        "texto": "Sacando el brazo izquierdo y doblándolo hacia arriba."
+      },
+      {
+        "key": "C",
+        "texto": "Moviendo el brazo izquierdo repetidamente de arriba a abajo."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Para indicar un giro a la derecha con el brazo (desde el lado izquierdo del vehículo, que es el del conductor), se saca el brazo izquierdo y se dobla hacia arriba formando un ángulo recto. Esta señal sustituye al intermitente derecho.\n\n- Opciones incorrectas: el brazo extendido horizontalmente indica giro a la izquierda; el brazo moviéndose de arriba a abajo indica que va a frenar o reducir velocidad\n- Conexión: estas señales con el brazo son obligatorias cuando fallan los intermitentes y debe conocerlas todo conductor\n- Dato clave: brazo extendido horizontal = izquierda; brazo doblado arriba = derecha; brazo arriba-abajo = freno",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "El brazo sale por la izquierda. Si va hacia arriba, señala lo contrario: la derecha.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0623",
+    "number": 0,
+    "enunciado": "Se aproxima a una intersección con un semáforo que muestra una flecha verde hacia la derecha y una luz roja circular simultáneamente. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Detenerse, ya que la luz roja prevalece sobre cualquier flecha."
+      },
+      {
+        "key": "B",
+        "texto": "Puede girar a la derecha siguiendo la flecha verde, cediendo el paso a los peatones."
+      },
+      {
+        "key": "C",
+        "texto": "Puede continuar en cualquier dirección porque hay una indicación verde."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Cuando un semáforo muestra simultáneamente una flecha verde y una luz roja, solo está permitido circular en la dirección indicada por la flecha verde. En este caso, puede girar a la derecha, siempre cediendo el paso a los peatones que crucen.\n\n- Opciones incorrectas: la luz roja no anula la flecha verde, sino que prohíbe el resto de direcciones; la flecha solo autoriza la dirección específica que indica, no cualquier dirección\n- Conexión: las flechas verdes permiten movimientos concretos mientras la luz roja detiene el tráfico general, lo que facilita la fluidez en intersecciones complejas\n- Error común: muchos alumnos creen que la luz roja prevalece sobre todo, pero la flecha verde es una autorización específica que funciona simultáneamente",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "La flecha y la luz circular funcionan juntas: una autoriza, la otra prohíbe.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0624",
+    "number": 0,
+    "enunciado": "Para que el airbag cumpla su función protectora, es imprescindible que...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "el conductor circule a menos de 50 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "el ocupante lleve puesto el cinturón de seguridad."
+      },
+      {
+        "key": "C",
+        "texto": "el vehículo tenga menos de 10 años de antigüedad."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El airbag está diseñado para funcionar conjuntamente con el cinturón de seguridad. Sin cinturón, el ocupante se desplaza hacia delante en el impacto y el airbag puede causar lesiones graves (fracturas faciales, quemaduras) en lugar de proteger.\n\n- Opciones incorrectas: el airbag funciona a cualquier velocidad de impacto, no solo por debajo de 50 km/h; la antigüedad del vehículo no determina la eficacia del airbag mientras funcione correctamente\n- Conexión: los niños en SRI colocados en sentido contrario a la marcha nunca deben ir en un asiento con airbag frontal activo, ya que la fuerza de expansión podría causar lesiones gravísimas\n- Dato clave: el cinturón reduce la mortalidad en un 50%, y el airbag solo aporta protección adicional si se usa con cinturón",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "El airbag no trabaja solo; necesita que otro sistema retenga primero al ocupante.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0625",
+    "number": 0,
+    "enunciado": "Circula por una vía urbana de dos carriles por sentido y necesita girar a la izquierda en la próxima intersección. Un vehículo viene de frente por el carril contrario. ¿Cómo debe proceder?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Girar a la izquierda rápidamente antes de que llegue el otro vehículo."
+      },
+      {
+        "key": "B",
+        "texto": "Colocarse junto al eje de la calzada, señalizar, y ceder el paso al vehículo que viene de frente antes de girar."
+      },
+      {
+        "key": "C",
+        "texto": "Girar desde el carril derecho para no estorbar al tráfico del carril izquierdo."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Para girar a la izquierda, debe colocarse junto al eje de la calzada o en el carril izquierdo, señalizar con suficiente antelación y ceder el paso a los vehículos que vengan de frente. Solo cuando el vehículo de frente haya pasado podrá completar el giro.\n\n- Opciones incorrectas: girar rápidamente antes de que llegue el otro vehículo es peligroso e incumple la obligación de ceder paso a quien viene de frente; girar desde el carril derecho obliga a cruzar el carril izquierdo interfiriendo con otros vehículos\n- Conexión: además de ceder paso a los vehículos de frente, también debe ceder el paso a los peatones que crucen la vía a la que se incorpora\n- Error común: muchos conductores olvidan que al girar a la izquierda deben ceder el paso a quienes vienen de frente, no solo señalizar",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Al girar a la izquierda, tienes dos obligaciones: posicionarte y ceder paso al de frente.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0626",
+    "number": 0,
+    "enunciado": "Al pagar una multa de tráfico con el descuento del 50% en los primeros 20 días, ¿se eliminan también los puntos detraídos?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, el descuento del 50% se aplica tanto a la multa económica como a los puntos."
+      },
+      {
+        "key": "B",
+        "texto": "No, los puntos se detraen igualmente; el descuento solo afecta a la cuantía económica."
+      },
+      {
+        "key": "C",
+        "texto": "Los puntos se reducen a la mitad, al igual que la multa."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El descuento del 50% por pronto pago solo se aplica a la cuantía económica de la multa. Los puntos se detraen íntegramente, independientemente de si se paga con descuento o no. Además, al acogerse al descuento se renuncia a presentar alegaciones.\n\n- Opciones incorrectas: el descuento no afecta a la pérdida de puntos en ningún caso; no existe ningún mecanismo de reducción proporcional de los puntos vinculado al pago de la multa\n- Conexión: la única forma de no perder los puntos es que la infracción sea anulada mediante alegaciones o recurso, lo cual es incompatible con acogerse al descuento por pronto pago\n- Error común: muchos conductores creen que al pagar con descuento se suavizan todas las consecuencias, cuando en realidad solo se reduce el importe económico y se pierden los derechos de defensa",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "El descuento es un incentivo económico, pero los puntos son otra consecuencia independiente.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0627",
+    "number": 0,
+    "enunciado": "Los Vehículos de Movilidad Personal, ¿pueden circular por aceras o zonas peatonales?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, siempre que circulen a menos de 10 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, si no hay carril bici disponible."
+      },
+      {
+        "key": "C",
+        "texto": "No, tienen prohibido circular por aceras y zonas peatonales."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Los VMP (patinetes eléctricos y similares) tienen prohibido circular por aceras y zonas peatonales. Deben circular por carriles bici, vías ciclistas, ciclo-calles o por la calzada de vías urbanas utilizando el carril derecho.\n\n- Opciones incorrectas: no existe ninguna velocidad que permita a los VMP circular por aceras; la ausencia de carril bici no autoriza a circular por zonas peatonales, sino por la calzada\n- Conexión: los VMP tampoco pueden circular por vías interurbanas (autopistas, autovías, carreteras), y su velocidad máxima por diseño es de 25 km/h\n- Dato clave: desde enero de 2026, los VMP necesitan seguro obligatorio, registro en la DGT, número identificativo visible y casco",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Aunque sean pequeños, no son peatones. Circulan por donde las bicicletas.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0628",
+    "number": 0,
+    "enunciado": "Un amigo le ofrece llevarle en su coche después de haber consumido cocaína hace unas horas. Él dice que ya se le han pasado los efectos y que se siente bien. ¿Debe aceptar?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, si él se siente bien es que los efectos ya han desaparecido."
+      },
+      {
+        "key": "B",
+        "texto": "No, los efectos de la cocaína incluyen una fase posterior de depresión y fatiga intensa que es muy peligrosa al volante."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, la cocaína mejora los reflejos y la atención."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La cocaína tiene una fase inicial de estimulación (exceso de confianza, agresividad) seguida de una fase de depresión, fatiga intensa y dificultad de concentración. Que el conductor sienta que se le han pasado los efectos puede significar que está entrando en esa fase depresiva, que es igualmente peligrosa al volante.\n\n- Opciones incorrectas: sentirse bien no garantiza que los efectos hayan desaparecido completamente del organismo; la cocaína no mejora realmente los reflejos sino que crea una falsa sensación de competencia que lleva a conducción temeraria\n- Conexión: conducir bajo los efectos de drogas es un delito penal, independientemente de que el conductor se sienta capacitado\n- Error común: creer que al desaparecer la euforia ya no hay riesgo, cuando la fase posterior de agotamiento es igualmente peligrosa",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Las drogas estimulantes tienen un efecto rebote que también afecta a la conducción.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0629",
+    "number": 0,
+    "enunciado": "En los túneles, los captafaros de color azul indican la ubicación de...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "el borde derecho de la calzada."
+      },
+      {
+        "key": "B",
+        "texto": "las salidas de emergencia."
+      },
+      {
+        "key": "C",
+        "texto": "los puestos SOS y teléfonos de emergencia."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En los túneles, los captafaros azules señalan la ubicación de los puestos SOS y teléfonos de emergencia (nichos SOS). Estos puestos se encuentran aproximadamente cada 200-250 metros e incluyen teléfono y extintor.\n\n- Opciones incorrectas: el borde derecho de la calzada se señaliza con captafaros blancos o amarillos; las salidas de emergencia se señalizan con luz verde, no con captafaros azules\n- Conexión: en caso de incendio en un túnel, las salidas de emergencia (señalizadas con luz verde) son el destino prioritario de evacuación; los puestos SOS sirven para comunicarse y disponer de extintores\n- Dato clave: los colores de los captafaros son blanco o amarillo en el borde derecho, blanco en el izquierdo, amarillo o naranja en medianas, y azul en puestos SOS de túneles",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Cada color de captafaro tiene un significado distinto. El azul es exclusivo de túneles.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0630",
+    "number": 0,
+    "enunciado": "Conduce un vehículo equipado con sistema ISA (Asistente de Velocidad Inteligente) y sistema de mantenimiento de carril (LKA). Al entrar en una zona de obras con marcas viales borradas y sin señal de velocidad visible, ambos sistemas dejan de funcionar correctamente. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Detenerse hasta que los sistemas se restablezcan."
+      },
+      {
+        "key": "B",
+        "texto": "Adaptar la velocidad a las condiciones de la zona de obras y mantener el control del vehículo sin depender de los sistemas."
+      },
+      {
+        "key": "C",
+        "texto": "Buscar una ruta alternativa para evitar la zona donde los sistemas no funcionan."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Cuando los sistemas ADAS dejan de funcionar correctamente (por marcas borradas, señales no visibles, etc.), el conductor debe estar preparado para conducir con la misma seguridad sin ellos. En una zona de obras, debe adaptar la velocidad a las condiciones y mantener el control manual del vehículo.\n\n- Opciones incorrectas: detenerse en medio de una zona de obras por fallo de los ADAS es innecesario y peligroso para el tráfico; buscar una ruta alternativa no es viable cuando ya se ha entrado en la zona de obras, y además los sistemas no son imprescindibles para conducir\n- Conexión: la normativa establece que los ADAS son ayudas y que el conductor debe estar siempre preparado para retomar el control completo; si un sistema falla, la responsabilidad sigue siendo del conductor\n- Error común: depender excesivamente de los sistemas ADAS y no estar preparado para conducir sin ellos, especialmente en situaciones donde las condiciones de la vía impiden su correcto funcionamiento",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "Los ADAS son ayudas, no sustitutos. El conductor siempre debe poder conducir sin ellos.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 2,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 7,
+      "nivel": 3
+    },
+    "nivel": 3
   }
 ];

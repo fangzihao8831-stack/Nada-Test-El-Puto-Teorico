@@ -10,7 +10,11 @@ Identificar este tipo: el enunciado termina en "..." o en una clausula abierta (
 
 ## Niveles de Dificultad
 
-### Nivel 1 — Facil
+> **IMPORTANTE**: El nivel se CALCULA con la rubrica de 6 dimensiones en `tipos-preguntas.md`. Los ejemplos de abajo ilustran como se asignan las dimensiones para preguntas tipo completar. Nivel maximo para este tipo: 3.
+
+### Nivel 1 — Facil (total 0-2)
+
+**Perfil tipico**: d_reglas=0, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=1, d_contraintuitivo=0
 
 **Definicion**: La completacion es inequivoca; las opciones incorrectas completan la oracion con informacion claramente erronea.
 
@@ -31,7 +35,9 @@ Identificar este tipo: el enunciado termina en "..." o en una clausula abierta (
 
 ---
 
-### Nivel 2 — Medio
+### Nivel 2 — Medio (total 3-5)
+
+**Perfil tipico**: d_reglas=1, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=2, d_contraintuitivo=0
 
 **Definicion**: La completacion requiere conocer una distancia, plazo o excepcion especifica. Al menos un distractor completa la oracion con un valor que un lector descuidado podria confundir con el correcto.
 
@@ -51,7 +57,9 @@ Identificar este tipo: el enunciado termina en "..." o en una clausula abierta (
 
 ---
 
-### Nivel 3 — Dificil
+### Nivel 3 — Dificil (total 6+)
+
+**Perfil tipico**: d_reglas=1, d_excepcion=1, d_densidad=1, d_implicito=1, d_distractores=2, d_contraintuitivo=0
 
 **Definicion**: Las 3 completaciones producen oraciones gramaticalmente correctas y contextualmente plausibles. La completacion correcta requiere conocer la regla exacta. Las completaciones incorrectas describen reglas reales pero inaplicables a este caso.
 
