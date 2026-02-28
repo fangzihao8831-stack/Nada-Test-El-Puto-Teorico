@@ -1,96 +1,61 @@
 # Tipo: COMPLETAR
 
-## Definicion
+## Definición
 
-Las preguntas de tipo completar presentan una afirmacion incompleta que el alumno debe completar eligiendo la opcion correcta. El enunciado termina con puntos suspensivos o contiene una clausula abierta. Representan aproximadamente el 20-25% del examen DGT. Son reconocibles porque el enunciado NO es una pregunta — es una oracion que se completa con una de las tres opciones.
+Afirmación incompleta que el alumno completa eligiendo la opción correcta. Termina con "..." o cláusula abierta. ~20-25% del examen. NO es pregunta — es oración que se completa.
 
-Identificar este tipo: el enunciado termina en "..." o en una clausula abierta ("debe indicarse...", "esta permitido...", "se considera infraccion..."). Las opciones son completaciones que convierten la oracion en una afirmacion completa.
+Identificar: enunciado termina en "..." o cláusula abierta. Las opciones son completaciones.
 
 ---
 
 ## Niveles de Dificultad
 
-> **IMPORTANTE**: El nivel se CALCULA con la rubrica de 6 dimensiones en `tipos-preguntas.md`. Los ejemplos de abajo ilustran como se asignan las dimensiones para preguntas tipo completar. Nivel maximo para este tipo: 3.
+> El nivel se CALCULA con la rúbrica de 6 dimensiones en `tipos-preguntas.md`. Nivel máximo: 3.
 
-### Nivel 1 — Facil (total 0-2)
+### Nivel 1 — Fácil (total 0-2)
 
-**Perfil tipico**: d_reglas=0, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=1, d_contraintuitivo=0
+Perfil: d_reglas=0, d_excepción=0, d_densidad=0, d_implícito=0, d_distractores=1, d_contraintuitivo=0. Completación inequívoca; incorrectas con info errónea o condición inventada.
 
-**Definicion**: La completacion es inequivoca; las opciones incorrectas completan la oracion con informacion claramente erronea.
+Distractores: hecho falso o condición inexistente. Ninguna "suena" parcialmente correcta.
 
-**Reglas de distractores**:
-- Las opciones incorrectas completan la oracion con un hecho obviamente falso o una condicion inventada.
-- La opcion correcta es la unica que produce una oracion verdadera conociendo la norma basica.
-- No hay ninguna opcion que "suene" parcialmente correcta.
-
-**Ejemplo de referencia**:
-
-> La intencion de efectuar una maniobra debe senalizarse...
+> La intención de efectuar una maniobra debe señalizarse...
 >
 > A) en el momento de iniciarla.
-> **B) con suficiente antelacion para que los demas puedan reaccionar.**
-> C) solo si hay otros vehiculos a la vista.
-
-*Nota: La opcion A describe el momento incorrecto (demasiado tarde). La opcion C introduce una condicion inexistente. La respuesta correcta es la norma basica sin condiciones.*
+> **B) con suficiente antelación para que los demás puedan reaccionar.**
+> C) solo si hay otros vehículos a la vista.
 
 ---
 
 ### Nivel 2 — Medio (total 3-5)
 
-**Perfil tipico**: d_reglas=1, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=2, d_contraintuitivo=0
+Perfil: d_reglas=1, d_excepción=0, d_densidad=0, d_implícito=0, d_distractores=2, d_contraintuitivo=0. Requiere distancia, plazo o excepción específica. Un distractor confundible.
 
-**Definicion**: La completacion requiere conocer una distancia, plazo o excepcion especifica. Al menos un distractor completa la oracion con un valor que un lector descuidado podria confundir con el correcto.
+Distractores: al menos una usa valor real del temario de contexto diferente.
 
-**Reglas de distractores**:
-- Al menos una opcion incorrecta usa un valor real del temario pero de un contexto diferente (ej: una distancia correcta para otro tipo de via o situacion).
-- El alumno que no recuerde el valor exacto puede elegir la opcion plausible porque "suena al tipo de dato correcto".
-
-**Ejemplo de referencia**:
-
-> Para estacionar junto a un cruce en via urbana, la distancia minima a la interseccion debe ser de...
+> Para estacionar junto a un cruce en vía urbana, la distancia mínima a la intersección debe ser de...
 >
 > A) 3 metros.
 > **B) 5 metros.**
 > C) 10 metros.
 
-*Nota: La opcion A es un valor real del temario para otras situaciones (paso de peatones). La opcion C es el doble del valor correcto y suena a un margen "seguro". La opcion correcta requiere recordar el valor exacto para intersecciones en via urbana.*
-
 ---
 
-### Nivel 3 — Dificil (total 6+)
+### Nivel 3 — Difícil (total 6+)
 
-**Perfil tipico**: d_reglas=1, d_excepcion=1, d_densidad=1, d_implicito=1, d_distractores=2, d_contraintuitivo=0
+Perfil: d_reglas=1, d_excepción=1, d_densidad=1, d_implícito=1, d_distractores=2, d_contraintuitivo=0. Las 3 completaciones gramaticalmente correctas y plausibles. Requiere regla exacta.
 
-**Definicion**: Las 3 completaciones producen oraciones gramaticalmente correctas y contextualmente plausibles. La completacion correcta requiere conocer la regla exacta. Las completaciones incorrectas describen reglas reales pero inaplicables a este caso.
+Distractores: reglas reales del temario inaplicables a este caso. No determinable por exclusión lógica.
 
-**Reglas de distractores**:
-- Cada opcion produce una oracion que "suena" como una regulacion real y coherente.
-- Las opciones incorrectas no son absurdas — son reglas que existen en el temario pero que no aplican en este caso concreto.
-- Un alumno sin conocimiento exacto no puede determinar cual completacion es la correcta por exclusion logica.
-
-**Ejemplo de referencia**:
-
-> Los ciclistas mayores de 14 anos tienen permitido circular por las autopistas...
+> Los ciclistas mayores de 14 años tienen permitido circular por las autopistas...
 >
-> A) por cualquier carril si respetan las normas de circulacion.
-> **B) exclusivamente por el arcen.**
-> C) solo cuando no existe una via ciclista alternativa habilitada en el trayecto.
-
-*Nota: La opcion A describe la norma general de circulacion de vehiculos pero no la excepcion especifica para ciclistas en autopista. La opcion C introduce una condicion de alternativa ciclista que no existe en la norma. La opcion correcta requiere saber que los ciclistas en autopista estan limitados al arcen.*
+> A) por cualquier carril si respetan las normas de circulación.
+> **B) exclusivamente por el arcén.**
+> C) solo cuando no existe una vía ciclista alternativa habilitada en el trayecto.
 
 ---
 
-## Checklist por nivel
+## Checklist
 
-### Nivel 1
-- [ ] Las opciones incorrectas completan la oracion con informacion claramente erronea o con condiciones inexistentes
-- [ ] La completacion correcta produce la unica oracion verdadera conociendo la norma basica
-
-### Nivel 2
-- [ ] Al menos una opcion incorrecta usa un valor real del temario de un contexto diferente
-- [ ] El alumno que no recuerde el valor exacto podria elegir el distractor plausible
-
-### Nivel 3
-- [ ] Las 3 completaciones producen oraciones gramaticalmente correctas y contextualmente plausibles
-- [ ] Las opciones incorrectas describen reglas que existen en el temario pero no aplican en este caso
-- [ ] Un alumno sin conocimiento exacto no puede determinar la correcta por exclusion logica
+- L1: incorrectas con info errónea o condiciones inexistentes, correcta es única oración verdadera
+- L2: al menos 1 incorrecta usa valor real del temario de contexto diferente
+- L3: 3 completaciones gramaticalmente correctas y plausibles, incorrectas son reglas reales inaplicables, no determinable por exclusión

@@ -69,7 +69,11 @@ Si la respuesta es "recitar", reescribe la pregunta como escenario.
 1. Lee el temario en `temario_permiso_b_v3.md`
 2. Si no se especifica tema, elige temas variados (no repetir el mismo)
 
-### 2. Generación
+### 2. Distribución de temas (OBLIGATORIO para 30 preguntas)
+
+Si se generan 30 preguntas sin tema especificado, distribuir entre al menos 8 temas distintos (de los 12). Máximo 5 preguntas del mismo tema. Nunca 2 preguntas seguidas del mismo subtema. Si el subagente tiende a repetir luces/cinturón/alcohol/velocidad, forzar temas menos frecuentes: mercancías peligrosas, documentación, medio ambiente, primeros auxilios.
+
+### 3. Generación
 Para los tipos de pregunta, distribución y ejemplos difíciles, consultar:
 > **Read `generar-preguntas/tipos-preguntas.md`**
 
@@ -81,16 +85,16 @@ Para patrones de inicio de enunciado, palabras trampa y distribución por temas:
 Para datos numéricos exactos (velocidades, alcohol, distancias, tiempos, puntos):
 > **Read `generar-preguntas/datos-numericos.md`**
 
-### 3. Explicaciones
+### 4. Explicaciones
 Cada pregunta lleva explicación con formato párrafo + bullets con etiquetas de intención.
 > **Read `generar-preguntas/explicaciones.md`**
 
-### 4. Verificación
+### 5. Verificación
 Antes de incluir cada pregunta, pasar la verificación completa (autosuficiencia, imagen, situacional, complejidad).
 > **Read `generar-preguntas/verificacion.md`**
 
-### 5. Generacion con subagente (SIEMPRE usar Sonnet)
-Delegar SIEMPRE la generacion a un subagente Sonnet para optimizar costes:
+### 6. Generación con subagente (SIEMPRE usar Sonnet)
+Delegar SIEMPRE la generación a un subagente Sonnet para optimizar costes:
 - **Task tool**: subagent_type: "general-purpose", model: "sonnet"
 - **1-30 preguntas**: 1 subagente con todas las preguntas
 - **31+ preguntas**: Dividir en varios subagentes (max 30 preguntas cada uno)
@@ -103,9 +107,9 @@ El hilo principal (Opus) solo coordina: parsea argumentos, lanza subagente(s), r
 1. `.claude/commands/generar-preguntas/ejemplos-referencia.md` — preguntas DGT reales como referencia de tono, estructura y calidad de distractores. Imitar este estilo.
 
 **Reglas y datos:**
-2. `.claude/commands/generar-preguntas/verificacion.md` — reglas mecanicas (HARD REJECT, distribucion, checklist)
-3. `.claude/commands/generar-preguntas/tipos-preguntas.md` — tipos, distribucion, niveles
-4. `.claude/commands/generar-preguntas/datos-numericos.md` — valores numericos exactos
+2. `.claude/commands/generar-preguntas/verificacion.md` — reglas mecánicas (HARD REJECT, distribución, checklist)
+3. `.claude/commands/generar-preguntas/tipos-preguntas.md` — tipos, distribución, niveles
+4. `.claude/commands/generar-preguntas/datos-numericos.md` — valores numéricos exactos
 5. `.claude/commands/generar-preguntas/explicaciones.md` — formato de explicaciones
 6. `.claude/commands/generar-preguntas/patrones-y-trampas.md` — patrones de inicio, palabras trampa
 
@@ -115,16 +119,16 @@ El hilo principal (Opus) solo coordina: parsea argumentos, lanza subagente(s), r
 **Temario (SIEMPRE):**
 8. `temario_permiso_b_v3.md` — fuente de verdad para todo el contenido
 
-**Solo si genera preguntas sobre senales:**
-9. `content/imagenes/senales/catalogo.json` — codigos de senales
+**Solo si genera preguntas sobre señales:**
+9. `content/imagenes/senales/catalogo.json` — códigos de señales
 
-**Deduplicacion (SIEMPRE):**
+**Deduplicación (SIEMPRE):**
 10. `content/preguntas/batch_*/scenarios.txt` — leer TODOS los scenarios.txt existentes. No generar preguntas con escenarios similares.
 
-### 5.1 Post-generacion: actualizar scenarios.txt
-Despues de escribir el JSON del batch, generar `scenarios.txt` en la misma carpeta con una linea por pregunta: `subtema_XX | enunciado (max 80 chars)`.
+### 6.1 Post-generación: actualizar scenarios.txt
+Después de escribir el JSON del batch, generar `scenarios.txt` en la misma carpeta con una línea por pregunta: `subtema_XX | enunciado (max 80 chars)`.
 
-### 6. Revisión y guardado
+### 7. Revisión y guardado
 1. Mostrar preguntas al usuario para revisión ANTES de guardar
 2. Solo guardar en `content/preguntas/` cuando el usuario apruebe
 

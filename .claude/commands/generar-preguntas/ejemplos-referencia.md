@@ -1,6 +1,6 @@
 # Ejemplos de Referencia (DGT Real)
 
-Estos ejemplos provienen de examenes DGT reales. Usarlos como referencia de TONO, ESTRUCTURA DE ENUNCIADO y CALIDAD DE DISTRACTORES. Imitar este estilo, no inventar otro.
+Estos ejemplos provienen de exámenes DGT reales. Usarlos como referencia de TONO, ESTRUCTURA DE ENUNCIADO y CALIDAD DE DISTRACTORES. Imitar este estilo, no inventar otro.
 
 ---
 
@@ -33,8 +33,6 @@ Estos 2 ejemplos muestran el formato de salida completo con todos los campos.
 }
 ```
 
-**Por que funciona**: Los 3 distractores son reglas REALES — adelantar tranvías por la derecha existe, y la prohibición general también. El alumno que no sabe la excepción urbana falla.
-
 ### Ejemplo 2: SITUACIONAL nivel 2
 
 ```json
@@ -60,13 +58,11 @@ Estos 2 ejemplos muestran el formato de salida completo con todos los campos.
 }
 ```
 
-**Por que funciona**: Los dos "No" suenan razonables porque la creencia popular es que solo la policía puede parar el tráfico. El alumno que no conoce la excepción del personal de obras elige una de las dos opciones incorrectas.
-
 ---
 
 ## Preguntas reales por tipo (referencia de estilo)
 
-Formato: correcta entre parentesis (0=primera, 1=segunda, 2=tercera).
+Formato: correcta entre paréntesis (0=primera, 1=segunda, 2=tercera).
 
 ### SITUACIONAL
 
@@ -82,12 +78,6 @@ Formato: correcta entre parentesis (0=primera, 1=segunda, 2=tercera).
   2. Cualquiera, porque no hay señal que establezca prioridad.
   3. El autobús, por su mayor anchura.
 
-**Señalización + rebaño** (correcta: 1)
-- En una vía con esta señalización se encuentra con un rebaño, ¿debe ceder el paso a los animales?
-  1. No, los animales en la calzada no tienen prioridad de paso nunca.
-  2. Sí, es un paso de animales domésticos y se debe ceder el paso.
-  3. Sólo cuando ya estén cruzando.
-
 ### DIRECTA
 
 **Niebla densa, luces** (correcta: 0)
@@ -102,25 +92,7 @@ Formato: correcta entre parentesis (0=primera, 1=segunda, 2=tercera).
   2. Sí, cuando no se supera la M.M.A del vehículo.
   3. Sí, cuando el vehículo circula en vías urbanas.
 
-**Señal incorporación** (correcta: 1)
-- A la vista de esta señal, ¿debe facilitar la incorporación de los vehículos que se incorporen por la derecha?
-  1. No, nunca, ya que le otorga la prioridad.
-  2. Sí, en la medida de lo posible.
-  3. Sólo si se trata de vehículos de transporte colectivo de viajeros.
-
-**Camión + señal peso** (correcta: 2)
-- Un camión, ¿puede entrar en una vía con esta señal?
-  1. Sí, en cualquier caso.
-  2. No, tiene siempre prohibido el paso.
-  3. Sí, siempre que no supere los 5.500 kilogramos de masa máxima autorizada.
-
 ### COMPLETAR
-
-**Fatiga** (correcta: 0)
-- Cuando sienta fatiga al volante, debe tener en cuenta que...
-  1. el sueño puede aparecer de un momento a otro.
-  2. el deslumbramiento es constante.
-  3. se producen efectos similares a una tasa de alcoholemia de 0,5 gramos por litro de sangre.
 
 **Frenado** (correcta: 1)
 - La distancia necesaria para frenar con seguridad depende...
@@ -142,24 +114,8 @@ Formato: correcta entre parentesis (0=primera, 1=segunda, 2=tercera).
   2. A 80 km/h y a 100 km/h para adelantar.
   3. A 80 km/h.
 
-**Velocidad ciclomotor** (correcta: 1)
-- ¿Cuál es la velocidad máxima a la que puede circular un ciclomotor?
-  1. 45 km/h pudiendo superarla en 20 km/h para adelantar.
-  2. 45 km/h.
-  3. 70 km/h.
-
-**Velocidad turismo autovía** (correcta: 2)
-- Un turismo por una autovía, ¿a qué velocidad máxima puede circular?
-  1. A 100 km/h.
-  2. A 110 km/h.
-  3. A 120 km/h.
-
----
-
-## Patrones clave que se observan en estos ejemplos
-
-1. **Absolutos en la correcta**: "No, nunca" o "Sí, en cualquier caso" son correctos cuando la regla ES absoluta. No segregar absoluto=incorrecto.
-2. **Distractores son reglas reales**: Cada opción incorrecta es una regla que EXISTE pero no aplica en ese contexto.
-3. **Tono neutro**: No hay opción que suene "más segura" o "más prudente". Las 3 suenan igualmente plausibles.
-4. **Enunciados cortos**: La mayoría tienen 1-2 frases. Solo situacionales complejas usan 3.
-5. **"esta señal" sin código**: Las preguntas de señales dicen "esta señal", nunca R-XXX.
+**ITV turismo antiguo** (correcta: 2)
+- Su turismo tiene 12 años. ¿Con qué frecuencia debe pasar la ITV?
+  1. Cada 2 años.
+  2. Cada año y medio.
+  3. Cada año.

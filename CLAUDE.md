@@ -13,9 +13,21 @@ Nadatest is a web platform for preparing the theoretical driving exam (permiso B
 - `content-pipeline.md` — Content generation pipeline, skills, image strategy
 - `temario_permiso_b_v3.md` — Official driving theory content (source of truth)
 
+## Current Focus: Question Generation Skill Refinement
+
+All work right now is focused on perfecting the question generation skill files in `.claude/commands/generar-preguntas/`. The loop is:
+
+1. Generate a batch with `/generar-preguntas` (Sonnet subagents)
+2. User reviews questions visually on localhost demo page
+3. User reports quality issues found
+4. We fix the skill files based on those issues
+5. Generate next batch to verify fixes
+
+Batches are NOT production content. They exist only to test and improve the skill. Do not treat them as final. Do not skip the human review step — automated validation alone is not sufficient to catch quality problems.
+
 ## Critical Rules
 
-- **UI text in Spanish** — All user-facing text must be in proper Spanish with accents (a, e, i, o, u, n) and opening question marks
+- **All Spanish output must use standard orthography** — Every Spanish text Claude produces (questions, explanations, skill files, UI text, commit messages with Spanish content) must use correct accents (á, é, í, ó, ú), ñ, ¿, and ¡. No exceptions — instruction files, examples, and generated content all follow the same rule.
 - **Code in English** — Variables, functions, comments, file names in English
 - **No emojis** in code, comments, or commit messages
 - **shadcn/ui first** — Always use shadcn/ui components before creating custom UI
