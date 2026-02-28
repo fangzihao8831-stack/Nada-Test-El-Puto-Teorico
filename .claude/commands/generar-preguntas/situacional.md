@@ -21,7 +21,7 @@ Escenario de conducción concreto que pregunta qué hacer. ~35-40% del examen DG
 
 ### Nivel 1 — Fácil (total 0-2)
 
-Perfil: d_reglas=0, d_excepción=0, d_densidad=0, d_implícito=0, d_distractores=1, d_contraintuitivo=0. 1 variable, regla directa.
+Perfil: d_reglas=0, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=1, d_contraintuitivo=0. 1 variable, regla directa.
 
 Distractores: 1 viola norma obvia + 1 instinto común incorrecto.
 
@@ -35,7 +35,7 @@ Distractores: 1 viola norma obvia + 1 instinto común incorrecto.
 
 ### Nivel 2 — Medio (total 3-5)
 
-Perfil: d_reglas=1, d_excepción=0, d_densidad=1, d_implícito=0, d_distractores=1, d_contraintuitivo=0. 2 condiciones combinadas.
+Perfil: d_reglas=1, d_excepcion=0, d_densidad=1, d_implicito=0, d_distractores=1, d_contraintuitivo=0. 2 condiciones combinadas.
 
 Distractores: ambas incorrectas son correctas si solo se considera UNA condición.
 
@@ -49,7 +49,7 @@ Distractores: ambas incorrectas son correctas si solo se considera UNA condició
 
 ### Nivel 3 — Difícil (total 6-7)
 
-Perfil: d_reglas=2, d_excepción=1, d_densidad=0, d_implícito=1, d_distractores=2, d_contraintuitivo=1. Excepción o conflicto de reglas. Las 3 plausibles.
+Perfil: d_reglas=2, d_excepcion=1, d_densidad=0, d_implicito=1, d_distractores=2, d_contraintuitivo=1. Excepción o conflicto de reglas. Las 3 plausibles.
 
 Distractores: las 3 son correctas en escenarios similares pero distintos. Requiere conocer la excepción.
 
@@ -63,7 +63,7 @@ Distractores: las 3 son correctas en escenarios similares pero distintos. Requie
 
 ### Nivel 4 — Muy Difícil (total 8-9)
 
-Perfil: d_reglas=2, d_excepción=2, d_densidad=1, d_implícito=1, d_distractores=2, d_contraintuitivo=1. Dos reglas en conflicto directo. Requiere saber cuál prevalece.
+Perfil: d_reglas=2, d_excepcion=2, d_densidad=1, d_implicito=1, d_distractores=2, d_contraintuitivo=1. Dos reglas en conflicto directo. Requiere saber cuál prevalece.
 
 Distractores: las 3 defensibles con conocimiento parcial. No resoluble por lógica general.
 

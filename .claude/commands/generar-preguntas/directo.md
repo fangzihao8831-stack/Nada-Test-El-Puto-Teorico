@@ -14,7 +14,7 @@ Identificar: pregunta sobre una regla sin interacción de varios factores.
 
 ### Nivel 1 — Fácil (total 0-2)
 
-Perfil: d_reglas=0, d_excepción=0, d_densidad=0, d_implícito=0, d_distractores=1, d_contraintuitivo=0. Un único hecho. Distractores de otro contexto o creencias populares.
+Perfil: d_reglas=0, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=1, d_contraintuitivo=0. Un único hecho. Distractores de otro contexto o creencias populares.
 
 Distractores: contexto diferente o creencias sin base legal. Inequívoca para quien conoce la regla.
 
@@ -28,7 +28,7 @@ Distractores: contexto diferente o creencias sin base legal. Inequívoca para qu
 
 ### Nivel 2 — Medio (total 3-5)
 
-Perfil: d_reglas=1, d_excepción=0, d_densidad=0, d_implícito=1, d_distractores=1, d_contraintuitivo=0. Umbral, excepción o condición combinada. Un distractor plausible.
+Perfil: d_reglas=1, d_excepcion=0, d_densidad=0, d_implicito=1, d_distractores=1, d_contraintuitivo=0. Umbral, excepción o condición combinada. Un distractor plausible.
 
 Distractores: al menos 1 es excepción común o regla adyacente confundible.
 
@@ -42,7 +42,7 @@ Distractores: al menos 1 es excepción común o regla adyacente confundible.
 
 ### Nivel 3 — Difícil (total 6+)
 
-Perfil: d_reglas=1, d_excepción=1, d_densidad=1, d_implícito=0, d_distractores=2, d_contraintuitivo=1. Las 3 son reglas reales del temario. No deducible por eliminación.
+Perfil: d_reglas=1, d_excepcion=1, d_densidad=1, d_implicito=0, d_distractores=2, d_contraintuitivo=1. Las 3 son reglas reales del temario. No deducible por eliminación.
 
 Distractores: comportamientos/reglas que existen pero no aplican aquí. Requiere excepción o condición específica.
 

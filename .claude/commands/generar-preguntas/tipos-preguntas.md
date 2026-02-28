@@ -36,15 +36,15 @@ La dificultad se CALCULA sumando 6 dimensiones. Cada pregunta DEBE incluir las p
 | Dimensión | Rango | 0 | 1 | 2 |
 |-----------|-------|---|---|---|
 | `d_reglas` | 0-2 | 1 regla simple | 2 reglas combinadas | 3+ reglas o jerarquía |
-| `d_excepción` | 0-2 | Regla general | Excepción a regla conocida | Excepción a excepción |
+| `d_excepcion` | 0-2 | Regla general | Excepción a regla conocida | Excepción a excepción |
 | `d_densidad` | 0-1 | 1-2 condiciones | 3+ condiciones o info irrelevante |
-| `d_implícito` | 0-1 | Todo explícito | Condiciones implícitas que inferir |
+| `d_implicito` | 0-1 | Todo explícito | Condiciones implícitas que inferir |
 | `d_distractores` | 0-2 | Contexto distinto | 1 plausible | 3 reales del temario |
 | `d_contraintuitivo` | 0-1 | Alineada con sentido común | Contraintuitiva |
 
 ### Cálculo del Nivel
 
-`total = d_reglas + d_excepción + d_densidad + d_implícito + d_distractores + d_contraintuitivo`
+`total = d_reglas + d_excepcion + d_densidad + d_implicito + d_distractores + d_contraintuitivo`
 
 | Puntuación | Nivel | Etiqueta |
 |------------|-------|----------|
@@ -58,14 +58,14 @@ dato/directo/completar: nivel máximo 3 aunque total sea 8-9.
 ### Campo JSON obligatorio
 
 ```json
-{ "dificultad": { "d_reglas": 1, "d_excepción": 2, "d_densidad": 0, "d_implícito": 1, "d_distractores": 2, "d_contraintuitivo": 1, "total": 7, "nivel": 3 } }
+{ "dificultad": { "d_reglas": 1, "d_excepcion": 2, "d_densidad": 0, "d_implicito": 1, "d_distractores": 2, "d_contraintuitivo": 1, "total": 7, "nivel": 3 } }
 ```
 
 ### Ejemplo de evaluación
 
 > "Circula por carretera convencional con línea continua. Para adelantar a un ciclista necesita invadir el carril contrario. ¿Puede adelantar?"
 >
-> d_reglas=2, d_excepción=1, d_densidad=0, d_implícito=0, d_distractores=2, d_contraintuitivo=1 → **Total: 6 → Nivel 3**
+> d_reglas=2, d_excepcion=1, d_densidad=0, d_implicito=0, d_distractores=2, d_contraintuitivo=1 → **Total: 6 → Nivel 3**
 
 ---
 

@@ -1,28 +1,28 @@
 # Datos Numéricos que DEBEMOS Clavar (DATOS REALES)
 
-Estos son los valores exactos que se preguntan. Si un número no coincide con el temario, usar el temario como fuente de verdad.
+Valores exactos que se preguntan. Si un número no coincide con el temario, usar el temario como fuente de verdad.
 
 ## Velocidades (km/h)
 
 ### Vehículos ligeros y conjuntos
 
-| Via | Turismo / Moto | Con remolque ligero (≤ 750 kg) | Con remolque pesado (> 750 kg) |
+| Via | Turismo / Moto | Remolque ligero (≤ 750 kg) | Remolque pesado (> 750 kg) |
 |-----|----------------|-------------------------------|-------------------------------|
 | Autopista/Autovía | 120 | **90** | 80 |
 | Carretera convencional | 90 | **80** | 70 |
 | Travesía / Vía urbana | 50 | 50 | 50 |
 
-**Trampa frecuente**: remolque ligero en autopista = **90**, NO 80. El 80 solo aplica a remolques pesados (> 750 kg).
+**Trampa**: remolque ligero en autopista = **90**, NO 80. Remolque pesado = 10 km/h menos que ligero en cada via.
 
 ### Vehículos pesados
 
-| Via | Camión (cualquier MMA) | Autobús (normal, sin pasajeros de pie) | Autobús con pasajeros DE PIE | Autobús escolar / menores |
-|-----|------------------------|----------------------------------------|------------------------------|--------------------------|
+| Via | Camión | Autobús normal | Autobús pasajeros DE PIE | Autobús escolar |
+|-----|--------|----------------|--------------------------|-----------------|
 | Autopista/Autovía | 90 | **100** | **100** | 90 |
 | Carretera convencional | 80 | **90** | **80** | 80 |
 | Vía urbana | 50 | 50 | 50 | 50 |
 
-**Trampa frecuente**: el autobús normal puede ir a **100 km/h** en autopista, no a 90. El 90 es el límite del camión o del autobús escolar. El autobús con pasajeros de pie tiene el mismo límite que el normal en autopista (100 km/h) pero MENOS en carretera (80 km/h, no 90 km/h).
+**Trampa**: autobús normal = **100 km/h** en autopista (no 90). Autobús con pasajeros de pie = igual en autopista (100) pero MENOS en carretera (80, no 90).
 
 ### Zonas especiales
 
@@ -33,26 +33,6 @@ Estos son los valores exactos que se preguntan. Si un número no coincide con el
 | Cuatriciclo ligero | 45 km/h máx |
 
 **Más testados**: 120, 90, 100, 80, 50, 20, 40 km/h (en ese orden de frecuencia)
-
-## Velocidades con remolque — detalle
-
-### Remolque LIGERO (MMA ≤ 750 kg)
-
-| Tipo de vía | Velocidad máxima |
-|-------------|------------------|
-| Autopista/autovía | **90 km/h** |
-| Carretera convencional | **80 km/h** |
-| Vía urbana | 50 km/h |
-
-### Remolque PESADO (MMA > 750 kg)
-
-| Tipo de vía | Velocidad máxima |
-|-------------|------------------|
-| Autopista/autovía | **80 km/h** |
-| Carretera convencional | **70 km/h** |
-| Vía urbana | 50 km/h |
-
-**Regla**: Remolque pesado = 10 km/h MENOS que remolque ligero en cada tipo de vía.
 
 ## Alcohol
 
@@ -69,40 +49,36 @@ Estos son los valores exactos que se preguntan. Si un número no coincide con el
 
 ## Señalización de Emergencia
 
-| Dispositivo | Contexto |
-|-------------|----------|
-| **Triángulos de preseñalización** | A 50 m mínimo, visibles a 100 m. Desde enero 2026 NO son obligatorios si se dispone de V-16 conectada. Se usan uno delante y otro detrás en vías de doble sentido. |
-| **V-16 (baliza luminosa)** | Colocar en el techo del vehículo. Obligatorio desde enero 2026 en vías interurbanas como sustituto de triángulos. Debe estar geolocalizada y conectada a DGT 3.0. |
-
-**Corrección aplicada**: La distancia mínima del triángulo es 50 m (visible a 100 m). Cualquier otra cifra citada en fuentes anteriores es incorrecta y ha sido eliminada.
+- **Triángulos**: A 50 m mínimo, visibles a 100 m. Desde enero 2026 NO obligatorios si se tiene V-16. Uno delante y otro detrás en doble sentido.
+- **V-16 (baliza luminosa)**: En el techo. Obligatoria desde enero 2026 en interurbanas. Geolocalizada y conectada a DGT 3.0.
 
 ## Distancias (metros)
 
 | Distancia | Contexto |
 |-----------|----------|
-| **1,5 m** | Separación lateral mínima al adelantar ciclistas en cualquier tipo de vía |
-| **5 m** | Distancia mínima de estacionamiento desde una intersección o paso de peatones |
-| **15 m** | Distancia mínima de estacionamiento desde parada de autobús o taxi señalizada |
-| **50 m** | Distancia mínima de colocación de cada triángulo de avería |
-| **100 m** | Distancia de visibilidad mínima del triángulo de avería |
+| **1,5 m** | Separación lateral mínima al adelantar ciclistas |
+| **5 m** | Estacionamiento mínimo desde intersección o paso de peatones |
+| **15 m** | Estacionamiento mínimo desde parada de autobús/taxi |
+| **50 m** | Distancia mínima de colocación de cada triángulo |
+| **100 m** | Visibilidad mínima del triángulo |
 
-**Señalización antes de maniobra (intermitente)**: el RGC no fija metros ni segundos concretos — exige señalizar **con suficiente antelación** antes de iniciar la maniobra. En vías interurbanas la práctica recomendada es ~100 m; en urbanas ~30 m. No usar el valor "15 segundos" ni "50 m" como regla general de intermitente.
+**Intermitente antes de maniobra**: el RGC exige **con suficiente antelación**. No usar "15 segundos" ni "50 m" como regla general.
 
 ## Tiempos
 
 | Tiempo | Contexto |
 |--------|----------|
-| **2 minutos** | Límite entre parada y estacionamiento: si el vehículo está inmovilizado más de 2 min (o el conductor lo abandona), es estacionamiento. No tiene que ver con el motor encendido. |
+| **2 minutos** | Límite entre parada y estacionamiento |
 | **10 minutos** | Espera mínima entre pruebas de alcoholemia |
 
-**Descanso en viaje largo (no profesional)**: la DGT recomienda parar cada **2 horas o 200 km** y descansar 20-30 min. Es una **recomendación de seguridad vial**, no una obligación legal para conductores particulares.
+**Descanso viaje largo**: parar cada **2 horas o 200 km**, descansar 20-30 min. Es recomendación, no obligación legal.
 
 ## Pesos
 
 | Peso | Contexto |
 |------|----------|
 | **3.500 kg** | MMA máxima permiso B / turismo |
-| **750 kg** | MMA máxima remolque ligero (sin permiso adicional más allá del B) |
+| **750 kg** | MMA máxima remolque ligero |
 
 ## Estatura niños (SRI)
 
@@ -115,16 +91,16 @@ Estos son los valores exactos que se preguntan. Si un número no coincide con el
 
 | Vehículo | Exento hasta | Periódico después |
 |----------|-------------|-------------------|
-| Turismo | 4 años | Cada 2 años hasta los 10 años, luego anual |
-| Motocicleta | 4 años | Cada 2 años hasta los 10 años, luego anual |
-| Ciclomotor | 3 años | Cada 2 años (sin período anual posterior) |
-| Reforma de importancia | — | Inmediata (antes de circular) |
+| Turismo | 4 años | Cada 2 años hasta los 10, luego anual |
+| Motocicleta | 4 años | Cada 2 años hasta los 10, luego anual |
+| Ciclomotor | 3 años | Cada 2 años (sin período anual) |
+| Reforma de importancia | — | Inmediata |
 
 ## Puntos del permiso
 
 | Situación | Puntos |
 |-----------|--------|
-| Permiso nuevo (conductor novel) | 8 puntos |
+| Novel | 8 puntos |
 | Tras 2 años sin infracciones graves | 12 puntos |
 | Máximo acumulable (bonus) | 15 puntos |
 | Pérdida por alcohol (0,25–0,50 mg/l) | 4 puntos |

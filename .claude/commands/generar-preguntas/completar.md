@@ -14,7 +14,7 @@ Identificar: enunciado termina en "..." o cláusula abierta. Las opciones son co
 
 ### Nivel 1 — Fácil (total 0-2)
 
-Perfil: d_reglas=0, d_excepción=0, d_densidad=0, d_implícito=0, d_distractores=1, d_contraintuitivo=0. Completación inequívoca; incorrectas con info errónea o condición inventada.
+Perfil: d_reglas=0, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=1, d_contraintuitivo=0. Completación inequívoca; incorrectas con info errónea o condición inventada.
 
 Distractores: hecho falso o condición inexistente. Ninguna "suena" parcialmente correcta.
 
@@ -28,7 +28,7 @@ Distractores: hecho falso o condición inexistente. Ninguna "suena" parcialmente
 
 ### Nivel 2 — Medio (total 3-5)
 
-Perfil: d_reglas=1, d_excepción=0, d_densidad=0, d_implícito=0, d_distractores=2, d_contraintuitivo=0. Requiere distancia, plazo o excepción específica. Un distractor confundible.
+Perfil: d_reglas=1, d_excepcion=0, d_densidad=0, d_implicito=0, d_distractores=2, d_contraintuitivo=0. Requiere distancia, plazo o excepción específica. Un distractor confundible.
 
 Distractores: al menos una usa valor real del temario de contexto diferente.
 
@@ -42,7 +42,7 @@ Distractores: al menos una usa valor real del temario de contexto diferente.
 
 ### Nivel 3 — Difícil (total 6+)
 
-Perfil: d_reglas=1, d_excepción=1, d_densidad=1, d_implícito=1, d_distractores=2, d_contraintuitivo=0. Las 3 completaciones gramaticalmente correctas y plausibles. Requiere regla exacta.
+Perfil: d_reglas=1, d_excepcion=1, d_densidad=1, d_implicito=1, d_distractores=2, d_contraintuitivo=0. Las 3 completaciones gramaticalmente correctas y plausibles. Requiere regla exacta.
 
 Distractores: reglas reales del temario inaplicables a este caso. No determinable por exclusión lógica.
 
