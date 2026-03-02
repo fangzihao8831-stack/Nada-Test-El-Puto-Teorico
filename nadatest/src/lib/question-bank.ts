@@ -11,2323 +11,35 @@ export interface BankQuestion extends TestQuestion {
 
 export const questionBank: BankQuestion[] = [
   {
-    "id": "pregunta_0401",
+    "id": "pregunta_0701",
     "number": 0,
-    "enunciado": "¿Puede un conductor con permiso B conducir una motocicleta de 125 cc en Francia?",
+    "enunciado": "¿En qué condición está permitido encender la luz antiniebla trasera durante la conducción?",
     "opciones": [
       {
         "key": "A",
-        "texto": "Sí, siempre que lleve al menos 3 años con el permiso B."
+        "texto": "Cuando la visibilidad sea inferior a 50 metros."
       },
       {
         "key": "B",
-        "texto": "Sí, el permiso B autoriza a conducir motos de hasta 125 cc en toda la Unión Europea."
+        "texto": "Siempre que llueva, aunque la visibilidad sea suficiente."
       },
       {
         "key": "C",
-        "texto": "No, la autorización para conducir motos de 125 cc con permiso B solo es válida en España."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "La autorización para conducir motocicletas de hasta 125 cc con el permiso B (equivalente a A1) es válida exclusivamente en territorio español y no tiene reconocimiento en otros países de la UE.\n\n- Opciones incorrectas: la opción A generaliza a toda la UE, lo cual es falso; la opción C añade el requisito de antigüedad como si eso bastara para circular fuera de España, pero el problema no es la antigüedad sino la validez territorial\n- Conexión: para conducir motos en el extranjero se necesita el permiso A1 o superior obtenido mediante examen específico\n- Error común: muchos conductores asumen que, como el permiso B español equivale a A1 dentro de España, también lo hace fuera",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_01",
-    "tema": "El Conductor y el Permiso",
-    "pista": "La equivalencia B-A1 tiene una limitación geográfica importante.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0402",
-    "number": 0,
-    "enunciado": "Su turismo tiene 7 años de antigüedad. ¿Con qué frecuencia debe pasar la ITV?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Cada año."
-      },
-      {
-        "key": "B",
-        "texto": "Cada 2 años."
-      },
-      {
-        "key": "C",
-        "texto": "Está exento hasta los 10 años."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Los turismos con antigüedad entre 4 y 10 años deben pasar la ITV cada 2 años. A partir de los 10 años, la frecuencia pasa a ser anual (tema_02.md).\n\n- Opciones incorrectas: la opción A aplica el intervalo de más de 10 años, no de 4 a 10; la opción C confunde el período de exención (hasta 4 años) con uno inexistente de 10 años\n- Conexión: los ciclomotores tienen un período de exención más corto, de solo 3 años, frente a los 4 de turismos y motos\n- Dato clave: circular sin ITV en vigor es infracción grave con multa de 200 euros",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_02",
-    "tema": "El Vehículo",
-    "pista": "Los turismos están exentos hasta los 4 años. Después hay dos tramos.",
-    "tipoPregunta": "dato",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0403",
-    "number": 0,
-    "enunciado": "En un turismo, la carga divisible puede sobresalir por detrás hasta...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "un 15% de la longitud del vehículo."
-      },
-      {
-        "key": "B",
-        "texto": "un 5% de la longitud del vehículo."
-      },
-      {
-        "key": "C",
-        "texto": "un 10% de la longitud del vehículo."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "En turismos, la carga divisible puede sobresalir por detrás hasta un 10% de la longitud del vehículo. El 15% solo se permite para carga indivisible (tema_03.md).\n\n- Opciones incorrectas: el 5% no corresponde a ningún límite del temario para carga sobresaliente; el 15% es el límite para carga indivisible, no divisible\n- Conexión: por delante, la carga nunca puede sobresalir en un turismo, independientemente de si es divisible o no\n- Dato clave: la carga sobresaliente debe señalizarse con panel V-20 de día y con luz roja y catadióptrico de noche",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_03",
-    "tema": "Carga, Pasajeros y Remolques",
-    "pista": "Hay dos porcentajes según el tipo de carga: divisible e indivisible.",
-    "tipoPregunta": "completar",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0404",
-    "number": 0,
-    "enunciado": "Circula de noche por una carretera convencional y se dispone a adelantar a un ciclista. ¿Qué distancia lateral mínima debe respetar?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "1 metro, ya que es una vía interurbana de noche."
-      },
-      {
-        "key": "B",
-        "texto": "1,5 metros."
-      },
-      {
-        "key": "C",
-        "texto": "2 metros, por ser de noche y en vía interurbana."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La distancia lateral mínima al adelantar a ciclistas es de 1,5 metros en cualquier tipo de vía, de día o de noche (tema_06.md). Las condiciones de visibilidad no modifican este requisito legal.\n\n- Opciones incorrectas: la opción A reduce la distancia a 1 metro, que no es suficiente según la normativa; la opción C menciona 2 metros, que es una cifra que algunos confunden por recomendaciones de seguridad, pero el mínimo legal es 1,5 m\n- Conexión: si para mantener los 1,5 metros es necesario invadir el carril contrario cruzando la línea continua, está permitido hacerlo\n- Dato clave: no respetar esta distancia conlleva multa de 200 euros y 6 puntos",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_04",
-    "tema": "La Vía y sus Usuarios",
-    "pista": "La distancia mínima a ciclistas no varía según el tipo de vía ni la hora.",
-    "tipoPregunta": "situacional",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0405",
-    "number": 0,
-    "enunciado": "¿Cuál es la velocidad máxima para un turismo en una vía urbana de un solo carril por sentido?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "50 km/h."
-      },
-      {
-        "key": "B",
-        "texto": "40 km/h."
-      },
-      {
-        "key": "C",
-        "texto": "30 km/h."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "En vías urbanas de un solo carril por sentido, el límite para turismos es de 30 km/h (tema_05.md). El límite de 50 km/h aplica a vías urbanas con dos o más carriles por sentido.\n\n- Opciones incorrectas: 50 km/h es el límite para vías urbanas con 2 o más carriles por sentido; 40 km/h no es un límite genérico de velocidad en vías urbanas\n- Conexión: las zonas residenciales tienen un límite aún más restrictivo de 20 km/h\n- Error común: muchos alumnos recuerdan solo el límite genérico de 50 km/h en ciudad sin distinguir según el número de carriles",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_05",
-    "tema": "Circulación y Velocidad",
-    "pista": "Desde la reforma, las calles de un solo carril tienen un límite inferior al clásico de 50.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0406",
-    "number": 0,
-    "enunciado": "Llega a una intersección sin señalizar donde se encuentra con un tranvía que viene por su izquierda. ¿Quién tiene prioridad?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "El tranvía, porque siempre tiene prioridad en intersecciones sin señalizar."
-      },
-      {
-        "key": "B",
-        "texto": "Usted, porque el tranvía viene por la izquierda."
-      },
-      {
-        "key": "C",
-        "texto": "Ninguno de los dos; se aplica la regla de llegada simultánea."
+        "texto": "En cualquier vía interurbana de noche, independientemente de la visibilidad."
       }
     ],
     "correcta": "A",
-    "explicacion": "En intersecciones sin señalizar, el tranvía tiene prioridad sobre los demás vehículos aunque venga por la izquierda (tema_06.md). La regla de prioridad por la derecha no aplica al tranvía.\n\n- Opciones incorrectas: la opción A aplica la regla general de prioridad por la derecha, que no es válida frente a un tranvía; la opción C inventa una regla de llegada simultánea inexistente en este contexto\n- Conexión: la excepción del tranvía se debe a que no puede frenar ni maniobrar como un vehículo normal, por eso se le otorga prioridad\n- Excepción: si existe señalización de prioridad como semáforo o señal de stop, prevalece la señalización sobre la prioridad del tranvía",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "La prioridad por la derecha tiene varias excepciones. El tranvía es una de ellas.",
-    "tipoPregunta": "situacional",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0407",
-    "number": 0,
-    "enunciado": "¿Cuándo debe utilizar la luz antiniebla trasera?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Siempre que llueva o haya niebla."
-      },
-      {
-        "key": "B",
-        "texto": "Solo cuando la visibilidad sea inferior a 50 metros."
-      },
-      {
-        "key": "C",
-        "texto": "Cuando circule de noche por carreteras sin iluminación."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La luz antiniebla trasera solo debe usarse cuando la visibilidad sea inferior a 50 metros, ya que deslumbra al conductor de detrás si se usa sin necesidad (tema_07.md).\n\n- Opciones incorrectas: la opción A es demasiado amplia, ya que una lluvia ligera o niebla moderada no justifican su uso; la opción C confunde la función de la antiniebla trasera con la de las luces de cruce o carretera\n- Conexión: la antiniebla delantera sí puede usarse con niebla o lluvia intensa sin el requisito estricto de los 50 metros de visibilidad\n- Dato clave: la sanción por uso indebido de la antiniebla trasera es de 200 euros",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "Hay un umbral de visibilidad concreto asociado a esta luz.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0408",
-    "number": 0,
-    "enunciado": "Se produce un incendio dentro de un túnel y no puede mover su vehículo. ¿Qué debe hacer con las llaves del coche?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Entregarlas al primer agente de tráfico que encuentre."
-      },
-      {
-        "key": "B",
-        "texto": "Llevárselas consigo al evacuar para evitar robos."
-      },
-      {
-        "key": "C",
-        "texto": "Dejarlas puestas en el contacto del vehículo."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "En caso de incendio en un túnel, si no puede mover el vehículo, debe dejar las llaves puestas en el contacto para que los bomberos puedan desplazarlo si es necesario (tema_08.md). Además, no debe cerrar el vehículo con llave.\n\n- Opciones incorrectas: la opción A prioriza la seguridad del vehículo sobre la operatividad de los servicios de emergencia; la opción C describe una acción poco práctica en una evacuación de emergencia\n- Conexión: tras dejar las llaves, debe abandonar el vehículo y dirigirse a las salidas de emergencia señalizadas con luz verde, caminando agachado porque el humo sube\n- Dato clave: los nichos SOS con teléfono y extintor se encuentran cada 200-250 metros en túneles",
+    "explicacion": "La luz antiniebla trasera solo está autorizada cuando la visibilidad es inferior a 50 metros. Usarla en condiciones de mayor visibilidad deslumbra al conductor de detrás y constituye una infracción.\n\n- Opciones incorrectas: usar la antiniebla trasera solo por lluvia moderada —con buena visibilidad— es incorrecto y sancionable con 200€. La noche por sí sola no justifica su uso: existen las luces de posición y de freno para esa función.\n- Conexión: la antiniebla delantera tiene criterios distintos; puede usarse con niebla ligera, lluvia intensa o nevada sin el umbral de los 50 metros.\n- Error común: muchos conductores encienden la antiniebla trasera con cualquier lluvia, ignorando que solo se justifica con visibilidad muy reducida.",
     "hasImage": false,
     "imageSrc": null,
     "temaId": "tema_08",
     "tema": "Situaciones Especiales",
-    "pista": "Los bomberos pueden necesitar mover vehículos para abrir paso.",
-    "tipoPregunta": "situacional",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0409",
-    "number": 0,
-    "enunciado": "Le realizan una prueba de alcoholemia y el resultado es 0,20 mg/l en aire espirado. Lleva 18 meses con el permiso. ¿Ha superado la tasa permitida?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, la tasa máxima para noveles es 0,15 mg/l."
-      },
-      {
-        "key": "B",
-        "texto": "No, la tasa máxima para noveles es 0,25 mg/l."
-      },
-      {
-        "key": "C",
-        "texto": "No, solo se considera infracción a partir de 0,30 mg/l."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "Los conductores noveles (menos de 2 años de antigüedad del permiso) tienen una tasa máxima de 0,15 mg/l en aire espirado, frente a los 0,25 mg/l de la tasa general. Con 0,20 mg/l y 18 meses de permiso, ha superado el límite (tema_10.md).\n\n- Opciones incorrectas: 0,25 mg/l es la tasa general para conductores con más de 2 años de permiso, no para noveles; 0,30 mg/l es la tasa en sangre para noveles (0,3 g/l), no en aire espirado\n- Conexión: los conductores profesionales (taxi, autobús, mercancías peligrosas) también tienen la misma tasa reducida de 0,15 mg/l\n- Dato clave: superar el doble de la tasa general (0,60 mg/l en aire) constituye delito penal\n\n| Conductor | Aire espirado | Sangre |\n|-----------|---------------|--------|\n| General | 0,25 mg/l | 0,5 g/l |\n| Novel (< 2 años) | 0,15 mg/l | 0,3 g/l |\n| Profesional | 0,15 mg/l | 0,3 g/l |",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "La tasa novel es exactamente la mitad de la tasa general en aire.",
-    "tipoPregunta": "dato",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0410",
-    "number": 0,
-    "enunciado": "El sistema ABS de su vehículo, ¿le permite girar el volante mientras frena a fondo?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Solo si circula a menos de 50 km/h."
-      },
-      {
-        "key": "B",
-        "texto": "No, al frenar a fondo las ruedas se bloquean y no se puede girar."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, el ABS evita el bloqueo de las ruedas permitiendo mantener la dirección."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "El ABS (sistema antibloqueo de frenos) evita que las ruedas se bloqueen durante una frenada intensa, lo que permite al conductor seguir dirigiendo el vehículo mientras frena (tema_09.md).\n\n- Opciones incorrectas: la opción A describe el comportamiento de un vehículo sin ABS, donde las ruedas bloqueadas impiden girar; la opción C inventa una limitación de velocidad inexistente para el sistema ABS\n- Conexión: en carreteras con nieve o hielo, si el vehículo tiene ABS se debe pisar el freno a fondo y el sistema regulará solo; si no tiene ABS, hay que bombear el pedal\n- Error común: algunos conductores creen que el ABS reduce la distancia de frenado, pero su función principal es mantener la direccionabilidad, no acortar la frenada",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "Piensa en qué pasa cuando las ruedas se bloquean: ¿se puede dirigir el vehículo?",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0411",
-    "number": 0,
-    "enunciado": "Al estacionar en una pendiente descendente, las ruedas delanteras deben girarse hacia...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "el centro de la calzada."
-      },
-      {
-        "key": "B",
-        "texto": "el bordillo."
-      },
-      {
-        "key": "C",
-        "texto": "la posición recta, sin girar."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "En pendiente descendente, las ruedas delanteras deben girarse hacia el bordillo para que, si el vehículo se desplaza, las ruedas se apoyen contra él y lo detengan (tema_06.md).\n\n- Opciones incorrectas: girar hacia el centro de la calzada es lo correcto en pendiente ascendente, no descendente; dejar las ruedas rectas no ofrece ninguna protección contra el desplazamiento del vehículo\n- Conexión: además de girar las ruedas, se debe dejar el freno de mano puesto y la marcha atrás engranada en bajada (o posición P en automáticos)\n- Error común: confundir la dirección de las ruedas según el sentido de la pendiente es uno de los fallos más frecuentes en el examen",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "Imagina hacia dónde rodaría el coche y piensa qué haría de tope.",
-    "tipoPregunta": "completar",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0412",
-    "number": 0,
-    "enunciado": "El detector de ángulo muerto (BSM) de su vehículo se ilumina. ¿Debe confiar únicamente en él para cambiar de carril?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "No, debe girar brevemente la cabeza para comprobar el ángulo muerto."
-      },
-      {
-        "key": "B",
-        "texto": "Sí, si no se ilumina es seguro cambiar de carril."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, el sistema detecta todos los vehículos cercanos sin excepción."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "El detector de ángulo muerto (BSM) es una ayuda que informa, pero no interviene en la conducción. El conductor siempre debe girar brevemente la cabeza para comprobar el ángulo muerto antes de cambiar de carril (tema_09.md).\n\n- Opciones incorrectas: la opción A confía plenamente en el sistema, lo cual es incorrecto porque los ADAS son ayudas y no sustituyen al conductor; la opción C exagera la capacidad del sistema, que puede no detectar peatones, ciclistas u objetos pequeños\n- Conexión: todos los sistemas ADAS son ayudas, no sustitutos del conductor, y este debe mantener siempre el control del vehículo\n- Error común: la sobreconfianza en la tecnología es un riesgo creciente en la conducción moderna",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "Los sistemas ADAS informan, pero hay algo que el conductor siempre debe hacer.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0413",
-    "number": 0,
-    "enunciado": "¿Es suficiente tomar un café para combatir la somnolencia al volante?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, la cafeína elimina la somnolencia rápidamente."
-      },
-      {
-        "key": "B",
-        "texto": "No, el café tarda en hacer efecto y no sustituye al descanso real."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, siempre que se combine con abrir las ventanillas."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "El café no es un sustituto del descanso. La cafeína tarda unos 30 minutos en hacer efecto y su acción es temporal. La única medida eficaz contra la somnolencia es parar y dormir entre 15 y 20 minutos (tema_10.md).\n\n- Opciones incorrectas: la opción A sobrevalora el efecto del café, que no elimina la fatiga real; la opción C combina dos estímulos temporales que no resuelven el problema de fondo\n- Conexión: se recomienda no conducir más de 2 horas seguidas o 200 kilómetros sin hacer una parada\n- Dato clave: a 120 km/h, un microsueño de 4 segundos equivale a recorrer 133 metros sin control del vehículo",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "Los estímulos externos como la cafeína son temporales y tardan en actuar.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0414",
-    "number": 0,
-    "enunciado": "La velocidad máxima de un turismo con remolque ligero en autopista es de...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "80 km/h."
-      },
-      {
-        "key": "B",
-        "texto": "90 km/h."
-      },
-      {
-        "key": "C",
-        "texto": "120 km/h."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Un turismo arrastrando un remolque ligero (MMA igual o inferior a 750 kg) puede circular a un máximo de 90 km/h en autopista o autovía (tema_03.md, tema_05.md).\n\n- Opciones incorrectas: 80 km/h es el límite para un turismo con remolque pesado (MMA superior a 750 kg) en autopista; 120 km/h es el límite del turismo sin remolque\n- Conexión: en carretera convencional, el turismo con remolque ligero baja a 80 km/h, y con remolque pesado a 70 km/h\n- Error común: confundir los límites del remolque ligero con los del pesado, especialmente en autopista donde la diferencia es de solo 10 km/h",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_03",
-    "tema": "Carga, Pasajeros y Remolques",
-    "pista": "Un remolque pesado va a 10 km/h menos que uno ligero en cada tipo de vía.",
-    "tipoPregunta": "completar",
-    "nivel": 3
-  },
-  {
-    "id": "pregunta_0415",
-    "number": 0,
-    "enunciado": "Al presenciar un accidente de tráfico, ¿cuál es la primera acción de la conducta PAS?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Socorrer a las víctimas inmediatamente."
-      },
-      {
-        "key": "B",
-        "texto": "Avisar al 112."
-      },
-      {
-        "key": "C",
-        "texto": "Proteger la zona del accidente."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "La conducta PAS establece el orden: Proteger, Avisar, Socorrer. La primera acción es proteger la zona para evitar nuevos accidentes, incluyendo señalizar con V-16 o triángulos y ponerse el chaleco reflectante (tema_11.md).\n\n- Opciones incorrectas: socorrer es la tercera acción, no la primera; avisar al 112 es la segunda acción, tras asegurar la zona\n- Conexión: al proteger, debe ponerse el chaleco reflectante antes de salir del vehículo y activar las luces de emergencia\n- Error común: el instinto natural lleva a socorrer primero, pero sin proteger la zona se corre el riesgo de causar un segundo accidente",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_11",
-    "tema": "Accidentes, Emergencias y Medio Ambiente",
-    "pista": "PAS es un acrónimo donde cada letra indica una acción en orden.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0416",
-    "number": 0,
-    "enunciado": "Circula por carretera convencional con línea continua en el eje. Delante de usted hay un ciclista y necesita invadir el carril contrario para mantener la distancia lateral reglamentaria. No viene ningún vehículo de frente. ¿Puede adelantar?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Solo si reduce la velocidad a 30 km/h."
-      },
-      {
-        "key": "B",
-        "texto": "No, la línea continua prohíbe invadir el carril contrario."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, está permitido cruzar la línea continua para adelantar ciclistas respetando la distancia lateral."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Está permitido cruzar la línea continua para adelantar a ciclistas siempre que sea necesario para mantener la distancia lateral mínima de 1,5 metros y se pueda hacer con seguridad (tema_06.md).\n\n- Opciones incorrectas: la opción A aplica la regla general de la línea continua sin considerar la excepción para ciclistas; la opción C inventa un requisito de velocidad que no existe como condición para esta maniobra\n- Conexión: durante el adelantamiento a ciclistas, el conductor debe reducir la velocidad 20 km/h por debajo del límite de la vía\n- Dato clave: no respetar la distancia lateral de 1,5 metros a ciclistas es infracción muy grave con multa de 200 euros y 6 puntos",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "La línea continua tiene una excepción importante relacionada con usuarios vulnerables.",
-    "tipoPregunta": "situacional",
-    "nivel": 3
-  },
-  {
-    "id": "pregunta_0417",
-    "number": 0,
-    "enunciado": "Un agente de tráfico le da un toque largo de silbato. ¿Qué significa?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Detenerse inmediatamente."
-      },
-      {
-        "key": "B",
-        "texto": "Reanudar la marcha."
-      },
-      {
-        "key": "C",
-        "texto": "Reducir la velocidad."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Un toque largo de silbato del agente significa reanudar la marcha, es decir, vía libre para continuar circulando. Los toques cortos y frecuentes significan lo contrario: detenerse (tema_07.md).\n\n- Opciones incorrectas: detenerse corresponde a los toques cortos y frecuentes, no al toque largo; reducir la velocidad se indica con el brazo extendido moviéndose de arriba a abajo, no con el silbato\n- Conexión: es contraintuitivo porque un toque largo parece más enérgico y se asocia con parar, pero funciona al revés\n- Error común: este es uno de los puntos más fallados del examen porque el significado es contrario a lo que intuitivamente se espera",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "Largo = largo camino por delante. Cortos = cortar la marcha.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0418",
-    "number": 0,
-    "enunciado": "¿Es obligatorio llevar triángulos de preseñalización en el vehículo si dispone de baliza V-16 conectada?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Solo en vías urbanas."
-      },
-      {
-        "key": "B",
-        "texto": "No, la V-16 conectada sustituye a los triángulos desde enero de 2026."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, los triángulos siguen siendo obligatorios en todos los casos."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Desde enero de 2026, la baliza V-16 geolocalizada y conectada a DGT 3.0 es el medio obligatorio para señalizar averías en vías interurbanas, sustituyendo a los triángulos. Si se dispone de V-16, los triángulos ya no son obligatorios (tema_11.md, tema_02.md).\n\n- Opciones incorrectas: la opción A desconoce el cambio normativo de 2026; la opción C invierte la aplicación, ya que la V-16 es obligatoria en vías interurbanas, no urbanas\n- Conexión: usar los triángulos junto con la V-16 está permitido pero no es obligatorio\n- Dato clave: la V-16 debe colocarse en el techo del vehículo y estar geolocalizada para comunicar la avería a DGT 3.0",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_11",
-    "tema": "Accidentes, Emergencias y Medio Ambiente",
-    "pista": "Hubo un cambio normativo importante en enero de 2026 sobre señalización de emergencia.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0419",
-    "number": 0,
-    "enunciado": "Viaja con un menor de 8 años que mide 130 cm de altura. El menor no lleva puesto el sistema de retención infantil. ¿Quién es responsable de la infracción?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Los padres o tutores del menor, aunque no estén en el vehículo."
-      },
-      {
-        "key": "B",
-        "texto": "El propio menor."
-      },
-      {
-        "key": "C",
-        "texto": "El conductor del vehículo."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "La responsabilidad de que los menores viajen con el sistema de retención infantil adecuado recae siempre sobre el conductor del vehículo, no sobre los padres ni sobre el menor (tema_03.md).\n\n- Opciones incorrectas: un menor no puede ser responsable legalmente de esta infracción; la responsabilidad recae sobre el conductor del vehículo, no sobre los padres si estos no están presentes\n- Conexión: para adultos sin cinturón, la responsabilidad es del propio pasajero, lo que contrasta con la regla para menores\n- Dato clave: la sanción por no usar el SRI es de 200 euros y 4 puntos, que se aplican al conductor",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_03",
-    "tema": "Carga, Pasajeros y Remolques",
-    "pista": "La responsabilidad difiere según si el pasajero es adulto o menor de edad.",
-    "tipoPregunta": "situacional",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0420",
-    "number": 0,
-    "enunciado": "Si durante una lluvia intensa el volante se vuelve muy ligero y el coche parece flotar, se está produciendo...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "un fallo en la dirección asistida."
-      },
-      {
-        "key": "B",
-        "texto": "aquaplaning, y se debe frenar con firmeza."
-      },
-      {
-        "key": "C",
-        "texto": "aquaplaning, y se debe soltar el acelerador suavemente sin frenar ni girar."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Los síntomas descritos corresponden al aquaplaning. La reacción correcta es soltar el acelerador suavemente, sujetar el volante recto sin frenar ni girar bruscamente, y esperar a recuperar el contacto con el asfalto (tema_08.md).\n\n- Opciones incorrectas: un fallo en la dirección asistida no se asocia con lluvia ni con la sensación de flotar; la opción B identifica correctamente el aquaplaning pero prescribe la acción equivocada, ya que frenar puede bloquear las ruedas\n- Conexión: para prevenir el aquaplaning, los neumáticos deben tener una profundidad de dibujo superior a 3 mm (el mínimo legal es 1,6 mm) y se debe reducir la velocidad con lluvia\n- Error común: el instinto de frenar ante la pérdida de control es muy fuerte, pero en aquaplaning es precisamente lo que no se debe hacer",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_08",
-    "tema": "Situaciones Especiales",
-    "pista": "Cuando el coche flota, las acciones bruscas empeoran la situación.",
-    "tipoPregunta": "completar",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0421",
-    "number": 0,
-    "enunciado": "¿Está permitido manipular el teléfono móvil mientras espera en un semáforo en rojo?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "No, la prohibición se aplica también con el vehículo detenido en un semáforo."
-      },
-      {
-        "key": "B",
-        "texto": "Sí, el vehículo está detenido."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, siempre que no lo sujete con la mano."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "La prohibición de manipular el teléfono móvil sujetándolo con la mano se aplica también cuando el vehículo está detenido en un semáforo o en una retención. La sanción es la misma: 200 euros y 6 puntos (tema_10.md).\n\n- Opciones incorrectas: la opción A asume que estar detenido permite el uso del móvil, lo cual es falso; la opción B introduce una distinción correcta en general (manos libres está permitido), pero no distingue que sujetar el móvil en un semáforo sigue siendo infracción\n- Conexión: la sanción de 6 puntos por uso del móvil es la misma que por conducir bajo los efectos de drogas\n- Dato clave: programar el GPS solo está permitido con el vehículo completamente parado y fuera de la circulación, no en un semáforo",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "La prohibición del móvil no distingue entre circular y estar detenido en un semáforo.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0422",
-    "number": 0,
-    "enunciado": "La distancia de detención de un vehículo es igual a...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "la distancia de reacción más la distancia de frenado."
-      },
-      {
-        "key": "B",
-        "texto": "la distancia de frenado multiplicada por dos."
-      },
-      {
-        "key": "C",
-        "texto": "la velocidad del vehículo dividida entre diez."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "La distancia de detención es la suma de la distancia de reacción (lo que se recorre mientras el conductor reacciona) y la distancia de frenado (lo que se recorre mientras el vehículo frena hasta detenerse) (tema_05.md).\n\n- Opciones incorrectas: multiplicar la distancia de frenado por dos corresponde al cálculo aproximado en pavimento mojado, no a la definición general; dividir la velocidad entre diez es una fórmula simplificada para calcular la distancia de reacción, no la de detención\n- Conexión: a 120 km/h en seco, la distancia de detención es de unos 105 metros; en mojado, la distancia de frenado se duplica\n- Dato clave: el tiempo de reacción normal es de 0,75 a 1 segundo, pero con fatiga puede llegar a 2 segundos",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_05",
-    "tema": "Circulación y Velocidad",
-    "pista": "La detención tiene dos fases: una antes de pisar el freno y otra después.",
-    "tipoPregunta": "completar",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0423",
-    "number": 0,
-    "enunciado": "Circula por autopista y se da cuenta de que se ha pasado de su salida. ¿Qué debe hacer?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Detenerse en el arcén y dar marcha atrás hasta la salida."
-      },
-      {
-        "key": "B",
-        "texto": "Continuar hasta la siguiente salida y volver."
-      },
-      {
-        "key": "C",
-        "texto": "Cruzar la mediana para cambiar de sentido."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Si se pasa de la salida en autopista o autovía, lo correcto es continuar hasta la siguiente salida. Dar marcha atrás, detenerse en el arcén para volver o cruzar la mediana están estrictamente prohibidos (tema_08.md).\n\n- Opciones incorrectas: la marcha atrás está prohibida en autopistas y autovías, con independencia de que se use el arcén; cruzar la mediana es una maniobra extremadamente peligrosa y prohibida\n- Conexión: en autopista, la velocidad mínima es de 60 km/h, lo que hace que cualquier vehículo detenido o circulando en sentido contrario suponga un peligro gravísimo\n- Error común: la tentación de dar marcha atrás es fuerte si la siguiente salida queda lejos, pero es una de las maniobras más peligrosas que se pueden hacer",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_08",
-    "tema": "Situaciones Especiales",
-    "pista": "En autopista están prohibidas la marcha atrás, la parada y el cambio de sentido.",
-    "tipoPregunta": "situacional",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0424",
-    "number": 0,
-    "enunciado": "¿Cubre el seguro obligatorio los daños personales del propio conductor responsable del accidente?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, pero con una franquicia del 50%."
-      },
-      {
-        "key": "B",
-        "texto": "Sí, cubre a todos los ocupantes del vehículo asegurado."
-      },
-      {
-        "key": "C",
-        "texto": "No, solo cubre los daños a terceros."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "El seguro obligatorio de responsabilidad civil cubre únicamente los daños personales y materiales causados a terceros. No cubre los daños propios del conductor responsable ni los del propio vehículo (tema_02.md).\n\n- Opciones incorrectas: la opción A amplía erróneamente la cobertura a todos los ocupantes, pero el conductor responsable está excluido; la opción C inventa un sistema de franquicia inexistente en el seguro obligatorio\n- Conexión: para cubrir los daños propios del conductor y del vehículo es necesario contratar un seguro voluntario (terceros ampliado o todo riesgo)\n- Dato clave: circular sin seguro obligatorio conlleva una multa de 601 a 3.005 euros, y si se causa un accidente, el Consorcio de Compensación de Seguros paga a la víctima y luego reclama todo al responsable",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_02",
-    "tema": "El Vehículo",
-    "pista": "El seguro obligatorio se llama de responsabilidad civil. Piensa a quién protege.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0425",
-    "number": 0,
-    "enunciado": "La sanción por sujetar el teléfono móvil con la mano mientras conduce es de...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "200 euros y 3 puntos."
-      },
-      {
-        "key": "B",
-        "texto": "200 euros y 6 puntos."
-      },
-      {
-        "key": "C",
-        "texto": "500 euros y 6 puntos."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Desde 2022, la sanción por usar el móvil sujetándolo con la mano es de 200 euros y 6 puntos, calificada como infracción muy grave (tema_05.md, tema_10.md).\n\n- Opciones incorrectas: 200 euros y 3 puntos era la sanción anterior a la reforma de 2022; 500 euros y 6 puntos no corresponde a esta infracción específica\n- Conexión: los 6 puntos por el móvil equivalen a la pérdida máxima posible por una única infracción, igualando sanciones como conducir bajo efectos de drogas o negarse a pruebas de alcoholemia\n- Error común: muchos alumnos recuerdan la antigua sanción de 3 puntos y no la actualización a 6",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_05",
-    "tema": "Circulación y Velocidad",
-    "pista": "La reforma de 2022 duplicó los puntos para esta infracción.",
-    "tipoPregunta": "completar",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0426",
-    "number": 0,
-    "enunciado": "Se aproxima a un estrechamiento en una carretera de montaña con pendiente pronunciada. Usted sube y otro vehículo baja. No hay señalización de prioridad ni apartaderos. ¿Quién tiene prioridad?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "El primero que haya entrado en el estrechamiento."
-      },
-      {
-        "key": "B",
-        "texto": "El vehículo que baja, porque lleva más inercia."
-      },
-      {
-        "key": "C",
-        "texto": "El vehículo que sube."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "En estrechamientos con pendiente pronunciada (7% o más), tiene prioridad el vehículo que sube, porque es más difícil y peligroso arrancar cuesta arriba (tema_06.md).\n\n- Opciones incorrectas: la inercia del que baja no le otorga prioridad; la regla del primero en entrar aplica en estrechamientos sin pendiente significativa, pero en pendiente pronunciada prevalece la regla del ascendente\n- Conexión: si el vehículo que sube encuentra un apartadero antes de cruzarse con el que baja, debe detenerse y ceder el paso\n- Excepción: si hay señales R-5 o R-6 de prioridad, prevalece la señalización sobre la regla general de pendiente",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "Piensa cuál de los dos tendría más dificultad para arrancar de nuevo.",
-    "tipoPregunta": "situacional",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0427",
-    "number": 0,
-    "enunciado": "La profundidad mínima legal del dibujo de los neumáticos es de...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "1,6 mm."
-      },
-      {
-        "key": "B",
-        "texto": "2 mm."
-      },
-      {
-        "key": "C",
-        "texto": "3 mm."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "La profundidad mínima legal del dibujo de los neumáticos es de 1,6 mm. Se recomienda cambiarlos cuando bajan de 3 mm, pero el límite legal es 1,6 mm (tema_02.md).\n\n- Opciones incorrectas: 2 mm no corresponde a ningún umbral legal ni recomendado; 3 mm es la profundidad recomendada para cambiar los neumáticos, pero no es el mínimo legal\n- Conexión: unos neumáticos con dibujo insuficiente aumentan drásticamente el riesgo de aquaplaning y la distancia de frenado en mojado\n- Dato clave: el desgaste irregular de los neumáticos puede indicar problemas de alineación, presión incorrecta o suspensión defectuosa",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_02",
-    "tema": "El Vehículo",
-    "pista": "Hay un mínimo legal y un mínimo recomendado. Son cifras diferentes.",
-    "tipoPregunta": "completar",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0428",
-    "number": 0,
-    "enunciado": "Un conductor novel comienza con 8 puntos en su permiso. ¿Cuántos puntos tendrá si pasan 2 años sin que cometa infracciones graves o muy graves?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "15 puntos."
-      },
-      {
-        "key": "B",
-        "texto": "10 puntos."
-      },
-      {
-        "key": "C",
-        "texto": "12 puntos."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Un conductor novel empieza con 8 puntos y, tras 2 años sin cometer infracciones graves o muy graves, pasa a tener 12 puntos (tema_01.md).\n\n- Opciones incorrectas: 10 puntos no corresponde a ningún hito del sistema de puntos; 15 puntos es el máximo acumulable, pero se alcanza tras varios años adicionales de bonificación\n- Conexión: el máximo de 15 puntos se consigue con bonificaciones automáticas por no cometer infracciones graves durante 6 años adicionales (14 a los 3 años, 15 a los 6 años), o mediante cursos de conducción segura\n- Dato clave: si la última pérdida fue por infracción muy grave, el plazo de recuperación total se amplía a 3 años en lugar de 2",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_01",
-    "tema": "El Conductor y el Permiso",
-    "pista": "El salto de puntos al dejar de ser novel es un dato concreto del temario.",
-    "tipoPregunta": "dato",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0429",
-    "number": 0,
-    "enunciado": "Si un agente de tráfico le indica una dirección diferente a la que marca el semáforo, ¿a quién debe obedecer?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Al agente de tráfico."
-      },
-      {
-        "key": "B",
-        "texto": "A ninguno; debe detenerse y esperar a que coincidan."
-      },
-      {
-        "key": "C",
-        "texto": "Al semáforo, que es una señal fija y prevalece."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "Las señales de los agentes de tráfico tienen la máxima prioridad en la jerarquía de señalización, por encima de semáforos, señales verticales y marcas viales (tema_07.md).\n\n- Opciones incorrectas: los semáforos están por debajo de los agentes en la jerarquía de señalización; detenerse a esperar no es correcto cuando un agente está dando indicaciones directas\n- Conexión: el orden completo de prioridad es: agentes, señalización circunstancial (obras), semáforos, señales verticales y marcas viales\n- Error común: algunos conductores dudan entre obedecer al agente y al semáforo, pero la norma es clara: el agente siempre prevalece",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "La jerarquía de señales tiene un orden claro con cinco niveles.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0430",
-    "number": 0,
-    "enunciado": "Circula por carretera y va a adelantar a un camión bajo lluvia intensa. ¿Qué precaución específica debe tomar antes de iniciar el adelantamiento?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Reducir la velocidad y encender las luces antiniebla delanteras."
-      },
-      {
-        "key": "B",
-        "texto": "Poner los limpiaparabrisas a máxima velocidad antes de iniciar la maniobra."
-      },
-      {
-        "key": "C",
-        "texto": "Dar ráfagas de luz para avisar al camión."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Al adelantar vehículos voluminosos como camiones o autobuses bajo lluvia intensa, se debe poner los limpiaparabrisas a máxima velocidad antes de iniciar el adelantamiento, porque el agua que levantan estos vehículos reduce la visibilidad de forma brusca (tema_08.md).\n\n- Opciones incorrectas: reducir velocidad y encender antinieblas son medidas generales para lluvia pero no la precaución específica previa al adelantamiento; las ráfagas de luz son para avisar de presencia, no la medida prioritaria en esta situación\n- Conexión: esta es una de las preguntas más falladas del examen DGT real, porque la precaución específica de los limpiaparabrisas no es intuitiva\n- Error común: los alumnos piensan en medidas generales de conducción con lluvia, pero no en la acción concreta de los limpiaparabrisas antes del adelantamiento",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_11",
-    "tema": "Accidentes, Emergencias y Medio Ambiente",
-    "pista": "Los vehículos grandes levantan mucha agua. Piensa en cómo afecta a tu visibilidad.",
-    "tipoPregunta": "situacional",
-    "nivel": 3
-  },
-  {
-    "id": "pregunta_0501",
-    "number": 0,
-    "enunciado": "¿Puede un conductor con 2 años y medio de permiso B conducir un furgón eléctrico de reparto de 4.100 kg de MMA, si el exceso de peso se debe a las baterías?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "No, para vehículos de más de 3.500 kg se necesita permiso C."
-      },
-      {
-        "key": "B",
-        "texto": "Sí, pero solo si tiene etiqueta Cero de la DGT."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, cumple los requisitos de la excepción para combustible alternativo."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Desde 2020, el permiso B permite conducir vehículos de transporte de mercancías de hasta 4.250 kg de MMA si están propulsados por combustible alternativo, el exceso de peso se debe al sistema de propulsión y el conductor tiene mínimo 2 años de antigüedad del permiso.\n\n- Opciones incorrectas: la que exige permiso C desconoce la excepción para vehículos de combustible alternativo; la que pide etiqueta Cero inventa un requisito inexistente\n- Conexión: los combustibles alternativos incluyen eléctrico, hidrógeno, GNL, GNC y GLP\n- Dato clave: si el conjunto supera 4.250 kg, se necesita permiso B+E o código 96",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_01",
-    "tema": "El Conductor y el Permiso",
-    "pista": "Hay una excepción al límite de 3.500 kg del permiso B para ciertos tipos de propulsión.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0502",
-    "number": 0,
-    "enunciado": "¿Durante cuánto tiempo debe llevar un conductor novel el distintivo «L» verde en la parte trasera del vehículo?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Durante los 2 años completos del período novel."
-      },
-      {
-        "key": "B",
-        "texto": "Durante el primer año desde la obtención del permiso."
-      },
-      {
-        "key": "C",
-        "texto": "Solo los primeros 6 meses."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "El distintivo «L» verde es obligatorio durante el primer año (12 meses) desde la obtención del permiso, no durante todo el período novel de 2 años. Se coloca en la parte superior izquierda de la luna trasera.\n\n- Opciones incorrectas: la que dice 2 años confunde la duración del período novel completo con la obligación de la «L»; la de 6 meses reduce a la mitad el plazo real\n- Conexión: el período novel completo dura 2 años, pero la «L» solo es obligatoria el primero\n- Dato clave: la sanción por no llevar el distintivo es de hasta 100 euros (infracción leve)",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_01",
-    "tema": "El Conductor y el Permiso",
-    "pista": "El período novel son 2 años, pero la «L» no dura todo ese tiempo.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0503",
-    "number": 0,
-    "enunciado": "Va a comprar un vehículo de segunda mano. ¿En qué plazo máximo debe realizar el cambio de titularidad desde la firma del contrato?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "10 días naturales."
-      },
-      {
-        "key": "B",
-        "texto": "30 días."
-      },
-      {
-        "key": "C",
-        "texto": "15 días hábiles."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "El comprador tiene un plazo de 30 días desde la firma del contrato para realizar el cambio de titularidad del vehículo en la DGT.\n\n- Opciones incorrectas: 10 días naturales es el plazo que tiene el vendedor para notificar la venta a la DGT; 15 días hábiles no corresponde a ningún plazo del temario en este contexto\n- Conexión: vendedor y comprador tienen plazos distintos; el vendedor notifica en 10 días, el comprador cambia titularidad en 30\n- Dato clave: el vehículo debe tener ITV en vigor e IVTM al corriente de pago para el cambio",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_02",
-    "tema": "El Vehículo",
-    "pista": "Vendedor y comprador tienen plazos distintos al cambiar de dueño un vehículo.",
-    "tipoPregunta": "dato",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0504",
-    "number": 0,
-    "enunciado": "Para comprobar correctamente el nivel de aceite del motor, el vehículo debe estar...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "con el motor caliente y en marcha."
-      },
-      {
-        "key": "B",
-        "texto": "con el motor frío y en una superficie llana."
-      },
-      {
-        "key": "C",
-        "texto": "con el motor caliente y en pendiente."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "El nivel de aceite se comprueba con la varilla, con el motor frío y el vehículo en una superficie llana para obtener una lectura precisa.\n\n- Opciones incorrectas: comprobar con el motor en marcha da lectura incorrecta porque el aceite circula; la pendiente falsea la lectura de la varilla\n- Conexión: si el nivel de aceite sube sin haberlo añadido, puede indicar una avería grave\n- Error común: muchos conductores comprueban el aceite justo después de apagar el motor sin esperar",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_02",
-    "tema": "El Vehículo",
-    "pista": "Para que la varilla dé una lectura fiable, el aceite debe estar asentado.",
-    "tipoPregunta": "completar",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0505",
-    "number": 0,
-    "enunciado": "Un padre lleva a su hijo de 8 años como pasajero en su moto homologada para dos plazas. ¿Es correcto?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, los mayores de 7 años pueden ir en moto si el conductor es su padre o tutor."
-      },
-      {
-        "key": "B",
-        "texto": "No, la edad mínima es 12 años sin excepción."
-      },
-      {
-        "key": "C",
-        "texto": "Solo si el menor lleva chaleco reflectante."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "La regla general establece 12 años como edad mínima para viajar como pasajero en moto, pero existe una excepción: los mayores de 7 años pueden hacerlo si el conductor es su padre, madre, tutor o persona autorizada por estos.\n\n- Opciones incorrectas: la que dice 12 años sin excepción desconoce la excepción familiar; el chaleco reflectante no es un requisito para pasajeros de moto\n- Conexión: tanto conductor como pasajero deben llevar casco homologado y el pasajero debe ir a horcajadas\n- Dato clave: la sanción por incumplimiento es de 200 euros y 4 puntos",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_03",
-    "tema": "Carga, Pasajeros y Remolques",
-    "pista": "La edad mínima general tiene una excepción que depende del parentesco con el conductor.",
-    "tipoPregunta": "situacional",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0506",
-    "number": 0,
-    "enunciado": "Circula por carretera convencional arrastrando un remolque de 900 kg de MMA. ¿Cuál es su velocidad máxima?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "80 km/h."
-      },
-      {
-        "key": "B",
-        "texto": "70 km/h."
-      },
-      {
-        "key": "C",
-        "texto": "90 km/h."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Un remolque de 900 kg de MMA es un remolque pesado (supera los 750 kg). En carretera convencional, la velocidad máxima con remolque pesado es de 70 km/h.\n\n- Opciones incorrectas: 80 km/h es el límite con remolque ligero en carretera convencional; 90 km/h es el límite del turismo sin remolque\n- Conexión: en autopista, el mismo conjunto con remolque pesado tiene un límite de 80 km/h\n- Error común: confundir remolque ligero (hasta 750 kg) con pesado (más de 750 kg)",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_03",
-    "tema": "Carga, Pasajeros y Remolques",
-    "pista": "Primero determina si 900 kg es remolque ligero o pesado. El umbral está en 750 kg.",
-    "tipoPregunta": "dato",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0507",
-    "number": 0,
-    "enunciado": "Si la ITV de su turismo resulta desfavorable, puede circular...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "hasta 2 meses para reparar y volver a pasar la inspección."
-      },
-      {
-        "key": "B",
-        "texto": "solo hasta el taller más cercano mediante grúa."
-      },
-      {
-        "key": "C",
-        "texto": "sin restricciones hasta la próxima revisión programada."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "Con resultado desfavorable en la ITV, el vehículo puede circular durante un plazo de hasta 2 meses para reparar los defectos y volver a pasar la inspección.\n\n- Opciones incorrectas: el traslado en grúa corresponde al resultado negativo, más grave que el desfavorable; circular sin restricciones no es posible con resultado desfavorable\n- Conexión: el resultado negativo impide circular; el favorable con defectos leves permite circular y reparar sin reinspección\n- Dato clave: circular sin ITV en vigor es infracción grave (200 euros) o muy grave (hasta 500 euros)",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_04",
-    "tema": "La Vía y sus Usuarios",
-    "pista": "Hay cuatro resultados posibles en la ITV, y cada uno tiene consecuencias distintas.",
-    "tipoPregunta": "completar",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0508",
-    "number": 0,
-    "enunciado": "Usted causa un accidente sin seguro obligatorio en vigor. El Consorcio de Compensación de Seguros indemniza a la víctima. ¿Qué sucede después?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Nada, el Consorcio asume el coste como organismo público."
-      },
-      {
-        "key": "B",
-        "texto": "Solo le reclamarán si fue conducción temeraria."
-      },
-      {
-        "key": "C",
-        "texto": "El Consorcio le reclamará todo el dinero pagado a la víctima."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "El Consorcio de Compensación de Seguros indemniza a la víctima cuando el causante no tiene seguro, pero después reclama todo el dinero al responsable (conductor y propietario). No es una prestación gratuita.\n\n- Opciones incorrectas: la que dice que el Consorcio asume el coste desconoce su derecho de repetición; la de conducción temeraria inventa una condición inexistente\n- Conexión: el Consorcio también actúa cuando el vehículo causante se da a la fuga o la aseguradora está en liquidación\n- Dato clave: la sanción por circular sin seguro va de 601 a 3.005 euros",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_02",
-    "tema": "El Vehículo",
-    "pista": "El Consorcio protege a la víctima, pero no al conductor sin seguro.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0509",
-    "number": 0,
-    "enunciado": "¿Está permitido que los ciclomotores circulen por autopistas o autovías?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "No."
-      },
-      {
-        "key": "B",
-        "texto": "Sí, si circulan por el arcén."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, siempre que alcancen 60 km/h."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "Los ciclomotores están prohibidos en autopistas y autovías. Su velocidad máxima por diseño es de 45 km/h, inferior a la mínima de estas vías (60 km/h).\n\n- Opciones incorrectas: la que permite circular por el arcén confunde ciclomotores con otros usuarios de carreteras convencionales; un ciclomotor no puede superar los 45 km/h por diseño\n- Conexión: tampoco pueden circular por autopistas los peatones, VMP ni vehículos que no alcancen 60 km/h\n- Dato clave: en carreteras convencionales, los ciclomotores deben circular por el arcén si es transitable",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_04",
-    "tema": "La Vía y sus Usuarios",
-    "pista": "La velocidad máxima de un ciclomotor es 45 km/h. Compárala con la mínima de autopista.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0510",
-    "number": 0,
-    "enunciado": "En una vía urbana de un carril por sentido, un autobús urbano señaliza que quiere incorporarse desde una parada. ¿Qué debe hacer?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Facilitar su incorporación, esperando si es necesario."
-      },
-      {
-        "key": "B",
-        "texto": "Mantener su velocidad porque usted tiene prioridad."
-      },
-      {
-        "key": "C",
-        "texto": "Adelantar al autobús rápidamente antes de que salga."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "En vías urbanas de un carril por sentido, el conductor debe facilitar la incorporación del autobús urbano que sale de una parada señalizada, esperando si es necesario.\n\n- Opciones incorrectas: la que dice mantener velocidad ignora la obligación de facilitar la incorporación del transporte público; la que sugiere adelantar es peligrosa y contradice la norma\n- Conexión: los pasajeros del transporte público tienen prioridad al subir y bajar en paradas señalizadas\n- Error común: muchos conductores creen que siempre tienen prioridad sobre el autobús",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_05",
-    "tema": "Circulación y Velocidad",
-    "pista": "El transporte público tiene una consideración especial al salir de sus paradas.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0511",
-    "number": 0,
-    "enunciado": "Un autobús con pasajeros de pie circula por autopista. ¿Cuál es su velocidad máxima?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "90 km/h."
-      },
-      {
-        "key": "B",
-        "texto": "80 km/h."
-      },
-      {
-        "key": "C",
-        "texto": "100 km/h."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Un autobús con pasajeros de pie puede circular a un máximo de 100 km/h en autopista, igual que un autobús normal en ese tipo de vía.\n\n- Opciones incorrectas: 90 km/h es el límite del autobús escolar o del camión en autopista; 80 km/h es el límite del autobús con pasajeros de pie en carretera convencional\n- Conexión: la diferencia aparece en carretera convencional, donde el autobús con pasajeros de pie baja a 80 km/h frente a los 90 del normal\n- Error común: aplicar el límite del autobús escolar (90 km/h) al autobús con pasajeros de pie en autopista",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_05",
-    "tema": "Circulación y Velocidad",
-    "pista": "En autopista coincide con el autobús normal. La diferencia aparece en otro tipo de vía.",
-    "tipoPregunta": "dato",
-    "nivel": 3
-  },
-  {
-    "id": "pregunta_0512",
-    "number": 0,
-    "enunciado": "En pavimento mojado, la distancia de frenado respecto al pavimento seco...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "se multiplica aproximadamente por 4."
-      },
-      {
-        "key": "B",
-        "texto": "se duplica aproximadamente."
-      },
-      {
-        "key": "C",
-        "texto": "aumenta un 25% aproximadamente."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "En pavimento mojado, la distancia de frenado se multiplica aproximadamente por 2 respecto al seco, debido a la reducción de adherencia.\n\n- Opciones incorrectas: multiplicar por 4 corresponde al factor de la velocidad (doble velocidad = cuádruple distancia), no al efecto de la lluvia; un 25% subestima el efecto del agua\n- Conexión: en hielo o nieve, la distancia de frenado se multiplica hasta por 10\n- Dato clave: la distancia de seguridad recomendada en lluvia es de mínimo 3 segundos, frente a los 2 en seco",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_05",
-    "tema": "Circulación y Velocidad",
-    "pista": "El factor de multiplicación en mojado es menor que en hielo, pero mayor de lo que parece.",
-    "tipoPregunta": "completar",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0513",
-    "number": 0,
-    "enunciado": "Se aproxima a un estrechamiento con pendiente pronunciada en carretera convencional. Un camión viene subiendo en sentido contrario. No hay señalización de prioridad. ¿Quién tiene preferencia?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Usted, porque baja la pendiente."
-      },
-      {
-        "key": "B",
-        "texto": "Ninguno, se aplica la regla del que llegó primero."
-      },
-      {
-        "key": "C",
-        "texto": "El camión, porque sube y le cuesta más arrancar."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "En estrechamientos con pendiente pronunciada sin señalización, tiene preferencia el vehículo que sube, ya que arrancar cuesta arriba es más difícil y peligroso.\n\n- Opciones incorrectas: la que da prioridad al que baja invierte la regla; la del que llegó primero aplica a estrechamientos sin pendiente significativa\n- Conexión: si el que sube encuentra un apartadero antes de cruzarse, debe detenerse y dejar pasar al que baja\n- Error común: confundir la regla con pendiente (prioridad al que sube) con la regla general sin pendiente",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "Piensa qué vehículo tendría más dificultad para arrancar si se detiene.",
-    "tipoPregunta": "situacional",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0514",
-    "number": 0,
-    "enunciado": "Al incorporarse a una autopista por el carril de aceleración, ¿debe detenerse si hay tráfico en la vía?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "No, debe alcanzar velocidad similar e incorporarse cediendo el paso."
-      },
-      {
-        "key": "B",
-        "texto": "Sí, debe detenerse al final del carril y esperar un hueco."
-      },
-      {
-        "key": "C",
-        "texto": "Solo si circula a menos de 60 km/h."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "En el carril de aceleración, el conductor debe alcanzar una velocidad similar a la de la vía y buscar un hueco para incorporarse, cediendo el paso. Detenerse no es la norma.\n\n- Opciones incorrectas: detenerse al final del carril es peligroso y dificulta la incorporación; la condición de 60 km/h es inventada\n- Conexión: el carril de deceleración funciona al revés: se toma primero y luego se reduce velocidad\n- Error común: detenerse al final del carril de aceleración genera situaciones de peligro al incorporarse muy lento",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "La función del carril de aceleración es igualar velocidades, no esperar parado.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0515",
-    "number": 0,
-    "enunciado": "Circula por una autovía de tres carriles por sentido con tráfico denso. El vehículo del carril central va más lento que usted en el carril derecho. ¿Puede adelantarlo por la derecha?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "No, el adelantamiento siempre se realiza por la izquierda."
-      },
-      {
-        "key": "B",
-        "texto": "Sí, en vías de varios carriles con tráfico denso está permitido."
-      },
-      {
-        "key": "C",
-        "texto": "Solo si señaliza con intermitente y toca el claxon."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "En vías de más de un carril por sentido con tráfico denso, está permitido adelantar por la derecha. Es una excepción a la regla general.\n\n- Opciones incorrectas: la que prohíbe siempre el adelantamiento por la derecha desconoce esta excepción; la que exige claxon inventa requisitos inexistentes\n- Conexión: otras excepciones son cuando el vehículo de delante indica giro a la izquierda y al adelantar tranvías\n- Error común: muchos alumnos creen que adelantar por la derecha está siempre prohibido",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "La regla general de adelantar por la izquierda tiene excepciones en ciertos tipos de vía.",
-    "tipoPregunta": "situacional",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0516",
-    "number": 0,
-    "enunciado": "¿A qué distancia mínima de una parada de autobús señalizada está prohibido estacionar?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "5 metros."
-      },
-      {
-        "key": "B",
-        "texto": "15 metros."
-      },
-      {
-        "key": "C",
-        "texto": "10 metros."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Está prohibido estacionar a menos de 15 metros de una parada de autobús o taxi señalizada.\n\n- Opciones incorrectas: 5 metros es la distancia mínima desde una intersección o paso de peatones; 10 metros no corresponde a ninguna distancia del temario para estacionamiento\n- Conexión: la distancia de 5 metros aplica tanto a intersecciones como a pasos de peatones\n- Error común: confundir los 5 metros de la intersección con los 15 metros de la parada de autobús",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "Hay dos distancias clave para estacionar: 5 m y 15 m, cada una con su contexto.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0517",
-    "number": 0,
-    "enunciado": "La distancia máxima que se puede recorrer marcha atrás es de...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "15 metros."
-      },
-      {
-        "key": "B",
-        "texto": "25 metros."
-      },
-      {
-        "key": "C",
-        "texto": "50 metros."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "La maniobra de marcha atrás está limitada a 15 metros y solo debe realizarse como maniobra complementaria.\n\n- Opciones incorrectas: 25 metros duplica casi el límite real; 50 metros es la distancia mínima de colocación de triángulos de avería\n- Conexión: la marcha atrás está totalmente prohibida en autopistas, autovías, intersecciones, pasos de peatones y pasos a nivel\n- Dato clave: al realizar marcha atrás, el conductor debe ceder el paso a todos los demás usuarios",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_05",
-    "tema": "Circulación y Velocidad",
-    "pista": "Es una distancia corta porque la marcha atrás solo es una maniobra complementaria.",
-    "tipoPregunta": "completar",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0518",
-    "number": 0,
-    "enunciado": "Circula de noche por una carretera sin iluminación con las luces largas encendidas. Observa que un vehículo le precede a unos 100 metros. ¿Qué debe hacer?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Mantener las luces largas porque no viene de frente."
-      },
-      {
-        "key": "B",
-        "texto": "Apagar todas las luces brevemente para advertir de su presencia."
-      },
-      {
-        "key": "C",
-        "texto": "Cambiar a luces de cruce para no deslumbrarlo por los retrovisores."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Las luces largas deben cambiarse a cruce no solo cuando viene un vehículo de frente, sino también cuando se sigue a otro, ya que le deslumbra a través de los retrovisores.\n\n- Opciones incorrectas: mantener las largas deslumbraría al de delante por los espejos; apagar todas las luces es peligroso y no está contemplado\n- Conexión: la distancia de referencia para cambiar de largas a cruce con vehículo de frente es de 150 metros\n- Error común: muchos conductores solo cambian a cruce cuando ven un vehículo de frente",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "Los retrovisores del vehículo de delante reflejan la luz hacia su conductor.",
-    "tipoPregunta": "situacional",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0519",
-    "number": 0,
-    "enunciado": "Para indicar que los vehículos deben detenerse, un agente utiliza...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "un toque largo de silbato."
-      },
-      {
-        "key": "B",
-        "texto": "toques cortos y frecuentes de silbato."
-      },
-      {
-        "key": "C",
-        "texto": "dos toques largos de silbato."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Los toques cortos y frecuentes de silbato significan detenerse inmediatamente.\n\n- Opciones incorrectas: un toque largo significa reanudar la marcha (vía libre); dos toques largos no es una señal definida en el temario\n- Conexión: las señales de los agentes prevalecen sobre cualquier otra señalización, incluidos semáforos\n- Error común: confundir toque largo (circular) con toques cortos (parar), ya que intuitivamente parece al revés",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "CORTOS = CORTAR la marcha. LARGO = LARGO camino por delante.",
-    "tipoPregunta": "completar",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0520",
-    "number": 0,
-    "enunciado": "¿Por qué los primeros minutos de lluvia son especialmente peligrosos para la conducción?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Porque los neumáticos necesitan tiempo para adaptarse al mojado."
-      },
-      {
-        "key": "B",
-        "texto": "Porque el agua mezcla polvo, grasa y aceite acumulados en el asfalto."
-      },
-      {
-        "key": "C",
-        "texto": "Porque la temperatura del asfalto desciende bruscamente."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Los primeros minutos de lluvia son los más peligrosos porque el agua mezcla el polvo, la grasa y el aceite acumulados en el asfalto, creando una película muy resbaladiza.\n\n- Opciones incorrectas: los neumáticos no necesitan período de adaptación; el descenso de temperatura no es la causa principal de la pérdida de adherencia inicial\n- Conexión: se debe reducir velocidad y evitar pisar charcos grandes y marcas viales pintadas, especialmente resbaladizas\n- Error común: no distinguir entre el inicio de la lluvia (más peligroso) y la lluvia continuada",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "El asfalto acumula sustancias que se vuelven peligrosas al contacto con el agua.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0521",
-    "number": 0,
-    "enunciado": "Circula en invierno por una carretera con hielo y necesita arrancar en una subida. ¿Qué marcha debe utilizar?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "La primera, para tener más fuerza de tracción."
-      },
-      {
-        "key": "B",
-        "texto": "La segunda, para reducir el par y evitar que las ruedas patinen."
-      },
-      {
-        "key": "C",
-        "texto": "Punto muerto, dejando que el vehículo avance por inercia."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "En hielo o nieve se debe arrancar en segunda marcha y soltar el embrague muy despacio. La primera transmite demasiado par y provoca que las ruedas patinen.\n\n- Opciones incorrectas: la primera marcha haría patinar las ruedas sobre el hielo; el punto muerto no permite controlar la tracción\n- Conexión: una vez en movimiento, se debe circular en marchas largas para evitar deslizamiento\n- Error común: el instinto dice usar la marcha más potente, pero en hielo es contraproducente",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_08",
-    "tema": "Situaciones Especiales",
-    "pista": "Más potencia en las ruedas no siempre significa más tracción sobre la superficie.",
-    "tipoPregunta": "situacional",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0522",
-    "number": 0,
-    "enunciado": "¿Deben los ciclistas mayores de 16 años llevar casco en vías urbanas?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, es obligatorio para todos los ciclistas en cualquier vía."
-      },
-      {
-        "key": "B",
-        "texto": "Solo si la vía urbana tiene más de dos carriles."
-      },
-      {
-        "key": "C",
-        "texto": "No, en vías urbanas solo es obligatorio para menores de 16 años."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "En vías urbanas, el casco solo es obligatorio para ciclistas menores de 16 años. Los mayores de 16 pueden circular sin casco en ciudad.\n\n- Opciones incorrectas: la obligatoriedad universal solo aplica en vías interurbanas; el número de carriles no afecta a la obligatoriedad del casco\n- Conexión: en vías interurbanas, el casco es obligatorio para todos los ciclistas sin excepción\n- Dato clave: la sanción por no usar casco cuando es obligatorio es de 200 euros",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_08",
-    "tema": "Situaciones Especiales",
-    "pista": "La obligatoriedad del casco ciclista depende de la edad y del tipo de vía.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0523",
-    "number": 0,
-    "enunciado": "El desvanecimiento de frenos (fading) se produce cuando...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "los frenos se sobrecalientan por uso prolongado en descensos."
-      },
-      {
-        "key": "B",
-        "texto": "el líquido de frenos tiene un nivel bajo."
-      },
-      {
-        "key": "C",
-        "texto": "los neumáticos pierden presión."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "El fading es la pérdida de eficacia de los frenos por sobrecalentamiento, típica en descensos prolongados con uso continuado del pedal de freno.\n\n- Opciones incorrectas: un nivel bajo de líquido causa fallo de frenos pero no es fading; la presión de neumáticos afecta a la frenada pero no es el fenómeno de fading\n- Conexión: para prevenirlo, usar marchas cortas en bajadas y dejar que el freno motor trabaje\n- Error común: si ocurre fading, nunca echar agua fría sobre los discos porque puede agrietarlos",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "El nombre en inglés significa «desvanecerse» y tiene que ver con la temperatura.",
-    "tipoPregunta": "completar",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0524",
-    "number": 0,
-    "enunciado": "Circula por una vía urbana con semáforo en verde. En el carril derecho, un autobús escolar está detenido con las luces de advertencia de parada activadas, recogiendo menores. ¿Qué debe hacer?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Continuar; el semáforo en verde prevalece."
-      },
-      {
-        "key": "B",
-        "texto": "Reducir velocidad y pasar con precaución si los menores no cruzan."
-      },
-      {
-        "key": "C",
-        "texto": "Parar hasta que el autobús desactive las señales de parada."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Las señales de parada de un autobús escolar generan obligación de parar independientemente de la señalización viaria. El conductor debe esperar hasta que el autobús desactive las señales.\n\n- Opciones incorrectas: el semáforo en verde no prevalece sobre las señales del autobús escolar; pasar con precaución no es suficiente, ya que la norma obliga a detenerse completamente\n- Conexión: el autobús escolar se identifica con la señal V-10 (cuadrado amarillo con silueta de niños) y tiene un límite de velocidad 10 km/h inferior al del autobús normal\n- Error común: creer que el semáforo en verde autoriza a pasar en cualquier circunstancia",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "Dos normas parecen contradecirse. Una protege a un grupo especialmente vulnerable.",
-    "tipoPregunta": "situacional",
-    "nivel": 4
-  },
-  {
-    "id": "pregunta_0525",
-    "number": 0,
-    "enunciado": "¿Qué consecuencias tiene negarse a realizar la prueba de alcoholemia?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Una multa administrativa de 500 euros y 6 puntos."
-      },
-      {
-        "key": "B",
-        "texto": "Ninguna, someterse a la prueba es voluntario."
-      },
-      {
-        "key": "C",
-        "texto": "Es delito penal con pena de prisión de 6 meses a 1 año."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Negarse a la prueba de alcoholemia es delito penal con pena obligatoria de prisión de 6 meses a 1 año y retirada del permiso de 1 a 4 años.\n\n- Opciones incorrectas: no es una simple infracción administrativa; la prueba no es voluntaria y negarse tiene graves consecuencias penales\n- Conexión: negarse es frecuentemente más grave que dar positivo, ya que un positivo leve es infracción administrativa\n- Error común: algunos conductores creen que negarse evita problemas, cuando los agrava",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "Negarse no es una opción neutra. Las consecuencias van más allá de lo administrativo.",
-    "tipoPregunta": "directa",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0526",
-    "number": 0,
-    "enunciado": "¿Puede un medicamento antihistamínico afectar a la capacidad de conducción?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, puede causar somnolencia y reducir la capacidad de reacción."
-      },
-      {
-        "key": "B",
-        "texto": "No, los antihistamínicos no afectan a la conducción."
-      },
-      {
-        "key": "C",
-        "texto": "Solo si se combinan con alcohol."
-      }
-    ],
-    "correcta": "A",
-    "explicacion": "Los antihistamínicos pueden causar somnolencia y reducir la capacidad de reacción, afectando a la conducción. Llevan el pictograma de advertencia (triángulo rojo con un coche).\n\n- Opciones incorrectas: afirmar que no afectan es falso; limitar el efecto a la combinación con alcohol es incorrecto, afectan por sí solos\n- Conexión: otros medicamentos que afectan son ansiolíticos, antidepresivos, analgésicos potentes y relajantes musculares\n- Dato clave: siempre consultar al médico o farmacéutico antes de conducir si se toma medicación",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "Piensa en el efecto secundario más conocido de los medicamentos para la alergia.",
-    "tipoPregunta": "directa",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0527",
-    "number": 0,
-    "enunciado": "El navegador GPS del salpicadero solo debe programarse...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "cuando el tráfico sea fluido y sin peligro."
-      },
-      {
-        "key": "B",
-        "texto": "con el vehículo completamente detenido."
-      },
-      {
-        "key": "C",
-        "texto": "mientras se espera en un semáforo en rojo."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "El GPS solo debe programarse con el vehículo completamente parado y detenido de forma segura. Manipularlo circulando o en un semáforo es una distracción peligrosa.\n\n- Opciones incorrectas: programar con tráfico fluido sigue siendo una distracción visual y manual; en un semáforo en rojo el conductor debe atender al entorno\n- Conexión: manipular un móvil como GPS sujetándolo con la mano supone 200 euros y 6 puntos; manipular un navegador fijo montado, 200 euros y 3 puntos\n- Dato clave: consultar el GPS sin manipularlo está permitido si no requiere apartar la vista",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "Programar implica manipular, y eso requiere una situación concreta del vehículo.",
-    "tipoPregunta": "completar",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0528",
-    "number": 0,
-    "enunciado": "Un conductor con 12 puntos comete una infracción muy grave y pierde 6. ¿Cuánto tiempo sin infracciones graves necesita para recuperar los 12 puntos?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "2 años."
-      },
-      {
-        "key": "B",
-        "texto": "3 años, porque la última infracción fue muy grave."
-      },
-      {
-        "key": "C",
-        "texto": "1 año."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Si la última pérdida de puntos fue por infracción muy grave, el plazo de recuperación total es de 3 años sin infracciones con pérdida de puntos, en lugar de los 2 habituales.\n\n- Opciones incorrectas: 2 años es el plazo general cuando la última infracción no fue muy grave; 1 año no corresponde a ningún plazo de recuperación total\n- Conexión: existen cursos de recuperación parcial que permiten recuperar hasta 4 puntos (máximo un curso cada 2 años)\n- Dato clave: el máximo acumulable es 15 puntos mediante bonificaciones por buen comportamiento",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "El plazo de recuperación depende de la gravedad de la última infracción cometida.",
-    "tipoPregunta": "situacional",
-    "nivel": 3
-  },
-  {
-    "id": "pregunta_0529",
-    "number": 0,
-    "enunciado": "Circula por un túnel y se forma una retención prolongada. ¿Qué debe hacer con el motor?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Mantenerlo encendido para reanudar la marcha rápidamente."
-      },
-      {
-        "key": "B",
-        "texto": "Dejarlo en punto muerto con revoluciones al mínimo."
-      },
-      {
-        "key": "C",
-        "texto": "Apagarlo para evitar acumulación de gases tóxicos."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "En retención prolongada dentro de un túnel, se debe apagar el motor para evitar acumulación de gases de escape en un espacio cerrado con ventilación limitada.\n\n- Opciones incorrectas: mantener el motor encendido contribuye a la acumulación de gases tóxicos; el ralentí sigue emitiendo gases\n- Conexión: no se debe abandonar el vehículo salvo indicación del personal autorizado; hay que estar atento a megafonía o paneles\n- Error común: mantener el motor encendido por comodidad sin considerar el riesgo en espacio confinado",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_08",
-    "tema": "Situaciones Especiales",
-    "pista": "Un túnel es un espacio cerrado donde los gases no se dispersan fácilmente.",
-    "tipoPregunta": "situacional",
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0530",
-    "number": 0,
-    "enunciado": "Encuentra a una víctima de accidente inconsciente pero que respira normalmente. ¿En qué posición debe colocarla?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Boca arriba con las piernas elevadas."
-      },
-      {
-        "key": "B",
-        "texto": "Sentada con la cabeza inclinada hacia delante."
-      },
-      {
-        "key": "C",
-        "texto": "En posición lateral de seguridad."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Una víctima inconsciente que respira debe colocarse en posición lateral de seguridad (PLS) para evitar atragantamiento con la lengua o vómito.\n\n- Opciones incorrectas: boca arriba con piernas elevadas es para víctimas conscientes con bajada de tensión; sentarla no protege la vía aérea de un inconsciente\n- Conexión: si la víctima no respira y no tiene pulso, iniciar RCP con secuencia 30 compresiones y 2 ventilaciones\n- Error común: mover a la víctima innecesariamente o no comprobar si respira antes de actuar",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_11",
-    "tema": "Accidentes, Emergencias y Medio Ambiente",
-    "pista": "La prioridad con un inconsciente que respira es proteger sus vías respiratorias.",
-    "tipoPregunta": "situacional",
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0601",
-    "number": 0,
-    "enunciado": "En una carretera 2+1, cuando circula por el tramo que dispone de un solo carril en su sentido, ¿puede adelantar al vehículo que le precede?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, si hay visibilidad suficiente y no viene nadie de frente."
-      },
-      {
-        "key": "B",
-        "texto": "No, está prohibido adelantar en ese tramo."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, siempre que no supere el límite de velocidad."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "En las carreteras 2+1, cuando se circula por el tramo de un solo carril en su sentido, está prohibido adelantar. Solo se puede adelantar en los tramos donde se dispone de dos carriles.\n\n- Opciones incorrectas: la opción que permite adelantar con visibilidad aplica a carreteras convencionales normales, no al tramo de un solo carril en una 2+1; la opción sobre el límite de velocidad ignora la prohibición específica del tramo\n- Conexión: estas carreteras alternan tramos de 2 carriles y 1 carril para ofrecer adelantamientos seguros y reducir accidentes frontales\n- Dato clave: los accidentes frontales son la principal causa de muerte en carreteras convencionales, y las 2+1 buscan eliminarlos",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_04",
-    "tema": "La Vía y sus Usuarios",
-    "pista": "Si solo tienes un carril, no hay dónde adelantar con seguridad.",
-    "tipoPregunta": "directa",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 2,
-      "nivel": 1
-    },
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0602",
-    "number": 0,
-    "enunciado": "¿Está permitido realizar un cambio de sentido en una intersección regulada por una glorieta?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "No, el cambio de sentido está prohibido en todas las intersecciones."
-      },
-      {
-        "key": "B",
-        "texto": "Sí, recorriendo completamente la glorieta hasta volver al punto de entrada."
-      },
-      {
-        "key": "C",
-        "texto": "Solo si hay señalización específica que lo autorice."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Las glorietas son uno de los pocos tipos de intersección donde está permitido el cambio de sentido. Para realizarlo, basta con recorrer la glorieta completamente hasta volver al punto de entrada, siempre cediendo el paso al incorporarse.\n\n- Opciones incorrectas: el cambio de sentido está prohibido en muchas intersecciones pero no en todas, ya que las glorietas son una excepción; no se necesita señalización específica, ya que la propia naturaleza de la glorieta permite esta maniobra\n- Conexión: fuera de las glorietas, el cambio de sentido está prohibido en autopistas y autovías (solo en áreas habilitadas), curvas, cambios de rasante y donde exista señal R-304\n- Error común: algunos alumnos creen que la glorieta solo se usa para cambiar de dirección y no para dar la vuelta completa",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "La glorieta es circular; nada impide completar el círculo entero.",
+    "pista": "Piensa en el umbral de visibilidad que la norma fija para esta luz.",
     "tipoPregunta": "directa",
     "dificultad": {
       "d_reglas": 1,
       "d_excepcion": 1,
       "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 3,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0603",
-    "number": 0,
-    "enunciado": "¿Está permitido usar el claxon dentro de poblado?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, en cualquier momento para avisar de la presencia."
-      },
-      {
-        "key": "B",
-        "texto": "No, dentro de poblado solo se pueden usar señales ópticas."
-      },
-      {
-        "key": "C",
-        "texto": "Solo cuando exista peligro inminente de accidente."
-      }
-    ],
-    "correcta": "C",
-    "explicacion": "Dentro de poblado, el uso del claxon está prohibido con carácter general. Solo se permite utilizarlo cuando exista peligro inminente de accidente, es decir, para evitar una colisión o atropello.\n\n- Opciones incorrectas: la opción que lo permite en cualquier momento ignora la restricción en poblado; la opción que lo prohíbe totalmente y limita a señales ópticas es parcialmente correcta pero olvida la excepción del peligro inminente\n- Conexión: fuera de poblado sí se puede usar para avisar de un adelantamiento, pero de noche se prefieren las ráfagas de luces\n- Error común: muchos conductores usan el claxon por impaciencia en atascos urbanos, lo cual es una infracción",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "En ciudad hay muchas más personas cerca; el claxon se reserva para lo urgente.",
-    "tipoPregunta": "directa",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 1,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 3,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0604",
-    "number": 0,
-    "enunciado": "Un semáforo emite una luz amarilla intermitente. ¿Qué significa?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Detenerse obligatoriamente como ante un semáforo en rojo."
-      },
-      {
-        "key": "B",
-        "texto": "Precaución: no hay prioridad semafórica y se aplican las normas generales de prioridad."
-      },
-      {
-        "key": "C",
-        "texto": "Paso permitido sin necesidad de precaución adicional."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La luz amarilla intermitente indica que no hay regulación semafórica activa. El conductor debe circular con precaución y aplicar las normas generales de prioridad, como la prioridad de la derecha en intersecciones sin señalizar.\n\n- Opciones incorrectas: detenerse como en rojo corresponde al rojo intermitente, no al amarillo; pasar sin precaución ignora que la regulación semafórica no está activa y pueden existir conflictos de prioridad\n- Conexión: el rojo intermitente sí obliga a detenerse (funciona como una señal de stop), lo cual es una confusión frecuente con el amarillo intermitente\n- Dato clave: el amarillo intermitente se activa frecuentemente en horarios nocturnos o de bajo tráfico",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "Amarillo = precaución. Intermitente = la regulación normal no está activa.",
-    "tipoPregunta": "directa",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 2,
-      "nivel": 1
-    },
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0605",
-    "number": 0,
-    "enunciado": "La señal R-303, que prohíbe el giro a la izquierda, también prohíbe...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "el giro a la derecha en la misma intersección."
-      },
-      {
-        "key": "B",
-        "texto": "el cambio de sentido."
-      },
-      {
-        "key": "C",
-        "texto": "el adelantamiento en los 100 metros siguientes."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La señal R-303 de prohibición de giro a la izquierda prohíbe además el cambio de sentido. Esto es así porque el cambio de sentido implica un giro a la izquierda y queda englobado en la prohibición.\n\n- Opciones incorrectas: la señal no afecta al giro a la derecha, que es una maniobra independiente; la prohibición de adelantamiento tiene su propia señal (R-305) y no guarda relación con el giro\n- Conexión: la señal R-304 prohíbe específicamente el cambio de sentido sin prohibir el giro a la izquierda; la R-303 prohíbe ambas maniobras a la vez\n- Error común: esta es una de las preguntas más falladas del examen, ya que muchos alumnos no asocian la prohibición del giro a la izquierda con la del cambio de sentido",
-    "hasImage": false,
-    "imageSrc": "/images/senales/reglamentacion/R-303.svg",
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "Piensa qué maniobra requiere necesariamente girar a la izquierda.",
-    "tipoPregunta": "completar",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 1,
-      "d_densidad": 0,
-      "d_implicito": 1,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 4,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0606",
-    "number": 0,
-    "enunciado": "Circula por una carretera donde hay obras señalizadas con señalización temporal de fondo amarillo. El límite de velocidad temporal es de 60 km/h, pero la señal permanente indica 90 km/h. ¿Qué límite debe respetar?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "El de 90 km/h, ya que es la señal permanente de la vía."
-      },
-      {
-        "key": "B",
-        "texto": "El de 60 km/h, ya que la señalización temporal prevalece sobre la permanente."
-      },
-      {
-        "key": "C",
-        "texto": "El que considere más seguro según las circunstancias."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La señalización circunstancial y temporal, como la de obras, prevalece sobre la señalización permanente. El conductor debe respetar el límite temporal de 60 km/h mientras esté vigente la zona de obras.\n\n- Opciones incorrectas: ignorar la señalización temporal y seguir la permanente es una infracción; decidir el propio límite según las circunstancias no es una opción válida cuando hay señalización activa\n- Conexión: según la jerarquía de señales, las señales de los agentes prevalecen sobre todas, seguidas de la señalización circunstancial, los semáforos, las señales verticales y las marcas viales\n- Dato clave: las señales temporales se identifican por su fondo amarillo, a diferencia de las permanentes que tienen fondo blanco o azul",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "En la jerarquía de señales, lo temporal manda sobre lo permanente.",
-    "tipoPregunta": "situacional",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 1,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 3,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0607",
-    "number": 0,
-    "enunciado": "La cruz de San Andrés en un paso a nivel muestra dos aspas cruzadas. ¿Qué indica?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Que el paso a nivel tiene una sola vía férrea."
-      },
-      {
-        "key": "B",
-        "texto": "Que el paso a nivel tiene dos o más vías férreas."
-      },
-      {
-        "key": "C",
-        "texto": "Que el paso a nivel está fuera de servicio."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La cruz de San Andrés con dos aspas cruzadas indica que el paso a nivel tiene dos o más vías férreas. Esto significa que tras pasar un tren, podría venir otro en sentido contrario por la otra vía, por lo que hay que extremar la precaución.\n\n- Opciones incorrectas: una sola aspa indica una vía única, no dos aspas; la señal nunca indica que el paso está fuera de servicio\n- Conexión: los paneles con barras diagonales que se encuentran antes del paso a nivel indican la distancia: tres barras a unos 300 metros, dos barras a unos 200 metros y una barra a unos 100 metros\n- Error común: muchos alumnos no distinguen entre una aspa (vía única) y dos aspas (vía doble o múltiple), lo cual es crítico para saber si pueden cruzar tras pasar un tren",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_08",
-    "tema": "Situaciones Especiales",
-    "pista": "Cuenta las aspas: cada aspa representa al menos una vía del ferrocarril.",
-    "tipoPregunta": "directa",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 2,
-      "nivel": 1
-    },
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0608",
-    "number": 0,
-    "enunciado": "Circula por una vía urbana de un solo carril por sentido. Un vehículo prioritario con sirena y luces activadas se aproxima por detrás, pero a su derecha hay coches estacionados y no puede apartarse. ¿Qué debe hacer?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Mantener su velocidad y esperar a que el vehículo prioritario le adelante por el carril contrario."
-      },
-      {
-        "key": "B",
-        "texto": "Detenerse en su carril para que el vehículo prioritario le adelante cuando lo considere seguro."
-      },
-      {
-        "key": "C",
-        "texto": "Acelerar hasta encontrar un hueco donde apartarse a la derecha."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Cuando no es posible apartarse a la derecha por la presencia de vehículos estacionados, la opción correcta es detenerse en su carril para facilitar que el vehículo prioritario le adelante por el carril contrario cuando sea seguro. Detenerse reduce la velocidad relativa y facilita la maniobra del vehículo de emergencia.\n\n- Opciones incorrectas: mantener la velocidad dificulta el adelantamiento del vehículo prioritario y prolonga la situación; acelerar es peligroso y va contra la obligación de facilitar el paso, además de que el vehículo de emergencia puede ir más rápido\n- Conexión: en vías de dos o más carriles por sentido, la maniobra es más sencilla porque basta con desplazarse al carril derecho; en calles estrechas con un solo carril la única opción viable es detenerse\n- Error común: muchos conductores entran en pánico y aceleran intentando alejarse del vehículo de emergencia, lo cual es contraproducente",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_08",
-    "tema": "Situaciones Especiales",
-    "pista": "Si no puedes apartarte, la mejor ayuda es quedarte quieto y dejar que te adelante.",
-    "tipoPregunta": "situacional",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 1,
-      "d_densidad": 1,
-      "d_implicito": 0,
-      "d_distractores": 2,
-      "d_contraintuitivo": 1,
-      "total": 6,
-      "nivel": 3
-    },
-    "nivel": 3
-  },
-  {
-    "id": "pregunta_0609",
-    "number": 0,
-    "enunciado": "¿Cuál es la función principal del reposacabezas del asiento del vehículo?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Proporcionar comodidad en viajes largos."
-      },
-      {
-        "key": "B",
-        "texto": "Prevenir el latigazo cervical en caso de colisión trasera."
-      },
-      {
-        "key": "C",
-        "texto": "Evitar que la cabeza se desplace lateralmente en curvas."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La función principal del reposacabezas es prevenir el latigazo cervical (whiplash) en caso de colisión trasera. Al impactar por detrás, la cabeza se desplaza bruscamente hacia atrás y el reposacabezas la retiene, evitando lesiones en el cuello.\n\n- Opciones incorrectas: aunque proporciona comodidad, esa no es su función principal de seguridad; el reposacabezas no está diseñado para movimientos laterales en curvas\n- Conexión: para que sea eficaz, debe regularse correctamente con el borde superior a la altura de los ojos o parte superior de la cabeza, y a un máximo de 4 cm de distancia\n- Dato clave: el reposacabezas es un elemento de seguridad pasiva, igual que el cinturón y el airbag",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "Es un elemento de seguridad pasiva que protege una zona específica del cuerpo.",
-    "tipoPregunta": "directa",
-    "dificultad": {
-      "d_reglas": 0,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 1,
-      "nivel": 1
-    },
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0610",
-    "number": 0,
-    "enunciado": "Circula por una carretera en verano y observa que el indicador de temperatura del motor sube progresivamente. Al mismo tiempo, nota que el nivel de líquido refrigerante ha bajado por debajo del mínimo. ¿Qué debe hacer?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Abrir el tapón del radiador para comprobar el estado del refrigerante y rellenarlo."
-      },
-      {
-        "key": "B",
-        "texto": "Detenerse de forma segura, apagar el motor y esperar a que se enfríe completamente antes de comprobar el nivel del refrigerante."
-      },
-      {
-        "key": "C",
-        "texto": "Encender la calefacción a máxima potencia y continuar hasta un taller."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Cuando el motor se sobrecalienta y el refrigerante está bajo, lo correcto es detenerse de forma segura, apagar el motor y esperar a que se enfríe completamente antes de hacer cualquier comprobación. Nunca se debe abrir el tapón del radiador con el motor caliente.\n\n- Opciones incorrectas: abrir el tapón del radiador con el motor caliente es muy peligroso ya que el líquido está a presión y puede provocar quemaduras graves por la salida de vapor a alta temperatura; encender la calefacción a máxima potencia puede ayudar temporalmente a disipar calor del motor, pero continuar circulando con el motor sobrecalentado puede causar daños irreversibles como la fundición de la junta de culata\n- Conexión: la opción de encender la calefacción es un truco real que algunos mecánicos recomiendan como medida de emergencia temporal, lo que la hace un distractor especialmente plausible\n- Error común: muchos conductores no saben que el líquido refrigerante está a presión y que abrir el tapón en caliente es extremadamente peligroso",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "El sistema de refrigeración trabaja a presión. Cualquier apertura en caliente es peligrosa.",
-    "tipoPregunta": "situacional",
-    "dificultad": {
-      "d_reglas": 2,
-      "d_excepcion": 0,
-      "d_densidad": 1,
-      "d_implicito": 0,
-      "d_distractores": 2,
-      "d_contraintuitivo": 1,
-      "total": 6,
-      "nivel": 3
-    },
-    "nivel": 3
-  },
-  {
-    "id": "pregunta_0611",
-    "number": 0,
-    "enunciado": "Un vehículo con nivel 2 de automatización (control de crucero adaptativo y asistente de carril funcionando simultáneamente), ¿permite al conductor dejar de prestar atención a la conducción?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, el sistema controla el vehículo completamente."
-      },
-      {
-        "key": "B",
-        "texto": "No, el conductor debe supervisar siempre y estar preparado para retomar el control."
-      },
-      {
-        "key": "C",
-        "texto": "Solo en autopistas con tráfico fluido."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "En el nivel 2 de automatización, el sistema puede controlar aceleración, frenado y dirección simultáneamente, pero el conductor debe supervisar siempre la conducción y estar preparado para retomar el control en cualquier momento. El conductor es el responsable legal.\n\n- Opciones incorrectas: ningún nivel de automatización actualmente permitido en España exime al conductor de supervisar; la distinción por tipo de vía no aplica al nivel 2, que requiere supervisión constante en cualquier circunstancia\n- Conexión: los sistemas ADAS obligatorios desde julio de 2024 corresponden a los niveles 1 y 2 de automatización; son ayudas, no sustitutos del conductor\n- Dato clave: los niveles 3, 4 y 5 aún no están plenamente regulados en España para circulación general",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "Los sistemas ADAS actuales son ayudas, no pilotos automáticos.",
-    "tipoPregunta": "directa",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 1,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 3,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0612",
-    "number": 0,
-    "enunciado": "El consumo de cannabis antes de conducir afecta a la capacidad de conducción porque...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "acelera los reflejos y provoca exceso de confianza."
-      },
-      {
-        "key": "B",
-        "texto": "ralentiza los reflejos y altera la percepción del tiempo y las distancias."
-      },
-      {
-        "key": "C",
-        "texto": "aumenta la agresividad y reduce la tolerancia al estrés."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "El cannabis ralentiza los reflejos, altera la percepción del tiempo y las distancias, y reduce la capacidad de atención. Estos efectos son especialmente peligrosos al volante porque el conductor no percibe correctamente las situaciones de riesgo.\n\n- Opciones incorrectas: acelerar reflejos y exceso de confianza son efectos asociados a la cocaína, no al cannabis; la agresividad y baja tolerancia al estrés se asocian más con anfetaminas y cocaína\n- Conexión: los efectos del cannabis se potencian al combinarse con alcohol, multiplicando el riesgo de accidente\n- Error común: muchos conductores creen que el cannabis relaja y por tanto no afecta a la conducción, cuando en realidad deteriora gravemente la capacidad de reacción",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "Cada droga tiene efectos distintos. El cannabis no estimula, sino que enlentece.",
-    "tipoPregunta": "completar",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 2,
-      "d_contraintuitivo": 0,
-      "total": 3,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0613",
-    "number": 0,
-    "enunciado": "Después de una discusión fuerte, se encuentra muy alterado emocionalmente. ¿Debería conducir en ese estado?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, las emociones no afectan a la capacidad de conducción."
-      },
-      {
-        "key": "B",
-        "texto": "No, es recomendable esperar a calmarse ya que el estado emocional alterado reduce la atención y aumenta el riesgo."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, conducir ayuda a distraerse del problema."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Un estado emocional alterado (ira, ansiedad, tristeza intensa) reduce la atención, provoca decisiones precipitadas y puede llevar a conducción agresiva. Lo recomendable es esperar a calmarse antes de ponerse al volante.\n\n- Opciones incorrectas: las emociones afectan significativamente a la conducción al reducir la concentración y aumentar los comportamientos de riesgo; conducir para distraerse es precisamente lo contrario de lo que se necesita, ya que implica menor concentración en la carretera\n- Conexión: la ira al volante aumenta la tendencia a saltarse normas, hacer adelantamientos imprudentes y no respetar la distancia de seguridad\n- Error común: muchos conductores subestiman el impacto de los estados emocionales en su capacidad de conducir con seguridad",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_10",
-    "tema": "Factores de Riesgo",
-    "pista": "Las emociones fuertes afectan a la concentración igual que la fatiga.",
-    "tipoPregunta": "directa",
-    "dificultad": {
-      "d_reglas": 0,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 1,
-      "nivel": 1
-    },
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0614",
-    "number": 0,
-    "enunciado": "Está realizando la reanimación cardiopulmonar (RCP) a una víctima de accidente. ¿Cuántas compresiones torácicas debe aplicar por cada ciclo antes de realizar las ventilaciones?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "15 compresiones."
-      },
-      {
-        "key": "B",
-        "texto": "30 compresiones."
-      },
-      {
-        "key": "C",
-        "texto": "20 compresiones."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La secuencia correcta de RCP es 30 compresiones torácicas seguidas de 2 ventilaciones (30:2). Las compresiones deben realizarse a un ritmo de 100 a 120 por minuto y con una profundidad de 5 a 6 centímetros en adultos.\n\n- Opciones incorrectas: 15 compresiones era la recomendación antigua que ya no se utiliza; 20 compresiones no corresponde a ningún protocolo vigente de RCP\n- Conexión: se debe continuar con la RCP hasta que llegue ayuda profesional, la víctima se recupere o el reanimador esté exhausto; si hay un desfibrilador (DEA) disponible, usarlo siguiendo sus instrucciones de voz\n- Dato clave: el ritmo de 100-120 compresiones por minuto equivale aproximadamente al tempo de la canción \"Stayin' Alive\"",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_11",
-    "tema": "Accidentes, Emergencias y Medio Ambiente",
-    "pista": "La secuencia actual es 30:2. Treinta y dos.",
-    "tipoPregunta": "dato",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 2,
-      "d_contraintuitivo": 0,
-      "total": 3,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0615",
-    "number": 0,
-    "enunciado": "Los vehículos sin etiqueta medioambiental de la DGT...",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "pueden circular por Zonas de Bajas Emisiones con restricción horaria."
-      },
-      {
-        "key": "B",
-        "texto": "tienen prohibido el acceso a las Zonas de Bajas Emisiones."
-      },
-      {
-        "key": "C",
-        "texto": "solo necesitan pagar una tasa adicional para circular en ZBE."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Los vehículos sin etiqueta medioambiental (generalmente gasolina anteriores a 2001 y diésel anteriores a 2006) tienen prohibido el acceso a las Zonas de Bajas Emisiones. Estas zonas son obligatorias en municipios de más de 50.000 habitantes.\n\n- Opciones incorrectas: la restricción horaria puede aplicarse a etiquetas B o C según el municipio, pero los vehículos sin etiqueta no acceden en ningún horario; no existe ninguna tasa que permita circular sin etiqueta en ZBE\n- Conexión: las etiquetas se clasifican en Cero (azul), ECO (azul y verde), C (verde), B (amarillo) y sin etiqueta, siendo las dos primeras las que circulan sin restricciones\n- Dato clave: la sanción por acceso indebido a una ZBE es de 200 euros",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_11",
-    "tema": "Accidentes, Emergencias y Medio Ambiente",
-    "pista": "Los vehículos más antiguos y contaminantes son los que más restricciones tienen.",
-    "tipoPregunta": "completar",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 2,
-      "nivel": 1
-    },
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0616",
-    "number": 0,
-    "enunciado": "¿Cuándo prescribe una infracción de tráfico grave?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "A los 3 meses."
-      },
-      {
-        "key": "B",
-        "texto": "A los 6 meses."
-      },
-      {
-        "key": "C",
-        "texto": "Al año."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Las infracciones graves de tráfico prescriben a los 6 meses. Esto significa que si la administración no ha notificado la denuncia en ese plazo, la infracción queda sin efecto.\n\n- Opciones incorrectas: 3 meses es el plazo de prescripción de las infracciones leves; un año no corresponde a ningún plazo de prescripción de infracciones de tráfico\n- Conexión: las infracciones muy graves también prescriben a los 6 meses, igual que las graves\n- Dato clave: si se paga la multa en los primeros 20 días naturales, se obtiene un descuento del 50%, pero se renuncia a presentar alegaciones",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_12",
-    "tema": "Infracciones y Sanciones",
-    "pista": "Las leves prescriben antes. Graves y muy graves comparten el mismo plazo.",
-    "tipoPregunta": "dato",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 2,
-      "d_contraintuitivo": 0,
-      "total": 3,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0617",
-    "number": 0,
-    "enunciado": "Su vehículo ha sido fotografiado por un radar y recibe una multa por correo. Usted no era quien conducía en ese momento. ¿De qué es responsable como titular del vehículo?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "De la sanción económica y de la pérdida de puntos."
-      },
-      {
-        "key": "B",
-        "texto": "De identificar al conductor que cometió la infracción en un plazo de 20 días naturales."
-      },
-      {
-        "key": "C",
-        "texto": "De nada, ya que no era el conductor."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "Como titular del vehículo, tiene la obligación de identificar al conductor que cometió la infracción en un plazo de 20 días naturales. Si no lo hace, será responsable de la sanción económica, aunque no de la pérdida de puntos.\n\n- Opciones incorrectas: el titular no pierde puntos si no era el conductor, solo responde de la multa si no identifica; no hacer nada no es una opción, ya que no identificar al conductor puede sancionarse como infracción muy grave con multas de hasta 1.500 euros\n- Conexión: la pérdida de puntos se aplica siempre al conductor identificado, nunca al titular por el mero hecho de serlo\n- Error común: muchos titulares ignoran la obligación de identificar y terminan pagando la multa íntegra más la sanción adicional por no identificar",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_12",
-    "tema": "Infracciones y Sanciones",
-    "pista": "El titular tiene la obligación de decir quién conducía, no de asumir la culpa.",
-    "tipoPregunta": "situacional",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 1,
       "d_implicito": 0,
       "d_distractores": 2,
       "d_contraintuitivo": 0,
@@ -2337,111 +49,35 @@ export const questionBank: BankQuestion[] = [
     "nivel": 2
   },
   {
-    "id": "pregunta_0618",
+    "id": "pregunta_0702",
     "number": 0,
-    "enunciado": "Un agente puede inmovilizar su vehículo si usted...",
+    "enunciado": "Circula por una carretera convencional con línea continua central. Se aproxima a un ciclista al que necesita adelantar invadiendo brevemente el carril contrario. No viene ningún vehículo de frente. ¿Puede adelantar?",
     "opciones": [
       {
         "key": "A",
-        "texto": "no lleva el permiso de conducir físico encima."
+        "texto": "No, la línea continua prohíbe invadir el carril contrario en cualquier circunstancia."
       },
       {
         "key": "B",
-        "texto": "circula sin seguro obligatorio en vigor."
+        "texto": "Sí, pero únicamente si la velocidad del ciclista no supera los 30 km/h."
       },
       {
         "key": "C",
-        "texto": "tiene una multa de aparcamiento pendiente de pago."
+        "texto": "Sí, cruzar la línea continua está permitido para adelantar a ciclistas, siempre que se mantenga la distancia lateral de 1,5 metros."
       }
     ],
-    "correcta": "B",
-    "explicacion": "Circular sin seguro obligatorio en vigor es una de las causas legales de inmovilización del vehículo. El agente puede retener el vehículo hasta que se acredite la existencia de seguro válido.\n\n- Opciones incorrectas: no llevar el permiso físico encima es una infracción leve pero no causa de inmovilización, especialmente desde que el permiso digital en la app miDGT tiene la misma validez; una multa de aparcamiento pendiente no autoriza la inmovilización del vehículo\n- Conexión: otras causas frecuentes de inmovilización incluyen conducir sin permiso, dar positivo en alcohol o drogas, llevar inhibidores de radar o no disponer de ITV vigente con resultado negativo\n- Dato clave: la multa por circular sin seguro oscila entre 601 y 3.005 euros",
+    "correcta": "C",
+    "explicacion": "Para adelantar a un ciclista se permite cruzar la línea continua si el adelantamiento se realiza con seguridad y manteniendo al menos 1,5 metros de distancia lateral, independientemente del tipo de línea central.\n\n- Opciones incorrectas: la prohibición absoluta de cruzar la línea continua no contempla esta excepción específica para ciclistas y usuarios vulnerables. La condición de velocidad del ciclista no existe en la norma; la clave es la distancia lateral garantizada y la ausencia de peligro.\n- Conexión: durante el adelantamiento a ciclistas también es obligatorio circular 20 km/h por debajo del límite de la vía. El incumplimiento de la distancia de 1,5 metros supone infracción muy grave y pérdida de 6 puntos.\n- Error común: muchos conductores no adelantan al ciclista por respetar la línea continua, cuando la norma les obliga a proteger al usuario vulnerable aunque haya que cruzarla.",
     "hasImage": false,
     "imageSrc": null,
-    "temaId": "tema_12",
-    "tema": "Infracciones y Sanciones",
-    "pista": "La inmovilización se aplica cuando hay un riesgo grave o un incumplimiento esencial.",
-    "tipoPregunta": "completar",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 2,
-      "d_contraintuitivo": 0,
-      "total": 3,
-      "nivel": 2
-    },
-    "nivel": 2
-  },
-  {
-    "id": "pregunta_0619",
-    "number": 0,
-    "enunciado": "Recibe una denuncia por una infracción de tráfico. Si decide pagar la multa en los primeros 20 días naturales, ¿qué descuento obtiene?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Un 25% del importe."
-      },
-      {
-        "key": "B",
-        "texto": "Un 50% del importe."
-      },
-      {
-        "key": "C",
-        "texto": "Un 30% del importe."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "El pago voluntario en los primeros 20 días naturales desde la notificación de la denuncia da derecho a un descuento del 50% del importe de la multa. Sin embargo, al acogerse a este descuento se renuncia al derecho de presentar alegaciones y recursos.\n\n- Opciones incorrectas: 25% y 30% son porcentajes que no corresponden a ningún descuento del procedimiento sancionador de tráfico\n- Conexión: los puntos se detraen igualmente aunque se pague con descuento; el descuento solo afecta a la cuantía económica\n- Dato clave: si no se paga ni se alegan en 20 días, la sanción se confirma y se inicia el procedimiento de cobro con recargos del 5% al 20%",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_12",
-    "tema": "Infracciones y Sanciones",
-    "pista": "El descuento es generoso para incentivar el pago rápido, pero tiene un coste.",
-    "tipoPregunta": "dato",
-    "dificultad": {
-      "d_reglas": 1,
-      "d_excepcion": 0,
-      "d_densidad": 0,
-      "d_implicito": 0,
-      "d_distractores": 1,
-      "d_contraintuitivo": 0,
-      "total": 2,
-      "nivel": 1
-    },
-    "nivel": 1
-  },
-  {
-    "id": "pregunta_0620",
-    "number": 0,
-    "enunciado": "Circula por una carretera convencional y se aproxima a un paso a nivel sin barreras. La cruz de San Andrés tiene dos aspas. Un tren acaba de pasar de izquierda a derecha. No hay semáforo ni señal acústica activa. ¿Puede cruzar?",
-    "opciones": [
-      {
-        "key": "A",
-        "texto": "Sí, el tren ya ha pasado y no hay señal que lo impida."
-      },
-      {
-        "key": "B",
-        "texto": "No, debe esperar un tiempo prudencial por si viene otro tren por la otra vía."
-      },
-      {
-        "key": "C",
-        "texto": "Sí, pero solo si tiene visibilidad suficiente en ambas direcciones."
-      }
-    ],
-    "correcta": "B",
-    "explicacion": "La presencia de dos aspas en la cruz de San Andrés indica que hay dos o más vías férreas. Que un tren acabe de pasar no garantiza que no venga otro por la segunda vía en sentido contrario. El conductor debe detenerse, asegurarse de que no viene ningún otro tren por ninguna vía, y solo entonces cruzar con precaución.\n\n- Opciones incorrectas: cruzar inmediatamente tras el paso de un tren es muy peligroso cuando hay dos vías, ya que puede venir otro tren oculto por el primero; la opción de visibilidad suficiente suena razonable, pero el paso a nivel sin barreras con dos aspas requiere una parada y comprobación completa, no solo mirar desde el coche en movimiento\n- Conexión: la diferencia entre una aspa (vía única) y dos aspas (vía múltiple) es precisamente lo que determina si tras pasar un tren se puede asumir que la vía está libre\n- Error común: muchos conductores asumen que tras el paso de un tren ya pueden cruzar, sin verificar si hay más vías por las que pueda circular otro tren simultáneamente",
-    "hasImage": false,
-    "imageSrc": null,
-    "temaId": "tema_08",
-    "tema": "Situaciones Especiales",
-    "pista": "Las dos aspas significan que hay más de una vía. Un tren pasó, pero ¿y la otra vía?",
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Los ciclistas son usuarios vulnerables con protección especial en el adelantamiento.",
     "tipoPregunta": "situacional",
     "dificultad": {
       "d_reglas": 2,
-      "d_excepcion": 1,
-      "d_densidad": 1,
+      "d_excepcion": 2,
+      "d_densidad": 0,
       "d_implicito": 1,
       "d_distractores": 2,
       "d_contraintuitivo": 1,
@@ -2451,36 +87,112 @@ export const questionBank: BankQuestion[] = [
     "nivel": 4
   },
   {
-    "id": "pregunta_0621",
+    "id": "pregunta_0703",
     "number": 0,
-    "enunciado": "Circula por una vía y encuentra esta señal de prohibición que muestra la silueta de un turismo sobre fondo blanco con borde rojo. Observa que una motocicleta de dos ruedas sin sidecar circula por esa vía. ¿Está cometiendo una infracción?",
+    "enunciado": "Al obtener el permiso de conducir por primera vez, el conductor novel dispone de un saldo inicial de...",
     "opciones": [
       {
         "key": "A",
-        "texto": "Sí, la señal prohíbe todos los vehículos de motor sin excepción."
+        "texto": "12 puntos, igual que el resto de conductores."
       },
       {
         "key": "B",
-        "texto": "No, la señal R-103 prohíbe vehículos de motor excepto motocicletas de dos ruedas sin sidecar."
+        "texto": "8 puntos."
       },
       {
         "key": "C",
-        "texto": "Sí, salvo que la motocicleta sea un ciclomotor."
+        "texto": "6 puntos, por su menor experiencia al volante."
       }
     ],
     "correcta": "B",
-    "explicacion": "La señal R-103 prohíbe la circulación de vehículos de motor, pero establece una excepción específica para las motocicletas de dos ruedas sin sidecar, que sí pueden circular. Las motos con sidecar, en cambio, quedan prohibidas por esta señal.\n\n- Opciones incorrectas: la señal no prohíbe todos los vehículos sin excepción, ya que las motos de dos ruedas sin sidecar están expresamente exentas; la excepción no se limita a ciclomotores, sino que aplica a cualquier motocicleta de dos ruedas sin sidecar\n- Conexión: esta distinción entre motos con y sin sidecar es una de las preguntas trampa más frecuentes del examen\n- Error común: confundir la R-103 con la R-102 (que prohíbe todos los vehículos de motor sin ninguna excepción)",
+    "explicacion": "El conductor novel comienza con 8 puntos en lugar de los 12 que tienen los conductores con más de dos años de antigüedad.\n\n- Opciones incorrectas: la opción de 12 puntos corresponde a los conductores experimentados tras superar el período novel sin infracciones graves. Los 6 puntos no existen como saldo inicial en ningún caso previsto por la normativa.\n- Conexión: si el novel completa los dos primeros años sin infracciones graves o muy graves, pasa automáticamente a 12 puntos. El máximo acumulable con bonificaciones es 15 puntos.",
     "hasImage": false,
-    "imageSrc": "/images/senales/reglamentacion/R-103.svg",
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "Busca la excepción: una señal de prohibición de motor no siempre afecta a todos.",
+    "imageSrc": null,
+    "temaId": "tema_01",
+    "tema": "El Conductor y el Permiso",
+    "pista": "El saldo inicial del novel es menor que el del conductor con experiencia.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0704",
+    "number": 0,
+    "enunciado": "Un autobús escolar circula por una autopista. ¿Cuál es su velocidad máxima permitida?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "90 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "100 km/h."
+      },
+      {
+        "key": "C",
+        "texto": "80 km/h."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El autobús escolar tiene una velocidad máxima de 90 km/h en autopista, 10 km/h menos que el autobús ordinario sin pasajeros de pie (100 km/h).\n\n- Opciones incorrectas: los 100 km/h corresponden al autobús normal sin pasajeros de pie, no al escolar. Los 80 km/h es el límite del autobús escolar en carretera convencional, no en autopista.\n- Dato clave: el autobús escolar también está limitado a 80 km/h en carretera convencional (frente a los 90 del autobús ordinario en esa misma vía).\n- Error común: confundir el límite del autobús normal con el del escolar; la diferencia de 10 km/h se aplica en todas las vías interurbanas.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "El autobús escolar circula 10 km/h más despacio que el autobús normal en cada tipo de vía.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0705",
+    "number": 0,
+    "enunciado": "En un paso a nivel, el motor de su vehículo se cala sobre las vías y no arranca con normalidad. ¿Qué debe hacer en primer lugar?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Abandonar el vehículo inmediatamente y alejarse de las vías."
+      },
+      {
+        "key": "B",
+        "texto": "Intentar mover el vehículo usando el motor de arranque con una marcha corta engranada."
+      },
+      {
+        "key": "C",
+        "texto": "Avisar al ferrocarril mediante el teléfono del poste SOS antes de cualquier otra acción."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Cuando el motor se cala sobre las vías, la primera acción es intentar mover el vehículo accionando el motor de arranque con primera marcha engranada; el propio arranque puede desplazar el coche los metros necesarios para salir de la zona de peligro.\n\n- Opciones incorrectas: abandonar inmediatamente es la acción correcta solo si el intento de mover el vehículo falla o si se detecta la llegada del tren. Avisar al ferrocarril es importante pero viene después de intentar despejar las vías.\n- Conexión: si el vehículo no se puede mover, la prioridad cambia: sacar a los ocupantes, alejarlos de las vías y dar aviso al ferrocarril para que pueda detener el tren.\n- Error común: muchos creen que la primera reacción debe ser evacuar, pero si hay tiempo y no se oye el tren, mover el vehículo evita el siniestro.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Si el motor se cala, el motor de arranque puede mover el coche unos metros.",
     "tipoPregunta": "situacional",
     "dificultad": {
       "d_reglas": 1,
-      "d_excepcion": 1,
+      "d_excepcion": 0,
       "d_densidad": 1,
-      "d_implicito": 0,
+      "d_implicito": 1,
       "d_distractores": 2,
       "d_contraintuitivo": 1,
       "total": 6,
@@ -2489,30 +201,30 @@ export const questionBank: BankQuestion[] = [
     "nivel": 3
   },
   {
-    "id": "pregunta_0622",
+    "id": "pregunta_0706",
     "number": 0,
-    "enunciado": "Si los intermitentes de su vehículo dejan de funcionar, ¿cómo debe indicar un giro a la derecha con el brazo?",
+    "enunciado": "¿A qué distancia mínima de un paso de peatones está prohibido estacionar?",
     "opciones": [
       {
         "key": "A",
-        "texto": "Extendiendo el brazo izquierdo horizontalmente."
+        "texto": "A 5 metros."
       },
       {
         "key": "B",
-        "texto": "Sacando el brazo izquierdo y doblándolo hacia arriba."
+        "texto": "A 3 metros."
       },
       {
         "key": "C",
-        "texto": "Moviendo el brazo izquierdo repetidamente de arriba a abajo."
+        "texto": "A 10 metros."
       }
     ],
-    "correcta": "B",
-    "explicacion": "Para indicar un giro a la derecha con el brazo (desde el lado izquierdo del vehículo, que es el del conductor), se saca el brazo izquierdo y se dobla hacia arriba formando un ángulo recto. Esta señal sustituye al intermitente derecho.\n\n- Opciones incorrectas: el brazo extendido horizontalmente indica giro a la izquierda; el brazo moviéndose de arriba a abajo indica que va a frenar o reducir velocidad\n- Conexión: estas señales con el brazo son obligatorias cuando fallan los intermitentes y debe conocerlas todo conductor\n- Dato clave: brazo extendido horizontal = izquierda; brazo doblado arriba = derecha; brazo arriba-abajo = freno",
+    "correcta": "A",
+    "explicacion": "La normativa prohíbe estacionar a menos de 5 metros de un paso de peatones, para garantizar la visibilidad tanto del peatón como del conductor.\n\n- Opciones incorrectas: los 3 metros no corresponden a ninguna distancia mínima reglamentada para pasos de peatones. Los 10 metros es la distancia exigida para estacionar cerca de una parada de autobús o taxi, no de un paso de peatones.\n- Conexión: la misma distancia de 5 metros aplica también a las intersecciones y cruces; en ambos casos el objetivo es mantener la visibilidad y facilitar el cruce seguro.",
     "hasImage": false,
     "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "El brazo sale por la izquierda. Si va hacia arriba, señala lo contrario: la derecha.",
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "La misma distancia que se exige en intersecciones se aplica en pasos de peatones.",
     "tipoPregunta": "directa",
     "dificultad": {
       "d_reglas": 1,
@@ -2527,30 +239,3146 @@ export const questionBank: BankQuestion[] = [
     "nivel": 2
   },
   {
-    "id": "pregunta_0623",
+    "id": "pregunta_0707",
     "number": 0,
-    "enunciado": "Se aproxima a una intersección con un semáforo que muestra una flecha verde hacia la derecha y una luz roja circular simultáneamente. ¿Qué debe hacer?",
+    "enunciado": "En una glorieta, la prioridad de paso corresponde...",
     "opciones": [
       {
         "key": "A",
-        "texto": "Detenerse, ya que la luz roja prevalece sobre cualquier flecha."
+        "texto": "al vehículo que llega por la derecha, como norma general."
       },
       {
         "key": "B",
-        "texto": "Puede girar a la derecha siguiendo la flecha verde, cediendo el paso a los peatones."
+        "texto": "a los vehículos que ya circulan dentro de la glorieta."
       },
       {
         "key": "C",
-        "texto": "Puede continuar en cualquier dirección porque hay una indicación verde."
+        "texto": "al vehículo que lleva mayor velocidad en el momento de entrar."
       }
     ],
     "correcta": "B",
-    "explicacion": "Cuando un semáforo muestra simultáneamente una flecha verde y una luz roja, solo está permitido circular en la dirección indicada por la flecha verde. En este caso, puede girar a la derecha, siempre cediendo el paso a los peatones que crucen.\n\n- Opciones incorrectas: la luz roja no anula la flecha verde, sino que prohíbe el resto de direcciones; la flecha solo autoriza la dirección específica que indica, no cualquier dirección\n- Conexión: las flechas verdes permiten movimientos concretos mientras la luz roja detiene el tráfico general, lo que facilita la fluidez en intersecciones complejas\n- Error común: muchos alumnos creen que la luz roja prevalece sobre todo, pero la flecha verde es una autorización específica que funciona simultáneamente",
+    "explicacion": "En la glorieta, los vehículos que ya circulan en su interior tienen prioridad sobre los que pretenden acceder, independientemente de por dónde lleguen.\n\n- Opciones incorrectas: la norma general de ceder a quien viene por la derecha no aplica en glorietas; aquí prevalece la regla específica de prioridad a quienes ya están dentro. La velocidad de entrada no determina nunca la preferencia de paso.\n- Conexión: esta regla es contraintuitiva porque en cualquier otra intersección sin señalizar se cede a la derecha; la glorieta es la excepción más importante a ese principio.\n- Error común: confundir la glorieta con una intersección normal y ceder a quien llega por la derecha desde fuera.",
     "hasImage": false,
     "imageSrc": null,
     "temaId": "tema_07",
     "tema": "Señalización",
-    "pista": "La flecha y la luz circular funcionan juntas: una autoriza, la otra prohíbe.",
+    "pista": "Quien ya está dentro del círculo tiene prioridad sobre quien intenta entrar.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0708",
+    "number": 0,
+    "enunciado": "Lleva conduciendo 3 horas seguidas por autopista sin parar. Se siente algo cansado pero el trayecto casi ha terminado. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Continuar, ya que el cansancio leve no afecta significativamente a la conducción."
+      },
+      {
+        "key": "B",
+        "texto": "Bajar la calefacción y abrir una ventanilla para mantenerse despierto."
+      },
+      {
+        "key": "C",
+        "texto": "Detenerse en el área de servicio más próxima y descansar antes de continuar."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Ante cualquier señal de cansancio, lo correcto es detenerse y descansar en cuanto sea posible, aunque el destino esté próximo. La fatiga es una de las principales causas de accidente en carretera.\n\n- Opciones incorrectas: continuar confiando en que el cansancio es leve ignora que la percepción subjetiva del conductor sobre su propio estado suele ser peor que la realidad. Abrir la ventanilla o bajar la calefacción son remedios temporales que no eliminan la fatiga.\n- Conexión: se recomienda parar cada 2 horas o 200 km aproximadamente para hacer un descanso de 20-30 minutos; esta es una recomendación de seguridad vial, no una obligación legal para el permiso B.\n- Error común: pensar que «ya queda poco» justifica continuar; el tramo final puede ser el de mayor riesgo si la fatiga es severa.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "La fatiga no desaparece por estimular los sentidos; solo el descanso real la elimina.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0709",
+    "number": 0,
+    "enunciado": "¿Está obligado a llevar consigo el permiso de conducción cuando conduce?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, debe portarlo siempre y exhibirlo cuando lo solicite un agente."
+      },
+      {
+        "key": "B",
+        "texto": "No, basta con estar dado de alta en el registro de la DGT."
+      },
+      {
+        "key": "C",
+        "texto": "Solo en vías interurbanas; en ciudad no es obligatorio."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El permiso de conducción debe portarse siempre durante la conducción y presentarse a los agentes de la autoridad cuando lo requieran.\n\n- Opciones incorrectas: el registro en la DGT no exime de llevar el documento físico o su equivalente digital; la obligación de portar el permiso es independiente de cualquier base de datos. La distinción entre vía urbana e interurbana no existe en esta norma.\n- Conexión: además del permiso, el conductor debe llevar el permiso de circulación y el certificado de seguro en vigor. La no exhibición al agente puede suponer sanción leve.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "El permiso debe estar disponible para mostrarse en cualquier momento durante la conducción.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0710",
+    "number": 0,
+    "enunciado": "Cuando un semáforo en verde se encuentra con una señal de stop en la misma intersección, el conductor...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "debe obedecer la señal de stop porque las señales verticales prevalecen sobre los semáforos."
+      },
+      {
+        "key": "B",
+        "texto": "debe obedecer el semáforo en verde porque la señal circunstancial prevalece sobre la fija."
+      },
+      {
+        "key": "C",
+        "texto": "puede elegir cuál de las dos instrucciones seguir según las circunstancias del tráfico."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En la jerarquía de la señalización, las órdenes circunstanciales (como un semáforo) prevalecen sobre las señales fijas (como el stop), porque reflejan el estado real del tráfico en ese instante.\n\n- Opciones incorrectas: la afirmación de que las señales verticales prevalecen sobre los semáforos invierte la jerarquía correcta; las señales fijas solo rigen cuando no hay señal circunstancial activa. El conductor nunca puede elegir libremente entre dos señales contradictorias.\n- Conexión: la jerarquía completa es: agente de circulación > semáforo > señal vertical > marca vial. Cada nivel superior anula al inferior en el mismo punto.\n- Error común: pensar que el stop siempre obliga a detenerse, incluso cuando el semáforo habilita el paso.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Las señales que cambian en tiempo real reflejan mejor la situación que las señales fijas.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 2,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0711",
+    "number": 0,
+    "enunciado": "Un niño de 7 años con una estatura de 125 centímetros debe viajar en un turismo. Debe hacerlo...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "en el asiento delantero si el airbag está desactivado."
+      },
+      {
+        "key": "B",
+        "texto": "en el asiento trasero con el cinturón de adulto, ya que mide más de 120 cm."
+      },
+      {
+        "key": "C",
+        "texto": "en el asiento trasero con un sistema de retención infantil homologado."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Los menores de 135 cm de estatura deben usar siempre un sistema de retención infantil (SRI) homologado, preferentemente en el asiento trasero, independientemente de su edad o peso.\n\n- Opciones incorrectas: el asiento delantero solo está permitido con SRI homologado y airbag desactivado; no basta con desactivar el airbag sin usar el SRI. El cinturón de adulto no es adecuado para niños menores de 135 cm, independientemente de que superen los 120 cm.\n- Dato clave: la referencia para usar cinturón de adulto es la estatura de 135 cm, no la edad ni el peso del niño.\n- Conexión: si no hay plazas traseras disponibles con SRI, se puede usar el asiento delantero con SRI y airbag frontal desactivado.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "El límite de estatura para el SRI es 135 cm, no 120 ni 130.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0712",
+    "number": 0,
+    "enunciado": "¿Está permitido adelantar a otro vehículo por el interior de un túnel con un carril por sentido?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, está prohibido adelantar en túneles con un solo carril por sentido."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, siempre que el túnel tenga iluminación artificial suficiente."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, si la visibilidad dentro del túnel es superior a 200 metros."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En los túneles con un solo carril por sentido está prohibido adelantar, porque cualquier maniobra de adelantamiento exige invadir el carril contrario, lo que supone un riesgo extremo en un espacio cerrado.\n\n- Opciones incorrectas: la iluminación artificial no modifica la prohibición de adelantar; el peligro proviene de la falta de espacio y visibilidad lateral, no solo de la luz ambiental. Los 200 metros de visibilidad no es un umbral que habilite el adelantamiento en túnel de un carril.\n- Conexión: en túneles con dos o más carriles por sentido sí está permitido el adelantamiento, igual que en cualquier vía multicarril.\n- Error común: confundir la prohibición de adelantar en túnel de 1 carril con una norma sobre visibilidad.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "En un solo carril por sentido, adelantar siempre obliga a invadir el carril contrario.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0713",
+    "number": 0,
+    "enunciado": "¿Cuál es la tasa de alcohol en aire espirado a partir de la cual un conductor novel comete infracción?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "0,25 mg/l."
+      },
+      {
+        "key": "B",
+        "texto": "0,15 mg/l."
+      },
+      {
+        "key": "C",
+        "texto": "0,30 mg/l."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Los conductores noveles (permiso con menos de 2 años de antigüedad) tienen una tasa límite de 0,15 mg/l en aire espirado, frente a los 0,25 mg/l del conductor general.\n\n- Opciones incorrectas: los 0,25 mg/l es la tasa límite para conductores con más de dos años de permiso, no para noveles. Los 0,30 mg/l no corresponde a ninguna tasa oficial establecida en la normativa española.\n- Conexión: la misma tasa reducida de 0,15 mg/l aplica también a los conductores profesionales (transporte de viajeros, mercancías peligrosas, etc.).\n- Dato clave: en sangre la equivalencia es 0,3 g/l para novel y profesional, frente a 0,5 g/l para el conductor general.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Los noveles y los profesionales comparten el mismo umbral reducido de alcohol.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0714",
+    "number": 0,
+    "enunciado": "Se acerca a una intersección sin señalizar. Por su derecha viene un vehículo y por su izquierda un tranvía. ¿A quién cede el paso?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Al vehículo de su derecha, que siempre tiene preferencia en intersecciones sin señalizar."
+      },
+      {
+        "key": "B",
+        "texto": "Al tranvía, porque circula sobre raíles y tiene preferencia sobre cualquier vehículo."
+      },
+      {
+        "key": "C",
+        "texto": "Al tranvía por su izquierda, y al vehículo por su derecha cede a usted."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El tranvía tiene prioridad absoluta sobre los vehículos de motor en cualquier intersección, independientemente de su posición. Por eso usted cede al tranvía de su izquierda; y el vehículo de su derecha, a su vez, le cede a usted por la norma general de la derecha.\n\n- Opciones incorrectas: la norma de ceder a la derecha no aplica frente al tranvía; el tranvía siempre prevalece con independencia de dónde venga. La segunda opción describe bien la prioridad del tranvía pero ignora la relación con el vehículo de la derecha.\n- Conexión: los tranvías circulan habitualmente en zonas urbanas y su trayectoria está fijada por los raíles, lo que hace imprescindible que los demás vehículos sean quienes se adapten.\n- Error común: aplicar mecánicamente la norma de la derecha sin tener en cuenta la prioridad especial del tranvía.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "El tranvía tiene prioridad absoluta desde cualquier dirección; recuerda también quién cede a quién entre los demás.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 2,
+      "d_excepcion": 2,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 9,
+      "nivel": 4
+    },
+    "nivel": 4
+  },
+  {
+    "id": "pregunta_0715",
+    "number": 0,
+    "enunciado": "¿Qué luces debe encender un turismo al circular de noche por una vía interurbana en condiciones normales?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Las luces de cruce (cortas)."
+      },
+      {
+        "key": "B",
+        "texto": "Las luces de posición solamente."
+      },
+      {
+        "key": "C",
+        "texto": "Las luces de largo alcance siempre que la vía esté despejada."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "De noche en vías interurbanas, la obligación general es circular con las luces de cruce encendidas. Las luces largas solo se usan cuando no haya riesgo de deslumbrar a otros conductores.\n\n- Opciones incorrectas: las luces de posición únicamente no son suficientes para circular de noche; sirven para ser visto, no para iluminar la calzada. Las luces largas son opcionales y se apagan cuando se detecta un vehículo en sentido contrario o se circula detrás de otro.\n- Conexión: de día, en vías interurbanas, los vehículos deben circular con la luz de cruce encendida. Las motos la llevan obligatoriamente día y noche.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Las luces cortas son la obligación general nocturna; las largas son opcionales cuando no hay tráfico.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0716",
+    "number": 0,
+    "enunciado": "La velocidad máxima genérica para un turismo en una carretera convencional es...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "100 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "90 km/h."
+      },
+      {
+        "key": "C",
+        "texto": "80 km/h."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La velocidad máxima genérica del turismo en carretera convencional (sin autopista ni autovía) es de 90 km/h.\n\n- Opciones incorrectas: los 100 km/h corresponden a la autovía o autopista, no a la convencional. Los 80 km/h es el límite del turismo que arrastra un remolque ligero en carretera convencional, o el del camión en esa misma vía.\n- Dato clave: las velocidades genéricas del turismo son 120 (autopista/autovía), 90 (convencional) y 50 (urbana).\n- Conexión: en travesías (tramo urbano de carretera convencional), la velocidad baja a 50 km/h aunque la vía sea la misma.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Recuerda los tres valores genéricos del turismo: autopista, convencional y urbana.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0717",
+    "number": 0,
+    "enunciado": "Circula por una vía urbana y recibe una llamada importante. El teléfono está en el asiento del copiloto. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Coger el teléfono brevemente, responder y dejarlo de nuevo; la llamada es corta."
+      },
+      {
+        "key": "B",
+        "texto": "Usar el altavoz del teléfono sujetándolo con una mano mientras conduce."
+      },
+      {
+        "key": "C",
+        "texto": "Detenerse en un lugar permitido o ignorar la llamada hasta poder parar."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Usar el teléfono móvil al volante sin manos libres está prohibido, independientemente de la duración de la llamada o del tipo de vía. La única opción legal es detener el vehículo o no atender la llamada.\n\n- Opciones incorrectas: coger el teléfono aunque sea brevemente supone infracción grave y pérdida de 6 puntos. Sujetar el teléfono con una mano para usar el altavoz también está prohibido; el uso libre de manos exige un sistema integrado en el vehículo o un auricular.\n- Dato clave: usar el móvil al volante conlleva multa de 200€ y 6 puntos de detracción.\n- Conexión: el uso de auriculares que aislen al conductor de los ruidos del exterior también está prohibido; deben ser de un solo oído o permitir oír señales acústicas externas.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Ninguna duración de llamada justifica usar el móvil sin manos libres integrado.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0718",
+    "number": 0,
+    "enunciado": "¿Están obligados a usar cinturón de seguridad los ocupantes de un turismo en vías urbanas?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, tanto el conductor como todos los pasajeros, en cualquier tipo de vía."
+      },
+      {
+        "key": "B",
+        "texto": "Solo el conductor; los pasajeros traseros están exentos en ciudad."
+      },
+      {
+        "key": "C",
+        "texto": "Solo el conductor y el ocupante del asiento delantero."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El uso del cinturón de seguridad es obligatorio para todos los ocupantes del vehículo, conductor y pasajeros, tanto en vías urbanas como interurbanas.\n\n- Opciones incorrectas: no existe exención del cinturón para los pasajeros traseros en vía urbana; esta confusión proviene de normativas antiguas ya derogadas. La obligación no se limita al conductor y al copiloto; abarca todas las plazas del vehículo.\n- Conexión: las excepciones al cinturón son muy concretas: conductores con certificado médico que lo impida, maniobras lentas de carga/descarga, y conductores de taxi cuando transporten pasajeros en determinadas condiciones.\n- Error común: creer que en ciudad el cinturón trasero es opcional.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "No hay distinción entre vía urbana e interurbana para la obligación del cinturón.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0719",
+    "number": 0,
+    "enunciado": "Va a incorporarse a una autopista por un carril de aceleración. Los vehículos que circulan por el carril derecho de la autopista no le dejan hueco. ¿Quién tiene la preferencia?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Usted, porque el que se incorpora genera mayor peligro y debe ser respetado."
+      },
+      {
+        "key": "B",
+        "texto": "Los vehículos de la autopista, que tienen preferencia sobre quien se incorpora."
+      },
+      {
+        "key": "C",
+        "texto": "El primero que llegue al punto de fusión tiene preferencia sobre el otro."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Los vehículos que ya circulan por la autopista tienen preferencia de paso sobre los que se incorporan por el carril de aceleración. Quien se incorpora debe adaptar su velocidad y encontrar un hueco sin obligar a los demás a frenar.\n\n- Opciones incorrectas: el riesgo que genera la incorporación no otorga preferencia al que se incorpora; es precisamente por ese riesgo que se exige ceder el paso. La preferencia no se decide por el orden de llegada al punto de fusión.\n- Conexión: la misma lógica aplica en la salida de aparcamientos, gasolineras y áreas de servicio: quien sale a la vía principal siempre cede al tráfico en marcha.\n- Error común: pensar que la velocidad alta en el carril de aceleración otorga derecho a incorporarse sin ceder.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Quien ya lleva ventaja en la vía principal no tiene que adaptarse al que llega.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0720",
+    "number": 0,
+    "enunciado": "Un turismo que arrastra un remolque con una masa máxima autorizada de 600 kg circula por una autopista. ¿Cuál es su velocidad máxima?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "80 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "120 km/h."
+      },
+      {
+        "key": "C",
+        "texto": "90 km/h."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Un remolque de 600 kg es un remolque ligero (masa máxima autorizada igual o inferior a 750 kg), cuya velocidad máxima en autopista es de 90 km/h.\n\n- Opciones incorrectas: los 80 km/h corresponde al remolque pesado (más de 750 kg MMA) en autopista. Los 120 km/h es la velocidad del turismo sin remolque en autopista; con cualquier remolque esa velocidad se reduce.\n- Dato clave: remolque ligero (≤ 750 kg) → 90 km/h en autopista; remolque pesado (> 750 kg) → 80 km/h en autopista.\n- Error común: aplicar los 80 km/h al remolque ligero por confundirlo con el pesado; la diferencia de 10 km/h es un dato que el examen pone a prueba habitualmente.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "El peso del remolque determina el límite: ligero tiene 10 km/h más que el pesado en autopista.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0721",
+    "number": 0,
+    "enunciado": "¿En qué carril debe circular un vehículo en una autopista con tres carriles por sentido cuando no adelanta?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Por el carril derecho, dejando los otros disponibles para adelantar."
+      },
+      {
+        "key": "B",
+        "texto": "Por cualquiera de los tres carriles, según le resulte más cómodo."
+      },
+      {
+        "key": "C",
+        "texto": "Por el carril central, para equilibrar el flujo de tráfico."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En autopistas y autovías con varios carriles, la norma obliga a circular por el carril más a la derecha posible cuando no se está adelantando; los carriles centrales e izquierdos son exclusivamente para adelantar.\n\n- Opciones incorrectas: circular por cualquier carril según comodidad es una práctica habitual pero ilegal; ocupar el carril central o izquierdo sin adelantar constituye infracción. El carril central no tiene ninguna función de «equilibrio de flujo» establecida en la norma.\n- Conexión: circular indebidamente por el carril izquierdo en autopista es una infracción grave que puede suponer sanción económica. En vías con dos carriles, igualmente se circula por el derecho y se usa el izquierdo solo para adelantar.\n- Error común: muchos conductores habituales de autopista ocupan el carril central de forma permanente sin advertirlo.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "El carril derecho es el habitual; los demás son para adelantar.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0722",
+    "number": 0,
+    "enunciado": "En una pendiente pronunciada y estrecha donde no pueden cruzarse dos vehículos, tiene preferencia de paso...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "el vehículo de mayor tonelaje, que tiene más dificultad para maniobrar."
+      },
+      {
+        "key": "B",
+        "texto": "el vehículo que sube, porque frenar y retroceder en pendiente es más peligroso."
+      },
+      {
+        "key": "C",
+        "texto": "el vehículo que baja, ya que tiene mayor velocidad y dificultad para detenerse."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En pendientes estrechas donde no pueden cruzarse dos vehículos, la preferencia la tiene el que sube; el que baja es quien debe retroceder hasta encontrar un ensanchamiento.\n\n- Opciones incorrectas: el tonelaje no determina la preferencia en pendiente; el criterio es la dirección de marcha. El vehículo que baja tiene mayor facilidad para retroceder (cuesta abajo) y frenar; quien sube en cambio arriesga el control del vehículo si retrocede.\n- Conexión: esta regla se combina con otras: un vehículo con remolque cede ante uno sin remolque en igualdad de condiciones, y cualquiera cede al servicio de urgencias.\n- Error común: aplicar la norma al revés por pensar que quien baja es el que lleva más velocidad y «no puede parar».",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Retroceder en subida es más peligroso que retroceder en bajada.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0723",
+    "number": 0,
+    "enunciado": "Un agente de circulación se sitúa de espaldas a usted con los brazos extendidos horizontalmente. ¿Qué significa esa señal para usted?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Que debe reducir la velocidad gradualmente."
+      },
+      {
+        "key": "B",
+        "texto": "Que puede continuar con precaución, ya que el agente no le está mirando."
+      },
+      {
+        "key": "C",
+        "texto": "Que debe detenerse, pues el agente detiene a los vehículos del tráfico perpendicular al que le da la espalda."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Cuando el agente está de espaldas a usted con los brazos extendidos, detiene el tráfico que circula de frente y por detrás (el perpendicular puede avanzar). Usted debe detenerse.\n\n- Opciones incorrectas: esta posición no significa reducir la velocidad; es una señal de detención para el tráfico situado frente al agente (y detrás). El hecho de que el agente no le mire directamente no autoriza a continuar; la señal tiene efecto en ambas direcciones del eje perpendicular al que el agente detiene.\n- Conexión: la posición de brazos extendidos horizontales detiene el tráfico paralelo al eje de los brazos y permite el perpendicular. Recordarlo con el eje: el brazo apunta a quien detiene.\n- Error común: confundir que el agente está de espaldas y asumir que la señal no le afecta.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Los brazos extendidos del agente detienen al tráfico que circula en la dirección de sus brazos extendidos.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 2,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 7,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0724",
+    "number": 0,
+    "enunciado": "¿Está obligado a ceder el paso a un vehículo de emergencia con señales acústicas y luminosas en funcionamiento?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, todo conductor debe facilitarles el paso inmediatamente."
+      },
+      {
+        "key": "B",
+        "texto": "Solo si el vehículo de emergencia lleva activada también la señal luminosa."
+      },
+      {
+        "key": "C",
+        "texto": "Solo en vías urbanas; en autopista tienen carril reservado."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Todo conductor debe ceder el paso a los vehículos de emergencia (ambulancias, bomberos, policía) que circulen con señales acústicas y luminosas activadas, en cualquier tipo de vía y de forma inmediata.\n\n- Opciones incorrectas: la obligación no depende de que se use solo la acústica o solo la luminosa; cuando cualquiera de las dos esté activa en situación de emergencia, el paso debe facilitarse. No existe carril reservado permanente para emergencias en autopistas; la obligación de ceder aplica igualmente.\n- Conexión: para ceder el paso, el conductor debe aproximarse a la derecha de la calzada y detenerse si es necesario. En ningún caso debe seguir al vehículo de emergencia aprovechando el paso abierto.\n- Error común: ceder el paso solo a ambulancias y no a vehículos de policía o bomberos.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Señales acústicas o luminosas de emergencia activas obligan a ceder el paso en cualquier vía.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0725",
+    "number": 0,
+    "enunciado": "Un vehículo averiado en una vía interurbana debe señalizarse con triángulos de emergencia colocados...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "a 25 metros del vehículo, uno delante y otro detrás."
+      },
+      {
+        "key": "B",
+        "texto": "a 50 metros mínimo del vehículo, uno delante y otro detrás en doble sentido."
+      },
+      {
+        "key": "C",
+        "texto": "inmediatamente detrás del vehículo para advertir al tráfico que llega."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Cada triángulo debe colocarse a un mínimo de 50 metros del vehículo averiado, de forma que sean visibles a 100 metros, y se coloca uno delante y otro detrás cuando la vía tiene tráfico en ambos sentidos.\n\n- Opciones incorrectas: los 25 metros no son suficientes; la normativa exige 50 metros para garantizar tiempo de reacción al conductor que se aproxima. Colocar el triángulo «inmediatamente detrás» es la práctica más peligrosa posible, porque el conductor que lo coloca queda expuesto al tráfico sin margen de aviso.\n- Dato clave: desde enero 2026, en vías interurbanas la baliza luminosa V-16 sustituye a los triángulos si se dispone de ella, colocándose sobre el techo del vehículo.\n- Conexión: al colocar los triángulos, el conductor debe ponerse el chaleco reflectante antes de salir del vehículo.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "50 metros mínimo para dar tiempo de reacción; 100 metros de visibilidad.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0726",
+    "number": 0,
+    "enunciado": "Al conducir de día por una carretera convencional fuera de poblado, las luces que debe llevar encendidas son...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "solo las luces de posición, para ahorrar batería."
+      },
+      {
+        "key": "B",
+        "texto": "ninguna; las luces son obligatorias solo de noche."
+      },
+      {
+        "key": "C",
+        "texto": "las luces de cruce, aunque haya plena visibilidad."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En vías interurbanas, incluidas las carreteras convencionales, es obligatorio circular con las luces de cruce encendidas tanto de noche como de día, independientemente de las condiciones de visibilidad.\n\n- Opciones incorrectas: las luces de posición son insuficientes para circular de día en interurbana; sirven solo para estacionar o en situaciones de visibilidad reducida dentro de poblado. La obligación de llevar luces de cruce en interurbana es permanente, no solo nocturna.\n- Conexión: en vía urbana durante el día no existe obligación de llevar luces de cruce encendidas salvo que la visibilidad sea reducida. Las motos llevan la luz de cruce encendida siempre, también en ciudad y de día.\n- Error común: creer que las luces solo son obligatorias de noche o con lluvia.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "De día en interurbana las luces de cruce son obligatorias aunque el sol brille.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0727",
+    "number": 0,
+    "enunciado": "¿Cuántos años de antigüedad máxima puede tener un turismo para estar exento de la primera Inspección Técnica de Vehículos?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "4 años."
+      },
+      {
+        "key": "B",
+        "texto": "3 años."
+      },
+      {
+        "key": "C",
+        "texto": "5 años."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Los turismos están exentos de ITV durante los primeros 4 años desde su matriculación. A partir de ahí se someten a inspección periódica cada 2 años hasta los 10 años, y luego anualmente.\n\n- Opciones incorrectas: los 3 años corresponden al período de exención del ciclomotor, no del turismo. Los 5 años no se corresponden con ningún período reglamentado para turismos.\n- Dato clave: motocicletas comparten el mismo calendario que los turismos (4 años exento, luego cada 2 hasta los 10, luego anual). El ciclomotor tiene un esquema diferente: 3 años exento, luego cada 2 años sin período anual.\n- Conexión: circular con la ITV caducada supone infracción grave y puede acarrear la inmovilización del vehículo.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Turismo y moto comparten el mismo período de exención inicial de ITV.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0728",
+    "number": 0,
+    "enunciado": "Va a realizar un cambio de carril hacia la izquierda en una vía urbana. ¿Cuándo debe señalizarlo con el intermitente?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Justo en el momento de iniciar el cambio de carril."
+      },
+      {
+        "key": "B",
+        "texto": "Con suficiente antelación para que los demás conductores puedan anticipar la maniobra."
+      },
+      {
+        "key": "C",
+        "texto": "Al menos 15 segundos antes de ejecutar la maniobra."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El Reglamento General de Circulación exige señalizar los cambios de dirección o carril con suficiente antelación, sin fijar un número de segundos concreto. El objetivo es que los otros usuarios puedan reaccionar con tiempo.\n\n- Opciones incorrectas: señalizar justo al iniciar el cambio no da margen de reacción a los demás y puede provocar situaciones de peligro. El plazo de 15 segundos no está establecido en ninguna norma del RGC; es un dato inventado que no debe usarse.\n- Conexión: la señalización anticipada aplica también a los giros en intersección, cambios de sentido, arranque desde el arcén y parada en calzada.\n- Error común: memorizar cifras concretas de tiempo para el intermitente; la norma usa la expresión abierta «con suficiente antelación».",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "La norma no fija segundos concretos; lo importante es que los demás puedan anticipar la maniobra.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0729",
+    "number": 0,
+    "enunciado": "Un conductor con el permiso de conducir obtenido hace 18 meses no debe superar en sangre una tasa de alcohol de...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "0,5 g/l, como cualquier otro conductor."
+      },
+      {
+        "key": "B",
+        "texto": "0,2 g/l, que es el umbral más restrictivo de toda la normativa."
+      },
+      {
+        "key": "C",
+        "texto": "0,3 g/l, por ser conductor novel con menos de 2 años de permiso."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El conductor novel, con menos de 2 años desde la obtención del permiso, está sujeto a una tasa máxima de 0,3 g/l en sangre (equivalente a 0,15 mg/l en aire espirado).\n\n- Opciones incorrectas: la tasa de 0,5 g/l en sangre es la general para conductores con más de dos años de permiso; el novel tiene la mitad permitida. El valor de 0,2 g/l no existe en la normativa española de tráfico.\n- Conexión: la misma tasa reducida de 0,3 g/l aplica a los conductores profesionales (autobuses, camiones con mercancías peligrosas). Superar el doble de la tasa aplicable (0,6 g/l para el general) constituye delito penal.\n- Dato clave: la equivalencia aire/sangre es: 0,15 mg/l aire = 0,3 g/l sangre para novel; 0,25 mg/l aire = 0,5 g/l sangre para el general.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "Novel y profesional comparten la misma tasa en sangre, que es la mitad de la del conductor general.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0730",
+    "number": 0,
+    "enunciado": "Circula por una vía urbana a 40 km/h y el semáforo que tiene delante se pone en ámbar. Puede frenar con seguridad. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Mantener la velocidad para cruzar antes de que se ponga en rojo."
+      },
+      {
+        "key": "B",
+        "texto": "Acelerar levemente para asegurarse de pasar antes del rojo."
+      },
+      {
+        "key": "C",
+        "texto": "Detenerse antes de la línea de parada, ya que el ámbar indica que debe parar si puede hacerlo con seguridad."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "La señal ámbar del semáforo obliga a detenerse si el conductor puede hacerlo con seguridad. Solo si la detención supusiese un peligro (por ejemplo, si ya está cruzando la línea de parada) puede continuarse.\n\n- Opciones incorrectas: mantener la velocidad para cruzar antes del rojo es incorrecto si hay posibilidad de frenar; no se puede tomar la decisión de pasar con ámbar cuando el freno es viable. Acelerar ante el ámbar es siempre incorrecto y puede constituir infracción grave.\n- Conexión: el semáforo ámbar tiene el mismo efecto que un semáforo rojo anticipado cuando la detención es posible. Cruzar en ámbar habiendo podido frenar con seguridad equivale a saltarse el rojo.\n- Error común: interpretar el ámbar como «acelera que todavía puedes pasar», cuando en realidad señala el final del paso permitido.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Ámbar significa para si puedes; solo sigue si frenar sería peligroso.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0731",
+    "number": 0,
+    "enunciado": "¿Qué obliga a hacer esta señal al conductor que se aproxima a ella?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Detenerse completamente antes de continuar."
+      },
+      {
+        "key": "B",
+        "texto": "Ceder el paso a los vehículos que circulan por la vía a la que se accede."
+      },
+      {
+        "key": "C",
+        "texto": "Reducir la velocidad hasta 30 km/h."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La señal R-2 (ceda el paso) obliga al conductor a dejar pasar a los vehículos que ya circulan por la vía a la que se incorpora, sin exigir necesariamente una detención completa.\n\n- **Opciones incorrectas**: La detención completa obligatoria corresponde a la señal R-1 (stop), no a esta. La limitación de velocidad a 30 km/h es una señal de reglamentación de velocidad máxima (R-301), sin relación con la prioridad de paso.\n- **Error común**: Muchos alumnos confunden R-2 con R-1 y creen que siempre hay que detenerse; la diferencia clave es que con ceda el paso solo se detiene si hay tráfico que ceda.\n- **Conexión**: En la jerarquía de señales, tanto R-1 como R-2 regulan la prioridad en intersecciones, pero R-2 permite continuar si la vía está libre, mientras que R-1 impone parada obligatoria.",
+    "hasImage": false,
+    "imageSrc": "/images/senales/reglamentacion/R-2.svg",
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Esta señal no siempre obliga a parar, pero sí a dar preferencia.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0732",
+    "number": 0,
+    "enunciado": "Lleva 14 meses con el permiso de conducción de clase B. ¿Está obligado a llevar el distintivo «L» verde en su vehículo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, el distintivo «L» solo es obligatorio durante los primeros 12 meses."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, debe llevarlo durante los dos primeros años desde que obtuvo el permiso."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, pero solo cuando circula fuera de poblado."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El distintivo «L» verde es obligatorio únicamente durante el primer año (12 meses) desde la obtención del permiso B, no durante los dos años del período novel.\n\n- Opciones incorrectas: La opción que exige llevarlo dos años confunde el período novel completo (2 años) con la obligación del distintivo (solo el primer año). La opción que lo limita a vías interurbanas no existe en la norma.\n- Conexión: El período novel dura 2 años completos y afecta a la tasa de alcohol (0,15 mg/l) y a los puntos iniciales (8), pero el «L» solo abarca los 12 primeros meses.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_01",
+    "tema": "El Conductor y el Permiso",
+    "pista": "El período novel dura 2 años, pero el «L» no dura igual.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0733",
+    "number": 0,
+    "enunciado": "El seguro obligatorio de un vehículo aparcado en la calle que no va a circular durante varios meses, ¿debe mantenerse en vigor?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, basta con no circular para que el seguro no sea exigible."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, pero solo si el vehículo ocupa un espacio de vía pública de uso restringido."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, salvo que el vehículo esté dado de baja temporal o definitiva en la DGT."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Todo vehículo a motor que ocupe la vía pública debe tener el seguro obligatorio en vigor, aunque esté aparcado y no circule. Solo se puede estar sin seguro si el vehículo está dado de baja temporal o definitiva.\n\n- Opciones incorrectas: No circular no exime de la obligación del seguro mientras el vehículo siga en la vía pública. La restricción al espacio de vía restringida no existe en la norma.\n- Conexión: Un vehículo sin seguro aparcado puede ser sancionado con 800 € aunque ningún conductor lo esté utilizando.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Aparcado en la calle sigue siendo vía pública.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0734",
+    "number": 0,
+    "enunciado": "La carga transportada en un turismo puede sobresalir por la parte posterior hasta...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "el 15 % de la longitud del vehículo si la carga es divisible."
+      },
+      {
+        "key": "B",
+        "texto": "el 10 % de la longitud del vehículo si la carga es divisible."
+      },
+      {
+        "key": "C",
+        "texto": "el 20 % de la longitud del vehículo en cualquier caso."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En turismos, la carga divisible solo puede sobresalir por detrás hasta el 10 % de la longitud del vehículo. Si la carga es indivisible, el límite sube al 15 %.\n\n- Opciones incorrectas: El 15 % se aplica cuando la carga es indivisible, no divisible. El 20 % no existe como límite en la norma para turismos.\n- Conexión: Cuando la carga sobresale de noche debe señalizarse con luz roja y catadióptrico rojo en el extremo posterior.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Divisible tiene el límite menor; indivisible, el mayor.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0735",
+    "number": 0,
+    "enunciado": "Un pasajero adulto viaja en el asiento trasero sin cinturón de seguridad. ¿Quién es responsable de esa infracción?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El conductor, porque es quien dirige el vehículo."
+      },
+      {
+        "key": "B",
+        "texto": "Ambos por igual, ya que la norma establece responsabilidad compartida."
+      },
+      {
+        "key": "C",
+        "texto": "El pasajero adulto, porque la obligación de usar el cinturón es personal."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El pasajero adulto es responsable de usar su propio cinturón de seguridad. La multa recae sobre él, no sobre el conductor.\n\n- Opciones incorrectas: La responsabilidad del conductor solo surge cuando el pasajero es menor de edad; en ese caso sí recae en el conductor. La responsabilidad compartida no existe en este supuesto.\n- Conexión: Si el pasajero sin cinturón fuera menor de edad, la infracción y la multa de 200 € recaerían en el conductor.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "La edad del pasajero cambia quién paga la multa.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0736",
+    "number": 0,
+    "enunciado": "Circula por una carretera convencional arrastrando una caravana cuya MMA supera los 750 kg. ¿Cuál es la velocidad máxima permitida?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "80 km/h, igual que con un remolque ligero."
+      },
+      {
+        "key": "B",
+        "texto": "90 km/h, ya que en carretera convencional no se distingue el tipo de remolque."
+      },
+      {
+        "key": "C",
+        "texto": "70 km/h, porque es un remolque pesado."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Con un remolque pesado (MMA > 750 kg), la velocidad máxima en carretera convencional es 70 km/h, 10 km/h menos que con un remolque ligero.\n\n- Opciones incorrectas: 80 km/h es el límite con remolque ligero (MMA ≤ 750 kg) en carretera convencional. 90 km/h es el límite del turismo solo, sin remolque.\n- Dato clave: Regla de memoria: remolque pesado = remolque ligero − 10 km/h en cada tipo de vía.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Pesado = ligero menos 10 km/h.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0737",
+    "number": 0,
+    "enunciado": "Su turismo tiene 6 años de antigüedad y pasó la ITV con resultado favorable hace 23 meses. ¿Tiene la ITV en vigor?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, los turismos entre 4 y 10 años pasan la ITV cada 2 años y no han transcurrido."
+      },
+      {
+        "key": "B",
+        "texto": "No, a los 6 años de antigüedad el turismo debe pasar la ITV cada año."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, ya que el plazo de 24 meses todavía no ha vencido."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Los turismos entre 4 y 10 años de antigüedad pasan la ITV cada 2 años (24 meses). Con 23 meses transcurridos desde la última revisión favorable, la ITV sigue en vigor.\n\n- Opciones incorrectas: La periodicidad anual solo aplica a turismos con más de 10 años. La opción que la da por válida por el mismo motivo es correcta pero con el argumento de los 24 meses es engañosa porque quedaría un solo mes y podría confundirse.\n- Conexión: Si el resultado hubiera sido «desfavorable», el vehículo podría circular hasta 2 meses para reparar y volver.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "Entre 4 y 10 años: cada 2 años.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0738",
+    "number": 0,
+    "enunciado": "¿Puede un ciclomotor circular por una autopista?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, los ciclomotores tienen prohibida la circulación por autopistas y autovías."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, si el conductor lleva casco homologado y circula por el arcén."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, cuando no exista vía alternativa en el tramo."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Los ciclomotores tienen expresamente prohibida la circulación por autopistas y autovías, sin ninguna excepción.\n\n- Opciones incorrectas: El casco es obligatorio pero no permite el acceso a autopistas. La ausencia de vía alternativa no es una excepción reconocida en la norma.\n- Conexión: Además de los ciclomotores, también están prohibidos en autopistas los peatones, ciclistas (salvo señalización específica), VMP, vehículos de tracción animal y vehículos especiales que no alcancen 60 km/h.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Ciclomotores: máximo 45 km/h, no pueden ir a 60 km/h mínimo de autopista.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0739",
+    "number": 0,
+    "enunciado": "Al estacionar en una cuesta descendente con bordillo, las ruedas delanteras deben girarse...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "hacia el centro de la calzada, para que el coche no ruede hacia la calle."
+      },
+      {
+        "key": "B",
+        "texto": "hacia el bordillo, de modo que si el vehículo se mueve las ruedas choquen contra él."
+      },
+      {
+        "key": "C",
+        "texto": "en la posición de recto, para no desgastar las ruedas de forma asimétrica."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En bajada con bordillo, las ruedas delanteras deben orientarse hacia el bordillo. Si el vehículo se desplaza hacia adelante por una bajada, las ruedas chocan contra el bordillo y lo frenan.\n\n- Opciones incorrectas: Girar hacia el centro de la calzada es la maniobra correcta en subida, no en bajada. Dejar las ruedas rectas no ofrece ningún freno natural.\n- Conexión: En subida con bordillo se giran las ruedas hacia el centro: si el coche retrocede, topa con el bordillo. En ambos casos, el freno de mano y la marcha metida son obligatorios.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Bajada: ruedas al bordillo. Subida: ruedas al centro.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0740",
+    "number": 0,
+    "enunciado": "Un agente de tráfico dirige la circulación con un brazo levantado verticalmente. ¿Qué significa esa señal?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Alto para todos los usuarios: equivale a semáforo en rojo para todas las direcciones."
+      },
+      {
+        "key": "B",
+        "texto": "Autorización para continuar a los vehículos que ya han entrado en la intersección."
+      },
+      {
+        "key": "C",
+        "texto": "Reducción de velocidad para los vehículos que se aproximan por delante del agente."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El brazo levantado verticalmente equivale a semáforo en rojo para todos los usuarios, en todas las direcciones. Obliga a detención inmediata.\n\n- Opciones incorrectas: La autorización a quienes ya han entrado en la intersección corresponde al brazo levantado cuando ya hay vehículos en movimiento, pero no es la señal del brazo vertical aislado. La reducción de velocidad se indica con el brazo moviéndose de arriba a abajo.\n- Conexión: La jerarquía de señales sitúa al agente por encima de semáforos y señales verticales; incluso un semáforo en verde debe detenerse si el agente lo ordena.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Brazo vertical = rojo para todos, sin excepción de dirección.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0741",
+    "number": 0,
+    "enunciado": "Un agente hace sonar el silbato con toques cortos y frecuentes. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Reanudar la marcha: los toques cortos indican vía libre."
+      },
+      {
+        "key": "B",
+        "texto": "Reducir la velocidad: los toques cortos son aviso de peligro."
+      },
+      {
+        "key": "C",
+        "texto": "Detenerse inmediatamente: los toques cortos frecuentes ordenan parar."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Los toques de silbato cortos y frecuentes ordenan detenerse. Es al revés de lo intuitivo: un toque largo significa reanudar la marcha.\n\n- Opciones incorrectas: Un toque largo es la señal de reanudar la marcha, no los cortos. Los toques cortos no equivalen a una señal de peligro sino a una orden directa de parada.\n- Error común: Muchos alumnos asocian «largo» con «detener» y «cortos» con «seguir», pero la regla es la contraria: largo = circular, cortos = parar.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Cortos = cortar la marcha. Largo = largo camino por delante.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0742",
+    "number": 0,
+    "enunciado": "Circula por una vía sin señalizar y va a girar a la izquierda. Un tranvía se aproxima por su derecha. ¿Quién tiene prioridad?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Usted, porque el tranvía viene por su derecha y le cede el paso."
+      },
+      {
+        "key": "B",
+        "texto": "El tranvía, porque los vehículos sobre raíles tienen prioridad en ausencia de señalización aunque vengan por la derecha."
+      },
+      {
+        "key": "C",
+        "texto": "Ninguno tiene prioridad definida; deben acordar el paso entre sí."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El tranvía tiene prioridad absoluta sobre los demás vehículos en ausencia de señalización que regule la prioridad, independientemente del lado desde el que se aproxime.\n\n- Opciones incorrectas: La regla de prioridad por la derecha no aplica al tranvía; la excepción del tranvía prevalece sobre la regla general. La idea de «acordar el paso» no tiene base legal en ningún caso.\n- Error común: Es un error frecuente aplicar la prioridad por la derecha al tranvía. La prioridad del tranvía es una excepción expresa a esa regla general.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "El tranvía siempre tiene prioridad, venga de donde venga, sin señal.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 2,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0743",
+    "number": 0,
+    "enunciado": "¿Está permitido adelantar por la derecha a un vehículo que señaliza su intención de girar a la izquierda?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, es una excepción permitida a la regla general de adelantar por la izquierda."
+      },
+      {
+        "key": "B",
+        "texto": "No, en ningún caso puede adelantarse por la derecha."
+      },
+      {
+        "key": "C",
+        "texto": "Solo si la vía tiene más de dos carriles por sentido."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Cuando el vehículo de delante ha señalizado su intención de girar a la izquierda y el espacio lo permite, es lícito adelantarle por la derecha.\n\n- Opciones incorrectas: La prohibición absoluta de adelantar por la derecha ignora esta excepción expresa. La limitación a vías de más de dos carriles no existe en la norma para este supuesto concreto.\n- Conexión: Otras excepciones al adelantamiento por la izquierda son: tranvías (pueden adelantarse por la derecha) y vías urbanas con dos o más carriles marcados por sentido.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Si el de delante gira a la izquierda, puedes pasar por su derecha.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0744",
+    "number": 0,
+    "enunciado": "¿Está permitido estacionar a 12 metros de una parada de autobús señalizada?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, la distancia mínima de estacionamiento desde una parada de autobús señalizada es de 15 metros."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, basta con no obstaculizar el acceso al autobús."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, la restricción de 15 metros solo aplica a las paradas de taxi."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "La norma prohíbe estacionar a menos de 15 metros de una parada de autobús o taxi señalizada. A 12 metros se está dentro de la zona de prohibición.\n\n- Opciones incorrectas: La permisividad de «no obstaculizar el acceso» no es el criterio legal; el criterio es la distancia de 15 m. La restricción de 15 m aplica igualmente a paradas de taxi y de autobús.\n- Dato clave: Otras distancias importantes: 5 metros desde una intersección o paso de peatones.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Parada de bus o taxi: 15 metros mínimo.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0745",
+    "number": 0,
+    "enunciado": "Circula por una autopista y al aproximarse a su salida se distrae y la pasa de largo. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Parar en el arcén y hacer marcha atrás hasta la salida."
+      },
+      {
+        "key": "B",
+        "texto": "Cruzar la mediana por el punto más próximo para tomar la salida correcta."
+      },
+      {
+        "key": "C",
+        "texto": "Continuar hasta la siguiente salida y desviarse desde allí."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Si se pasa la salida en autopista o autovía, la única opción legal y segura es continuar hasta la siguiente salida. Ni la marcha atrás ni cruzar la mediana están permitidos.\n\n- Opciones incorrectas: La marcha atrás en autopistas está prohibida y es extremadamente peligrosa. Cruzar la mediana está igualmente prohibido y puede causar un accidente grave.\n- Conexión: En autopistas tampoco está permitido parar en el arcén salvo emergencia, ni cambiar de sentido salvo en zonas habilitadas.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "En autopista, si te pasas: siguiente salida, nunca marcha atrás.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0746",
+    "number": 0,
+    "enunciado": "Circula por un túnel de un solo carril por sentido cuando el vehículo de delante reduce la marcha considerablemente. ¿Puede adelantarle?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, si hay visibilidad suficiente y no existe señal que lo prohíba."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, si el vehículo de delante circula muy por debajo del límite del túnel."
+      },
+      {
+        "key": "C",
+        "texto": "No, el adelantamiento está prohibido en todos los túneles con un solo carril por sentido."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En túneles con un solo carril por sentido, el adelantamiento está terminantemente prohibido, sin excepciones de velocidad o visibilidad.\n\n- Opciones incorrectas: La visibilidad no es criterio suficiente cuando existe una prohibición expresa. Tampoco hay excepción por velocidad del vehículo precedente dentro del túnel.\n- Excepción: En túneles con varios carriles por sentido sí está permitido adelantar; la prohibición es específica para túneles de un solo carril.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Un carril por sentido en túnel: adelantamiento siempre prohibido.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0747",
+    "number": 0,
+    "enunciado": "Está lloviendo con intensidad pero la visibilidad supera los 100 metros. ¿Es correcto encender la luz antiniebla trasera?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, la luz antiniebla trasera solo debe usarse cuando la visibilidad es inferior a 50 metros."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, con lluvia intensa siempre es recomendable encenderla para mayor seguridad."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, pero solo si además se enciende la antiniebla delantera."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "La luz antiniebla trasera solo debe usarse cuando la visibilidad es inferior a 50 metros. Con más de 100 metros de visibilidad, su uso está prohibido porque deslumbra al conductor de detrás sin necesidad.\n\n- Opciones incorrectas: Que sea «recomendable por mayor seguridad» es un argumento popular pero incorrecto; el uso injustificado se sanciona con 200 €. La exigencia de encender también la delantera no es un requisito para usar la trasera.\n- Conexión: Las luces de cruce son obligatorias con lluvia intensa aunque sea de día; la antiniebla trasera solo entra si la visibilidad cae por debajo de 50 m.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Antiniebla trasera: solo cuando visibilidad < 50 m.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0748",
+    "number": 0,
+    "enunciado": "Circula de noche por una carretera sin iluminación y ve que se aproxima un vehículo en sentido contrario. ¿A qué distancia aproximada debe cambiar las luces largas por las de cruce?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "A menos de 150 metros del vehículo de frente."
+      },
+      {
+        "key": "B",
+        "texto": "A menos de 50 metros del vehículo de frente."
+      },
+      {
+        "key": "C",
+        "texto": "A menos de 300 metros del vehículo de frente."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Las luces largas deben cambiarse a cruce cuando el vehículo de frente se encuentra a menos de 150 metros, para evitar deslumbrarle.\n\n- Opciones incorrectas: 50 metros sería demasiado tarde y a esa distancia ya se habría deslumbrado al otro conductor. 300 metros excede la distancia de referencia establecida y privaría de visibilidad de forma innecesaria.\n- Conexión: También se deben cambiar a cruce cuando se sigue a otro vehículo por detrás, para no deslumbrarle por los retrovisores.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "150 metros es la distancia de referencia para cambiar a cruce.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0749",
+    "number": 0,
+    "enunciado": "Al salir de una glorieta, ¿debe señalizar con el intermitente derecho?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, dentro de la glorieta no es obligatorio señalizar en ningún momento."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, es obligatorio poner el intermitente derecho al tomar la salida de la glorieta."
+      },
+      {
+        "key": "C",
+        "texto": "Solo si hay otro vehículo esperando para entrar en la glorieta."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Al salir de una glorieta es obligatorio señalizar con el intermitente derecho para indicar a los demás vehículos que se va a tomar esa salida.\n\n- Opciones incorrectas: La obligación de señalizar existe siempre al salir, no solo cuando hay otro vehículo esperando. Al entrar en la glorieta no es obligatorio señalizar, pero sí al salir.\n- Excepción: Al circular dentro de la glorieta hacia la primera salida tampoco se exige intermitente; la obligación surge en el momento de tomar la salida.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Salida de glorieta: intermitente derecho, siempre.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0750",
+    "number": 0,
+    "enunciado": "Para prevenir la fatiga en un viaje largo, se recomienda realizar una pausa de descanso...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "cada 2 horas o 200 kilómetros de conducción continuada."
+      },
+      {
+        "key": "B",
+        "texto": "cada 3 horas o 300 kilómetros de conducción continuada."
+      },
+      {
+        "key": "C",
+        "texto": "cada hora de conducción, independientemente de la distancia recorrida."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "La recomendación es parar cada 2 horas o 200 kilómetros de conducción continuada para prevenir la fatiga, descansar al menos 15-20 minutos.\n\n- Opciones incorrectas: 3 horas o 300 km supera el tiempo máximo aconsejable y aumenta el riesgo de microsueño. Parar cada hora es excesivo para la norma general, aunque puede ser necesario si hay señales de fatiga.\n- Conexión: La fatiga aumenta el tiempo de reacción: con 4 segundos de microsueño a 120 km/h el vehículo recorre 133 metros sin control.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "2 horas o 200 km: la regla fácil para viajes largos.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0751",
+    "number": 0,
+    "enunciado": "Está detenido en un atasco en vía urbana y recibe una llamada. ¿Puede contestar sujetando el teléfono con la mano?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, porque el vehículo está detenido y no existe riesgo de accidente."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, pero solo si la retención dura más de dos minutos."
+      },
+      {
+        "key": "C",
+        "texto": "No, el uso del móvil sujetándolo con la mano está prohibido también cuando el vehículo está parado en retenciones."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El uso del teléfono móvil sujetándolo con la mano está prohibido en todo momento cuando se está al volante, incluyendo retenciones, semáforos y atascos. La sanción es de 200 € y 6 puntos.\n\n- Opciones incorrectas: El vehículo detenido no exime de la prohibición; la infracción existe desde que el motor está en marcha y el conductor al volante. La duración de la retención no es un criterio relevante para la norma.\n- Conexión: El manos libres está permitido siempre que no requiera manipulación manual del teléfono.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Atasco o semáforo en rojo: el móvil en la mano sigue siendo infracción.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0752",
+    "number": 0,
+    "enunciado": "Llega al lugar de un accidente y encuentra a una víctima inconsciente que respira con normalidad. ¿Cuál es la posición más adecuada en la que debe colocarla mientras espera la llegada de los servicios de emergencia?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Boca arriba con las piernas elevadas para favorecer la circulación."
+      },
+      {
+        "key": "B",
+        "texto": "Sentada con la espalda apoyada en el vehículo accidentado."
+      },
+      {
+        "key": "C",
+        "texto": "Posición Lateral de Seguridad (PLS), tumbada de lado para mantener la vía aérea abierta."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Una víctima inconsciente que respira debe colocarse en la Posición Lateral de Seguridad (PLS) para mantener la vía aérea abierta y evitar que se atragante con vómito o con la propia lengua.\n\n- Opciones incorrectas: Boca arriba con piernas elevadas es la posición antishock, adecuada para víctimas conscientes con síntomas de shock, no para inconscientes. Sentada no mantiene la vía aérea libre y no es segura si hay posible lesión de cuello.\n- Conexión: Si la víctima no respira (y no tiene pulso), en lugar de PLS debe iniciarse RCP inmediatamente con 30 compresiones y 2 ventilaciones.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Inconsciente + respira = PLS. Inconsciente + no respira = RCP.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0753",
+    "number": 0,
+    "enunciado": "En el lugar de un accidente hay una víctima motorista inconsciente con casco. ¿Debe quitarle el casco?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, siempre se debe retirar el casco lo antes posible para facilitar la atención."
+      },
+      {
+        "key": "B",
+        "texto": "No, en ningún caso debe retirarse el casco; solo los profesionales pueden hacerlo."
+      },
+      {
+        "key": "C",
+        "texto": "No, el casco solo debe retirarse si la víctima no respira y es necesario para iniciar la RCP."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El casco no debe quitarse salvo que la víctima no respire y sea imprescindible para iniciar las maniobras de reanimación. En ese caso, se requieren dos personas y hay que sujetar el cuello durante todo el proceso.\n\n- Opciones incorrectas: Retirar el casco de forma sistemática puede agravar una posible lesión cervical. La afirmación de que solo los profesionales pueden retirarlo es incorrecta: en situación de emergencia sin ayuda disponible, puede hacerlo un testigo si no respira.\n- Conexión: La misma regla se aplica al traslado de víctimas: nunca moverlas salvo peligro inminente (incendio, caída al agua, etc.).",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Casco fuera solo si no respira y hay que reanimar.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0754",
+    "number": 0,
+    "enunciado": "El aceite usado del motor, una vez sustituido, debe depositarse...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "en el contenedor de basura orgánica más cercano, bien cerrado."
+      },
+      {
+        "key": "B",
+        "texto": "en un punto limpio o entregarse a un taller autorizado para su reciclaje."
+      },
+      {
+        "key": "C",
+        "texto": "en el alcantarillado o desagüe más próximo, diluido con agua."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El aceite usado es un residuo peligroso. Debe llevarse a un punto limpio o entregarse a un taller autorizado que gestione su reciclaje. Verterlo en alcantarillas o basura normal es una infracción grave.\n\n- Opciones incorrectas: El aceite usado contamina el suelo y el agua; el contenedor de basura orgánica no está habilitado para residuos peligrosos. Verterlo en el alcantarillado puede contaminar acuíferos y es infracción grave.\n- Conexión: Las baterías, los neumáticos usados y el líquido refrigerante también son residuos peligrosos con obligación de gestión específica.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Aceite, baterías, neumáticos: punto limpio o taller, nunca a la basura.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0755",
+    "number": 0,
+    "enunciado": "¿Puede el café eliminar los efectos del alcohol en el organismo antes de ponerse al volante?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, la cafeína acelera la metabolización del alcohol."
+      },
+      {
+        "key": "B",
+        "texto": "No, ninguna bebida, alimento ni ejercicio elimina el alcohol; solo el paso del tiempo."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, si van acompañados de agua y ejercicio moderado durante 30 minutos."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Solo el paso del tiempo elimina el alcohol del organismo, a un ritmo aproximado de 0,1-0,15 g/l de sangre por hora. El café, el agua, ducharse o hacer ejercicio no aceleran ese proceso.\n\n- Opciones incorrectas: La cafeína puede reducir la sensación de somnolencia pero no metaboliza el alcohol. El ejercicio tampoco modifica la tasa de alcoholemia.\n- Error común: Muchos conductores creen que el café los «despeja» y por tanto pueden conducir; en realidad solo enmascara el cansancio sin reducir la tasa de alcohol.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Solo el tiempo baja la tasa: unos 0,1 g/l por hora.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0756",
+    "number": 0,
+    "enunciado": "Un agente le solicita que se someta a la prueba de alcoholemia con el etilómetro. Usted considera que no ha bebido y decide negarse. ¿Qué consecuencias tiene esa negativa?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Es una infracción administrativa grave, con multa de 1.000 € y 6 puntos."
+      },
+      {
+        "key": "B",
+        "texto": "Constituye un delito penal, con pena de prisión de 6 meses a 1 año y retirada del permiso de 1 a 4 años."
+      },
+      {
+        "key": "C",
+        "texto": "No tiene consecuencias si luego se demuestra que el conductor no había bebido."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Negarse a la prueba de alcoholemia constituye un delito penal según el artículo 383 del Código Penal, con pena de prisión obligatoria de 6 meses a 1 año y retirada del permiso de 1 a 4 años, independientemente de la tasa real de alcohol.\n\n- Opciones incorrectas: No es una simple infracción administrativa; es más grave que dar positivo en muchos casos. El resultado posterior de la prueba es irrelevante; la negativa en sí ya constituye el delito.\n- Error común: Muchos conductores creen que negarse protege sus derechos; en realidad la negativa es más grave que la propia infracción por exceso de alcohol.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Negarse a soplar: delito penal, más grave que dar positivo.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0757",
+    "number": 0,
+    "enunciado": "Ha conducido durante los últimos 3 años sin cometer ninguna infracción grave. ¿Cuántos puntos tiene en su permiso de conducción?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "15 puntos, el máximo acumulable por buen comportamiento."
+      },
+      {
+        "key": "B",
+        "texto": "12 puntos, que es el crédito estándar tras 2 años sin infracciones graves."
+      },
+      {
+        "key": "C",
+        "texto": "8 puntos, porque conserva el saldo inicial del período novel."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Tras 2 años sin infracciones graves o muy graves, el conductor pasa a tener 12 puntos. Con 3 años sin infracciones sigue en 12 puntos (el máximo sin acumular bonus adicionales).\n\n- Opciones incorrectas: Los 15 puntos son el máximo acumulable mediante buen comportamiento durante muchos años (se añaden puntos adicionales por conducción sin infracciones). Los 8 puntos son el saldo inicial del conductor novel, que ya quedó atrás.\n- Dato clave: El crédito de puntos inicial del conductor novel es 8; el crédito tras 2 años sin infracciones es 12; el máximo acumulable es 15.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_01",
+    "tema": "El Conductor y el Permiso",
+    "pista": "Tres años sin faltas → ya se pasó el período novel → 12 puntos.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0758",
+    "number": 0,
+    "enunciado": "Al circular por una vía con carril reversible, ¿qué luces es obligatorio llevar encendidas durante el día?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Luces de posición: basta con señalar la presencia del vehículo."
+      },
+      {
+        "key": "B",
+        "texto": "Luces de cruce: son obligatorias tanto de día como de noche en carriles reversibles."
+      },
+      {
+        "key": "C",
+        "texto": "Luces de carretera: para garantizar la máxima visibilidad ante el tráfico de frente."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En carriles reversibles es obligatorio circular con las luces de cruce encendidas en todo momento, de día y de noche. La norma lo exige porque en estos carriles puede circular tráfico en ambos sentidos según la hora.\n\n- Opciones incorrectas: Las luces de posición no son suficientes; la norma exige expresamente las de cruce. Las luces de carretera están prohibidas porque deslumbrarían al tráfico de frente circulando en el carril opuesto.\n- Conexión: La misma obligación de luces de cruce durante el día se aplica en túneles y en carriles adicionales en sentido contrario.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Carril reversible, día o noche: luces de cruce siempre.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0759",
+    "number": 0,
+    "enunciado": "Circula por una carretera convencional con niebla densa. La visibilidad es de unos 40 metros. ¿A qué velocidad máxima debe circular para poder detenerse dentro del espacio visible?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "A 70 km/h, ya que es la velocidad permitida en ese tramo."
+      },
+      {
+        "key": "B",
+        "texto": "A 50 km/h, velocidad límite en condiciones de visibilidad muy reducida."
+      },
+      {
+        "key": "C",
+        "texto": "A una velocidad que le permita detenerse dentro de los 40 metros de visibilidad disponibles."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Con visibilidad reducida, el conductor debe adaptar su velocidad de forma que pueda detenerse dentro del espacio que puede ver. Si la visibilidad es de 40 metros, la velocidad debe ajustarse para frenar en esa distancia, independientemente del límite genérico de la vía.\n\n- Opciones incorrectas: El límite de 70 km/h es para condiciones normales; con niebla densa la velocidad debe reducirse hasta que la distancia de detención sea inferior a la visibilidad. Los 50 km/h tampoco son automáticamente suficientes: a 50 km/h la distancia de detención puede superar 40 metros.\n- Conexión: La regla general exige adaptar la velocidad a las circunstancias; circular a la velocidad máxima permitida con visibilidad reducida sigue siendo velocidad inadecuada.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Niebla: detenerte en lo que ves. La física manda sobre el límite.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 7,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0760",
+    "number": 0,
+    "enunciado": "Su vehículo se queda sin frenos mientras desciende por una pendiente larga. Después de bombear el pedal sin resultado, ¿qué debe hacer a continuación?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Accionar el freno de mano bruscamente para detener el vehículo de inmediato."
+      },
+      {
+        "key": "B",
+        "texto": "Reducir marchas progresivamente y usar el freno de mano de forma gradual para frenar sin perder el control."
+      },
+      {
+        "key": "C",
+        "texto": "Poner el punto muerto y dejar que el vehículo pierda velocidad por sí solo."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Ante un fallo de frenos en bajada, la secuencia correcta es reducir marchas para usar el freno motor y, si es necesario, aplicar el freno de mano de forma gradual. Nunca bruscamente porque puede bloquear las ruedas traseras y hacer perder el control.\n\n- Opciones incorrectas: Accionar el freno de mano bruscamente puede provocar un trompo o vuelco. Poner el punto muerto elimina el freno motor, que es precisamente la primera herramienta disponible en esta situación.\n- Conexión: Si nada funciona, la última opción es buscar una vía de escape o rozar suavemente contra el arcén o guardarraíl para reducir la velocidad progresivamente.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "Frenos fallidos: freno motor primero, luego freno de mano suave.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0761",
+    "number": 0,
+    "enunciado": "En un estrechamiento de carretera sin señalización, con pendiente superior al 7 %, se encuentran un turismo que sube y un camión que baja. El turismo que sube ha encontrado un apartadero justo antes del estrechamiento. ¿Quién debe ceder el paso?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El turismo que sube debe ceder, ya que encontró un apartadero antes del cruce."
+      },
+      {
+        "key": "B",
+        "texto": "El camión que baja debe ceder, porque el vehículo que sube siempre tiene prioridad."
+      },
+      {
+        "key": "C",
+        "texto": "El camión que baja tiene prioridad porque su mayor masa hace más peligrosa la maniobra de marcha atrás."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En estrechamientos con pendiente pronunciada, tiene prioridad el vehículo que sube. Sin embargo, si el que sube encuentra un apartadero antes del cruce, debe detenerse en él y dejar pasar al que baja.\n\n- Opciones incorrectas: La prioridad del vehículo ascendente es la regla general, pero la excepción del apartadero la modifica. La masa del camión no es el criterio determinante en estrechamientos con pendiente; lo es la posición respecto al apartadero.\n- Excepción: Esta excepción existe precisamente porque el vehículo que sube puede aprovechar el apartadero sin necesidad de hacer marcha atrás, facilitando así el cruce.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Sube tiene prioridad, salvo que encuentre apartadero primero.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 2,
+      "d_excepcion": 2,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 8,
+      "nivel": 4
+    },
+    "nivel": 4
+  },
+  {
+    "id": "pregunta_0762",
+    "number": 0,
+    "enunciado": "Su turismo tiene una MMA de 800 kg. Desea arrastrar un remolque con MMA de 900 kg y el conjunto suma 1.700 kg en total. ¿Qué permiso necesita?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El código armonizado 96, porque la MMA del remolque supera la MMA del vehículo tractor."
+      },
+      {
+        "key": "B",
+        "texto": "Solo el permiso B, porque el conjunto no supera los 4.250 kg."
+      },
+      {
+        "key": "C",
+        "texto": "El permiso B+E, porque cualquier remolque pesado exige permiso adicional."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El código armonizado 96 se exige cuando la MMA del remolque pesado (> 750 kg) supera la MMA del vehículo tractor y el conjunto no supera los 4.250 kg. Aquí el remolque (900 kg) supera al tractor (800 kg), por lo que se necesita el código 96.\n\n- Opciones incorrectas: el permiso B solo es suficiente cuando la MMA del remolque no supera la MMA del tractor (además del conjunto ≤ 4.250 kg); aquí sí la supera. El permiso B+E se exige cuando el conjunto supera los 4.250 kg, lo que no ocurre en este caso.\n- Conexión: el código 96 requiere formación teórica y pruebas prácticas, pero no examen teórico específico ni reconocimiento médico adicional.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_01",
+    "tema": "El Conductor y el Permiso",
+    "pista": "Remolque más pesado que el tractor y conjunto < 4.250 kg: código 96.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0763",
+    "number": 0,
+    "enunciado": "Obtuvo el permiso B hace 14 meses y le han denunciado por circular sin el distintivo «L». ¿Qué tipo de infracción es y cuál es la multa máxima?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Infracción grave, 200€."
+      },
+      {
+        "key": "B",
+        "texto": "Infracción leve, 100€."
+      },
+      {
+        "key": "C",
+        "texto": "No es infracción; el «L» es voluntario tras el primer mes."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "No llevar el distintivo «L» durante el primer año del permiso es una infracción leve con multa máxima de 100€. El período novel dura 2 años, pero la obligación del «L» es solo durante los primeros 12 meses.\n\n- Opciones incorrectas: la multa de 200€ corresponde a infracciones graves (sin cinturón, uso del móvil, etc.), no a la falta del «L». El distintivo «L» es obligatorio durante el primer año completo (12 meses), no voluntario en ningún momento.\n- Conexión: la tasa de alcoholemia reducida (0,15 mg/l en aire espirado) y los 8 puntos de saldo inicial sí se mantienen durante los 2 años completos del período novel.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_01",
+    "tema": "El Conductor y el Permiso",
+    "pista": "El «L» es obligatorio el primer año; su falta es infracción leve, multa máx. 100€.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0764",
+    "number": 0,
+    "enunciado": "Un niño de 9 años quiere viajar como pasajero en la motocicleta de su tío, que no es su tutor legal. Esta situación...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "está permitida porque el niño supera los 7 años."
+      },
+      {
+        "key": "B",
+        "texto": "está permitida en vías urbanas si el tío conduce con precaución."
+      },
+      {
+        "key": "C",
+        "texto": "está prohibida porque la excepción de los 7 años solo aplica si el conductor es padre, madre o tutor."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "La edad mínima general para viajar como pasajero en moto es 12 años. La excepción que permite a niños mayores de 7 años viajar solo aplica cuando el conductor es el padre, la madre, el tutor legal o persona autorizada por ellos. Un tío sin tutela legal no cumple ese requisito.\n\n- Opciones incorrectas: superar los 7 años no es suficiente por sí solo; también es necesario que el conductor sea padre, madre o tutor. La limitación a vías urbanas no existe en la norma; el criterio es la relación legal con el conductor.\n- Conexión: además de la edad, la moto debe estar homologada para dos plazas, el pasajero debe ir a horcajadas con los pies en los reposapiés y con casco homologado.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Excepción de los 7 años: solo si el conductor es padre, madre o tutor, no cualquier familiar.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0765",
+    "number": 0,
+    "enunciado": "¿Está obligado a ceder el paso a un autobús urbano que pretende reincorporarse a la circulación desde su parada, en una vía de un solo carril por sentido?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, siempre que el autobús haya activado la señal de incorporación."
+      },
+      {
+        "key": "B",
+        "texto": "No, el autobús debe esperar a que la vía quede libre."
+      },
+      {
+        "key": "C",
+        "texto": "Solo en horario escolar o cuando lleva niños a bordo."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En vías urbanas de un carril por sentido, el conductor debe ceder el paso al autobús que, con la señal de incorporación activada, pretende salir de la parada. Esta norma garantiza la fluidez del transporte público.\n\n- Opciones incorrectas: la opción de que el autobús deba esperar ignora la norma de preferencia del autobús urbano en vías de un carril. La limitación al horario escolar no existe en la normativa; la obligación es general para cualquier autobús urbano.\n- Conexión: en vías con dos o más carriles por sentido, esta preferencia del autobús no se aplica de la misma manera y rigen las normas generales de circulación.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Autobús señalizando salida de parada en vía de un carril: ceda el paso.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0766",
+    "number": 0,
+    "enunciado": "Circula por una ciclocalle y hay un ciclista detrás de usted que no puede adelantarle. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Mantener su velocidad; el ciclista debe esperar a que usted deje paso."
+      },
+      {
+        "key": "B",
+        "texto": "Ceder el paso al ciclista, ya que en ciclocalle los ciclistas tienen prioridad."
+      },
+      {
+        "key": "C",
+        "texto": "Acelerar hasta 30 km/h para que el ciclista pueda seguirle sin problema."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En una ciclocalle, los ciclistas tienen prioridad sobre los vehículos a motor. La velocidad máxima de los vehículos de motor es 30 km/h y deben ceder el paso cuando un ciclista no pueda adelantarles.\n\n- Opciones incorrectas: mantener la velocidad incumpliría la prioridad del ciclista en ciclocalle. Acelerar tampoco es la solución correcta: la obligación es ceder el paso, no forzar al ciclista a seguir el ritmo del coche.\n- Conexión: las ciclocalle son calles ordinarias donde los ciclistas ocupan el centro del carril y tienen preferencia; los vehículos motorizados deben circular detrás si no pueden adelantar con seguridad.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Ciclocalle: el ciclista tiene prioridad; el coche cede si no puede adelantar.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0767",
+    "number": 0,
+    "enunciado": "¿Cuántos carriles por sentido debe tener una vía urbana para que la velocidad máxima genérica sea de 50 km/h?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Al menos un carril por sentido, independientemente del número."
+      },
+      {
+        "key": "B",
+        "texto": "Tres o más carriles por sentido."
+      },
+      {
+        "key": "C",
+        "texto": "Dos o más carriles por sentido."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En vías urbanas con dos o más carriles por sentido, la velocidad máxima genérica es de 50 km/h. En vías urbanas de un solo carril por sentido, el límite es de 30 km/h.\n\n- Opciones incorrectas: «al menos un carril» ignoraría la distinción clave que determina el límite de 30 o 50 km/h. Exigir tres o más carriles es un umbral más restrictivo que el real.\n- Conexión: en zonas 30 y zonas residenciales la velocidad máxima es 30 y 20 km/h respectivamente, con independencia del número de carriles.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Dos o más carriles por sentido en ciudad = 50 km/h; uno solo = 30 km/h.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0768",
+    "number": 0,
+    "enunciado": "Circula por una autopista arrastrando un remolque pesado con MMA de 1.200 kg. ¿A qué velocidad máxima puede circular?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "A 80 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "A 90 km/h, igual que con remolque ligero."
+      },
+      {
+        "key": "C",
+        "texto": "A 120 km/h, el límite general de autopista."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Con un remolque pesado (MMA > 750 kg), la velocidad máxima en autopista es de 80 km/h. Esto es 10 km/h menos que con remolque ligero (90 km/h) y 40 km/h menos que el turismo sin remolque (120 km/h).\n\n- Opciones incorrectas: 90 km/h es el límite del conjunto con remolque ligero (MMA ≤ 750 kg) en autopista, no del remolque pesado. 120 km/h es el límite del turismo sin remolque; arrastrando cualquier remolque el límite se reduce.\n- Dato clave: remolque pesado en autopista = 80 km/h; en carretera convencional = 70 km/h. Regla: pesado siempre 10 km/h menos que ligero en cada tipo de vía.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Remolque pesado en autopista: 80 km/h. Pesado = ligero menos 10 km/h.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0769",
+    "number": 0,
+    "enunciado": "En una carretera convencional con separación física de sentidos debidamente señalizada, la velocidad máxima para un turismo es...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "90 km/h, igual que en el resto de carreteras convencionales."
+      },
+      {
+        "key": "B",
+        "texto": "100 km/h."
+      },
+      {
+        "key": "C",
+        "texto": "110 km/h, al estar físicamente separados los sentidos."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En carreteras convencionales con separación física de sentidos señalizada, el límite para turismos es de 100 km/h, 10 km/h más que en la carretera convencional ordinaria (90 km/h). Este incremento refleja la mayor seguridad que aporta la separación física.\n\n- Opciones incorrectas: 90 km/h es el límite genérico en carretera convencional sin separación física. 110 km/h no existe como límite en carreteras convencionales españolas.\n- Conexión: en autopista y autovía el límite es 120 km/h; la carretera con separación física queda en un punto intermedio (100 km/h) entre la convencional ordinaria y la autovía.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Carretera convencional con separación física señalizada = 100 km/h, no 90.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0770",
+    "number": 0,
+    "enunciado": "Se aproxima a una intersección sin señalizar. Por su izquierda viene un tranvía y por su derecha un turismo. ¿Quién tiene prioridad sobre los demás?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El turismo, porque viene por la derecha."
+      },
+      {
+        "key": "B",
+        "texto": "Usted, porque los otros dos vehículos deben cederse el paso entre sí."
+      },
+      {
+        "key": "C",
+        "texto": "El tranvía, porque en intersecciones sin señalizar tiene prioridad absoluta."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En intersecciones sin señalizar, el tranvía tiene prioridad absoluta sobre cualquier otro vehículo, incluso si viene por la izquierda. Su incapacidad de maniobrar libremente justifica esta preferencia.\n\n- Opciones incorrectas: la regla de prioridad a la derecha se aplica entre vehículos ordinarios, pero queda anulada ante el tranvía. Usted tampoco tiene prioridad en esta situación; el tranvía prevalece sobre todos.\n- Error común: muchos alumnos aplican mecánicamente la prioridad por la derecha sin recordar que el tranvía prevalece siempre en intersecciones sin señalizar.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "El tranvía vence siempre en intersecciones sin señalizar, aunque venga por la izquierda.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0771",
+    "number": 0,
+    "enunciado": "¿Está permitido adelantar por la derecha a otro vehículo en una vía urbana con dos carriles por sentido delimitados por marcas viales?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, en vías urbanas con dos o más carriles delimitados por marcas viales."
+      },
+      {
+        "key": "B",
+        "texto": "No, el adelantamiento por la derecha está prohibido en todo tipo de vías."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, pero solo a ciclistas y motocicletas."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En vías urbanas con dos o más carriles por sentido delimitados por marcas viales, está permitido adelantar por la derecha. Esta es la excepción principal a la regla general de adelantar por la izquierda.\n\n- Opciones incorrectas: la opción que prohíbe siempre el adelantamiento por la derecha ignora esta excepción urbana con carriles marcados. La que lo limita a ciclistas y motos no tiene base legal.\n- Conexión: también se puede adelantar por la derecha cuando el vehículo de delante señaliza giro a la izquierda, y a los tranvías que circulan por el centro de la vía.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Ciudad + dos carriles marcados por sentido = adelantar por la derecha permitido.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0772",
+    "number": 0,
+    "enunciado": "Quiere estacionar en una calle urbana. Hay una parada de taxi señalizada a 10 metros del lugar que ha elegido. ¿Puede estacionar ahí?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, la restricción de 15 metros solo aplica a paradas de autobús, no de taxi."
+      },
+      {
+        "key": "B",
+        "texto": "No, la distancia mínima desde una parada de taxi señalizada también es de 15 metros."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, siempre que deje libre al menos un carril de circulación."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La distancia mínima para estacionar desde una parada de autobús o taxi señalizada es de 15 metros. A solo 10 metros, el estacionamiento está prohibido en ambos casos.\n\n- Opciones incorrectas: la restricción de 15 metros se aplica tanto a paradas de autobús como de taxi señalizadas. Dejar un carril libre no exime de respetar las distancias mínimas de estacionamiento.\n- Conexión: la distancia mínima desde una esquina o paso de peatones es de 5 metros, no de 15; confundir ambos valores es un error frecuente en el examen.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Parada de autobús o taxi señalizada: mínimo 15 metros para estacionar.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0773",
+    "number": 0,
+    "enunciado": "Una señal de velocidad máxima lleva un panel complementario con el texto «L-V 7:00-21:00». ¿Cuándo se aplica la limitación?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Todos los días de la semana durante las 24 horas."
+      },
+      {
+        "key": "B",
+        "texto": "Solo de lunes a viernes entre las 7:00 y las 21:00 horas."
+      },
+      {
+        "key": "C",
+        "texto": "De lunes a sábado entre las 7:00 y las 21:00 horas."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El panel complementario acota la aplicación de la señal a las condiciones que indica. «L-V 7:00-21:00» significa que la limitación rige solo de lunes a viernes entre las 7:00 y las 21:00. Fuera de ese horario y los sábados y domingos no aplica.\n\n- Opciones incorrectas: aplicarla todos los días ignora el panel complementario, que precisamente existe para restringir la validez de la señal. Incluir el sábado contradice la abreviatura «L-V» (lunes a viernes).\n- Conexión: el mismo principio rige para señales de estacionamiento prohibido con panel horario; solo son válidas en los días y horas indicados.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Panel «L-V 7-21h»: la señal solo rige de lunes a viernes en ese horario.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0774",
+    "number": 0,
+    "enunciado": "Se encuentra dentro de un túnel cuando se produce una retención larga. El motor lleva varios minutos en marcha. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Mantener el motor en marcha para poder reaccionar rápidamente si la retención se resuelve."
+      },
+      {
+        "key": "B",
+        "texto": "Abandonar el vehículo inmediatamente y dirigirse a la salida más cercana."
+      },
+      {
+        "key": "C",
+        "texto": "Apagar el motor para evitar la acumulación de gases tóxicos en el túnel."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Cuando la retención en un túnel es prolongada, debe apagarse el motor para evitar la acumulación de gases tóxicos (principalmente monóxido de carbono) en un espacio cerrado con ventilación limitada.\n\n- Opciones incorrectas: mantener el motor encendido contribuye a la acumulación de gases peligrosos, precisamente lo que se debe evitar. Abandonar el vehículo no está indicado en retenciones; solo procede en caso de incendio o indicación expresa de los servicios de emergencia.\n- Conexión: en caso de incendio dentro del túnel sí debe abandonarse el vehículo, dejando las llaves puestas y sin cerrar con llave, y caminar agachado hacia las salidas señalizadas con luz verde.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Retención larga en túnel: apagar el motor para evitar gases tóxicos.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0775",
+    "number": 0,
+    "enunciado": "Esta señal está colocada antes de la entrada a un túnel. ¿Qué debe hacer al verla?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Encender las luces de cruce antes de entrar al túnel."
+      },
+      {
+        "key": "B",
+        "texto": "Encender las luces largas para ver mejor dentro del túnel."
+      },
+      {
+        "key": "C",
+        "texto": "Reducir la velocidad a 50 km/h como máximo."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "La señal R-419 indica la obligación de encender el alumbrado de corto alcance (luces de cruce). Cuando se coloca antes de un túnel, refuerza la obligación de llevar las luces de cruce al entrar y circular por él.\n\n- Opciones incorrectas: las luces largas están prohibidas en los túneles porque el haz rebota en las paredes y aumenta el deslumbramiento. La señal R-419 no establece ningún límite de velocidad; eso lo haría una señal R-301.\n- Conexión: aunque no exista la señal R-419, las luces de cruce son siempre obligatorias en túneles; la señal simplemente refuerza el aviso antes de la entrada.",
+    "hasImage": false,
+    "imageSrc": "/images/senales/reglamentacion/R-419.svg",
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "R-419 = luces de cruce obligatorias. En el túnel, nunca las largas.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0776",
+    "number": 0,
+    "enunciado": "Circula por una autopista y comprueba que ha sobrepasado su salida. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Dar marcha atrás por el arcén hasta la salida."
+      },
+      {
+        "key": "B",
+        "texto": "Detenerse en el arcén para cruzar la mediana por el punto más cercano."
+      },
+      {
+        "key": "C",
+        "texto": "Continuar hasta la siguiente salida y volver por la ruta alternativa."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Si se pasa la salida en una autopista, la única acción legal y segura es continuar hasta la siguiente salida y volver. La marcha atrás y cruzar la mediana están expresamente prohibidos en autopistas.\n\n- Opciones incorrectas: dar marcha atrás por el arcén es una maniobra peligrosísima y está prohibida en autopistas. Detenerse para cruzar la mediana también está prohibido y puede provocar accidentes graves.\n- Conexión: en autopista también está prohibido el cambio de sentido; solo puede realizarse en las áreas habilitadas específicamente para ello.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Autopista: si te pasas la salida, continúa hasta la siguiente. Sin marcha atrás.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0777",
+    "number": 0,
+    "enunciado": "Si sufre un incendio dentro de un túnel y no puede sacar el vehículo, al abandonarlo debe...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "cerrar el vehículo con llave para evitar que nadie lo manipule."
+      },
+      {
+        "key": "B",
+        "texto": "apagar el motor y llevarse las llaves con usted."
+      },
+      {
+        "key": "C",
+        "texto": "dejar las llaves puestas y no cerrar el vehículo con llave."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En caso de incendio en un túnel, si no puede sacar el vehículo, debe apagar el motor, dejar las llaves puestas (o dentro del vehículo) y no cerrarlo con llave, para que los bomberos puedan moverlo si es necesario.\n\n- Opciones incorrectas: cerrar con llave dificulta el acceso de los servicios de emergencia y está expresamente desaconsejado. Llevarse las llaves impide que los bomberos muevan el vehículo, obstruyendo la evacuación del túnel.\n- Conexión: tras abandonar el vehículo, debe caminar agachado (el humo y los gases tóxicos suben) hacia las salidas señalizadas con luz verde, sin usar ascensores.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Incendio en túnel: llaves puestas, no cerrar, facilitar acceso a bomberos.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0778",
+    "number": 0,
+    "enunciado": "Conduce de noche por carretera con lluvia intensa y la visibilidad es de 40 metros. ¿Puede usar la luz antiniebla trasera?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, la antiniebla trasera solo se usa con niebla densa, nunca con lluvia."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, porque la visibilidad es inferior a 50 metros."
+      },
+      {
+        "key": "C",
+        "texto": "Solo si también activa las luces de carretera para iluminar mejor."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La luz antiniebla trasera puede usarse cuando la visibilidad es inferior a 50 metros, independientemente de si la causa es niebla, lluvia intensa o nevada. Con 40 metros de visibilidad, su uso está justificado y es correcto.\n\n- Opciones incorrectas: la restricción no es por el tipo de fenómeno meteorológico sino por la distancia de visibilidad (< 50 m). Las luces de carretera no deben usarse en estas condiciones: el haz rebota en las gotas de lluvia y reduce aún más la visibilidad.\n- Conexión: usar la antiniebla trasera sin necesidad (visibilidad > 50 m) está sancionado con 200€ porque deslumbra al conductor de detrás.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Antiniebla trasera: visibilidad < 50 m, sea lluvia, niebla o nieve.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0779",
+    "number": 0,
+    "enunciado": "¿Cuándo debe formarse el corredor de emergencias en una autopista con retención?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "En cuanto empiece la retención, sin esperar a que lleguen los servicios de emergencia."
+      },
+      {
+        "key": "B",
+        "texto": "Cuando el tráfico lleve parado más de 5 minutos."
+      },
+      {
+        "key": "C",
+        "texto": "Cuando se vea llegar a los vehículos de emergencia."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El corredor de emergencias debe formarse en cuanto comience la retención, no cuando lleguen los vehículos de emergencia. Cuando los servicios llegan, el corredor debe estar ya formado para que puedan circular sin demora.\n\n- Opciones incorrectas: ningún plazo de minutos de parada está establecido en la norma; la obligación es inmediata desde el inicio de la retención. Esperar a ver llegar los vehículos de emergencia es demasiado tarde y puede costar vidas.\n- Conexión: en una vía de 2 carriles, el izquierdo se pega a la izquierda y el derecho a la derecha. En 3 o más carriles, el izquierdo a la izquierda y todos los demás a la derecha.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Corredor de emergencias: se forma al inicio de la retención, no cuando llega la ambulancia.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0780",
+    "number": 0,
+    "enunciado": "Al llegar a un accidente encuentra a un herido consciente con una hemorragia intensa en el brazo que no cesa con el primer paño. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Retirar el paño empapado y colocar uno nuevo para poder ver el estado de la herida."
+      },
+      {
+        "key": "B",
+        "texto": "Aplicar un torniquete de inmediato para cortar la hemorragia."
+      },
+      {
+        "key": "C",
+        "texto": "Añadir más paños encima del primero sin retirarlo y mantener la presión."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Ante una hemorragia externa que no cede con el primer paño, debe añadirse más material encima sin retirar el ya colocado, manteniendo la presión constante. Quitar el paño puede romper los coágulos incipientes y reactivar el sangrado.\n\n- Opciones incorrectas: retirar el paño empapado interrumpe la compresión y destruye cualquier coágulo en formación. El torniquete es el último recurso, solo para extremidades cuando la hemorragia es imposible de controlar con presión directa.\n- Conexión: mientras se controla la hemorragia, otra persona debe llamar al 112 e indicar la localización exacta y el estado aparente de la víctima.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Hemorragia que no cede: añadir paños encima, nunca quitar el primero.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0781",
+    "number": 0,
+    "enunciado": "El horario de mayor riesgo de somnolencia al volante, además de la madrugada, incluye...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "el mediodía (12:00-13:00), cuando el sol está en su punto más alto."
+      },
+      {
+        "key": "B",
+        "texto": "la sobremesa (14:00-16:00), por el bajón de energía tras la comida."
+      },
+      {
+        "key": "C",
+        "texto": "la tarde-noche (20:00-22:00), al finalizar la jornada laboral."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Tras la comida, entre las 14:00 y las 16:00 horas, el cuerpo experimenta un bajón fisiológico de energía que aumenta la somnolencia. Junto con la madrugada (2:00-6:00), es uno de los períodos de mayor riesgo de microsueños al volante.\n\n- Opciones incorrectas: el mediodía (12:00-13:00) no está identificado como hora de especial riesgo de somnolencia. La tarde-noche (20:00-22:00) tampoco figura entre los tramos de mayor riesgo reconocidos.\n- Conexión: durante un microsueño de 4 segundos a 120 km/h, el vehículo recorre 133 metros sin que el conductor sea consciente de ello.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Sobremesa (14-16 h) y madrugada: los momentos más peligrosos para el sueño.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0782",
+    "number": 0,
+    "enunciado": "Circula por una autovía con lluvia intensa y quiere adelantar a un camión que circula delante de usted. ¿Qué debe hacer antes de iniciar la maniobra?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Activar los limpiaparabrisas a máxima velocidad antes de iniciar el adelantamiento."
+      },
+      {
+        "key": "B",
+        "texto": "Esperar a que pare la lluvia para adelantar con visibilidad total."
+      },
+      {
+        "key": "C",
+        "texto": "Tocar el claxon para avisar al camionero de su intención de adelantar."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Al adelantar vehículos voluminosos como camiones con lluvia, el agua que levantan sus ruedas puede reducir bruscamente la visibilidad en el momento del adelantamiento. Por ello debe activar los limpiaparabrisas a máxima velocidad antes de comenzar la maniobra.\n\n- Opciones incorrectas: esperar a que pare la lluvia en autovía es impracticable; la norma exige tomar precauciones adecuadas, no abstenerse de adelantar. El claxon no es una señal preceptiva antes de adelantar.\n- Conexión: además de los limpiaparabrisas, debe mantener distancia lateral suficiente respecto al camión y señalizar la maniobra con suficiente antelación.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Adelantar camión con lluvia: limpiaparabrisas al máximo antes de empezar.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0783",
+    "number": 0,
+    "enunciado": "Llega al lugar de un accidente y encuentra un motorista inconsciente que respira con normalidad. ¿Cuál es la actuación correcta respecto al casco?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Retirar el casco inmediatamente para explorar posibles heridas en la cabeza."
+      },
+      {
+        "key": "B",
+        "texto": "No retirar el casco; colocar al motorista en posición lateral de seguridad sin quitárselo."
+      },
+      {
+        "key": "C",
+        "texto": "Retirar el casco entre dos personas sujetando el cuello para evitar lesiones cervicales."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Si el motorista está inconsciente pero respira, no debe retirarse el casco. Debe colocársele en posición lateral de seguridad (PLS) con el casco puesto, para mantener la vía aérea abierta y evitar que se atragante.\n\n- Opciones incorrectas: retirar el casco en solitario puede provocar lesiones cervicales graves si hay daño en la columna. La técnica de retirada entre dos personas solo está indicada cuando la víctima no respira y hay que iniciar la RCP.\n- Conexión: si el motorista no respira, sí es necesario retirar el casco para iniciar la reanimación; en ese caso se hace entre dos personas, uno sujetando la cabeza y el cuello.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "Motorista inconsciente que respira: PLS sin quitar el casco.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0784",
+    "number": 0,
+    "enunciado": "Al señalizar la zona de un accidente en una autovía de noche, antes de salir del vehículo debe...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "colocar primero la baliza V-16 en el techo del vehículo y luego ponerse el chaleco."
+      },
+      {
+        "key": "B",
+        "texto": "ponerse el chaleco reflectante dentro del vehículo antes de salir a la calzada."
+      },
+      {
+        "key": "C",
+        "texto": "encender las luces de emergencia y esperar a que otro conductor avise al 112."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El chaleco reflectante debe ponerse dentro del vehículo antes de salir a la calzada. Bajarse sin chaleco, aunque sea solo un instante para colocárselo fuera, aumenta el riesgo de ser atropellado por un conductor desprevenido.\n\n- Opciones incorrectas: colocar la V-16 antes de ponerse el chaleco implica salir al exterior sin protección; el orden correcto es chaleco primero. Esperar a que otro conductor avise es una conducta pasiva que puede costar vidas.\n- Conexión: en vías interurbanas, la V-16 (baliza luminosa en el techo) es obligatoria desde enero 2026 y es más segura que los triángulos porque no requiere caminar por la vía.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "Chaleco primero, dentro del coche, antes de poner un pie en la calzada.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0785",
+    "number": 0,
+    "enunciado": "¿Puede usar el freno motor al bajar una pendiente pronunciada con nieve en la calzada?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, en pendientes con nieve solo debe usar el freno de pie de forma progresiva."
+      },
+      {
+        "key": "B",
+        "texto": "Solo en pendientes con nieve muy intensa, no con nieve ligera."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, circular en marchas cortas aprovecha el freno motor y reduce el riesgo de deslizamiento."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En bajadas con nieve o hielo, debe usarse el freno motor circulando en marchas cortas. Esto evita el calentamiento excesivo de los frenos y permite un frenado más suave y controlado en superficie resbaladiza.\n\n- Opciones incorrectas: usar solo el freno de pie de forma progresiva puede llevar al bloqueo de ruedas en condiciones de adherencia reducida. La limitación a nieve muy intensa es inventada; la técnica se aplica ante cualquier superficie resbaladiza.\n- Conexión: en subidas con nieve se deben usar marchas altas para evitar patinar y no detenerse, ya que arrancar cuesta arriba con nieve es muy difícil.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "Bajada con nieve: marcha corta y freno motor; freno de pie solo suave y anticipado.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0786",
+    "number": 0,
+    "enunciado": "Al salir del taller con el coche recién revisado, su mecánico le entrega un recipiente con el aceite usado que debe gestionar correctamente. Si lo vierte en la alcantarilla de la calle, ¿qué habrá hecho?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Una infracción grave por contaminar con un residuo peligroso."
+      },
+      {
+        "key": "B",
+        "texto": "Nada ilegal si es una cantidad pequeña de aceite."
+      },
+      {
+        "key": "C",
+        "texto": "Algo permitido si el aceite ya está a temperatura ambiente."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El aceite usado es un residuo peligroso y verterlo en alcantarillas, suelo o contenedores normales constituye una infracción grave. Debe llevarse a un punto limpio o a un taller autorizado para su recogida y reciclaje.\n\n- Opciones incorrectas: la cantidad no exime de la responsabilidad legal; incluso pequeñas cantidades de aceite son altamente contaminantes para el agua. La temperatura del aceite no es un criterio relevante; siempre es un residuo peligroso.\n- Conexión: baterías, líquido refrigerante y líquido de frenos también son residuos peligrosos que deben llevarse a puntos limpios, nunca a la basura ordinaria.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "Aceite usado: punto limpio o taller autorizado. Nunca alcantarilla ni basura.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0787",
+    "number": 0,
+    "enunciado": "¿Qué consecuencia tiene pagar una multa de tráfico con el descuento del 50% por pronto pago sobre los puntos del permiso?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Los puntos no se descuentan si se paga dentro de los 20 días naturales."
+      },
+      {
+        "key": "B",
+        "texto": "Los puntos se descuentan igualmente aunque se pague con el descuento."
+      },
+      {
+        "key": "C",
+        "texto": "Se pierde la mitad de los puntos en lugar del total establecido."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El descuento del 50% por pronto pago afecta únicamente al importe económico de la multa, no a los puntos. Los puntos se detraen de igual manera aunque se haya pagado con descuento.\n\n- Opciones incorrectas: la creencia de que el pago rápido evita la pérdida de puntos es un error muy frecuente entre conductores. El descuento no divide por la mitad los puntos a perder; los puntos se pierden siempre en su totalidad cuando la infracción así lo establece.\n- Conexión: al pagar con descuento también se renuncia al derecho de presentar alegaciones; ambas vías son incompatibles entre sí.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "Descuento del 50%: solo en dinero. Los puntos se pierden siempre igual.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0788",
+    "number": 0,
+    "enunciado": "Recibe la notificación de una denuncia de tráfico. Han transcurrido 25 días naturales desde esa notificación. ¿Puede aún pagar con el descuento del 50%?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, el plazo son 30 días naturales."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, puede pagar con descuento hasta que se emita la resolución definitiva."
+      },
+      {
+        "key": "C",
+        "texto": "No, el plazo de 20 días naturales para el pago con descuento ha expirado."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El plazo para beneficiarse del descuento del 50% es de 20 días naturales desde la notificación de la denuncia. Con 25 días transcurridos, el plazo ha expirado y ya no es posible el pago reducido.\n\n- Opciones incorrectas: el plazo de 30 días no existe en este procedimiento; la norma establece 20 días naturales. Esperar a la resolución definitiva no recupera el descuento; es una vía distinta correspondiente a alegaciones y recursos.\n- Conexión: también dentro de los mismos 20 días puede optarse por presentar alegaciones, pero ambas vías son incompatibles entre sí; elegir una implica renunciar a la otra.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "Pago con 50% de descuento: solo en los primeros 20 días naturales.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0789",
+    "number": 0,
+    "enunciado": "Circula solo por el carril VAO de una autopista con su vehículo con etiqueta ECO. La señalización variable en ese tramo no autoriza expresamente a vehículos de un solo ocupante. ¿Puede seguir circulando por ese carril?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, los vehículos con etiqueta ECO siempre pueden circular por el carril VAO."
+      },
+      {
+        "key": "B",
+        "texto": "No, sin autorización expresa de la señalización variable, un vehículo ECO con un solo ocupante no puede usar el carril VAO."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, si no supera la velocidad máxima establecida en el carril."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Los vehículos con etiqueta ECO (y también C o B) con un solo ocupante solo pueden usar el carril VAO cuando la señalización variable lo autoriza expresamente, en función del nivel de tráfico. Sin esa autorización, necesitan al menos 2 ocupantes.\n\n- Opciones incorrectas: la etiqueta ECO no otorga acceso libre al carril VAO con un solo ocupante; la autorización depende de la señalización variable. La velocidad máxima no es la condición de acceso relevante.\n- Conexión: las motos (2 o 3 ruedas) sí pueden circular por el carril VAO sin restricción de número de ocupantes. Los camiones, ciclomotores y vehículos con remolque siguen estando prohibidos en el carril VAO.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "ECO con 1 ocupante en VAO: solo si la señalización variable lo autoriza expresamente.",
     "tipoPregunta": "situacional",
     "dificultad": {
       "d_reglas": 1,
@@ -2565,30 +3393,752 @@ export const questionBank: BankQuestion[] = [
     "nivel": 3
   },
   {
-    "id": "pregunta_0624",
+    "id": "pregunta_0790",
     "number": 0,
-    "enunciado": "Para que el airbag cumpla su función protectora, es imprescindible que...",
+    "enunciado": "El conductor que consume cannabis antes de ponerse al volante...",
     "opciones": [
       {
         "key": "A",
-        "texto": "el conductor circule a menos de 50 km/h."
+        "texto": "no comete infracción si no nota ningún efecto al conducir."
       },
       {
         "key": "B",
-        "texto": "el ocupante lleve puesto el cinturón de seguridad."
+        "texto": "puede conducir si han pasado más de 4 horas desde el consumo."
       },
       {
         "key": "C",
-        "texto": "el vehículo tenga menos de 10 años de antigüedad."
+        "texto": "comete una infracción muy grave que puede derivar en delito penal."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Conducir bajo los efectos de drogas, incluido el cannabis, es una infracción muy grave que puede derivar en delito penal. La norma no establece ningún plazo de espera ni umbral de síntomas: lo que se sanciona es la presencia de la sustancia en el organismo mientras se conduce.\n\n- Opciones incorrectas: la ausencia de síntomas subjetivos no exime de la sanción; las pruebas de saliva o sangre detectan la sustancia con independencia de cómo se sienta el conductor. Ningún plazo de horas establece impunidad legal.\n- Conexión: negarse a las pruebas de detección de drogas, al igual que con el alcohol, es un delito penal autónomo, con independencia de si el conductor estaba o no bajo sus efectos.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Drogas al volante: infracción muy grave sin umbral de espera ni de síntomas.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0791",
+    "number": 0,
+    "enunciado": "Encuentra a una víctima de accidente que no respira y no tiene pulso. Está usted solo. ¿Cuál es la secuencia correcta de RCP en adultos?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "30 compresiones torácicas + 2 ventilaciones, a un ritmo de 100-120 compresiones por minuto."
+      },
+      {
+        "key": "B",
+        "texto": "15 compresiones torácicas + 2 ventilaciones, a un ritmo de 80-100 compresiones por minuto."
+      },
+      {
+        "key": "C",
+        "texto": "2 ventilaciones primero y luego 30 compresiones, repitiendo el ciclo."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "La secuencia de RCP en adultos es 30 compresiones torácicas seguidas de 2 ventilaciones (30:2), a un ritmo de 100-120 compresiones por minuto y con una profundidad de 5-6 cm.\n\n- Opciones incorrectas: la secuencia 15:2 se usa en reanimación pediátrica con dos reanimadores, no en adultos. Empezar por las ventilaciones es una secuencia obsoleta; las guías actuales priorizan las compresiones porque el oxígeno residual en sangre es suficiente durante los primeros minutos.\n- Conexión: si hay un DEA (desfibrilador externo automático) disponible, debe usarse lo antes posible siguiendo sus instrucciones de voz, sin interrumpir la RCP más de lo necesario.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "RCP adulto: 30 compresiones + 2 ventilaciones, a 100-120 por minuto.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0792",
+    "number": 0,
+    "enunciado": "¿Puede conducir un vehículo especial agrícola de 8.000 kg con el permiso B?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, el permiso B permite tractores y cosechadoras sin límite de MMA."
+      },
+      {
+        "key": "B",
+        "texto": "No, el permiso B solo permite vehículos hasta 3.500 kg."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, pero solo en vías privadas o caminos rurales."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El permiso B autoriza la conducción de vehículos especiales agrícolas (tractores, cosechadoras) sin límite de MMA, a diferencia del resto de vehículos ordinarios limitados a 3.500 kg.\n\n- Opciones incorrectas: la opción que cita 3.500 kg aplica a turismos y vehículos ordinarios, no a los especiales agrícolas; restringirlos a vías privadas no tiene base legal.\n- Conexión: los vehículos especiales NO agrícolas (grúas, quitanieves) sí están limitados a 3.500 kg y 40 km/h con el permiso B.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_01",
+    "tema": "El Conductor y el Permiso",
+    "pista": "Los especiales agrícolas tienen regla propia, sin límite de MMA.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 2,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0793",
+    "number": 0,
+    "enunciado": "¿Cuál es la edad mínima general para viajar como pasajero en una motocicleta?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "14 años en cualquier caso."
+      },
+      {
+        "key": "B",
+        "texto": "10 años si el conductor es familiar directo."
+      },
+      {
+        "key": "C",
+        "texto": "12 años como regla general."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "La edad mínima general para viajar en moto como pasajero es 12 años. Existe una excepción que baja ese umbral a 7 años cuando el conductor es el padre, madre o tutor del menor.\n\n- Opciones incorrectas: los 14 años no corresponden a ninguna norma sobre pasajeros de moto; los 10 años tampoco, la excepción del familiar directo baja a 7, no a 10.\n- Conexión: además de la edad, la moto debe estar homologada para dos plazas y el pasajero debe llevar casco homologado.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Regla general 12 años; excepción tutor legal: desde 7 años.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0794",
+    "number": 0,
+    "enunciado": "Circula por una autovía a 55 km/h. ¿Cumple el límite de velocidad mínima?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, la velocidad mínima en autopistas y autovías es 60 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, la velocidad mínima es 50 km/h en autovías."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, no existe velocidad mínima en autovías."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En autopistas y autovías la velocidad mínima es 60 km/h. Circular a 55 km/h supone incumplir ese mínimo. El valor de 60 km/h equivale a la mitad del límite máximo general de 120 km/h.\n\n- Opciones incorrectas: la que cita 50 km/h es incorrecta, el mínimo es 60 km/h; la que niega la existencia de mínimo también es falsa.\n- Conexión: existen excepciones al mínimo para vehículos especiales con limitaciones técnicas y en situaciones de tráfico muy denso.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Mínimo en autopista = 120 ÷ 2 = 60 km/h.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0795",
+    "number": 0,
+    "enunciado": "¿Está permitido transportar un perro suelto en el habitáculo del turismo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, si el animal no molesta directamente al conductor."
+      },
+      {
+        "key": "B",
+        "texto": "No, debe ir en transportín, con arnés homologado o separado por rejilla."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, puede ir en el asiento trasero sin restricción."
       }
     ],
     "correcta": "B",
-    "explicacion": "El airbag está diseñado para funcionar conjuntamente con el cinturón de seguridad. Sin cinturón, el ocupante se desplaza hacia delante en el impacto y el airbag puede causar lesiones graves (fracturas faciales, quemaduras) en lugar de proteger.\n\n- Opciones incorrectas: el airbag funciona a cualquier velocidad de impacto, no solo por debajo de 50 km/h; la antigüedad del vehículo no determina la eficacia del airbag mientras funcione correctamente\n- Conexión: los niños en SRI colocados en sentido contrario a la marcha nunca deben ir en un asiento con airbag frontal activo, ya que la fuerza de expansión podría causar lesiones gravísimas\n- Dato clave: el cinturón reduce la mortalidad en un 50%, y el airbag solo aporta protección adicional si se usa con cinturón",
+    "explicacion": "Los animales no pueden viajar sueltos en el habitáculo porque pueden interferir con la conducción. Deben ir en transportín homologado, arnés específico o separados del conductor mediante rejilla.\n\n- Opciones incorrectas: que no moleste directamente no es condición suficiente; el asiento trasero sin sujeción también está prohibido.\n- Conexión: llevar el animal de forma que interfiera con la conducción es una infracción grave sancionada con 200€.",
     "hasImage": false,
     "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "El airbag no trabaja solo; necesita que otro sistema retenga primero al ocupante.",
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "El animal siempre debe estar contenido para no interferir.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0796",
+    "number": 0,
+    "enunciado": "Circula por carretera y el vehículo delantero frena para girar a la izquierda. ¿Puede adelantarle por la derecha?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Solo si hay un carril habilitado por la derecha."
+      },
+      {
+        "key": "B",
+        "texto": "No, el adelantamiento por la derecha está siempre prohibido."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, cuando el vehículo delantero indica giro a la izquierda."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Adelantar por la derecha está permitido cuando el vehículo delantero indica que va a girar a la izquierda. Es la única maniobra posible para no quedar bloqueado.\n\n- Opciones incorrectas: la que exige carril habilitado añade una condición que la norma no establece; la que prohíbe siempre el adelantamiento por la derecha ignora esta excepción expresa.\n- Conexión: otras situaciones que permiten adelantar por la derecha son las vías urbanas con dos o más carriles marcados por sentido y el adelantamiento a tranvías.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Giro a la izquierda del delantero = puedes pasarle por la derecha.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0797",
+    "number": 0,
+    "enunciado": "Circula por un túnel con su turismo. ¿Cuál es la distancia de seguridad mínima obligatoria?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "50 metros o 2 segundos, igual que en carretera convencional."
+      },
+      {
+        "key": "B",
+        "texto": "150 metros o 6 segundos."
+      },
+      {
+        "key": "C",
+        "texto": "100 metros o 4 segundos."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Dentro de un túnel, los vehículos de hasta 3.500 kg (incluidos los turismos) deben mantener una distancia mínima de 100 metros o 4 segundos, superior a la de circulación normal.\n\n- Opciones incorrectas: los 50 metros o 2 segundos aplican en condiciones normales fuera del túnel; los 150 metros o 6 segundos corresponden a vehículos de más de 3.500 kg (camiones, autobuses).\n- Conexión: en túneles también está prohibido adelantar en vías de un solo carril por sentido y dar marcha atrás.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Turismo en túnel: 100 m / 4 s. Camión en túnel: 150 m / 6 s.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0798",
+    "number": 0,
+    "enunciado": "Conduce de madrugada y siente que le cierran los ojos involuntariamente. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Parar el vehículo en lugar seguro y dormir unos 15-20 minutos."
+      },
+      {
+        "key": "B",
+        "texto": "Bajar la ventanilla y tomar café en la próxima parada."
+      },
+      {
+        "key": "C",
+        "texto": "Subir el volumen de la radio y continuar, pues le quedan pocos kilómetros."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Cuando aparecen síntomas de sueño al volante la única solución segura es detenerse y hacer una siesta reparadora de 15-20 minutos. El sueño no puede combatirse con café, ventilación o música.\n\n- Opciones incorrectas: el café tarda 30 minutos en hacer efecto y no sustituye al sueño; subir el volumen de la radio es ineficaz y continuar somnoliento es extremadamente peligroso aunque queden pocos kilómetros.\n- Conexión: la madrugada (2:00-6:00) y la sobremesa (14:00-16:00) son los horarios de mayor riesgo de microsueños.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Ni café ni música: solo dormir 15-20 minutos resuelve el sueño.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0799",
+    "number": 0,
+    "enunciado": "¿Qué vehículos tienen prohibida la circulación por autopistas y autovías?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Solo los peatones y vehículos de tracción animal."
+      },
+      {
+        "key": "B",
+        "texto": "Únicamente los vehículos sin seguro vigente."
+      },
+      {
+        "key": "C",
+        "texto": "Ciclomotores, ciclistas (salvo señal específica) y peatones, entre otros."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Los ciclomotores, peatones, ciclistas (salvo señalización específica), vehículos de tracción animal y VMP tienen prohibida la circulación por autopistas y autovías. También los vehículos especiales que no alcancen 60 km/h.\n\n- Opciones incorrectas: citar solo peatones y tracción animal omite ciclomotores, VMP y ciclistas; el seguro no es el criterio que determina el acceso a la vía.\n- Conexión: los vehículos con remolque sí pueden circular por autopista, aunque con velocidad máxima reducida (90 o 80 km/h según tipo de remolque).",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Ciclomotores, bicis y peatones están excluidos de autopistas.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0800",
+    "number": 0,
+    "enunciado": "Su permiso B caduca en dos semanas. ¿Con cuánta antelación máxima puede renovarlo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Hasta 3 meses antes de la fecha de vencimiento."
+      },
+      {
+        "key": "B",
+        "texto": "Solo el mismo día que caduque o en los días siguientes."
+      },
+      {
+        "key": "C",
+        "texto": "Con un año de antelación como máximo."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El permiso de conducción puede renovarse hasta 3 meses antes de su fecha de caducidad sin perder vigencia. Conducir con permiso caducado es infracción grave (200€).\n\n- Opciones incorrectas: esperar al día de caducidad es arriesgado si surgen retrasos administrativos; un año de antelación no está previsto en la normativa.\n- Conexión: la vigencia normal del permiso B es de 10 años para conductores menores de 65 años; a partir de esa edad se renueva cada 5 años.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_01",
+    "tema": "El Conductor y el Permiso",
+    "pista": "Se puede renovar hasta 3 meses antes de que caduque.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0801",
+    "number": 0,
+    "enunciado": "Circula con nieve intensa y debe arrancar desde parado. ¿En qué marcha lo hace?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "En primera, para tener más fuerza de tracción."
+      },
+      {
+        "key": "B",
+        "texto": "En segunda, para evitar que las ruedas patinen."
+      },
+      {
+        "key": "C",
+        "texto": "En tercera, para ganar velocidad más rápidamente."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Con nieve o hielo se arranca en segunda marcha porque la primera tiene demasiado par y provoca que las ruedas patinen. Además hay que soltar el embrague muy despacio.\n\n- Opciones incorrectas: la primera marcha genera tanto par que hace patinar las ruedas sobre la nieve; la tercera no aporta suficiente tracción para iniciar la marcha desde parado.\n- Conexión: en bajadas con nieve se usa freno motor en marchas cortas y se evita frenar bruscamente.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "En nieve: arrancar en segunda para no patinar.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0802",
+    "number": 0,
+    "enunciado": "En una intersección sin señalizar donde una vía pavimentada cruza un camino de tierra, la prioridad es para...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "el vehículo que llegue primero a la intersección."
+      },
+      {
+        "key": "B",
+        "texto": "el vehículo de mayor envergadura."
+      },
+      {
+        "key": "C",
+        "texto": "el vehículo que circula por la vía pavimentada."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Cuando una vía pavimentada se cruza con un camino de tierra sin señalizar, la prioridad corresponde siempre a los vehículos de la vía pavimentada.\n\n- Opciones incorrectas: quién llega primero aplica si las dos vías son del mismo tipo; el tamaño del vehículo no determina la prioridad en este escenario.\n- Conexión: esta regla es una excepción a la prioridad general por la derecha; la vía pavimentada tiene preferencia con independencia de la dirección de la que provenga el otro vehículo.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Pavimento tiene prioridad sobre tierra aunque venga por la izquierda.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0803",
+    "number": 0,
+    "enunciado": "Necesita programar una ruta en el GPS. ¿Cuándo puede hacerlo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Solo con el vehículo completamente detenido."
+      },
+      {
+        "key": "B",
+        "texto": "Mientras circula, si lo hace con una sola mano y con precaución."
+      },
+      {
+        "key": "C",
+        "texto": "En retenciones, aprovechando que el tráfico está parado."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Programar el GPS solo puede hacerse con el vehículo completamente parado. Manipularlo mientras se circula, aunque sea en retención, está prohibido si requiere manipulación manual.\n\n- Opciones incorrectas: circular con una sola mano manipulando el GPS está prohibido; en retenciones el vehículo sigue en circulación y la prohibición aplica igualmente.\n- Conexión: manipular el navegador GPS fijo mientras se circula conlleva multa de 200€ y pérdida de 3 puntos; si es el móvil, 200€ y 6 puntos.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "GPS: programar solo parado; consultar sin manipulación, permitido.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0804",
+    "number": 0,
+    "enunciado": "Circula por autopista con un autobús de más de 9 plazas sin pasajeros de pie. ¿Cuál es su límite máximo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "90 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "100 km/h."
+      },
+      {
+        "key": "C",
+        "texto": "120 km/h."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Un autobús normal de más de 9 plazas sin pasajeros de pie tiene un límite de 100 km/h en autopista y autovía, no el de 120 km/h de los turismos.\n\n- Opciones incorrectas: los 90 km/h corresponden al autobús escolar en autopista o al camión; los 120 km/h son el límite de turismos y motocicletas.\n- Conexión: si ese mismo autobús lleva pasajeros de pie, el límite en autopista se mantiene en 100 km/h, pero en carretera convencional baja a 80 km/h.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Autobús normal en autopista: 100, no 90 ni 120.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0805",
+    "number": 0,
+    "enunciado": "¿Puede estacionar junto a la línea amarilla continua en el bordillo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, si la parada no supera los 2 minutos."
+      },
+      {
+        "key": "B",
+        "texto": "Solo para carga y descarga con luces de emergencia activadas."
+      },
+      {
+        "key": "C",
+        "texto": "No, está prohibido tanto parar como estacionar."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "La línea amarilla continua en el bordillo prohíbe tanto la parada como el estacionamiento. No existe ninguna excepción por duración ni tipo de maniobra.\n\n- Opciones incorrectas: los 2 minutos distinguen parada de estacionamiento, pero la línea continua prohíbe ambas; la carga/descarga tampoco está permitida en ese espacio.\n- Conexión: la línea amarilla discontinua en el bordillo solo prohíbe el estacionamiento pero permite la parada breve.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "Continua = prohíbe todo. Discontinua = solo prohíbe estacionar.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0806",
+    "number": 0,
+    "enunciado": "Sufre una avería en autopista de noche. ¿Qué debe ponerse antes de salir del vehículo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El casco de protección, obligatorio fuera del vehículo."
+      },
+      {
+        "key": "B",
+        "texto": "El chaleco reflectante, antes de abrir la puerta."
+      },
+      {
+        "key": "C",
+        "texto": "Las gafas de sol para protegerse del deslumbramiento."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El chaleco reflectante debe ponerse antes de salir del vehículo, aún dentro del habitáculo, para ser visible desde el momento en que se abre la puerta.\n\n- Opciones incorrectas: el casco no es obligatorio para conductores de turismos fuera del vehículo; las gafas de sol son para conducción diurna, no para emergencias nocturnas.\n- Conexión: tras ponerse el chaleco, se debe activar el dispositivo V-16 (obligatorio desde enero 2026 en vías interurbanas) o colocar los triángulos de emergencia.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "Chaleco dentro del coche antes de abrir la puerta.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0807",
+    "number": 0,
+    "enunciado": "Esta señal obliga a encender las luces de cruce. ¿Puede usar también las luces largas?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, si la vía está oscura y no hay vehículos de frente."
+      },
+      {
+        "key": "B",
+        "texto": "No, esta señal obliga a cruce y excluye el uso de largas."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, siempre que se apaguen al ver otro vehículo."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La señal R-419 obliga al uso de luces de corto alcance (cruce). No está permitido usar luces largas donde esta señal esté presente, ya que su función es evitar el deslumbramiento en ese tramo.\n\n- Opciones incorrectas: la ausencia de vehículos de frente no elimina la obligación impuesta por la señal; la posibilidad de apagar las largas al ver otro vehículo tampoco es válida porque la señal prohíbe usarlas directamente.\n- Conexión: esta señal aparece habitualmente antes de túneles, en carriles reversibles y en otras vías donde el deslumbramiento supone riesgo especial.",
+    "hasImage": false,
+    "imageSrc": "/images/senales/reglamentacion/R-419.svg",
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "R-419: solo cruce, largas prohibidas aunque no haya nadie.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0808",
+    "number": 0,
+    "enunciado": "Una víctima de accidente tiene una quemadura en el brazo. ¿Qué debe hacer primero?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Enfriar la zona con agua corriente y cubrir con paño limpio."
+      },
+      {
+        "key": "B",
+        "texto": "Cubrir con vendaje compresivo para contener el calor."
+      },
+      {
+        "key": "C",
+        "texto": "Aplicar pomada o mantequilla para aliviar el dolor."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Ante una quemadura, la primera acción es enfriar la zona con agua corriente durante varios minutos y luego cubrirla con un paño limpio. No debe aplicarse nada sobre la quemadura.\n\n- Opciones incorrectas: el vendaje compresivo no es la técnica adecuada para quemaduras; aplicar pomada, mantequilla u otros productos aumenta el riesgo de infección.\n- Conexión: en primeros auxilios en accidente de tráfico tampoco se deben mover las víctimas salvo peligro inminente, ni dar de beber a una víctima inconsciente.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Quemaduras: agua corriente, sin pomadas ni cremas.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0809",
+    "number": 0,
+    "enunciado": "Las infracciones graves de tráfico prescriben a los...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "3 meses."
+      },
+      {
+        "key": "B",
+        "texto": "12 meses."
+      },
+      {
+        "key": "C",
+        "texto": "6 meses."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Las infracciones graves y muy graves prescriben a los 6 meses desde que se cometieron. Las infracciones leves prescriben a los 3 meses.\n\n- Opciones incorrectas: los 3 meses son el plazo para infracciones leves; los 12 meses no corresponden a ningún plazo de prescripción de infracciones de tráfico.\n- Conexión: una vez notificada la denuncia, el conductor tiene 20 días naturales para pagar con descuento del 50% o presentar alegaciones.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "Leve: 3 meses. Grave y muy grave: 6 meses.",
     "tipoPregunta": "completar",
     "dificultad": {
       "d_reglas": 1,
@@ -2603,37 +4153,75 @@ export const questionBank: BankQuestion[] = [
     "nivel": 1
   },
   {
-    "id": "pregunta_0625",
+    "id": "pregunta_0810",
     "number": 0,
-    "enunciado": "Circula por una vía urbana de dos carriles por sentido y necesita girar a la izquierda en la próxima intersección. Un vehículo viene de frente por el carril contrario. ¿Cómo debe proceder?",
+    "enunciado": "¿Por qué lado del arcén deben circular los peatones si no hay acera?",
     "opciones": [
       {
         "key": "A",
-        "texto": "Girar a la izquierda rápidamente antes de que llegue el otro vehículo."
+        "texto": "Por el arcén izquierdo, de frente al tráfico que circula."
       },
       {
         "key": "B",
-        "texto": "Colocarse junto al eje de la calzada, señalizar, y ceder el paso al vehículo que viene de frente antes de girar."
+        "texto": "Por el arcén derecho, en el mismo sentido que el tráfico."
       },
       {
         "key": "C",
-        "texto": "Girar desde el carril derecho para no estorbar al tráfico del carril izquierdo."
+        "texto": "Por cualquier lado, eligiendo el más ancho disponible."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Cuando no hay acera, los peatones deben circular por el arcén izquierdo, mirando de frente al tráfico que se aproxima, para poder verlo y reaccionar a tiempo.\n\n- Opciones incorrectas: circular por la derecha implicaría que los vehículos pasan por detrás sin que el peatón los vea; elegir el más ancho no es el criterio legal.\n- Conexión: si tampoco hay arcén, los peatones deben ir por el borde izquierdo de la calzada, siempre de frente al tráfico.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Peatón en carretera: arcén izquierdo, de frente al tráfico.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0811",
+    "number": 0,
+    "enunciado": "El semáforo de su carril muestra una aspa roja. ¿Qué debe hacer?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Reducir la velocidad y circular con precaución por ese carril."
+      },
+      {
+        "key": "B",
+        "texto": "Abandonar ese carril inmediatamente, está cerrado para usted."
+      },
+      {
+        "key": "C",
+        "texto": "Detenerse solo si hay vehículos de frente."
       }
     ],
     "correcta": "B",
-    "explicacion": "Para girar a la izquierda, debe colocarse junto al eje de la calzada o en el carril izquierdo, señalizar con suficiente antelación y ceder el paso a los vehículos que vengan de frente. Solo cuando el vehículo de frente haya pasado podrá completar el giro.\n\n- Opciones incorrectas: girar rápidamente antes de que llegue el otro vehículo es peligroso e incumple la obligación de ceder paso a quien viene de frente; girar desde el carril derecho obliga a cruzar el carril izquierdo interfiriendo con otros vehículos\n- Conexión: además de ceder paso a los vehículos de frente, también debe ceder el paso a los peatones que crucen la vía a la que se incorpora\n- Error común: muchos conductores olvidan que al girar a la izquierda deben ceder el paso a quienes vienen de frente, no solo señalizar",
+    "explicacion": "El aspa roja en un semáforo de carril significa que ese carril está cerrado para ese sentido de circulación. Debe cambiar a un carril abierto indicado con flecha verde hacia abajo.\n\n- Opciones incorrectas: circular con precaución por un carril cerrado es una infracción grave y peligroso; la presencia de vehículos de frente no es la condición que determina la prohibición.\n- Conexión: la flecha amarilla diagonal indica que el carril está a punto de cerrarse y hay que cambiar de carril cuanto antes.",
     "hasImage": false,
     "imageSrc": null,
-    "temaId": "tema_06",
-    "tema": "Prioridad y Maniobras",
-    "pista": "Al girar a la izquierda, tienes dos obligaciones: posicionarte y ceder paso al de frente.",
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Aspa roja = carril cerrado, cambiar de carril inmediatamente.",
     "tipoPregunta": "situacional",
     "dificultad": {
       "d_reglas": 1,
       "d_excepcion": 0,
-      "d_densidad": 1,
+      "d_densidad": 0,
       "d_implicito": 0,
-      "d_distractores": 1,
+      "d_distractores": 2,
       "d_contraintuitivo": 0,
       "total": 3,
       "nivel": 2
@@ -2641,31 +4229,183 @@ export const questionBank: BankQuestion[] = [
     "nivel": 2
   },
   {
-    "id": "pregunta_0626",
+    "id": "pregunta_0812",
     "number": 0,
-    "enunciado": "Al pagar una multa de tráfico con el descuento del 50% en los primeros 20 días, ¿se eliminan también los puntos detraídos?",
+    "enunciado": "Los turismos no deben circular por el arcén salvo...",
     "opciones": [
       {
         "key": "A",
-        "texto": "Sí, el descuento del 50% se aplica tanto a la multa económica como a los puntos."
+        "texto": "cuando la vía tenga dos o más carriles por sentido."
       },
       {
         "key": "B",
-        "texto": "No, los puntos se detraen igualmente; el descuento solo afecta a la cuantía económica."
+        "texto": "cuando el carril derecho esté congestionado."
       },
       {
         "key": "C",
-        "texto": "Los puntos se reducen a la mitad, al igual que la multa."
+        "texto": "en situaciones de emergencia como avería o accidente."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El arcén no es un carril de circulación para turismos. Solo puede usarse en situaciones de emergencia real: avería, accidente u otro caso de fuerza mayor.\n\n- Opciones incorrectas: tener dos o más carriles no autoriza el uso del arcén; la congestión del carril derecho tampoco es justificación legal.\n- Conexión: los vehículos que sí deben circular habitualmente por el arcén son ciclistas, ciclomotores, vehículos de tracción animal y vehículos especiales con velocidad máxima de 40 km/h.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "El arcén para turismos: solo en emergencia real.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0813",
+    "number": 0,
+    "enunciado": "Se produce una avería en autovía. ¿Por qué lado debe salir del vehículo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Por el lado derecho, hacia el arcén, alejándose de la calzada."
+      },
+      {
+        "key": "B",
+        "texto": "Por el lado del conductor, para ver el tráfico que se aproxima."
+      },
+      {
+        "key": "C",
+        "texto": "Por cualquier lado, lo más rápidamente posible."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En autopistas y autovías siempre hay que salir por el lado derecho del vehículo, hacia el arcén, alejándose de la calzada en circulación. Antes de salir, hay que ponerse el chaleco reflectante.\n\n- Opciones incorrectas: salir por el lado del conductor implica acceder directamente a la calzada, con riesgo extremo; hacerlo por cualquier lado sin orden es igualmente peligroso.\n- Conexión: tras salir, todos los ocupantes deben alejarse del vehículo y situarse detrás de las barreras de seguridad.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Siempre por la derecha, hacia el arcén, nunca a la calzada.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0814",
+    "number": 0,
+    "enunciado": "¿Está permitido a los ciclistas circular por las autopistas?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No, en ningún caso."
+      },
+      {
+        "key": "B",
+        "texto": "Solo si existe señalización específica que lo autorice."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, siempre por el arcén derecho."
       }
     ],
     "correcta": "B",
-    "explicacion": "El descuento del 50% por pronto pago solo se aplica a la cuantía económica de la multa. Los puntos se detraen íntegramente, independientemente de si se paga con descuento o no. Además, al acogerse al descuento se renuncia a presentar alegaciones.\n\n- Opciones incorrectas: el descuento no afecta a la pérdida de puntos en ningún caso; no existe ningún mecanismo de reducción proporcional de los puntos vinculado al pago de la multa\n- Conexión: la única forma de no perder los puntos es que la infracción sea anulada mediante alegaciones o recurso, lo cual es incompatible con acogerse al descuento por pronto pago\n- Error común: muchos conductores creen que al pagar con descuento se suavizan todas las consecuencias, cuando en realidad solo se reduce el importe económico y se pierden los derechos de defensa",
+    "explicacion": "Con carácter general los ciclistas no pueden circular por autopistas ni autovías. Sin embargo, existe la excepción de que la señalización específica del tramo lo autorice expresamente.\n\n- Opciones incorrectas: decir \"en ningún caso\" ignora la excepción prevista; circular siempre por el arcén derecho en autopista tampoco está previsto con carácter general.\n- Conexión: tampoco pueden circular por autopistas los ciclomotores, peatones, VMP ni vehículos de tracción animal.",
     "hasImage": false,
     "imageSrc": null,
-    "temaId": "tema_12",
-    "tema": "Infracciones y Sanciones",
-    "pista": "El descuento es un incentivo económico, pero los puntos son otra consecuencia independiente.",
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Ciclistas en autopista: prohibido salvo señal específica que lo permita.",
     "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 5,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0815",
+    "number": 0,
+    "enunciado": "Circula de noche por carretera y le deslumbra un vehículo de frente. ¿Dónde debe mirar?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "A las luces del vehículo contrario para calcular su posición."
+      },
+      {
+        "key": "B",
+        "texto": "Hacia la mediana para mantener la trayectoria central."
+      },
+      {
+        "key": "C",
+        "texto": "Al borde derecho de la calzada para guiarse."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Cuando un vehículo le deslumbra de frente, debe apartar la vista de las luces y mirar hacia el borde derecho de la calzada. Esto protege la vista y permite mantener la posición correcta.\n\n- Opciones incorrectas: mirar directamente a las luces empeora el deslumbramiento y puede causar ceguera temporal; mirar hacia la mediana puede llevarle a invadir el carril contrario.\n- Conexión: ante el deslumbramiento también debe reducir la velocidad y mantenerse en su carril hasta que el vehículo pase.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Deslumbramiento: mirar borde derecho, no a las luces.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0816",
+    "number": 0,
+    "enunciado": "En una vía urbana con tres carriles por sentido, el conductor de un turismo...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "debe circular siempre por el carril más próximo al bordillo."
+      },
+      {
+        "key": "B",
+        "texto": "puede utilizar cualquiera de los tres carriles."
+      },
+      {
+        "key": "C",
+        "texto": "solo puede usar el carril derecho y el central para adelantar."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "En vías urbanas con tres o más carriles por sentido, el conductor puede circular por cualquiera de los carriles disponibles, a diferencia de las vías interurbanas donde se exige circular por el carril derecho.\n\n- Opciones incorrectas: la obligación de circular siempre por la derecha aplica en vías interurbanas, no en vías urbanas de múltiples carriles; la restricción a dos carriles no tiene base normativa.\n- Conexión: en vías interurbanas de dos o más carriles por sentido sí se debe circular por el carril derecho y usar el izquierdo solo para adelantar.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Urbana con 3+ carriles: libre elección de carril.",
+    "tipoPregunta": "completar",
     "dificultad": {
       "d_reglas": 1,
       "d_excepcion": 1,
@@ -2679,30 +4419,30 @@ export const questionBank: BankQuestion[] = [
     "nivel": 3
   },
   {
-    "id": "pregunta_0627",
+    "id": "pregunta_0817",
     "number": 0,
-    "enunciado": "Los Vehículos de Movilidad Personal, ¿pueden circular por aceras o zonas peatonales?",
+    "enunciado": "¿Dónde debe depositar los neumáticos usados al cambiarlos en un taller?",
     "opciones": [
       {
         "key": "A",
-        "texto": "Sí, siempre que circulen a menos de 10 km/h."
+        "texto": "El taller está obligado a recogerlos; también puede llevarlos a punto limpio."
       },
       {
         "key": "B",
-        "texto": "Sí, si no hay carril bici disponible."
+        "texto": "En el contenedor de basura más cercano al taller."
       },
       {
         "key": "C",
-        "texto": "No, tienen prohibido circular por aceras y zonas peatonales."
+        "texto": "Solo en puntos limpios municipales, el taller no tiene obligación."
       }
     ],
-    "correcta": "C",
-    "explicacion": "Los VMP (patinetes eléctricos y similares) tienen prohibido circular por aceras y zonas peatonales. Deben circular por carriles bici, vías ciclistas, ciclo-calles o por la calzada de vías urbanas utilizando el carril derecho.\n\n- Opciones incorrectas: no existe ninguna velocidad que permita a los VMP circular por aceras; la ausencia de carril bici no autoriza a circular por zonas peatonales, sino por la calzada\n- Conexión: los VMP tampoco pueden circular por vías interurbanas (autopistas, autovías, carreteras), y su velocidad máxima por diseño es de 25 km/h\n- Dato clave: desde enero de 2026, los VMP necesitan seguro obligatorio, registro en la DGT, número identificativo visible y casco",
+    "correcta": "A",
+    "explicacion": "Los neumáticos usados son residuos especiales. El taller está legalmente obligado a recogerlos cuando realiza el cambio. Alternativamente, el conductor puede llevarlos a un punto limpio.\n\n- Opciones incorrectas: depositarlos en la basura normal está prohibido, son residuos especiales; decir que solo los puntos limpios los aceptan es incorrecto, el taller tiene obligación legal.\n- Conexión: otros residuos del vehículo que requieren gestión especial son el aceite usado, las baterías y el líquido refrigerante.",
     "hasImage": false,
     "imageSrc": null,
-    "temaId": "tema_04",
-    "tema": "La Vía y sus Usuarios",
-    "pista": "Aunque sean pequeños, no son peatones. Circulan por donde las bicicletas.",
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "Neumáticos: el taller está obligado a recogerlos al hacer el cambio.",
     "tipoPregunta": "directa",
     "dificultad": {
       "d_reglas": 1,
@@ -2717,69 +4457,107 @@ export const questionBank: BankQuestion[] = [
     "nivel": 1
   },
   {
-    "id": "pregunta_0628",
+    "id": "pregunta_0818",
     "number": 0,
-    "enunciado": "Un amigo le ofrece llevarle en su coche después de haber consumido cocaína hace unas horas. Él dice que ya se le han pasado los efectos y que se siente bien. ¿Debe aceptar?",
+    "enunciado": "Recibe una denuncia como titular del vehículo. ¿En cuántos días debe identificar al conductor?",
     "opciones": [
       {
         "key": "A",
-        "texto": "Sí, si él se siente bien es que los efectos ya han desaparecido."
+        "texto": "10 días naturales desde la notificación."
       },
       {
         "key": "B",
-        "texto": "No, los efectos de la cocaína incluyen una fase posterior de depresión y fatiga intensa que es muy peligrosa al volante."
+        "texto": "20 días naturales desde la notificación."
       },
       {
         "key": "C",
-        "texto": "Sí, la cocaína mejora los reflejos y la atención."
+        "texto": "30 días desde la notificación."
       }
     ],
     "correcta": "B",
-    "explicacion": "La cocaína tiene una fase inicial de estimulación (exceso de confianza, agresividad) seguida de una fase de depresión, fatiga intensa y dificultad de concentración. Que el conductor sienta que se le han pasado los efectos puede significar que está entrando en esa fase depresiva, que es igualmente peligrosa al volante.\n\n- Opciones incorrectas: sentirse bien no garantiza que los efectos hayan desaparecido completamente del organismo; la cocaína no mejora realmente los reflejos sino que crea una falsa sensación de competencia que lleva a conducción temeraria\n- Conexión: conducir bajo los efectos de drogas es un delito penal, independientemente de que el conductor se sienta capacitado\n- Error común: creer que al desaparecer la euforia ya no hay riesgo, cuando la fase posterior de agotamiento es igualmente peligrosa",
+    "explicacion": "El titular del vehículo tiene 20 días naturales desde la notificación para identificar al conductor infractor. Si no lo hace, asume la responsabilidad económica de la sanción, aunque no pierde puntos.\n\n- Opciones incorrectas: los 10 días no corresponden a ningún plazo de identificación del conductor; los 30 días tampoco son el plazo legal.\n- Conexión: no identificar al conductor puede ser sancionado como infracción muy grave con multa de hasta 1.500€.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "Identificar al conductor: 20 días, igual que el plazo para el descuento.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0819",
+    "number": 0,
+    "enunciado": "Hay una retención en autopista. ¿Cuándo debe formar el corredor de emergencias?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "En cuanto empiece la retención, antes de que lleguen los servicios."
+      },
+      {
+        "key": "B",
+        "texto": "Cuando vea llegar los vehículos de emergencia."
+      },
+      {
+        "key": "C",
+        "texto": "Solo si la retención supera los 500 metros de longitud."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El corredor de emergencias debe formarse en cuanto empiece la retención, sin esperar a ver llegar los servicios de emergencia. La anticipación es fundamental para su eficacia.\n\n- Opciones incorrectas: esperar a ver los servicios de emergencia es demasiado tarde; la longitud de la retención no es el criterio, basta con que exista.\n- Conexión: en vía de dos carriles, el izquierdo se pega a la izquierda y el derecho a la derecha; en tres o más carriles, el izquierdo va a la izquierda y todos los demás a la derecha.",
     "hasImage": false,
     "imageSrc": null,
     "temaId": "tema_10",
     "tema": "Factores de Riesgo",
-    "pista": "Las drogas estimulantes tienen un efecto rebote que también afecta a la conducción.",
+    "pista": "Corredor: formarlo desde el primer momento de retención.",
     "tipoPregunta": "situacional",
     "dificultad": {
       "d_reglas": 1,
       "d_excepcion": 0,
-      "d_densidad": 1,
-      "d_implicito": 1,
-      "d_distractores": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
       "d_contraintuitivo": 1,
-      "total": 5,
+      "total": 4,
       "nivel": 2
     },
     "nivel": 2
   },
   {
-    "id": "pregunta_0629",
+    "id": "pregunta_0820",
     "number": 0,
-    "enunciado": "En los túneles, los captafaros de color azul indican la ubicación de...",
+    "enunciado": "El pasajero de una motocicleta debe viajar sentado...",
     "opciones": [
       {
         "key": "A",
-        "texto": "el borde derecho de la calzada."
+        "texto": "de lado, con los pies colgando hacia el mismo lado."
       },
       {
         "key": "B",
-        "texto": "las salidas de emergencia."
+        "texto": "a horcajadas, con los pies apoyados en los reposapiés."
       },
       {
         "key": "C",
-        "texto": "los puestos SOS y teléfonos de emergencia."
+        "texto": "detrás del conductor, sujetándose solo al asiento."
       }
     ],
-    "correcta": "C",
-    "explicacion": "En los túneles, los captafaros azules señalan la ubicación de los puestos SOS y teléfonos de emergencia (nichos SOS). Estos puestos se encuentran aproximadamente cada 200-250 metros e incluyen teléfono y extintor.\n\n- Opciones incorrectas: el borde derecho de la calzada se señaliza con captafaros blancos o amarillos; las salidas de emergencia se señalizan con luz verde, no con captafaros azules\n- Conexión: en caso de incendio en un túnel, las salidas de emergencia (señalizadas con luz verde) son el destino prioritario de evacuación; los puestos SOS sirven para comunicarse y disponer de extintores\n- Dato clave: los colores de los captafaros son blanco o amarillo en el borde derecho, blanco en el izquierdo, amarillo o naranja en medianas, y azul en puestos SOS de túneles",
+    "correcta": "B",
+    "explicacion": "El pasajero debe ir a horcajadas (una pierna a cada lado) y con los pies apoyados en los reposapiés laterales. Viajar de lado compromete la estabilidad de la moto.\n\n- Opciones incorrectas: viajar de lado es peligroso y desequilibra la moto; sujetarse solo al asiento sin apoyar los pies en los reposapiés también es incorrecto.\n- Conexión: además de la posición correcta, el pasajero debe llevar casco homologado y la moto debe estar homologada para dos plazas.",
     "hasImage": false,
     "imageSrc": null,
-    "temaId": "tema_07",
-    "tema": "Señalización",
-    "pista": "Cada color de captafaro tiene un significado distinto. El azul es exclusivo de túneles.",
-    "tipoPregunta": "directa",
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Pasajero en moto: a horcajadas, pies en los reposapiés.",
+    "tipoPregunta": "completar",
     "dificultad": {
       "d_reglas": 1,
       "d_excepcion": 0,
@@ -2793,41 +4571,41 @@ export const questionBank: BankQuestion[] = [
     "nivel": 2
   },
   {
-    "id": "pregunta_0630",
+    "id": "pregunta_0821",
     "number": 0,
-    "enunciado": "Conduce un vehículo equipado con sistema ISA (Asistente de Velocidad Inteligente) y sistema de mantenimiento de carril (LKA). Al entrar en una zona de obras con marcas viales borradas y sin señal de velocidad visible, ambos sistemas dejan de funcionar correctamente. ¿Qué debe hacer?",
+    "enunciado": "Tiene 4 años de permiso B. ¿Puede conducir una motocicleta de 125 cc sin ningún trámite?",
     "opciones": [
       {
         "key": "A",
-        "texto": "Detenerse hasta que los sistemas se restablezcan."
+        "texto": "Sí, el permiso B siempre ha incluido las motos de 125 cc sin condiciones."
       },
       {
         "key": "B",
-        "texto": "Adaptar la velocidad a las condiciones de la zona de obras y mantener el control del vehículo sin depender de los sistemas."
+        "texto": "Sí, con más de 3 años de permiso B no se necesita ningún trámite."
       },
       {
         "key": "C",
-        "texto": "Buscar una ruta alternativa para evitar la zona donde los sistemas no funcionan."
+        "texto": "No, a partir de 2025 es obligatorio realizar un curso de formación."
       }
     ],
-    "correcta": "B",
-    "explicacion": "Cuando los sistemas ADAS dejan de funcionar correctamente (por marcas borradas, señales no visibles, etc.), el conductor debe estar preparado para conducir con la misma seguridad sin ellos. En una zona de obras, debe adaptar la velocidad a las condiciones y mantener el control manual del vehículo.\n\n- Opciones incorrectas: detenerse en medio de una zona de obras por fallo de los ADAS es innecesario y peligroso para el tráfico; buscar una ruta alternativa no es viable cuando ya se ha entrado en la zona de obras, y además los sistemas no son imprescindibles para conducir\n- Conexión: la normativa establece que los ADAS son ayudas y que el conductor debe estar siempre preparado para retomar el control completo; si un sistema falla, la responsabilidad sigue siendo del conductor\n- Error común: depender excesivamente de los sistemas ADAS y no estar preparado para conducir sin ellos, especialmente en situaciones donde las condiciones de la vía impiden su correcto funcionamiento",
+    "correcta": "C",
+    "explicacion": "Desde 2025, quienes cumplan los 3 años de antigüedad del permiso B deben realizar un curso de formación obligatorio (parte teórica y práctica) para poder conducir motocicletas de hasta 125 cc.\n\n- Opciones incorrectas: decir que el permiso B siempre lo ha incluido sin condiciones es incorrecto, ya existía el requisito de los 3 años; decir que basta con tener más de 3 años ignora la nueva obligación del curso desde 2025.\n- Conexión: esta habilitación solo es válida en España, no en otros países de la UE, y está limitada a 125 cc y 11 kW de potencia.",
     "hasImage": false,
     "imageSrc": null,
-    "temaId": "tema_09",
-    "tema": "Seguridad y Tecnología",
-    "pista": "Los ADAS son ayudas, no sustitutos. El conductor siempre debe poder conducir sin ellos.",
+    "temaId": "tema_01",
+    "tema": "El Conductor y el Permiso",
+    "pista": "3 años de permiso B + curso de formación (desde 2025) = 125 cc.",
     "tipoPregunta": "situacional",
     "dificultad": {
-      "d_reglas": 2,
+      "d_reglas": 1,
       "d_excepcion": 1,
-      "d_densidad": 1,
+      "d_densidad": 0,
       "d_implicito": 1,
       "d_distractores": 2,
       "d_contraintuitivo": 0,
-      "total": 7,
-      "nivel": 3
+      "total": 5,
+      "nivel": 2
     },
-    "nivel": 3
+    "nivel": 2
   }
 ];

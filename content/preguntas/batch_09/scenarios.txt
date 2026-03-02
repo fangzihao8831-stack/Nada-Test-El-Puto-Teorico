@@ -1,0 +1,30 @@
+subtema_01 | Remolque pesado (900 kg) mayor que tractor (800 kg) con conjunto < 4.250 kg — código armonizado 96
+subtema_03 | Distintivo «L» — infracción leve 100€ al no llevarlo en el primer año (no en el segundo)
+subtema_09 | Pasajero de 9 años en moto de tío sin tutela legal — prohibido, excepción solo para padre/madre/tutor
+subtema_11 | Autobús urbano saliendo de parada en vía de un carril — obligatorio ceder el paso al activar señal
+subtema_12 | Ciclocalle — ciclista tiene prioridad, conductor debe ceder si no puede adelantar
+subtema_15 | Vías urbanas: dos o más carriles por sentido = 50 km/h; uno solo = 30 km/h
+subtema_16 | Remolque pesado en autopista — velocidad máxima 80 km/h
+subtema_17 | Carretera convencional con separación física señalizada — velocidad máxima 100 km/h
+subtema_19 | Tranvía por la izquierda en intersección sin señal — prioridad absoluta del tranvía sobre turismo a la derecha
+subtema_21 | Adelantar por la derecha en vía urbana con dos carriles marcados por sentido — permitido
+subtema_23 | Parada de taxi señalizada a 10 metros — prohibido estacionar, mínimo 15 metros
+subtema_24 | Panel complementario «L-V 7:00-21:00» — señal solo rige de lunes a viernes en ese horario
+subtema_28 | Retención larga en túnel — apagar motor para evitar acumulación de gases tóxicos
+subtema_29 | Señal R-419 antes de túnel — encender luces de cruce, nunca las largas
+subtema_32 | Pasarse la salida en autopista — continuar hasta la siguiente, nunca marcha atrás ni cruzar mediana
+subtema_33 | Incendio en túnel sin poder mover vehículo — dejar llaves puestas, no cerrar con llave
+subtema_35 | Lluvia intensa con visibilidad 40 m de noche — antiniebla trasera permitida (< 50 m)
+subtema_43 | Corredor de emergencias — formarlo en cuanto empieza la retención, no al ver llegar emergencias
+subtema_44 | Hemorragia intensa en brazo que no cede — añadir paños encima sin retirar el primero
+subtema_46 | Sobremesa (14-16 h) — junto a la madrugada, el horario de mayor riesgo de somnolencia
+subtema_47 | Adelantar camión con lluvia intensa — activar limpiaparabrisas al máximo antes de iniciar
+subtema_50 | Motorista inconsciente que respira — PLS sin quitar el casco
+subtema_51 | Accidente en autovía de noche — chaleco dentro del coche antes de salir a la calzada
+subtema_52 | Bajada con nieve — freno motor en marchas cortas, freno de pie suave y anticipado
+subtema_54 | Aceite usado vertido en alcantarilla — infracción grave, residuo peligroso
+subtema_55 | Pago multa con descuento 50% — los puntos se detraen igualmente
+subtema_58 | Denuncia notificada hace 25 días — plazo de 20 días para descuento ya expirado
+subtema_10 | Carril VAO con vehículo ECO y un solo ocupante — solo si señalización variable lo autoriza expresamente
+subtema_44 | Cannabis al volante — infracción muy grave sin umbral de espera ni de síntomas
+subtema_50 | RCP adulto — 30 compresiones + 2 ventilaciones a 100-120 por minuto

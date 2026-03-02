@@ -1,0 +1,29 @@
+{
+  "preguntas": [
+    {
+      "id": "pregunta_0731",
+      "subtema_id": "subtema_10",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Qué obliga a hacer esta señal al conductor que se aproxima a ella?",
+      "opciones": [
+        "Detenerse completamente antes de continuar.",
+        "Ceder el paso a los vehículos que circulan por la vía a la que se accede.",
+        "Reducir la velocidad hasta 30 km/h."
+      ],
+      "correcta": 1,
+      "explicacion": "La señal R-2 (ceda el paso) obliga al conductor a dejar pasar a los vehículos que ya circulan por la vía a la que se incorpora, sin exigir necesariamente una detención completa.\n\n- **Opciones incorrectas**: La detención completa obligatoria corresponde a la señal R-1 (stop), no a esta. La limitación de velocidad a 30 km/h es una señal de reglamentación de velocidad máxima (R-301), sin relación con la prioridad de paso.\n- **Error común**: Muchos alumnos confunden R-2 con R-1 y creen que siempre hay que detenerse; la diferencia clave es que con ceda el paso solo se detiene si hay tráfico que ceda.\n- **Conexión**: En la jerarquía de señales, tanto R-1 como R-2 regulan la prioridad en intersecciones, pero R-2 permite continuar si la vía está libre, mientras que R-1 impone parada obligatoria.",
+      "pista": "Esta señal no siempre obliga a parar, pero sí a dar preferencia.",
+      "codigo_senal": "R-2",
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 1,
+        "d_contraintuitivo": 1,
+        "total": 5,
+        "nivel": 2
+      }
+    }
+  ]
+}

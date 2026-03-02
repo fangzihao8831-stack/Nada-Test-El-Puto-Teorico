@@ -1,0 +1,30 @@
+subtema_01 | Vehículo especial agrícola (tractor 8.000 kg) con permiso B — permitido sin límite de MMA
+subtema_09 | Edad mínima general pasajero en moto — 12 años (excepción: 7 con tutor legal)
+subtema_15 | Velocidad mínima en autovía — 60 km/h (mitad del límite máximo)
+subtema_11 | Transporte de perro suelto en habitáculo — prohibido, debe ir en transportín o arnés
+subtema_21 | Adelantar por la derecha cuando el delantero gira a la izquierda — permitido
+subtema_28 | Distancia de seguridad mínima en túnel para turismo — 100 m o 4 s
+subtema_46 | Ojos que se cierran al volante de madrugada — parar y dormir 15-20 minutos
+subtema_32 | Usuarios prohibidos en autopistas — ciclomotores, ciclistas (salvo señal), peatones y VMP
+subtema_03 | Antelación máxima para renovar el permiso B — hasta 3 meses antes de caducar
+subtema_35 | Arrancar desde parado con nieve — en segunda marcha para no patinar
+subtema_19 | Prioridad en intersección vía pavimentada con camino de tierra — vía pavimentada
+subtema_47 | Programar ruta en GPS — solo con el vehículo completamente detenido
+subtema_16 | Velocidad máxima autobús normal (sin pasajeros de pie) en autopista — 100 km/h
+subtema_23 | Línea amarilla continua en bordillo — prohíbe tanto parar como estacionar
+subtema_51 | Avería en autopista de noche — ponerse chaleco dentro del coche antes de salir
+subtema_24 | Señal R-419 — obliga a cruce, largas prohibidas aunque no haya vehículos
+subtema_44 | Quemadura en accidente — enfriar con agua corriente, sin pomadas
+subtema_55 | Prescripción infracciones graves — 6 meses (leves: 3 meses)
+subtema_12 | Peatones sin acera en carretera — arcén izquierdo, de frente al tráfico
+subtema_29 | Semáforo de carril con aspa roja — carril cerrado, cambiar inmediatamente
+subtema_10 | Arcén para turismos — solo en emergencia (avería, accidente)
+subtema_43 | Avería en autovía — salir por el lado derecho hacia el arcén
+subtema_17 | Ciclistas en autopista — prohibido salvo señalización específica que lo autorice
+subtema_33 | Deslumbramiento nocturno de frente — mirar al borde derecho de la calzada
+subtema_10 | Vía urbana con 3+ carriles — libre elección de carril (no hay obligación de ir por la derecha)
+subtema_54 | Neumáticos usados al cambiarlos — taller obligado a recogerlos o punto limpio
+subtema_58 | Plazo para identificar al conductor infractor como titular — 20 días naturales
+subtema_43 | Corredor de emergencias en retención — formarlo en cuanto empieza la retención
+subtema_09 | Posición del pasajero en motocicleta — a horcajadas con pies en reposapiés
+subtema_01 | Conducir moto 125 cc con permiso B — requiere curso de formación desde 2025

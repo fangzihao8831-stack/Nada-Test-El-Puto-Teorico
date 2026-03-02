@@ -1,0 +1,129 @@
+{
+  "preguntas": [
+    {
+      "id": "pregunta_0701",
+      "subtema_id": "subtema_34",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿En qué condición está permitido encender la luz antiniebla trasera durante la conducción?",
+      "opciones": [
+        "Cuando la visibilidad sea inferior a 50 metros.",
+        "Siempre que llueva, aunque la visibilidad sea suficiente.",
+        "En cualquier vía interurbana de noche, independientemente de la visibilidad."
+      ],
+      "correcta": 0,
+      "explicacion": "La luz antiniebla trasera solo está autorizada cuando la visibilidad es inferior a 50 metros. Usarla en condiciones de mayor visibilidad deslumbra al conductor de detrás y constituye una infracción.\n\n- Opciones incorrectas: usar la antiniebla trasera solo por lluvia moderada —con buena visibilidad— es incorrecto y sancionable con 200€. La noche por sí sola no justifica su uso: existen las luces de posición y de freno para esa función.\n- Conexión: la antiniebla delantera tiene criterios distintos; puede usarse con niebla ligera, lluvia intensa o nevada sin el umbral de los 50 metros.\n- Error común: muchos conductores encienden la antiniebla trasera con cualquier lluvia, ignorando que solo se justifica con visibilidad muy reducida.",
+      "pista": "Piensa en el umbral de visibilidad que la norma fija para esta luz.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0702",
+      "subtema_id": "subtema_21",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una carretera convencional con línea continua central. Se aproxima a un ciclista al que necesita adelantar invadiendo brevemente el carril contrario. No viene ningún vehículo de frente. ¿Puede adelantar?",
+      "opciones": [
+        "No, la línea continua prohíbe invadir el carril contrario en cualquier circunstancia.",
+        "Sí, pero únicamente si la velocidad del ciclista no supera los 30 km/h.",
+        "Sí, cruzar la línea continua está permitido para adelantar a ciclistas, siempre que se mantenga la distancia lateral de 1,5 metros."
+      ],
+      "correcta": 2,
+      "explicacion": "Para adelantar a un ciclista se permite cruzar la línea continua si el adelantamiento se realiza con seguridad y manteniendo al menos 1,5 metros de distancia lateral, independientemente del tipo de línea central.\n\n- Opciones incorrectas: la prohibición absoluta de cruzar la línea continua no contempla esta excepción específica para ciclistas y usuarios vulnerables. La condición de velocidad del ciclista no existe en la norma; la clave es la distancia lateral garantizada y la ausencia de peligro.\n- Conexión: durante el adelantamiento a ciclistas también es obligatorio circular 20 km/h por debajo del límite de la vía. El incumplimiento de la distancia de 1,5 metros supone infracción muy grave y pérdida de 6 puntos.\n- Error común: muchos conductores no adelantan al ciclista por respetar la línea continua, cuando la norma les obliga a proteger al usuario vulnerable aunque haya que cruzarla.",
+      "pista": "Los ciclistas son usuarios vulnerables con protección especial en el adelantamiento.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 2,
+        "d_excepcion": 2,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 1,
+        "total": 8,
+        "nivel": 4
+      }
+    },
+    {
+      "id": "pregunta_0703",
+      "subtema_id": "subtema_02",
+      "tipo_pregunta": "completar",
+      "enunciado": "Al obtener el permiso de conducir por primera vez, el conductor novel dispone de un saldo inicial de...",
+      "opciones": [
+        "12 puntos, igual que el resto de conductores.",
+        "8 puntos.",
+        "6 puntos, por su menor experiencia al volante."
+      ],
+      "correcta": 1,
+      "explicacion": "El conductor novel comienza con 8 puntos en lugar de los 12 que tienen los conductores con más de dos años de antigüedad.\n\n- Opciones incorrectas: la opción de 12 puntos corresponde a los conductores experimentados tras superar el período novel sin infracciones graves. Los 6 puntos no existen como saldo inicial en ningún caso previsto por la normativa.\n- Conexión: si el novel completa los dos primeros años sin infracciones graves o muy graves, pasa automáticamente a 12 puntos. El máximo acumulable con bonificaciones es 15 puntos.",
+      "pista": "El saldo inicial del novel es menor que el del conductor con experiencia.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 0,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 1,
+        "d_contraintuitivo": 0,
+        "total": 1,
+        "nivel": 1
+      }
+    },
+    {
+      "id": "pregunta_0704",
+      "subtema_id": "subtema_32",
+      "tipo_pregunta": "dato",
+      "enunciado": "Un autobús escolar circula por una autopista. ¿Cuál es su velocidad máxima permitida?",
+      "opciones": [
+        "90 km/h.",
+        "100 km/h.",
+        "80 km/h."
+      ],
+      "correcta": 0,
+      "explicacion": "El autobús escolar tiene una velocidad máxima de 90 km/h en autopista, 10 km/h menos que el autobús ordinario sin pasajeros de pie (100 km/h).\n\n- Opciones incorrectas: los 100 km/h corresponden al autobús normal sin pasajeros de pie, no al escolar. Los 80 km/h es el límite del autobús escolar en carretera convencional, no en autopista.\n- Dato clave: el autobús escolar también está limitado a 80 km/h en carretera convencional (frente a los 90 del autobús ordinario en esa misma vía).\n- Error común: confundir el límite del autobús normal con el del escolar; la diferencia de 10 km/h se aplica en todas las vías interurbanas.",
+      "pista": "El autobús escolar circula 10 km/h más despacio que el autobús normal en cada tipo de vía.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0705",
+      "subtema_id": "subtema_43",
+      "tipo_pregunta": "situacional",
+      "enunciado": "En un paso a nivel, el motor de su vehículo se cala sobre las vías y no arranca con normalidad. ¿Qué debe hacer en primer lugar?",
+      "opciones": [
+        "Abandonar el vehículo inmediatamente y alejarse de las vías.",
+        "Intentar mover el vehículo usando el motor de arranque con una marcha corta engranada.",
+        "Avisar al ferrocarril mediante el teléfono del poste SOS antes de cualquier otra acción."
+      ],
+      "correcta": 1,
+      "explicacion": "Cuando el motor se cala sobre las vías, la primera acción es intentar mover el vehículo accionando el motor de arranque con primera marcha engranada; el propio arranque puede desplazar el coche los metros necesarios para salir de la zona de peligro.\n\n- Opciones incorrectas: abandonar inmediatamente es la acción correcta solo si el intento de mover el vehículo falla o si se detecta la llegada del tren. Avisar al ferrocarril es importante pero viene después de intentar despejar las vías.\n- Conexión: si el vehículo no se puede mover, la prioridad cambia: sacar a los ocupantes, alejarlos de las vías y dar aviso al ferrocarril para que pueda detener el tren.\n- Error común: muchos creen que la primera reacción debe ser evacuar, pero si hay tiempo y no se oye el tren, mover el vehículo evita el siniestro.",
+      "pista": "Si el motor se cala, el motor de arranque puede mover el coche unos metros.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 1,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 1,
+        "total": 6,
+        "nivel": 3
+      }
+    }
+  ]
+}

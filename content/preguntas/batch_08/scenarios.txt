@@ -1,0 +1,30 @@
+subtema_03 | Distintivo «L» — obligatorio solo el primer año, no los dos años del período novel
+subtema_08 | Seguro obligatorio en vehículo aparcado sin circular — baja temporal exime
+subtema_11 | Carga sobresaliente por detrás en turismo — 10% divisible, 15% indivisible
+subtema_06 | Pasajero adulto sin cinturón — responsable el propio pasajero, no el conductor
+subtema_16 | Velocidad caravana (remolque pesado) en carretera convencional — 70 km/h
+subtema_07 | ITV turismo 6 años con revisión hace 23 meses — aún en vigor (cada 2 años)
+subtema_15 | Ciclomotor en autopista — prohibido sin excepción
+subtema_18 | Girar ruedas al estacionar en bajada con bordillo — hacia el bordillo
+subtema_25 | Agente brazo levantado verticalmente — alto para todos, equivale a rojo
+subtema_25 | Silbato toques cortos y frecuentes del agente — detenerse inmediatamente
+subtema_14 | Tranvía por la derecha en intersección sin señal — prioridad del tranvía
+subtema_21 | Adelantar por la derecha a vehículo que gira a la izquierda — permitido
+subtema_23 | Estacionar a 12 metros de parada de autobús — prohibido, mínimo 15 m
+subtema_27 | Pasarse la salida en autopista — continuar hasta la siguiente, nunca marcha atrás
+subtema_28 | Adelantar en túnel de un carril por sentido — prohibido sin excepción
+subtema_34 | Antiniebla trasera con lluvia y visibilidad > 100 m — prohibido, solo < 50 m
+subtema_33 | Distancia para cambiar de largas a cruce ante vehículo de frente — 150 metros
+subtema_30 | Señalizar al salir de glorieta — intermitente derecho obligatorio
+subtema_46 | Pausa para prevenir fatiga en viaje largo — cada 2 horas o 200 km
+subtema_47 | Móvil sujetado en atasco — prohibido también en retenciones y semáforos
+subtema_44 | Víctima inconsciente que respira — colocar en PLS
+subtema_44 | Casco motorista inconsciente — no quitar salvo que no respire para RCP
+subtema_47 | Aceite usado del motor — punto limpio o taller autorizado, nunca basura normal
+subtema_36 | Café y alcohol — el café no elimina el alcohol, solo el tiempo
+subtema_36 | Negarse a prueba de alcoholemia — delito penal, prisión 6 meses a 1 año
+subtema_02 | Puntos tras 3 años sin infracciones graves — 12 puntos (estándar)
+subtema_32 | Luces obligatorias de día en carril reversible — luces de cruce siempre
+subtema_31 | Velocidad con niebla densa (visibilidad 40 m) — adaptar para detenerse en lo visible
+subtema_05 | Fallo de frenos en bajada — freno motor + freno de mano gradual
+subtema_13 | Estrechamiento pendiente 7% con apartadero — turismo que sube cede si tiene apartadero

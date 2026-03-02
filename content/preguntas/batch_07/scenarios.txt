@@ -1,0 +1,31 @@
+subtema_34 | Luz antiniebla trasera — condición de uso (<50 m visibilidad)
+subtema_21 | Adelantar ciclista con línea continua en carretera convencional
+subtema_02 | Saldo inicial de puntos del conductor novel
+subtema_32 | Velocidad máxima autobús escolar en autopista (90 km/h)
+subtema_43 | Motor calado sobre vías del paso a nivel — primera acción
+subtema_23 | Distancia mínima de estacionamiento desde un paso de peatones (5 m)
+subtema_30 | Prioridad de paso en glorieta — vehículos dentro tienen preferencia
+subtema_46 | Fatiga en conducción prolongada — acción correcta al sentirse cansado
+subtema_36 | Obligación de portar el permiso de conducción durante la marcha
+subtema_10 | Jerarquía de señales: semáforo verde prevalece sobre señal stop fija
+subtema_38 | SRI obligatorio para niño de 125 cm — asiento trasero, SRI homologado
+subtema_17 | Adelantar en túnel con un carril por sentido — prohibido
+subtema_27 | Tasa de alcohol en aire espirado para conductor novel (0,15 mg/l)
+subtema_14 | Prioridad en intersección sin señal con tranvía a la izquierda y turismo a la derecha
+subtema_33 | Luces obligatorias de noche en vía interurbana — luces de cruce
+subtema_16 | Velocidad máxima genérica del turismo en carretera convencional (90 km/h)
+subtema_47 | Uso del teléfono móvil al volante — obligación de detenerse o ignorar llamada
+subtema_06 | Cinturón de seguridad obligatorio para todos los ocupantes en cualquier vía
+subtema_20 | Incorporación a autopista por carril de aceleración — preferencia vehículos en autopista
+subtema_04 | Velocidad máxima turismo con remolque ligero (≤750 kg) en autopista (90 km/h)
+subtema_41 | Carril de circulación en autopista con tres carriles — obligación de circular por la derecha
+subtema_13 | Prioridad en pendiente estrecha — preferencia al vehículo que sube
+subtema_25 | Gesto agente de espaldas con brazos extendidos — detiene al tráfico que circula en esa dirección
+subtema_09 | Ceder el paso a vehículos de emergencia con señales acústicas y luminosas
+subtema_40 | Colocación de triángulos de emergencia — mínimo 50 m del vehículo
+subtema_35 | Luces de cruce obligatorias de día en carretera convencional fuera de poblado
+subtema_37 | ITV turismo — exento durante los primeros 4 años desde la matriculación
+subtema_22 | Señalización de cambio de carril — con suficiente antelación (sin cifra fija de segundos)
+subtema_05 | Tasa de alcohol en sangre para conductor novel (0,3 g/l)
+subtema_15 | Semáforo en ámbar — obligación de detenerse si se puede frenar con seguridad
+subtema_10 | Señal R-2 ceda el paso — obliga ceder sin detención obligatoria (distinto de R-1 stop)

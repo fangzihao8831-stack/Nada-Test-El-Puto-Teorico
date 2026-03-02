@@ -36,6 +36,27 @@ Si cumple CUALQUIERA, descartar y reescribir:
 
 ---
 
+## Longitud y estilo DGT (HARD REJECT si se excede)
+
+**Límites de longitud:**
+- Enunciado: **máximo 120 caracteres**. DGT real promedia 82, máximo ~110.
+- Cada opción: **máximo 80 caracteres**. DGT real promedia 46, máximo ~80.
+- Si se excede, recortar. Sin excepciones.
+
+**Estilo directo (imitar DGT real, no inventar otro):**
+- Ir al grano: "¿Está permitido adelantar en túnel?" — NO "Usted circula por un túnel de un solo carril y el vehículo delantero va lento. ¿Puede adelantarlo?"
+- Contexto breve: una frase de situación + pregunta. NO dos frases de escenario + pregunta.
+- Sin relleno emocional: NO "usted considera que...", "decide que...", "se encuentra preocupado por..."
+- Opciones concisas: "Sí, siempre.", "No, en ningún caso.", "Solo en autopistas." — NO explicar el porqué dentro de la opción.
+
+**Patrones DGT frecuentes (usar estos):**
+- "¿Está permitido / obligatorio / prohibido [acción]?"
+- "¿Qué debe hacer si [situación breve]?"
+- "[Situación corta], ¿qué luces / velocidad / distancia...?"
+- "Su turismo [dato]. ¿[pregunta]?"
+
+---
+
 ## Verificación factual
 
 - Datos numéricos verificados contra `temario_permiso_b_v3.md`. Si no se encuentra, eliminar o FLAG.
@@ -59,6 +80,7 @@ Enunciado + opciones contienen TODA la información para responder. Si la respue
 
 ## Checklist por pregunta
 
+- [ ] Enunciado ≤ 120 caracteres, cada opción ≤ 80 caracteres
 - [ ] `dificultad` con 6 dimensiones + total + nivel. dato/directo/completar: max L3
 - [ ] `pista` (max 20 palabras, no revela respuesta)
 - [ ] `subtema_id` correcto según contenido

@@ -1,0 +1,629 @@
+{
+  "preguntas": [
+    {
+      "id": "pregunta_0706",
+      "subtema_id": "subtema_23",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿A qué distancia mínima de un paso de peatones está prohibido estacionar?",
+      "opciones": [
+        "A 5 metros.",
+        "A 3 metros.",
+        "A 10 metros."
+      ],
+      "correcta": 0,
+      "explicacion": "La normativa prohíbe estacionar a menos de 5 metros de un paso de peatones, para garantizar la visibilidad tanto del peatón como del conductor.\n\n- Opciones incorrectas: los 3 metros no corresponden a ninguna distancia mínima reglamentada para pasos de peatones. Los 10 metros es la distancia exigida para estacionar cerca de una parada de autobús o taxi, no de un paso de peatones.\n- Conexión: la misma distancia de 5 metros aplica también a las intersecciones y cruces; en ambos casos el objetivo es mantener la visibilidad y facilitar el cruce seguro.",
+      "pista": "La misma distancia que se exige en intersecciones se aplica en pasos de peatones.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 3,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0707",
+      "subtema_id": "subtema_30",
+      "tipo_pregunta": "completar",
+      "enunciado": "En una glorieta, la prioridad de paso corresponde...",
+      "opciones": [
+        "al vehículo que llega por la derecha, como norma general.",
+        "a los vehículos que ya circulan dentro de la glorieta.",
+        "al vehículo que lleva mayor velocidad en el momento de entrar."
+      ],
+      "correcta": 1,
+      "explicacion": "En la glorieta, los vehículos que ya circulan en su interior tienen prioridad sobre los que pretenden acceder, independientemente de por dónde lleguen.\n\n- Opciones incorrectas: la norma general de ceder a quien viene por la derecha no aplica en glorietas; aquí prevalece la regla específica de prioridad a quienes ya están dentro. La velocidad de entrada no determina nunca la preferencia de paso.\n- Conexión: esta regla es contraintuitiva porque en cualquier otra intersección sin señalizar se cede a la derecha; la glorieta es la excepción más importante a ese principio.\n- Error común: confundir la glorieta con una intersección normal y ceder a quien llega por la derecha desde fuera.",
+      "pista": "Quien ya está dentro del círculo tiene prioridad sobre quien intenta entrar.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 1,
+        "total": 5,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0708",
+      "subtema_id": "subtema_46",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Lleva conduciendo 3 horas seguidas por autopista sin parar. Se siente algo cansado pero el trayecto casi ha terminado. ¿Qué debe hacer?",
+      "opciones": [
+        "Continuar, ya que el cansancio leve no afecta significativamente a la conducción.",
+        "Bajar la calefacción y abrir una ventanilla para mantenerse despierto.",
+        "Detenerse en el área de servicio más próxima y descansar antes de continuar."
+      ],
+      "correcta": 2,
+      "explicacion": "Ante cualquier señal de cansancio, lo correcto es detenerse y descansar en cuanto sea posible, aunque el destino esté próximo. La fatiga es una de las principales causas de accidente en carretera.\n\n- Opciones incorrectas: continuar confiando en que el cansancio es leve ignora que la percepción subjetiva del conductor sobre su propio estado suele ser peor que la realidad. Abrir la ventanilla o bajar la calefacción son remedios temporales que no eliminan la fatiga.\n- Conexión: se recomienda parar cada 2 horas o 200 km aproximadamente para hacer un descanso de 20-30 minutos; esta es una recomendación de seguridad vial, no una obligación legal para el permiso B.\n- Error común: pensar que «ya queda poco» justifica continuar; el tramo final puede ser el de mayor riesgo si la fatiga es severa.",
+      "pista": "La fatiga no desaparece por estimular los sentidos; solo el descanso real la elimina.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0709",
+      "subtema_id": "subtema_36",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Está obligado a llevar consigo el permiso de conducción cuando conduce?",
+      "opciones": [
+        "Sí, debe portarlo siempre y exhibirlo cuando lo solicite un agente.",
+        "No, basta con estar dado de alta en el registro de la DGT.",
+        "Solo en vías interurbanas; en ciudad no es obligatorio."
+      ],
+      "correcta": 0,
+      "explicacion": "El permiso de conducción debe portarse siempre durante la conducción y presentarse a los agentes de la autoridad cuando lo requieran.\n\n- Opciones incorrectas: el registro en la DGT no exime de llevar el documento físico o su equivalente digital; la obligación de portar el permiso es independiente de cualquier base de datos. La distinción entre vía urbana e interurbana no existe en esta norma.\n- Conexión: además del permiso, el conductor debe llevar el permiso de circulación y el certificado de seguro en vigor. La no exhibición al agente puede suponer sanción leve.",
+      "pista": "El permiso debe estar disponible para mostrarse en cualquier momento durante la conducción.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 1,
+        "d_contraintuitivo": 0,
+        "total": 2,
+        "nivel": 1
+      }
+    },
+    {
+      "id": "pregunta_0710",
+      "subtema_id": "subtema_10",
+      "tipo_pregunta": "completar",
+      "enunciado": "Cuando un semáforo en verde se encuentra con una señal de stop en la misma intersección, el conductor...",
+      "opciones": [
+        "debe obedecer la señal de stop porque las señales verticales prevalecen sobre los semáforos.",
+        "debe obedecer el semáforo en verde porque la señal circunstancial prevalece sobre la fija.",
+        "puede elegir cuál de las dos instrucciones seguir según las circunstancias del tráfico."
+      ],
+      "correcta": 1,
+      "explicacion": "En la jerarquía de la señalización, las órdenes circunstanciales (como un semáforo) prevalecen sobre las señales fijas (como el stop), porque reflejan el estado real del tráfico en ese instante.\n\n- Opciones incorrectas: la afirmación de que las señales verticales prevalecen sobre los semáforos invierte la jerarquía correcta; las señales fijas solo rigen cuando no hay señal circunstancial activa. El conductor nunca puede elegir libremente entre dos señales contradictorias.\n- Conexión: la jerarquía completa es: agente de circulación > semáforo > señal vertical > marca vial. Cada nivel superior anula al inferior en el mismo punto.\n- Error común: pensar que el stop siempre obliga a detenerse, incluso cuando el semáforo habilita el paso.",
+      "pista": "Las señales que cambian en tiempo real reflejan mejor la situación que las señales fijas.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 2,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 1,
+        "total": 6,
+        "nivel": 3
+      }
+    },
+    {
+      "id": "pregunta_0711",
+      "subtema_id": "subtema_38",
+      "tipo_pregunta": "completar",
+      "enunciado": "Un niño de 7 años con una estatura de 125 centímetros debe viajar en un turismo. Debe hacerlo...",
+      "opciones": [
+        "en el asiento delantero si el airbag está desactivado.",
+        "en el asiento trasero con el cinturón de adulto, ya que mide más de 120 cm.",
+        "en el asiento trasero con un sistema de retención infantil homologado."
+      ],
+      "correcta": 2,
+      "explicacion": "Los menores de 135 cm de estatura deben usar siempre un sistema de retención infantil (SRI) homologado, preferentemente en el asiento trasero, independientemente de su edad o peso.\n\n- Opciones incorrectas: el asiento delantero solo está permitido con SRI homologado y airbag desactivado; no basta con desactivar el airbag sin usar el SRI. El cinturón de adulto no es adecuado para niños menores de 135 cm, independientemente de que superen los 120 cm.\n- Dato clave: la referencia para usar cinturón de adulto es la estatura de 135 cm, no la edad ni el peso del niño.\n- Conexión: si no hay plazas traseras disponibles con SRI, se puede usar el asiento delantero con SRI y airbag frontal desactivado.",
+      "pista": "El límite de estatura para el SRI es 135 cm, no 120 ni 130.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 5,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0712",
+      "subtema_id": "subtema_17",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Está permitido adelantar a otro vehículo por el interior de un túnel con un carril por sentido?",
+      "opciones": [
+        "No, está prohibido adelantar en túneles con un solo carril por sentido.",
+        "Sí, siempre que el túnel tenga iluminación artificial suficiente.",
+        "Sí, si la visibilidad dentro del túnel es superior a 200 metros."
+      ],
+      "correcta": 0,
+      "explicacion": "En los túneles con un solo carril por sentido está prohibido adelantar, porque cualquier maniobra de adelantamiento exige invadir el carril contrario, lo que supone un riesgo extremo en un espacio cerrado.\n\n- Opciones incorrectas: la iluminación artificial no modifica la prohibición de adelantar; el peligro proviene de la falta de espacio y visibilidad lateral, no solo de la luz ambiental. Los 200 metros de visibilidad no es un umbral que habilite el adelantamiento en túnel de un carril.\n- Conexión: en túneles con dos o más carriles por sentido sí está permitido el adelantamiento, igual que en cualquier vía multicarril.\n- Error común: confundir la prohibición de adelantar en túnel de 1 carril con una norma sobre visibilidad.",
+      "pista": "En un solo carril por sentido, adelantar siempre obliga a invadir el carril contrario.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0713",
+      "subtema_id": "subtema_27",
+      "tipo_pregunta": "dato",
+      "enunciado": "¿Cuál es la tasa de alcohol en aire espirado a partir de la cual un conductor novel comete infracción?",
+      "opciones": [
+        "0,25 mg/l.",
+        "0,15 mg/l.",
+        "0,30 mg/l."
+      ],
+      "correcta": 1,
+      "explicacion": "Los conductores noveles (permiso con menos de 2 años de antigüedad) tienen una tasa límite de 0,15 mg/l en aire espirado, frente a los 0,25 mg/l del conductor general.\n\n- Opciones incorrectas: los 0,25 mg/l es la tasa límite para conductores con más de dos años de permiso, no para noveles. Los 0,30 mg/l no corresponde a ninguna tasa oficial establecida en la normativa española.\n- Conexión: la misma tasa reducida de 0,15 mg/l aplica también a los conductores profesionales (transporte de viajeros, mercancías peligrosas, etc.).\n- Dato clave: en sangre la equivalencia es 0,3 g/l para novel y profesional, frente a 0,5 g/l para el conductor general.",
+      "pista": "Los noveles y los profesionales comparten el mismo umbral reducido de alcohol.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0714",
+      "subtema_id": "subtema_14",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Se acerca a una intersección sin señalizar. Por su derecha viene un vehículo y por su izquierda un tranvía. ¿A quién cede el paso?",
+      "opciones": [
+        "Al vehículo de su derecha, que siempre tiene preferencia en intersecciones sin señalizar.",
+        "Al tranvía, porque circula sobre raíles y tiene preferencia sobre cualquier vehículo.",
+        "Al tranvía por su izquierda, y al vehículo por su derecha cede a usted."
+      ],
+      "correcta": 2,
+      "explicacion": "El tranvía tiene prioridad absoluta sobre los vehículos de motor en cualquier intersección, independientemente de su posición. Por eso usted cede al tranvía de su izquierda; y el vehículo de su derecha, a su vez, le cede a usted por la norma general de la derecha.\n\n- Opciones incorrectas: la norma de ceder a la derecha no aplica frente al tranvía; el tranvía siempre prevalece con independencia de dónde venga. La segunda opción describe bien la prioridad del tranvía pero ignora la relación con el vehículo de la derecha.\n- Conexión: los tranvías circulan habitualmente en zonas urbanas y su trayectoria está fijada por los raíles, lo que hace imprescindible que los demás vehículos sean quienes se adapten.\n- Error común: aplicar mecánicamente la norma de la derecha sin tener en cuenta la prioridad especial del tranvía.",
+      "pista": "El tranvía tiene prioridad absoluta desde cualquier dirección; recuerda también quién cede a quién entre los demás.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 2,
+        "d_excepcion": 2,
+        "d_densidad": 1,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 1,
+        "total": 9,
+        "nivel": 4
+      }
+    },
+    {
+      "id": "pregunta_0715",
+      "subtema_id": "subtema_33",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Qué luces debe encender un turismo al circular de noche por una vía interurbana en condiciones normales?",
+      "opciones": [
+        "Las luces de cruce (cortas).",
+        "Las luces de posición solamente.",
+        "Las luces de largo alcance siempre que la vía esté despejada."
+      ],
+      "correcta": 0,
+      "explicacion": "De noche en vías interurbanas, la obligación general es circular con las luces de cruce encendidas. Las luces largas solo se usan cuando no haya riesgo de deslumbrar a otros conductores.\n\n- Opciones incorrectas: las luces de posición únicamente no son suficientes para circular de noche; sirven para ser visto, no para iluminar la calzada. Las luces largas son opcionales y se apagan cuando se detecta un vehículo en sentido contrario o se circula detrás de otro.\n- Conexión: de día, en vías interurbanas, los vehículos deben circular con la luz de cruce encendida. Las motos la llevan obligatoriamente día y noche.",
+      "pista": "Las luces cortas son la obligación general nocturna; las largas son opcionales cuando no hay tráfico.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 1,
+        "d_contraintuitivo": 0,
+        "total": 2,
+        "nivel": 1
+      }
+    },
+    {
+      "id": "pregunta_0716",
+      "subtema_id": "subtema_16",
+      "tipo_pregunta": "completar",
+      "enunciado": "La velocidad máxima genérica para un turismo en una carretera convencional es...",
+      "opciones": [
+        "100 km/h.",
+        "90 km/h.",
+        "80 km/h."
+      ],
+      "correcta": 1,
+      "explicacion": "La velocidad máxima genérica del turismo en carretera convencional (sin autopista ni autovía) es de 90 km/h.\n\n- Opciones incorrectas: los 100 km/h corresponden a la autovía o autopista, no a la convencional. Los 80 km/h es el límite del turismo que arrastra un remolque ligero en carretera convencional, o el del camión en esa misma vía.\n- Dato clave: las velocidades genéricas del turismo son 120 (autopista/autovía), 90 (convencional) y 50 (urbana).\n- Conexión: en travesías (tramo urbano de carretera convencional), la velocidad baja a 50 km/h aunque la vía sea la misma.",
+      "pista": "Recuerda los tres valores genéricos del turismo: autopista, convencional y urbana.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 3,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0717",
+      "subtema_id": "subtema_47",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una vía urbana y recibe una llamada importante. El teléfono está en el asiento del copiloto. ¿Qué debe hacer?",
+      "opciones": [
+        "Coger el teléfono brevemente, responder y dejarlo de nuevo; la llamada es corta.",
+        "Usar el altavoz del teléfono sujetándolo con una mano mientras conduce.",
+        "Detenerse en un lugar permitido o ignorar la llamada hasta poder parar."
+      ],
+      "correcta": 2,
+      "explicacion": "Usar el teléfono móvil al volante sin manos libres está prohibido, independientemente de la duración de la llamada o del tipo de vía. La única opción legal es detener el vehículo o no atender la llamada.\n\n- Opciones incorrectas: coger el teléfono aunque sea brevemente supone infracción grave y pérdida de 6 puntos. Sujetar el teléfono con una mano para usar el altavoz también está prohibido; el uso libre de manos exige un sistema integrado en el vehículo o un auricular.\n- Dato clave: usar el móvil al volante conlleva multa de 200€ y 6 puntos de detracción.\n- Conexión: el uso de auriculares que aislen al conductor de los ruidos del exterior también está prohibido; deben ser de un solo oído o permitir oír señales acústicas externas.",
+      "pista": "Ninguna duración de llamada justifica usar el móvil sin manos libres integrado.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 3,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0718",
+      "subtema_id": "subtema_06",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Están obligados a usar cinturón de seguridad los ocupantes de un turismo en vías urbanas?",
+      "opciones": [
+        "Sí, tanto el conductor como todos los pasajeros, en cualquier tipo de vía.",
+        "Solo el conductor; los pasajeros traseros están exentos en ciudad.",
+        "Solo el conductor y el ocupante del asiento delantero."
+      ],
+      "correcta": 0,
+      "explicacion": "El uso del cinturón de seguridad es obligatorio para todos los ocupantes del vehículo, conductor y pasajeros, tanto en vías urbanas como interurbanas.\n\n- Opciones incorrectas: no existe exención del cinturón para los pasajeros traseros en vía urbana; esta confusión proviene de normativas antiguas ya derogadas. La obligación no se limita al conductor y al copiloto; abarca todas las plazas del vehículo.\n- Conexión: las excepciones al cinturón son muy concretas: conductores con certificado médico que lo impida, maniobras lentas de carga/descarga, y conductores de taxi cuando transporten pasajeros en determinadas condiciones.\n- Error común: creer que en ciudad el cinturón trasero es opcional.",
+      "pista": "No hay distinción entre vía urbana e interurbana para la obligación del cinturón.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 1,
+        "d_contraintuitivo": 0,
+        "total": 2,
+        "nivel": 1
+      }
+    },
+    {
+      "id": "pregunta_0719",
+      "subtema_id": "subtema_20",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Va a incorporarse a una autopista por un carril de aceleración. Los vehículos que circulan por el carril derecho de la autopista no le dejan hueco. ¿Quién tiene la preferencia?",
+      "opciones": [
+        "Usted, porque el que se incorpora genera mayor peligro y debe ser respetado.",
+        "Los vehículos de la autopista, que tienen preferencia sobre quien se incorpora.",
+        "El primero que llegue al punto de fusión tiene preferencia sobre el otro."
+      ],
+      "correcta": 1,
+      "explicacion": "Los vehículos que ya circulan por la autopista tienen preferencia de paso sobre los que se incorporan por el carril de aceleración. Quien se incorpora debe adaptar su velocidad y encontrar un hueco sin obligar a los demás a frenar.\n\n- Opciones incorrectas: el riesgo que genera la incorporación no otorga preferencia al que se incorpora; es precisamente por ese riesgo que se exige ceder el paso. La preferencia no se decide por el orden de llegada al punto de fusión.\n- Conexión: la misma lógica aplica en la salida de aparcamientos, gasolineras y áreas de servicio: quien sale a la vía principal siempre cede al tráfico en marcha.\n- Error común: pensar que la velocidad alta en el carril de aceleración otorga derecho a incorporarse sin ceder.",
+      "pista": "Quien ya lleva ventaja en la vía principal no tiene que adaptarse al que llega.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 3,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0720",
+      "subtema_id": "subtema_04",
+      "tipo_pregunta": "dato",
+      "enunciado": "Un turismo que arrastra un remolque con una masa máxima autorizada de 600 kg circula por una autopista. ¿Cuál es su velocidad máxima?",
+      "opciones": [
+        "80 km/h.",
+        "120 km/h.",
+        "90 km/h."
+      ],
+      "correcta": 2,
+      "explicacion": "Un remolque de 600 kg es un remolque ligero (masa máxima autorizada igual o inferior a 750 kg), cuya velocidad máxima en autopista es de 90 km/h.\n\n- Opciones incorrectas: los 80 km/h corresponde al remolque pesado (más de 750 kg MMA) en autopista. Los 120 km/h es la velocidad del turismo sin remolque en autopista; con cualquier remolque esa velocidad se reduce.\n- Dato clave: remolque ligero (≤ 750 kg) → 90 km/h en autopista; remolque pesado (> 750 kg) → 80 km/h en autopista.\n- Error común: aplicar los 80 km/h al remolque ligero por confundirlo con el pesado; la diferencia de 10 km/h es un dato que el examen pone a prueba habitualmente.",
+      "pista": "El peso del remolque determina el límite: ligero tiene 10 km/h más que el pesado en autopista.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 5,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0721",
+      "subtema_id": "subtema_41",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿En qué carril debe circular un vehículo en una autopista con tres carriles por sentido cuando no adelanta?",
+      "opciones": [
+        "Por el carril derecho, dejando los otros disponibles para adelantar.",
+        "Por cualquiera de los tres carriles, según le resulte más cómodo.",
+        "Por el carril central, para equilibrar el flujo de tráfico."
+      ],
+      "correcta": 0,
+      "explicacion": "En autopistas y autovías con varios carriles, la norma obliga a circular por el carril más a la derecha posible cuando no se está adelantando; los carriles centrales e izquierdos son exclusivamente para adelantar.\n\n- Opciones incorrectas: circular por cualquier carril según comodidad es una práctica habitual pero ilegal; ocupar el carril central o izquierdo sin adelantar constituye infracción. El carril central no tiene ninguna función de «equilibrio de flujo» establecida en la norma.\n- Conexión: circular indebidamente por el carril izquierdo en autopista es una infracción grave que puede suponer sanción económica. En vías con dos carriles, igualmente se circula por el derecho y se usa el izquierdo solo para adelantar.\n- Error común: muchos conductores habituales de autopista ocupan el carril central de forma permanente sin advertirlo.",
+      "pista": "El carril derecho es el habitual; los demás son para adelantar.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 1,
+        "d_contraintuitivo": 0,
+        "total": 2,
+        "nivel": 1
+      }
+    },
+    {
+      "id": "pregunta_0722",
+      "subtema_id": "subtema_13",
+      "tipo_pregunta": "completar",
+      "enunciado": "En una pendiente pronunciada y estrecha donde no pueden cruzarse dos vehículos, tiene preferencia de paso...",
+      "opciones": [
+        "el vehículo de mayor tonelaje, que tiene más dificultad para maniobrar.",
+        "el vehículo que sube, porque frenar y retroceder en pendiente es más peligroso.",
+        "el vehículo que baja, ya que tiene mayor velocidad y dificultad para detenerse."
+      ],
+      "correcta": 1,
+      "explicacion": "En pendientes estrechas donde no pueden cruzarse dos vehículos, la preferencia la tiene el que sube; el que baja es quien debe retroceder hasta encontrar un ensanchamiento.\n\n- Opciones incorrectas: el tonelaje no determina la preferencia en pendiente; el criterio es la dirección de marcha. El vehículo que baja tiene mayor facilidad para retroceder (cuesta abajo) y frenar; quien sube en cambio arriesga el control del vehículo si retrocede.\n- Conexión: esta regla se combina con otras: un vehículo con remolque cede ante uno sin remolque en igualdad de condiciones, y cualquiera cede al servicio de urgencias.\n- Error común: aplicar la norma al revés por pensar que quien baja es el que lleva más velocidad y «no puede parar».",
+      "pista": "Retroceder en subida es más peligroso que retroceder en bajada.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 1,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0723",
+      "subtema_id": "subtema_25",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Un agente de circulación se sitúa de espaldas a usted con los brazos extendidos horizontalmente. ¿Qué significa esa señal para usted?",
+      "opciones": [
+        "Que debe reducir la velocidad gradualmente.",
+        "Que puede continuar con precaución, ya que el agente no le está mirando.",
+        "Que debe detenerse, pues el agente detiene a los vehículos del tráfico perpendicular al que le da la espalda."
+      ],
+      "correcta": 2,
+      "explicacion": "Cuando el agente está de espaldas a usted con los brazos extendidos, detiene el tráfico que circula de frente y por detrás (el perpendicular puede avanzar). Usted debe detenerse.\n\n- Opciones incorrectas: esta posición no significa reducir la velocidad; es una señal de detención para el tráfico situado frente al agente (y detrás). El hecho de que el agente no le mire directamente no autoriza a continuar; la señal tiene efecto en ambas direcciones del eje perpendicular al que el agente detiene.\n- Conexión: la posición de brazos extendidos horizontales detiene el tráfico paralelo al eje de los brazos y permite el perpendicular. Recordarlo con el eje: el brazo apunta a quien detiene.\n- Error común: confundir que el agente está de espaldas y asumir que la señal no le afecta.",
+      "pista": "Los brazos extendidos del agente detienen al tráfico que circula en la dirección de sus brazos extendidos.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 2,
+        "d_excepcion": 0,
+        "d_densidad": 1,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 1,
+        "total": 7,
+        "nivel": 3
+      }
+    },
+    {
+      "id": "pregunta_0724",
+      "subtema_id": "subtema_09",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Está obligado a ceder el paso a un vehículo de emergencia con señales acústicas y luminosas en funcionamiento?",
+      "opciones": [
+        "Sí, todo conductor debe facilitarles el paso inmediatamente.",
+        "Solo si el vehículo de emergencia lleva activada también la señal luminosa.",
+        "Solo en vías urbanas; en autopista tienen carril reservado."
+      ],
+      "correcta": 0,
+      "explicacion": "Todo conductor debe ceder el paso a los vehículos de emergencia (ambulancias, bomberos, policía) que circulen con señales acústicas y luminosas activadas, en cualquier tipo de vía y de forma inmediata.\n\n- Opciones incorrectas: la obligación no depende de que se use solo la acústica o solo la luminosa; cuando cualquiera de las dos esté activa en situación de emergencia, el paso debe facilitarse. No existe carril reservado permanente para emergencias en autopistas; la obligación de ceder aplica igualmente.\n- Conexión: para ceder el paso, el conductor debe aproximarse a la derecha de la calzada y detenerse si es necesario. En ningún caso debe seguir al vehículo de emergencia aprovechando el paso abierto.\n- Error común: ceder el paso solo a ambulancias y no a vehículos de policía o bomberos.",
+      "pista": "Señales acústicas o luminosas de emergencia activas obligan a ceder el paso en cualquier vía.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 1,
+        "d_contraintuitivo": 0,
+        "total": 2,
+        "nivel": 1
+      }
+    },
+    {
+      "id": "pregunta_0725",
+      "subtema_id": "subtema_40",
+      "tipo_pregunta": "completar",
+      "enunciado": "Un vehículo averiado en una vía interurbana debe señalizarse con triángulos de emergencia colocados...",
+      "opciones": [
+        "a 25 metros del vehículo, uno delante y otro detrás.",
+        "a 50 metros mínimo del vehículo, uno delante y otro detrás en doble sentido.",
+        "inmediatamente detrás del vehículo para advertir al tráfico que llega."
+      ],
+      "correcta": 1,
+      "explicacion": "Cada triángulo debe colocarse a un mínimo de 50 metros del vehículo averiado, de forma que sean visibles a 100 metros, y se coloca uno delante y otro detrás cuando la vía tiene tráfico en ambos sentidos.\n\n- Opciones incorrectas: los 25 metros no son suficientes; la normativa exige 50 metros para garantizar tiempo de reacción al conductor que se aproxima. Colocar el triángulo «inmediatamente detrás» es la práctica más peligrosa posible, porque el conductor que lo coloca queda expuesto al tráfico sin margen de aviso.\n- Dato clave: desde enero 2026, en vías interurbanas la baliza luminosa V-16 sustituye a los triángulos si se dispone de ella, colocándose sobre el techo del vehículo.\n- Conexión: al colocar los triángulos, el conductor debe ponerse el chaleco reflectante antes de salir del vehículo.",
+      "pista": "50 metros mínimo para dar tiempo de reacción; 100 metros de visibilidad.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0726",
+      "subtema_id": "subtema_35",
+      "tipo_pregunta": "completar",
+      "enunciado": "Al conducir de día por una carretera convencional fuera de poblado, las luces que debe llevar encendidas son...",
+      "opciones": [
+        "solo las luces de posición, para ahorrar batería.",
+        "ninguna; las luces son obligatorias solo de noche.",
+        "las luces de cruce, aunque haya plena visibilidad."
+      ],
+      "correcta": 2,
+      "explicacion": "En vías interurbanas, incluidas las carreteras convencionales, es obligatorio circular con las luces de cruce encendidas tanto de noche como de día, independientemente de las condiciones de visibilidad.\n\n- Opciones incorrectas: las luces de posición son insuficientes para circular de día en interurbana; sirven solo para estacionar o en situaciones de visibilidad reducida dentro de poblado. La obligación de llevar luces de cruce en interurbana es permanente, no solo nocturna.\n- Conexión: en vía urbana durante el día no existe obligación de llevar luces de cruce encendidas salvo que la visibilidad sea reducida. Las motos llevan la luz de cruce encendida siempre, también en ciudad y de día.\n- Error común: creer que las luces solo son obligatorias de noche o con lluvia.",
+      "pista": "De día en interurbana las luces de cruce son obligatorias aunque el sol brille.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 1,
+        "total": 5,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0727",
+      "subtema_id": "subtema_37",
+      "tipo_pregunta": "directa",
+      "enunciado": "¿Cuántos años de antigüedad máxima puede tener un turismo para estar exento de la primera Inspección Técnica de Vehículos?",
+      "opciones": [
+        "4 años.",
+        "3 años.",
+        "5 años."
+      ],
+      "correcta": 0,
+      "explicacion": "Los turismos están exentos de ITV durante los primeros 4 años desde su matriculación. A partir de ahí se someten a inspección periódica cada 2 años hasta los 10 años, y luego anualmente.\n\n- Opciones incorrectas: los 3 años corresponden al período de exención del ciclomotor, no del turismo. Los 5 años no se corresponden con ningún período reglamentado para turismos.\n- Dato clave: motocicletas comparten el mismo calendario que los turismos (4 años exento, luego cada 2 hasta los 10, luego anual). El ciclomotor tiene un esquema diferente: 3 años exento, luego cada 2 años sin período anual.\n- Conexión: circular con la ITV caducada supone infracción grave y puede acarrear la inmovilización del vehículo.",
+      "pista": "Turismo y moto comparten el mismo período de exención inicial de ITV.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 3,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0728",
+      "subtema_id": "subtema_22",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Va a realizar un cambio de carril hacia la izquierda en una vía urbana. ¿Cuándo debe señalizarlo con el intermitente?",
+      "opciones": [
+        "Justo en el momento de iniciar el cambio de carril.",
+        "Con suficiente antelación para que los demás conductores puedan anticipar la maniobra.",
+        "Al menos 15 segundos antes de ejecutar la maniobra."
+      ],
+      "correcta": 1,
+      "explicacion": "El Reglamento General de Circulación exige señalizar los cambios de dirección o carril con suficiente antelación, sin fijar un número de segundos concreto. El objetivo es que los otros usuarios puedan reaccionar con tiempo.\n\n- Opciones incorrectas: señalizar justo al iniciar el cambio no da margen de reacción a los demás y puede provocar situaciones de peligro. El plazo de 15 segundos no está establecido en ninguna norma del RGC; es un dato inventado que no debe usarse.\n- Conexión: la señalización anticipada aplica también a los giros en intersección, cambios de sentido, arranque desde el arcén y parada en calzada.\n- Error común: memorizar cifras concretas de tiempo para el intermitente; la norma usa la expresión abierta «con suficiente antelación».",
+      "pista": "La norma no fija segundos concretos; lo importante es que los demás puedan anticipar la maniobra.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 0,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0729",
+      "subtema_id": "subtema_05",
+      "tipo_pregunta": "completar",
+      "enunciado": "Un conductor con el permiso de conducir obtenido hace 18 meses no debe superar en sangre una tasa de alcohol de...",
+      "opciones": [
+        "0,5 g/l, como cualquier otro conductor.",
+        "0,2 g/l, que es el umbral más restrictivo de toda la normativa.",
+        "0,3 g/l, por ser conductor novel con menos de 2 años de permiso."
+      ],
+      "correcta": 2,
+      "explicacion": "El conductor novel, con menos de 2 años desde la obtención del permiso, está sujeto a una tasa máxima de 0,3 g/l en sangre (equivalente a 0,15 mg/l en aire espirado).\n\n- Opciones incorrectas: la tasa de 0,5 g/l en sangre es la general para conductores con más de dos años de permiso; el novel tiene la mitad permitida. El valor de 0,2 g/l no existe en la normativa española de tráfico.\n- Conexión: la misma tasa reducida de 0,3 g/l aplica a los conductores profesionales (autobuses, camiones con mercancías peligrosas). Superar el doble de la tasa aplicable (0,6 g/l para el general) constituye delito penal.\n- Dato clave: la equivalencia aire/sangre es: 0,15 mg/l aire = 0,3 g/l sangre para novel; 0,25 mg/l aire = 0,5 g/l sangre para el general.",
+      "pista": "Novel y profesional comparten la misma tasa en sangre, que es la mitad de la del conductor general.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 0,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 4,
+        "nivel": 2
+      }
+    },
+    {
+      "id": "pregunta_0730",
+      "subtema_id": "subtema_15",
+      "tipo_pregunta": "situacional",
+      "enunciado": "Circula por una vía urbana a 40 km/h y el semáforo que tiene delante se pone en ámbar. Puede frenar con seguridad. ¿Qué debe hacer?",
+      "opciones": [
+        "Mantener la velocidad para cruzar antes de que se ponga en rojo.",
+        "Acelerar levemente para asegurarse de pasar antes del rojo.",
+        "Detenerse antes de la línea de parada, ya que el ámbar indica que debe parar si puede hacerlo con seguridad."
+      ],
+      "correcta": 2,
+      "explicacion": "La señal ámbar del semáforo obliga a detenerse si el conductor puede hacerlo con seguridad. Solo si la detención supusiese un peligro (por ejemplo, si ya está cruzando la línea de parada) puede continuarse.\n\n- Opciones incorrectas: mantener la velocidad para cruzar antes del rojo es incorrecto si hay posibilidad de frenar; no se puede tomar la decisión de pasar con ámbar cuando el freno es viable. Acelerar ante el ámbar es siempre incorrecto y puede constituir infracción grave.\n- Conexión: el semáforo ámbar tiene el mismo efecto que un semáforo rojo anticipado cuando la detención es posible. Cruzar en ámbar habiendo podido frenar con seguridad equivale a saltarse el rojo.\n- Error común: interpretar el ámbar como «acelera que todavía puedes pasar», cuando en realidad señala el final del paso permitido.",
+      "pista": "Ámbar significa para si puedes; solo sigue si frenar sería peligroso.",
+      "codigo_senal": null,
+      "dificultad": {
+        "d_reglas": 1,
+        "d_excepcion": 1,
+        "d_densidad": 0,
+        "d_implicito": 1,
+        "d_distractores": 2,
+        "d_contraintuitivo": 0,
+        "total": 5,
+        "nivel": 2
+      }
+    }
+  ]
+}
