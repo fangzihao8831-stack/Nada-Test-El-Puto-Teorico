@@ -159,8 +159,8 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
 CLOUDINARY_API_KEY=
 CLOUDINARY_API_SECRET=
 
-# OpenAI (image generation)
-OPENAI_API_KEY=
+# Gemini (image generation)
+GEMINI_API_KEY=
 ```
 
 ## Git Workflow

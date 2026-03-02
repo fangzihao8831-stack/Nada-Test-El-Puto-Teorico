@@ -357,8 +357,8 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=tu-cloud-name
 CLOUDINARY_API_KEY=xxxxx
 CLOUDINARY_API_SECRET=xxxxx
 
-# OpenAI
-OPENAI_API_KEY=sk-xxxxx
+# Gemini (image generation — Nano Banana 2)
+GEMINI_API_KEY=xxxxx
 ```
 
 ---

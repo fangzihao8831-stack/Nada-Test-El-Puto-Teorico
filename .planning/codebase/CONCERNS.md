@@ -211,14 +211,13 @@
   - Test upgrade in staging environment first
   - Check migration guide for Server Actions compatibility
 
-**OpenAI API (Image Generation):**
-- Risk: Usage requires `OPENAI_API_KEY` env var; no fallback if API is down
+**Gemini API (Image Generation — Nano Banana 2):**
+- Risk: Usage requires `GEMINI_API_KEY` env var; no fallback if API is down
 - Impact: DGT question-image generation will fail; existing images safe but no new ones can be created
-- Current mitigation: Images can be generated from DALL-E 3 offline
+- Current mitigation: Images can be generated from Nano Banana 2 (`gemini-3.1-flash-image-preview`) offline
 - Migration plan:
   - Implement fallback to stock images library (Unsplash, Pexels)
   - Add feature flag to disable image generation if API cost becomes prohibitive
-  - Document cost: ~$0.04 per image via DALL-E 3
 
 **Cloudinary Image Hosting:**
 - Risk: Cloudinary account required for production image serving

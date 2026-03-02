@@ -48,6 +48,7 @@ Los skills pueden lanzar subagentes (Task tool) para trabajo en paralelo.
 - **Output**: JSON con preguntas, explicaciones, pistas
 - Prompt actualizado con datos reales: distribución de tipos, palabras trampa con frecuencias, patrones de inicio, datos numéricos, distribución por temas
 - Todas las preguntas requieren imagen, siempre 3 opciones
+- Imágenes generadas con Nano Banana 2 (`gemini-3.1-flash-image-preview`) vía Gemini API
 - Crea explicaciones pedagogicas propias
 
 ### Skill 2: Extractor de Webs (pausado)
