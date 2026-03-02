@@ -14,7 +14,7 @@ Las preguntas son una **MEZCLA** de tipos. "Trampa" e "imagen" NO son tipos sepa
 - **Campo `dificultad` obligatorio**: Objeto con 6 dimensiones + `total` + `nivel` calculado con la rúbrica de abajo. Sin este campo la pregunta es inválida.
 - **Campo `pista` obligatorio**: Frase corta (máx 20 palabras) para modo estudio. No revela respuesta. Estilos: *Mnemónico* (datos/reglas) o *Razonamiento* (situacionales).
 - **Opciones concisas**: Sin justificaciones en la opción. La explicación va en `explicación`.
-- **Distractores plausibles**: Errores reales de alumnos o reglas de otro contexto, NUNCA absurdos.
+- **Distractores plausibles**: Errores reales de alumnos o reglas de otro contexto, NUNCA absurdos. Cada distractor debe ser una afirmación que un alumno real creería. Ejemplo: "gafas de sol de noche" = absurdo → RECHAZAR.
 - **Siempre 3 opciones (A, B, C)**.
 
 ---

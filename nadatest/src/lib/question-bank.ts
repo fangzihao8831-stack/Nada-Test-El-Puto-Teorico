@@ -4607,5 +4607,1145 @@ export const questionBank: BankQuestion[] = [
       "nivel": 2
     },
     "nivel": 2
+  },
+  {
+    "id": "pregunta_0822",
+    "number": 0,
+    "enunciado": "¿Está prohibido entrar en una intersección con cuadrícula amarilla si no puede salir de ella?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, aunque el semáforo esté en verde."
+      },
+      {
+        "key": "B",
+        "texto": "No, si el semáforo está en verde puede entrar siempre."
+      },
+      {
+        "key": "C",
+        "texto": "Solo si hay señal específica que lo prohíba."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "La cuadrícula amarilla prohíbe entrar en la intersección si no puede salir al otro lado sin detenerse, aunque el semáforo esté en verde. Su función es evitar que los vehículos bloqueen el cruce.\n\n- Opciones incorrectas: el semáforo en verde da paso pero no exime de respetar la cuadrícula; tampoco hace falta señal adicional, la cuadrícula es suficiente.\n- Conexión: las marcas viales tienen jerarquía inferior a los semáforos, pero la cuadrícula regula el bloqueo de intersección, aspecto que el semáforo no contempla.\n- Error común: creer que semáforo verde = entrada siempre permitida, ignorando la obligación de la cuadrícula.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "La cuadrícula amarilla prohíbe bloquear el cruce aunque el semáforo esté verde.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0823",
+    "number": 0,
+    "enunciado": "El reposacabezas protege del latigazo cervical cuando su borde superior queda...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "a la altura de los ojos o la parte superior de la cabeza."
+      },
+      {
+        "key": "B",
+        "texto": "a la altura de los hombros del ocupante."
+      },
+      {
+        "key": "C",
+        "texto": "al menos 5 cm por encima de la cabeza."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El reposacabezas debe tener el borde superior a la altura de los ojos o de la parte superior de la cabeza del ocupante para proteger eficazmente contra el latigazo cervical.\n\n- Opciones incorrectas: si queda a la altura de los hombros es demasiado bajo y no protege la nuca; superar la cabeza en 5 cm no es el criterio correcto.\n- Conexión: la distancia al cráneo debe ser máximo 4 cm para que contacte rápido en un impacto por alcance.\n- Error común: creer que cualquier posición alta es válida; lo fundamental es que llegue al menos a la altura de los ojos.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "Borde del reposacabezas: a la altura de los ojos como mínimo.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0824",
+    "number": 0,
+    "enunciado": "¿Puede colocar un SRI orientado hacia atrás en el asiento delantero con el airbag frontal activo?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, si el niño pesa menos de 13 kg."
+      },
+      {
+        "key": "B",
+        "texto": "No, es obligatorio desactivar el airbag o usar el asiento trasero."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, si el asiento está en la posición más retrasada."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Está prohibido colocar un sistema de retención infantil orientado hacia atrás en el asiento delantero si el airbag frontal está activo. Al desplegarse, el airbag puede causar lesiones graves o la muerte.\n\n- Opciones incorrectas: el peso del niño no exime del riesgo del airbag; la posición retrasada del asiento tampoco elimina el peligro.\n- Conexión: si es imprescindible usar el asiento delantero, el airbag debe desactivarse mediante llave o sistema electrónico.\n- Error común: confundir las excepciones del cinturón de adultos con las del SRI infantil.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "Airbag frontal activo + SRI hacia atrás = combinación letal.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0825",
+    "number": 0,
+    "enunciado": "En una bajada larga frena repetidamente. El pedal se vuelve esponjoso. ¿Qué le ocurre?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Se están mojando los frenos por la humedad de la calzada."
+      },
+      {
+        "key": "B",
+        "texto": "Están perdiendo eficacia por sobrecalentamiento (fading)."
+      },
+      {
+        "key": "C",
+        "texto": "El líquido de frenos se ha agotado completamente."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Cuando en una bajada prolongada se usa solo el pedal de freno, los frenos se sobrecalientan y pierden eficacia: es el fenómeno del fading. El síntoma es un pedal esponjoso que requiere más recorrido para frenar igual.\n\n- Opciones incorrectas: la humedad exterior no afecta al circuito hidráulico de esa manera; si el líquido se agotara por completo el pedal bajaría hasta el suelo sin resistencia.\n- Conexión: la prevención es usar marchas cortas en bajadas largas para que el freno motor trabaje; si aparece el fading, buscar zona segura y dejar enfriar varios minutos.\n- Error común: confundir el fading (sobrecalentamiento gradual) con un fallo súbito del circuito de frenos.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Frenos calientes por uso prolongado en bajada = pedal blando.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0826",
+    "number": 0,
+    "enunciado": "¿El café elimina el alcohol del organismo antes de conducir?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, activa el metabolismo y acelera su eliminación."
+      },
+      {
+        "key": "B",
+        "texto": "Solo si se toman dos o más tazas."
+      },
+      {
+        "key": "C",
+        "texto": "No, solo el tiempo elimina el alcohol."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El café no elimina el alcohol del organismo. Solo el tiempo permite que el hígado metabolice el alcohol, a una tasa de 0,1-0,15 g/l por hora.\n\n- Opciones incorrectas: el café es estimulante y puede reducir la somnolencia momentáneamente, pero no reduce la tasa de alcoholemia; la cantidad de café no influye en absoluto.\n- Conexión: tampoco eliminan el alcohol ducharse, hacer ejercicio o beber agua; son mitos extendidos entre los conductores.\n- Error común: confundir reducir la sensación de cansancio (efecto estimulante del café) con bajar la tasa de alcoholemia.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_11",
+    "tema": "Accidentes, Emergencias y Medio Ambiente",
+    "pista": "Solo el tiempo puede bajar la tasa de alcoholemia.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0827",
+    "number": 0,
+    "enunciado": "¿Es obligatorio el casco para un ciclista adulto que circula por vía urbana?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Solo en vías urbanas con límite superior a 30 km/h."
+      },
+      {
+        "key": "B",
+        "texto": "Sí, es obligatorio en cualquier tipo de vía."
+      },
+      {
+        "key": "C",
+        "texto": "No, en vía urbana el casco no es obligatorio para adultos."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "El casco es obligatorio para los ciclistas en vías interurbanas, pero en vías urbanas solo es obligatorio para los menores de 16 años. Los adultos en ciudad no están obligados legalmente a llevarlo.\n\n- Opciones incorrectas: el límite de velocidad de la vía no determina la obligación del casco; afirmar que es obligatorio en cualquier tipo de vía mezcla la norma interurbana con la urbana.\n- Conexión: la sanción por no usar casco en interurbana es de 200€; en vías urbanas no existe sanción para adultos.\n- Error común: creer que la regla es uniforme para todas las vías.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "Interurbana: casco obligatorio siempre. Urbana: solo menores de 16.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0828",
+    "number": 0,
+    "enunciado": "Con pavimento mojado por lluvia, la distancia de frenado respecto al asfalto seco...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "aumenta un 20%, por eso conviene reducir algo la velocidad."
+      },
+      {
+        "key": "B",
+        "texto": "depende solo de la velocidad, no del estado del firme."
+      },
+      {
+        "key": "C",
+        "texto": "se duplica, por lo que hay que aumentar la distancia de seguridad."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En pavimento mojado la distancia de frenado se duplica (×2) respecto al asfalto seco, por la menor adherencia entre neumáticos y calzada.\n\n- Opciones incorrectas: un aumento del 20% es muy inferior a la realidad; la distancia de frenado depende tanto de la velocidad como del estado del pavimento.\n- Conexión: en hielo o nieve la distancia puede multiplicarse hasta diez veces; la distancia mínima de seguridad en lluvia es de 3 segundos (frente a los 2 en seco).\n- Dato clave: los primeros minutos de lluvia son los más peligrosos porque el agua arrastra polvo y aceite del asfalto.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "Pavimento mojado: distancia de frenado el doble que en seco.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0829",
+    "number": 0,
+    "enunciado": "El sistema eCall de un vehículo llama automáticamente al 112 europeo cuando...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "se despliegan los airbags en una colisión grave."
+      },
+      {
+        "key": "B",
+        "texto": "el conductor supera el límite de velocidad más de 30 km/h."
+      },
+      {
+        "key": "C",
+        "texto": "el conductor no ha abrochado el cinturón al arrancar."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El sistema eCall se activa automáticamente cuando se despliegan los airbags, lo que indica una colisión grave. Envía la ubicación GPS, dirección, hora y tipo de vehículo al 112.\n\n- Opciones incorrectas: el eCall no tiene relación con la velocidad ni con el cinturón; esas funciones corresponden a otros sistemas (ISA, avisador de cinturón trasero).\n- Conexión: también puede activarse manualmente pulsando el botón SOS ante cualquier emergencia sin colisión.\n- Error común: confundir el eCall con el ISA (limitador de velocidad) o el avisador de cinturón.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "eCall = 112 automático cuando se despliegan los airbags.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0830",
+    "number": 0,
+    "enunciado": "En una curva, su vehículo tiende a seguir recto aunque gire el volante. ¿Qué fenómeno sufre y qué hace?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Subviraje: suelte el acelerador y enderece el volante suavemente."
+      },
+      {
+        "key": "B",
+        "texto": "Sobreviraje: gire el volante hacia donde va la parte trasera."
+      },
+      {
+        "key": "C",
+        "texto": "Aquaplaning: no frene y sujete el volante firme y recto."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Cuando el vehículo sigue recto sin seguir la curva aunque se gire el volante, es subviraje. La corrección es soltar el acelerador, no frenar bruscamente, y enderezar ligeramente el volante para que las ruedas delanteras recuperen adherencia.\n\n- Opciones incorrectas: el sobreviraje es el fenómeno contrario (la parte trasera sale hacia afuera); el aquaplaning implica pérdida de contacto por agua y el síntoma es un volante muy ligero.\n- Conexión: el subviraje es típico de vehículos de tracción delantera en curvas a velocidad excesiva; el sobreviraje es más común en tracción trasera.\n- Error común: confundir los tres fenómenos de pérdida de control en curva, que exigen correcciones completamente distintas.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "El morro se va recto = subviraje. Suelte el acelerador.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 2,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0831",
+    "number": 0,
+    "enunciado": "Al practicar la RCP a un adulto, ¿cuántas compresiones da antes de las ventilaciones?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "5 compresiones, luego 1 ventilación (secuencia obsoleta)."
+      },
+      {
+        "key": "B",
+        "texto": "15 compresiones, luego 2 ventilaciones (pediátrico con dos rescatadores)."
+      },
+      {
+        "key": "C",
+        "texto": "30 compresiones, luego 2 ventilaciones a 100-120 por minuto."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "La secuencia de RCP en adultos es 30 compresiones torácicas seguidas de 2 ventilaciones, a un ritmo de 100-120 compresiones por minuto.\n\n- Opciones incorrectas: la secuencia 5:1 es obsoleta y no se usa; la secuencia 15:2 corresponde a la RCP pediátrica con dos reanimadores presentes.\n- Conexión: antes de iniciar la RCP hay que comprobar que la víctima no responde y no respira con normalidad; si hay DEA disponible, usarlo lo antes posible.\n- Dato clave: las compresiones deben hundirse al menos 5 cm en el esternón del adulto.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "En adultos: 30 compresiones y 2 ventilaciones.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0832",
+    "number": 0,
+    "enunciado": "¿Qué distintivo identifica exteriormente a un autobús escolar?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Un cuadrado amarillo con silueta de niños, visible delante y detrás."
+      },
+      {
+        "key": "B",
+        "texto": "Una banda reflectante naranja en los laterales del vehículo."
+      },
+      {
+        "key": "C",
+        "texto": "Un panel rojo y blanco en la parte trasera del vehículo."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El autobús escolar lleva el distintivo V-10: un cuadrado amarillo con silueta de niños, visible tanto en la parte delantera como en la trasera.\n\n- Opciones incorrectas: las bandas reflectantes naranjas laterales son el distintivo V-6 para vehículos largos; el panel rojo y blanco (V-20) señaliza la carga sobresaliente.\n- Conexión: los conductores deben extremar la precaución ante un autobús escolar detenido porque pueden aparecer niños; su velocidad máxima es 10 km/h inferior a la del autobús normal.\n- Error común: confundir los distintos distintivos V entre sí.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_12",
+    "tema": "Infracciones y Sanciones",
+    "pista": "V-10: cuadrado amarillo con niños, delante y detrás.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0833",
+    "number": 0,
+    "enunciado": "Da positivo con 0,65 mg/l en aire espirado. ¿A qué tipo de sanción se enfrenta?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Infracción muy grave: multa de 1.000€ y 6 puntos."
+      },
+      {
+        "key": "B",
+        "texto": "Delito penal: puede suponer prisión y retirada del permiso."
+      },
+      {
+        "key": "C",
+        "texto": "Infracción grave: multa de 500€ y 4 puntos."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Superar 0,60 mg/l en aire espirado constituye un delito penal, no una infracción administrativa. La pena puede ser prisión de 3 a 6 meses o multa, más retirada del permiso de 1 a 4 años.\n\n- Opciones incorrectas: la multa de 1.000€ y 6 puntos corresponde a tasas de 0,50-0,60 mg/l; la de 500€ y 4 puntos a tasas de 0,25-0,50 mg/l.\n- Dato clave: el doble de la tasa general (0,60 mg/l = doble de 0,30 mg/l) es el umbral penal; por encima deja de ser infracción y pasa a ser delito.\n- Conexión: la tasa general es 0,25 mg/l; la de noveles y profesionales es 0,15 mg/l.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Más de 0,60 mg/l en aire: ya no es multa, es delito penal.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0834",
+    "number": 0,
+    "enunciado": "Para reducir el consumo de combustible, conviene...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "mantener siempre el motor a sus máximas revoluciones."
+      },
+      {
+        "key": "B",
+        "texto": "circular en marchas cortas para tener más par disponible."
+      },
+      {
+        "key": "C",
+        "texto": "circular en marchas altas con aceleración suave y constante."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "La conducción eficiente se basa en circular en marchas altas (largas) con aceleración suave, manteniendo las revoluciones del motor bajas y reduciendo el consumo.\n\n- Opciones incorrectas: circular a máximas revoluciones dispara el consumo; las marchas cortas proporcionan más fuerza pero consumen considerablemente más.\n- Conexión: anticiparse a los frenazos, mantener velocidad constante y no acelerar hacia un semáforo en rojo también reducen el consumo.\n- Error común: creer que marchas cortas = más potencia = más eficiencia, cuando lo que generan es mayor consumo.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_10",
+    "tema": "Factores de Riesgo",
+    "pista": "Marcha larga + pocas revoluciones = menos consumo.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0835",
+    "number": 0,
+    "enunciado": "Gira a la izquierda en una intersección. Un vehículo viene de frente en sentido contrario. ¿Quién cede?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El vehículo de frente: usted tiene preferencia al estar en la maniobra."
+      },
+      {
+        "key": "B",
+        "texto": "Quien haya llegado antes a la intersección."
+      },
+      {
+        "key": "C",
+        "texto": "Usted: el que gira a la izquierda cede a los que vienen de frente."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Al girar a la izquierda, el conductor debe ceder el paso a los vehículos que circulan en sentido contrario, ya que invade su carril.\n\n- Opciones incorrectas: estar en la maniobra no otorga prioridad; la regla de quien llega primero aplica en estrechamientos, no en giros.\n- Conexión: al girar a la izquierda también hay que ceder el paso a los peatones que crucen la vía transversal.\n- Error común: confundir el giro a la izquierda (ceder a los de frente) con la prioridad por la derecha en intersecciones.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Girar a la izquierda = ceder a los que vienen de frente.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0836",
+    "number": 0,
+    "enunciado": "Al incorporarse a una autovía por el carril de aceleración, ¿quién tiene prioridad?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Usted, porque el carril de aceleración le da preferencia de incorporación."
+      },
+      {
+        "key": "B",
+        "texto": "Los vehículos que ya circulan por la autovía."
+      },
+      {
+        "key": "C",
+        "texto": "Ambos por igual: deben llegar a un acuerdo de paso."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Los vehículos que circulan por la autovía tienen prioridad absoluta. El que se incorpora desde el carril de aceleración debe ceder el paso y alcanzar una velocidad similar antes de integrarse.\n\n- Opciones incorrectas: el carril de aceleración no confiere preferencia de paso; tampoco existe «acuerdo de paso», la regla es clara.\n- Conexión: en el carril de aceleración no debe detenerse el vehículo salvo emergencia; si no hay hueco, se reduce la velocidad y se espera.\n- Error común: creer que la rampa de acceso confiere prioridad al que la usa.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_06",
+    "tema": "Prioridad y Maniobras",
+    "pista": "El carril de aceleración es para adaptarse, no para tener prioridad.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0837",
+    "number": 0,
+    "enunciado": "¿Cuántos minutos debe esperar entre la primera y la segunda prueba de alcoholemia?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "5 minutos como mínimo."
+      },
+      {
+        "key": "B",
+        "texto": "10 minutos como mínimo."
+      },
+      {
+        "key": "C",
+        "texto": "15 minutos como mínimo."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La segunda prueba de alcoholemia, a petición del interesado, debe realizarse con un mínimo de 10 minutos de separación respecto a la primera.\n\n- Opciones incorrectas: 5 minutos es insuficiente para que el alcohol residual en la boca se disipe; 15 minutos excede el mínimo exigido.\n- Conexión: el resultado más favorable prevalece; si hay discrepancia significativa se puede solicitar análisis de sangre.\n- Dato clave: negarse a cualquiera de las dos pruebas constituye delito penal.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "Entre la primera y segunda prueba: mínimo 10 minutos.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 2,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0838",
+    "number": 0,
+    "enunciado": "¿Existe alguna tasa legal de cannabis por debajo de la cual se pueda conducir en España?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, hasta 1 ng/ml en sangre está permitido."
+      },
+      {
+        "key": "B",
+        "texto": "Solo se sanciona si hay síntomas evidentes de intoxicación."
+      },
+      {
+        "key": "C",
+        "texto": "No, cualquier presencia de cannabis es infracción muy grave."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "En España no existe umbral legal de cannabis permitido. Cualquier detección de cannabis o sus metabolitos en los controles es una infracción muy grave, independientemente de síntomas visibles.\n\n- Opciones incorrectas: no existe ninguna tasa permitida de cannabis; tampoco se requieren síntomas externos, basta con la presencia de la sustancia.\n- Conexión: a diferencia del alcohol, con tasas exactas según el tipo de conductor, con las drogas ilegales la norma española aplica tolerancia cero.\n- Error común: creer que la ausencia de síntomas visibles exime de sanción.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Cannabis: tolerancia cero. Sin umbral, sin síntomas necesarios.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0839",
+    "number": 0,
+    "enunciado": "Circulando a 90 km/h, revienta una rueda trasera. ¿Cuál es la primera acción correcta?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Frenar bruscamente para detenerse cuanto antes."
+      },
+      {
+        "key": "B",
+        "texto": "Sujetar el volante con firmeza y levantar el pie del acelerador."
+      },
+      {
+        "key": "C",
+        "texto": "Girar el volante en sentido contrario al lado del reventón."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Ante un reventón, la primera acción es sujetar el volante con firmeza y levantar el pie del acelerador suavemente, dejando que el vehículo pierda velocidad de forma progresiva. No debe frenarse bruscamente.\n\n- Opciones incorrectas: frenar de golpe puede provocar una pérdida total de control al reducir aún más la adherencia de la rueda afectada; el contravolante es la corrección para el sobreviraje, no la reacción inicial a un reventón.\n- Conexión: un reventón en rueda trasera produce efecto «coleo»; en la delantera el coche tira hacia ese lado. En ambos casos: no frenar, soltar acelerador, aguantar el volante.\n- Error común: el instinto de pisar el freno ante un peligro repentino es exactamente la reacción que agrava la pérdida de control en un reventón.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_03",
+    "tema": "Carga, Pasajeros y Remolques",
+    "pista": "Reventón: no frenes, sujeta el volante y suelta el acelerador.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0840",
+    "number": 0,
+    "enunciado": "Al tomar el carril de deceleración para salir de una autopista, debe...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "incorporarse al carril y reducir la velocidad dentro de él."
+      },
+      {
+        "key": "B",
+        "texto": "frenar primero en el carril principal hasta la velocidad de salida."
+      },
+      {
+        "key": "C",
+        "texto": "señalizar con el intermitente derecho desde 200 metros antes."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "La técnica correcta es incorporarse al carril de deceleración y reducir la velocidad dentro de él, nunca frenar en el carril principal de la autopista.\n\n- Opciones incorrectas: frenar en el carril principal es muy peligroso para los vehículos que vienen detrás a alta velocidad; los 200 metros con intermitente no es un dato normativo para esta maniobra concreta.\n- Conexión: la norma inversa aplica al incorporarse: usar el carril de aceleración para alcanzar la velocidad de la vía antes de integrarse.\n- Error común: aplicar la misma lógica a los carriles de aceleración y de deceleración.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_09",
+    "tema": "Seguridad y Tecnología",
+    "pista": "Primero entra en el carril de salida, luego frena.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0841",
+    "number": 0,
+    "enunciado": "Su ciclomotor tiene 4 años de antigüedad. ¿Cuándo debió pasar la primera ITV?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "No ha tenido que pasar ninguna ITV todavía."
+      },
+      {
+        "key": "B",
+        "texto": "La primera ITV fue a los 3 años de matriculación."
+      },
+      {
+        "key": "C",
+        "texto": "La primera ITV fue a los 4 años, igual que los turismos."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Los ciclomotores están exentos de ITV durante los primeros 3 años. Si el ciclomotor tiene 4 años, ya debió pasar la primera revisión al cumplir los 3 años.\n\n- Opciones incorrectas: a los 4 años ya ha vencido el plazo de exención; la opción de «nunca» es incorrecta porque el ciclomotor sí pasa ITV. Los turismos tienen exención de 4 años, pero los ciclomotores solo de 3: aplicar la regla del turismo al ciclomotor es el error más frecuente.\n- Dato clave: tras la primera ITV a los 3 años, los ciclomotores pasan revisión cada 2 años de forma indefinida, sin período anual posterior.\n- Conexión: el turismo tiene exención de 4 años, luego cada 2 hasta los 10, y luego revisión anual.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "Ciclomotor: primera ITV a los 3 años, luego cada 2.",
+    "tipoPregunta": "dato",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0842",
+    "number": 0,
+    "enunciado": "¿Qué señal obliga al vehículo que la lleva a ceder el paso en un estrechamiento?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "La señal R-5 (paso prioritario)."
+      },
+      {
+        "key": "B",
+        "texto": "La señal R-6 (ceda el paso en estrechamiento)."
+      },
+      {
+        "key": "C",
+        "texto": "La señal P-4 (estrechamiento de calzada)."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "La señal R-6 obliga al vehículo que la lleva de frente a ceder el paso en el estrechamiento a los que circulan en sentido contrario.\n\n- Opciones incorrectas: la señal R-5 es la complementaria: indica que el conductor tiene paso prioritario y el otro debe ceder; la P-4 es una señal de peligro (aviso de estrechamiento), no de prioridad.\n- Conexión: si no hay señalización, el vehículo con mayor dificultad para hacer marcha atrás tiene prioridad; con pendiente pronunciada, prioridad al que sube.\n- Error común: confundir la señal de peligro de estrechamiento (informativa) con las señales de prioridad R-5 y R-6.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "R-6: ceda el paso a los que vienen en sentido contrario.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0843",
+    "number": 0,
+    "enunciado": "Circulando con lluvia, el volante se vuelve muy ligero y el coche flota. ¿Qué hace?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Frena con firmeza para recuperar el agarre en el asfalto."
+      },
+      {
+        "key": "B",
+        "texto": "Gira el volante bruscamente para buscar zona de asfalto seco."
+      },
+      {
+        "key": "C",
+        "texto": "Suelta el acelerador suavemente y sujeta el volante firme y recto."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Los síntomas descritos son el aquaplaning: las ruedas han perdido el contacto con el asfalto por agua acumulada. La acción correcta es soltar el acelerador suavemente y sujetar el volante firme y recto, sin frenar ni girar bruscamente.\n\n- Opciones incorrectas: frenar bloquea las ruedas y agrava la pérdida de control; girar bruscamente puede provocar un derrape al recuperar agarre repentinamente.\n- Conexión: el aquaplaning es más probable a más de 80 km/h, con capa de agua de 2-3 mm o más y neumáticos con poco dibujo.\n- Error común: el instinto de frenar ante pérdida de control es el principal error en el aquaplaning.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Aquaplaning: no frenes, no gires, suelta el acelerador despacio.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 1,
+      "d_implicito": 1,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0844",
+    "number": 0,
+    "enunciado": "¿Qué significa un semáforo con luz ámbar intermitente en una intersección?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Precaución: sin regulación semafórica, rigen normas generales."
+      },
+      {
+        "key": "B",
+        "texto": "Alto: equivale a semáforo en rojo, debe detenerse siempre."
+      },
+      {
+        "key": "C",
+        "texto": "Paso libre con precaución solo para vehículos de emergencia."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "El semáforo en ámbar intermitente indica que la regulación semafórica no está activa. El conductor debe circular con precaución y aplicar las normas generales de prioridad.\n\n- Opciones incorrectas: el ámbar intermitente no equivale a rojo ni obliga a detenerse; tampoco es señal exclusiva para vehículos de emergencia.\n- Conexión: el semáforo en ámbar fijo (no intermitente) sí obliga a detenerse si puede hacerlo con seguridad.\n- Error común: confundir el ámbar intermitente (sin semáforo activo) con el ámbar fijo (prepararse para detenerse) o con el rojo intermitente (detenerse y continuar si no hay peligro).",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_08",
+    "tema": "Situaciones Especiales",
+    "pista": "Ámbar intermitente = sin semáforo; aplica reglas normales de prioridad.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0845",
+    "number": 0,
+    "enunciado": "Un agente mueve el brazo de arriba abajo repetidamente hacia usted. ¿Qué le indica?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Que se detenga inmediatamente."
+      },
+      {
+        "key": "B",
+        "texto": "Que disminuya la velocidad."
+      },
+      {
+        "key": "C",
+        "texto": "Que puede continuar con precaución."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "El gesto del agente con el brazo moviéndose de arriba abajo indica al conductor que debe disminuir la velocidad, no detenerse.\n\n- Opciones incorrectas: la orden de detenerse la da el agente con el brazo levantado verticalmente fijo; la autorización de continuar se indica de otra manera.\n- Conexión: brazo levantado verticalmente = alto para todos (equivale a rojo); brazos extendidos horizontalmente = alto para los perpendiculares, paso libre para los paralelos.\n- Error común: confundir el gesto de «reducir velocidad» (arriba-abajo) con el de «detenerse» (brazo levantado fijo).",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_07",
+    "tema": "Señalización",
+    "pista": "Brazo arriba-abajo = reducir velocidad, no detenerse.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0846",
+    "number": 0,
+    "enunciado": "En un estrechamiento sin señales y sin pendiente, ¿quién tiene prioridad de paso?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El vehículo que haya entrado primero en el estrechamiento."
+      },
+      {
+        "key": "B",
+        "texto": "El vehículo más corto, por tener más facilidad para retroceder."
+      },
+      {
+        "key": "C",
+        "texto": "El vehículo que circula en sentido ascendente."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En un estrechamiento sin señalización y sin pendiente significativa, la prioridad la tiene el vehículo que haya entrado primero. Si entran simultáneamente, tiene preferencia el que tenga mayor dificultad para hacer marcha atrás.\n\n- Opciones incorrectas: la norma no establece preferencia por el tamaño del vehículo; el sentido ascendente da prioridad solo si hay pendiente pronunciada (7% o más).\n- Conexión: las señales R-5 y R-6 regulan explícitamente la preferencia; si las hay, prevalecen sobre cualquier regla general.\n- Error común: aplicar la regla de la pendiente a estrechamientos sin pendiente.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Sin señal, sin pendiente: gana el que entró primero.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 0,
+      "total": 4,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0847",
+    "number": 0,
+    "enunciado": "¿Cuántos metros como máximo puede recorrer haciendo marcha atrás?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "5 metros."
+      },
+      {
+        "key": "B",
+        "texto": "10 metros."
+      },
+      {
+        "key": "C",
+        "texto": "15 metros."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "La marcha atrás solo está permitida como maniobra complementaria (aparcar, cambiar de sentido) con una distancia máxima de 15 metros.\n\n- Opciones incorrectas: ni 5 ni 10 metros son el límite legal; 15 metros es la distancia máxima establecida.\n- Conexión: la marcha atrás está completamente prohibida en autopistas, autovías, intersecciones, pasos de peatones y pasos a nivel.\n- Error común: creer que la marcha atrás está siempre prohibida, cuando en realidad está permitida como maniobra complementaria hasta 15 metros.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_05",
+    "tema": "Circulación y Velocidad",
+    "pista": "Máximo 15 metros de marcha atrás como maniobra complementaria.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 0,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 1,
+      "nivel": 1
+    },
+    "nivel": 1
+  },
+  {
+    "id": "pregunta_0848",
+    "number": 0,
+    "enunciado": "Un pasajero adulto viaja sin cinturón en el asiento trasero. ¿Quién recibe la multa?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "El conductor, que es responsable de todos los ocupantes."
+      },
+      {
+        "key": "B",
+        "texto": "Solo se sanciona al conductor si el pasajero es menor de edad."
+      },
+      {
+        "key": "C",
+        "texto": "El propio pasajero adulto, responsable de su propio cinturón."
+      }
+    ],
+    "correcta": "C",
+    "explicacion": "Cuando un pasajero adulto no lleva el cinturón, la multa recae sobre él mismo. El conductor no es sancionado por los ocupantes adultos.\n\n- Opciones incorrectas: el conductor sí es responsable cuando el ocupante es un menor de edad sin cinturón o sin SRI, pero esta regla no aplica a los adultos; la segunda opción mezcla parcialmente ambas reglas pero no formula correctamente la distinción.\n- Conexión: la sanción por no llevar el cinturón es de 200€ y 4 puntos, que en el caso del adulto recaen sobre él.\n- Error común: creer que el conductor siempre es responsable de todos los ocupantes; la norma distingue claramente entre mayores y menores de edad.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "Adulto sin cinturón = multa al adulto. Menor sin SRI = multa al conductor.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 1,
+      "d_implicito": 0,
+      "d_distractores": 2,
+      "d_contraintuitivo": 1,
+      "total": 6,
+      "nivel": 3
+    },
+    "nivel": 3
+  },
+  {
+    "id": "pregunta_0849",
+    "number": 0,
+    "enunciado": "¿Qué señalización nocturna es obligatoria para una carga que sobresale por detrás?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Luz roja trasera y catadióptrico rojo."
+      },
+      {
+        "key": "B",
+        "texto": "Luz ámbar intermitente visible a 100 metros."
+      },
+      {
+        "key": "C",
+        "texto": "Panel reflectante V-20 (rojo y blanco) únicamente."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "Cuando la carga sobresale por detrás, de noche es obligatorio señalizarla con una luz roja trasera y un catadióptrico rojo, visibles para los vehículos que circulan detrás.\n\n- Opciones incorrectas: la luz ámbar intermitente no es la señalización prevista para la carga sobresaliente trasera; el panel V-20 (rojo y blanco) es la señalización diurna.\n- Conexión: de día, la carga que sobresale por detrás se señaliza con el panel V-20; de noche, con luz roja y catadióptrico rojo.\n- Error común: usar el panel V-20 tanto de día como de noche, sin distinguir los dos escenarios.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "Carga trasera de noche: luz roja + catadióptrico rojo.",
+    "tipoPregunta": "directa",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0850",
+    "number": 0,
+    "enunciado": "Transporta a su perro en el maletero sin ninguna sujeción. ¿Es correcto?",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "Sí, el maletero está físicamente separado del habitáculo."
+      },
+      {
+        "key": "B",
+        "texto": "No, el animal debe ir en transportín, arnés u otro sistema de sujeción."
+      },
+      {
+        "key": "C",
+        "texto": "Sí, si el perro no puede alcanzar el asiento delantero."
+      }
+    ],
+    "correcta": "B",
+    "explicacion": "Transportar un animal sin sujeción, aunque sea en el maletero, no cumple la norma. El animal debe ir en un transportín, con arnés homologado o detrás de una rejilla separadora.\n\n- Opciones incorrectas: la separación física del maletero no exime de sujetar al animal; que no llegue al asiento delantero tampoco es criterio válido: en una frenada brusca puede proyectarse.\n- Conexión: en ciclomotores y motocicletas el transporte de animales no está permitido salvo excepciones muy concretas.\n- Error común: creer que el compartimento del maletero equivale a sujeción segura del animal.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_02",
+    "tema": "El Vehículo",
+    "pista": "Animales: siempre transportín, arnés o rejilla. Nunca sueltos.",
+    "tipoPregunta": "situacional",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 0,
+      "d_densidad": 0,
+      "d_implicito": 1,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
+  },
+  {
+    "id": "pregunta_0851",
+    "number": 0,
+    "enunciado": "En un turismo, la carga puede sobresalir por detrás hasta el 10% de su longitud...",
+    "opciones": [
+      {
+        "key": "A",
+        "texto": "si la carga es divisible; el 15% si es indivisible."
+      },
+      {
+        "key": "B",
+        "texto": "en cualquier caso, sin distinción de tipo de carga."
+      },
+      {
+        "key": "C",
+        "texto": "si la velocidad no supera 80 km/h en todo momento."
+      }
+    ],
+    "correcta": "A",
+    "explicacion": "En turismos, la carga puede sobresalir por detrás hasta el 10% de la longitud si es divisible, y hasta el 15% si es indivisible (y no puede reducirse).\n\n- Opciones incorrectas: no se aplica el mismo porcentaje a todos los casos; la velocidad no es el criterio que determina el porcentaje permitido.\n- Conexión: la carga nunca puede sobresalir por delante en un turismo; lateralmente también está muy limitada.\n- Error común: aplicar el 15% a todos los casos sin distinguir entre carga divisible e indivisible.",
+    "hasImage": false,
+    "imageSrc": null,
+    "temaId": "tema_04",
+    "tema": "La Vía y sus Usuarios",
+    "pista": "Turismo trasero: 10% divisible, 15% indivisible.",
+    "tipoPregunta": "completar",
+    "dificultad": {
+      "d_reglas": 1,
+      "d_excepcion": 1,
+      "d_densidad": 0,
+      "d_implicito": 0,
+      "d_distractores": 1,
+      "d_contraintuitivo": 0,
+      "total": 3,
+      "nivel": 2
+    },
+    "nivel": 2
   }
 ];

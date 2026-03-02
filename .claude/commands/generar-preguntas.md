@@ -57,7 +57,7 @@ Si la respuesta es "recitar", reescribe la pregunta como escenario.
 - Ejemplos: vehículo, circulación, señalización, kilómetros
 
 ## Normativa
-- Fecha actual: Febrero 2026
+- Fecha actual: Marzo 2026
 - Si una norma ha cambiado recientemente, mencionar cuándo en la explicación
 - Desde Feb 2026: el examen DGT incluye vídeos de percepción de riesgos
 
@@ -69,9 +69,12 @@ Si la respuesta es "recitar", reescribe la pregunta como escenario.
 1. Si se especifica tema/subtema, leer solo las secciones relevantes del temario
 2. Si no se especifica tema, seguir paso 2.1 para generar el temario filtrado
 
-### 2. Distribución de temas (OBLIGATORIO para 30 preguntas)
+### 2. Distribución de temas y tipos (OBLIGATORIO para 30 preguntas)
 
-Si se generan 30 preguntas sin tema especificado, distribuir entre al menos 8 temas distintos (de los 12). Máximo 5 preguntas del mismo tema. Nunca 2 preguntas seguidas del mismo subtema. Si el subagente tiende a repetir luces/cinturón/alcohol/velocidad, forzar temas menos frecuentes: mercancías peligrosas, documentación, medio ambiente, primeros auxilios.
+Si se generan 30 preguntas sin tema especificado, distribuir entre al menos 8 temas distintos (de los 12). Máximo 5 preguntas del mismo tema. **Cada subtema_id aparece UNA sola vez** en el batch. Si el subagente tiende a repetir luces/cinturón/alcohol/velocidad, forzar temas menos frecuentes: mercancías peligrosas, documentación, medio ambiente, primeros auxilios.
+
+**Distribución de tipos**: directa 11-13, situacional 7-9, completar 6-8, dato 2-4.
+**Distribución de dificultad**: nivel 1 (5-8), nivel 2 (12-16), nivel 3 (5-8), nivel 4 (2-4, solo situacional).
 
 ### 2.1 Selección de temas para el temario (OBLIGATORIO si no se especifica tema)
 

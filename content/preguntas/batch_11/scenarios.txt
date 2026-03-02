@@ -1,0 +1,30 @@
+subtema_22 | Cuadrícula amarilla en intersección — prohibido entrar si no puede salir
+subtema_38 | Reposacabezas — borde superior a la altura de los ojos del ocupante
+subtema_39 | SRI hacia atrás en asiento delantero con airbag activo — prohibido
+subtema_26 | Pedal esponjoso en bajada larga — fading por sobrecalentamiento
+subtema_53 | El café no elimina el alcohol, solo el tiempo lo hace
+subtema_42 | Casco ciclista adulto en vía urbana — no obligatorio (sí en interurbana)
+subtema_56 | Pavimento mojado — distancia de frenado se duplica respecto a seco
+subtema_48 | eCall se activa automáticamente al desplegarse los airbags
+subtema_27 | Vehículo que sigue recto en curva — subviraje, soltar acelerador
+subtema_45 | RCP adulto — 30 compresiones + 2 ventilaciones a 100-120 por minuto
+subtema_57 | Distintivo V-10 autobús escolar — cuadrado amarillo con silueta de niños
+subtema_36 | Tasa 0,65 mg/l en aire espirado — delito penal, no infracción
+subtema_49 | Conducción eficiente — marchas altas, baja aceleración, menos consumo
+subtema_14 | Giro a la izquierda — ceder el paso a los vehículos que vienen de frente
+subtema_20 | Incorporación a autovía por carril de aceleración — ceder a los que circulan
+subtema_40 | Prueba de alcoholemia — mínimo 10 minutos entre primera y segunda
+subtema_37 | Cannabis al volante — tolerancia cero, sin umbral legal en España
+subtema_08 | Reventón de neumático trasero — sujetar volante, levantar acelerador
+subtema_41 | Carril de deceleración — incorporarse al carril y luego reducir velocidad
+subtema_07 | Ciclomotor 4 años — primera ITV fue a los 3 años de matriculación
+subtema_30 | Señal R-6 en estrechamiento — obliga a ceder el paso al sentido contrario
+subtema_31 | Volante ligero y coche flotando con lluvia — aquaplaning, no frenar
+subtema_34 | Semáforo ámbar intermitente — sin regulación semafórica, normas generales
+subtema_25 | Agente mueve brazo de arriba abajo — indica disminuir la velocidad
+subtema_13 | Estrechamiento sin señal ni pendiente — prioridad al que entró primero
+subtema_18 | Distancia máxima de marcha atrás como maniobra complementaria — 15 m
+subtema_06 | Pasajero adulto sin cinturón en asiento trasero — multa al propio pasajero
+subtema_04 | Carga sobresaliente trasera de noche — luz roja y catadióptrico rojo
+subtema_05 | Perro en maletero sin sujeción — prohibido, necesita transportín o arnés
+subtema_11 | Carga trasera turismo — 10% divisible, 15% indivisible

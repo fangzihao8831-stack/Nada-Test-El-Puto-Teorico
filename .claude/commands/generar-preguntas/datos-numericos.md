@@ -61,6 +61,8 @@ Valores exactos que se preguntan. Si un número no coincide con el temario, usar
 | **15 m** | Estacionamiento mínimo desde parada de autobús/taxi |
 | **50 m** | Distancia mínima de colocación de cada triángulo |
 | **100 m** | Visibilidad mínima del triángulo |
+| **100 m / 4 s** | Distancia de seguridad en túnel (vehículos ≤ 3.500 kg) |
+| **150 m / 6 s** | Distancia de seguridad en túnel (vehículos > 3.500 kg) |
 
 **Intermitente antes de maniobra**: el RGC exige **con suficiente antelación**. No usar "15 segundos" ni "50 m" como regla general.
 

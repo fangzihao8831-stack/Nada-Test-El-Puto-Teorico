@@ -14,7 +14,9 @@ El `subtema_id` se asigna según el CONTENIDO, no según el tema pedido.
 
 ## Distribución de respuesta correcta (OBLIGATORIO)
 
-En cada batch de 30: correcta=0 → 9-11, correcta=1 → 9-11, correcta=2 → 9-11. Al terminar, contar y reordenar opciones si necesario.
+En cada batch de 30: correcta=0 → 9-11, correcta=1 → 9-11, correcta=2 → 9-11.
+
+**Post-generación**: Contar las 30 preguntas y verificar. Si alguna posición tiene <9 o >11, reordenar opciones de las preguntas necesarias (intercambiar posición de correcta con otra opción). NO continuar sin cumplir 9-11.
 
 ---
 
@@ -89,8 +91,25 @@ Enunciado + opciones contienen TODA la información para responder. Si la respue
 - [ ] Sin referencias a archivos ni letras A/B/C en explicación
 - [ ] Datos numéricos verificados contra temario
 - [ ] Sin secuencia monotónica en opciones
+- [ ] Opciones concisas: sin justificaciones dentro de la opción. El "porqué" va en explicación.
+- [ ] Cada distractor es plausible (un alumno real lo creería). Sin opciones absurdas.
+
+## Distribución de dificultad (OBLIGATORIO para 30 preguntas)
+
+Para un batch de 30: nivel 1 → 5-8, nivel 2 → 12-16, nivel 3 → 5-8, nivel 4 → 2-4 (solo situacional). Si nivel 2 supera 16, subir dificultad de algunas preguntas añadiendo dimensiones (d_excepcion, d_contraintuitivo, d_densidad).
+
+---
+
+## Distribución de tipos (OBLIGATORIO para 30 preguntas)
+
+Respetar las frecuencias de tipos-preguntas.md: directa ~40% (11-13), situacional ~27% (7-9), completar ~23% (6-8), dato ~10% (2-4). Si el batch se desvía, reequilibrar antes de entregar.
+
+---
 
 ## Checklist de batch (AL TERMINAR las 30)
 
 - [ ] Distribución: correcta=0, correcta=1, correcta=2 → cada uno 9-11
-- [ ] Sin dos preguntas sobre el mismo tema/dato específico
+- [ ] Distribución dificultad: nivel 1 (5-8), nivel 2 (12-16), nivel 3 (5-8), nivel 4 (2-4)
+- [ ] Distribución tipos: directa (11-13), situacional (7-9), completar (6-8), dato (2-4)
+- [ ] Sin dos preguntas del mismo `subtema_id`
+- [ ] Sin dos preguntas sobre el mismo tema/dato específico aunque tengan distinto subtema_id
